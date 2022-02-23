@@ -18,6 +18,13 @@ namespace FonteTrifasicaPID
         String path_LOG = System.AppDomain.CurrentDomain.BaseDirectory + "/LOG/";
         String path_Config = System.AppDomain.CurrentDomain.BaseDirectory + "/CONFIG/";
 
+        enum Identificador
+        {
+            ConstantesPIDTensão,
+            ConstantesPIDCorrente,
+            ParâmetrosSintetixação
+        };
+
         private SerialPort PortaSerial = new SerialPort();
 
         public Form1()
@@ -355,6 +362,23 @@ namespace FonteTrifasicaPID
             //Trama de aplicação das constatnes KP, KI e KD
             //Identificador, Kp, Ki, Kd, CS
             Salvar_Dados_Config();
+           
+
+            string TRAMA_ENVIO = (int)Identificador.ConstantesPIDTensão + "," +
+                                 txtKpTensao.Text + "," +
+                                 txtKiTensao.Text + "," +
+                                 txtKdTensao.Text + ",";
+
+            if(PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando PID_V: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de cnfiguração PID para tensão não enviado devido porta serial fechada!");
+            }
         }
 
         private void txtKpTensao_KeyPress(object sender, KeyPressEventArgs e)
@@ -437,7 +461,25 @@ namespace FonteTrifasicaPID
 
         private void btnAplicarPIDCorrente_Click(object sender, EventArgs e)
         {
+            //Trama de aplicação das constatnes KP, KI e KD
+            //Identificador, Kp, Ki, Kd, CS
             Salvar_Dados_Config();
+
+            string TRAMA_ENVIO = (int)Identificador.ConstantesPIDCorrente + "," +
+                                 txtKpCorrente.Text + "," +
+                                 txtKiCorrente.Text + "," +
+                                 txtKdCorrente.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando PID_C: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de cnfiguração PID para corrente não enviado devido porta serial fechada!");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
