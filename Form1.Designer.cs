@@ -408,6 +408,7 @@ namespace FonteTrifasicaPID
             this.btnLimparGraficoTensao.TabIndex = 11;
             this.btnLimparGraficoTensao.Text = "Limpar Gráfico";
             this.btnLimparGraficoTensao.UseVisualStyleBackColor = true;
+            this.btnLimparGraficoTensao.Click += new System.EventHandler(this.btnLimparGraficoTensao_Click);
             // 
             // groupBox6
             // 

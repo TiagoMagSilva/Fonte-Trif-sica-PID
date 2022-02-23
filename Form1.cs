@@ -12,6 +12,33 @@ using System.Windows.Forms;
 
 namespace FonteTrifasicaPID
 {
+    /*
+    public struct DadosRXPID
+    {
+        public float _Kp;
+        public float _Ki;
+        public float _Kd;
+
+        public float EstadoQuarto
+        {
+            get { return _Kp; }
+            set { _Kp = value; }
+        }
+
+        public float CodigoQuarto
+        {
+            get { return _Ki; }
+            set { _Ki = value; }
+        }
+
+        public float Reservado1
+        {
+            get { return _Kd; }
+            set { _Kd = value; }
+        }
+    }
+    */
+    
     public partial class Form1 : Form
     {
         String path_SERIAL = System.AppDomain.CurrentDomain.BaseDirectory + "/SERIAL/";
@@ -24,8 +51,13 @@ namespace FonteTrifasicaPID
             ConstantesPIDCorrente,
             ParâmetrosSintetização,
             Parar,
-            Iniciar
+            Iniciar,
+            ID_RX_PID_Tensão,
+            ID_RX_PID_Corrente
         };
+
+        //DadosRXPID Constantes_PID_Tensão;
+        //DadosRXPID Constantes_PID_Corrente;
 
         private SerialPort PortaSerial = new SerialPort();
 
@@ -234,6 +266,77 @@ namespace FonteTrifasicaPID
             }
         }
 
+        void IdentificarPacote(string Pacote)
+        {
+            /* Pacote das constantes PID_V: Identificador.ConstantesPIDTensão, kp, ki, kd
+             * Pacote das constantes PID_I: Identificador.ConstantesPIDCorrente, kp, ki, kd
+             * Pacote dos parametros: Identificador.ParâmetrosSintetização, Tensão, Corrente, Index frequência, Index Fase, Index Fator de Potência
+             */
+            string[] partes = Pacote.Split(',');
+
+            if(partes.Length > 0)
+            {
+                switch(int.Parse(partes[0]))//Partes 0 contém o identificador!!
+                {
+                    case (int)Identificador.ConstantesPIDTensão:
+                        txtKpTensao.Text = partes[1];
+                        txtKiTensao.Text = partes[2];
+                        txtKdTensao.Text = partes[3];
+                        break;
+                    case (int)Identificador.ConstantesPIDCorrente:
+                        txtKpCorrente.Text = partes[1];
+                        txtKiCorrente.Text = partes[2];
+                        txtKdCorrente.Text = partes[3];
+                        break;
+                    case (int)Identificador.ParâmetrosSintetização:
+                        txtTensãoRMS.Text = partes[1];
+                        txtCorrenteRMS.Text = partes[2];
+                        cbxFrequencia.SelectedIndex = int.Parse(partes[3]);
+                        cbxFase.SelectedIndex = int.Parse(partes[4]);
+                        cbxFatorDePotencia.SelectedIndex = int.Parse(partes[5]);
+                        break;
+                    default:
+
+                        break;
+                }
+            }
+        }
+
+        private void PortaSerial_DadoRecebido(object sender, SerialDataReceivedEventArgs e)
+        {
+            string DadoRecebido = PortaSerial.ReadLine();
+            Console.WriteLine("Dado recebido: " + DadoRecebido);
+            LOG_TXT("Dado Recebido: " + DadoRecebido);
+
+            int IndexVirgulaCS = DadoRecebido.LastIndexOf(',');
+            string TramaSemCS = string.Empty;
+            string CS = string.Empty;
+
+            if (IndexVirgulaCS != -1)
+            {
+                TramaSemCS = DadoRecebido.Substring(0, IndexVirgulaCS);
+                CS = DadoRecebido.Substring(IndexVirgulaCS + 1);
+
+                Console.WriteLine("Trama sem CS: " + TramaSemCS);
+                Console.WriteLine("CS: " + CS);
+
+                LOG_TXT("Trama Recebida sem CS: " + TramaSemCS);
+                LOG_TXT("CS da Trama recebida: " + CS);
+
+                if (Calcula_checksum(TramaSemCS) == CS)
+                {
+                    IdentificarPacote(TramaSemCS);
+                }
+            }
+            else
+            {
+                LOG_TXT("A trama recebida não continha ','");
+            }
+
+            //string DadoRecebidoSemCS = 
+            //IdentificarPacote(DadoRecebido);
+        }
+
         private void btnConectarSerial_Click(object sender, EventArgs e)
         {
             if(!PortaSerial.IsOpen)
@@ -248,6 +351,8 @@ namespace FonteTrifasicaPID
                             Int32.Parse(cbxBaudRate.SelectedItem.ToString()), Parity.None, 8, StopBits.One);
 
                             PortaSerial.Open();
+
+                            PortaSerial.DataReceived += new SerialDataReceivedEventHandler(PortaSerial_DadoRecebido);
 
                             //MessageBox.Show("Tudo certo com a porta serial selecionada!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
@@ -539,6 +644,18 @@ namespace FonteTrifasicaPID
             else
             {
                 LOG_TXT("Comando para iniciar sintetização não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnLimparGraficoTensao_Click(object sender, EventArgs e)
+        {
+            string s = "My. name. is Bond._James Bond!";
+            int idx = s.LastIndexOf('.');
+
+            if (idx != -1)
+            {
+                Console.WriteLine(s.Substring(0, idx)); // "My. name. is Bond"
+                Console.WriteLine(s.Substring(idx + 1)); // "_James Bond!"
             }
         }
     }
