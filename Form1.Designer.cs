@@ -121,14 +121,14 @@ namespace FonteTrifasicaPID
             this.button1 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cbxFatorDePotencia = new System.Windows.Forms.ComboBox();
+            this.cbxFrequencia = new System.Windows.Forms.ComboBox();
+            this.txtTensãoRMS = new System.Windows.Forms.TextBox();
+            this.txtCorrenteRMS = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbxFase = new System.Windows.Forms.ComboBox();
             this.btnIniciarSintetização = new System.Windows.Forms.Button();
             this.btnPararSintetização = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -242,6 +242,8 @@ namespace FonteTrifasicaPID
             this.txtKpTensao.Name = "txtKpTensao";
             this.txtKpTensao.Size = new System.Drawing.Size(48, 20);
             this.txtKpTensao.TabIndex = 3;
+            this.txtKpTensao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKpTensao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKpTensao_KeyPress);
             // 
             // txtKiTensao
             // 
@@ -249,6 +251,8 @@ namespace FonteTrifasicaPID
             this.txtKiTensao.Name = "txtKiTensao";
             this.txtKiTensao.Size = new System.Drawing.Size(48, 20);
             this.txtKiTensao.TabIndex = 5;
+            this.txtKiTensao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKiTensao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKiTensao_KeyPress);
             // 
             // label2
             // 
@@ -265,6 +269,8 @@ namespace FonteTrifasicaPID
             this.txtKdTensao.Name = "txtKdTensao";
             this.txtKdTensao.Size = new System.Drawing.Size(48, 20);
             this.txtKdTensao.TabIndex = 7;
+            this.txtKdTensao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKdTensao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKdTensao_KeyPress);
             // 
             // label3
             // 
@@ -283,6 +289,7 @@ namespace FonteTrifasicaPID
             this.btnAplicarPIDTensao.TabIndex = 8;
             this.btnAplicarPIDTensao.Text = "Aplicar";
             this.btnAplicarPIDTensao.UseVisualStyleBackColor = true;
+            this.btnAplicarPIDTensao.Click += new System.EventHandler(this.btnAplicarPIDTensao_Click);
             // 
             // groupBox1
             // 
@@ -322,6 +329,8 @@ namespace FonteTrifasicaPID
             this.txtKpCorrente.Name = "txtKpCorrente";
             this.txtKpCorrente.Size = new System.Drawing.Size(48, 20);
             this.txtKpCorrente.TabIndex = 3;
+            this.txtKpCorrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKpCorrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKpCorrente_KeyPress);
             // 
             // btnAplicarPIDCorrente
             // 
@@ -331,6 +340,7 @@ namespace FonteTrifasicaPID
             this.btnAplicarPIDCorrente.TabIndex = 8;
             this.btnAplicarPIDCorrente.Text = "Aplicar";
             this.btnAplicarPIDCorrente.UseVisualStyleBackColor = true;
+            this.btnAplicarPIDCorrente.Click += new System.EventHandler(this.btnAplicarPIDCorrente_Click);
             // 
             // label4
             // 
@@ -347,6 +357,8 @@ namespace FonteTrifasicaPID
             this.txtKdCorrente.Name = "txtKdCorrente";
             this.txtKdCorrente.Size = new System.Drawing.Size(48, 20);
             this.txtKdCorrente.TabIndex = 7;
+            this.txtKdCorrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKdCorrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKdCorrente_KeyPress);
             // 
             // label5
             // 
@@ -372,6 +384,8 @@ namespace FonteTrifasicaPID
             this.txtKiCorrente.Name = "txtKiCorrente";
             this.txtKiCorrente.Size = new System.Drawing.Size(48, 20);
             this.txtKiCorrente.TabIndex = 5;
+            this.txtKiCorrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKiCorrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKiCorrente_KeyPress);
             // 
             // groupBox3
             // 
@@ -433,6 +447,7 @@ namespace FonteTrifasicaPID
             this.txtTensãoRMSC.Name = "txtTensãoRMSC";
             this.txtTensãoRMSC.Size = new System.Drawing.Size(60, 20);
             this.txtTensãoRMSC.TabIndex = 29;
+            this.txtTensãoRMSC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTensãoRMSB
             // 
@@ -441,6 +456,7 @@ namespace FonteTrifasicaPID
             this.txtTensãoRMSB.Name = "txtTensãoRMSB";
             this.txtTensãoRMSB.Size = new System.Drawing.Size(60, 20);
             this.txtTensãoRMSB.TabIndex = 28;
+            this.txtTensãoRMSB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
@@ -458,6 +474,7 @@ namespace FonteTrifasicaPID
             this.txtTensãoRMSA.Name = "txtTensãoRMSA";
             this.txtTensãoRMSA.Size = new System.Drawing.Size(60, 20);
             this.txtTensãoRMSA.TabIndex = 26;
+            this.txtTensãoRMSA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // checkBox3
             // 
@@ -529,6 +546,7 @@ namespace FonteTrifasicaPID
             this.txtTempAcomodTensaoC.Name = "txtTempAcomodTensaoC";
             this.txtTempAcomodTensaoC.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodTensaoC.TabIndex = 19;
+            this.txtTempAcomodTensaoC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUndershootTensaoC
             // 
@@ -537,6 +555,7 @@ namespace FonteTrifasicaPID
             this.txtUndershootTensaoC.Name = "txtUndershootTensaoC";
             this.txtUndershootTensaoC.Size = new System.Drawing.Size(60, 20);
             this.txtUndershootTensaoC.TabIndex = 18;
+            this.txtUndershootTensaoC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootTensaoC
             // 
@@ -545,6 +564,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootTensaoC.Name = "txtOvershootTensaoC";
             this.txtOvershootTensaoC.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootTensaoC.TabIndex = 17;
+            this.txtOvershootTensaoC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTempAcomodTensaoB
             // 
@@ -553,6 +573,7 @@ namespace FonteTrifasicaPID
             this.txtTempAcomodTensaoB.Name = "txtTempAcomodTensaoB";
             this.txtTempAcomodTensaoB.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodTensaoB.TabIndex = 16;
+            this.txtTempAcomodTensaoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUndershootTensaoB
             // 
@@ -561,6 +582,7 @@ namespace FonteTrifasicaPID
             this.txtUndershootTensaoB.Name = "txtUndershootTensaoB";
             this.txtUndershootTensaoB.Size = new System.Drawing.Size(60, 20);
             this.txtUndershootTensaoB.TabIndex = 15;
+            this.txtUndershootTensaoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootTensaoB
             // 
@@ -569,6 +591,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootTensaoB.Name = "txtOvershootTensaoB";
             this.txtOvershootTensaoB.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootTensaoB.TabIndex = 14;
+            this.txtOvershootTensaoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -586,6 +609,7 @@ namespace FonteTrifasicaPID
             this.txtTempAcomodTensaoA.Name = "txtTempAcomodTensaoA";
             this.txtTempAcomodTensaoA.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodTensaoA.TabIndex = 12;
+            this.txtTempAcomodTensaoA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
@@ -603,6 +627,7 @@ namespace FonteTrifasicaPID
             this.txtUndershootTensaoA.Name = "txtUndershootTensaoA";
             this.txtUndershootTensaoA.Size = new System.Drawing.Size(60, 20);
             this.txtUndershootTensaoA.TabIndex = 10;
+            this.txtUndershootTensaoA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -620,6 +645,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootTensaoA.Name = "txtOvershootTensaoA";
             this.txtOvershootTensaoA.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootTensaoA.TabIndex = 4;
+            this.txtOvershootTensaoA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox4
             // 
@@ -681,6 +707,7 @@ namespace FonteTrifasicaPID
             this.txtCorrenteRMSC.Name = "txtCorrenteRMSC";
             this.txtCorrenteRMSC.Size = new System.Drawing.Size(60, 20);
             this.txtCorrenteRMSC.TabIndex = 41;
+            this.txtCorrenteRMSC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
             // 
@@ -698,6 +725,7 @@ namespace FonteTrifasicaPID
             this.txtCorrenteRMSB.Name = "txtCorrenteRMSB";
             this.txtCorrenteRMSB.Size = new System.Drawing.Size(60, 20);
             this.txtCorrenteRMSB.TabIndex = 40;
+            this.txtCorrenteRMSB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtCorrenteRMSA
             // 
@@ -706,6 +734,7 @@ namespace FonteTrifasicaPID
             this.txtCorrenteRMSA.Name = "txtCorrenteRMSA";
             this.txtCorrenteRMSA.Size = new System.Drawing.Size(60, 20);
             this.txtCorrenteRMSA.TabIndex = 39;
+            this.txtCorrenteRMSA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label18
             // 
@@ -777,6 +806,7 @@ namespace FonteTrifasicaPID
             this.txtTempAcomodCorrenteC.Name = "txtTempAcomodCorrenteC";
             this.txtTempAcomodCorrenteC.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodCorrenteC.TabIndex = 34;
+            this.txtTempAcomodCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label12
             // 
@@ -794,6 +824,7 @@ namespace FonteTrifasicaPID
             this.txtUnderShootCorrenteC.Name = "txtUnderShootCorrenteC";
             this.txtUnderShootCorrenteC.Size = new System.Drawing.Size(60, 20);
             this.txtUnderShootCorrenteC.TabIndex = 33;
+            this.txtUnderShootCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
             // 
@@ -811,6 +842,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteC.Name = "txtOvershootCorrenteC";
             this.txtOvershootCorrenteC.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootCorrenteC.TabIndex = 32;
+            this.txtOvershootCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTempAcomodCorrenteB
             // 
@@ -819,6 +851,7 @@ namespace FonteTrifasicaPID
             this.txtTempAcomodCorrenteB.Name = "txtTempAcomodCorrenteB";
             this.txtTempAcomodCorrenteB.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodCorrenteB.TabIndex = 31;
+            this.txtTempAcomodCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
@@ -836,6 +869,7 @@ namespace FonteTrifasicaPID
             this.txtUnderShootCorrenteB.Name = "txtUnderShootCorrenteB";
             this.txtUnderShootCorrenteB.Size = new System.Drawing.Size(60, 20);
             this.txtUnderShootCorrenteB.TabIndex = 30;
+            this.txtUnderShootCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootCorrenteA
             // 
@@ -844,6 +878,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteA.Name = "txtOvershootCorrenteA";
             this.txtOvershootCorrenteA.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootCorrenteA.TabIndex = 26;
+            this.txtOvershootCorrenteA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootCorrenteB
             // 
@@ -852,6 +887,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteB.Name = "txtOvershootCorrenteB";
             this.txtOvershootCorrenteB.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootCorrenteB.TabIndex = 29;
+            this.txtOvershootCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUnderShootCorrenteA
             // 
@@ -860,6 +896,7 @@ namespace FonteTrifasicaPID
             this.txtUnderShootCorrenteA.Name = "txtUnderShootCorrenteA";
             this.txtUnderShootCorrenteA.Size = new System.Drawing.Size(60, 20);
             this.txtUnderShootCorrenteA.TabIndex = 27;
+            this.txtUnderShootCorrenteA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTempAcomodCorrenteA
             // 
@@ -868,6 +905,7 @@ namespace FonteTrifasicaPID
             this.txtTempAcomodCorrenteA.Name = "txtTempAcomodCorrenteA";
             this.txtTempAcomodCorrenteA.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodCorrenteA.TabIndex = 28;
+            this.txtTempAcomodCorrenteA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cbxBaudRate
             // 
@@ -951,16 +989,16 @@ namespace FonteTrifasicaPID
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.label27);
-            this.groupBox8.Controls.Add(this.comboBox3);
+            this.groupBox8.Controls.Add(this.cbxFase);
             this.groupBox8.Controls.Add(this.label26);
-            this.groupBox8.Controls.Add(this.textBox2);
+            this.groupBox8.Controls.Add(this.txtCorrenteRMS);
             this.groupBox8.Controls.Add(this.label25);
-            this.groupBox8.Controls.Add(this.textBox1);
+            this.groupBox8.Controls.Add(this.txtTensãoRMS);
             this.groupBox8.Controls.Add(this.button1);
-            this.groupBox8.Controls.Add(this.comboBox1);
+            this.groupBox8.Controls.Add(this.cbxFrequencia);
             this.groupBox8.Controls.Add(this.label23);
             this.groupBox8.Controls.Add(this.label24);
-            this.groupBox8.Controls.Add(this.comboBox2);
+            this.groupBox8.Controls.Add(this.cbxFatorDePotencia);
             this.groupBox8.Location = new System.Drawing.Point(898, 202);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(104, 281);
@@ -976,6 +1014,7 @@ namespace FonteTrifasicaPID
             this.button1.TabIndex = 18;
             this.button1.Text = "Aplicar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label23
             // 
@@ -995,45 +1034,47 @@ namespace FonteTrifasicaPID
             this.label24.TabIndex = 16;
             this.label24.Text = "Fator de Potência";
             // 
-            // comboBox2
+            // cbxFatorDePotencia
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbxFatorDePotencia.FormattingEnabled = true;
+            this.cbxFatorDePotencia.Items.AddRange(new object[] {
             "1,0",
             "0,5L",
             "0,5C",
             "0,8L",
             "0,8C"});
-            this.comboBox2.Location = new System.Drawing.Point(15, 215);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(72, 21);
-            this.comboBox2.TabIndex = 15;
+            this.cbxFatorDePotencia.Location = new System.Drawing.Point(15, 215);
+            this.cbxFatorDePotencia.Name = "cbxFatorDePotencia";
+            this.cbxFatorDePotencia.Size = new System.Drawing.Size(72, 21);
+            this.cbxFatorDePotencia.TabIndex = 15;
             // 
-            // comboBox1
+            // cbxFrequencia
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxFrequencia.FormattingEnabled = true;
+            this.cbxFrequencia.Items.AddRange(new object[] {
             "50",
             "60"});
-            this.comboBox1.Location = new System.Drawing.Point(15, 122);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 21);
-            this.comboBox1.TabIndex = 13;
+            this.cbxFrequencia.Location = new System.Drawing.Point(15, 122);
+            this.cbxFrequencia.Name = "cbxFrequencia";
+            this.cbxFrequencia.Size = new System.Drawing.Size(72, 21);
+            this.cbxFrequencia.TabIndex = 13;
             // 
-            // textBox1
+            // txtTensãoRMS
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 20);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.txtTensãoRMS.Location = new System.Drawing.Point(15, 35);
+            this.txtTensãoRMS.Name = "txtTensãoRMS";
+            this.txtTensãoRMS.Size = new System.Drawing.Size(72, 20);
+            this.txtTensãoRMS.TabIndex = 9;
+            this.txtTensãoRMS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTensãoRMS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox2
+            // txtCorrenteRMS
             // 
-            this.textBox2.Location = new System.Drawing.Point(15, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(72, 20);
-            this.textBox2.TabIndex = 19;
+            this.txtCorrenteRMS.Location = new System.Drawing.Point(15, 79);
+            this.txtCorrenteRMS.Name = "txtCorrenteRMS";
+            this.txtCorrenteRMS.Size = new System.Drawing.Size(72, 20);
+            this.txtCorrenteRMS.TabIndex = 19;
+            this.txtCorrenteRMS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
@@ -1062,16 +1103,16 @@ namespace FonteTrifasicaPID
             this.label27.TabIndex = 24;
             this.label27.Text = "Fase (º)";
             // 
-            // comboBox3
+            // cbxFase
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbxFase.FormattingEnabled = true;
+            this.cbxFase.Items.AddRange(new object[] {
             "0º",
             "120º"});
-            this.comboBox3.Location = new System.Drawing.Point(15, 167);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(72, 21);
-            this.comboBox3.TabIndex = 23;
+            this.cbxFase.Location = new System.Drawing.Point(15, 167);
+            this.cbxFase.Name = "cbxFase";
+            this.cbxFase.Size = new System.Drawing.Size(72, 21);
+            this.cbxFase.TabIndex = 23;
             // 
             // btnIniciarSintetização
             // 
@@ -1222,16 +1263,16 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbxFase;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCorrenteRMS;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTensãoRMS;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxFrequencia;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxFatorDePotencia;
         private System.Windows.Forms.Button btnIniciarSintetização;
         private System.Windows.Forms.Button btnPararSintetização;
         private System.Windows.Forms.GroupBox groupBox9;

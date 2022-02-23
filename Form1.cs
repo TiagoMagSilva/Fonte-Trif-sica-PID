@@ -16,6 +16,7 @@ namespace FonteTrifasicaPID
     {
         String path_SERIAL = System.AppDomain.CurrentDomain.BaseDirectory + "/SERIAL/";
         String path_LOG = System.AppDomain.CurrentDomain.BaseDirectory + "/LOG/";
+        String path_Config = System.AppDomain.CurrentDomain.BaseDirectory + "/CONFIG/";
 
         private SerialPort PortaSerial = new SerialPort();
 
@@ -27,6 +28,7 @@ namespace FonteTrifasicaPID
         private void Form1_Load(object sender, EventArgs e)
         {
             AtualizarPortas();
+            LerInformacoesConfig();
 
             chartTensao.Series[0].Points.AddXY(1, 2);
             chartTensao.Series[1].Points.AddXY(3, 4);
@@ -141,6 +143,87 @@ namespace FonteTrifasicaPID
             }
         }
 
+        void Salvar_Dados_Config()
+        {
+            try
+            {
+                if (File.Exists(path_Config + "CONFIG" + ".txt"))
+                {
+                    File.WriteAllText(path_Config + "CONFIG" + ".txt", String.Empty);
+
+                    using (var tw = new StreamWriter(path_Config + "CONFIG" + ".txt", true))
+                    {
+                        tw.WriteLine(txtKpTensao.Text + ";" + txtKiTensao.Text + ";" + txtKdTensao.Text + ";" +
+                                     txtKpCorrente.Text + ";" + txtKiCorrente.Text + ";" + txtKdCorrente.Text + ";" +
+                                     txtTensãoRMS.Text + ";" + txtCorrenteRMS.Text + ";" + cbxFrequencia.SelectedIndex + ";" +
+                                     cbxFase.SelectedIndex + ";" + cbxFatorDePotencia.SelectedIndex);
+                    }
+                }
+                else
+                {
+                    if (!File.Exists(path_Config + "CONFIG" + ".txt"))
+                    {
+                        File.Create(path_Config + "CONFIG" + ".txt").Dispose();
+
+                        File.WriteAllText(path_Config + "CONFIG" + ".txt", String.Empty);
+
+                        using (TextWriter tw = new StreamWriter(path_Config + "CONFIG" + ".txt"))
+                        {
+                            tw.WriteLine(txtKpTensao.Text + ";" + txtKiTensao.Text + ";" + txtKdTensao.Text + ";" +
+                                     txtKpCorrente.Text + ";" + txtKiCorrente.Text + ";" + txtKdCorrente.Text + ";" +
+                                     txtTensãoRMS.Text + ";" + txtCorrenteRMS.Text + ";" + cbxFrequencia.SelectedIndex + ";" +
+                                     cbxFase.SelectedIndex + ";" + cbxFatorDePotencia.SelectedIndex);
+                        }
+                    }
+                }
+                LOG_TXT("Salvando informações de configuração (PID):  " + txtKpTensao.Text + ";" + txtKiTensao.Text + ";" + txtKdTensao.Text + ";" +
+                                                                          txtKpCorrente.Text + ";" + txtKiCorrente.Text + ";" + txtKdCorrente.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível criar o arquivo de configuração!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        void LerInformacoesConfig()
+        {
+            if (File.Exists(path_Config + "CONFIG" + ".txt"))
+            {
+                if (File.ReadLines(path_Config + "CONFIG" + ".txt").Count() > 0)
+                {
+                    string[] LinhasDoTXT;
+                    LinhasDoTXT = File.ReadAllLines(path_Config + "CONFIG" + ".txt");
+
+                    foreach (string line in LinhasDoTXT)
+                    {
+                        try
+                        {
+                            string[] partes = line.Split(';');
+                            txtKpTensao.Text = partes[0];
+                            txtKiTensao.Text = partes[1];
+                            txtKdTensao.Text = partes[2];
+                            txtKpCorrente.Text = partes[3];
+                            txtKiCorrente.Text = partes[4];
+                            txtKdCorrente.Text = partes[5];
+                            txtTensãoRMS.Text = partes[6];
+                            txtCorrenteRMS.Text = partes[7];
+                            cbxFrequencia.SelectedIndex = Int16.Parse(partes[8]);
+                            cbxFase.SelectedIndex = Int16.Parse(partes[9]);
+                            cbxFatorDePotencia.SelectedIndex = Int16.Parse(partes[10]);
+
+                            LOG_TXT("Arquivo de configuração carregado com sucesso!");
+                        }
+                        catch (Exception ex)
+                        {
+                            LOG_TXT("Erro ao carregar arquivo de config: " + ex.Message);
+                            MessageBox.Show("Erro ao carregar arquivo de config\r\n\r\n" + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        
+                    }
+                }
+            }
+        }
+
         private void btnConectarSerial_Click(object sender, EventArgs e)
         {
             if(!PortaSerial.IsOpen)
@@ -231,6 +314,135 @@ namespace FonteTrifasicaPID
             {
                 e.Handled = true;
             }
+        }
+
+        //Esta função recebe a trama de entrada COM a última vírgula
+        //e retorna apenas o checksum
+        //Para usar:
+        /*
+        String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+        PORTASERIAL.Write(TramaComChecksum + "\0");
+        */
+        string Calcula_checksum(string vetor)
+        {
+            string resposta = string.Empty;
+            string checksum = string.Empty;
+            //string CKremovido = string.Empty;
+            //string[] pt = vetor.Split(',');        
+
+            int DV = 0;
+
+            for (int i = 0; i < vetor.Length; i++)
+            {
+                DV ^= vetor[i];
+            }
+
+            string hexValue = DV.ToString("x");
+            resposta = hexValue;
+
+            if (hexValue.Length == 1)
+                resposta = "0" + hexValue[0];
+            if (hexValue.Length == 3)
+                resposta = "0" + hexValue[2];
+            if (hexValue.Length == 4)
+                resposta = (hexValue[2] + hexValue[4]).ToString();
+
+            return resposta;
+        }
+
+        private void btnAplicarPIDTensao_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação das constatnes KP, KI e KD
+            //Identificador, Kp, Ki, Kd, CS
+            Salvar_Dados_Config();
+        }
+
+        private void txtKpTensao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKiTensao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKdTensao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKpCorrente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKiCorrente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKdCorrente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnAplicarPIDCorrente_Click(object sender, EventArgs e)
+        {
+            Salvar_Dados_Config();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Salvar_Dados_Config();
         }
     }
 }
