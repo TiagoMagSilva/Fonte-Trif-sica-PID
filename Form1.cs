@@ -279,9 +279,18 @@ namespace FonteTrifasicaPID
                 switch(int.Parse(partes[0]))//Partes 0 contém o identificador!!
                 {
                     case (int)Identificador.ConstantesPIDTensão:
-                        txtKpTensao.Text = partes[1];
-                        txtKiTensao.Text = partes[2];
-                        txtKdTensao.Text = partes[3];
+                        txtKpTensao.Invoke(new Action(() =>
+                        {
+                            txtKpTensao.Text = partes[1];
+                        }));
+                        txtKiTensao.Invoke(new Action(() =>
+                        {
+                            txtKiTensao.Text = partes[2];
+                        }));
+                        txtKdTensao.Invoke(new Action(() =>
+                        {
+                            txtKdTensao.Text = partes[3];
+                        }));    
                         break;
                     case (int)Identificador.ConstantesPIDCorrente:
                         txtKpCorrente.Text = partes[1];
@@ -314,8 +323,8 @@ namespace FonteTrifasicaPID
 
             if (IndexVirgulaCS != -1)
             {
-                TramaSemCS = DadoRecebido.Substring(0, IndexVirgulaCS);
-                CS = DadoRecebido.Substring(IndexVirgulaCS + 1);
+                TramaSemCS = DadoRecebido.Substring(0, IndexVirgulaCS) + ",";
+                CS = DadoRecebido.Substring(IndexVirgulaCS + 1, 2);
 
                 Console.WriteLine("Trama sem CS: " + TramaSemCS);
                 Console.WriteLine("CS: " + CS);
@@ -324,8 +333,13 @@ namespace FonteTrifasicaPID
                 LOG_TXT("CS da Trama recebida: " + CS);
 
                 if (Calcula_checksum(TramaSemCS) == CS)
-                {
+                {                    
                     IdentificarPacote(TramaSemCS);
+                }
+                else
+                {
+                    LOG_TXT("Checsum da trama recebida estava incorreto!");
+                    LOG_TXT("Calc: |" + Calcula_checksum(TramaSemCS) + "| " + "Recebido: |" + CS + "|");
                 }
             }
             else
@@ -354,10 +368,13 @@ namespace FonteTrifasicaPID
 
                             PortaSerial.DataReceived += new SerialDataReceivedEventHandler(PortaSerial_DadoRecebido);
 
+                            LOG_TXT("Porta serial aberta com sucesso!");
+
                             //MessageBox.Show("Tudo certo com a porta serial selecionada!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
                         catch (Exception ex)
                         {
+                            LOG_TXT("Erro ao abrir porta serial!");
                             MessageBox.Show("Erro ao abrir porta serial!\n" + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
@@ -462,6 +479,7 @@ namespace FonteTrifasicaPID
             if (hexValue.Length == 4)
                 resposta = (hexValue[2] + hexValue[4]).ToString();
 
+            Console.WriteLine("calculo cs: " + resposta);
             return resposta;
         }
 
