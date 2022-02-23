@@ -39,3 +39,26 @@
 22/02/2022 22:40:55  -  Salvando informações da porta serial - Porta:  COM2 Velocidade: 115200
 22/02/2022 22:41:00  -  Salvando informações de configuração (PID):  2.4;1.5;3.6;5.7;2.7;9.9
 22/02/2022 22:41:00  -  Envio de comando Parametros Sint.: 2,100,5,1,1,0,06
+22/02/2022 22:42:14  -  Arquivo de configuração carregado com sucesso!
+22/02/2022 22:42:53  -  Arquivo de configuração carregado com sucesso!
+22/02/2022 22:42:55  -  Salvando informações da porta serial - Porta:  COM2 Velocidade: 115200
+22/02/2022 22:42:58  -  Salvando informações de configuração (PID):  2.4;1.5;3.6;5.7;2.7;9.9
+22/02/2022 22:42:58  -  Envio de comando Parametros Sint.: 2,100,5,1,1,0,06
+22/02/2022 22:42:59  -  Salvando informações de configuração (PID):  2.4;1.5;3.6;5.7;2.7;9.9
+22/02/2022 22:42:59  -  Envio de comando PID_C: 1,5.7,2.7,9.9,18
+22/02/2022 22:43:00  -  Salvando informações de configuração (PID):  2.4;1.5;3.6;5.7;2.7;9.9
+22/02/2022 22:43:00  -  Envio de comando PID_V: 0,2.4,1.5,3.6,19
+22/02/2022 22:46:08  -  Arquivo de configuração carregado com sucesso!
+22/02/2022 22:46:10  -  Salvando informações da porta serial - Porta:  COM2 Velocidade: 115200
+22/02/2022 22:46:12  -  Envio de comando Iniciar Sint.: 4,18
+22/02/2022 22:46:19  -  Envio de comando Iniciar Sint.: 4,18
+22/02/2022 22:46:19  -  Envio de comando Iniciar Sint.: 4,18
+22/02/2022 22:46:20  -  Envio de comando Iniciar Sint.: 4,18
+22/02/2022 22:46:20  -  Envio de comando Iniciar Sint.: 4,18
+22/02/2022 22:46:21  -  Envio de comando Iniciar Sint.: 4,18
+22/02/2022 22:46:22  -  Envio de comando Iniciar Sint.: 4,18
+22/02/2022 22:46:23  -  Envio de comando Parar Sint.: 3,1f
+22/02/2022 22:46:24  -  Envio de comando Parar Sint.: 3,1f
+22/02/2022 22:46:24  -  Envio de comando Parar Sint.: 3,1f
+22/02/2022 22:46:24  -  Envio de comando Parar Sint.: 3,1f
+22/02/2022 22:46:24  -  Envio de comando Parar Sint.: 3,1f

@@ -1123,6 +1123,7 @@ namespace FonteTrifasicaPID
             this.btnIniciarSintetização.TabIndex = 25;
             this.btnIniciarSintetização.Text = "Iniciar";
             this.btnIniciarSintetização.UseVisualStyleBackColor = false;
+            this.btnIniciarSintetização.Click += new System.EventHandler(this.btnIniciarSintetização_Click);
             // 
             // btnPararSintetização
             // 
@@ -1133,6 +1134,7 @@ namespace FonteTrifasicaPID
             this.btnPararSintetização.TabIndex = 26;
             this.btnPararSintetização.Text = "Parar";
             this.btnPararSintetização.UseVisualStyleBackColor = false;
+            this.btnPararSintetização.Click += new System.EventHandler(this.btnPararSintetização_Click);
             // 
             // groupBox9
             // 

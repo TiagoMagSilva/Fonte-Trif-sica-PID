@@ -22,7 +22,9 @@ namespace FonteTrifasicaPID
         {
             ConstantesPIDTensão,
             ConstantesPIDCorrente,
-            ParâmetrosSintetização
+            ParâmetrosSintetização,
+            Parar,
+            Iniciar
         };
 
         private SerialPort PortaSerial = new SerialPort();
@@ -35,6 +37,7 @@ namespace FonteTrifasicaPID
         private void Form1_Load(object sender, EventArgs e)
         {
             AtualizarPortas();
+            LerInformacoesSerialSalva();
             LerInformacoesConfig();
 
             chartTensao.Series[0].Points.AddXY(1, 2);
@@ -504,6 +507,38 @@ namespace FonteTrifasicaPID
             else
             {
                 LOG_TXT("Comando de Parâmetros de sintetização não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnPararSintetização_Click(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.Parar + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Parar Sint.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando para parar sintetização não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnIniciarSintetização_Click(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.Iniciar + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Iniciar Sint.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando para iniciar sintetização não enviado devido porta serial fechada!");
             }
         }
     }
