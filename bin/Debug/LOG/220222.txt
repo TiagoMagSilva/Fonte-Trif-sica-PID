@@ -34,3 +34,8 @@
 22/02/2022 22:31:24  -  Salvando informações da porta serial - Porta:  COM2 Velocidade: 115200
 22/02/2022 22:31:26  -  Salvando informações de configuração (PID):  2.4;1.5;3.6;5.7;2.7;9.9
 22/02/2022 22:31:26  -  Envio de comando PID_V: 0,2.4,1.5,3.6,19
+22/02/2022 22:39:03  -  Arquivo de configuração carregado com sucesso!
+22/02/2022 22:40:52  -  Arquivo de configuração carregado com sucesso!
+22/02/2022 22:40:55  -  Salvando informações da porta serial - Porta:  COM2 Velocidade: 115200
+22/02/2022 22:41:00  -  Salvando informações de configuração (PID):  2.4;1.5;3.6;5.7;2.7;9.9
+22/02/2022 22:41:00  -  Envio de comando Parametros Sint.: 2,100,5,1,1,0,06

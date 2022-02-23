@@ -118,17 +118,17 @@ namespace FonteTrifasicaPID
             this.btnConectarSerial = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.cbxFase = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtCorrenteRMS = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtTensãoRMS = new System.Windows.Forms.TextBox();
+            this.btnAplicarParametros = new System.Windows.Forms.Button();
+            this.cbxFrequencia = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.cbxFatorDePotencia = new System.Windows.Forms.ComboBox();
-            this.cbxFrequencia = new System.Windows.Forms.ComboBox();
-            this.txtTensãoRMS = new System.Windows.Forms.TextBox();
-            this.txtCorrenteRMS = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.cbxFase = new System.Windows.Forms.ComboBox();
             this.btnIniciarSintetização = new System.Windows.Forms.Button();
             this.btnPararSintetização = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -994,7 +994,7 @@ namespace FonteTrifasicaPID
             this.groupBox8.Controls.Add(this.txtCorrenteRMS);
             this.groupBox8.Controls.Add(this.label25);
             this.groupBox8.Controls.Add(this.txtTensãoRMS);
-            this.groupBox8.Controls.Add(this.button1);
+            this.groupBox8.Controls.Add(this.btnAplicarParametros);
             this.groupBox8.Controls.Add(this.cbxFrequencia);
             this.groupBox8.Controls.Add(this.label23);
             this.groupBox8.Controls.Add(this.label24);
@@ -1006,15 +1006,81 @@ namespace FonteTrifasicaPID
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Parâmetros";
             // 
-            // button1
+            // label27
             // 
-            this.button1.Location = new System.Drawing.Point(12, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Aplicar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(12, 151);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(43, 13);
+            this.label27.TabIndex = 24;
+            this.label27.Text = "Fase (º)";
+            // 
+            // cbxFase
+            // 
+            this.cbxFase.FormattingEnabled = true;
+            this.cbxFase.Items.AddRange(new object[] {
+            "0º",
+            "120º"});
+            this.cbxFase.Location = new System.Drawing.Point(15, 167);
+            this.cbxFase.Name = "cbxFase";
+            this.cbxFase.Size = new System.Drawing.Size(72, 21);
+            this.cbxFase.TabIndex = 23;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(12, 106);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(84, 13);
+            this.label26.TabIndex = 22;
+            this.label26.Text = "Frequência (HZ)";
+            // 
+            // txtCorrenteRMS
+            // 
+            this.txtCorrenteRMS.Location = new System.Drawing.Point(15, 79);
+            this.txtCorrenteRMS.Name = "txtCorrenteRMS";
+            this.txtCorrenteRMS.Size = new System.Drawing.Size(72, 20);
+            this.txtCorrenteRMS.TabIndex = 19;
+            this.txtCorrenteRMS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(12, 63);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(63, 13);
+            this.label25.TabIndex = 20;
+            this.label25.Text = "Corrente (A)";
+            // 
+            // txtTensãoRMS
+            // 
+            this.txtTensãoRMS.Location = new System.Drawing.Point(15, 35);
+            this.txtTensãoRMS.Name = "txtTensãoRMS";
+            this.txtTensãoRMS.Size = new System.Drawing.Size(72, 20);
+            this.txtTensãoRMS.TabIndex = 9;
+            this.txtTensãoRMS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTensãoRMS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // btnAplicarParametros
+            // 
+            this.btnAplicarParametros.Location = new System.Drawing.Point(12, 244);
+            this.btnAplicarParametros.Name = "btnAplicarParametros";
+            this.btnAplicarParametros.Size = new System.Drawing.Size(84, 23);
+            this.btnAplicarParametros.TabIndex = 18;
+            this.btnAplicarParametros.Text = "Aplicar";
+            this.btnAplicarParametros.UseVisualStyleBackColor = true;
+            this.btnAplicarParametros.Click += new System.EventHandler(this.btnAplicarParametros_Click);
+            // 
+            // cbxFrequencia
+            // 
+            this.cbxFrequencia.FormattingEnabled = true;
+            this.cbxFrequencia.Items.AddRange(new object[] {
+            "50",
+            "60"});
+            this.cbxFrequencia.Location = new System.Drawing.Point(15, 122);
+            this.cbxFrequencia.Name = "cbxFrequencia";
+            this.cbxFrequencia.Size = new System.Drawing.Size(72, 21);
+            this.cbxFrequencia.TabIndex = 13;
             // 
             // label23
             // 
@@ -1047,72 +1113,6 @@ namespace FonteTrifasicaPID
             this.cbxFatorDePotencia.Name = "cbxFatorDePotencia";
             this.cbxFatorDePotencia.Size = new System.Drawing.Size(72, 21);
             this.cbxFatorDePotencia.TabIndex = 15;
-            // 
-            // cbxFrequencia
-            // 
-            this.cbxFrequencia.FormattingEnabled = true;
-            this.cbxFrequencia.Items.AddRange(new object[] {
-            "50",
-            "60"});
-            this.cbxFrequencia.Location = new System.Drawing.Point(15, 122);
-            this.cbxFrequencia.Name = "cbxFrequencia";
-            this.cbxFrequencia.Size = new System.Drawing.Size(72, 21);
-            this.cbxFrequencia.TabIndex = 13;
-            // 
-            // txtTensãoRMS
-            // 
-            this.txtTensãoRMS.Location = new System.Drawing.Point(15, 35);
-            this.txtTensãoRMS.Name = "txtTensãoRMS";
-            this.txtTensãoRMS.Size = new System.Drawing.Size(72, 20);
-            this.txtTensãoRMS.TabIndex = 9;
-            this.txtTensãoRMS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtTensãoRMS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
-            // 
-            // txtCorrenteRMS
-            // 
-            this.txtCorrenteRMS.Location = new System.Drawing.Point(15, 79);
-            this.txtCorrenteRMS.Name = "txtCorrenteRMS";
-            this.txtCorrenteRMS.Size = new System.Drawing.Size(72, 20);
-            this.txtCorrenteRMS.TabIndex = 19;
-            this.txtCorrenteRMS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(12, 63);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(63, 13);
-            this.label25.TabIndex = 20;
-            this.label25.Text = "Corrente (A)";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(12, 106);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(84, 13);
-            this.label26.TabIndex = 22;
-            this.label26.Text = "Frequência (HZ)";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(12, 151);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(43, 13);
-            this.label27.TabIndex = 24;
-            this.label27.Text = "Fase (º)";
-            // 
-            // cbxFase
-            // 
-            this.cbxFase.FormattingEnabled = true;
-            this.cbxFase.Items.AddRange(new object[] {
-            "0º",
-            "120º"});
-            this.cbxFase.Location = new System.Drawing.Point(15, 167);
-            this.cbxFase.Name = "cbxFase";
-            this.cbxFase.Size = new System.Drawing.Size(72, 21);
-            this.cbxFase.TabIndex = 23;
             // 
             // btnIniciarSintetização
             // 
@@ -1268,7 +1268,7 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.TextBox txtCorrenteRMS;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtTensãoRMS;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAplicarParametros;
         private System.Windows.Forms.ComboBox cbxFrequencia;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;

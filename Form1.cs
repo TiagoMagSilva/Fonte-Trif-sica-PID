@@ -22,7 +22,7 @@ namespace FonteTrifasicaPID
         {
             ConstantesPIDTensão,
             ConstantesPIDCorrente,
-            ParâmetrosSintetixação
+            ParâmetrosSintetização
         };
 
         private SerialPort PortaSerial = new SerialPort();
@@ -377,7 +377,7 @@ namespace FonteTrifasicaPID
             }
             else
             {
-                LOG_TXT("Comando de cnfiguração PID para tensão não enviado devido porta serial fechada!");
+                LOG_TXT("Comando de configuração PID para tensão não enviado devido porta serial fechada!");
             }
         }
 
@@ -478,13 +478,33 @@ namespace FonteTrifasicaPID
             }
             else
             {
-                LOG_TXT("Comando de cnfiguração PID para corrente não enviado devido porta serial fechada!");
+                LOG_TXT("Comando de configuração PID para corrente não enviado devido porta serial fechada!");
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAplicarParametros_Click(object sender, EventArgs e)
         {
+            //Trama de aplicação das constatnes KP, KI e KD
+            //Identificador, Kp, Ki, Kd, CS
             Salvar_Dados_Config();
+
+            string TRAMA_ENVIO = (int)Identificador.ParâmetrosSintetização + "," +
+                                 txtTensãoRMS.Text + "," +
+                                 txtCorrenteRMS.Text + "," +
+                                 cbxFrequencia.SelectedIndex + "," + // 0 - 50Hz; 1 - 60Hz
+                                 cbxFase.SelectedIndex + "," + // 0 - 0º; 1 - 120º
+                                 cbxFatorDePotencia.SelectedIndex + ","; // 0 - 1.0; 1 - 0,5L; 2 - 0,5C; 3 - 0,8L; 4 - 0,8C
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Parametros Sint.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de Parâmetros de sintetização não enviado devido porta serial fechada!");
+            }
         }
     }
 }
