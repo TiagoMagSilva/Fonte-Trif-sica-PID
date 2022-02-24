@@ -271,6 +271,8 @@ namespace FonteTrifasicaPID
             /* Pacote das constantes PID_V: Identificador.ConstantesPIDTensão, kp, ki, kd
              * Pacote das constantes PID_I: Identificador.ConstantesPIDCorrente, kp, ki, kd
              * Pacote dos parametros: Identificador.ParâmetrosSintetização, Tensão, Corrente, Index frequência, Index Fase, Index Fator de Potência
+             * Pacote tensão e corrente RMS: Identificador.ID_RX_PID_Tensão, VA, VB, VC, CS
+             *                               Identificador.ID_RX_PID_Corrente, IA, IB, IC, CS                                                                    S                 
              */
             string[] partes = Pacote.Split(',');
 
@@ -304,6 +306,32 @@ namespace FonteTrifasicaPID
                         cbxFase.SelectedIndex = int.Parse(partes[4]);
                         cbxFatorDePotencia.SelectedIndex = int.Parse(partes[5]);
                         break;
+                    case (int)Identificador.ID_RX_PID_Tensão:
+                        txtTensãoRMSA.Invoke(new Action(() =>
+                        {
+                            txtTensãoRMSA.Text = partes[1];
+                        }));
+                        txtTensãoRMSB.Invoke(new Action(() =>
+                        {
+                            txtTensãoRMSB.Text = partes[2];
+                        }));
+                        txtTensãoRMSC.Invoke(new Action(() =>
+                        {
+                            txtTensãoRMSC.Text = partes[3];
+                        })); break;
+                    case (int)Identificador.ID_RX_PID_Corrente:
+                        txtCorrenteRMSA.Invoke(new Action(() =>
+                        {
+                            txtCorrenteRMSA.Text = partes[1];
+                        }));
+                        txtCorrenteRMSB.Invoke(new Action(() =>
+                        {
+                            txtCorrenteRMSB.Text = partes[2];
+                        }));
+                        txtCorrenteRMSC.Invoke(new Action(() =>
+                        {
+                            txtCorrenteRMSC.Text = partes[3];
+                        })); break;
                     default:
 
                         break;
@@ -610,8 +638,8 @@ namespace FonteTrifasicaPID
 
         private void btnAplicarParametros_Click(object sender, EventArgs e)
         {
-            //Trama de aplicação das constatnes KP, KI e KD
-            //Identificador, Kp, Ki, Kd, CS
+            //Trama de aplicação ddos parâmetros de sintetização
+            //Identificador, tensão, corrente, frequencia, fase, fator de potencia
             Salvar_Dados_Config();
 
             string TRAMA_ENVIO = (int)Identificador.ParâmetrosSintetização + "," +
@@ -642,6 +670,12 @@ namespace FonteTrifasicaPID
                 String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando Parar Sint.: " + TramaComChecksum);
+                txtTensãoRMSA.Text = "";
+                txtTensãoRMSB.Text = "";
+                txtTensãoRMSC.Text = "";
+                txtCorrenteRMSA.Text = "";
+                txtCorrenteRMSB.Text = "";
+                txtCorrenteRMSC.Text = "";
             }
             else
             {

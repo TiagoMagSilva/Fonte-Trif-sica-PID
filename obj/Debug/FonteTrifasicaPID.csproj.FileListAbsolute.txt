@@ -8,3 +8,13 @@ C:\GIT\FonteTrifasicaPID\FonteTrifasicaPID\obj\Debug\FonteTrifasicaPID.csproj.Ge
 C:\GIT\FonteTrifasicaPID\FonteTrifasicaPID\obj\Debug\FonteTrifasicaPID.csproj.CoreCompileInputs.cache
 C:\GIT\FonteTrifasicaPID\FonteTrifasicaPID\obj\Debug\FonteTrifasicaPID.exe
 C:\GIT\FonteTrifasicaPID\FonteTrifasicaPID\obj\Debug\FonteTrifasicaPID.pdb
+C:\GIT\Fonte-Trif-sica-PID\bin\Debug\FonteTrifasicaPID.exe.config
+C:\GIT\Fonte-Trif-sica-PID\bin\Debug\FonteTrifasicaPID.exe
+C:\GIT\Fonte-Trif-sica-PID\bin\Debug\FonteTrifasicaPID.pdb
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.csproj.AssemblyReference.cache
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.Form1.resources
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.Properties.Resources.resources
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.csproj.GenerateResource.cache
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.csproj.CoreCompileInputs.cache
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.exe
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.pdb

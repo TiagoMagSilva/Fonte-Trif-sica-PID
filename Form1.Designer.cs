@@ -1106,10 +1106,12 @@ namespace FonteTrifasicaPID
             this.cbxFatorDePotencia.FormattingEnabled = true;
             this.cbxFatorDePotencia.Items.AddRange(new object[] {
             "1,0",
-            "0,5L",
-            "0,5C",
-            "0,8L",
-            "0,8C"});
+            "0.8L",
+            "0.8C",
+            "0.7L",
+            "0.7C",
+            "0.5L",
+            "0.5C"});
             this.cbxFatorDePotencia.Location = new System.Drawing.Point(15, 215);
             this.cbxFatorDePotencia.Name = "cbxFatorDePotencia";
             this.cbxFatorDePotencia.Size = new System.Drawing.Size(72, 21);
