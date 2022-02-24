@@ -597,11 +597,11 @@ namespace FonteTrifasicaPID
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(17, 82);
+            this.label11.Location = new System.Drawing.Point(6, 84);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 13);
+            this.label11.Size = new System.Drawing.Size(73, 13);
             this.label11.TabIndex = 13;
-            this.label11.Text = "Temp. Acom.";
+            this.label11.Text = "Temp. Subida";
             // 
             // txtTempAcomodTensaoA
             // 
@@ -646,6 +646,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootTensaoA.Name = "txtOvershootTensaoA";
             this.txtOvershootTensaoA.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootTensaoA.TabIndex = 4;
+            this.txtOvershootTensaoA.Text = "0";
             this.txtOvershootTensaoA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox4

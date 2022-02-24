@@ -45,6 +45,10 @@ namespace FonteTrifasicaPID
         String path_LOG = System.AppDomain.CurrentDomain.BaseDirectory + "/LOG/";
         String path_Config = System.AppDomain.CurrentDomain.BaseDirectory + "/CONFIG/";
 
+        UInt16 PassoGraficoVR = 0;
+
+        Boolean TRiseVa = false;
+
         enum Identificador
         {
             ConstantesPIDTensão,
@@ -72,13 +76,14 @@ namespace FonteTrifasicaPID
             LerInformacoesSerialSalva();
             LerInformacoesConfig();
 
+            /*
             chartTensao.Series[0].Points.AddXY(1, 2);
             chartTensao.Series[1].Points.AddXY(3, 4);
             chartTensao.Series[2].Points.AddXY(5, 6);
 
             chartTensao.Series[0].Points.AddXY(4, 2);
             chartTensao.Series[1].Points.AddXY(3, 5);
-            chartTensao.Series[2].Points.AddXY(6, 7);
+            chartTensao.Series[2].Points.AddXY(6, 7); */
         }
 
         void AtualizarPortas()
@@ -309,8 +314,31 @@ namespace FonteTrifasicaPID
                     case (int)Identificador.ID_RX_PID_Tensão:
                         txtTensãoRMSA.Invoke(new Action(() =>
                         {
-                            txtTensãoRMSA.Text = partes[1];
+                            txtTensãoRMSA.Text = partes[1];                            
                         }));
+                        chartTensao.Invoke(new Action(() =>
+                        {                            
+                            chartTensao.Series[0].Points.AddXY(PassoGraficoVR, double.Parse(partes[1])/100);                            
+                            PassoGraficoVR++;
+                        }));
+
+                        txtTempAcomodTensaoA.Invoke(new Action(() =>
+                        {
+                            if(double.Parse(partes[1]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVa)
+                            {
+                                txtTempAcomodTensaoA.Text = (PassoGraficoVR * 0.1).ToString() + "s";
+                                TRiseVa = true;
+                            }
+                        }));
+
+                        txtOvershootTensaoA.Invoke(new Action(() => 
+                        {
+                            if(double.Parse(partes[1]) / 100 > double.Parse(txtOvershootTensaoA.Text))
+                            {
+                                txtOvershootTensaoA.Text = (double.Parse(partes[1]) / 100).ToString();
+                            }
+                        }));
+
                         txtTensãoRMSB.Invoke(new Action(() =>
                         {
                             txtTensãoRMSB.Text = partes[2];
@@ -352,10 +380,7 @@ namespace FonteTrifasicaPID
             if (IndexVirgulaCS != -1)
             {
                 TramaSemCS = DadoRecebido.Substring(0, IndexVirgulaCS) + ",";
-                CS = DadoRecebido.Substring(IndexVirgulaCS + 1, 2);
-
-                Console.WriteLine("Trama sem CS: " + TramaSemCS);
-                Console.WriteLine("CS: " + CS);
+                CS = DadoRecebido.Substring(IndexVirgulaCS + 1, 2);                
 
                 LOG_TXT("Trama Recebida sem CS: " + TramaSemCS);
                 LOG_TXT("CS da Trama recebida: " + CS);
@@ -506,8 +531,7 @@ namespace FonteTrifasicaPID
                 resposta = "0" + hexValue[2];
             if (hexValue.Length == 4)
                 resposta = (hexValue[2] + hexValue[4]).ToString();
-
-            Console.WriteLine("calculo cs: " + resposta);
+            
             return resposta;
         }
 
@@ -665,17 +689,13 @@ namespace FonteTrifasicaPID
         {
             string TRAMA_ENVIO = (int)Identificador.Parar + ",";
 
+            TRiseVa = false;
+
             if (PortaSerial.IsOpen)
             {
                 String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando Parar Sint.: " + TramaComChecksum);
-                txtTensãoRMSA.Text = "";
-                txtTensãoRMSB.Text = "";
-                txtTensãoRMSC.Text = "";
-                txtCorrenteRMSA.Text = "";
-                txtCorrenteRMSB.Text = "";
-                txtCorrenteRMSC.Text = "";
+                LOG_TXT("Envio de comando Parar Sint.: " + TramaComChecksum);                
             }
             else
             {
@@ -701,14 +721,14 @@ namespace FonteTrifasicaPID
 
         private void btnLimparGraficoTensao_Click(object sender, EventArgs e)
         {
-            string s = "My. name. is Bond._James Bond!";
-            int idx = s.LastIndexOf('.');
+            PassoGraficoVR = 0;
+            chartTensao.Series[0].Points.Clear();
+            chartTensao.Series[1].Points.Clear();
+            chartTensao.Series[2].Points.Clear();
 
-            if (idx != -1)
-            {
-                Console.WriteLine(s.Substring(0, idx)); // "My. name. is Bond"
-                Console.WriteLine(s.Substring(idx + 1)); // "_James Bond!"
-            }
+            TRiseVa = false;
+            txtTempAcomodTensaoA.Text = "";
+            txtOvershootTensaoA.Text = "0";
         }
     }
 }
