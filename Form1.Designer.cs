@@ -43,7 +43,7 @@ namespace FonteTrifasicaPID
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chartTensao = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartCorrente = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKpTensao = new System.Windows.Forms.TextBox();
             this.txtKiTensao = new System.Windows.Forms.TextBox();
@@ -93,11 +93,11 @@ namespace FonteTrifasicaPID
             this.txtCorrenteRMSB = new System.Windows.Forms.TextBox();
             this.txtCorrenteRMSA = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.cbxGraficoIC = new System.Windows.Forms.CheckBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.cbxGraficoIB = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.cbxGraficoIA = new System.Windows.Forms.CheckBox();
             this.txtTempAcomodCorrenteC = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtUnderShootCorrenteC = new System.Windows.Forms.TextBox();
@@ -133,7 +133,7 @@ namespace FonteTrifasicaPID
             this.btnPararSintetização = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -189,43 +189,49 @@ namespace FonteTrifasicaPID
             title1.Text = "Tensão";
             this.chartTensao.Titles.Add(title1);
             // 
-            // chart1
+            // chartCorrente
             // 
             chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            this.chartCorrente.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(6, 19);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
+            this.chartCorrente.Legends.Add(legend2);
+            this.chartCorrente.Location = new System.Drawing.Point(6, 19);
+            this.chartCorrente.Name = "chartCorrente";
+            this.chartCorrente.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
+            series4.BorderWidth = 2;
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Color = System.Drawing.Color.Red;
             series4.Legend = "Legend1";
             series4.LegendText = "Corrente A";
             series4.MarkerColor = System.Drawing.Color.Red;
             series4.Name = "CorrenteA";
+            series5.BorderWidth = 2;
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Color = System.Drawing.Color.Yellow;
             series5.Legend = "Legend1";
             series5.LegendText = "Corrente B";
             series5.MarkerColor = System.Drawing.Color.Yellow;
             series5.Name = "CorrenteB";
+            series6.BorderWidth = 2;
             series6.ChartArea = "ChartArea1";
             series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Color = System.Drawing.Color.Blue;
             series6.Legend = "Legend1";
             series6.LegendText = "Corrente C";
             series6.MarkerColor = System.Drawing.Color.Blue;
             series6.Name = "CorrenteC";
-            this.chart1.Series.Add(series4);
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(565, 302);
-            this.chart1.TabIndex = 1;
-            this.chart1.Text = "Tensão";
+            this.chartCorrente.Series.Add(series4);
+            this.chartCorrente.Series.Add(series5);
+            this.chartCorrente.Series.Add(series6);
+            this.chartCorrente.Size = new System.Drawing.Size(565, 302);
+            this.chartCorrente.TabIndex = 1;
+            this.chartCorrente.Text = "Tensão";
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             title2.Name = "Title1";
             title2.Text = "Corrente";
-            this.chart1.Titles.Add(title2);
+            this.chartCorrente.Titles.Add(title2);
             // 
             // label1
             // 
@@ -480,6 +486,8 @@ namespace FonteTrifasicaPID
             // cbxGraficoVC
             // 
             this.cbxGraficoVC.AutoSize = true;
+            this.cbxGraficoVC.Checked = true;
+            this.cbxGraficoVC.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVC.Location = new System.Drawing.Point(162, 173);
             this.cbxGraficoVC.Name = "cbxGraficoVC";
             this.cbxGraficoVC.Size = new System.Drawing.Size(72, 17);
@@ -490,6 +498,8 @@ namespace FonteTrifasicaPID
             // cbxGraficoVB
             // 
             this.cbxGraficoVB.AutoSize = true;
+            this.cbxGraficoVB.Checked = true;
+            this.cbxGraficoVB.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVB.Location = new System.Drawing.Point(84, 173);
             this.cbxGraficoVB.Name = "cbxGraficoVB";
             this.cbxGraficoVB.Size = new System.Drawing.Size(72, 17);
@@ -500,6 +510,8 @@ namespace FonteTrifasicaPID
             // cbxGraficoVA
             // 
             this.cbxGraficoVA.AutoSize = true;
+            this.cbxGraficoVA.Checked = true;
+            this.cbxGraficoVA.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVA.Location = new System.Drawing.Point(6, 173);
             this.cbxGraficoVA.Name = "cbxGraficoVA";
             this.cbxGraficoVA.Size = new System.Drawing.Size(72, 17);
@@ -656,7 +668,7 @@ namespace FonteTrifasicaPID
             this.groupBox4.Controls.Add(this.btnLimparGraficoCorrente);
             this.groupBox4.Controls.Add(this.groupBox7);
             this.groupBox4.Controls.Add(this.groupBox2);
-            this.groupBox4.Controls.Add(this.chart1);
+            this.groupBox4.Controls.Add(this.chartCorrente);
             this.groupBox4.Location = new System.Drawing.Point(12, 350);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(880, 329);
@@ -672,6 +684,7 @@ namespace FonteTrifasicaPID
             this.btnLimparGraficoCorrente.TabIndex = 12;
             this.btnLimparGraficoCorrente.Text = "Limpar Gráfico";
             this.btnLimparGraficoCorrente.UseVisualStyleBackColor = true;
+            this.btnLimparGraficoCorrente.Click += new System.EventHandler(this.btnLimparGraficoCorrente_Click);
             // 
             // groupBox7
             // 
@@ -680,11 +693,11 @@ namespace FonteTrifasicaPID
             this.groupBox7.Controls.Add(this.txtCorrenteRMSB);
             this.groupBox7.Controls.Add(this.txtCorrenteRMSA);
             this.groupBox7.Controls.Add(this.label18);
-            this.groupBox7.Controls.Add(this.checkBox4);
+            this.groupBox7.Controls.Add(this.cbxGraficoIC);
             this.groupBox7.Controls.Add(this.label19);
-            this.groupBox7.Controls.Add(this.checkBox5);
+            this.groupBox7.Controls.Add(this.cbxGraficoIB);
             this.groupBox7.Controls.Add(this.label20);
-            this.groupBox7.Controls.Add(this.checkBox6);
+            this.groupBox7.Controls.Add(this.cbxGraficoIA);
             this.groupBox7.Controls.Add(this.txtTempAcomodCorrenteC);
             this.groupBox7.Controls.Add(this.label12);
             this.groupBox7.Controls.Add(this.txtUnderShootCorrenteC);
@@ -751,15 +764,17 @@ namespace FonteTrifasicaPID
             this.label18.TabIndex = 37;
             this.label18.Text = "Ic";
             // 
-            // checkBox4
+            // cbxGraficoIC
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(162, 173);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(76, 17);
-            this.checkBox4.TabIndex = 28;
-            this.checkBox4.Text = "Corrente C";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbxGraficoIC.AutoSize = true;
+            this.cbxGraficoIC.Checked = true;
+            this.cbxGraficoIC.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxGraficoIC.Location = new System.Drawing.Point(162, 173);
+            this.cbxGraficoIC.Name = "cbxGraficoIC";
+            this.cbxGraficoIC.Size = new System.Drawing.Size(76, 17);
+            this.cbxGraficoIC.TabIndex = 28;
+            this.cbxGraficoIC.Text = "Corrente C";
+            this.cbxGraficoIC.UseVisualStyleBackColor = true;
             // 
             // label19
             // 
@@ -772,15 +787,17 @@ namespace FonteTrifasicaPID
             this.label19.TabIndex = 36;
             this.label19.Text = "Ib";
             // 
-            // checkBox5
+            // cbxGraficoIB
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(84, 173);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(76, 17);
-            this.checkBox5.TabIndex = 27;
-            this.checkBox5.Text = "Corrente B";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbxGraficoIB.AutoSize = true;
+            this.cbxGraficoIB.Checked = true;
+            this.cbxGraficoIB.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxGraficoIB.Location = new System.Drawing.Point(84, 173);
+            this.cbxGraficoIB.Name = "cbxGraficoIB";
+            this.cbxGraficoIB.Size = new System.Drawing.Size(76, 17);
+            this.cbxGraficoIB.TabIndex = 27;
+            this.cbxGraficoIB.Text = "Corrente B";
+            this.cbxGraficoIB.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
@@ -793,15 +810,17 @@ namespace FonteTrifasicaPID
             this.label20.TabIndex = 35;
             this.label20.Text = "Ia";
             // 
-            // checkBox6
+            // cbxGraficoIA
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 173);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(76, 17);
-            this.checkBox6.TabIndex = 26;
-            this.checkBox6.Text = "Corrente A";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cbxGraficoIA.AutoSize = true;
+            this.cbxGraficoIA.Checked = true;
+            this.cbxGraficoIA.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxGraficoIA.Location = new System.Drawing.Point(6, 173);
+            this.cbxGraficoIA.Name = "cbxGraficoIA";
+            this.cbxGraficoIA.Size = new System.Drawing.Size(76, 17);
+            this.cbxGraficoIA.TabIndex = 26;
+            this.cbxGraficoIA.Text = "Corrente A";
+            this.cbxGraficoIA.UseVisualStyleBackColor = true;
             // 
             // txtTempAcomodCorrenteC
             // 
@@ -846,6 +865,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteC.Name = "txtOvershootCorrenteC";
             this.txtOvershootCorrenteC.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootCorrenteC.TabIndex = 32;
+            this.txtOvershootCorrenteC.Text = "0";
             this.txtOvershootCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTempAcomodCorrenteB
@@ -882,6 +902,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteA.Name = "txtOvershootCorrenteA";
             this.txtOvershootCorrenteA.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootCorrenteA.TabIndex = 26;
+            this.txtOvershootCorrenteA.Text = "0";
             this.txtOvershootCorrenteA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootCorrenteB
@@ -891,6 +912,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteB.Name = "txtOvershootCorrenteB";
             this.txtOvershootCorrenteB.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootCorrenteB.TabIndex = 29;
+            this.txtOvershootCorrenteB.Text = "0";
             this.txtOvershootCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUnderShootCorrenteA
@@ -1023,8 +1045,8 @@ namespace FonteTrifasicaPID
             // 
             this.cbxFase.FormattingEnabled = true;
             this.cbxFase.Items.AddRange(new object[] {
-            "120°",
-            "0º"});
+            "0º",
+            "120°"});
             this.cbxFase.Location = new System.Drawing.Point(15, 167);
             this.cbxFase.Name = "cbxFase";
             this.cbxFase.Size = new System.Drawing.Size(72, 21);
@@ -1172,7 +1194,7 @@ namespace FonteTrifasicaPID
             this.Text = "Controlador PID - Fonte trifásica";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1195,7 +1217,7 @@ namespace FonteTrifasicaPID
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartTensao;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartCorrente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtKpTensao;
         private System.Windows.Forms.TextBox txtKiTensao;
@@ -1237,9 +1259,9 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.CheckBox cbxGraficoVC;
         private System.Windows.Forms.CheckBox cbxGraficoVB;
         private System.Windows.Forms.CheckBox cbxGraficoVA;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox cbxGraficoIC;
+        private System.Windows.Forms.CheckBox cbxGraficoIB;
+        private System.Windows.Forms.CheckBox cbxGraficoIA;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;

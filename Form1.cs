@@ -48,10 +48,16 @@ namespace FonteTrifasicaPID
         UInt16 PassoGraficoVR = 0;
         UInt16 PassoGraficoVS = 0;
         UInt16 PassoGraficoVT = 0;
+        UInt16 PassoGraficoIR = 0;
+        UInt16 PassoGraficoIS = 0;
+        UInt16 PassoGraficoIT = 0;
 
         Boolean TRiseVa = false;
         Boolean TRiseVb = false;
         Boolean TRiseVc = false;
+        Boolean TRiseIa = false;
+        Boolean TRiseIb = false;
+        Boolean TRiseIc = false;
 
         enum Identificador
         {
@@ -332,7 +338,7 @@ namespace FonteTrifasicaPID
                             {
                                 if (double.Parse(partes[1]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVa)
                                 {
-                                    txtTempAcomodTensaoA.Text = (PassoGraficoVR * 0.1).ToString() + "s";
+                                    txtTempAcomodTensaoA.Text = (PassoGraficoVR * 0.2).ToString() + "s";
                                     TRiseVa = true;
                                 }
                             }));
@@ -362,7 +368,7 @@ namespace FonteTrifasicaPID
                             {
                                 if (double.Parse(partes[2]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVb)
                                 {
-                                    txtTempAcomodTensaoB.Text = (PassoGraficoVS * 0.1).ToString() + "s";
+                                    txtTempAcomodTensaoB.Text = (PassoGraficoVS * 0.2).ToString() + "s";
                                     TRiseVb = true;
                                 }
                             }));
@@ -392,7 +398,7 @@ namespace FonteTrifasicaPID
                             {
                                 if (double.Parse(partes[3]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVc)
                                 {
-                                    txtTempAcomodTensaoC.Text = (PassoGraficoVT * 0.1).ToString() + "s";
+                                    txtTempAcomodTensaoC.Text = (PassoGraficoVT * 0.2).ToString() + "s";
                                     TRiseVc = true;
                                 }
                             }));
@@ -407,18 +413,96 @@ namespace FonteTrifasicaPID
                         }
                         break;
                     case (int)Identificador.ID_RX_PID_Corrente:
-                        txtCorrenteRMSA.Invoke(new Action(() =>
+                        if (cbxGraficoIA.Checked)
                         {
-                            txtCorrenteRMSA.Text = partes[1];
-                        }));
-                        txtCorrenteRMSB.Invoke(new Action(() =>
+                            txtCorrenteRMSA.Invoke(new Action(() =>
+                            {
+                                txtCorrenteRMSA.Text = partes[1];
+                            }));
+                            chartCorrente.Invoke(new Action(() =>
+                            {
+                                chartCorrente.Series[0].Points.AddXY(PassoGraficoIR, double.Parse(partes[1]) / 100);
+                                PassoGraficoIR++;
+                            }));
+
+                            txtTempAcomodCorrenteA.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[1]) / 100 > int.Parse(txtCorrenteRMS.Text) && !TRiseIa)
+                                {
+                                    txtTempAcomodCorrenteA.Text = (PassoGraficoIR * 0.2).ToString() + "s";
+                                    TRiseIa = true;
+                                }
+                            }));
+
+                            txtOvershootCorrenteA.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[1]) / 100 > double.Parse(txtOvershootCorrenteA.Text))
+                                {
+                                    txtOvershootCorrenteA.Text = (double.Parse(partes[1]) / 100).ToString();
+                                }
+                            }));
+                        }
+
+                        if (cbxGraficoIB.Checked)
                         {
-                            txtCorrenteRMSB.Text = partes[2];
-                        }));
-                        txtCorrenteRMSC.Invoke(new Action(() =>
+                            txtCorrenteRMSB.Invoke(new Action(() =>
+                            {
+                                txtCorrenteRMSB.Text = partes[2];
+                            }));
+                            chartCorrente.Invoke(new Action(() =>
+                            {
+                                chartCorrente.Series[1].Points.AddXY(PassoGraficoIS, double.Parse(partes[2]) / 100);
+                                PassoGraficoIS++;
+                            }));
+
+                            txtTempAcomodCorrenteB.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[2]) / 100 > int.Parse(txtCorrenteRMS.Text) && !TRiseIb)
+                                {
+                                    txtTempAcomodCorrenteB.Text = (PassoGraficoIS * 02).ToString() + "s";
+                                    TRiseIb = true;
+                                }
+                            }));
+
+                            txtOvershootCorrenteB.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[2]) / 100 > double.Parse(txtOvershootCorrenteB.Text))
+                                {
+                                    txtOvershootCorrenteB.Text = (double.Parse(partes[2]) / 100).ToString();
+                                }
+                            }));
+                        }
+
+                        if (cbxGraficoIC.Checked)
                         {
-                            txtCorrenteRMSC.Text = partes[3];
-                        })); break;
+                            txtCorrenteRMSC.Invoke(new Action(() =>
+                            {
+                                txtCorrenteRMSC.Text = partes[3];
+                            }));
+                            chartCorrente.Invoke(new Action(() =>
+                            {
+                                chartCorrente.Series[2].Points.AddXY(PassoGraficoIT, double.Parse(partes[3]) / 100);
+                                PassoGraficoIT++;
+                            }));
+
+                            txtTempAcomodCorrenteC.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[3]) / 100 > int.Parse(txtCorrenteRMS.Text) && !TRiseIc)
+                                {
+                                    txtTempAcomodCorrenteC.Text = (PassoGraficoIT * 0.2).ToString() + "s";
+                                    TRiseIc = true;
+                                }
+                            }));
+
+                            txtOvershootCorrenteC.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[3]) / 100 > double.Parse(txtOvershootCorrenteC.Text))
+                                {
+                                    txtOvershootCorrenteC.Text = (double.Parse(partes[3]) / 100).ToString();
+                                }
+                            }));
+                        }
+                        break;
                     default:
 
                         break;
@@ -798,6 +882,28 @@ namespace FonteTrifasicaPID
 
             txtTempAcomodTensaoC.Text = "";
             txtOvershootTensaoC.Text = "0";
+        }
+
+        private void btnLimparGraficoCorrente_Click(object sender, EventArgs e)
+        {
+            PassoGraficoIR = 0;
+            PassoGraficoIS = 0;
+            PassoGraficoIT = 0;
+            chartCorrente.Series[0].Points.Clear();
+            chartCorrente.Series[1].Points.Clear();
+            chartCorrente.Series[2].Points.Clear();
+
+            TRiseIa = false;
+            TRiseIb = false;
+            TRiseIc = false;
+            txtTempAcomodCorrenteA.Text = "";
+            txtOvershootCorrenteA.Text = "0";
+
+            txtTempAcomodCorrenteB.Text = "";
+            txtOvershootCorrenteB.Text = "0";
+
+            txtTempAcomodCorrenteC.Text = "";
+            txtOvershootCorrenteC.Text = "0";
         }
     }
 }
