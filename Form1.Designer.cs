@@ -67,9 +67,9 @@ namespace FonteTrifasicaPID
             this.txtTensãoRMSB = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtTensãoRMSA = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbxGraficoVC = new System.Windows.Forms.CheckBox();
+            this.cbxGraficoVB = new System.Windows.Forms.CheckBox();
+            this.cbxGraficoVA = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -416,9 +416,9 @@ namespace FonteTrifasicaPID
             this.groupBox6.Controls.Add(this.txtTensãoRMSB);
             this.groupBox6.Controls.Add(this.label21);
             this.groupBox6.Controls.Add(this.txtTensãoRMSA);
-            this.groupBox6.Controls.Add(this.checkBox3);
-            this.groupBox6.Controls.Add(this.checkBox2);
-            this.groupBox6.Controls.Add(this.checkBox1);
+            this.groupBox6.Controls.Add(this.cbxGraficoVC);
+            this.groupBox6.Controls.Add(this.cbxGraficoVB);
+            this.groupBox6.Controls.Add(this.cbxGraficoVA);
             this.groupBox6.Controls.Add(this.label17);
             this.groupBox6.Controls.Add(this.label16);
             this.groupBox6.Controls.Add(this.label15);
@@ -477,35 +477,35 @@ namespace FonteTrifasicaPID
             this.txtTensãoRMSA.TabIndex = 26;
             this.txtTensãoRMSA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // checkBox3
+            // cbxGraficoVC
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(162, 173);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(72, 17);
-            this.checkBox3.TabIndex = 25;
-            this.checkBox3.Text = "Tensão C";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbxGraficoVC.AutoSize = true;
+            this.cbxGraficoVC.Location = new System.Drawing.Point(162, 173);
+            this.cbxGraficoVC.Name = "cbxGraficoVC";
+            this.cbxGraficoVC.Size = new System.Drawing.Size(72, 17);
+            this.cbxGraficoVC.TabIndex = 25;
+            this.cbxGraficoVC.Text = "Tensão C";
+            this.cbxGraficoVC.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cbxGraficoVB
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(84, 173);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 17);
-            this.checkBox2.TabIndex = 24;
-            this.checkBox2.Text = "Tensão B";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbxGraficoVB.AutoSize = true;
+            this.cbxGraficoVB.Location = new System.Drawing.Point(84, 173);
+            this.cbxGraficoVB.Name = "cbxGraficoVB";
+            this.cbxGraficoVB.Size = new System.Drawing.Size(72, 17);
+            this.cbxGraficoVB.TabIndex = 24;
+            this.cbxGraficoVB.Text = "Tensão B";
+            this.cbxGraficoVB.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cbxGraficoVA
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 173);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(72, 17);
-            this.checkBox1.TabIndex = 23;
-            this.checkBox1.Text = "Tensão A";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbxGraficoVA.AutoSize = true;
+            this.cbxGraficoVA.Location = new System.Drawing.Point(6, 173);
+            this.cbxGraficoVA.Name = "cbxGraficoVA";
+            this.cbxGraficoVA.Size = new System.Drawing.Size(72, 17);
+            this.cbxGraficoVA.TabIndex = 23;
+            this.cbxGraficoVA.Text = "Tensão A";
+            this.cbxGraficoVA.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -565,6 +565,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootTensaoC.Name = "txtOvershootTensaoC";
             this.txtOvershootTensaoC.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootTensaoC.TabIndex = 17;
+            this.txtOvershootTensaoC.Text = "0";
             this.txtOvershootTensaoC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTempAcomodTensaoB
@@ -592,6 +593,7 @@ namespace FonteTrifasicaPID
             this.txtOvershootTensaoB.Name = "txtOvershootTensaoB";
             this.txtOvershootTensaoB.Size = new System.Drawing.Size(60, 20);
             this.txtOvershootTensaoB.TabIndex = 14;
+            this.txtOvershootTensaoB.Text = "0";
             this.txtOvershootTensaoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
@@ -1021,8 +1023,8 @@ namespace FonteTrifasicaPID
             // 
             this.cbxFase.FormattingEnabled = true;
             this.cbxFase.Items.AddRange(new object[] {
-            "0º",
-            "120º"});
+            "120°",
+            "0º"});
             this.cbxFase.Location = new System.Drawing.Point(15, 167);
             this.cbxFase.Name = "cbxFase";
             this.cbxFase.Size = new System.Drawing.Size(72, 21);
@@ -1232,9 +1234,9 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbxGraficoVC;
+        private System.Windows.Forms.CheckBox cbxGraficoVB;
+        private System.Windows.Forms.CheckBox cbxGraficoVA;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox6;

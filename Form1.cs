@@ -46,8 +46,12 @@ namespace FonteTrifasicaPID
         String path_Config = System.AppDomain.CurrentDomain.BaseDirectory + "/CONFIG/";
 
         UInt16 PassoGraficoVR = 0;
+        UInt16 PassoGraficoVS = 0;
+        UInt16 PassoGraficoVT = 0;
 
         Boolean TRiseVa = false;
+        Boolean TRiseVb = false;
+        Boolean TRiseVc = false;
 
         enum Identificador
         {
@@ -312,41 +316,96 @@ namespace FonteTrifasicaPID
                         cbxFatorDePotencia.SelectedIndex = int.Parse(partes[5]);
                         break;
                     case (int)Identificador.ID_RX_PID_Tensão:
-                        txtTensãoRMSA.Invoke(new Action(() =>
+                        if(cbxGraficoVA.Checked)
                         {
-                            txtTensãoRMSA.Text = partes[1];                            
-                        }));
-                        chartTensao.Invoke(new Action(() =>
-                        {                            
-                            chartTensao.Series[0].Points.AddXY(PassoGraficoVR, double.Parse(partes[1])/100);                            
-                            PassoGraficoVR++;
-                        }));
-
-                        txtTempAcomodTensaoA.Invoke(new Action(() =>
-                        {
-                            if(double.Parse(partes[1]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVa)
+                            txtTensãoRMSA.Invoke(new Action(() =>
                             {
-                                txtTempAcomodTensaoA.Text = (PassoGraficoVR * 0.1).ToString() + "s";
-                                TRiseVa = true;
-                            }
-                        }));
-
-                        txtOvershootTensaoA.Invoke(new Action(() => 
-                        {
-                            if(double.Parse(partes[1]) / 100 > double.Parse(txtOvershootTensaoA.Text))
+                                txtTensãoRMSA.Text = partes[1];
+                            }));
+                            chartTensao.Invoke(new Action(() =>
                             {
-                                txtOvershootTensaoA.Text = (double.Parse(partes[1]) / 100).ToString();
-                            }
-                        }));
+                                chartTensao.Series[0].Points.AddXY(PassoGraficoVR, double.Parse(partes[1]) / 100);
+                                PassoGraficoVR++;
+                            }));
 
-                        txtTensãoRMSB.Invoke(new Action(() =>
+                            txtTempAcomodTensaoA.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[1]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVa)
+                                {
+                                    txtTempAcomodTensaoA.Text = (PassoGraficoVR * 0.1).ToString() + "s";
+                                    TRiseVa = true;
+                                }
+                            }));
+
+                            txtOvershootTensaoA.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[1]) / 100 > double.Parse(txtOvershootTensaoA.Text))
+                                {
+                                    txtOvershootTensaoA.Text = (double.Parse(partes[1]) / 100).ToString();
+                                }
+                            }));
+                        }
+                        
+                        if (cbxGraficoVB.Checked)
                         {
-                            txtTensãoRMSB.Text = partes[2];
-                        }));
-                        txtTensãoRMSC.Invoke(new Action(() =>
+                            txtTensãoRMSB.Invoke(new Action(() =>
+                            {
+                                txtTensãoRMSB.Text = partes[2];
+                            }));
+                            chartTensao.Invoke(new Action(() =>
+                            {
+                                chartTensao.Series[1].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
+                                PassoGraficoVS++;
+                            }));
+
+                            txtTempAcomodTensaoB.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[2]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVb)
+                                {
+                                    txtTempAcomodTensaoB.Text = (PassoGraficoVS * 0.1).ToString() + "s";
+                                    TRiseVb = true;
+                                }
+                            }));
+
+                            txtOvershootTensaoB.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[2]) / 100 > double.Parse(txtOvershootTensaoB.Text))
+                                {
+                                    txtOvershootTensaoB.Text = (double.Parse(partes[2]) / 100).ToString();
+                                }
+                            }));
+                        }
+
+                        if (cbxGraficoVC.Checked)
                         {
-                            txtTensãoRMSC.Text = partes[3];
-                        })); break;
+                            txtTensãoRMSC.Invoke(new Action(() =>
+                            {
+                                txtTensãoRMSC.Text = partes[3];
+                            }));
+                            chartTensao.Invoke(new Action(() =>
+                            {
+                                chartTensao.Series[2].Points.AddXY(PassoGraficoVT, double.Parse(partes[3]) / 100);
+                                PassoGraficoVT++;
+                            }));
+
+                            txtTempAcomodTensaoC.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[3]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVc)
+                                {
+                                    txtTempAcomodTensaoC.Text = (PassoGraficoVT * 0.1).ToString() + "s";
+                                    TRiseVc = true;
+                                }
+                            }));
+
+                            txtOvershootTensaoC.Invoke(new Action(() =>
+                            {
+                                if (double.Parse(partes[3]) / 100 > double.Parse(txtOvershootTensaoC.Text))
+                                {
+                                    txtOvershootTensaoC.Text = (double.Parse(partes[3]) / 100).ToString();
+                                }
+                            }));
+                        }
+                        break;
                     case (int)Identificador.ID_RX_PID_Corrente:
                         txtCorrenteRMSA.Invoke(new Action(() =>
                         {
@@ -722,13 +781,23 @@ namespace FonteTrifasicaPID
         private void btnLimparGraficoTensao_Click(object sender, EventArgs e)
         {
             PassoGraficoVR = 0;
+            PassoGraficoVS = 0;
+            PassoGraficoVT = 0;
             chartTensao.Series[0].Points.Clear();
             chartTensao.Series[1].Points.Clear();
             chartTensao.Series[2].Points.Clear();
 
             TRiseVa = false;
+            TRiseVb = false;
+            TRiseVc = false;
             txtTempAcomodTensaoA.Text = "";
             txtOvershootTensaoA.Text = "0";
+
+            txtTempAcomodTensaoB.Text = "";
+            txtOvershootTensaoB.Text = "0";
+
+            txtTempAcomodTensaoC.Text = "";
+            txtOvershootTensaoC.Text = "0";
         }
     }
 }
