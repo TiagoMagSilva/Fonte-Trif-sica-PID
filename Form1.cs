@@ -52,12 +52,16 @@ namespace FonteTrifasicaPID
         UInt16 PassoGraficoIS = 0;
         UInt16 PassoGraficoIT = 0;
 
-        Boolean TRiseVa = false;
-        Boolean TRiseVb = false;
-        Boolean TRiseVc = false;
-        Boolean TRiseIa = false;
-        Boolean TRiseIb = false;
-        Boolean TRiseIc = false;
+        Boolean TRiseVa = false; //detecção do tempo de subida (t rise)
+        Boolean TRiseVb = false; //detecção do tempo de subida (t rise)
+        Boolean TRiseVc = false; //detecção do tempo de subida (t rise)
+        Boolean TRiseIa = false; //detecção do tempo de subida (t rise)
+        Boolean TRiseIb = false; //detecção do tempo de subida (t rise)
+        Boolean TRiseIc = false; //detecção do tempo de subida (t rise)
+
+        float VAMaxPosTrise = -1;
+        float VBMaxPosTrise = -1;
+        float VCMaxPosTrise = -1;
 
         enum Identificador
         {
@@ -67,7 +71,11 @@ namespace FonteTrifasicaPID
             Parar,
             Iniciar,
             ID_RX_PID_Tensão,
-            ID_RX_PID_Corrente
+            ID_RX_PID_Corrente,
+            ID_RX_AjusteFinoV,
+            ID_RX_AjusteGrossoV,
+            ID_RX_AjusteFinoI,
+            ID_RX_AjusteGrossoI
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -85,6 +93,9 @@ namespace FonteTrifasicaPID
             AtualizarPortas();
             LerInformacoesSerialSalva();
             LerInformacoesConfig();
+
+            chartTensao.ChartAreas["ChartArea1"].BackColor = Color.DarkGray;
+            chartCorrente.ChartAreas["ChartArea1"].BackColor = Color.DarkGray;
 
             /*
             chartTensao.Series[0].Points.AddXY(1, 2);
@@ -213,7 +224,9 @@ namespace FonteTrifasicaPID
                         tw.WriteLine(txtKpTensao.Text + ";" + txtKiTensao.Text + ";" + txtKdTensao.Text + ";" +
                                      txtKpCorrente.Text + ";" + txtKiCorrente.Text + ";" + txtKdCorrente.Text + ";" +
                                      txtTensãoRMS.Text + ";" + txtCorrenteRMS.Text + ";" + cbxFrequencia.SelectedIndex + ";" +
-                                     cbxFase.SelectedIndex + ";" + cbxFatorDePotencia.SelectedIndex);
+                                     cbxFase.SelectedIndex + ";" + cbxFatorDePotencia.SelectedIndex + ";" + txtKp10kV.Text + ";" +
+                                     txtKi10kV.Text + ";" + txtKd10kV.Text + ";" + txtKp10Corrente.Text + ";" + txtKi10Corrente.Text
+                                     + ";" + txtKd10Corrente.Text);
                     }
                 }
                 else
@@ -267,6 +280,12 @@ namespace FonteTrifasicaPID
                             cbxFrequencia.SelectedIndex = Int16.Parse(partes[8]);
                             cbxFase.SelectedIndex = Int16.Parse(partes[9]);
                             cbxFatorDePotencia.SelectedIndex = Int16.Parse(partes[10]);
+                            txtKp10kV.Text = partes[11];
+                            txtKi10kV.Text = partes[12];
+                            txtKd10kV.Text = partes[13];
+                            txtKp10Corrente.Text = partes[14];
+                            txtKi10Corrente.Text = partes[15];
+                            txtKd10Corrente.Text = partes[16];
 
                             LOG_TXT("Arquivo de configuração carregado com sucesso!");
                         }
@@ -290,6 +309,7 @@ namespace FonteTrifasicaPID
              *                               Identificador.ID_RX_PID_Corrente, IA, IB, IC, CS                                                                    S                 
              */
             string[] partes = Pacote.Split(',');
+            int Fase;
 
             if(partes.Length > 0)
             {
@@ -350,6 +370,31 @@ namespace FonteTrifasicaPID
                                     txtOvershootTensaoA.Text = (double.Parse(partes[1]) / 100).ToString();
                                 }
                             }));
+
+                            txtUndershootTensaoA.Invoke(new Action(() =>
+                            {
+                                if (TRiseVa)
+                                {
+                                    if (float.Parse(txtUndershootTensaoA.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUndershootTensaoA.Text) == -1)
+                                    {
+                                        txtUndershootTensaoA.Text = (float.Parse(partes[1]) / 100).ToString();
+                                    }
+                                }
+                            }));
+
+                            txtDifVa.Invoke(new Action(() => 
+                            {
+                                if(TRiseVa)
+                                {
+                                    if(float.Parse(partes[1]) / 100 > VAMaxPosTrise)
+                                    {
+                                        VAMaxPosTrise = float.Parse(partes[1]) / 100;
+                                    }
+                                    txtDifVa.Text = (VAMaxPosTrise - float.Parse(txtUndershootTensaoA.Text)).ToString("0.00");
+                                    txtDifVa.Text += "/" + (((VAMaxPosTrise - float.Parse(txtUndershootTensaoA.Text))/float.Parse(txtTensãoRMS.Text))*100).ToString("0.00");
+                                }
+                                
+                            }));
                         }
                         
                         if (cbxGraficoVB.Checked)
@@ -380,6 +425,31 @@ namespace FonteTrifasicaPID
                                     txtOvershootTensaoB.Text = (double.Parse(partes[2]) / 100).ToString();
                                 }
                             }));
+
+                            txtUndershootTensaoB.Invoke(new Action(() =>
+                            {
+                                if (TRiseVb)
+                                {
+                                    if (float.Parse(txtUndershootTensaoB.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUndershootTensaoB.Text) == -1)
+                                    {
+                                        txtUndershootTensaoB.Text = (float.Parse(partes[1]) / 100).ToString();
+                                    }
+                                }
+                            }));
+
+                            txtDifVb.Invoke(new Action(() =>
+                            {
+                                if (TRiseVb)
+                                {
+                                    if (float.Parse(partes[1]) / 100 > VBMaxPosTrise)
+                                    {
+                                        VBMaxPosTrise = float.Parse(partes[1]) / 100;
+                                    }
+                                    txtDifVb.Text = (VBMaxPosTrise - float.Parse(txtUndershootTensaoB.Text)).ToString("0.00");
+                                    txtDifVb.Text += "/" + (((VBMaxPosTrise - float.Parse(txtUndershootTensaoB.Text)) / float.Parse(txtTensãoRMS.Text)) * 100).ToString("0.00");
+                                }
+
+                            }));
                         }
 
                         if (cbxGraficoVC.Checked)
@@ -409,6 +479,31 @@ namespace FonteTrifasicaPID
                                 {
                                     txtOvershootTensaoC.Text = (double.Parse(partes[3]) / 100).ToString();
                                 }
+                            }));
+
+                            txtUndershootTensaoC.Invoke(new Action(() =>
+                            {
+                                if (TRiseVc)
+                                {
+                                    if (float.Parse(txtUndershootTensaoC.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUndershootTensaoC.Text) == -1)
+                                    {
+                                        txtUndershootTensaoC.Text = (float.Parse(partes[1]) / 100).ToString();
+                                    }
+                                }
+                            }));
+
+                            txtDifVc.Invoke(new Action(() =>
+                            {
+                                if (TRiseVc)
+                                {
+                                    if (float.Parse(partes[1]) / 100 > VCMaxPosTrise)
+                                    {
+                                        VCMaxPosTrise = float.Parse(partes[1]) / 100;
+                                    }
+                                    txtDifVc.Text = (VCMaxPosTrise - float.Parse(txtUndershootTensaoC.Text)).ToString("0.00");
+                                    txtDifVc.Text += "/" + (((VCMaxPosTrise - float.Parse(txtUndershootTensaoC.Text)) / float.Parse(txtTensãoRMS.Text)) * 100).ToString("0.00");
+                                }
+
                             }));
                         }
                         break;
@@ -441,6 +536,17 @@ namespace FonteTrifasicaPID
                                     txtOvershootCorrenteA.Text = (double.Parse(partes[1]) / 100).ToString();
                                 }
                             }));
+
+                            txtUnderShootCorrenteA.Invoke(new Action(() =>
+                            {
+                                if (TRiseIa)
+                                {
+                                    if (float.Parse(txtUnderShootCorrenteA.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUnderShootCorrenteA.Text) == -1)
+                                    {
+                                        txtUnderShootCorrenteA.Text = (float.Parse(partes[1]) / 100).ToString();
+                                    }
+                                }
+                            }));
                         }
 
                         if (cbxGraficoIB.Checked)
@@ -469,6 +575,17 @@ namespace FonteTrifasicaPID
                                 if (double.Parse(partes[2]) / 100 > double.Parse(txtOvershootCorrenteB.Text))
                                 {
                                     txtOvershootCorrenteB.Text = (double.Parse(partes[2]) / 100).ToString();
+                                }
+                            }));
+
+                            txtUnderShootCorrenteB.Invoke(new Action(() =>
+                            {
+                                if (TRiseIb)
+                                {
+                                    if (float.Parse(txtUnderShootCorrenteB.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUnderShootCorrenteB.Text) == -1)
+                                    {
+                                        txtUnderShootCorrenteB.Text = (float.Parse(partes[1]) / 100).ToString();
+                                    }
                                 }
                             }));
                         }
@@ -501,6 +618,105 @@ namespace FonteTrifasicaPID
                                     txtOvershootCorrenteC.Text = (double.Parse(partes[3]) / 100).ToString();
                                 }
                             }));
+
+                            txtUnderShootCorrenteC.Invoke(new Action(() =>
+                            {
+                                if (TRiseIc)
+                                {
+                                    if (float.Parse(txtUnderShootCorrenteC.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUnderShootCorrenteC.Text) == -1)
+                                    {
+                                        txtUnderShootCorrenteC.Text = (float.Parse(partes[1]) / 100).ToString();
+                                    }
+                                }
+                            }));
+                        }
+                        break;
+                    case (int)Identificador.ID_RX_AjusteFinoV:
+                        Fase = int.Parse(partes[1]);
+                        switch(Fase)
+                        {
+                            case 1://Fase R
+                                
+                                break;
+                            case 2: //Fase S
+                                chartTensao.Invoke(new Action(() =>
+                                {
+                                    chartTensao.Series[4].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
+                                }));
+                                break;
+                            case 3: //Fase T
+
+                                break;
+
+                            default:
+
+                                break;
+                        }
+                        break;
+                    case (int)Identificador.ID_RX_AjusteGrossoV:
+                        Fase = int.Parse(partes[1]);
+                        switch (Fase)
+                        {
+                            case 1://Fase R
+
+                                break;
+                            case 2: //Fase S
+                                chartTensao.Invoke(new Action(() =>
+                                {
+                                    chartTensao.Series[7].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
+                                }));
+                                break;
+                            case 3: //Fase T
+
+                                break;
+
+                            default:
+
+                                break;
+                        }
+                        break;
+                    case (int)Identificador.ID_RX_AjusteFinoI:
+                        Fase = int.Parse(partes[1]);
+                        switch (Fase)
+                        {
+                            case 1://Fase R
+
+                                break;
+                            case 2: //Fase S
+                                chartCorrente.Invoke(new Action(() =>
+                                {
+                                    chartCorrente.Series[4].Points.AddXY(PassoGraficoIS, double.Parse(partes[2]) / 100);
+                                }));
+                                break;
+                            case 3: //Fase T
+
+                                break;
+
+                            default:
+
+                                break;
+                        }
+                        break;
+                    case (int)Identificador.ID_RX_AjusteGrossoI:
+                        Fase = int.Parse(partes[1]);
+                        switch (Fase)
+                        {
+                            case 1://Fase R
+
+                                break;
+                            case 2: //Fase S
+                                chartCorrente.Invoke(new Action(() =>
+                                {
+                                    chartCorrente.Series[7].Points.AddXY(PassoGraficoIS, double.Parse(partes[2]) / 100);
+                                }));
+                                break;
+                            case 3: //Fase T
+
+                                break;
+
+                            default:
+
+                                break;
                         }
                         break;
                     default:
@@ -688,7 +904,10 @@ namespace FonteTrifasicaPID
             string TRAMA_ENVIO = (int)Identificador.ConstantesPIDTensão + "," +
                                  txtKpTensao.Text + "," +
                                  txtKiTensao.Text + "," +
-                                 txtKdTensao.Text + ",";
+                                 txtKdTensao.Text + "," +
+                                 txtKp10kV.Text + "," +
+                                 txtKi10kV.Text + "," +
+                                 txtKd10kV.Text + ",";
 
             if(PortaSerial.IsOpen)
             {
@@ -789,7 +1008,10 @@ namespace FonteTrifasicaPID
             string TRAMA_ENVIO = (int)Identificador.ConstantesPIDCorrente + "," +
                                  txtKpCorrente.Text + "," +
                                  txtKiCorrente.Text + "," +
-                                 txtKdCorrente.Text + ",";
+                                 txtKdCorrente.Text + "," +
+                                 txtKp10Corrente.Text + "," +
+                                 txtKi10Corrente.Text + "," +
+                                 txtKd10Corrente.Text + ",";
 
             if (PortaSerial.IsOpen)
             {
@@ -870,6 +1092,12 @@ namespace FonteTrifasicaPID
             chartTensao.Series[0].Points.Clear();
             chartTensao.Series[1].Points.Clear();
             chartTensao.Series[2].Points.Clear();
+            chartTensao.Series[3].Points.Clear();
+            chartTensao.Series[4].Points.Clear();
+            chartTensao.Series[5].Points.Clear();
+            chartTensao.Series[6].Points.Clear();
+            chartTensao.Series[7].Points.Clear();
+            chartTensao.Series[8].Points.Clear();
 
             TRiseVa = false;
             TRiseVb = false;
@@ -882,6 +1110,14 @@ namespace FonteTrifasicaPID
 
             txtTempAcomodTensaoC.Text = "";
             txtOvershootTensaoC.Text = "0";
+
+            txtUndershootTensaoA.Text = "-1";
+            txtUndershootTensaoB.Text = "-1";
+            txtUndershootTensaoC.Text = "-1";
+
+            VAMaxPosTrise = 0;
+            VBMaxPosTrise = 0;
+            VCMaxPosTrise = 0;
         }
 
         private void btnLimparGraficoCorrente_Click(object sender, EventArgs e)
@@ -892,6 +1128,12 @@ namespace FonteTrifasicaPID
             chartCorrente.Series[0].Points.Clear();
             chartCorrente.Series[1].Points.Clear();
             chartCorrente.Series[2].Points.Clear();
+            chartCorrente.Series[3].Points.Clear();
+            chartCorrente.Series[4].Points.Clear();
+            chartCorrente.Series[5].Points.Clear();
+            chartCorrente.Series[6].Points.Clear();
+            chartCorrente.Series[7].Points.Clear();
+            chartCorrente.Series[8].Points.Clear();
 
             TRiseIa = false;
             TRiseIb = false;
@@ -904,6 +1146,108 @@ namespace FonteTrifasicaPID
 
             txtTempAcomodCorrenteC.Text = "";
             txtOvershootCorrenteC.Text = "0";
+
+            txtUnderShootCorrenteA.Text = "-1";
+            txtUnderShootCorrenteB.Text = "-1";
+            txtUnderShootCorrenteC.Text = "-1";
+        }
+
+        private void txtKp10kV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKi10kV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKd10kV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtTensãoRMSA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTensãoRMSB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTensãoRMSC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtKp10Corrente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtKp10Corrente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKi10Corrente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtKd10Corrente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

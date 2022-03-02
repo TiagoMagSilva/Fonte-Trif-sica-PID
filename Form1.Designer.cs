@@ -34,12 +34,24 @@ namespace FonteTrifasicaPID
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chartTensao = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -132,6 +144,22 @@ namespace FonteTrifasicaPID
             this.btnIniciarSintetização = new System.Windows.Forms.Button();
             this.btnPararSintetização = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.txtKp10kV = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtKd10kV = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtKi10kV = new System.Windows.Forms.TextBox();
+            this.txtDifVb = new System.Windows.Forms.TextBox();
+            this.txtDifVa = new System.Windows.Forms.TextBox();
+            this.txtDifVc = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtKp10Corrente = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtKd10Corrente = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtKi10Corrente = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -147,8 +175,12 @@ namespace FonteTrifasicaPID
             // 
             // chartTensao
             // 
+            this.chartTensao.BackColor = System.Drawing.Color.DarkGray;
+            this.chartTensao.BorderlineColor = System.Drawing.Color.Black;
+            chartArea1.BackColor = System.Drawing.Color.DarkGray;
             chartArea1.Name = "ChartArea1";
             this.chartTensao.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.DarkGray;
             legend1.Name = "Legend1";
             this.chartTensao.Legends.Add(legend1);
             this.chartTensao.Location = new System.Drawing.Point(6, 19);
@@ -161,6 +193,7 @@ namespace FonteTrifasicaPID
             series1.Legend = "Legend1";
             series1.LegendText = "Tensão A";
             series1.MarkerColor = System.Drawing.Color.Red;
+            series1.MarkerStep = 2;
             series1.Name = "TensaoA";
             series2.BorderWidth = 2;
             series2.ChartArea = "ChartArea1";
@@ -178,9 +211,63 @@ namespace FonteTrifasicaPID
             series3.LegendText = "Tensão C";
             series3.MarkerColor = System.Drawing.Color.Blue;
             series3.Name = "TensaoC";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series4.Color = System.Drawing.Color.Red;
+            series4.Legend = "Legend1";
+            series4.LegendText = "Adj. fino A";
+            series4.MarkerSize = 10;
+            series4.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series4.Name = "SerieAjusteFinoR";
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series5.Color = System.Drawing.Color.Yellow;
+            series5.Legend = "Legend1";
+            series5.LegendText = "Adj. fino B";
+            series5.MarkerSize = 10;
+            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series5.Name = "SerieAjusteFinoS";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series6.Color = System.Drawing.Color.Blue;
+            series6.Legend = "Legend1";
+            series6.LegendText = "Adj. fino C";
+            series6.MarkerSize = 10;
+            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series6.Name = "SerieAjusteFinoT";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series7.Color = System.Drawing.Color.Red;
+            series7.Legend = "Legend1";
+            series7.LegendText = "Adj. Grosso R";
+            series7.MarkerSize = 20;
+            series7.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series7.Name = "SerieAjusteGrossoR";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series8.Color = System.Drawing.Color.Yellow;
+            series8.Legend = "Legend1";
+            series8.LegendText = "Adj. Grosso S";
+            series8.MarkerSize = 20;
+            series8.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series8.Name = "SerieAjusteGrossoS";
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series9.Color = System.Drawing.Color.Blue;
+            series9.Legend = "Legend1";
+            series9.LegendText = "Adj. Grosso T";
+            series9.MarkerSize = 20;
+            series9.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series9.Name = "SerieAjusteGrossoT";
             this.chartTensao.Series.Add(series1);
             this.chartTensao.Series.Add(series2);
             this.chartTensao.Series.Add(series3);
+            this.chartTensao.Series.Add(series4);
+            this.chartTensao.Series.Add(series5);
+            this.chartTensao.Series.Add(series6);
+            this.chartTensao.Series.Add(series7);
+            this.chartTensao.Series.Add(series8);
+            this.chartTensao.Series.Add(series9);
             this.chartTensao.Size = new System.Drawing.Size(565, 302);
             this.chartTensao.TabIndex = 0;
             this.chartTensao.Text = "Tensão";
@@ -191,40 +278,97 @@ namespace FonteTrifasicaPID
             // 
             // chartCorrente
             // 
+            this.chartCorrente.BackColor = System.Drawing.Color.DarkGray;
+            chartArea2.BackColor = System.Drawing.Color.DarkGray;
             chartArea2.Name = "ChartArea1";
             this.chartCorrente.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.Color.DarkGray;
             legend2.Name = "Legend1";
             this.chartCorrente.Legends.Add(legend2);
             this.chartCorrente.Location = new System.Drawing.Point(6, 19);
             this.chartCorrente.Name = "chartCorrente";
             this.chartCorrente.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series4.BorderWidth = 2;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Color = System.Drawing.Color.Red;
-            series4.Legend = "Legend1";
-            series4.LegendText = "Corrente A";
-            series4.MarkerColor = System.Drawing.Color.Red;
-            series4.Name = "CorrenteA";
-            series5.BorderWidth = 2;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Color = System.Drawing.Color.Yellow;
-            series5.Legend = "Legend1";
-            series5.LegendText = "Corrente B";
-            series5.MarkerColor = System.Drawing.Color.Yellow;
-            series5.Name = "CorrenteB";
-            series6.BorderWidth = 2;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Color = System.Drawing.Color.Blue;
-            series6.Legend = "Legend1";
-            series6.LegendText = "Corrente C";
-            series6.MarkerColor = System.Drawing.Color.Blue;
-            series6.Name = "CorrenteC";
-            this.chartCorrente.Series.Add(series4);
-            this.chartCorrente.Series.Add(series5);
-            this.chartCorrente.Series.Add(series6);
+            series10.BorderWidth = 2;
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series10.Color = System.Drawing.Color.Red;
+            series10.Legend = "Legend1";
+            series10.LegendText = "Corrente A";
+            series10.MarkerColor = System.Drawing.Color.Red;
+            series10.Name = "CorrenteA";
+            series11.BorderWidth = 2;
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series11.Color = System.Drawing.Color.Yellow;
+            series11.Legend = "Legend1";
+            series11.LegendText = "Corrente B";
+            series11.MarkerColor = System.Drawing.Color.Yellow;
+            series11.Name = "CorrenteB";
+            series12.BorderWidth = 2;
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series12.Color = System.Drawing.Color.Blue;
+            series12.Legend = "Legend1";
+            series12.LegendText = "Corrente C";
+            series12.MarkerColor = System.Drawing.Color.Blue;
+            series12.Name = "CorrenteC";
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series13.Color = System.Drawing.Color.Red;
+            series13.Legend = "Legend1";
+            series13.LegendText = "Adj. Fino A";
+            series13.MarkerSize = 10;
+            series13.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series13.Name = "SeriaAjusteFinoCorrenteA";
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series14.Color = System.Drawing.Color.Yellow;
+            series14.Legend = "Legend1";
+            series14.LegendText = "Adj. Fino B";
+            series14.MarkerSize = 10;
+            series14.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series14.Name = "SeriaAjusteFinoCorrenteB";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series15.Color = System.Drawing.Color.Blue;
+            series15.Legend = "Legend1";
+            series15.LegendText = "Adj. Fino C";
+            series15.MarkerSize = 10;
+            series15.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series15.Name = "SeriaAjusteFinoCorrenteC";
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series16.Color = System.Drawing.Color.Red;
+            series16.Legend = "Legend1";
+            series16.LegendText = "Adj. Grosso A";
+            series16.MarkerSize = 20;
+            series16.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series16.Name = "SeriaAjusteGrosoA";
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series17.Color = System.Drawing.Color.Yellow;
+            series17.Legend = "Legend1";
+            series17.LegendText = "Adj. Grosso B";
+            series17.MarkerSize = 20;
+            series17.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series17.Name = "SeriaAjusteGrosoB";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series18.Color = System.Drawing.Color.Blue;
+            series18.Legend = "Legend1";
+            series18.LegendText = "Adj. Grosso C";
+            series18.MarkerSize = 20;
+            series18.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series18.Name = "SeriaAjusteGrosoC";
+            this.chartCorrente.Series.Add(series10);
+            this.chartCorrente.Series.Add(series11);
+            this.chartCorrente.Series.Add(series12);
+            this.chartCorrente.Series.Add(series13);
+            this.chartCorrente.Series.Add(series14);
+            this.chartCorrente.Series.Add(series15);
+            this.chartCorrente.Series.Add(series16);
+            this.chartCorrente.Series.Add(series17);
+            this.chartCorrente.Series.Add(series18);
             this.chartCorrente.Size = new System.Drawing.Size(565, 302);
             this.chartCorrente.TabIndex = 1;
             this.chartCorrente.Text = "Tensão";
@@ -236,15 +380,15 @@ namespace FonteTrifasicaPID
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 22);
+            this.label1.Location = new System.Drawing.Point(4, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Kp";
+            this.label1.Text = "Kp 50k";
             // 
             // txtKpTensao
             // 
-            this.txtKpTensao.Location = new System.Drawing.Point(39, 19);
+            this.txtKpTensao.Location = new System.Drawing.Point(51, 19);
             this.txtKpTensao.Name = "txtKpTensao";
             this.txtKpTensao.Size = new System.Drawing.Size(48, 20);
             this.txtKpTensao.TabIndex = 3;
@@ -253,7 +397,7 @@ namespace FonteTrifasicaPID
             // 
             // txtKiTensao
             // 
-            this.txtKiTensao.Location = new System.Drawing.Point(39, 45);
+            this.txtKiTensao.Location = new System.Drawing.Point(51, 46);
             this.txtKiTensao.Name = "txtKiTensao";
             this.txtKiTensao.Size = new System.Drawing.Size(48, 20);
             this.txtKiTensao.TabIndex = 5;
@@ -263,15 +407,15 @@ namespace FonteTrifasicaPID
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 48);
+            this.label2.Location = new System.Drawing.Point(8, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(16, 13);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Ki";
+            this.label2.Text = "Ki 50k";
             // 
             // txtKdTensao
             // 
-            this.txtKdTensao.Location = new System.Drawing.Point(39, 71);
+            this.txtKdTensao.Location = new System.Drawing.Point(51, 72);
             this.txtKdTensao.Name = "txtKdTensao";
             this.txtKdTensao.Size = new System.Drawing.Size(48, 20);
             this.txtKdTensao.TabIndex = 7;
@@ -281,15 +425,15 @@ namespace FonteTrifasicaPID
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 74);
+            this.label3.Location = new System.Drawing.Point(4, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 13);
+            this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Kd";
+            this.label3.Text = "Kd 50k";
             // 
             // btnAplicarPIDTensao
             // 
-            this.btnAplicarPIDTensao.Location = new System.Drawing.Point(93, 19);
+            this.btnAplicarPIDTensao.Location = new System.Drawing.Point(206, 19);
             this.btnAplicarPIDTensao.Name = "btnAplicarPIDTensao";
             this.btnAplicarPIDTensao.Size = new System.Drawing.Size(75, 72);
             this.btnAplicarPIDTensao.TabIndex = 8;
@@ -299,6 +443,12 @@ namespace FonteTrifasicaPID
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtKp10kV);
+            this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Controls.Add(this.txtKd10kV);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Controls.Add(this.label30);
+            this.groupBox1.Controls.Add(this.txtKi10kV);
             this.groupBox1.Controls.Add(this.txtKpTensao);
             this.groupBox1.Controls.Add(this.btnAplicarPIDTensao);
             this.groupBox1.Controls.Add(this.label1);
@@ -308,30 +458,36 @@ namespace FonteTrifasicaPID
             this.groupBox1.Controls.Add(this.txtKiTensao);
             this.groupBox1.Location = new System.Drawing.Point(577, 19);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(179, 100);
+            this.groupBox1.Size = new System.Drawing.Size(292, 100);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controlador PID (Tensão)";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtKp10Corrente);
+            this.groupBox2.Controls.Add(this.label32);
             this.groupBox2.Controls.Add(this.txtKpCorrente);
+            this.groupBox2.Controls.Add(this.txtKd10Corrente);
             this.groupBox2.Controls.Add(this.btnAplicarPIDCorrente);
+            this.groupBox2.Controls.Add(this.label33);
             this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label34);
             this.groupBox2.Controls.Add(this.txtKdCorrente);
+            this.groupBox2.Controls.Add(this.txtKi10Corrente);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txtKiCorrente);
             this.groupBox2.Location = new System.Drawing.Point(577, 19);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(179, 100);
+            this.groupBox2.Size = new System.Drawing.Size(292, 100);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Controlador PID (Corrente)";
             // 
             // txtKpCorrente
             // 
-            this.txtKpCorrente.Location = new System.Drawing.Point(39, 19);
+            this.txtKpCorrente.Location = new System.Drawing.Point(52, 19);
             this.txtKpCorrente.Name = "txtKpCorrente";
             this.txtKpCorrente.Size = new System.Drawing.Size(48, 20);
             this.txtKpCorrente.TabIndex = 3;
@@ -340,7 +496,7 @@ namespace FonteTrifasicaPID
             // 
             // btnAplicarPIDCorrente
             // 
-            this.btnAplicarPIDCorrente.Location = new System.Drawing.Point(93, 19);
+            this.btnAplicarPIDCorrente.Location = new System.Drawing.Point(206, 18);
             this.btnAplicarPIDCorrente.Name = "btnAplicarPIDCorrente";
             this.btnAplicarPIDCorrente.Size = new System.Drawing.Size(75, 72);
             this.btnAplicarPIDCorrente.TabIndex = 8;
@@ -351,15 +507,15 @@ namespace FonteTrifasicaPID
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 22);
+            this.label4.Location = new System.Drawing.Point(5, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 13);
+            this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Kp";
+            this.label4.Text = "Kp 50k";
             // 
             // txtKdCorrente
             // 
-            this.txtKdCorrente.Location = new System.Drawing.Point(39, 71);
+            this.txtKdCorrente.Location = new System.Drawing.Point(52, 71);
             this.txtKdCorrente.Name = "txtKdCorrente";
             this.txtKdCorrente.Size = new System.Drawing.Size(48, 20);
             this.txtKdCorrente.TabIndex = 7;
@@ -369,24 +525,24 @@ namespace FonteTrifasicaPID
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 48);
+            this.label5.Location = new System.Drawing.Point(9, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 13);
+            this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Ki";
+            this.label5.Text = "Ki 50k";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 74);
+            this.label6.Location = new System.Drawing.Point(5, 74);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 13);
+            this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Kd";
+            this.label6.Text = "Kd 50k";
             // 
             // txtKiCorrente
             // 
-            this.txtKiCorrente.Location = new System.Drawing.Point(39, 45);
+            this.txtKiCorrente.Location = new System.Drawing.Point(52, 45);
             this.txtKiCorrente.Name = "txtKiCorrente";
             this.txtKiCorrente.Size = new System.Drawing.Size(48, 20);
             this.txtKiCorrente.TabIndex = 5;
@@ -418,8 +574,12 @@ namespace FonteTrifasicaPID
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.label31);
+            this.groupBox6.Controls.Add(this.txtDifVc);
+            this.groupBox6.Controls.Add(this.txtDifVa);
             this.groupBox6.Controls.Add(this.txtTensãoRMSC);
             this.groupBox6.Controls.Add(this.txtTensãoRMSB);
+            this.groupBox6.Controls.Add(this.txtDifVb);
             this.groupBox6.Controls.Add(this.label21);
             this.groupBox6.Controls.Add(this.txtTensãoRMSA);
             this.groupBox6.Controls.Add(this.cbxGraficoVC);
@@ -450,25 +610,27 @@ namespace FonteTrifasicaPID
             // txtTensãoRMSC
             // 
             this.txtTensãoRMSC.Enabled = false;
-            this.txtTensãoRMSC.Location = new System.Drawing.Point(221, 105);
+            this.txtTensãoRMSC.Location = new System.Drawing.Point(221, 131);
             this.txtTensãoRMSC.Name = "txtTensãoRMSC";
             this.txtTensãoRMSC.Size = new System.Drawing.Size(60, 20);
             this.txtTensãoRMSC.TabIndex = 29;
             this.txtTensãoRMSC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTensãoRMSC.TextChanged += new System.EventHandler(this.txtTensãoRMSC_TextChanged);
             // 
             // txtTensãoRMSB
             // 
             this.txtTensãoRMSB.Enabled = false;
-            this.txtTensãoRMSB.Location = new System.Drawing.Point(155, 105);
+            this.txtTensãoRMSB.Location = new System.Drawing.Point(155, 131);
             this.txtTensãoRMSB.Name = "txtTensãoRMSB";
             this.txtTensãoRMSB.Size = new System.Drawing.Size(60, 20);
             this.txtTensãoRMSB.TabIndex = 28;
             this.txtTensãoRMSB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTensãoRMSB.TextChanged += new System.EventHandler(this.txtTensãoRMSB_TextChanged);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(17, 108);
+            this.label21.Location = new System.Drawing.Point(13, 134);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(70, 13);
             this.label21.TabIndex = 27;
@@ -477,11 +639,12 @@ namespace FonteTrifasicaPID
             // txtTensãoRMSA
             // 
             this.txtTensãoRMSA.Enabled = false;
-            this.txtTensãoRMSA.Location = new System.Drawing.Point(89, 105);
+            this.txtTensãoRMSA.Location = new System.Drawing.Point(89, 131);
             this.txtTensãoRMSA.Name = "txtTensãoRMSA";
             this.txtTensãoRMSA.Size = new System.Drawing.Size(60, 20);
             this.txtTensãoRMSA.TabIndex = 26;
             this.txtTensãoRMSA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTensãoRMSA.TextChanged += new System.EventHandler(this.txtTensãoRMSA_TextChanged);
             // 
             // cbxGraficoVC
             // 
@@ -555,7 +718,7 @@ namespace FonteTrifasicaPID
             // txtTempAcomodTensaoC
             // 
             this.txtTempAcomodTensaoC.Enabled = false;
-            this.txtTempAcomodTensaoC.Location = new System.Drawing.Point(221, 79);
+            this.txtTempAcomodTensaoC.Location = new System.Drawing.Point(221, 105);
             this.txtTempAcomodTensaoC.Name = "txtTempAcomodTensaoC";
             this.txtTempAcomodTensaoC.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodTensaoC.TabIndex = 19;
@@ -568,6 +731,7 @@ namespace FonteTrifasicaPID
             this.txtUndershootTensaoC.Name = "txtUndershootTensaoC";
             this.txtUndershootTensaoC.Size = new System.Drawing.Size(60, 20);
             this.txtUndershootTensaoC.TabIndex = 18;
+            this.txtUndershootTensaoC.Text = "-1";
             this.txtUndershootTensaoC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootTensaoC
@@ -583,7 +747,7 @@ namespace FonteTrifasicaPID
             // txtTempAcomodTensaoB
             // 
             this.txtTempAcomodTensaoB.Enabled = false;
-            this.txtTempAcomodTensaoB.Location = new System.Drawing.Point(155, 79);
+            this.txtTempAcomodTensaoB.Location = new System.Drawing.Point(155, 105);
             this.txtTempAcomodTensaoB.Name = "txtTempAcomodTensaoB";
             this.txtTempAcomodTensaoB.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodTensaoB.TabIndex = 16;
@@ -596,6 +760,7 @@ namespace FonteTrifasicaPID
             this.txtUndershootTensaoB.Name = "txtUndershootTensaoB";
             this.txtUndershootTensaoB.Size = new System.Drawing.Size(60, 20);
             this.txtUndershootTensaoB.TabIndex = 15;
+            this.txtUndershootTensaoB.Text = "-1";
             this.txtUndershootTensaoB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootTensaoB
@@ -611,7 +776,7 @@ namespace FonteTrifasicaPID
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 84);
+            this.label11.Location = new System.Drawing.Point(10, 108);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 13);
             this.label11.TabIndex = 13;
@@ -620,7 +785,7 @@ namespace FonteTrifasicaPID
             // txtTempAcomodTensaoA
             // 
             this.txtTempAcomodTensaoA.Enabled = false;
-            this.txtTempAcomodTensaoA.Location = new System.Drawing.Point(89, 79);
+            this.txtTempAcomodTensaoA.Location = new System.Drawing.Point(89, 105);
             this.txtTempAcomodTensaoA.Name = "txtTempAcomodTensaoA";
             this.txtTempAcomodTensaoA.Size = new System.Drawing.Size(60, 20);
             this.txtTempAcomodTensaoA.TabIndex = 12;
@@ -642,6 +807,7 @@ namespace FonteTrifasicaPID
             this.txtUndershootTensaoA.Name = "txtUndershootTensaoA";
             this.txtUndershootTensaoA.Size = new System.Drawing.Size(60, 20);
             this.txtUndershootTensaoA.TabIndex = 10;
+            this.txtUndershootTensaoA.Text = "-1";
             this.txtUndershootTensaoA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
@@ -847,6 +1013,7 @@ namespace FonteTrifasicaPID
             this.txtUnderShootCorrenteC.Name = "txtUnderShootCorrenteC";
             this.txtUnderShootCorrenteC.Size = new System.Drawing.Size(60, 20);
             this.txtUnderShootCorrenteC.TabIndex = 33;
+            this.txtUnderShootCorrenteC.Text = "-1";
             this.txtUnderShootCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
@@ -893,6 +1060,7 @@ namespace FonteTrifasicaPID
             this.txtUnderShootCorrenteB.Name = "txtUnderShootCorrenteB";
             this.txtUnderShootCorrenteB.Size = new System.Drawing.Size(60, 20);
             this.txtUnderShootCorrenteB.TabIndex = 30;
+            this.txtUnderShootCorrenteB.Text = "-1";
             this.txtUnderShootCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootCorrenteA
@@ -922,6 +1090,7 @@ namespace FonteTrifasicaPID
             this.txtUnderShootCorrenteA.Name = "txtUnderShootCorrenteA";
             this.txtUnderShootCorrenteA.Size = new System.Drawing.Size(60, 20);
             this.txtUnderShootCorrenteA.TabIndex = 27;
+            this.txtUnderShootCorrenteA.Text = "-1";
             this.txtUnderShootCorrenteA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTempAcomodCorrenteA
@@ -1175,6 +1344,151 @@ namespace FonteTrifasicaPID
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Sintetização";
             // 
+            // txtKp10kV
+            // 
+            this.txtKp10kV.Location = new System.Drawing.Point(154, 19);
+            this.txtKp10kV.Name = "txtKp10kV";
+            this.txtKp10kV.Size = new System.Drawing.Size(48, 20);
+            this.txtKp10kV.TabIndex = 10;
+            this.txtKp10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKp10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKp10kV_KeyPress);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(107, 22);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(41, 13);
+            this.label28.TabIndex = 9;
+            this.label28.Text = "Kp 10k";
+            // 
+            // txtKd10kV
+            // 
+            this.txtKd10kV.Location = new System.Drawing.Point(154, 71);
+            this.txtKd10kV.Name = "txtKd10kV";
+            this.txtKd10kV.Size = new System.Drawing.Size(48, 20);
+            this.txtKd10kV.TabIndex = 14;
+            this.txtKd10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKd10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKd10kV_KeyPress);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(111, 49);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(37, 13);
+            this.label29.TabIndex = 11;
+            this.label29.Text = "Ki 10k";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(107, 74);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(41, 13);
+            this.label30.TabIndex = 13;
+            this.label30.Text = "Kd 10k";
+            // 
+            // txtKi10kV
+            // 
+            this.txtKi10kV.Location = new System.Drawing.Point(154, 46);
+            this.txtKi10kV.Name = "txtKi10kV";
+            this.txtKi10kV.Size = new System.Drawing.Size(48, 20);
+            this.txtKi10kV.TabIndex = 12;
+            this.txtKi10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKi10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKi10kV_KeyPress);
+            // 
+            // txtDifVb
+            // 
+            this.txtDifVb.Enabled = false;
+            this.txtDifVb.Location = new System.Drawing.Point(155, 79);
+            this.txtDifVb.Name = "txtDifVb";
+            this.txtDifVb.Size = new System.Drawing.Size(60, 20);
+            this.txtDifVb.TabIndex = 30;
+            this.txtDifVb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDifVa
+            // 
+            this.txtDifVa.Enabled = false;
+            this.txtDifVa.Location = new System.Drawing.Point(89, 79);
+            this.txtDifVa.Name = "txtDifVa";
+            this.txtDifVa.Size = new System.Drawing.Size(60, 20);
+            this.txtDifVa.TabIndex = 31;
+            this.txtDifVa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDifVc
+            // 
+            this.txtDifVc.Enabled = false;
+            this.txtDifVc.Location = new System.Drawing.Point(221, 79);
+            this.txtDifVc.Name = "txtDifVc";
+            this.txtDifVc.Size = new System.Drawing.Size(60, 20);
+            this.txtDifVc.TabIndex = 32;
+            this.txtDifVc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(32, 82);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(46, 13);
+            this.label31.TabIndex = 33;
+            this.label31.Text = "Dif(V/%)";
+            // 
+            // txtKp10Corrente
+            // 
+            this.txtKp10Corrente.Location = new System.Drawing.Point(152, 19);
+            this.txtKp10Corrente.Name = "txtKp10Corrente";
+            this.txtKp10Corrente.Size = new System.Drawing.Size(48, 20);
+            this.txtKp10Corrente.TabIndex = 16;
+            this.txtKp10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKp10Corrente.TextChanged += new System.EventHandler(this.txtKp10Corrente_TextChanged);
+            this.txtKp10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKp10Corrente_KeyPress);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(105, 22);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(41, 13);
+            this.label32.TabIndex = 15;
+            this.label32.Text = "Kp 10k";
+            // 
+            // txtKd10Corrente
+            // 
+            this.txtKd10Corrente.Location = new System.Drawing.Point(152, 71);
+            this.txtKd10Corrente.Name = "txtKd10Corrente";
+            this.txtKd10Corrente.Size = new System.Drawing.Size(48, 20);
+            this.txtKd10Corrente.TabIndex = 20;
+            this.txtKd10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKd10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKd10Corrente_KeyPress);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(109, 49);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(37, 13);
+            this.label33.TabIndex = 17;
+            this.label33.Text = "Ki 10k";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(105, 74);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(41, 13);
+            this.label34.TabIndex = 19;
+            this.label34.Text = "Kd 10k";
+            // 
+            // txtKi10Corrente
+            // 
+            this.txtKi10Corrente.Location = new System.Drawing.Point(152, 46);
+            this.txtKi10Corrente.Name = "txtKi10Corrente";
+            this.txtKi10Corrente.Size = new System.Drawing.Size(48, 20);
+            this.txtKi10Corrente.TabIndex = 18;
+            this.txtKi10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKi10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKi10Corrente_KeyPress);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1306,6 +1620,22 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Button btnIniciarSintetização;
         private System.Windows.Forms.Button btnPararSintetização;
         private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.TextBox txtKp10kV;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtKd10kV;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox txtKi10kV;
+        private System.Windows.Forms.TextBox txtDifVc;
+        private System.Windows.Forms.TextBox txtDifVa;
+        private System.Windows.Forms.TextBox txtDifVb;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox txtKp10Corrente;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox txtKd10Corrente;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox txtKi10Corrente;
     }
 }
 
