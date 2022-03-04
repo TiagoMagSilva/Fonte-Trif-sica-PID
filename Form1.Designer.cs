@@ -64,19 +64,35 @@ namespace FonteTrifasicaPID
             this.label3 = new System.Windows.Forms.Label();
             this.btnAplicarPIDTensao = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtKp10kV = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtKd10kV = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtKi10kV = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtKp10Corrente = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.txtKpCorrente = new System.Windows.Forms.TextBox();
+            this.txtKd10Corrente = new System.Windows.Forms.TextBox();
             this.btnAplicarPIDCorrente = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.txtKdCorrente = new System.Windows.Forms.TextBox();
+            this.txtKi10Corrente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtKiCorrente = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnLimparGraficoTensao = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtDifVc = new System.Windows.Forms.TextBox();
+            this.txtDifVa = new System.Windows.Forms.TextBox();
             this.txtTensãoRMSC = new System.Windows.Forms.TextBox();
             this.txtTensãoRMSB = new System.Windows.Forms.TextBox();
+            this.txtDifVb = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtTensãoRMSA = new System.Windows.Forms.TextBox();
             this.cbxGraficoVC = new System.Windows.Forms.CheckBox();
@@ -144,22 +160,47 @@ namespace FonteTrifasicaPID
             this.btnIniciarSintetização = new System.Windows.Forms.Button();
             this.btnPararSintetização = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.txtKp10kV = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.txtKd10kV = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.txtKi10kV = new System.Windows.Forms.TextBox();
-            this.txtDifVb = new System.Windows.Forms.TextBox();
-            this.txtDifVa = new System.Windows.Forms.TextBox();
-            this.txtDifVc = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.txtKp10Corrente = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.txtKd10Corrente = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.txtKi10Corrente = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.nud50kVA = new System.Windows.Forms.NumericUpDown();
+            this.nud50kVB = new System.Windows.Forms.NumericUpDown();
+            this.nud50kVC = new System.Windows.Forms.NumericUpDown();
+            this.nud10kVA = new System.Windows.Forms.NumericUpDown();
+            this.nud10kVB = new System.Windows.Forms.NumericUpDown();
+            this.nud10kVC = new System.Windows.Forms.NumericUpDown();
+            this.btnAplicar50k = new System.Windows.Forms.Button();
+            this.btnAplicar10k = new System.Windows.Forms.Button();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.cbkAutoAplicar = new System.Windows.Forms.CheckBox();
+            this.txtTensaoRMSVA = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.nud50kIA = new System.Windows.Forms.NumericUpDown();
+            this.label42 = new System.Windows.Forms.Label();
+            this.nud50kIB = new System.Windows.Forms.NumericUpDown();
+            this.label43 = new System.Windows.Forms.Label();
+            this.nud50kIC = new System.Windows.Forms.NumericUpDown();
+            this.label44 = new System.Windows.Forms.Label();
+            this.nud10kIA = new System.Windows.Forms.NumericUpDown();
+            this.nud10kIB = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
+            this.nud10kIC = new System.Windows.Forms.NumericUpDown();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -171,6 +212,23 @@ namespace FonteTrifasicaPID
             this.groupBox5.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).BeginInit();
+            this.groupBox10.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kIA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kIB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kIC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kIA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kIB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kIC)).BeginInit();
             this.SuspendLayout();
             // 
             // chartTensao
@@ -463,6 +521,60 @@ namespace FonteTrifasicaPID
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controlador PID (Tensão)";
             // 
+            // txtKp10kV
+            // 
+            this.txtKp10kV.Location = new System.Drawing.Point(154, 19);
+            this.txtKp10kV.Name = "txtKp10kV";
+            this.txtKp10kV.Size = new System.Drawing.Size(48, 20);
+            this.txtKp10kV.TabIndex = 10;
+            this.txtKp10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKp10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKp10kV_KeyPress);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(107, 22);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(41, 13);
+            this.label28.TabIndex = 9;
+            this.label28.Text = "Kp 10k";
+            // 
+            // txtKd10kV
+            // 
+            this.txtKd10kV.Location = new System.Drawing.Point(154, 71);
+            this.txtKd10kV.Name = "txtKd10kV";
+            this.txtKd10kV.Size = new System.Drawing.Size(48, 20);
+            this.txtKd10kV.TabIndex = 14;
+            this.txtKd10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKd10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKd10kV_KeyPress);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(111, 49);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(37, 13);
+            this.label29.TabIndex = 11;
+            this.label29.Text = "Ki 10k";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(107, 74);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(41, 13);
+            this.label30.TabIndex = 13;
+            this.label30.Text = "Kd 10k";
+            // 
+            // txtKi10kV
+            // 
+            this.txtKi10kV.Location = new System.Drawing.Point(154, 46);
+            this.txtKi10kV.Name = "txtKi10kV";
+            this.txtKi10kV.Size = new System.Drawing.Size(48, 20);
+            this.txtKi10kV.TabIndex = 12;
+            this.txtKi10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKi10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKi10kV_KeyPress);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtKp10Corrente);
@@ -485,6 +597,25 @@ namespace FonteTrifasicaPID
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Controlador PID (Corrente)";
             // 
+            // txtKp10Corrente
+            // 
+            this.txtKp10Corrente.Location = new System.Drawing.Point(152, 19);
+            this.txtKp10Corrente.Name = "txtKp10Corrente";
+            this.txtKp10Corrente.Size = new System.Drawing.Size(48, 20);
+            this.txtKp10Corrente.TabIndex = 16;
+            this.txtKp10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKp10Corrente.TextChanged += new System.EventHandler(this.txtKp10Corrente_TextChanged);
+            this.txtKp10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKp10Corrente_KeyPress);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(105, 22);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(41, 13);
+            this.label32.TabIndex = 15;
+            this.label32.Text = "Kp 10k";
+            // 
             // txtKpCorrente
             // 
             this.txtKpCorrente.Location = new System.Drawing.Point(52, 19);
@@ -493,6 +624,15 @@ namespace FonteTrifasicaPID
             this.txtKpCorrente.TabIndex = 3;
             this.txtKpCorrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKpCorrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKpCorrente_KeyPress);
+            // 
+            // txtKd10Corrente
+            // 
+            this.txtKd10Corrente.Location = new System.Drawing.Point(152, 71);
+            this.txtKd10Corrente.Name = "txtKd10Corrente";
+            this.txtKd10Corrente.Size = new System.Drawing.Size(48, 20);
+            this.txtKd10Corrente.TabIndex = 20;
+            this.txtKd10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKd10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKd10Corrente_KeyPress);
             // 
             // btnAplicarPIDCorrente
             // 
@@ -504,6 +644,15 @@ namespace FonteTrifasicaPID
             this.btnAplicarPIDCorrente.UseVisualStyleBackColor = true;
             this.btnAplicarPIDCorrente.Click += new System.EventHandler(this.btnAplicarPIDCorrente_Click);
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(109, 49);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(37, 13);
+            this.label33.TabIndex = 17;
+            this.label33.Text = "Ki 10k";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -513,6 +662,15 @@ namespace FonteTrifasicaPID
             this.label4.TabIndex = 2;
             this.label4.Text = "Kp 50k";
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(105, 74);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(41, 13);
+            this.label34.TabIndex = 19;
+            this.label34.Text = "Kd 10k";
+            // 
             // txtKdCorrente
             // 
             this.txtKdCorrente.Location = new System.Drawing.Point(52, 71);
@@ -521,6 +679,15 @@ namespace FonteTrifasicaPID
             this.txtKdCorrente.TabIndex = 7;
             this.txtKdCorrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKdCorrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKdCorrente_KeyPress);
+            // 
+            // txtKi10Corrente
+            // 
+            this.txtKi10Corrente.Location = new System.Drawing.Point(152, 46);
+            this.txtKi10Corrente.Name = "txtKi10Corrente";
+            this.txtKi10Corrente.Size = new System.Drawing.Size(48, 20);
+            this.txtKi10Corrente.TabIndex = 18;
+            this.txtKi10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtKi10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKi10Corrente_KeyPress);
             // 
             // label5
             // 
@@ -555,7 +722,7 @@ namespace FonteTrifasicaPID
             this.groupBox3.Controls.Add(this.groupBox6);
             this.groupBox3.Controls.Add(this.chartTensao);
             this.groupBox3.Controls.Add(this.groupBox1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 12);
+            this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(880, 332);
             this.groupBox3.TabIndex = 11;
@@ -607,6 +774,33 @@ namespace FonteTrifasicaPID
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Resposta";
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(32, 82);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(46, 13);
+            this.label31.TabIndex = 33;
+            this.label31.Text = "Dif(V/%)";
+            // 
+            // txtDifVc
+            // 
+            this.txtDifVc.Enabled = false;
+            this.txtDifVc.Location = new System.Drawing.Point(221, 79);
+            this.txtDifVc.Name = "txtDifVc";
+            this.txtDifVc.Size = new System.Drawing.Size(60, 20);
+            this.txtDifVc.TabIndex = 32;
+            this.txtDifVc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDifVa
+            // 
+            this.txtDifVa.Enabled = false;
+            this.txtDifVa.Location = new System.Drawing.Point(89, 79);
+            this.txtDifVa.Name = "txtDifVa";
+            this.txtDifVa.Size = new System.Drawing.Size(60, 20);
+            this.txtDifVa.TabIndex = 31;
+            this.txtDifVa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // txtTensãoRMSC
             // 
             this.txtTensãoRMSC.Enabled = false;
@@ -626,6 +820,15 @@ namespace FonteTrifasicaPID
             this.txtTensãoRMSB.TabIndex = 28;
             this.txtTensãoRMSB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTensãoRMSB.TextChanged += new System.EventHandler(this.txtTensãoRMSB_TextChanged);
+            // 
+            // txtDifVb
+            // 
+            this.txtDifVb.Enabled = false;
+            this.txtDifVb.Location = new System.Drawing.Point(155, 79);
+            this.txtDifVb.Name = "txtDifVb";
+            this.txtDifVb.Size = new System.Drawing.Size(60, 20);
+            this.txtDifVb.TabIndex = 30;
+            this.txtDifVb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
@@ -835,7 +1038,7 @@ namespace FonteTrifasicaPID
             this.groupBox4.Controls.Add(this.groupBox7);
             this.groupBox4.Controls.Add(this.groupBox2);
             this.groupBox4.Controls.Add(this.chartCorrente);
-            this.groupBox4.Location = new System.Drawing.Point(12, 350);
+            this.groupBox4.Location = new System.Drawing.Point(6, 344);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(880, 329);
             this.groupBox4.TabIndex = 12;
@@ -1174,7 +1377,7 @@ namespace FonteTrifasicaPID
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.cbxBaudRate);
-            this.groupBox5.Location = new System.Drawing.Point(898, 12);
+            this.groupBox5.Location = new System.Drawing.Point(892, 6);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(97, 184);
             this.groupBox5.TabIndex = 19;
@@ -1194,7 +1397,7 @@ namespace FonteTrifasicaPID
             this.groupBox8.Controls.Add(this.label23);
             this.groupBox8.Controls.Add(this.label24);
             this.groupBox8.Controls.Add(this.cbxFatorDePotencia);
-            this.groupBox8.Location = new System.Drawing.Point(898, 202);
+            this.groupBox8.Location = new System.Drawing.Point(892, 196);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(104, 281);
             this.groupBox8.TabIndex = 20;
@@ -1337,169 +1540,473 @@ namespace FonteTrifasicaPID
             // 
             this.groupBox9.Controls.Add(this.btnPararSintetização);
             this.groupBox9.Controls.Add(this.btnIniciarSintetização);
-            this.groupBox9.Location = new System.Drawing.Point(898, 489);
+            this.groupBox9.Location = new System.Drawing.Point(892, 483);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(104, 134);
             this.groupBox9.TabIndex = 27;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Sintetização";
             // 
-            // txtKp10kV
+            // tabControl1
             // 
-            this.txtKp10kV.Location = new System.Drawing.Point(154, 19);
-            this.txtKp10kV.Name = "txtKp10kV";
-            this.txtKp10kV.Size = new System.Drawing.Size(48, 20);
-            this.txtKp10kV.TabIndex = 10;
-            this.txtKp10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtKp10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKp10kV_KeyPress);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1016, 714);
+            this.tabControl1.TabIndex = 28;
             // 
-            // label28
+            // tabPage1
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(107, 22);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(41, 13);
-            this.label28.TabIndex = 9;
-            this.label28.Text = "Kp 10k";
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox9);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.groupBox8);
+            this.tabPage1.Controls.Add(this.groupBox5);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1008, 688);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Config";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // txtKd10kV
+            // tabPage2
             // 
-            this.txtKd10kV.Location = new System.Drawing.Point(154, 71);
-            this.txtKd10kV.Name = "txtKd10kV";
-            this.txtKd10kV.Size = new System.Drawing.Size(48, 20);
-            this.txtKd10kV.TabIndex = 14;
-            this.txtKd10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtKd10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKd10kV_KeyPress);
+            this.tabPage2.Controls.Add(this.groupBox12);
+            this.tabPage2.Controls.Add(this.groupBox10);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1008, 688);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "DigPot";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label29
+            // nud50kVA
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(111, 49);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(37, 13);
-            this.label29.TabIndex = 11;
-            this.label29.Text = "Ki 10k";
+            this.nud50kVA.Location = new System.Drawing.Point(33, 32);
+            this.nud50kVA.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kVA.Name = "nud50kVA";
+            this.nud50kVA.Size = new System.Drawing.Size(120, 20);
+            this.nud50kVA.TabIndex = 0;
+            this.nud50kVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label30
+            // nud50kVB
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(107, 74);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(41, 13);
-            this.label30.TabIndex = 13;
-            this.label30.Text = "Kd 10k";
+            this.nud50kVB.Location = new System.Drawing.Point(33, 58);
+            this.nud50kVB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kVB.Name = "nud50kVB";
+            this.nud50kVB.Size = new System.Drawing.Size(120, 20);
+            this.nud50kVB.TabIndex = 1;
+            this.nud50kVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtKi10kV
+            // nud50kVC
             // 
-            this.txtKi10kV.Location = new System.Drawing.Point(154, 46);
-            this.txtKi10kV.Name = "txtKi10kV";
-            this.txtKi10kV.Size = new System.Drawing.Size(48, 20);
-            this.txtKi10kV.TabIndex = 12;
-            this.txtKi10kV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtKi10kV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKi10kV_KeyPress);
+            this.nud50kVC.Location = new System.Drawing.Point(33, 84);
+            this.nud50kVC.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kVC.Name = "nud50kVC";
+            this.nud50kVC.Size = new System.Drawing.Size(120, 20);
+            this.nud50kVC.TabIndex = 2;
+            this.nud50kVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtDifVb
+            // nud10kVA
             // 
-            this.txtDifVb.Enabled = false;
-            this.txtDifVb.Location = new System.Drawing.Point(155, 79);
-            this.txtDifVb.Name = "txtDifVb";
-            this.txtDifVb.Size = new System.Drawing.Size(60, 20);
-            this.txtDifVb.TabIndex = 30;
-            this.txtDifVb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nud10kVA.Location = new System.Drawing.Point(175, 32);
+            this.nud10kVA.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kVA.Name = "nud10kVA";
+            this.nud10kVA.Size = new System.Drawing.Size(120, 20);
+            this.nud10kVA.TabIndex = 3;
+            this.nud10kVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtDifVa
+            // nud10kVB
             // 
-            this.txtDifVa.Enabled = false;
-            this.txtDifVa.Location = new System.Drawing.Point(89, 79);
-            this.txtDifVa.Name = "txtDifVa";
-            this.txtDifVa.Size = new System.Drawing.Size(60, 20);
-            this.txtDifVa.TabIndex = 31;
-            this.txtDifVa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nud10kVB.Location = new System.Drawing.Point(175, 58);
+            this.nud10kVB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kVB.Name = "nud10kVB";
+            this.nud10kVB.Size = new System.Drawing.Size(120, 20);
+            this.nud10kVB.TabIndex = 4;
+            this.nud10kVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtDifVc
+            // nud10kVC
             // 
-            this.txtDifVc.Enabled = false;
-            this.txtDifVc.Location = new System.Drawing.Point(221, 79);
-            this.txtDifVc.Name = "txtDifVc";
-            this.txtDifVc.Size = new System.Drawing.Size(60, 20);
-            this.txtDifVc.TabIndex = 32;
-            this.txtDifVc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nud10kVC.Location = new System.Drawing.Point(175, 84);
+            this.nud10kVC.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kVC.Name = "nud10kVC";
+            this.nud10kVC.Size = new System.Drawing.Size(120, 20);
+            this.nud10kVC.TabIndex = 5;
+            this.nud10kVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label31
+            // btnAplicar50k
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(32, 82);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(46, 13);
-            this.label31.TabIndex = 33;
-            this.label31.Text = "Dif(V/%)";
+            this.btnAplicar50k.Location = new System.Drawing.Point(56, 110);
+            this.btnAplicar50k.Name = "btnAplicar50k";
+            this.btnAplicar50k.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicar50k.TabIndex = 6;
+            this.btnAplicar50k.Text = "Aplicar 50K";
+            this.btnAplicar50k.UseVisualStyleBackColor = true;
             // 
-            // txtKp10Corrente
+            // btnAplicar10k
             // 
-            this.txtKp10Corrente.Location = new System.Drawing.Point(152, 19);
-            this.txtKp10Corrente.Name = "txtKp10Corrente";
-            this.txtKp10Corrente.Size = new System.Drawing.Size(48, 20);
-            this.txtKp10Corrente.TabIndex = 16;
-            this.txtKp10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtKp10Corrente.TextChanged += new System.EventHandler(this.txtKp10Corrente_TextChanged);
-            this.txtKp10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKp10Corrente_KeyPress);
+            this.btnAplicar10k.Location = new System.Drawing.Point(198, 110);
+            this.btnAplicar10k.Name = "btnAplicar10k";
+            this.btnAplicar10k.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicar10k.TabIndex = 7;
+            this.btnAplicar10k.Text = "Aplicar 10k";
+            this.btnAplicar10k.UseVisualStyleBackColor = true;
             // 
-            // label32
+            // label35
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(105, 22);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 13);
-            this.label32.TabIndex = 15;
-            this.label32.Text = "Kp 10k";
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(63, 16);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(60, 13);
+            this.label35.TabIndex = 8;
+            this.label35.Text = "DigPot 50k";
             // 
-            // txtKd10Corrente
+            // label36
             // 
-            this.txtKd10Corrente.Location = new System.Drawing.Point(152, 71);
-            this.txtKd10Corrente.Name = "txtKd10Corrente";
-            this.txtKd10Corrente.Size = new System.Drawing.Size(48, 20);
-            this.txtKd10Corrente.TabIndex = 20;
-            this.txtKd10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtKd10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKd10Corrente_KeyPress);
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(205, 16);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(60, 13);
+            this.label36.TabIndex = 9;
+            this.label36.Text = "DigPot 10k";
             // 
-            // label33
+            // label37
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(109, 49);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(37, 13);
-            this.label33.TabIndex = 17;
-            this.label33.Text = "Ki 10k";
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(7, 34);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(20, 13);
+            this.label37.TabIndex = 10;
+            this.label37.Text = "Va";
             // 
-            // label34
+            // label38
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(105, 74);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(41, 13);
-            this.label34.TabIndex = 19;
-            this.label34.Text = "Kd 10k";
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(7, 60);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(20, 13);
+            this.label38.TabIndex = 11;
+            this.label38.Text = "Vb";
             // 
-            // txtKi10Corrente
+            // label39
             // 
-            this.txtKi10Corrente.Location = new System.Drawing.Point(152, 46);
-            this.txtKi10Corrente.Name = "txtKi10Corrente";
-            this.txtKi10Corrente.Size = new System.Drawing.Size(48, 20);
-            this.txtKi10Corrente.TabIndex = 18;
-            this.txtKi10Corrente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtKi10Corrente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKi10Corrente_KeyPress);
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(7, 86);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(20, 13);
+            this.label39.TabIndex = 12;
+            this.label39.Text = "Vc";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label45);
+            this.groupBox10.Controls.Add(this.textBox3);
+            this.groupBox10.Controls.Add(this.cbkAutoAplicar);
+            this.groupBox10.Controls.Add(this.textBox2);
+            this.groupBox10.Controls.Add(this.label35);
+            this.groupBox10.Controls.Add(this.txtTensaoRMSVA);
+            this.groupBox10.Controls.Add(this.label39);
+            this.groupBox10.Controls.Add(this.nud50kVA);
+            this.groupBox10.Controls.Add(this.label38);
+            this.groupBox10.Controls.Add(this.nud50kVB);
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Controls.Add(this.nud50kVC);
+            this.groupBox10.Controls.Add(this.label36);
+            this.groupBox10.Controls.Add(this.nud10kVA);
+            this.groupBox10.Controls.Add(this.nud10kVB);
+            this.groupBox10.Controls.Add(this.btnAplicar10k);
+            this.groupBox10.Controls.Add(this.nud10kVC);
+            this.groupBox10.Controls.Add(this.btnAplicar50k);
+            this.groupBox10.Location = new System.Drawing.Point(6, 6);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(437, 175);
+            this.groupBox10.TabIndex = 13;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Ajuste DigPot Tensão";
+            // 
+            // cbkAutoAplicar
+            // 
+            this.cbkAutoAplicar.AutoSize = true;
+            this.cbkAutoAplicar.Location = new System.Drawing.Point(10, 152);
+            this.cbkAutoAplicar.Name = "cbkAutoAplicar";
+            this.cbkAutoAplicar.Size = new System.Drawing.Size(82, 17);
+            this.cbkAutoAplicar.TabIndex = 13;
+            this.cbkAutoAplicar.Text = "Auto aplicar";
+            this.cbkAutoAplicar.UseVisualStyleBackColor = true;
+            // 
+            // txtTensaoRMSVA
+            // 
+            this.txtTensaoRMSVA.Location = new System.Drawing.Point(313, 32);
+            this.txtTensaoRMSVA.Name = "txtTensaoRMSVA";
+            this.txtTensaoRMSVA.Size = new System.Drawing.Size(100, 20);
+            this.txtTensaoRMSVA.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(313, 58);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 15;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(313, 84);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 16;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.label46);
+            this.groupBox12.Controls.Add(this.checkBox1);
+            this.groupBox12.Controls.Add(this.textBox4);
+            this.groupBox12.Controls.Add(this.label40);
+            this.groupBox12.Controls.Add(this.textBox5);
+            this.groupBox12.Controls.Add(this.label41);
+            this.groupBox12.Controls.Add(this.textBox6);
+            this.groupBox12.Controls.Add(this.nud50kIA);
+            this.groupBox12.Controls.Add(this.label42);
+            this.groupBox12.Controls.Add(this.nud50kIB);
+            this.groupBox12.Controls.Add(this.label43);
+            this.groupBox12.Controls.Add(this.nud50kIC);
+            this.groupBox12.Controls.Add(this.label44);
+            this.groupBox12.Controls.Add(this.nud10kIA);
+            this.groupBox12.Controls.Add(this.nud10kIB);
+            this.groupBox12.Controls.Add(this.button1);
+            this.groupBox12.Controls.Add(this.nud10kIC);
+            this.groupBox12.Controls.Add(this.button2);
+            this.groupBox12.Location = new System.Drawing.Point(6, 187);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(437, 175);
+            this.groupBox12.TabIndex = 14;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Ajuste DigPot Corrente";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(10, 152);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(82, 17);
+            this.checkBox1.TabIndex = 13;
+            this.checkBox1.Text = "Auto aplicar";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(63, 16);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(60, 13);
+            this.label40.TabIndex = 8;
+            this.label40.Text = "DigPot 50k";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(7, 86);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(16, 13);
+            this.label41.TabIndex = 12;
+            this.label41.Text = "Ic";
+            // 
+            // nud50kIA
+            // 
+            this.nud50kIA.Location = new System.Drawing.Point(33, 32);
+            this.nud50kIA.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kIA.Name = "nud50kIA";
+            this.nud50kIA.Size = new System.Drawing.Size(120, 20);
+            this.nud50kIA.TabIndex = 0;
+            this.nud50kIA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(7, 60);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(16, 13);
+            this.label42.TabIndex = 11;
+            this.label42.Text = "Ib";
+            // 
+            // nud50kIB
+            // 
+            this.nud50kIB.Location = new System.Drawing.Point(33, 58);
+            this.nud50kIB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kIB.Name = "nud50kIB";
+            this.nud50kIB.Size = new System.Drawing.Size(120, 20);
+            this.nud50kIB.TabIndex = 1;
+            this.nud50kIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(7, 34);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(16, 13);
+            this.label43.TabIndex = 10;
+            this.label43.Text = "Ia";
+            // 
+            // nud50kIC
+            // 
+            this.nud50kIC.Location = new System.Drawing.Point(33, 84);
+            this.nud50kIC.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kIC.Name = "nud50kIC";
+            this.nud50kIC.Size = new System.Drawing.Size(120, 20);
+            this.nud50kIC.TabIndex = 2;
+            this.nud50kIC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(205, 16);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(60, 13);
+            this.label44.TabIndex = 9;
+            this.label44.Text = "DigPot 10k";
+            // 
+            // nud10kIA
+            // 
+            this.nud10kIA.Location = new System.Drawing.Point(175, 32);
+            this.nud10kIA.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kIA.Name = "nud10kIA";
+            this.nud10kIA.Size = new System.Drawing.Size(120, 20);
+            this.nud10kIA.TabIndex = 3;
+            this.nud10kIA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // nud10kIB
+            // 
+            this.nud10kIB.Location = new System.Drawing.Point(175, 58);
+            this.nud10kIB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kIB.Name = "nud10kIB";
+            this.nud10kIB.Size = new System.Drawing.Size(120, 20);
+            this.nud10kIB.TabIndex = 4;
+            this.nud10kIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(198, 110);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Aplicar 10k";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // nud10kIC
+            // 
+            this.nud10kIC.Location = new System.Drawing.Point(175, 84);
+            this.nud10kIC.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kIC.Name = "nud10kIC";
+            this.nud10kIC.Size = new System.Drawing.Size(120, 20);
+            this.nud10kIC.TabIndex = 5;
+            this.nud10kIC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(56, 110);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Aplicar 50K";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(328, 16);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(70, 13);
+            this.label45.TabIndex = 17;
+            this.label45.Text = "Tensão RMS";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(326, 16);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(74, 13);
+            this.label46.TabIndex = 21;
+            this.label46.Text = "Corrente RMS";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(313, 84);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 20;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(313, 58);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 19;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(313, 32);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 18;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1014, 691);
-            this.Controls.Add(this.groupBox9);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(1036, 739);
+            this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -1524,6 +2031,25 @@ namespace FonteTrifasicaPID
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kIA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kIB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kIC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kIA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kIB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kIC)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1636,6 +2162,47 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox txtKi10Corrente;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.CheckBox cbkAutoAplicar;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.NumericUpDown nud50kVA;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.NumericUpDown nud50kVB;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.NumericUpDown nud50kVC;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.NumericUpDown nud10kVA;
+        private System.Windows.Forms.NumericUpDown nud10kVB;
+        private System.Windows.Forms.Button btnAplicar10k;
+        private System.Windows.Forms.NumericUpDown nud10kVC;
+        private System.Windows.Forms.Button btnAplicar50k;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.NumericUpDown nud50kIA;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.NumericUpDown nud50kIB;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.NumericUpDown nud50kIC;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.NumericUpDown nud10kIA;
+        private System.Windows.Forms.NumericUpDown nud10kIB;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown nud10kIC;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTensaoRMSVA;
     }
 }
 

@@ -63,6 +63,8 @@ namespace FonteTrifasicaPID
         float VBMaxPosTrise = -1;
         float VCMaxPosTrise = -1;
 
+        int AtualizaçãoVR_IR = 3;
+
         enum Identificador
         {
             ConstantesPIDTensão,
@@ -327,7 +329,7 @@ namespace FonteTrifasicaPID
                         txtKdTensao.Invoke(new Action(() =>
                         {
                             txtKdTensao.Text = partes[3];
-                        }));    
+                        }));
                         break;
                     case (int)Identificador.ConstantesPIDCorrente:
                         txtKpCorrente.Invoke(new Action(() => 
@@ -335,7 +337,7 @@ namespace FonteTrifasicaPID
                             txtKpCorrente.Text = partes[1];
                             txtKiCorrente.Text = partes[2];
                             txtKdCorrente.Text = partes[3];
-                        }));                       
+                        }));                     
                         
                         break;
                     case (int)Identificador.ParâmetrosSintetização:
@@ -350,17 +352,18 @@ namespace FonteTrifasicaPID
                         {
                             txtTensãoRMSA.Invoke(new Action(() =>
                             {
-                                txtTensãoRMSA.Text = partes[1];
+                                if(PassoGraficoVR % AtualizaçãoVR_IR == 0)
+                                    txtTensãoRMSA.Text = partes[1];
                             }));
                             chartTensao.Invoke(new Action(() =>
                             {
-                                chartTensao.Series[0].Points.AddXY(PassoGraficoVR, double.Parse(partes[1]) / 1000);
+                                chartTensao.Series[0].Points.AddXY(PassoGraficoVR, double.Parse(partes[1]) / 100);
                                 PassoGraficoVR++;
                             }));
 
                             txtTempAcomodTensaoA.Invoke(new Action(() =>
                             {
-                                if (double.Parse(partes[1]) / 1000 > int.Parse(txtTensãoRMS.Text) && !TRiseVa)
+                                if (double.Parse(partes[1]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVa)
                                 {
                                     txtTempAcomodTensaoA.Text = (PassoGraficoVR * 0.2).ToString() + "s";
                                     TRiseVa = true;
@@ -369,9 +372,9 @@ namespace FonteTrifasicaPID
 
                             txtOvershootTensaoA.Invoke(new Action(() =>
                             {
-                                if (double.Parse(partes[1]) / 1000 > double.Parse(txtOvershootTensaoA.Text))
+                                if (double.Parse(partes[1]) / 100 > double.Parse(txtOvershootTensaoA.Text))
                                 {
-                                    txtOvershootTensaoA.Text = (double.Parse(partes[1]) / 1000).ToString();
+                                    txtOvershootTensaoA.Text = (double.Parse(partes[1]) / 100).ToString();
                                 }
                             }));
 
@@ -379,9 +382,9 @@ namespace FonteTrifasicaPID
                             {
                                 if (TRiseVa)
                                 {
-                                    if (float.Parse(txtUndershootTensaoA.Text) > float.Parse(partes[1]) / 1000 || float.Parse(txtUndershootTensaoA.Text) == -1)
+                                    if (float.Parse(txtUndershootTensaoA.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUndershootTensaoA.Text) == -1)
                                     {
-                                        txtUndershootTensaoA.Text = (float.Parse(partes[1]) / 1000).ToString();
+                                        txtUndershootTensaoA.Text = (float.Parse(partes[1]) / 100).ToString();
                                     }
                                 }
                             }));
@@ -390,12 +393,12 @@ namespace FonteTrifasicaPID
                             {
                                 if(TRiseVa)
                                 {
-                                    if(float.Parse(partes[1]) / 1000 > VAMaxPosTrise)
+                                    if(float.Parse(partes[1]) / 100 > VAMaxPosTrise)
                                     {
-                                        VAMaxPosTrise = float.Parse(partes[1]) / 1000;
+                                        VAMaxPosTrise = float.Parse(partes[1]) / 100;
                                     }
-                                    txtDifVa.Text = (VAMaxPosTrise - float.Parse(txtUndershootTensaoA.Text)).ToString("0.000");
-                                    txtDifVa.Text += "/" + (((VAMaxPosTrise - float.Parse(txtUndershootTensaoA.Text))/float.Parse(txtTensãoRMS.Text))*1000).ToString("0.000");
+                                    txtDifVa.Text = (VAMaxPosTrise - float.Parse(txtUndershootTensaoA.Text)).ToString("0.00");
+                                    txtDifVa.Text += "/" + (((VAMaxPosTrise - float.Parse(txtUndershootTensaoA.Text))/float.Parse(txtTensãoRMS.Text))*100).ToString("0.00");
                                 }
                                 
                             }));
@@ -405,17 +408,18 @@ namespace FonteTrifasicaPID
                         {
                             txtTensãoRMSB.Invoke(new Action(() =>
                             {
-                                txtTensãoRMSB.Text = partes[2];
+                                if (PassoGraficoVS % AtualizaçãoVR_IR == 0)
+                                    txtTensãoRMSB.Text = partes[2];
                             }));
                             chartTensao.Invoke(new Action(() =>
                             {
-                                chartTensao.Series[1].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 1000);
+                                chartTensao.Series[1].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
                                 PassoGraficoVS++;
                             }));
 
                             txtTempAcomodTensaoB.Invoke(new Action(() =>
                             {
-                                if (double.Parse(partes[2]) / 1000 > int.Parse(txtTensãoRMS.Text) && !TRiseVb)
+                                if (double.Parse(partes[2]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVb)
                                 {
                                     txtTempAcomodTensaoB.Text = (PassoGraficoVS * 0.2).ToString() + "s";
                                     TRiseVb = true;
@@ -424,9 +428,9 @@ namespace FonteTrifasicaPID
 
                             txtOvershootTensaoB.Invoke(new Action(() =>
                             {
-                                if (double.Parse(partes[2]) / 1000 > double.Parse(txtOvershootTensaoB.Text))
+                                if (double.Parse(partes[2]) / 100 > double.Parse(txtOvershootTensaoB.Text))
                                 {
-                                    txtOvershootTensaoB.Text = (double.Parse(partes[2]) / 1000).ToString();
+                                    txtOvershootTensaoB.Text = (double.Parse(partes[2]) / 100).ToString();
                                 }
                             }));
 
@@ -434,9 +438,9 @@ namespace FonteTrifasicaPID
                             {
                                 if (TRiseVb)
                                 {
-                                    if (float.Parse(txtUndershootTensaoB.Text) > float.Parse(partes[1]) / 1000 || float.Parse(txtUndershootTensaoB.Text) == -1)
+                                    if (float.Parse(txtUndershootTensaoB.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUndershootTensaoB.Text) == -1)
                                     {
-                                        txtUndershootTensaoB.Text = (float.Parse(partes[1]) / 1000).ToString();
+                                        txtUndershootTensaoB.Text = (float.Parse(partes[1]) / 100).ToString();
                                     }
                                 }
                             }));
@@ -445,12 +449,12 @@ namespace FonteTrifasicaPID
                             {
                                 if (TRiseVb)
                                 {
-                                    if (float.Parse(partes[1]) / 1000 > VBMaxPosTrise)
+                                    if (float.Parse(partes[1]) / 100 > VBMaxPosTrise)
                                     {
-                                        VBMaxPosTrise = float.Parse(partes[1]) / 1000;
+                                        VBMaxPosTrise = float.Parse(partes[1]) / 100;
                                     }
-                                    txtDifVb.Text = (VBMaxPosTrise - float.Parse(txtUndershootTensaoB.Text)).ToString("0.000");
-                                    txtDifVb.Text += "/" + (((VBMaxPosTrise - float.Parse(txtUndershootTensaoB.Text)) / float.Parse(txtTensãoRMS.Text)) * 1000).ToString("0.000");
+                                    txtDifVb.Text = (VBMaxPosTrise - float.Parse(txtUndershootTensaoB.Text)).ToString("0.00");
+                                    txtDifVb.Text += "/" + (((VBMaxPosTrise - float.Parse(txtUndershootTensaoB.Text)) / float.Parse(txtTensãoRMS.Text)) * 100).ToString("0.00");
                                 }
 
                             }));
@@ -460,17 +464,18 @@ namespace FonteTrifasicaPID
                         {
                             txtTensãoRMSC.Invoke(new Action(() =>
                             {
-                                txtTensãoRMSC.Text = partes[3];
+                                if (PassoGraficoVT % AtualizaçãoVR_IR == 0)
+                                    txtTensãoRMSC.Text = partes[3];
                             }));
                             chartTensao.Invoke(new Action(() =>
                             {
-                                chartTensao.Series[2].Points.AddXY(PassoGraficoVT, double.Parse(partes[3]) / 1000);
+                                chartTensao.Series[2].Points.AddXY(PassoGraficoVT, double.Parse(partes[3]) / 100);
                                 PassoGraficoVT++;
                             }));
 
                             txtTempAcomodTensaoC.Invoke(new Action(() =>
                             {
-                                if (double.Parse(partes[3]) / 1000 > int.Parse(txtTensãoRMS.Text) && !TRiseVc)
+                                if (double.Parse(partes[3]) / 100 > int.Parse(txtTensãoRMS.Text) && !TRiseVc)
                                 {
                                     txtTempAcomodTensaoC.Text = (PassoGraficoVT * 0.2).ToString() + "s";
                                     TRiseVc = true;
@@ -479,7 +484,7 @@ namespace FonteTrifasicaPID
 
                             txtOvershootTensaoC.Invoke(new Action(() =>
                             {
-                                if (double.Parse(partes[3]) / 1000 > double.Parse(txtOvershootTensaoC.Text))
+                                if (double.Parse(partes[3]) / 100 > double.Parse(txtOvershootTensaoC.Text))
                                 {
                                     txtOvershootTensaoC.Text = (double.Parse(partes[3]) / 100).ToString();
                                 }
@@ -489,9 +494,9 @@ namespace FonteTrifasicaPID
                             {
                                 if (TRiseVc)
                                 {
-                                    if (float.Parse(txtUndershootTensaoC.Text) > float.Parse(partes[1]) / 1000 || float.Parse(txtUndershootTensaoC.Text) == -1)
+                                    if (float.Parse(txtUndershootTensaoC.Text) > float.Parse(partes[1]) / 100 || float.Parse(txtUndershootTensaoC.Text) == -1)
                                     {
-                                        txtUndershootTensaoC.Text = (float.Parse(partes[1]) / 1000).ToString();
+                                        txtUndershootTensaoC.Text = (float.Parse(partes[1]) / 100).ToString();
                                     }
                                 }
                             }));
@@ -500,12 +505,12 @@ namespace FonteTrifasicaPID
                             {
                                 if (TRiseVc)
                                 {
-                                    if (float.Parse(partes[1]) / 1000 > VCMaxPosTrise)
+                                    if (float.Parse(partes[1]) / 100 > VCMaxPosTrise)
                                     {
-                                        VCMaxPosTrise = float.Parse(partes[1]) / 1000;
+                                        VCMaxPosTrise = float.Parse(partes[1]) / 100;
                                     }
-                                    txtDifVc.Text = (VCMaxPosTrise - float.Parse(txtUndershootTensaoC.Text)).ToString("0.000");
-                                    txtDifVc.Text += "/" + (((VCMaxPosTrise - float.Parse(txtUndershootTensaoC.Text)) / float.Parse(txtTensãoRMS.Text)) * 1000).ToString("0.000");
+                                    txtDifVc.Text = (VCMaxPosTrise - float.Parse(txtUndershootTensaoC.Text)).ToString("0.00");
+                                    txtDifVc.Text += "/" + (((VCMaxPosTrise - float.Parse(txtUndershootTensaoC.Text)) / float.Parse(txtTensãoRMS.Text)) * 100).ToString("0.00");
                                 }
 
                             }));
@@ -516,7 +521,8 @@ namespace FonteTrifasicaPID
                         {
                             txtCorrenteRMSA.Invoke(new Action(() =>
                             {
-                                txtCorrenteRMSA.Text = partes[1];
+                                if (PassoGraficoIR % AtualizaçãoVR_IR == 0)
+                                    txtCorrenteRMSA.Text = partes[1];
                             }));
                             chartCorrente.Invoke(new Action(() =>
                             {
@@ -557,7 +563,8 @@ namespace FonteTrifasicaPID
                         {
                             txtCorrenteRMSB.Invoke(new Action(() =>
                             {
-                                txtCorrenteRMSB.Text = partes[2];
+                                if (PassoGraficoIS % AtualizaçãoVR_IR == 0)
+                                    txtCorrenteRMSB.Text = partes[2];
                             }));
                             chartCorrente.Invoke(new Action(() =>
                             {
@@ -598,7 +605,8 @@ namespace FonteTrifasicaPID
                         {
                             txtCorrenteRMSC.Invoke(new Action(() =>
                             {
-                                txtCorrenteRMSC.Text = partes[3];
+                                if (PassoGraficoIT % AtualizaçãoVR_IR == 0)
+                                    txtCorrenteRMSC.Text = partes[3];
                             }));
                             chartCorrente.Invoke(new Action(() =>
                             {
@@ -640,16 +648,31 @@ namespace FonteTrifasicaPID
                         switch(Fase)
                         {
                             case 1://Fase R
-                                
+                                chartTensao.Invoke(new Action(() =>
+                                {
+                                    if(cbxGraficoVA.Checked)
+                                    {
+                                        chartTensao.Series[3].Points.AddXY(PassoGraficoVR, double.Parse(partes[2]) / 100);
+                                    }                                    
+                                }));
                                 break;
                             case 2: //Fase S
                                 chartTensao.Invoke(new Action(() =>
                                 {
-                                    chartTensao.Series[4].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
+                                    if (cbxGraficoVB.Checked)
+                                    {
+                                        chartTensao.Series[4].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
+                                    }
                                 }));
                                 break;
                             case 3: //Fase T
-
+                                chartTensao.Invoke(new Action(() =>
+                                {
+                                    if (cbxGraficoVC.Checked)
+                                    {
+                                        chartTensao.Series[5].Points.AddXY(PassoGraficoVT, double.Parse(partes[2]) / 100);
+                                    }
+                                }));
                                 break;
 
                             default:
@@ -662,16 +685,31 @@ namespace FonteTrifasicaPID
                         switch (Fase)
                         {
                             case 1://Fase R
-
+                                chartTensao.Invoke(new Action(() =>
+                                {
+                                    if (cbxGraficoVA.Checked)
+                                    {
+                                        chartTensao.Series[6].Points.AddXY(PassoGraficoVR, double.Parse(partes[2]) / 100);
+                                    }
+                                }));
                                 break;
                             case 2: //Fase S
                                 chartTensao.Invoke(new Action(() =>
                                 {
-                                    chartTensao.Series[7].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
+                                    if (cbxGraficoVB.Checked)
+                                    {
+                                        chartTensao.Series[7].Points.AddXY(PassoGraficoVS, double.Parse(partes[2]) / 100);
+                                    }
                                 }));
                                 break;
                             case 3: //Fase T
-
+                                chartTensao.Invoke(new Action(() =>
+                                {
+                                    if (cbxGraficoVC.Checked)
+                                    {
+                                        chartTensao.Series[8].Points.AddXY(PassoGraficoVT, double.Parse(partes[2]) / 100);
+                                    }
+                                }));
                                 break;
 
                             default:
@@ -680,25 +718,47 @@ namespace FonteTrifasicaPID
                         }
                         break;
                     case (int)Identificador.ID_RX_AjusteFinoI:
-                        Fase = int.Parse(partes[1]);
-                        switch (Fase)
+                        try
                         {
-                            case 1://Fase R
+                            Fase = int.Parse(partes[1]);
+                            switch (Fase)
+                            {
+                                case 1://Fase R
+                                    chartCorrente.Invoke(new Action(() =>
+                                    {
+                                        if (cbxGraficoIA.Checked)
+                                        {
+                                            chartCorrente.Series[3].Points.AddXY(PassoGraficoIR, double.Parse(partes[2]) / 100);
+                                        }
+                                    }));
+                                    break;
+                                case 2: //Fase S
+                                    chartCorrente.Invoke(new Action(() =>
+                                    {
+                                        if (cbxGraficoIB.Checked)
+                                        {
+                                            chartCorrente.Series[4].Points.AddXY(PassoGraficoIS, double.Parse(partes[2]) / 100);
+                                        }
+                                    }));
+                                    break;
+                                case 3: //Fase T
+                                    chartCorrente.Invoke(new Action(() =>
+                                    {
+                                        if (cbxGraficoIC.Checked)
+                                        {
+                                            chartCorrente.Series[5].Points.AddXY(PassoGraficoIT, double.Parse(partes[2]) / 100);
+                                        }
+                                    }));
+                                    break;
 
-                                break;
-                            case 2: //Fase S
-                                chartCorrente.Invoke(new Action(() =>
-                                {
-                                    chartCorrente.Series[4].Points.AddXY(PassoGraficoIS, double.Parse(partes[2]) / 100);
-                                }));
-                                break;
-                            case 3: //Fase T
+                                default:
 
-                                break;
+                                    break;
+                            }
+                        }
+                        catch(Exception)
+                        {
 
-                            default:
-
-                                break;
                         }
                         break;
                     case (int)Identificador.ID_RX_AjusteGrossoI:
@@ -706,16 +766,31 @@ namespace FonteTrifasicaPID
                         switch (Fase)
                         {
                             case 1://Fase R
-
+                                chartCorrente.Invoke(new Action(() =>
+                                {
+                                    if (cbxGraficoIA.Checked)
+                                    {
+                                        chartCorrente.Series[6].Points.AddXY(PassoGraficoIR, double.Parse(partes[2]) / 100);
+                                    }
+                                }));
                                 break;
                             case 2: //Fase S
                                 chartCorrente.Invoke(new Action(() =>
                                 {
-                                    chartCorrente.Series[7].Points.AddXY(PassoGraficoIS, double.Parse(partes[2]) / 100);
+                                    if (cbxGraficoIB.Checked)
+                                    {
+                                        chartCorrente.Series[7].Points.AddXY(PassoGraficoIS, double.Parse(partes[2]) / 100);
+                                    }
                                 }));
                                 break;
                             case 3: //Fase T
-
+                                chartCorrente.Invoke(new Action(() =>
+                                {
+                                    if (cbxGraficoIC.Checked)
+                                    {
+                                        chartCorrente.Series[8].Points.AddXY(PassoGraficoIT, double.Parse(partes[2]) / 100);
+                                    }
+                                }));
                                 break;
 
                             default:
@@ -732,39 +807,43 @@ namespace FonteTrifasicaPID
 
         private void PortaSerial_DadoRecebido(object sender, SerialDataReceivedEventArgs e)
         {
-            string DadoRecebido = PortaSerial.ReadLine();
-            Console.WriteLine("Dado recebido: " + DadoRecebido);
-            LOG_TXT("Dado Recebido: " + DadoRecebido);
-
-            int IndexVirgulaCS = DadoRecebido.LastIndexOf(',');
-            string TramaSemCS = string.Empty;
-            string CS = string.Empty;
-
-            if (IndexVirgulaCS != -1)
+            try
             {
-                TramaSemCS = DadoRecebido.Substring(0, IndexVirgulaCS) + ",";
-                CS = DadoRecebido.Substring(IndexVirgulaCS + 1, 2);                
+                string DadoRecebido = PortaSerial.ReadLine();
+                Console.WriteLine("Dado recebido: " + DadoRecebido);
+                LOG_TXT("Dado Recebido: " + DadoRecebido);
 
-                LOG_TXT("Trama Recebida sem CS: " + TramaSemCS);
-                LOG_TXT("CS da Trama recebida: " + CS);
+                int IndexVirgulaCS = DadoRecebido.LastIndexOf(',');
+                string TramaSemCS = string.Empty;
+                string CS = string.Empty;
 
-                if (Calcula_checksum(TramaSemCS) == CS)
-                {                    
-                    IdentificarPacote(TramaSemCS);
+                if (IndexVirgulaCS != -1)
+                {
+                    TramaSemCS = DadoRecebido.Substring(0, IndexVirgulaCS) + ",";
+                    CS = DadoRecebido.Substring(IndexVirgulaCS + 1, 2);
+
+                    LOG_TXT("Trama Recebida sem CS: " + TramaSemCS);
+                    LOG_TXT("CS da Trama recebida: " + CS);
+
+                    if (Calcula_checksum(TramaSemCS) == CS)
+                    {
+                        IdentificarPacote(TramaSemCS);
+                    }
+                    else
+                    {
+                        LOG_TXT("Checsum da trama recebida estava incorreto!");
+                        LOG_TXT("Calc: |" + Calcula_checksum(TramaSemCS) + "| " + "Recebido: |" + CS + "|");
+                    }
                 }
                 else
                 {
-                    LOG_TXT("Checsum da trama recebida estava incorreto!");
-                    LOG_TXT("Calc: |" + Calcula_checksum(TramaSemCS) + "| " + "Recebido: |" + CS + "|");
+                    LOG_TXT("A trama recebida não continha ','");
                 }
             }
-            else
+            catch(Exception)
             {
-                LOG_TXT("A trama recebida não continha ','");
-            }
 
-            //string DadoRecebidoSemCS = 
-            //IdentificarPacote(DadoRecebido);
+            }
         }
 
         private void btnConectarSerial_Click(object sender, EventArgs e)
@@ -1121,6 +1200,10 @@ namespace FonteTrifasicaPID
             txtUndershootTensaoB.Text = "-1";
             txtUndershootTensaoC.Text = "-1";
 
+            txtTensãoRMSA.Text = "";
+            txtTensãoRMSB.Text = "";
+            txtTensãoRMSC.Text = "";
+
             VAMaxPosTrise = 0;
             VBMaxPosTrise = 0;
             VCMaxPosTrise = 0;
@@ -1144,6 +1227,7 @@ namespace FonteTrifasicaPID
             TRiseIa = false;
             TRiseIb = false;
             TRiseIc = false;
+
             txtTempAcomodCorrenteA.Text = "";
             txtOvershootCorrenteA.Text = "0";
 
@@ -1156,6 +1240,10 @@ namespace FonteTrifasicaPID
             txtUnderShootCorrenteA.Text = "-1";
             txtUnderShootCorrenteB.Text = "-1";
             txtUnderShootCorrenteC.Text = "-1";
+
+            txtCorrenteRMSA.Text = "";
+            txtCorrenteRMSB.Text = "";
+            txtCorrenteRMSC.Text = "";
         }
 
         private void txtKp10kV_KeyPress(object sender, KeyPressEventArgs e)
