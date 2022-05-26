@@ -4888,3 +4888,124 @@
 26/05/2022 15:02:33  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
 26/05/2022 15:02:33  -  A trama recebida não continha ','
 26/05/2022 15:03:05  -  Arquivo de configuração carregado com sucesso!
+26/05/2022 15:07:13  -  Arquivo de configuração carregado com sucesso!
+26/05/2022 15:07:16  -  Porta serial aberta com sucesso!
+26/05/2022 15:07:16  -  Salvando informações da porta serial - Porta:  COM11 Velocidade: 115200
+26/05/2022 15:07:21  -  Envio de comando resetar ESP32: 16,2b
+26/05/2022 15:07:21  -  Dado Recebido: ***********************
+26/05/2022 15:07:21  -  A trama recebida não continha ','
+26/05/2022 15:07:21  -  Dado Recebido: ** Sistema iniciado! **
+26/05/2022 15:07:21  -  A trama recebida não continha ','
+26/05/2022 15:07:21  -  Dado Recebido: ***********************
+26/05/2022 15:07:21  -  A trama recebida não continha ','
+26/05/2022 15:07:21  -  Dado Recebido: Mutex_SPI_ADE criado com sucesso
+26/05/2022 15:07:21  -  A trama recebida não continha ','
+26/05/2022 15:07:23  -  Dado Recebido: Mutex_I2C_1 criado com sucesso
+26/05/2022 15:07:23  -  A trama recebida não continha ','
+26/05/2022 15:07:28  -  Envio de comando reset ADE: 17,2a
+26/05/2022 15:07:28  -  Dado Recebido: OV
+26/05/2022 15:07:28  -  A trama recebida não continha ','
+26/05/2022 15:07:28  -  Dado Recebido: 4294967295
+26/05/2022 15:07:28  -  A trama recebida não continha ','
+26/05/2022 15:07:28  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:28  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:29  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:29  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:30  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:30  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:31  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:31  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:32  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:32  -  A trama recebida não continha ','
+26/05/2022 15:07:33  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:33  -  A trama recebida não continha ','
+26/05/2022 15:07:33  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:33  -  A trama recebida não continha ','
+26/05/2022 15:07:33  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:33  -  A trama recebida não continha ','
+26/05/2022 15:07:33  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:33  -  A trama recebida não continha ','
+26/05/2022 15:07:33  -  Dado Recebido: ESP32 travou
+26/05/2022 15:07:33  -  A trama recebida não continha ','
+26/05/2022 15:07:33  -  Envio de comando recnfigurar ADE: 18,25
+26/05/2022 15:07:33  -  Dado Recebido: ADE Configurado!
+26/05/2022 15:07:33  -  A trama recebida não continha ','
+26/05/2022 15:07:36  -  Envio de comando resetar ESP32: 16,2b
+26/05/2022 15:07:36  -  Dado Recebido: ***********************
+26/05/2022 15:07:36  -  A trama recebida não continha ','
+26/05/2022 15:07:36  -  Dado Recebido: ** Sistema iniciado! **
+26/05/2022 15:07:36  -  A trama recebida não continha ','
+26/05/2022 15:07:38  -  Dado Recebido: ***********************
+26/05/2022 15:07:38  -  A trama recebida não continha ','

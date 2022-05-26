@@ -1353,17 +1353,56 @@ namespace FonteTrifasicaPID
 
         private void btnResetarESP32_Click(object sender, EventArgs e)
         {
+            string TRAMA_ENVIO = (int)Identificador.ID_RESET_ESP32 + ",";
 
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando resetar ESP32: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para resetar ESP32 não enviado devido porta serial fechada!");
+            }
         }
 
         private void btnResetaADE_Click(object sender, EventArgs e)
         {
+            string TRAMA_ENVIO = (int)Identificador.ID_RESET_ADE + ",";
 
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando reset ADE: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para resetar ADE não enviado devido porta serial fechada!");
+            }
         }
 
         private void btnReconfigurarADE_Click(object sender, EventArgs e)
         {
+            string TRAMA_ENVIO = (int)Identificador.ID_RECONFIG_ADE + ",";
 
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando recnfigurar ADE: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para reconfigurar ADE não enviado devido porta serial fechada!");
+            }
         }
 
         private void btnAplicar50ktensao_Click(object sender, EventArgs e)
