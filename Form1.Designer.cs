@@ -163,28 +163,18 @@ namespace FonteTrifasicaPID
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.nud50kVA = new System.Windows.Forms.NumericUpDown();
-            this.nud50kVB = new System.Windows.Forms.NumericUpDown();
-            this.nud50kVC = new System.Windows.Forms.NumericUpDown();
-            this.nud10kVA = new System.Windows.Forms.NumericUpDown();
-            this.nud10kVB = new System.Windows.Forms.NumericUpDown();
-            this.nud10kVC = new System.Windows.Forms.NumericUpDown();
-            this.btnAplicar50k = new System.Windows.Forms.Button();
-            this.btnAplicar10k = new System.Windows.Forms.Button();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.cbkAutoAplicar = new System.Windows.Forms.CheckBox();
-            this.txtTensaoRMSVA = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.btnResetarESP32 = new System.Windows.Forms.Button();
+            this.btnResetaADE = new System.Windows.Forms.Button();
+            this.btnReconfigurarADE = new System.Windows.Forms.Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label46 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtCorrenteRMSIC = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
+            this.txtCorrenteRMSIB = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
+            this.txtCorrenteRMSIA = new System.Windows.Forms.TextBox();
             this.nud50kIA = new System.Windows.Forms.NumericUpDown();
             this.label42 = new System.Windows.Forms.Label();
             this.nud50kIB = new System.Windows.Forms.NumericUpDown();
@@ -193,14 +183,28 @@ namespace FonteTrifasicaPID
             this.label44 = new System.Windows.Forms.Label();
             this.nud10kIA = new System.Windows.Forms.NumericUpDown();
             this.nud10kIB = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAplicar10kcorrente = new System.Windows.Forms.Button();
             this.nud10kIC = new System.Windows.Forms.NumericUpDown();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAplicar50kCorrente = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtTensaoRMSVC = new System.Windows.Forms.TextBox();
+            this.cbkAutoAplicar = new System.Windows.Forms.CheckBox();
+            this.txtTensaoRMSVB = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtTensaoRMSVA = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.nud50kVA = new System.Windows.Forms.NumericUpDown();
+            this.label38 = new System.Windows.Forms.Label();
+            this.nud50kVB = new System.Windows.Forms.NumericUpDown();
+            this.label37 = new System.Windows.Forms.Label();
+            this.nud50kVC = new System.Windows.Forms.NumericUpDown();
+            this.label36 = new System.Windows.Forms.Label();
+            this.nud10kVA = new System.Windows.Forms.NumericUpDown();
+            this.nud10kVB = new System.Windows.Forms.NumericUpDown();
+            this.btnAplicar10ktensao = new System.Windows.Forms.Button();
+            this.nud10kVC = new System.Windows.Forms.NumericUpDown();
+            this.btnAplicar50ktensao = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -215,13 +219,7 @@ namespace FonteTrifasicaPID
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud50kVA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud50kVB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud50kVC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).BeginInit();
-            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud50kIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud50kIB)).BeginInit();
@@ -229,6 +227,13 @@ namespace FonteTrifasicaPID
             ((System.ComponentModel.ISupportInitialize)(this.nud10kIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kIB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kIC)).BeginInit();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).BeginInit();
             this.SuspendLayout();
             // 
             // chartTensao
@@ -1574,6 +1579,7 @@ namespace FonteTrifasicaPID
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.groupBox11);
             this.tabPage2.Controls.Add(this.groupBox12);
             this.tabPage2.Controls.Add(this.groupBox10);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -1584,214 +1590,57 @@ namespace FonteTrifasicaPID
             this.tabPage2.Text = "DigPot";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // nud50kVA
+            // groupBox11
             // 
-            this.nud50kVA.Location = new System.Drawing.Point(33, 32);
-            this.nud50kVA.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nud50kVA.Name = "nud50kVA";
-            this.nud50kVA.Size = new System.Drawing.Size(120, 20);
-            this.nud50kVA.TabIndex = 0;
-            this.nud50kVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.groupBox11.Controls.Add(this.btnResetarESP32);
+            this.groupBox11.Controls.Add(this.btnResetaADE);
+            this.groupBox11.Controls.Add(this.btnReconfigurarADE);
+            this.groupBox11.Location = new System.Drawing.Point(449, 6);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(300, 175);
+            this.groupBox11.TabIndex = 15;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Configurações Gerais";
             // 
-            // nud50kVB
+            // btnResetarESP32
             // 
-            this.nud50kVB.Location = new System.Drawing.Point(33, 58);
-            this.nud50kVB.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nud50kVB.Name = "nud50kVB";
-            this.nud50kVB.Size = new System.Drawing.Size(120, 20);
-            this.nud50kVB.TabIndex = 1;
-            this.nud50kVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnResetarESP32.Location = new System.Drawing.Point(157, 30);
+            this.btnResetarESP32.Name = "btnResetarESP32";
+            this.btnResetarESP32.Size = new System.Drawing.Size(123, 23);
+            this.btnResetarESP32.TabIndex = 9;
+            this.btnResetarESP32.Text = "Resetar ESP32";
+            this.btnResetarESP32.UseVisualStyleBackColor = true;
+            this.btnResetarESP32.Click += new System.EventHandler(this.btnResetarESP32_Click);
             // 
-            // nud50kVC
+            // btnResetaADE
             // 
-            this.nud50kVC.Location = new System.Drawing.Point(33, 84);
-            this.nud50kVC.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nud50kVC.Name = "nud50kVC";
-            this.nud50kVC.Size = new System.Drawing.Size(120, 20);
-            this.nud50kVC.TabIndex = 2;
-            this.nud50kVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnResetaADE.Location = new System.Drawing.Point(18, 60);
+            this.btnResetaADE.Name = "btnResetaADE";
+            this.btnResetaADE.Size = new System.Drawing.Size(123, 23);
+            this.btnResetaADE.TabIndex = 8;
+            this.btnResetaADE.Text = "Resetar ADE";
+            this.btnResetaADE.UseVisualStyleBackColor = true;
+            this.btnResetaADE.Click += new System.EventHandler(this.btnResetaADE_Click);
             // 
-            // nud10kVA
+            // btnReconfigurarADE
             // 
-            this.nud10kVA.Location = new System.Drawing.Point(175, 32);
-            this.nud10kVA.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nud10kVA.Name = "nud10kVA";
-            this.nud10kVA.Size = new System.Drawing.Size(120, 20);
-            this.nud10kVA.TabIndex = 3;
-            this.nud10kVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // nud10kVB
-            // 
-            this.nud10kVB.Location = new System.Drawing.Point(175, 58);
-            this.nud10kVB.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nud10kVB.Name = "nud10kVB";
-            this.nud10kVB.Size = new System.Drawing.Size(120, 20);
-            this.nud10kVB.TabIndex = 4;
-            this.nud10kVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // nud10kVC
-            // 
-            this.nud10kVC.Location = new System.Drawing.Point(175, 84);
-            this.nud10kVC.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nud10kVC.Name = "nud10kVC";
-            this.nud10kVC.Size = new System.Drawing.Size(120, 20);
-            this.nud10kVC.TabIndex = 5;
-            this.nud10kVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnAplicar50k
-            // 
-            this.btnAplicar50k.Location = new System.Drawing.Point(56, 110);
-            this.btnAplicar50k.Name = "btnAplicar50k";
-            this.btnAplicar50k.Size = new System.Drawing.Size(75, 23);
-            this.btnAplicar50k.TabIndex = 6;
-            this.btnAplicar50k.Text = "Aplicar 50K";
-            this.btnAplicar50k.UseVisualStyleBackColor = true;
-            // 
-            // btnAplicar10k
-            // 
-            this.btnAplicar10k.Location = new System.Drawing.Point(198, 110);
-            this.btnAplicar10k.Name = "btnAplicar10k";
-            this.btnAplicar10k.Size = new System.Drawing.Size(75, 23);
-            this.btnAplicar10k.TabIndex = 7;
-            this.btnAplicar10k.Text = "Aplicar 10k";
-            this.btnAplicar10k.UseVisualStyleBackColor = true;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(63, 16);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(60, 13);
-            this.label35.TabIndex = 8;
-            this.label35.Text = "DigPot 50k";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(205, 16);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(60, 13);
-            this.label36.TabIndex = 9;
-            this.label36.Text = "DigPot 10k";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(7, 34);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(20, 13);
-            this.label37.TabIndex = 10;
-            this.label37.Text = "Va";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(7, 60);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(20, 13);
-            this.label38.TabIndex = 11;
-            this.label38.Text = "Vb";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(7, 86);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(20, 13);
-            this.label39.TabIndex = 12;
-            this.label39.Text = "Vc";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.label45);
-            this.groupBox10.Controls.Add(this.textBox3);
-            this.groupBox10.Controls.Add(this.cbkAutoAplicar);
-            this.groupBox10.Controls.Add(this.textBox2);
-            this.groupBox10.Controls.Add(this.label35);
-            this.groupBox10.Controls.Add(this.txtTensaoRMSVA);
-            this.groupBox10.Controls.Add(this.label39);
-            this.groupBox10.Controls.Add(this.nud50kVA);
-            this.groupBox10.Controls.Add(this.label38);
-            this.groupBox10.Controls.Add(this.nud50kVB);
-            this.groupBox10.Controls.Add(this.label37);
-            this.groupBox10.Controls.Add(this.nud50kVC);
-            this.groupBox10.Controls.Add(this.label36);
-            this.groupBox10.Controls.Add(this.nud10kVA);
-            this.groupBox10.Controls.Add(this.nud10kVB);
-            this.groupBox10.Controls.Add(this.btnAplicar10k);
-            this.groupBox10.Controls.Add(this.nud10kVC);
-            this.groupBox10.Controls.Add(this.btnAplicar50k);
-            this.groupBox10.Location = new System.Drawing.Point(6, 6);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(437, 175);
-            this.groupBox10.TabIndex = 13;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Ajuste DigPot Tensão";
-            // 
-            // cbkAutoAplicar
-            // 
-            this.cbkAutoAplicar.AutoSize = true;
-            this.cbkAutoAplicar.Location = new System.Drawing.Point(10, 152);
-            this.cbkAutoAplicar.Name = "cbkAutoAplicar";
-            this.cbkAutoAplicar.Size = new System.Drawing.Size(82, 17);
-            this.cbkAutoAplicar.TabIndex = 13;
-            this.cbkAutoAplicar.Text = "Auto aplicar";
-            this.cbkAutoAplicar.UseVisualStyleBackColor = true;
-            // 
-            // txtTensaoRMSVA
-            // 
-            this.txtTensaoRMSVA.Location = new System.Drawing.Point(313, 32);
-            this.txtTensaoRMSVA.Name = "txtTensaoRMSVA";
-            this.txtTensaoRMSVA.Size = new System.Drawing.Size(100, 20);
-            this.txtTensaoRMSVA.TabIndex = 14;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(313, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 15;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(313, 84);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 16;
+            this.btnReconfigurarADE.Location = new System.Drawing.Point(18, 29);
+            this.btnReconfigurarADE.Name = "btnReconfigurarADE";
+            this.btnReconfigurarADE.Size = new System.Drawing.Size(123, 23);
+            this.btnReconfigurarADE.TabIndex = 7;
+            this.btnReconfigurarADE.Text = "Reconfigurar ADE";
+            this.btnReconfigurarADE.UseVisualStyleBackColor = true;
+            this.btnReconfigurarADE.Click += new System.EventHandler(this.btnReconfigurarADE_Click);
             // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.label46);
             this.groupBox12.Controls.Add(this.checkBox1);
-            this.groupBox12.Controls.Add(this.textBox4);
+            this.groupBox12.Controls.Add(this.txtCorrenteRMSIC);
             this.groupBox12.Controls.Add(this.label40);
-            this.groupBox12.Controls.Add(this.textBox5);
+            this.groupBox12.Controls.Add(this.txtCorrenteRMSIB);
             this.groupBox12.Controls.Add(this.label41);
-            this.groupBox12.Controls.Add(this.textBox6);
+            this.groupBox12.Controls.Add(this.txtCorrenteRMSIA);
             this.groupBox12.Controls.Add(this.nud50kIA);
             this.groupBox12.Controls.Add(this.label42);
             this.groupBox12.Controls.Add(this.nud50kIB);
@@ -1800,9 +1649,9 @@ namespace FonteTrifasicaPID
             this.groupBox12.Controls.Add(this.label44);
             this.groupBox12.Controls.Add(this.nud10kIA);
             this.groupBox12.Controls.Add(this.nud10kIB);
-            this.groupBox12.Controls.Add(this.button1);
+            this.groupBox12.Controls.Add(this.btnAplicar10kcorrente);
             this.groupBox12.Controls.Add(this.nud10kIC);
-            this.groupBox12.Controls.Add(this.button2);
+            this.groupBox12.Controls.Add(this.btnAplicar50kCorrente);
             this.groupBox12.Location = new System.Drawing.Point(6, 187);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(437, 175);
@@ -1810,9 +1659,19 @@ namespace FonteTrifasicaPID
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Ajuste DigPot Corrente";
             // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(326, 16);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(74, 13);
+            this.label46.TabIndex = 21;
+            this.label46.Text = "Corrente RMS";
+            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Enabled = false;
             this.checkBox1.Location = new System.Drawing.Point(10, 152);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(82, 17);
@@ -1820,14 +1679,34 @@ namespace FonteTrifasicaPID
             this.checkBox1.Text = "Auto aplicar";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // txtCorrenteRMSIC
+            // 
+            this.txtCorrenteRMSIC.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCorrenteRMSIC.ForeColor = System.Drawing.Color.Blue;
+            this.txtCorrenteRMSIC.Location = new System.Drawing.Point(313, 84);
+            this.txtCorrenteRMSIC.Name = "txtCorrenteRMSIC";
+            this.txtCorrenteRMSIC.Size = new System.Drawing.Size(100, 20);
+            this.txtCorrenteRMSIC.TabIndex = 20;
+            this.txtCorrenteRMSIC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Location = new System.Drawing.Point(63, 16);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(60, 13);
+            this.label40.Size = new System.Drawing.Size(75, 13);
             this.label40.TabIndex = 8;
-            this.label40.Text = "DigPot 50k";
+            this.label40.Text = "DigPot Grosso";
+            // 
+            // txtCorrenteRMSIB
+            // 
+            this.txtCorrenteRMSIB.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCorrenteRMSIB.ForeColor = System.Drawing.Color.Yellow;
+            this.txtCorrenteRMSIB.Location = new System.Drawing.Point(313, 58);
+            this.txtCorrenteRMSIB.Name = "txtCorrenteRMSIB";
+            this.txtCorrenteRMSIB.Size = new System.Drawing.Size(100, 20);
+            this.txtCorrenteRMSIB.TabIndex = 19;
+            this.txtCorrenteRMSIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label41
             // 
@@ -1837,6 +1716,16 @@ namespace FonteTrifasicaPID
             this.label41.Size = new System.Drawing.Size(16, 13);
             this.label41.TabIndex = 12;
             this.label41.Text = "Ic";
+            // 
+            // txtCorrenteRMSIA
+            // 
+            this.txtCorrenteRMSIA.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtCorrenteRMSIA.ForeColor = System.Drawing.Color.Red;
+            this.txtCorrenteRMSIA.Location = new System.Drawing.Point(313, 32);
+            this.txtCorrenteRMSIA.Name = "txtCorrenteRMSIA";
+            this.txtCorrenteRMSIA.Size = new System.Drawing.Size(100, 20);
+            this.txtCorrenteRMSIA.TabIndex = 18;
+            this.txtCorrenteRMSIA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // nud50kIA
             // 
@@ -1900,9 +1789,9 @@ namespace FonteTrifasicaPID
             this.label44.AutoSize = true;
             this.label44.Location = new System.Drawing.Point(205, 16);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(60, 13);
+            this.label44.Size = new System.Drawing.Size(62, 13);
             this.label44.TabIndex = 9;
-            this.label44.Text = "DigPot 10k";
+            this.label44.Text = "DigPot Fino";
             // 
             // nud10kIA
             // 
@@ -1930,14 +1819,15 @@ namespace FonteTrifasicaPID
             this.nud10kIB.TabIndex = 4;
             this.nud10kIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // btnAplicar10kcorrente
             // 
-            this.button1.Location = new System.Drawing.Point(198, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Aplicar 10k";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAplicar10kcorrente.Location = new System.Drawing.Point(198, 110);
+            this.btnAplicar10kcorrente.Name = "btnAplicar10kcorrente";
+            this.btnAplicar10kcorrente.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicar10kcorrente.TabIndex = 7;
+            this.btnAplicar10kcorrente.Text = "Aplicar Fino";
+            this.btnAplicar10kcorrente.UseVisualStyleBackColor = true;
+            this.btnAplicar10kcorrente.Click += new System.EventHandler(this.btnAplicar10kcorrente_Click);
             // 
             // nud10kIC
             // 
@@ -1952,14 +1842,42 @@ namespace FonteTrifasicaPID
             this.nud10kIC.TabIndex = 5;
             this.nud10kIC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button2
+            // btnAplicar50kCorrente
             // 
-            this.button2.Location = new System.Drawing.Point(56, 110);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Aplicar 50K";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAplicar50kCorrente.Location = new System.Drawing.Point(41, 110);
+            this.btnAplicar50kCorrente.Name = "btnAplicar50kCorrente";
+            this.btnAplicar50kCorrente.Size = new System.Drawing.Size(97, 23);
+            this.btnAplicar50kCorrente.TabIndex = 6;
+            this.btnAplicar50kCorrente.Text = "Aplicar Grosso";
+            this.btnAplicar50kCorrente.UseVisualStyleBackColor = true;
+            this.btnAplicar50kCorrente.Click += new System.EventHandler(this.btnAplicar50kCorrente_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label45);
+            this.groupBox10.Controls.Add(this.txtTensaoRMSVC);
+            this.groupBox10.Controls.Add(this.cbkAutoAplicar);
+            this.groupBox10.Controls.Add(this.txtTensaoRMSVB);
+            this.groupBox10.Controls.Add(this.label35);
+            this.groupBox10.Controls.Add(this.txtTensaoRMSVA);
+            this.groupBox10.Controls.Add(this.label39);
+            this.groupBox10.Controls.Add(this.nud50kVA);
+            this.groupBox10.Controls.Add(this.label38);
+            this.groupBox10.Controls.Add(this.nud50kVB);
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Controls.Add(this.nud50kVC);
+            this.groupBox10.Controls.Add(this.label36);
+            this.groupBox10.Controls.Add(this.nud10kVA);
+            this.groupBox10.Controls.Add(this.nud10kVB);
+            this.groupBox10.Controls.Add(this.btnAplicar10ktensao);
+            this.groupBox10.Controls.Add(this.nud10kVC);
+            this.groupBox10.Controls.Add(this.btnAplicar50ktensao);
+            this.groupBox10.Location = new System.Drawing.Point(6, 6);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(437, 175);
+            this.groupBox10.TabIndex = 13;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Ajuste DigPot Tensão";
             // 
             // label45
             // 
@@ -1970,35 +1888,189 @@ namespace FonteTrifasicaPID
             this.label45.TabIndex = 17;
             this.label45.Text = "Tensão RMS";
             // 
-            // label46
+            // txtTensaoRMSVC
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(326, 16);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(74, 13);
-            this.label46.TabIndex = 21;
-            this.label46.Text = "Corrente RMS";
+            this.txtTensaoRMSVC.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTensaoRMSVC.ForeColor = System.Drawing.Color.Blue;
+            this.txtTensaoRMSVC.Location = new System.Drawing.Point(313, 84);
+            this.txtTensaoRMSVC.Name = "txtTensaoRMSVC";
+            this.txtTensaoRMSVC.Size = new System.Drawing.Size(100, 20);
+            this.txtTensaoRMSVC.TabIndex = 16;
+            this.txtTensaoRMSVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // cbkAutoAplicar
             // 
-            this.textBox4.Location = new System.Drawing.Point(313, 84);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 20;
+            this.cbkAutoAplicar.AutoSize = true;
+            this.cbkAutoAplicar.Enabled = false;
+            this.cbkAutoAplicar.Location = new System.Drawing.Point(10, 152);
+            this.cbkAutoAplicar.Name = "cbkAutoAplicar";
+            this.cbkAutoAplicar.Size = new System.Drawing.Size(82, 17);
+            this.cbkAutoAplicar.TabIndex = 13;
+            this.cbkAutoAplicar.Text = "Auto aplicar";
+            this.cbkAutoAplicar.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtTensaoRMSVB
             // 
-            this.textBox5.Location = new System.Drawing.Point(313, 58);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 19;
+            this.txtTensaoRMSVB.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTensaoRMSVB.ForeColor = System.Drawing.Color.Yellow;
+            this.txtTensaoRMSVB.Location = new System.Drawing.Point(313, 58);
+            this.txtTensaoRMSVB.Name = "txtTensaoRMSVB";
+            this.txtTensaoRMSVB.Size = new System.Drawing.Size(100, 20);
+            this.txtTensaoRMSVB.TabIndex = 15;
+            this.txtTensaoRMSVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // label35
             // 
-            this.textBox6.Location = new System.Drawing.Point(313, 32);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 18;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(63, 16);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(75, 13);
+            this.label35.TabIndex = 8;
+            this.label35.Text = "DigPot Grosso";
+            // 
+            // txtTensaoRMSVA
+            // 
+            this.txtTensaoRMSVA.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtTensaoRMSVA.ForeColor = System.Drawing.Color.Red;
+            this.txtTensaoRMSVA.Location = new System.Drawing.Point(313, 32);
+            this.txtTensaoRMSVA.Name = "txtTensaoRMSVA";
+            this.txtTensaoRMSVA.Size = new System.Drawing.Size(100, 20);
+            this.txtTensaoRMSVA.TabIndex = 14;
+            this.txtTensaoRMSVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(7, 86);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(20, 13);
+            this.label39.TabIndex = 12;
+            this.label39.Text = "Vc";
+            // 
+            // nud50kVA
+            // 
+            this.nud50kVA.Location = new System.Drawing.Point(33, 32);
+            this.nud50kVA.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kVA.Name = "nud50kVA";
+            this.nud50kVA.Size = new System.Drawing.Size(120, 20);
+            this.nud50kVA.TabIndex = 0;
+            this.nud50kVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(7, 60);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(20, 13);
+            this.label38.TabIndex = 11;
+            this.label38.Text = "Vb";
+            // 
+            // nud50kVB
+            // 
+            this.nud50kVB.Location = new System.Drawing.Point(33, 58);
+            this.nud50kVB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kVB.Name = "nud50kVB";
+            this.nud50kVB.Size = new System.Drawing.Size(120, 20);
+            this.nud50kVB.TabIndex = 1;
+            this.nud50kVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(7, 34);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(20, 13);
+            this.label37.TabIndex = 10;
+            this.label37.Text = "Va";
+            // 
+            // nud50kVC
+            // 
+            this.nud50kVC.Location = new System.Drawing.Point(33, 84);
+            this.nud50kVC.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud50kVC.Name = "nud50kVC";
+            this.nud50kVC.Size = new System.Drawing.Size(120, 20);
+            this.nud50kVC.TabIndex = 2;
+            this.nud50kVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(205, 16);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(62, 13);
+            this.label36.TabIndex = 9;
+            this.label36.Text = "DigPot Fino";
+            // 
+            // nud10kVA
+            // 
+            this.nud10kVA.Location = new System.Drawing.Point(175, 32);
+            this.nud10kVA.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kVA.Name = "nud10kVA";
+            this.nud10kVA.Size = new System.Drawing.Size(120, 20);
+            this.nud10kVA.TabIndex = 3;
+            this.nud10kVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // nud10kVB
+            // 
+            this.nud10kVB.Location = new System.Drawing.Point(175, 58);
+            this.nud10kVB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kVB.Name = "nud10kVB";
+            this.nud10kVB.Size = new System.Drawing.Size(120, 20);
+            this.nud10kVB.TabIndex = 4;
+            this.nud10kVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAplicar10ktensao
+            // 
+            this.btnAplicar10ktensao.Location = new System.Drawing.Point(198, 110);
+            this.btnAplicar10ktensao.Name = "btnAplicar10ktensao";
+            this.btnAplicar10ktensao.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicar10ktensao.TabIndex = 7;
+            this.btnAplicar10ktensao.Text = "Aplicar Fino";
+            this.btnAplicar10ktensao.UseVisualStyleBackColor = true;
+            this.btnAplicar10ktensao.Click += new System.EventHandler(this.btnAplicar10ktensao_Click);
+            // 
+            // nud10kVC
+            // 
+            this.nud10kVC.Location = new System.Drawing.Point(175, 84);
+            this.nud10kVC.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nud10kVC.Name = "nud10kVC";
+            this.nud10kVC.Size = new System.Drawing.Size(120, 20);
+            this.nud10kVC.TabIndex = 5;
+            this.nud10kVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAplicar50ktensao
+            // 
+            this.btnAplicar50ktensao.Location = new System.Drawing.Point(41, 110);
+            this.btnAplicar50ktensao.Name = "btnAplicar50ktensao";
+            this.btnAplicar50ktensao.Size = new System.Drawing.Size(97, 23);
+            this.btnAplicar50ktensao.TabIndex = 6;
+            this.btnAplicar50ktensao.Text = "Aplicar Grosso";
+            this.btnAplicar50ktensao.UseVisualStyleBackColor = true;
+            this.btnAplicar50ktensao.Click += new System.EventHandler(this.btnAplicar50ktensao_Click);
             // 
             // Form1
             // 
@@ -2034,14 +2106,7 @@ namespace FonteTrifasicaPID
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nud50kVA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud50kVB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud50kVC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).EndInit();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud50kIA)).EndInit();
@@ -2050,6 +2115,14 @@ namespace FonteTrifasicaPID
             ((System.ComponentModel.ISupportInitialize)(this.nud10kIA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kIB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kIC)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud50kVC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2177,17 +2250,17 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.NumericUpDown nud10kVA;
         private System.Windows.Forms.NumericUpDown nud10kVB;
-        private System.Windows.Forms.Button btnAplicar10k;
+        private System.Windows.Forms.Button btnAplicar10ktensao;
         private System.Windows.Forms.NumericUpDown nud10kVC;
-        private System.Windows.Forms.Button btnAplicar50k;
+        private System.Windows.Forms.Button btnAplicar50ktensao;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCorrenteRMSIC;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCorrenteRMSIB;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCorrenteRMSIA;
         private System.Windows.Forms.NumericUpDown nud50kIA;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.NumericUpDown nud50kIB;
@@ -2196,13 +2269,17 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.NumericUpDown nud10kIA;
         private System.Windows.Forms.NumericUpDown nud10kIB;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAplicar10kcorrente;
         private System.Windows.Forms.NumericUpDown nud10kIC;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAplicar50kCorrente;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTensaoRMSVC;
+        private System.Windows.Forms.TextBox txtTensaoRMSVB;
         private System.Windows.Forms.TextBox txtTensaoRMSVA;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Button btnResetarESP32;
+        private System.Windows.Forms.Button btnResetaADE;
+        private System.Windows.Forms.Button btnReconfigurarADE;
     }
 }
 

@@ -67,17 +67,25 @@ namespace FonteTrifasicaPID
 
         enum Identificador
         {
-            ConstantesPIDTensão,
-            ConstantesPIDCorrente,
-            ParâmetrosSintetização,
-            Parar,
-            Iniciar,
-            ID_RX_PID_Tensão,
-            ID_RX_PID_Corrente,
-            ID_RX_AjusteFinoV,
-            ID_RX_AjusteGrossoV,
-            ID_RX_AjusteFinoI,
-            ID_RX_AjusteGrossoI
+            ID_ConstantesPIDTensao,
+            ID_ConstantesPIDCorrente,
+            ID_ParametrosSintetizacao,
+            ID_Parar,
+            ID_Iniciar,
+            ID_TX_PID_Tensao,
+            ID_TX_PID_Corrente,
+            ID_TX_AjusteFinoV,
+            ID_TX_AjusteGrossoV,
+            ID_TX_AjusteFinoI,
+            ID_TX_AjsuteGrossoI,
+            ID_Aplicar_DigPot_10k_Tensao,
+            ID_Aplicar_DigPot_50k_Tensao,
+            ID_Aplicar_DigPot_10k_Corrente,
+            ID_Aplicar_DigPot_50k_Corrente,
+            ID_TX_Mensagem_ERRO_AppRodando,
+            ID_RESET_ESP32,
+            ID_RESET_ADE,
+            ID_RECONFIG_ADE
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -317,7 +325,7 @@ namespace FonteTrifasicaPID
             {
                 switch(int.Parse(partes[0]))//Partes 0 contém o identificador!!
                 {
-                    case (int)Identificador.ConstantesPIDTensão:
+                    case (int)Identificador.ID_ConstantesPIDTensao:
                         txtKpTensao.Invoke(new Action(() =>
                         {
                             txtKpTensao.Text = partes[1];
@@ -331,7 +339,7 @@ namespace FonteTrifasicaPID
                             txtKdTensao.Text = partes[3];
                         }));
                         break;
-                    case (int)Identificador.ConstantesPIDCorrente:
+                    case (int)Identificador.ID_ConstantesPIDCorrente:
                         txtKpCorrente.Invoke(new Action(() => 
                         {
                             txtKpCorrente.Text = partes[1];
@@ -340,20 +348,20 @@ namespace FonteTrifasicaPID
                         }));                     
                         
                         break;
-                    case (int)Identificador.ParâmetrosSintetização:
+                    case (int)Identificador.ID_ParametrosSintetizacao:
                         txtTensãoRMS.Text = partes[1];
                         txtCorrenteRMS.Text = partes[2];
                         cbxFrequencia.SelectedIndex = int.Parse(partes[3]);
                         cbxFase.SelectedIndex = int.Parse(partes[4]);
                         cbxFatorDePotencia.SelectedIndex = int.Parse(partes[5]);
                         break;
-                    case (int)Identificador.ID_RX_PID_Tensão:
+                    case (int)Identificador.ID_TX_PID_Tensao:
                         if(cbxGraficoVA.Checked)
                         {
                             txtTensãoRMSA.Invoke(new Action(() =>
                             {
                                 if(PassoGraficoVR % AtualizaçãoVR_IR == 0)
-                                    txtTensãoRMSA.Text = partes[1];
+                                    txtTensaoRMSVA.Text = txtTensãoRMSA.Text = partes[1];
                             }));
                             chartTensao.Invoke(new Action(() =>
                             {
@@ -409,7 +417,7 @@ namespace FonteTrifasicaPID
                             txtTensãoRMSB.Invoke(new Action(() =>
                             {
                                 if (PassoGraficoVS % AtualizaçãoVR_IR == 0)
-                                    txtTensãoRMSB.Text = partes[2];
+                                    txtTensaoRMSVB.Text = txtTensãoRMSB.Text = partes[2];
                             }));
                             chartTensao.Invoke(new Action(() =>
                             {
@@ -465,7 +473,7 @@ namespace FonteTrifasicaPID
                             txtTensãoRMSC.Invoke(new Action(() =>
                             {
                                 if (PassoGraficoVT % AtualizaçãoVR_IR == 0)
-                                    txtTensãoRMSC.Text = partes[3];
+                                    txtTensaoRMSVC.Text = txtTensãoRMSC.Text = partes[3];
                             }));
                             chartTensao.Invoke(new Action(() =>
                             {
@@ -516,13 +524,13 @@ namespace FonteTrifasicaPID
                             }));
                         }
                         break;
-                    case (int)Identificador.ID_RX_PID_Corrente:
+                    case (int)Identificador.ID_TX_PID_Corrente:
                         if (cbxGraficoIA.Checked)
                         {
                             txtCorrenteRMSA.Invoke(new Action(() =>
                             {
                                 if (PassoGraficoIR % AtualizaçãoVR_IR == 0)
-                                    txtCorrenteRMSA.Text = partes[1];
+                                    txtCorrenteRMSIA.Text = txtCorrenteRMSA.Text = partes[1];
                             }));
                             chartCorrente.Invoke(new Action(() =>
                             {
@@ -564,7 +572,7 @@ namespace FonteTrifasicaPID
                             txtCorrenteRMSB.Invoke(new Action(() =>
                             {
                                 if (PassoGraficoIS % AtualizaçãoVR_IR == 0)
-                                    txtCorrenteRMSB.Text = partes[2];
+                                    txtCorrenteRMSIB.Text = txtCorrenteRMSB.Text = partes[2];
                             }));
                             chartCorrente.Invoke(new Action(() =>
                             {
@@ -606,7 +614,7 @@ namespace FonteTrifasicaPID
                             txtCorrenteRMSC.Invoke(new Action(() =>
                             {
                                 if (PassoGraficoIT % AtualizaçãoVR_IR == 0)
-                                    txtCorrenteRMSC.Text = partes[3];
+                                    txtCorrenteRMSIC.Text = txtCorrenteRMSC.Text = partes[3];
                             }));
                             chartCorrente.Invoke(new Action(() =>
                             {
@@ -643,7 +651,7 @@ namespace FonteTrifasicaPID
                             }));
                         }
                         break;
-                    case (int)Identificador.ID_RX_AjusteFinoV:
+                    case (int)Identificador.ID_TX_AjusteFinoV:
                         Fase = int.Parse(partes[1]);
                         switch(Fase)
                         {
@@ -680,7 +688,7 @@ namespace FonteTrifasicaPID
                                 break;
                         }
                         break;
-                    case (int)Identificador.ID_RX_AjusteGrossoV:
+                    case (int)Identificador.ID_TX_AjusteGrossoV:
                         Fase = int.Parse(partes[1]);
                         switch (Fase)
                         {
@@ -717,7 +725,7 @@ namespace FonteTrifasicaPID
                                 break;
                         }
                         break;
-                    case (int)Identificador.ID_RX_AjusteFinoI:
+                    case (int)Identificador.ID_TX_AjusteFinoI:
                         try
                         {
                             Fase = int.Parse(partes[1]);
@@ -761,7 +769,7 @@ namespace FonteTrifasicaPID
 
                         }
                         break;
-                    case (int)Identificador.ID_RX_AjusteGrossoI:
+                    case (int)Identificador.ID_TX_AjsuteGrossoI:
                         Fase = int.Parse(partes[1]);
                         switch (Fase)
                         {
@@ -932,7 +940,6 @@ namespace FonteTrifasicaPID
             {
                 //MessageBox.Show("Não foi possível criar o arquivo de LOG!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -984,7 +991,7 @@ namespace FonteTrifasicaPID
             Salvar_Dados_Config();
            
 
-            string TRAMA_ENVIO = (int)Identificador.ConstantesPIDTensão + "," +
+            string TRAMA_ENVIO = (int)Identificador.ID_ConstantesPIDTensao + "," +
                                  txtKpTensao.Text + "," +
                                  txtKiTensao.Text + "," +
                                  txtKdTensao.Text + "," +
@@ -1088,7 +1095,7 @@ namespace FonteTrifasicaPID
             //Identificador, Kp, Ki, Kd, CS
             Salvar_Dados_Config();
 
-            string TRAMA_ENVIO = (int)Identificador.ConstantesPIDCorrente + "," +
+            string TRAMA_ENVIO = (int)Identificador.ID_ConstantesPIDCorrente + "," +
                                  txtKpCorrente.Text + "," +
                                  txtKiCorrente.Text + "," +
                                  txtKdCorrente.Text + "," +
@@ -1114,7 +1121,7 @@ namespace FonteTrifasicaPID
             //Identificador, tensão, corrente, frequencia, fase, fator de potencia
             Salvar_Dados_Config();
 
-            string TRAMA_ENVIO = (int)Identificador.ParâmetrosSintetização + "," +
+            string TRAMA_ENVIO = (int)Identificador.ID_ParametrosSintetizacao + "," +
                                  txtTensãoRMS.Text + "," +
                                  txtCorrenteRMS.Text + "," +
                                  cbxFrequencia.SelectedIndex + "," + // 0 - 50Hz; 1 - 60Hz
@@ -1135,7 +1142,7 @@ namespace FonteTrifasicaPID
 
         private void btnPararSintetização_Click(object sender, EventArgs e)
         {
-            string TRAMA_ENVIO = (int)Identificador.Parar + ",";
+            string TRAMA_ENVIO = (int)Identificador.ID_Parar + ",";
 
             TRiseVa = false;
 
@@ -1155,7 +1162,7 @@ namespace FonteTrifasicaPID
 
         private void btnIniciarSintetização_Click(object sender, EventArgs e)
         {
-            string TRAMA_ENVIO = (int)Identificador.Iniciar + ",";
+            string TRAMA_ENVIO = (int)Identificador.ID_Iniciar + ",";
 
             if (PortaSerial.IsOpen)
             {
@@ -1341,6 +1348,97 @@ namespace FonteTrifasicaPID
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void btnResetarESP32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnResetaADE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReconfigurarADE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAplicar50ktensao_Click(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_DigPot_50k_Tensao + "," +
+                                 nud50kVA.Value + "," +
+                                 nud50kVB.Value + "," +
+                                 nud50kVC.Value + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando DigPotGrosso Tensão: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de configuração DigPotGrosso Tensão não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnAplicar10ktensao_Click(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_DigPot_10k_Tensao + "," +
+                                 nud10kVA.Value + "," +
+                                 nud10kVB.Value + "," +
+                                 nud10kVC.Value + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando DigPotFino Tensão: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de configuração DigPotFino Tensão não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnAplicar50kCorrente_Click(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_DigPot_50k_Corrente + "," +
+                                 nud50kIA.Value + "," +
+                                 nud50kIB.Value + "," +
+                                 nud50kIC.Value + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando DigPotGrosso Corrente: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de configuração DigPotGrosso Corrente não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnAplicar10kcorrente_Click(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_DigPot_10k_Corrente + "," +
+                                 nud10kIA.Value + "," +
+                                 nud10kIB.Value + "," +
+                                 nud10kIC.Value + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando DigPotFino Corrente: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de configuração DigPotFino Corrente não enviado devido porta serial fechada!");
             }
         }
     }
