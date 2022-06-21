@@ -205,6 +205,47 @@ namespace FonteTrifasicaPID
             this.btnAplicar10ktensao = new System.Windows.Forms.Button();
             this.nud10kVC = new System.Windows.Forms.NumericUpDown();
             this.btnAplicar50ktensao = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.btnLer50 = new System.Windows.Forms.Button();
+            this.button8btnAplicar50FPCap = new System.Windows.Forms.Button();
+            this.label59 = new System.Windows.Forms.Label();
+            this.button8btnAplicar50FPInd = new System.Windows.Forms.Button();
+            this.button8btnAplicar50FP1 = new System.Windows.Forms.Button();
+            this.txtFPCap50C = new System.Windows.Forms.TextBox();
+            this.txtFPCap50A = new System.Windows.Forms.TextBox();
+            this.txtFPCap50B = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.txtFPInd50C = new System.Windows.Forms.TextBox();
+            this.txtFPInd50A = new System.Windows.Forms.TextBox();
+            this.txtFPInd50B = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.txtFP150C = new System.Windows.Forms.TextBox();
+            this.txtFP150A = new System.Windows.Forms.TextBox();
+            this.txtFP150B = new System.Windows.Forms.TextBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.btnLer60 = new System.Windows.Forms.Button();
+            this.btnAplicar60FPCap = new System.Windows.Forms.Button();
+            this.btnAplicar60FPInd = new System.Windows.Forms.Button();
+            this.btnAplicar60FP1 = new System.Windows.Forms.Button();
+            this.label52 = new System.Windows.Forms.Label();
+            this.txtFPCap60C = new System.Windows.Forms.TextBox();
+            this.txtFPCap60A = new System.Windows.Forms.TextBox();
+            this.txtFPCap60B = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.txtFPInd60C = new System.Windows.Forms.TextBox();
+            this.txtFPInd60A = new System.Windows.Forms.TextBox();
+            this.txtFPInd60B = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtFP160C = new System.Windows.Forms.TextBox();
+            this.txtFP160A = new System.Windows.Forms.TextBox();
+            this.txtFP160B = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -234,6 +275,9 @@ namespace FonteTrifasicaPID
             ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartTensao
@@ -1556,6 +1600,7 @@ namespace FonteTrifasicaPID
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -2072,6 +2117,416 @@ namespace FonteTrifasicaPID
             this.btnAplicar50ktensao.UseVisualStyleBackColor = true;
             this.btnAplicar50ktensao.Click += new System.EventHandler(this.btnAplicar50ktensao_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox14);
+            this.tabPage3.Controls.Add(this.groupBox13);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1008, 688);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Ajuste FP";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.btnLer50);
+            this.groupBox14.Controls.Add(this.button8btnAplicar50FPCap);
+            this.groupBox14.Controls.Add(this.label59);
+            this.groupBox14.Controls.Add(this.button8btnAplicar50FPInd);
+            this.groupBox14.Controls.Add(this.button8btnAplicar50FP1);
+            this.groupBox14.Controls.Add(this.txtFPCap50C);
+            this.groupBox14.Controls.Add(this.txtFPCap50A);
+            this.groupBox14.Controls.Add(this.txtFPCap50B);
+            this.groupBox14.Controls.Add(this.label60);
+            this.groupBox14.Controls.Add(this.txtFPInd50C);
+            this.groupBox14.Controls.Add(this.txtFPInd50A);
+            this.groupBox14.Controls.Add(this.txtFPInd50B);
+            this.groupBox14.Controls.Add(this.label61);
+            this.groupBox14.Controls.Add(this.label62);
+            this.groupBox14.Controls.Add(this.label63);
+            this.groupBox14.Controls.Add(this.label64);
+            this.groupBox14.Controls.Add(this.txtFP150C);
+            this.groupBox14.Controls.Add(this.txtFP150A);
+            this.groupBox14.Controls.Add(this.txtFP150B);
+            this.groupBox14.Location = new System.Drawing.Point(503, 44);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(462, 193);
+            this.groupBox14.TabIndex = 29;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "50Hz";
+            // 
+            // btnLer50
+            // 
+            this.btnLer50.Location = new System.Drawing.Point(381, 164);
+            this.btnLer50.Name = "btnLer50";
+            this.btnLer50.Size = new System.Drawing.Size(75, 23);
+            this.btnLer50.TabIndex = 19;
+            this.btnLer50.Text = "Ler";
+            this.btnLer50.UseVisualStyleBackColor = true;
+            // 
+            // button8btnAplicar50FPCap
+            // 
+            this.button8btnAplicar50FPCap.Location = new System.Drawing.Point(381, 97);
+            this.button8btnAplicar50FPCap.Name = "button8btnAplicar50FPCap";
+            this.button8btnAplicar50FPCap.Size = new System.Drawing.Size(75, 23);
+            this.button8btnAplicar50FPCap.TabIndex = 20;
+            this.button8btnAplicar50FPCap.Text = "Aplicar";
+            this.button8btnAplicar50FPCap.UseVisualStyleBackColor = true;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(12, 102);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(42, 13);
+            this.label59.TabIndex = 14;
+            this.label59.Text = "FP Cap";
+            // 
+            // button8btnAplicar50FPInd
+            // 
+            this.button8btnAplicar50FPInd.Location = new System.Drawing.Point(381, 71);
+            this.button8btnAplicar50FPInd.Name = "button8btnAplicar50FPInd";
+            this.button8btnAplicar50FPInd.Size = new System.Drawing.Size(75, 23);
+            this.button8btnAplicar50FPInd.TabIndex = 19;
+            this.button8btnAplicar50FPInd.Text = "Aplicar";
+            this.button8btnAplicar50FPInd.UseVisualStyleBackColor = true;
+            // 
+            // button8btnAplicar50FP1
+            // 
+            this.button8btnAplicar50FP1.Location = new System.Drawing.Point(381, 45);
+            this.button8btnAplicar50FP1.Name = "button8btnAplicar50FP1";
+            this.button8btnAplicar50FP1.Size = new System.Drawing.Size(75, 23);
+            this.button8btnAplicar50FP1.TabIndex = 18;
+            this.button8btnAplicar50FP1.Text = "Aplicar";
+            this.button8btnAplicar50FP1.UseVisualStyleBackColor = true;
+            // 
+            // txtFPCap50C
+            // 
+            this.txtFPCap50C.Location = new System.Drawing.Point(270, 99);
+            this.txtFPCap50C.Name = "txtFPCap50C";
+            this.txtFPCap50C.Size = new System.Drawing.Size(100, 20);
+            this.txtFPCap50C.TabIndex = 13;
+            this.txtFPCap50C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPCap50C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPCap50A
+            // 
+            this.txtFPCap50A.Location = new System.Drawing.Point(58, 99);
+            this.txtFPCap50A.Name = "txtFPCap50A";
+            this.txtFPCap50A.Size = new System.Drawing.Size(100, 20);
+            this.txtFPCap50A.TabIndex = 11;
+            this.txtFPCap50A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPCap50A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPCap50B
+            // 
+            this.txtFPCap50B.Location = new System.Drawing.Point(164, 99);
+            this.txtFPCap50B.Name = "txtFPCap50B";
+            this.txtFPCap50B.Size = new System.Drawing.Size(100, 20);
+            this.txtFPCap50B.TabIndex = 12;
+            this.txtFPCap50B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPCap50B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(12, 76);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(38, 13);
+            this.label60.TabIndex = 10;
+            this.label60.Text = "FP Ind";
+            // 
+            // txtFPInd50C
+            // 
+            this.txtFPInd50C.Location = new System.Drawing.Point(270, 73);
+            this.txtFPInd50C.Name = "txtFPInd50C";
+            this.txtFPInd50C.Size = new System.Drawing.Size(100, 20);
+            this.txtFPInd50C.TabIndex = 9;
+            this.txtFPInd50C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPInd50C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPInd50A
+            // 
+            this.txtFPInd50A.Location = new System.Drawing.Point(58, 73);
+            this.txtFPInd50A.Name = "txtFPInd50A";
+            this.txtFPInd50A.Size = new System.Drawing.Size(100, 20);
+            this.txtFPInd50A.TabIndex = 7;
+            this.txtFPInd50A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPInd50A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPInd50B
+            // 
+            this.txtFPInd50B.Location = new System.Drawing.Point(164, 73);
+            this.txtFPInd50B.Name = "txtFPInd50B";
+            this.txtFPInd50B.Size = new System.Drawing.Size(100, 20);
+            this.txtFPInd50B.TabIndex = 8;
+            this.txtFPInd50B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPInd50B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(12, 50);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(29, 13);
+            this.label61.TabIndex = 6;
+            this.label61.Text = "FP 1";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(302, 31);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(40, 13);
+            this.label62.TabIndex = 5;
+            this.label62.Text = "Fase C";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(195, 31);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(40, 13);
+            this.label63.TabIndex = 4;
+            this.label63.Text = "Fase B";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(91, 31);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(40, 13);
+            this.label64.TabIndex = 3;
+            this.label64.Text = "Fase A";
+            // 
+            // txtFP150C
+            // 
+            this.txtFP150C.Location = new System.Drawing.Point(270, 47);
+            this.txtFP150C.Name = "txtFP150C";
+            this.txtFP150C.Size = new System.Drawing.Size(100, 20);
+            this.txtFP150C.TabIndex = 2;
+            this.txtFP150C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFP150C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFP150A
+            // 
+            this.txtFP150A.Location = new System.Drawing.Point(58, 47);
+            this.txtFP150A.Name = "txtFP150A";
+            this.txtFP150A.Size = new System.Drawing.Size(100, 20);
+            this.txtFP150A.TabIndex = 0;
+            this.txtFP150A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFP150A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFP150B
+            // 
+            this.txtFP150B.Location = new System.Drawing.Point(164, 47);
+            this.txtFP150B.Name = "txtFP150B";
+            this.txtFP150B.Size = new System.Drawing.Size(100, 20);
+            this.txtFP150B.TabIndex = 1;
+            this.txtFP150B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFP150B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.btnLer60);
+            this.groupBox13.Controls.Add(this.btnAplicar60FPCap);
+            this.groupBox13.Controls.Add(this.btnAplicar60FPInd);
+            this.groupBox13.Controls.Add(this.btnAplicar60FP1);
+            this.groupBox13.Controls.Add(this.label52);
+            this.groupBox13.Controls.Add(this.txtFPCap60C);
+            this.groupBox13.Controls.Add(this.txtFPCap60A);
+            this.groupBox13.Controls.Add(this.txtFPCap60B);
+            this.groupBox13.Controls.Add(this.label51);
+            this.groupBox13.Controls.Add(this.txtFPInd60C);
+            this.groupBox13.Controls.Add(this.txtFPInd60A);
+            this.groupBox13.Controls.Add(this.txtFPInd60B);
+            this.groupBox13.Controls.Add(this.label50);
+            this.groupBox13.Controls.Add(this.label49);
+            this.groupBox13.Controls.Add(this.label48);
+            this.groupBox13.Controls.Add(this.label47);
+            this.groupBox13.Controls.Add(this.txtFP160C);
+            this.groupBox13.Controls.Add(this.txtFP160A);
+            this.groupBox13.Controls.Add(this.txtFP160B);
+            this.groupBox13.Location = new System.Drawing.Point(35, 44);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(462, 193);
+            this.groupBox13.TabIndex = 28;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "60Hz";
+            // 
+            // btnLer60
+            // 
+            this.btnLer60.Location = new System.Drawing.Point(381, 164);
+            this.btnLer60.Name = "btnLer60";
+            this.btnLer60.Size = new System.Drawing.Size(75, 23);
+            this.btnLer60.TabIndex = 18;
+            this.btnLer60.Text = "Ler";
+            this.btnLer60.UseVisualStyleBackColor = true;
+            // 
+            // btnAplicar60FPCap
+            // 
+            this.btnAplicar60FPCap.Location = new System.Drawing.Point(381, 98);
+            this.btnAplicar60FPCap.Name = "btnAplicar60FPCap";
+            this.btnAplicar60FPCap.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicar60FPCap.TabIndex = 17;
+            this.btnAplicar60FPCap.Text = "Aplicar";
+            this.btnAplicar60FPCap.UseVisualStyleBackColor = true;
+            // 
+            // btnAplicar60FPInd
+            // 
+            this.btnAplicar60FPInd.Location = new System.Drawing.Point(381, 72);
+            this.btnAplicar60FPInd.Name = "btnAplicar60FPInd";
+            this.btnAplicar60FPInd.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicar60FPInd.TabIndex = 16;
+            this.btnAplicar60FPInd.Text = "Aplicar";
+            this.btnAplicar60FPInd.UseVisualStyleBackColor = true;
+            // 
+            // btnAplicar60FP1
+            // 
+            this.btnAplicar60FP1.Location = new System.Drawing.Point(381, 46);
+            this.btnAplicar60FP1.Name = "btnAplicar60FP1";
+            this.btnAplicar60FP1.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicar60FP1.TabIndex = 15;
+            this.btnAplicar60FP1.Text = "Aplicar";
+            this.btnAplicar60FP1.UseVisualStyleBackColor = true;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(11, 102);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(42, 13);
+            this.label52.TabIndex = 14;
+            this.label52.Text = "FP Cap";
+            // 
+            // txtFPCap60C
+            // 
+            this.txtFPCap60C.Location = new System.Drawing.Point(269, 99);
+            this.txtFPCap60C.Name = "txtFPCap60C";
+            this.txtFPCap60C.Size = new System.Drawing.Size(100, 20);
+            this.txtFPCap60C.TabIndex = 13;
+            this.txtFPCap60C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPCap60C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPCap60A
+            // 
+            this.txtFPCap60A.Location = new System.Drawing.Point(57, 99);
+            this.txtFPCap60A.Name = "txtFPCap60A";
+            this.txtFPCap60A.Size = new System.Drawing.Size(100, 20);
+            this.txtFPCap60A.TabIndex = 11;
+            this.txtFPCap60A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPCap60A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPCap60B
+            // 
+            this.txtFPCap60B.Location = new System.Drawing.Point(163, 99);
+            this.txtFPCap60B.Name = "txtFPCap60B";
+            this.txtFPCap60B.Size = new System.Drawing.Size(100, 20);
+            this.txtFPCap60B.TabIndex = 12;
+            this.txtFPCap60B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPCap60B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(11, 76);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(38, 13);
+            this.label51.TabIndex = 10;
+            this.label51.Text = "FP Ind";
+            // 
+            // txtFPInd60C
+            // 
+            this.txtFPInd60C.Location = new System.Drawing.Point(269, 73);
+            this.txtFPInd60C.Name = "txtFPInd60C";
+            this.txtFPInd60C.Size = new System.Drawing.Size(100, 20);
+            this.txtFPInd60C.TabIndex = 9;
+            this.txtFPInd60C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPInd60C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPInd60A
+            // 
+            this.txtFPInd60A.Location = new System.Drawing.Point(57, 73);
+            this.txtFPInd60A.Name = "txtFPInd60A";
+            this.txtFPInd60A.Size = new System.Drawing.Size(100, 20);
+            this.txtFPInd60A.TabIndex = 7;
+            this.txtFPInd60A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPInd60A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFPInd60B
+            // 
+            this.txtFPInd60B.Location = new System.Drawing.Point(163, 73);
+            this.txtFPInd60B.Name = "txtFPInd60B";
+            this.txtFPInd60B.Size = new System.Drawing.Size(100, 20);
+            this.txtFPInd60B.TabIndex = 8;
+            this.txtFPInd60B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFPInd60B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(11, 50);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(29, 13);
+            this.label50.TabIndex = 6;
+            this.label50.Text = "FP 1";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(301, 31);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(40, 13);
+            this.label49.TabIndex = 5;
+            this.label49.Text = "Fase C";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(194, 31);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(40, 13);
+            this.label48.TabIndex = 4;
+            this.label48.Text = "Fase B";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(90, 31);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(40, 13);
+            this.label47.TabIndex = 3;
+            this.label47.Text = "Fase A";
+            // 
+            // txtFP160C
+            // 
+            this.txtFP160C.Location = new System.Drawing.Point(269, 47);
+            this.txtFP160C.Name = "txtFP160C";
+            this.txtFP160C.Size = new System.Drawing.Size(100, 20);
+            this.txtFP160C.TabIndex = 2;
+            this.txtFP160C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFP160C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFP160A
+            // 
+            this.txtFP160A.Location = new System.Drawing.Point(57, 47);
+            this.txtFP160A.Name = "txtFP160A";
+            this.txtFP160A.Size = new System.Drawing.Size(100, 20);
+            this.txtFP160A.TabIndex = 0;
+            this.txtFP160A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFP160A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // txtFP160B
+            // 
+            this.txtFP160B.Location = new System.Drawing.Point(163, 47);
+            this.txtFP160B.Name = "txtFP160B";
+            this.txtFP160B.Size = new System.Drawing.Size(100, 20);
+            this.txtFP160B.TabIndex = 1;
+            this.txtFP160B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFP160B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2123,6 +2578,11 @@ namespace FonteTrifasicaPID
             ((System.ComponentModel.ISupportInitialize)(this.nud10kVA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kVB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud10kVC)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2280,6 +2740,47 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Button btnResetarESP32;
         private System.Windows.Forms.Button btnResetaADE;
         private System.Windows.Forms.Button btnReconfigurarADE;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Button btnLer50;
+        private System.Windows.Forms.Button button8btnAplicar50FPCap;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Button button8btnAplicar50FPInd;
+        private System.Windows.Forms.Button button8btnAplicar50FP1;
+        private System.Windows.Forms.TextBox txtFPCap50C;
+        private System.Windows.Forms.TextBox txtFPCap50A;
+        private System.Windows.Forms.TextBox txtFPCap50B;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox txtFPInd50C;
+        private System.Windows.Forms.TextBox txtFPInd50A;
+        private System.Windows.Forms.TextBox txtFPInd50B;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.TextBox txtFP150C;
+        private System.Windows.Forms.TextBox txtFP150A;
+        private System.Windows.Forms.TextBox txtFP150B;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Button btnLer60;
+        private System.Windows.Forms.Button btnAplicar60FPCap;
+        private System.Windows.Forms.Button btnAplicar60FPInd;
+        private System.Windows.Forms.Button btnAplicar60FP1;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TextBox txtFPCap60C;
+        private System.Windows.Forms.TextBox txtFPCap60A;
+        private System.Windows.Forms.TextBox txtFPCap60B;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox txtFPInd60C;
+        private System.Windows.Forms.TextBox txtFPInd60A;
+        private System.Windows.Forms.TextBox txtFPInd60B;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.TextBox txtFP160C;
+        private System.Windows.Forms.TextBox txtFP160A;
+        private System.Windows.Forms.TextBox txtFP160B;
     }
 }
 

@@ -1480,5 +1480,31 @@ namespace FonteTrifasicaPID
                 LOG_TXT("Comando de configuração DigPotFino Corrente não enviado devido porta serial fechada!");
             }
         }
+
+        private void txtFP160A_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string senderText = (sender as TextBox).Text;
+            string senderName = (sender as TextBox).Name;
+            string[] splitByDecimal = senderText.Split('.');
+            int cursorPosition = (sender as TextBox).SelectionStart;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+
+            if (!char.IsControl(e.KeyChar)
+                && senderText.IndexOf('.') < cursorPosition
+                && splitByDecimal.Length > 1
+                && splitByDecimal[1].Length == 3)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

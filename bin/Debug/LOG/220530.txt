@@ -1,0 +1,1126 @@
+30/05/2022 08:44:55  -  Comando para reconfigurar ADE não enviado devido porta serial fechada!
+30/05/2022 08:57:46  -  Arquivo de configuração carregado com sucesso!
+30/05/2022 08:57:57  -  Porta serial aberta com sucesso!
+30/05/2022 08:57:57  -  Salvando informações da porta serial - Porta:  COM11 Velocidade: 115200
+30/05/2022 08:57:59  -  Salvando informações de configuração (PID):  0.0004;0.0011;0;0.02;0.01;0.03
+30/05/2022 08:57:59  -  Envio de comando Parametros Sint.: 2,200,3,1,0,0,02
+30/05/2022 08:58:02  -  Envio de comando Iniciar Sint.: 4,18
+30/05/2022 08:58:03  -  Dado Recebido: Pacote enviado ao ESP_Sint.: L
+30/05/2022 08:58:03  -  A trama recebida não continha ','
+30/05/2022 08:58:03  -  Dado Recebido: 5,0.18,0.17,0.21,27
+30/05/2022 08:58:03  -  Trama Recebida sem CS: 5,0.18,0.17,0.21,
+30/05/2022 08:58:03  -  CS da Trama recebida: 27
+30/05/2022 08:58:03  -  Dado Recebido: 6,0.034,0.032,0.035,18
+30/05/2022 08:58:03  -  Trama Recebida sem CS: 6,0.034,0.032,0.035,
+30/05/2022 08:58:03  -  CS da Trama recebida: 18
+30/05/2022 08:58:03  -  Dado Recebido: 5,165.21,163.17,166.60,2f
+30/05/2022 08:58:03  -  Trama Recebida sem CS: 5,165.21,163.17,166.60,
+30/05/2022 08:58:03  -  CS da Trama recebida: 2f
+30/05/2022 08:58:03  -  Dado Recebido: 6,2.875,3.622,3.699,10
+30/05/2022 08:58:03  -  Trama Recebida sem CS: 6,2.875,3.622,3.699,
+30/05/2022 08:58:03  -  CS da Trama recebida: 10
+30/05/2022 08:58:03  -  Dado Recebido: 9,1,3.05,3c
+30/05/2022 08:58:03  -  Trama Recebida sem CS: 9,1,3.05,
+30/05/2022 08:58:03  -  CS da Trama recebida: 3c
+30/05/2022 08:58:03  -  Dado Recebido: 9,2,3.04,3e
+30/05/2022 08:58:03  -  Trama Recebida sem CS: 9,2,3.04,
+30/05/2022 08:58:03  -  CS da Trama recebida: 3e
+30/05/2022 08:58:03  -  Dado Recebido: 9,3,3.10,3a
+30/05/2022 08:58:03  -  Trama Recebida sem CS: 9,3,3.10,
+30/05/2022 08:58:03  -  CS da Trama recebida: 3a
+30/05/2022 08:58:04  -  Dado Recebido: 5,162.23,161.66,160.92,25
+30/05/2022 08:58:04  -  Trama Recebida sem CS: 5,162.23,161.66,160.92,
+30/05/2022 08:58:04  -  CS da Trama recebida: 25
+30/05/2022 08:58:04  -  Dado Recebido: 6,2.887,2.757,2.790,16
+30/05/2022 08:58:04  -  Trama Recebida sem CS: 6,2.887,2.757,2.790,
+30/05/2022 08:58:04  -  CS da Trama recebida: 16
+30/05/2022 08:58:04  -  Dado Recebido: 5,178.98,179.30,178.85,2b
+30/05/2022 08:58:04  -  Trama Recebida sem CS: 5,178.98,179.30,178.85,
+30/05/2022 08:58:04  -  CS da Trama recebida: 2b
+30/05/2022 08:58:04  -  Dado Recebido: 6,2.961,2.917,2.935,14
+30/05/2022 08:58:04  -  Trama Recebida sem CS: 6,2.961,2.917,2.935,
+30/05/2022 08:58:04  -  CS da Trama recebida: 14
+30/05/2022 08:58:04  -  Dado Recebido: 5,187.44,187.84,188.06,20
+30/05/2022 08:58:04  -  Trama Recebida sem CS: 5,187.44,187.84,188.06,
+30/05/2022 08:58:04  -  CS da Trama recebida: 20
+30/05/2022 08:58:05  -  Dado Recebido: 6,2.992,2.987,2.984,1b
+30/05/2022 08:58:05  -  Trama Recebida sem CS: 6,2.992,2.987,2.984,
+30/05/2022 08:58:05  -  CS da Trama recebida: 1b
+30/05/2022 08:58:05  -  Dado Recebido: 5,192.78,192.51,191.97,27
+30/05/2022 08:58:05  -  Trama Recebida sem CS: 5,192.78,192.51,191.97,
+30/05/2022 08:58:05  -  CS da Trama recebida: 27
+30/05/2022 08:58:05  -  Dado Recebido: 6,3.006,2.999,2.992,16
+30/05/2022 08:58:05  -  Trama Recebida sem CS: 6,3.006,2.999,2.992,
+30/05/2022 08:58:05  -  CS da Trama recebida: 16
+30/05/2022 08:58:05  -  Dado Recebido: 5,195.55,196.17,195.66,23
+30/05/2022 08:58:05  -  Trama Recebida sem CS: 5,195.55,196.17,195.66,
+30/05/2022 08:58:05  -  CS da Trama recebida: 23
+30/05/2022 08:58:05  -  Dado Recebido: 6,2.994,2.999,2.999,1e
+30/05/2022 08:58:05  -  Trama Recebida sem CS: 6,2.994,2.999,2.999,
+30/05/2022 08:58:05  -  CS da Trama recebida: 1e
+30/05/2022 08:58:06  -  Dado Recebido: 5,196.61,197.22,197.48,2e
+30/05/2022 08:58:06  -  Trama Recebida sem CS: 5,196.61,197.22,197.48,
+30/05/2022 08:58:06  -  CS da Trama recebida: 2e
+30/05/2022 08:58:06  -  Dado Recebido: 6,2.996,3.000,2.997,1a
+30/05/2022 08:58:06  -  Trama Recebida sem CS: 6,2.996,3.000,2.997,
+30/05/2022 08:58:06  -  CS da Trama recebida: 1a
+30/05/2022 08:58:06  -  Dado Recebido: 5,198.42,198.97,198.45,22
+30/05/2022 08:58:06  -  Trama Recebida sem CS: 5,198.42,198.97,198.45,
+30/05/2022 08:58:06  -  CS da Trama recebida: 22
+30/05/2022 08:58:06  -  Dado Recebido: 6,3.007,2.991,2.991,1c
+30/05/2022 08:58:06  -  Trama Recebida sem CS: 6,3.007,2.991,2.991,
+30/05/2022 08:58:06  -  CS da Trama recebida: 1c
+30/05/2022 08:58:06  -  Dado Recebido: 5,199.26,199.05,199.27,2e
+30/05/2022 08:58:06  -  Trama Recebida sem CS: 5,199.26,199.05,199.27,
+30/05/2022 08:58:06  -  CS da Trama recebida: 2e
+30/05/2022 08:58:07  -  Dado Recebido: 6,2.995,3.000,3.000,1f
+30/05/2022 08:58:07  -  Trama Recebida sem CS: 6,2.995,3.000,3.000,
+30/05/2022 08:58:07  -  CS da Trama recebida: 1f
+30/05/2022 08:58:07  -  Dado Recebido: 5,199.35,199.05,199.34,2e
+30/05/2022 08:58:07  -  Trama Recebida sem CS: 5,199.35,199.05,199.34,
+30/05/2022 08:58:07  -  CS da Trama recebida: 2e
+30/05/2022 08:58:07  -  Dado Recebido: 6,2.997,3.000,2.999,15
+30/05/2022 08:58:07  -  Trama Recebida sem CS: 6,2.997,3.000,2.999,
+30/05/2022 08:58:07  -  CS da Trama recebida: 15
+30/05/2022 08:58:07  -  Dado Recebido: 5,199.35,199.89,200.19,26
+30/05/2022 08:58:07  -  Trama Recebida sem CS: 5,199.35,199.89,200.19,
+30/05/2022 08:58:07  -  CS da Trama recebida: 26
+30/05/2022 08:58:07  -  Dado Recebido: 6,3.004,3.003,3.007,1b
+30/05/2022 08:58:07  -  Trama Recebida sem CS: 6,3.004,3.003,3.007,
+30/05/2022 08:58:07  -  CS da Trama recebida: 1b
+30/05/2022 08:58:07  -  Dado Recebido: 7,2,199.93,3c
+30/05/2022 08:58:07  -  Trama Recebida sem CS: 7,2,199.93,
+30/05/2022 08:58:07  -  CS da Trama recebida: 3c
+30/05/2022 08:58:08  -  Dado Recebido: 5,199.35,199.12,199.42,29
+30/05/2022 08:58:08  -  Trama Recebida sem CS: 5,199.35,199.12,199.42,
+30/05/2022 08:58:08  -  CS da Trama recebida: 29
+30/05/2022 08:58:08  -  Dado Recebido: 6,2.993,3.003,2.991,1a
+30/05/2022 08:58:08  -  Trama Recebida sem CS: 6,2.993,3.003,2.991,
+30/05/2022 08:58:08  -  CS da Trama recebida: 1a
+30/05/2022 08:58:08  -  Dado Recebido: 5,200.21,199.04,200.19,25
+30/05/2022 08:58:08  -  Trama Recebida sem CS: 5,200.21,199.04,200.19,
+30/05/2022 08:58:08  -  CS da Trama recebida: 25
+30/05/2022 08:58:08  -  Dado Recebido: 7,3,200.19,3c
+30/05/2022 08:58:08  -  Trama Recebida sem CS: 7,3,200.19,
+30/05/2022 08:58:08  -  CS da Trama recebida: 3c
+30/05/2022 08:58:08  -  Dado Recebido: 6,3.006,2.992,3.003,1d
+30/05/2022 08:58:08  -  Trama Recebida sem CS: 6,3.006,2.992,3.003,
+30/05/2022 08:58:08  -  CS da Trama recebida: 1d
+30/05/2022 08:58:08  -  Dado Recebido: 5,200.30,200.52,198.64,2d
+30/05/2022 08:58:08  -  Trama Recebida sem CS: 5,200.30,200.52,198.64,
+30/05/2022 08:58:08  -  CS da Trama recebida: 2d
+30/05/2022 08:58:09  -  Dado Recebido: 6,2.996,3.002,3.004,1a
+30/05/2022 08:58:09  -  Trama Recebida sem CS: 6,2.996,3.002,3.004,
+30/05/2022 08:58:09  -  CS da Trama recebida: 1a
+30/05/2022 08:58:09  -  Dado Recebido: 5,199.46,199.87,199.99,27
+30/05/2022 08:58:09  -  Trama Recebida sem CS: 5,199.46,199.87,199.99,
+30/05/2022 08:58:09  -  CS da Trama recebida: 27
+30/05/2022 08:58:09  -  Dado Recebido: 6,3.003,3.003,3.000,1b
+30/05/2022 08:58:09  -  Trama Recebida sem CS: 6,3.003,3.003,3.000,
+30/05/2022 08:58:09  -  CS da Trama recebida: 1b
+30/05/2022 08:58:09  -  Dado Recebido: 5,200.26,199.76,200.15,2b
+30/05/2022 08:58:09  -  Trama Recebida sem CS: 5,200.26,199.76,200.15,
+30/05/2022 08:58:09  -  CS da Trama recebida: 2b
+30/05/2022 08:58:09  -  Dado Recebido: 6,2.996,2.992,3.004,1b
+30/05/2022 08:58:09  -  Trama Recebida sem CS: 6,2.996,2.992,3.004,
+30/05/2022 08:58:09  -  CS da Trama recebida: 1b
+30/05/2022 08:58:10  -  Dado Recebido: 5,200.33,200.59,199.34,21
+30/05/2022 08:58:10  -  Trama Recebida sem CS: 5,200.33,200.59,199.34,
+30/05/2022 08:58:10  -  CS da Trama recebida: 21
+30/05/2022 08:58:10  -  Dado Recebido: 6,3.002,3.013,3.005,1e
+30/05/2022 08:58:10  -  Trama Recebida sem CS: 6,3.002,3.013,3.005,
+30/05/2022 08:58:10  -  CS da Trama recebida: 1e
+30/05/2022 08:58:10  -  Dado Recebido: 5,199.49,199.12,200.82,2d
+30/05/2022 08:58:10  -  Trama Recebida sem CS: 5,199.49,199.12,200.82,
+30/05/2022 08:58:10  -  CS da Trama recebida: 2d
+30/05/2022 08:58:10  -  Dado Recebido: 6,3.006,2.994,3.007,1f
+30/05/2022 08:58:10  -  Trama Recebida sem CS: 6,3.006,2.994,3.007,
+30/05/2022 08:58:10  -  CS da Trama recebida: 1f
+30/05/2022 08:58:11  -  Dado Recebido: 5,200.34,200.51,199.43,2e
+30/05/2022 08:58:11  -  Trama Recebida sem CS: 5,200.34,200.51,199.43,
+30/05/2022 08:58:11  -  CS da Trama recebida: 2e
+30/05/2022 08:58:11  -  Dado Recebido: 6,2.995,3.000,3.005,1a
+30/05/2022 08:58:11  -  Trama Recebida sem CS: 6,2.995,3.000,3.005,
+30/05/2022 08:58:11  -  CS da Trama recebida: 1a
+30/05/2022 08:58:11  -  Dado Recebido: 5,200.27,199.82,200.10,24
+30/05/2022 08:58:11  -  Trama Recebida sem CS: 5,200.27,199.82,200.10,
+30/05/2022 08:58:11  -  CS da Trama recebida: 24
+30/05/2022 08:58:11  -  Dado Recebido: 6,3.007,3.001,2.991,1d
+30/05/2022 08:58:11  -  Trama Recebida sem CS: 6,3.007,3.001,2.991,
+30/05/2022 08:58:11  -  CS da Trama recebida: 1d
+30/05/2022 08:58:11  -  Dado Recebido: 5,199.52,199.82,200.07,23
+30/05/2022 08:58:11  -  Trama Recebida sem CS: 5,199.52,199.82,200.07,
+30/05/2022 08:58:11  -  CS da Trama recebida: 23
+30/05/2022 08:58:12  -  Dado Recebido: 6,2.996,3.000,2.998,15
+30/05/2022 08:58:12  -  Trama Recebida sem CS: 6,2.996,3.000,2.998,
+30/05/2022 08:58:12  -  CS da Trama recebida: 15
+30/05/2022 08:58:12  -  Dado Recebido: 5,200.35,199.90,199.98,27
+30/05/2022 08:58:12  -  Trama Recebida sem CS: 5,200.35,199.90,199.98,
+30/05/2022 08:58:12  -  CS da Trama recebida: 27
+30/05/2022 08:58:12  -  Dado Recebido: 6,3.000,3.002,2.994,1c
+30/05/2022 08:58:12  -  Trama Recebida sem CS: 6,3.000,3.002,2.994,
+30/05/2022 08:58:12  -  CS da Trama recebida: 1c
+30/05/2022 08:58:12  -  Dado Recebido: 5,200.29,199.85,200.03,2f
+30/05/2022 08:58:12  -  Trama Recebida sem CS: 5,200.29,199.85,200.03,
+30/05/2022 08:58:12  -  CS da Trama recebida: 2f
+30/05/2022 08:58:12  -  Dado Recebido: 6,3.008,2.994,2.993,14
+30/05/2022 08:58:12  -  Trama Recebida sem CS: 6,3.008,2.994,2.993,
+30/05/2022 08:58:12  -  CS da Trama recebida: 14
+30/05/2022 08:58:13  -  Dado Recebido: 5,180.01,200.58,200.01,2f
+30/05/2022 08:58:13  -  Trama Recebida sem CS: 5,180.01,200.58,200.01,
+30/05/2022 08:58:13  -  CS da Trama recebida: 2f
+30/05/2022 08:58:13  -  Dado Recebido: 6,3.000,3.004,2.995,1b
+30/05/2022 08:58:13  -  Trama Recebida sem CS: 6,3.000,3.004,2.995,
+30/05/2022 08:58:13  -  CS da Trama recebida: 1b
+30/05/2022 08:58:13  -  Dado Recebido: 5,189.89,199.91,200.00,21
+30/05/2022 08:58:13  -  Trama Recebida sem CS: 5,189.89,199.91,200.00,
+30/05/2022 08:58:13  -  CS da Trama recebida: 21
+30/05/2022 08:58:13  -  Dado Recebido: OV
+30/05/2022 08:58:13  -  A trama recebida não continha ','
+30/05/2022 08:58:13  -  Dado Recebido: OV
+30/05/2022 08:58:13  -  A trama recebida não continha ','
+30/05/2022 08:58:13  -  Dado Recebido: 6,2.994,3.011,3.006,18
+30/05/2022 08:58:13  -  Trama Recebida sem CS: 6,2.994,3.011,3.006,
+30/05/2022 08:58:13  -  CS da Trama recebida: 18
+30/05/2022 08:58:13  -  Dado Recebido: ESP32 travou
+30/05/2022 08:58:13  -  A trama recebida não continha ','
+30/05/2022 08:58:13  -  Dado Recebido: 8,2,299801.59,0f
+30/05/2022 08:58:13  -  Trama Recebida sem CS: 8,2,299801.59,
+30/05/2022 08:58:13  -  CS da Trama recebida: 0f
+30/05/2022 08:58:13  -  Dado Recebido: ADE Configurado!
+30/05/2022 08:58:13  -  A trama recebida não continha ','
+30/05/2022 08:58:14  -  Dado Recebido: 5,0.02,0.14,0.04,28
+30/05/2022 08:58:14  -  Trama Recebida sem CS: 5,0.02,0.14,0.04,
+30/05/2022 08:58:14  -  CS da Trama recebida: 28
+30/05/2022 08:58:14  -  Dado Recebido: 7,1,0.02,36
+30/05/2022 08:58:14  -  Trama Recebida sem CS: 7,1,0.02,
+30/05/2022 08:58:14  -  CS da Trama recebida: 36
+30/05/2022 08:58:14  -  Dado Recebido: 7,2,0.14,32
+30/05/2022 08:58:14  -  Trama Recebida sem CS: 7,2,0.14,
+30/05/2022 08:58:14  -  CS da Trama recebida: 32
+30/05/2022 08:58:14  -  Dado Recebido: 6,0.004,0.003,0.003,1c
+30/05/2022 08:58:14  -  Trama Recebida sem CS: 6,0.004,0.003,0.003,
+30/05/2022 08:58:14  -  CS da Trama recebida: 1c
+30/05/2022 08:58:14  -  Dado Recebido: 5,0.00,0.20,0.07,2e
+30/05/2022 08:58:14  -  Trama Recebida sem CS: 5,0.00,0.20,0.07,
+30/05/2022 08:58:14  -  CS da Trama recebida: 2e
+30/05/2022 08:58:14  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:14  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:14  -  CS da Trama recebida: 1a
+30/05/2022 08:58:15  -  Dado Recebido: 5,0.00,0.20,0.07,2e
+30/05/2022 08:58:15  -  Trama Recebida sem CS: 5,0.00,0.20,0.07,
+30/05/2022 08:58:15  -  CS da Trama recebida: 2e
+30/05/2022 08:58:15  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:15  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:15  -  CS da Trama recebida: 1a
+30/05/2022 08:58:15  -  Dado Recebido: 5,0.00,0.20,0.07,2e
+30/05/2022 08:58:15  -  Trama Recebida sem CS: 5,0.00,0.20,0.07,
+30/05/2022 08:58:15  -  CS da Trama recebida: 2e
+30/05/2022 08:58:15  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:15  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:15  -  CS da Trama recebida: 1a
+30/05/2022 08:58:15  -  Dado Recebido: 5,0.00,0.20,0.07,2e
+30/05/2022 08:58:15  -  Trama Recebida sem CS: 5,0.00,0.20,0.07,
+30/05/2022 08:58:15  -  CS da Trama recebida: 2e
+30/05/2022 08:58:16  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:16  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:16  -  CS da Trama recebida: 1a
+30/05/2022 08:58:16  -  Dado Recebido: 5,0.00,0.20,0.07,2e
+30/05/2022 08:58:16  -  Trama Recebida sem CS: 5,0.00,0.20,0.07,
+30/05/2022 08:58:16  -  CS da Trama recebida: 2e
+30/05/2022 08:58:16  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:16  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:16  -  CS da Trama recebida: 1a
+30/05/2022 08:58:16  -  Dado Recebido: 5,0.00,0.20,0.07,2e
+30/05/2022 08:58:16  -  Trama Recebida sem CS: 5,0.00,0.20,0.07,
+30/05/2022 08:58:16  -  CS da Trama recebida: 2e
+30/05/2022 08:58:16  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:16  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:16  -  CS da Trama recebida: 1a
+30/05/2022 08:58:16  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:16  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:16  -  CS da Trama recebida: 24
+30/05/2022 08:58:17  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:17  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:17  -  CS da Trama recebida: 1a
+30/05/2022 08:58:17  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:17  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:17  -  CS da Trama recebida: 24
+30/05/2022 08:58:17  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:17  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:17  -  CS da Trama recebida: 1a
+30/05/2022 08:58:17  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:17  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:17  -  CS da Trama recebida: 24
+30/05/2022 08:58:17  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:17  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:17  -  CS da Trama recebida: 1a
+30/05/2022 08:58:18  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:18  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:18  -  CS da Trama recebida: 24
+30/05/2022 08:58:18  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:18  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:18  -  CS da Trama recebida: 1a
+30/05/2022 08:58:18  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:18  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:18  -  CS da Trama recebida: 24
+30/05/2022 08:58:18  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:18  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:18  -  CS da Trama recebida: 1a
+30/05/2022 08:58:18  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:18  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:18  -  CS da Trama recebida: 24
+30/05/2022 08:58:19  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:19  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:19  -  CS da Trama recebida: 1a
+30/05/2022 08:58:19  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:19  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:19  -  CS da Trama recebida: 24
+30/05/2022 08:58:19  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:19  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:19  -  CS da Trama recebida: 1a
+30/05/2022 08:58:19  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:19  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:19  -  CS da Trama recebida: 24
+30/05/2022 08:58:20  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:20  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:20  -  CS da Trama recebida: 1a
+30/05/2022 08:58:20  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:20  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:20  -  CS da Trama recebida: 24
+30/05/2022 08:58:20  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:20  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:20  -  CS da Trama recebida: 1a
+30/05/2022 08:58:20  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:20  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:20  -  CS da Trama recebida: 24
+30/05/2022 08:58:20  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:20  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:20  -  CS da Trama recebida: 1a
+30/05/2022 08:58:21  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:21  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:21  -  CS da Trama recebida: 24
+30/05/2022 08:58:21  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:21  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:21  -  CS da Trama recebida: 1a
+30/05/2022 08:58:21  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:21  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:21  -  CS da Trama recebida: 24
+30/05/2022 08:58:21  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:21  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:21  -  CS da Trama recebida: 1a
+30/05/2022 08:58:21  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:21  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:21  -  CS da Trama recebida: 24
+30/05/2022 08:58:22  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:22  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:22  -  CS da Trama recebida: 1a
+30/05/2022 08:58:22  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:22  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:22  -  CS da Trama recebida: 24
+30/05/2022 08:58:22  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:22  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:22  -  CS da Trama recebida: 1a
+30/05/2022 08:58:22  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:22  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:22  -  CS da Trama recebida: 24
+30/05/2022 08:58:22  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:22  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:22  -  CS da Trama recebida: 1a
+30/05/2022 08:58:23  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:23  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:23  -  CS da Trama recebida: 24
+30/05/2022 08:58:23  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:23  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:23  -  CS da Trama recebida: 1a
+30/05/2022 08:58:23  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:23  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:23  -  CS da Trama recebida: 24
+30/05/2022 08:58:23  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:23  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:23  -  CS da Trama recebida: 1a
+30/05/2022 08:58:24  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:24  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:24  -  CS da Trama recebida: 24
+30/05/2022 08:58:24  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:24  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:24  -  CS da Trama recebida: 1a
+30/05/2022 08:58:24  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:24  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:24  -  CS da Trama recebida: 24
+30/05/2022 08:58:24  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:24  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:24  -  CS da Trama recebida: 1a
+30/05/2022 08:58:24  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:24  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:24  -  CS da Trama recebida: 24
+30/05/2022 08:58:25  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:25  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:25  -  CS da Trama recebida: 1a
+30/05/2022 08:58:25  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:25  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:25  -  CS da Trama recebida: 24
+30/05/2022 08:58:25  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:25  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:25  -  CS da Trama recebida: 1a
+30/05/2022 08:58:25  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:25  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:25  -  CS da Trama recebida: 24
+30/05/2022 08:58:25  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:25  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:25  -  CS da Trama recebida: 1a
+30/05/2022 08:58:26  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:26  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:26  -  CS da Trama recebida: 24
+30/05/2022 08:58:26  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:26  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:26  -  CS da Trama recebida: 1a
+30/05/2022 08:58:26  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:26  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:26  -  CS da Trama recebida: 24
+30/05/2022 08:58:26  -  Dado Recebido: 6,0.002,0.002,0.002,1a
+30/05/2022 08:58:26  -  Trama Recebida sem CS: 6,0.002,0.002,0.002,
+30/05/2022 08:58:26  -  CS da Trama recebida: 1a
+30/05/2022 08:58:26  -  Dado Recebido: 5,0.00,0.19,0.07,24
+30/05/2022 08:58:26  -  Trama Recebida sem CS: 5,0.00,0.19,0.07,
+30/05/2022 08:58:26  -  CS da Trama recebida: 24
+30/05/2022 08:58:26  -  Envio de comando Parar Sint.: 3,1f
+30/05/2022 08:58:27  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 08:58:27  -  A trama recebida não continha ','
+30/05/2022 08:58:27  -  Dado Recebido: Task PID Deletada
+30/05/2022 08:58:27  -  A trama recebida não continha ','
+30/05/2022 09:38:13  -  Dado Recebido: 
+30/05/2022 09:38:13  -  A trama recebida não continha ','
+30/05/2022 10:07:26  -  Dado Recebido: Brownout ??       ?***********************
+30/05/2022 10:07:26  -  A trama recebida não continha ','
+30/05/2022 10:07:27  -  Dado Recebido: ** Sistema iniciado! **
+30/05/2022 10:07:27  -  A trama recebida não continha ','
+30/05/2022 10:07:27  -  Dado Recebido: ***********************
+30/05/2022 10:07:27  -  A trama recebida não continha ','
+30/05/2022 10:07:27  -  Dado Recebido: Mutex_SPI_ADE criado com sucesso
+30/05/2022 10:07:27  -  A trama recebida não continha ','
+30/05/2022 10:07:27  -  Dado Recebido: Mutex_I2C_1 criado com sucesso
+30/05/2022 10:07:27  -  A trama recebida não continha ','
+30/05/2022 10:07:29  -  Dado Recebido: Mutex_I2C_2 criado com sucesso
+30/05/2022 10:07:29  -  A trama recebida não continha ','
+30/05/2022 10:10:48  -  Porta serial aberta com sucesso!
+30/05/2022 10:10:48  -  Salvando informações da porta serial - Porta:  COM11 Velocidade: 115200
+30/05/2022 10:10:50  -  Salvando informações de configuração (PID):  0.0004;0.0011;0;0.02;0.01;0.03
+30/05/2022 10:10:50  -  Envio de comando Parametros Sint.: 2,200,3,1,0,0,02
+30/05/2022 10:10:51  -  Envio de comando Iniciar Sint.: 4,18
+30/05/2022 10:10:51  -  Dado Recebido: 5,0.21,0.16,0.20,2d
+30/05/2022 10:10:51  -  Trama Recebida sem CS: 5,0.21,0.16,0.20,
+30/05/2022 10:10:51  -  CS da Trama recebida: 2d
+30/05/2022 10:10:51  -  Dado Recebido: Pacote enviado ao ESP_Sint.: L
+30/05/2022 10:10:51  -  A trama recebida não continha ','
+30/05/2022 10:10:51  -  Dado Recebido: 6,0.036,0.031,0.032,1e
+30/05/2022 10:10:51  -  Trama Recebida sem CS: 6,0.036,0.031,0.032,
+30/05/2022 10:10:51  -  CS da Trama recebida: 1e
+30/05/2022 10:10:51  -  Dado Recebido: 5,138.21,142.66,134.38,28
+30/05/2022 10:10:51  -  Trama Recebida sem CS: 5,138.21,142.66,134.38,
+30/05/2022 10:10:51  -  CS da Trama recebida: 28
+30/05/2022 10:10:52  -  Dado Recebido: 6,2.672,3.641,3.633,1c
+30/05/2022 10:10:52  -  Trama Recebida sem CS: 6,2.672,3.641,3.633,
+30/05/2022 10:10:52  -  CS da Trama recebida: 1c
+30/05/2022 10:10:52  -  Dado Recebido: 5,156.30,156.42,156.10,2d
+30/05/2022 10:10:52  -  Trama Recebida sem CS: 5,156.30,156.42,156.10,
+30/05/2022 10:10:52  -  CS da Trama recebida: 2d
+30/05/2022 10:10:52  -  Dado Recebido: 9,1,2.85,35
+30/05/2022 10:10:52  -  Trama Recebida sem CS: 9,1,2.85,
+30/05/2022 10:10:52  -  CS da Trama recebida: 35
+30/05/2022 10:10:52  -  Dado Recebido: 9,2,2.89,3a
+30/05/2022 10:10:52  -  Trama Recebida sem CS: 9,2,2.89,
+30/05/2022 10:10:52  -  CS da Trama recebida: 3a
+30/05/2022 10:10:52  -  Dado Recebido: 9,3,2.88,3a
+30/05/2022 10:10:52  -  Trama Recebida sem CS: 9,3,2.88,
+30/05/2022 10:10:52  -  CS da Trama recebida: 3a
+30/05/2022 10:10:52  -  Dado Recebido: 6,2.865,2.756,2.740,16
+30/05/2022 10:10:52  -  Trama Recebida sem CS: 6,2.865,2.756,2.740,
+30/05/2022 10:10:52  -  CS da Trama recebida: 16
+30/05/2022 10:10:52  -  Dado Recebido: 5,175.14,175.99,176.06,28
+30/05/2022 10:10:52  -  Trama Recebida sem CS: 5,175.14,175.99,176.06,
+30/05/2022 10:10:52  -  CS da Trama recebida: 28
+30/05/2022 10:10:53  -  Dado Recebido: 6,2.952,2.907,2.908,1b
+30/05/2022 10:10:53  -  Trama Recebida sem CS: 6,2.952,2.907,2.908,
+30/05/2022 10:10:53  -  CS da Trama recebida: 1b
+30/05/2022 10:10:53  -  Dado Recebido: 5,184.57,185.52,185.57,21
+30/05/2022 10:10:53  -  Trama Recebida sem CS: 5,184.57,185.52,185.57,
+30/05/2022 10:10:53  -  CS da Trama recebida: 21
+30/05/2022 10:10:53  -  Dado Recebido: 6,3.001,2.981,2.987,1c
+30/05/2022 10:10:53  -  Trama Recebida sem CS: 6,3.001,2.981,2.987,
+30/05/2022 10:10:53  -  CS da Trama recebida: 1c
+30/05/2022 10:10:53  -  Dado Recebido: 5,191.36,191.20,191.41,20
+30/05/2022 10:10:53  -  Trama Recebida sem CS: 5,191.36,191.20,191.41,
+30/05/2022 10:10:53  -  CS da Trama recebida: 20
+30/05/2022 10:10:53  -  Dado Recebido: 6,3.004,3.006,2.992,1a
+30/05/2022 10:10:53  -  Trama Recebida sem CS: 6,3.004,3.006,2.992,
+30/05/2022 10:10:53  -  CS da Trama recebida: 1a
+30/05/2022 10:10:53  -  Dado Recebido: 5,195.03,195.17,195.10,22
+30/05/2022 10:10:53  -  Trama Recebida sem CS: 5,195.03,195.17,195.10,
+30/05/2022 10:10:53  -  CS da Trama recebida: 22
+30/05/2022 10:10:54  -  Dado Recebido: 6,2.984,3.005,2.996,1d
+30/05/2022 10:10:54  -  Trama Recebida sem CS: 6,2.984,3.005,2.996,
+30/05/2022 10:10:54  -  CS da Trama recebida: 1d
+30/05/2022 10:10:54  -  Dado Recebido: 5,196.87,197.03,197.25,2e
+30/05/2022 10:10:54  -  Trama Recebida sem CS: 5,196.87,197.03,197.25,
+30/05/2022 10:10:54  -  CS da Trama recebida: 2e
+30/05/2022 10:10:54  -  Dado Recebido: 6,3.001,3.003,2.997,1f
+30/05/2022 10:10:54  -  Trama Recebida sem CS: 6,3.001,3.003,2.997,
+30/05/2022 10:10:54  -  CS da Trama recebida: 1f
+30/05/2022 10:10:54  -  Dado Recebido: 5,198.67,198.84,198.82,2c
+30/05/2022 10:10:54  -  Trama Recebida sem CS: 5,198.67,198.84,198.82,
+30/05/2022 10:10:54  -  CS da Trama recebida: 2c
+30/05/2022 10:10:54  -  Dado Recebido: 6,3.004,2.992,3.004,18
+30/05/2022 10:10:54  -  Trama Recebida sem CS: 6,3.004,2.992,3.004,
+30/05/2022 10:10:54  -  CS da Trama recebida: 18
+30/05/2022 10:10:55  -  Dado Recebido: 5,199.00,199.17,198.86,23
+30/05/2022 10:10:55  -  Trama Recebida sem CS: 5,199.00,199.17,198.86,
+30/05/2022 10:10:55  -  CS da Trama recebida: 23
+30/05/2022 10:10:55  -  Dado Recebido: 6,3.002,3.007,3.001,1f
+30/05/2022 10:10:55  -  Trama Recebida sem CS: 6,3.002,3.007,3.001,
+30/05/2022 10:10:55  -  CS da Trama recebida: 1f
+30/05/2022 10:10:55  -  Dado Recebido: 5,199.00,199.17,199.16,2b
+30/05/2022 10:10:55  -  Trama Recebida sem CS: 5,199.00,199.17,199.16,
+30/05/2022 10:10:55  -  CS da Trama recebida: 2b
+30/05/2022 10:10:55  -  Dado Recebido: 6,3.004,3.003,3.003,1f
+30/05/2022 10:10:55  -  Trama Recebida sem CS: 6,3.004,3.003,3.003,
+30/05/2022 10:10:55  -  CS da Trama recebida: 1f
+30/05/2022 10:10:56  -  Dado Recebido: 5,200.51,199.15,200.66,2a
+30/05/2022 10:10:56  -  Trama Recebida sem CS: 5,200.51,199.15,200.66,
+30/05/2022 10:10:56  -  CS da Trama recebida: 2a
+30/05/2022 10:10:56  -  Dado Recebido: 6,2.999,2.987,3.003,17
+30/05/2022 10:10:56  -  Trama Recebida sem CS: 6,2.999,2.987,3.003,
+30/05/2022 10:10:56  -  CS da Trama recebida: 17
+30/05/2022 10:10:56  -  Dado Recebido: 5,200.56,199.44,199.18,23
+30/05/2022 10:10:56  -  Trama Recebida sem CS: 5,200.56,199.44,199.18,
+30/05/2022 10:10:56  -  CS da Trama recebida: 23
+30/05/2022 10:10:56  -  Dado Recebido: 6,3.005,3.006,3.001,19
+30/05/2022 10:10:56  -  Trama Recebida sem CS: 6,3.005,3.006,3.001,
+30/05/2022 10:10:56  -  CS da Trama recebida: 19
+30/05/2022 10:10:56  -  Dado Recebido: 5,200.58,200.66,199.45,26
+30/05/2022 10:10:56  -  Trama Recebida sem CS: 5,200.58,200.66,199.45,
+30/05/2022 10:10:56  -  CS da Trama recebida: 26
+30/05/2022 10:10:57  -  Dado Recebido: 6,2.999,2.987,2.998,1d
+30/05/2022 10:10:57  -  Trama Recebida sem CS: 6,2.999,2.987,2.998,
+30/05/2022 10:10:57  -  CS da Trama recebida: 1d
+30/05/2022 10:10:57  -  Dado Recebido: 5,200.60,200.68,199.44,22
+30/05/2022 10:10:57  -  Trama Recebida sem CS: 5,200.60,200.68,199.44,
+30/05/2022 10:10:57  -  CS da Trama recebida: 22
+30/05/2022 10:10:57  -  Dado Recebido: 6,3.007,3.006,2.995,1e
+30/05/2022 10:10:57  -  Trama Recebida sem CS: 6,3.007,3.006,2.995,
+30/05/2022 10:10:57  -  CS da Trama recebida: 1e
+30/05/2022 10:10:57  -  Dado Recebido: 5,200.61,200.68,199.41,26
+30/05/2022 10:10:57  -  Trama Recebida sem CS: 5,200.61,200.68,199.41,
+30/05/2022 10:10:57  -  CS da Trama recebida: 26
+30/05/2022 10:10:57  -  Dado Recebido: 6,2.988,3.003,2.992,13
+30/05/2022 10:10:57  -  Trama Recebida sem CS: 6,2.988,3.003,2.992,
+30/05/2022 10:10:57  -  CS da Trama recebida: 13
+30/05/2022 10:10:58  -  Dado Recebido: 5,200.63,200.69,199.38,2b
+30/05/2022 10:10:58  -  Trama Recebida sem CS: 5,200.63,200.69,199.38,
+30/05/2022 10:10:58  -  CS da Trama recebida: 2b
+30/05/2022 10:10:58  -  Dado Recebido: 6,3.007,3.008,3.005,11
+30/05/2022 10:10:58  -  Trama Recebida sem CS: 6,3.007,3.008,3.005,
+30/05/2022 10:10:58  -  CS da Trama recebida: 11
+30/05/2022 10:10:58  -  Dado Recebido: 5,200.64,200.70,199.35,29
+30/05/2022 10:10:58  -  Trama Recebida sem CS: 5,200.64,200.70,199.35,
+30/05/2022 10:10:58  -  CS da Trama recebida: 29
+30/05/2022 10:10:58  -  Dado Recebido: 6,3.003,3.003,2.987,1c
+30/05/2022 10:10:58  -  Trama Recebida sem CS: 6,3.003,3.003,2.987,
+30/05/2022 10:10:58  -  CS da Trama recebida: 1c
+30/05/2022 10:10:58  -  Dado Recebido: 5,200.65,200.73,199.33,2d
+30/05/2022 10:10:58  -  Trama Recebida sem CS: 5,200.65,200.73,199.33,
+30/05/2022 10:10:58  -  CS da Trama recebida: 2d
+30/05/2022 10:10:59  -  Dado Recebido: 6,3.007,2.990,3.004,19
+30/05/2022 10:10:59  -  Trama Recebida sem CS: 6,3.007,2.990,3.004,
+30/05/2022 10:10:59  -  CS da Trama recebida: 19
+30/05/2022 10:10:59  -  Dado Recebido: 5,200.64,199.23,199.32,2b
+30/05/2022 10:10:59  -  Trama Recebida sem CS: 5,200.64,199.23,199.32,
+30/05/2022 10:10:59  -  CS da Trama recebida: 2b
+30/05/2022 10:10:59  -  Dado Recebido: 6,3.001,2.990,3.002,19
+30/05/2022 10:10:59  -  Trama Recebida sem CS: 6,3.001,2.990,3.002,
+30/05/2022 10:10:59  -  CS da Trama recebida: 19
+30/05/2022 10:10:59  -  Dado Recebido: 5,200.65,199.51,199.31,2c
+30/05/2022 10:10:59  -  Trama Recebida sem CS: 5,200.65,199.51,199.31,
+30/05/2022 10:10:59  -  CS da Trama recebida: 2c
+30/05/2022 10:10:59  -  Dado Recebido: 6,3.003,3.011,3.005,1d
+30/05/2022 10:10:59  -  Trama Recebida sem CS: 6,3.003,3.011,3.005,
+30/05/2022 10:10:59  -  CS da Trama recebida: 1d
+30/05/2022 10:11:00  -  Dado Recebido: 5,200.63,199.54,199.30,2e
+30/05/2022 10:11:00  -  Trama Recebida sem CS: 5,200.63,199.54,199.30,
+30/05/2022 10:11:00  -  CS da Trama recebida: 2e
+30/05/2022 10:11:00  -  Dado Recebido: 6,3.000,3.006,3.003,1e
+30/05/2022 10:11:00  -  Trama Recebida sem CS: 6,3.000,3.006,3.003,
+30/05/2022 10:11:00  -  CS da Trama recebida: 1e
+30/05/2022 10:11:00  -  Dado Recebido: 5,200.63,200.78,199.32,21
+30/05/2022 10:11:00  -  Trama Recebida sem CS: 5,200.63,200.78,199.32,
+30/05/2022 10:11:00  -  CS da Trama recebida: 21
+30/05/2022 10:11:00  -  Dado Recebido: 6,3.005,3.009,3.007,10
+30/05/2022 10:11:00  -  Trama Recebida sem CS: 6,3.005,3.009,3.007,
+30/05/2022 10:11:00  -  CS da Trama recebida: 10
+30/05/2022 10:11:01  -  Dado Recebido: 5,200.61,200.81,199.34,23
+30/05/2022 10:11:01  -  Trama Recebida sem CS: 5,200.61,200.81,199.34,
+30/05/2022 10:11:01  -  CS da Trama recebida: 23
+30/05/2022 10:11:01  -  Dado Recebido: 6,3.004,3.006,3.008,11
+30/05/2022 10:11:01  -  Trama Recebida sem CS: 6,3.004,3.006,3.008,
+30/05/2022 10:11:01  -  CS da Trama recebida: 11
+30/05/2022 10:11:01  -  Dado Recebido: 5,200.60,199.30,199.36,29
+30/05/2022 10:11:01  -  Trama Recebida sem CS: 5,200.60,199.30,199.36,
+30/05/2022 10:11:01  -  CS da Trama recebida: 29
+30/05/2022 10:11:01  -  Dado Recebido: 6,3.001,3.007,2.992,1e
+30/05/2022 10:11:01  -  Trama Recebida sem CS: 6,3.001,3.007,2.992,
+30/05/2022 10:11:01  -  CS da Trama recebida: 1e
+30/05/2022 10:11:01  -  Dado Recebido: 5,200.59,199.59,199.38,22
+30/05/2022 10:11:01  -  Trama Recebida sem CS: 5,200.59,199.59,199.38,
+30/05/2022 10:11:01  -  CS da Trama recebida: 22
+30/05/2022 10:11:02  -  Dado Recebido: 6,3.004,3.006,2.999,11
+30/05/2022 10:11:02  -  Trama Recebida sem CS: 6,3.004,3.006,2.999,
+30/05/2022 10:11:02  -  CS da Trama recebida: 11
+30/05/2022 10:11:02  -  Dado Recebido: 5,200.58,199.59,199.41,2d
+30/05/2022 10:11:02  -  Trama Recebida sem CS: 5,200.58,199.59,199.41,
+30/05/2022 10:11:02  -  CS da Trama recebida: 2d
+30/05/2022 10:11:02  -  Dado Recebido: 6,3.001,3.005,2.996,18
+30/05/2022 10:11:02  -  Trama Recebida sem CS: 6,3.001,3.005,2.996,
+30/05/2022 10:11:02  -  CS da Trama recebida: 18
+30/05/2022 10:11:02  -  Dado Recebido: 5,200.55,200.79,199.44,24
+30/05/2022 10:11:02  -  Trama Recebida sem CS: 5,200.55,200.79,199.44,
+30/05/2022 10:11:02  -  CS da Trama recebida: 24
+30/05/2022 10:11:02  -  Dado Recebido: 6,2.997,2.990,3.002,1e
+30/05/2022 10:11:02  -  Trama Recebida sem CS: 6,2.997,2.990,3.002,
+30/05/2022 10:11:02  -  CS da Trama recebida: 1e
+30/05/2022 10:11:03  -  Dado Recebido: 5,200.55,200.79,199.46,26
+30/05/2022 10:11:03  -  Trama Recebida sem CS: 5,200.55,200.79,199.46,
+30/05/2022 10:11:03  -  CS da Trama recebida: 26
+30/05/2022 10:11:03  -  Dado Recebido: 6,3.002,3.008,2.999,19
+30/05/2022 10:11:03  -  Trama Recebida sem CS: 6,3.002,3.008,2.999,
+30/05/2022 10:11:03  -  CS da Trama recebida: 19
+30/05/2022 10:11:03  -  Dado Recebido: 5,200.55,199.27,199.48,20
+30/05/2022 10:11:03  -  Trama Recebida sem CS: 5,200.55,199.27,199.48,
+30/05/2022 10:11:03  -  CS da Trama recebida: 20
+30/05/2022 10:11:03  -  Dado Recebido: 6,3.002,3.004,3.001,1c
+30/05/2022 10:11:03  -  Trama Recebida sem CS: 6,3.002,3.004,3.001,
+30/05/2022 10:11:03  -  CS da Trama recebida: 1c
+30/05/2022 10:11:03  -  Dado Recebido: 5,200.56,199.53,199.48,20
+30/05/2022 10:11:03  -  Trama Recebida sem CS: 5,200.56,199.53,199.48,
+30/05/2022 10:11:03  -  CS da Trama recebida: 20
+30/05/2022 10:11:04  -  Dado Recebido: 6,3.003,3.004,2.999,14
+30/05/2022 10:11:04  -  Trama Recebida sem CS: 6,3.003,3.004,2.999,
+30/05/2022 10:11:04  -  CS da Trama recebida: 14
+30/05/2022 10:11:04  -  Dado Recebido: 5,200.56,199.52,199.48,21
+30/05/2022 10:11:04  -  Trama Recebida sem CS: 5,200.56,199.52,199.48,
+30/05/2022 10:11:04  -  CS da Trama recebida: 21
+30/05/2022 10:11:04  -  Dado Recebido: 6,3.004,2.990,3.000,1e
+30/05/2022 10:11:04  -  Trama Recebida sem CS: 6,3.004,2.990,3.000,
+30/05/2022 10:11:04  -  CS da Trama recebida: 1e
+30/05/2022 10:11:04  -  Dado Recebido: 5,200.57,199.51,199.48,23
+30/05/2022 10:11:04  -  Trama Recebida sem CS: 5,200.57,199.51,199.48,
+30/05/2022 10:11:04  -  CS da Trama recebida: 23
+30/05/2022 10:11:04  -  Dado Recebido: 6,3.001,3.004,2.998,17
+30/05/2022 10:11:04  -  Trama Recebida sem CS: 6,3.001,3.004,2.998,
+30/05/2022 10:11:05  -  CS da Trama recebida: 17
+30/05/2022 10:11:05  -  Dado Recebido: 5,200.58,200.71,199.45,20
+30/05/2022 10:11:05  -  Trama Recebida sem CS: 5,200.58,200.71,199.45,
+30/05/2022 10:11:05  -  CS da Trama recebida: 20
+30/05/2022 10:11:05  -  Dado Recebido: 6,3.005,2.988,2.996,11
+30/05/2022 10:11:05  -  Trama Recebida sem CS: 6,3.005,2.988,2.996,
+30/05/2022 10:11:05  -  CS da Trama recebida: 11
+30/05/2022 10:11:05  -  Dado Recebido: 5,200.60,200.73,199.44,28
+30/05/2022 10:11:05  -  Trama Recebida sem CS: 5,200.60,200.73,199.44,
+30/05/2022 10:11:05  -  CS da Trama recebida: 28
+30/05/2022 10:11:05  -  Dado Recebido: 6,2.987,3.006,2.993,18
+30/05/2022 10:11:05  -  Trama Recebida sem CS: 6,2.987,3.006,2.993,
+30/05/2022 10:11:05  -  CS da Trama recebida: 18
+30/05/2022 10:11:06  -  Dado Recebido: 5,200.62,200.71,199.41,2d
+30/05/2022 10:11:06  -  Trama Recebida sem CS: 5,200.62,200.71,199.41,
+30/05/2022 10:11:06  -  CS da Trama recebida: 2d
+30/05/2022 10:11:06  -  Dado Recebido: 6,3.006,3.004,2.994,1c
+30/05/2022 10:11:06  -  Trama Recebida sem CS: 6,3.006,3.004,2.994,
+30/05/2022 10:11:06  -  CS da Trama recebida: 1c
+30/05/2022 10:11:06  -  Dado Recebido: 5,200.64,200.73,199.37,28
+30/05/2022 10:11:06  -  Trama Recebida sem CS: 5,200.64,200.73,199.37,
+30/05/2022 10:11:06  -  CS da Trama recebida: 28
+30/05/2022 10:11:06  -  Dado Recebido: 6,2.989,2.989,2.993,19
+30/05/2022 10:11:06  -  Trama Recebida sem CS: 6,2.989,2.989,2.993,
+30/05/2022 10:11:06  -  CS da Trama recebida: 19
+30/05/2022 10:11:06  -  Dado Recebido: 5,200.65,199.21,199.36,2c
+30/05/2022 10:11:06  -  Trama Recebida sem CS: 5,200.65,199.21,199.36,
+30/05/2022 10:11:06  -  CS da Trama recebida: 2c
+30/05/2022 10:11:07  -  Dado Recebido: 6,2.990,3.009,2.987,14
+30/05/2022 10:11:07  -  Trama Recebida sem CS: 6,2.990,3.009,2.987,
+30/05/2022 10:11:07  -  CS da Trama recebida: 14
+30/05/2022 10:11:07  -  Dado Recebido: OV
+30/05/2022 10:11:07  -  A trama recebida não continha ','
+30/05/2022 10:11:07  -  Dado Recebido: 5,300286.94,299801.59,299797.31,17
+30/05/2022 10:11:07  -  Trama Recebida sem CS: 5,300286.94,299801.59,299797.31,
+30/05/2022 10:11:07  -  CS da Trama recebida: 17
+30/05/2022 10:11:07  -  Dado Recebido: ESP32 travou
+30/05/2022 10:11:07  -  A trama recebida não continha ','
+30/05/2022 10:11:07  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:11:07  -  A trama recebida não continha ','
+30/05/2022 10:11:07  -  Dado Recebido: Task PID Deletada
+30/05/2022 10:11:07  -  A trama recebida não continha ','
+30/05/2022 10:11:07  -  Dado Recebido: CK Recebido|Calculado: ??|00
+30/05/2022 10:11:07  -  A trama recebida não continha ','
+30/05/2022 10:11:09  -  Dado Recebido: ADE Configurado!
+30/05/2022 10:11:09  -  A trama recebida não continha ','
+30/05/2022 10:11:10  -  Dado Recebido: Pacote enviado ao ESP_Sint.: L
+30/05/2022 10:11:10  -  A trama recebida não continha ','
+30/05/2022 10:11:10  -  Dado Recebido: 6,0.000,0.000,0.000,18
+30/05/2022 10:11:10  -  Trama Recebida sem CS: 6,0.000,0.000,0.000,
+30/05/2022 10:11:10  -  CS da Trama recebida: 18
+30/05/2022 10:11:10  -  Dado Recebido: 5,0.00,0.00,0.00,2b
+30/05/2022 10:11:10  -  Trama Recebida sem CS: 5,0.00,0.00,0.00,
+30/05/2022 10:11:10  -  CS da Trama recebida: 2b
+30/05/2022 10:11:10  -  Dado Recebido: 6,0.002,0.004,0.004,1a
+30/05/2022 10:11:10  -  Trama Recebida sem CS: 6,0.002,0.004,0.004,
+30/05/2022 10:11:10  -  CS da Trama recebida: 1a
+30/05/2022 10:11:11  -  Dado Recebido: 5,0.26,0.26,0.26,2f
+30/05/2022 10:11:11  -  Trama Recebida sem CS: 5,0.26,0.26,0.26,
+30/05/2022 10:11:11  -  CS da Trama recebida: 2f
+30/05/2022 10:11:11  -  Dado Recebido: 6,0.005,0.011,0.012,1e
+30/05/2022 10:11:11  -  Trama Recebida sem CS: 6,0.005,0.011,0.012,
+30/05/2022 10:11:11  -  CS da Trama recebida: 1e
+30/05/2022 10:11:11  -  Dado Recebido: 5,0.41,0.41,0.41,2e
+30/05/2022 10:11:11  -  Trama Recebida sem CS: 5,0.41,0.41,0.41,
+30/05/2022 10:11:11  -  CS da Trama recebida: 2e
+30/05/2022 10:11:11  -  Dado Recebido: 6,0.008,0.018,0.018,10
+30/05/2022 10:11:11  -  Trama Recebida sem CS: 6,0.008,0.018,0.018,
+30/05/2022 10:11:11  -  CS da Trama recebida: 10
+30/05/2022 10:11:11  -  Dado Recebido: 5,0.38,0.38,0.38,20
+30/05/2022 10:11:11  -  Trama Recebida sem CS: 5,0.38,0.38,0.38,
+30/05/2022 10:11:11  -  CS da Trama recebida: 20
+30/05/2022 10:11:12  -  Dado Recebido: 6,0.011,0.024,0.025,19
+30/05/2022 10:11:12  -  Trama Recebida sem CS: 6,0.011,0.024,0.025,
+30/05/2022 10:11:12  -  CS da Trama recebida: 19
+30/05/2022 10:11:12  -  Dado Recebido: 5,0.38,0.37,0.37,20
+30/05/2022 10:11:12  -  Trama Recebida sem CS: 5,0.38,0.37,0.37,
+30/05/2022 10:11:12  -  CS da Trama recebida: 20
+30/05/2022 10:11:12  -  Dado Recebido: 6,0.014,0.030,0.030,1d
+30/05/2022 10:11:12  -  Trama Recebida sem CS: 6,0.014,0.030,0.030,
+30/05/2022 10:11:12  -  CS da Trama recebida: 1d
+30/05/2022 10:11:12  -  Dado Recebido: 5,0.38,0.37,0.38,2f
+30/05/2022 10:11:12  -  Trama Recebida sem CS: 5,0.38,0.37,0.38,
+30/05/2022 10:11:12  -  CS da Trama recebida: 2f
+30/05/2022 10:11:12  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:11:12  -  A trama recebida não continha ','
+30/05/2022 10:11:12  -  Dado Recebido: Falha OLP_UVP na fase T
+30/05/2022 10:11:12  -  A trama recebida não continha ','
+30/05/2022 10:11:12  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:11:12  -  A trama recebida não continha ','
+30/05/2022 10:15:53  -  Porta serial aberta com sucesso!
+30/05/2022 10:15:53  -  Salvando informações da porta serial - Porta:  COM11 Velocidade: 115200
+30/05/2022 10:15:55  -  Envio de comando Iniciar Sint.: 4,18
+30/05/2022 10:15:55  -  Dado Recebido: Pacote enviado ao ESP_Sint.: L
+30/05/2022 10:15:55  -  A trama recebida não continha ','
+30/05/2022 10:15:55  -  Dado Recebido: 5,0.25,0.23,0.24,2b
+30/05/2022 10:15:55  -  Trama Recebida sem CS: 5,0.25,0.23,0.24,
+30/05/2022 10:15:55  -  CS da Trama recebida: 2b
+30/05/2022 10:15:55  -  Dado Recebido: 6,0.035,0.031,0.032,1d
+30/05/2022 10:15:55  -  Trama Recebida sem CS: 6,0.035,0.031,0.032,
+30/05/2022 10:15:55  -  CS da Trama recebida: 1d
+30/05/2022 10:15:56  -  Dado Recebido: 5,128.75,128.34,128.50,20
+30/05/2022 10:15:56  -  Trama Recebida sem CS: 5,128.75,128.34,128.50,
+30/05/2022 10:15:56  -  CS da Trama recebida: 20
+30/05/2022 10:15:56  -  Dado Recebido: 6,4.135,6.265,6.348,15
+30/05/2022 10:15:56  -  Trama Recebida sem CS: 6,4.135,6.265,6.348,
+30/05/2022 10:15:56  -  CS da Trama recebida: 15
+30/05/2022 10:15:56  -  Dado Recebido: 9,1,4.35,38
+30/05/2022 10:15:56  -  Trama Recebida sem CS: 9,1,4.35,
+30/05/2022 10:15:56  -  CS da Trama recebida: 38
+30/05/2022 10:15:56  -  Dado Recebido: 5,119.29,118.25,118.83,25
+30/05/2022 10:15:56  -  Trama Recebida sem CS: 5,119.29,118.25,118.83,
+30/05/2022 10:15:56  -  CS da Trama recebida: 25
+30/05/2022 10:15:56  -  Dado Recebido: 6,4.208,3.735,3.755,10
+30/05/2022 10:15:56  -  Trama Recebida sem CS: 6,4.208,3.735,3.755,
+30/05/2022 10:15:56  -  CS da Trama recebida: 10
+30/05/2022 10:15:56  -  Dado Recebido: 9,2,4.29,36
+30/05/2022 10:15:56  -  Trama Recebida sem CS: 9,2,4.29,
+30/05/2022 10:15:56  -  CS da Trama recebida: 36
+30/05/2022 10:15:56  -  Dado Recebido: 9,3,4.30,3f
+30/05/2022 10:15:56  -  Trama Recebida sem CS: 9,3,4.30,
+30/05/2022 10:15:56  -  CS da Trama recebida: 3f
+30/05/2022 10:15:57  -  Dado Recebido: 5,135.64,136.41,136.03,28
+30/05/2022 10:15:57  -  Trama Recebida sem CS: 5,135.64,136.41,136.03,
+30/05/2022 10:15:57  -  CS da Trama recebida: 28
+30/05/2022 10:15:57  -  Dado Recebido: 6,4.269,4.489,4.042,12
+30/05/2022 10:15:57  -  Trama Recebida sem CS: 6,4.269,4.489,4.042,
+30/05/2022 10:15:57  -  CS da Trama recebida: 12
+30/05/2022 10:15:57  -  Dado Recebido: 5,141.33,140.96,141.73,25
+30/05/2022 10:15:57  -  Trama Recebida sem CS: 5,141.33,140.96,141.73,
+30/05/2022 10:15:57  -  CS da Trama recebida: 25
+30/05/2022 10:15:57  -  Dado Recebido: 6,4.305,4.297,4.237,10
+30/05/2022 10:15:57  -  Trama Recebida sem CS: 6,4.305,4.297,4.237,
+30/05/2022 10:15:57  -  CS da Trama recebida: 10
+30/05/2022 10:15:57  -  Dado Recebido: 5,145.08,144.89,144.63,27
+30/05/2022 10:15:57  -  Trama Recebida sem CS: 5,145.08,144.89,144.63,
+30/05/2022 10:15:57  -  CS da Trama recebida: 27
+30/05/2022 10:15:57  -  Dado Recebido: 6,4.299,4.289,4.302,1c
+30/05/2022 10:15:57  -  Trama Recebida sem CS: 6,4.299,4.289,4.302,
+30/05/2022 10:15:57  -  CS da Trama recebida: 1c
+30/05/2022 10:15:58  -  Dado Recebido: 5,146.96,146.94,146.69,25
+30/05/2022 10:15:58  -  Trama Recebida sem CS: 5,146.96,146.94,146.69,
+30/05/2022 10:15:58  -  CS da Trama recebida: 25
+30/05/2022 10:15:58  -  Dado Recebido: 6,4.302,4.312,4.300,1e
+30/05/2022 10:15:58  -  Trama Recebida sem CS: 6,4.302,4.312,4.300,
+30/05/2022 10:15:58  -  CS da Trama recebida: 1e
+30/05/2022 10:15:58  -  Dado Recebido: 5,147.96,147.90,148.41,25
+30/05/2022 10:15:58  -  Trama Recebida sem CS: 5,147.96,147.90,148.41,
+30/05/2022 10:15:58  -  CS da Trama recebida: 25
+30/05/2022 10:15:58  -  Dado Recebido: 6,4.302,4.293,4.298,16
+30/05/2022 10:15:58  -  Trama Recebida sem CS: 6,4.302,4.293,4.298,
+30/05/2022 10:15:58  -  CS da Trama recebida: 16
+30/05/2022 10:15:58  -  Dado Recebido: 5,148.87,148.81,148.50,25
+30/05/2022 10:15:58  -  Trama Recebida sem CS: 5,148.87,148.81,148.50,
+30/05/2022 10:15:58  -  CS da Trama recebida: 25
+30/05/2022 10:15:59  -  Dado Recebido: 6,4.304,4.309,4.299,13
+30/05/2022 10:15:59  -  Trama Recebida sem CS: 6,4.304,4.309,4.299,
+30/05/2022 10:15:59  -  CS da Trama recebida: 13
+30/05/2022 10:15:59  -  Dado Recebido: 7,3,150.03,31
+30/05/2022 10:15:59  -  Trama Recebida sem CS: 7,3,150.03,
+30/05/2022 10:15:59  -  CS da Trama recebida: 31
+30/05/2022 10:15:59  -  Dado Recebido: 5,135.91,149.67,149.41,20
+30/05/2022 10:15:59  -  Trama Recebida sem CS: 5,135.91,149.67,149.41,
+30/05/2022 10:15:59  -  CS da Trama recebida: 20
+30/05/2022 10:15:59  -  Dado Recebido: 6,4.226,4.293,4.299,10
+30/05/2022 10:15:59  -  Trama Recebida sem CS: 6,4.226,4.293,4.299,
+30/05/2022 10:15:59  -  CS da Trama recebida: 10
+30/05/2022 10:15:59  -  Dado Recebido: 5,157.56,149.74,149.04,2c
+30/05/2022 10:15:59  -  Trama Recebida sem CS: 5,157.56,149.74,149.04,
+30/05/2022 10:15:59  -  CS da Trama recebida: 2c
+30/05/2022 10:16:00  -  Dado Recebido: 6,4.314,4.297,4.305,10
+30/05/2022 10:16:00  -  Trama Recebida sem CS: 6,4.314,4.297,4.305,
+30/05/2022 10:16:00  -  CS da Trama recebida: 10
+30/05/2022 10:16:00  -  Dado Recebido: 5,153.13,149.75,149.67,2d
+30/05/2022 10:16:00  -  Trama Recebida sem CS: 5,153.13,149.75,149.67,
+30/05/2022 10:16:00  -  CS da Trama recebida: 2d
+30/05/2022 10:16:00  -  Dado Recebido: 6,4.287,4.312,4.291,1b
+30/05/2022 10:16:00  -  Trama Recebida sem CS: 6,4.287,4.312,4.291,
+30/05/2022 10:16:00  -  CS da Trama recebida: 1b
+30/05/2022 10:16:00  -  Dado Recebido: 5,152.65,149.76,149.68,21
+30/05/2022 10:16:00  -  Trama Recebida sem CS: 5,152.65,149.76,149.68,
+30/05/2022 10:16:00  -  CS da Trama recebida: 21
+30/05/2022 10:16:00  -  Dado Recebido: 6,4.316,4.296,4.304,12
+30/05/2022 10:16:00  -  Trama Recebida sem CS: 6,4.316,4.296,4.304,
+30/05/2022 10:16:00  -  CS da Trama recebida: 12
+30/05/2022 10:16:01  -  Dado Recebido: 5,139.38,149.79,149.70,22
+30/05/2022 10:16:01  -  Trama Recebida sem CS: 5,139.38,149.79,149.70,
+30/05/2022 10:16:01  -  CS da Trama recebida: 22
+30/05/2022 10:16:01  -  Dado Recebido: 6,4.297,4.296,4.297,11
+30/05/2022 10:16:01  -  Trama Recebida sem CS: 6,4.297,4.296,4.297,
+30/05/2022 10:16:01  -  CS da Trama recebida: 11
+30/05/2022 10:16:01  -  Dado Recebido: OV
+30/05/2022 10:16:01  -  A trama recebida não continha ','
+30/05/2022 10:16:01  -  Dado Recebido: 5,152.29,149.78,150.25,26
+30/05/2022 10:16:01  -  Trama Recebida sem CS: 5,152.29,149.78,150.25,
+30/05/2022 10:16:01  -  CS da Trama recebida: 26
+30/05/2022 10:16:01  -  Dado Recebido: 6,4.300,4.311,4.308,17
+30/05/2022 10:16:01  -  Trama Recebida sem CS: 6,4.300,4.311,4.308,
+30/05/2022 10:16:01  -  CS da Trama recebida: 17
+30/05/2022 10:16:01  -  Dado Recebido: 5,152.66,149.86,149.78,2c
+30/05/2022 10:16:01  -  Trama Recebida sem CS: 5,152.66,149.86,149.78,
+30/05/2022 10:16:01  -  CS da Trama recebida: 2c
+30/05/2022 10:16:02  -  Dado Recebido: 6,4.299,4.298,4.294,12
+30/05/2022 10:16:02  -  Trama Recebida sem CS: 6,4.299,4.298,4.294,
+30/05/2022 10:16:02  -  CS da Trama recebida: 12
+30/05/2022 10:16:02  -  Dado Recebido: 5,140.69,149.81,149.74,2b
+30/05/2022 10:16:02  -  Trama Recebida sem CS: 5,140.69,149.81,149.74,
+30/05/2022 10:16:02  -  CS da Trama recebida: 2b
+30/05/2022 10:16:02  -  Dado Recebido: OV
+30/05/2022 10:16:02  -  A trama recebida não continha ','
+30/05/2022 10:16:02  -  Dado Recebido: OV
+30/05/2022 10:16:02  -  A trama recebida não continha ','
+30/05/2022 10:16:02  -  Dado Recebido: OV
+30/05/2022 10:16:02  -  A trama recebida não continha ','
+30/05/2022 10:16:02  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:02  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:02  -  CS da Trama recebida: 16
+30/05/2022 10:16:02  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:02  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:02  -  CS da Trama recebida: 2d
+30/05/2022 10:16:02  -  Dado Recebido: CK Recebido|Calculado: ?|00
+30/05/2022 10:16:02  -  A trama recebida não continha ','
+30/05/2022 10:16:02  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:02  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:02  -  CS da Trama recebida: 16
+30/05/2022 10:16:03  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:03  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:03  -  CS da Trama recebida: 2d
+30/05/2022 10:16:03  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:03  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:03  -  CS da Trama recebida: 16
+30/05/2022 10:16:03  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:03  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:03  -  CS da Trama recebida: 2d
+30/05/2022 10:16:03  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:03  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:03  -  CS da Trama recebida: 16
+30/05/2022 10:16:03  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:03  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:03  -  CS da Trama recebida: 2d
+30/05/2022 10:16:04  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:04  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:04  -  CS da Trama recebida: 16
+30/05/2022 10:16:04  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:04  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:04  -  CS da Trama recebida: 2d
+30/05/2022 10:16:04  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:04  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:04  -  CS da Trama recebida: 16
+30/05/2022 10:16:04  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:04  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:04  -  CS da Trama recebida: 2d
+30/05/2022 10:16:05  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:05  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:05  -  CS da Trama recebida: 16
+30/05/2022 10:16:05  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:05  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:05  -  CS da Trama recebida: 2d
+30/05/2022 10:16:05  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:05  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:05  -  CS da Trama recebida: 16
+30/05/2022 10:16:05  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:05  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:05  -  CS da Trama recebida: 2d
+30/05/2022 10:16:05  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:05  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:05  -  CS da Trama recebida: 16
+30/05/2022 10:16:06  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:06  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:06  -  CS da Trama recebida: 2d
+30/05/2022 10:16:06  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:06  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:06  -  CS da Trama recebida: 16
+30/05/2022 10:16:06  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:06  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:06  -  CS da Trama recebida: 2d
+30/05/2022 10:16:06  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:06  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:06  -  CS da Trama recebida: 16
+30/05/2022 10:16:06  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:06  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:06  -  CS da Trama recebida: 2d
+30/05/2022 10:16:07  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:07  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:07  -  CS da Trama recebida: 16
+30/05/2022 10:16:07  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:07  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:07  -  CS da Trama recebida: 2d
+30/05/2022 10:16:07  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:07  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:07  -  CS da Trama recebida: 16
+30/05/2022 10:16:07  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:07  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:07  -  CS da Trama recebida: 2d
+30/05/2022 10:16:07  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:07  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:07  -  CS da Trama recebida: 16
+30/05/2022 10:16:08  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:08  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:08  -  CS da Trama recebida: 2d
+30/05/2022 10:16:08  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:08  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:08  -  CS da Trama recebida: 16
+30/05/2022 10:16:08  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:08  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:08  -  CS da Trama recebida: 2d
+30/05/2022 10:16:08  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:08  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:08  -  CS da Trama recebida: 16
+30/05/2022 10:16:08  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:08  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:08  -  CS da Trama recebida: 2d
+30/05/2022 10:16:09  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:09  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:09  -  CS da Trama recebida: 16
+30/05/2022 10:16:09  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:09  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:09  -  CS da Trama recebida: 2d
+30/05/2022 10:16:09  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:09  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:09  -  CS da Trama recebida: 16
+30/05/2022 10:16:09  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:09  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:09  -  CS da Trama recebida: 2d
+30/05/2022 10:16:10  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:10  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:10  -  CS da Trama recebida: 16
+30/05/2022 10:16:10  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:10  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:10  -  CS da Trama recebida: 2d
+30/05/2022 10:16:10  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:10  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:10  -  CS da Trama recebida: 16
+30/05/2022 10:16:10  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:10  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:10  -  CS da Trama recebida: 2d
+30/05/2022 10:16:10  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:10  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:10  -  CS da Trama recebida: 16
+30/05/2022 10:16:11  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:11  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:11  -  CS da Trama recebida: 2d
+30/05/2022 10:16:11  -  Envio de comando Parar Sint.: 3,1f
+30/05/2022 10:16:11  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:16:11  -  A trama recebida não continha ','
+30/05/2022 10:16:11  -  Dado Recebido: Task PID Deletada
+30/05/2022 10:16:11  -  A trama recebida não continha ','
+30/05/2022 10:16:15  -  Envio de comando Iniciar Sint.: 4,18
+30/05/2022 10:16:15  -  Dado Recebido: Pacote enviado ao ESP_Sint.: L
+30/05/2022 10:16:15  -  A trama recebida não continha ','
+30/05/2022 10:16:15  -  Dado Recebido: 9,1,4.30,3d
+30/05/2022 10:16:15  -  Trama Recebida sem CS: 9,1,4.30,
+30/05/2022 10:16:15  -  CS da Trama recebida: 3d
+30/05/2022 10:16:15  -  Dado Recebido: 9,2,4.30,3e
+30/05/2022 10:16:15  -  Trama Recebida sem CS: 9,2,4.30,
+30/05/2022 10:16:15  -  CS da Trama recebida: 3e
+30/05/2022 10:16:15  -  Dado Recebido: 9,3,4.31,3e
+30/05/2022 10:16:15  -  Trama Recebida sem CS: 9,3,4.31,
+30/05/2022 10:16:15  -  CS da Trama recebida: 3e
+30/05/2022 10:16:15  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:15  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:15  -  CS da Trama recebida: 16
+30/05/2022 10:16:15  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:15  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:15  -  CS da Trama recebida: 2d
+30/05/2022 10:16:15  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:15  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:15  -  CS da Trama recebida: 16
+30/05/2022 10:16:15  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:15  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:15  -  CS da Trama recebida: 2d
+30/05/2022 10:16:16  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:16  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:16  -  CS da Trama recebida: 16
+30/05/2022 10:16:16  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:16  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:16  -  CS da Trama recebida: 2d
+30/05/2022 10:16:16  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:16  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:16  -  CS da Trama recebida: 16
+30/05/2022 10:16:16  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:16  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:16  -  CS da Trama recebida: 2d
+30/05/2022 10:16:17  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:17  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:17  -  CS da Trama recebida: 16
+30/05/2022 10:16:17  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:17  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:17  -  CS da Trama recebida: 2d
+30/05/2022 10:16:17  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:17  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:17  -  CS da Trama recebida: 16
+30/05/2022 10:16:17  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:17  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:17  -  CS da Trama recebida: 2d
+30/05/2022 10:16:17  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:17  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:17  -  CS da Trama recebida: 16
+30/05/2022 10:16:17  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:17  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:17  -  CS da Trama recebida: 2d
+30/05/2022 10:16:18  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:18  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:18  -  CS da Trama recebida: 16
+30/05/2022 10:16:18  -  Dado Recebido: 5,141.70,149.61,149.75,2d
+30/05/2022 10:16:18  -  Trama Recebida sem CS: 5,141.70,149.61,149.75,
+30/05/2022 10:16:18  -  CS da Trama recebida: 2d
+30/05/2022 10:16:18  -  Dado Recebido: 6,4.299,4.300,4.308,16
+30/05/2022 10:16:18  -  Trama Recebida sem CS: 6,4.299,4.300,4.308,
+30/05/2022 10:16:18  -  CS da Trama recebida: 16
+30/05/2022 10:16:18  -  Envio de comando Parar Sint.: 3,1f
+30/05/2022 10:16:18  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:16:18  -  A trama recebida não continha ','
+30/05/2022 10:16:18  -  Dado Recebido: Task PID Deletada
+30/05/2022 10:16:18  -  A trama recebida não continha ','
+30/05/2022 10:16:23  -  Envio de comando recnfigurar ADE: 18,25
+30/05/2022 10:16:23  -  Dado Recebido: ADE Configurado!
+30/05/2022 10:16:23  -  A trama recebida não continha ','
+30/05/2022 10:16:27  -  Envio de comando Iniciar Sint.: 4,18
+30/05/2022 10:16:27  -  Dado Recebido: 5,0.00,0.00,0.00,2b
+30/05/2022 10:16:27  -  Trama Recebida sem CS: 5,0.00,0.00,0.00,
+30/05/2022 10:16:27  -  CS da Trama recebida: 2b
+30/05/2022 10:16:27  -  Dado Recebido: Pacote enviado ao ESP_Sint.: L
+30/05/2022 10:16:27  -  A trama recebida não continha ','
+30/05/2022 10:16:27  -  Dado Recebido: 6,0.000,0.000,0.000,18
+30/05/2022 10:16:27  -  Trama Recebida sem CS: 6,0.000,0.000,0.000,
+30/05/2022 10:16:27  -  CS da Trama recebida: 18
+30/05/2022 10:16:27  -  Dado Recebido: 5,0.11,0.11,0.11,2b
+30/05/2022 10:16:27  -  Trama Recebida sem CS: 5,0.11,0.11,0.11,
+30/05/2022 10:16:27  -  CS da Trama recebida: 2b
+30/05/2022 10:16:27  -  Dado Recebido: 6,0.005,0.011,0.011,1d
+30/05/2022 10:16:27  -  Trama Recebida sem CS: 6,0.005,0.011,0.011,
+30/05/2022 10:16:27  -  CS da Trama recebida: 1d
+30/05/2022 10:16:28  -  Dado Recebido: 5,0.26,0.26,0.26,2f
+30/05/2022 10:16:28  -  Trama Recebida sem CS: 5,0.26,0.26,0.26,
+30/05/2022 10:16:28  -  CS da Trama recebida: 2f
+30/05/2022 10:16:28  -  Dado Recebido: 6,0.009,0.020,0.020,11
+30/05/2022 10:16:28  -  Trama Recebida sem CS: 6,0.009,0.020,0.020,
+30/05/2022 10:16:28  -  CS da Trama recebida: 11
+30/05/2022 10:16:28  -  Dado Recebido: 5,0.40,0.40,0.39,21
+30/05/2022 10:16:28  -  Trama Recebida sem CS: 5,0.40,0.40,0.39,
+30/05/2022 10:16:28  -  CS da Trama recebida: 21
+30/05/2022 10:16:28  -  Dado Recebido: 6,0.013,0.029,0.029,1a
+30/05/2022 10:16:28  -  Trama Recebida sem CS: 6,0.013,0.029,0.029,
+30/05/2022 10:16:28  -  CS da Trama recebida: 1a
+30/05/2022 10:16:28  -  Dado Recebido: 5,0.39,0.39,0.38,20
+30/05/2022 10:16:28  -  Trama Recebida sem CS: 5,0.39,0.39,0.38,
+30/05/2022 10:16:28  -  CS da Trama recebida: 20
+30/05/2022 10:16:29  -  Dado Recebido: 6,0.016,0.031,0.032,1c
+30/05/2022 10:16:29  -  Trama Recebida sem CS: 6,0.016,0.031,0.032,
+30/05/2022 10:16:29  -  CS da Trama recebida: 1c
+30/05/2022 10:16:29  -  Dado Recebido: 5,0.38,0.37,0.38,2f
+30/05/2022 10:16:29  -  Trama Recebida sem CS: 5,0.38,0.37,0.38,
+30/05/2022 10:16:29  -  CS da Trama recebida: 2f
+30/05/2022 10:16:29  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:16:29  -  A trama recebida não continha ','
+30/05/2022 10:16:29  -  Dado Recebido: Falha OLP_UVP na fase T
+30/05/2022 10:16:29  -  A trama recebida não continha ','
+30/05/2022 10:16:29  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:16:29  -  A trama recebida não continha ','
+30/05/2022 10:16:29  -  Envio de comando Parar Sint.: 3,1f
+30/05/2022 10:16:30  -  Envio de comando Parar Sint.: 3,1f
+30/05/2022 10:16:33  -  Envio de comando recnfigurar ADE: 18,25
+30/05/2022 10:16:33  -  Dado Recebido: ADE Configurado!
+30/05/2022 10:16:33  -  A trama recebida não continha ','
+30/05/2022 10:16:34  -  Envio de comando recnfigurar ADE: 18,25
+30/05/2022 10:16:34  -  Dado Recebido: ADE Configurado!
+30/05/2022 10:16:34  -  A trama recebida não continha ','
+30/05/2022 10:16:39  -  Envio de comando Iniciar Sint.: 4,18
+30/05/2022 10:16:39  -  Dado Recebido: Pacote enviado ao ESP_Sint.: L
+30/05/2022 10:16:39  -  A trama recebida não continha ','
+30/05/2022 10:16:39  -  Dado Recebido: 6,0.000,0.000,0.000,18
+30/05/2022 10:16:39  -  Trama Recebida sem CS: 6,0.000,0.000,0.000,
+30/05/2022 10:16:39  -  CS da Trama recebida: 18
+30/05/2022 10:16:39  -  Dado Recebido: 5,0.00,0.00,0.00,2b
+30/05/2022 10:16:39  -  Trama Recebida sem CS: 5,0.00,0.00,0.00,
+30/05/2022 10:16:39  -  CS da Trama recebida: 2b
+30/05/2022 10:16:39  -  Dado Recebido: 6,0.003,0.006,0.006,1b
+30/05/2022 10:16:39  -  Trama Recebida sem CS: 6,0.003,0.006,0.006,
+30/05/2022 10:16:39  -  CS da Trama recebida: 1b
+30/05/2022 10:16:39  -  Dado Recebido: 5,0.21,0.21,0.21,28
+30/05/2022 10:16:39  -  Trama Recebida sem CS: 5,0.21,0.21,0.21,
+30/05/2022 10:16:39  -  CS da Trama recebida: 28
+30/05/2022 10:16:40  -  Dado Recebido: 6,0.007,0.017,0.017,1f
+30/05/2022 10:16:40  -  Trama Recebida sem CS: 6,0.007,0.017,0.017,
+30/05/2022 10:16:40  -  CS da Trama recebida: 1f
+30/05/2022 10:16:40  -  Dado Recebido: 5,0.34,0.34,0.34,2c
+30/05/2022 10:16:40  -  Trama Recebida sem CS: 5,0.34,0.34,0.34,
+30/05/2022 10:16:40  -  CS da Trama recebida: 2c
+30/05/2022 10:16:40  -  Dado Recebido: 6,0.012,0.026,0.026,1b
+30/05/2022 10:16:40  -  Trama Recebida sem CS: 6,0.012,0.026,0.026,
+30/05/2022 10:16:40  -  CS da Trama recebida: 1b
+30/05/2022 10:16:40  -  Dado Recebido: 5,0.41,0.40,0.41,2f
+30/05/2022 10:16:40  -  Trama Recebida sem CS: 5,0.41,0.40,0.41,
+30/05/2022 10:16:40  -  CS da Trama recebida: 2f
+30/05/2022 10:16:40  -  Dado Recebido: 6,0.015,0.032,0.032,1c
+30/05/2022 10:16:40  -  Trama Recebida sem CS: 6,0.015,0.032,0.032,
+30/05/2022 10:16:40  -  CS da Trama recebida: 1c
+30/05/2022 10:16:41  -  Dado Recebido: 5,0.38,0.38,0.38,20
+30/05/2022 10:16:41  -  Trama Recebida sem CS: 5,0.38,0.38,0.38,
+30/05/2022 10:16:41  -  CS da Trama recebida: 20
+30/05/2022 10:16:41  -  Envio de comando Parar Sint.: 3,1f
+30/05/2022 10:16:41  -  Dado Recebido: Pacote enviado ao ESP_Sint.: D
+30/05/2022 10:16:41  -  A trama recebida não continha ','
+30/05/2022 10:16:41  -  Dado Recebido: Task PID Deletada
+30/05/2022 10:16:41  -  A trama recebida não continha ','
+30/05/2022 10:19:01  -  Dado Recebido: 
+30/05/2022 10:19:01  -  A trama recebida não continha ','
