@@ -246,6 +246,8 @@ namespace FonteTrifasicaPID
             this.txtFP160C = new System.Windows.Forms.TextBox();
             this.txtFP160A = new System.Windows.Forms.TextBox();
             this.txtFP160B = new System.Windows.Forms.TextBox();
+            this.btnLimpar60 = new System.Windows.Forms.Button();
+            this.btnLimpar50 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -2131,6 +2133,7 @@ namespace FonteTrifasicaPID
             // 
             // groupBox14
             // 
+            this.groupBox14.Controls.Add(this.btnLimpar50);
             this.groupBox14.Controls.Add(this.btnLer50);
             this.groupBox14.Controls.Add(this.button8btnAplicar50FPCap);
             this.groupBox14.Controls.Add(this.label59);
@@ -2165,6 +2168,7 @@ namespace FonteTrifasicaPID
             this.btnLer50.TabIndex = 19;
             this.btnLer50.Text = "Ler";
             this.btnLer50.UseVisualStyleBackColor = true;
+            this.btnLer50.Click += new System.EventHandler(this.btnLer50_Click);
             // 
             // button8btnAplicar50FPCap
             // 
@@ -2174,6 +2178,7 @@ namespace FonteTrifasicaPID
             this.button8btnAplicar50FPCap.TabIndex = 20;
             this.button8btnAplicar50FPCap.Text = "Aplicar";
             this.button8btnAplicar50FPCap.UseVisualStyleBackColor = true;
+            this.button8btnAplicar50FPCap.Click += new System.EventHandler(this.button8btnAplicar50FPCap_Click);
             // 
             // label59
             // 
@@ -2192,6 +2197,7 @@ namespace FonteTrifasicaPID
             this.button8btnAplicar50FPInd.TabIndex = 19;
             this.button8btnAplicar50FPInd.Text = "Aplicar";
             this.button8btnAplicar50FPInd.UseVisualStyleBackColor = true;
+            this.button8btnAplicar50FPInd.Click += new System.EventHandler(this.button8btnAplicar50FPInd_Click);
             // 
             // button8btnAplicar50FP1
             // 
@@ -2201,6 +2207,7 @@ namespace FonteTrifasicaPID
             this.button8btnAplicar50FP1.TabIndex = 18;
             this.button8btnAplicar50FP1.Text = "Aplicar";
             this.button8btnAplicar50FP1.UseVisualStyleBackColor = true;
+            this.button8btnAplicar50FP1.Click += new System.EventHandler(this.button8btnAplicar50FP1_Click);
             // 
             // txtFPCap50C
             // 
@@ -2330,6 +2337,7 @@ namespace FonteTrifasicaPID
             // 
             // groupBox13
             // 
+            this.groupBox13.Controls.Add(this.btnLimpar60);
             this.groupBox13.Controls.Add(this.btnLer60);
             this.groupBox13.Controls.Add(this.btnAplicar60FPCap);
             this.groupBox13.Controls.Add(this.btnAplicar60FPInd);
@@ -2364,6 +2372,7 @@ namespace FonteTrifasicaPID
             this.btnLer60.TabIndex = 18;
             this.btnLer60.Text = "Ler";
             this.btnLer60.UseVisualStyleBackColor = true;
+            this.btnLer60.Click += new System.EventHandler(this.btnLer60_Click);
             // 
             // btnAplicar60FPCap
             // 
@@ -2373,6 +2382,7 @@ namespace FonteTrifasicaPID
             this.btnAplicar60FPCap.TabIndex = 17;
             this.btnAplicar60FPCap.Text = "Aplicar";
             this.btnAplicar60FPCap.UseVisualStyleBackColor = true;
+            this.btnAplicar60FPCap.Click += new System.EventHandler(this.btnAplicar60FPCap_Click);
             // 
             // btnAplicar60FPInd
             // 
@@ -2382,6 +2392,7 @@ namespace FonteTrifasicaPID
             this.btnAplicar60FPInd.TabIndex = 16;
             this.btnAplicar60FPInd.Text = "Aplicar";
             this.btnAplicar60FPInd.UseVisualStyleBackColor = true;
+            this.btnAplicar60FPInd.Click += new System.EventHandler(this.btnAplicar60FPInd_Click);
             // 
             // btnAplicar60FP1
             // 
@@ -2391,6 +2402,7 @@ namespace FonteTrifasicaPID
             this.btnAplicar60FP1.TabIndex = 15;
             this.btnAplicar60FP1.Text = "Aplicar";
             this.btnAplicar60FP1.UseVisualStyleBackColor = true;
+            this.btnAplicar60FP1.Click += new System.EventHandler(this.btnAplicar60FP1_Click);
             // 
             // label52
             // 
@@ -2526,6 +2538,26 @@ namespace FonteTrifasicaPID
             this.txtFP160B.TabIndex = 1;
             this.txtFP160B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtFP160B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFP160A_KeyPress);
+            // 
+            // btnLimpar60
+            // 
+            this.btnLimpar60.Location = new System.Drawing.Point(177, 137);
+            this.btnLimpar60.Name = "btnLimpar60";
+            this.btnLimpar60.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar60.TabIndex = 19;
+            this.btnLimpar60.Text = "Limpar";
+            this.btnLimpar60.UseVisualStyleBackColor = true;
+            this.btnLimpar60.Click += new System.EventHandler(this.btnLimpar60_Click);
+            // 
+            // btnLimpar50
+            // 
+            this.btnLimpar50.Location = new System.Drawing.Point(179, 137);
+            this.btnLimpar50.Name = "btnLimpar50";
+            this.btnLimpar50.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar50.TabIndex = 20;
+            this.btnLimpar50.Text = "Limpar";
+            this.btnLimpar50.UseVisualStyleBackColor = true;
+            this.btnLimpar50.Click += new System.EventHandler(this.btnLimpar50_Click);
             // 
             // Form1
             // 
@@ -2781,6 +2813,8 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.TextBox txtFP160C;
         private System.Windows.Forms.TextBox txtFP160A;
         private System.Windows.Forms.TextBox txtFP160B;
+        private System.Windows.Forms.Button btnLimpar50;
+        private System.Windows.Forms.Button btnLimpar60;
     }
 }
 

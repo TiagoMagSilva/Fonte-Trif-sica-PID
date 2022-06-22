@@ -85,7 +85,15 @@ namespace FonteTrifasicaPID
             ID_TX_Mensagem_ERRO_AppRodando,
             ID_RESET_ESP32,
             ID_RESET_ADE,
-            ID_RECONFIG_ADE
+            ID_RECONFIG_ADE,
+            ID_Aplicar_FP160,
+            ID_Aplicar_FPInd60,
+            ID_Aplicar_FPCap60,
+            ID_Aplicar_FP150,
+            ID_Aplicar_FPInd50,
+            ID_Aplicar_FPCap50,
+            ID_Ler_FP_60,
+            ID_Ler_FP_50
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -806,6 +814,40 @@ namespace FonteTrifasicaPID
                                 break;
                         }
                         break;
+                    case (int)Identificador.ID_Ler_FP_60:
+                        txtFP160A.Invoke(new Action(() =>
+                        {
+                            txtFP160A.Text = partes[1];
+                            txtFP160B.Text = partes[2];
+                            txtFP160C.Text = partes[3];
+
+                            txtFPInd60A.Text = partes[4];
+                            txtFPInd60B.Text = partes[5];
+                            txtFPInd60C.Text = partes[6];
+
+                            txtFPCap60A.Text = partes[7];
+                            txtFPCap60B.Text = partes[8];
+                            txtFPCap60C.Text = partes[9];
+                        }));
+                        
+                        break;
+                    case (int)Identificador.ID_Ler_FP_50:
+                        txtFP150A.Invoke(new Action(() =>
+                        {
+                            txtFP150A.Text = partes[1];
+                            txtFP150B.Text = partes[2];
+                            txtFP150C.Text = partes[3];
+
+                            txtFPInd50A.Text = partes[4];
+                            txtFPInd50B.Text = partes[5];
+                            txtFPInd50C.Text = partes[6];
+
+                            txtFPCap50A.Text = partes[7];
+                            txtFPCap50B.Text = partes[8];
+                            txtFPCap50C.Text = partes[9];
+                        }));
+
+                        break;
                     default:
 
                         break;
@@ -1505,6 +1547,190 @@ namespace FonteTrifasicaPID
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnAplicar60FP1_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
+            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FP160 + "," +
+                                 txtFP160A.Text + "," +
+                                 txtFP160B.Text + "," +
+                                 txtFP160C.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajuste FP 1 60Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de ajuste de FP 1 60Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnAplicar60FPInd_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
+            //Identificador, FPInd_FaseA, FPInd_FaseB, FPInd_FaseC, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPInd60 + "," +
+                                 txtFPInd60A.Text + "," +
+                                 txtFPInd60B.Text + "," +
+                                 txtFPInd60C.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajuste FP Ind 60Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de ajuste de FP Ind 60Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnAplicar60FPCap_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
+            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPCap60 + "," +
+                                 txtFPCap60A.Text + "," +
+                                 txtFPCap60B.Text + "," +
+                                 txtFPCap60C.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajuste FP Cap 60Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de ajuste de FP Cap 60Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void button8btnAplicar50FP1_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
+            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FP150 + "," +
+                                 txtFP150A.Text + "," +
+                                 txtFP150B.Text + "," +
+                                 txtFP150C.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajuste FP 1 50Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de ajuste de FP 1 50Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void button8btnAplicar50FPInd_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
+            //Identificador, FPInd_FaseA, FPInd_FaseB, FPInd_FaseC, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPInd50 + "," +
+                                 txtFPInd50A.Text + "," +
+                                 txtFPInd50B.Text + "," +
+                                 txtFPInd50C.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajuste FP Ind 50Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de ajuste de FP Ind 50Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void button8btnAplicar50FPCap_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
+            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPCap50 + "," +
+                                 txtFPCap50A.Text + "," +
+                                 txtFPCap50B.Text + "," +
+                                 txtFPCap50C.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajuste FP Cap 50Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de ajuste de FP Cap 50Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnLer60_Click(object sender, EventArgs e)
+        {
+            //Trama de solicitação dos parâmetros de ajuste do fator de potência 60Hz
+            //Identificador, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Ler_FP_60 + "," ;
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de solicitação de Ajuste FP 60Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de solicitação de ajuste de FP 60Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnLer50_Click(object sender, EventArgs e)
+        {
+            //Trama de solicitação dos parâmetros de ajuste do fator de potência 50Hz
+            //Identificador, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Ler_FP_50 + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de solicitação de Ajuste FP 50Hz.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de solicitação de ajuste de FP 50Hz não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnLimpar60_Click(object sender, EventArgs e)
+        {
+            txtFP160A.Text = txtFP160B.Text = txtFP160C.Text = string.Empty;
+            txtFPInd60A.Text = txtFPInd60B.Text = txtFPInd60C.Text = string.Empty;
+            txtFPCap60A.Text = txtFPCap60B.Text = txtFPCap60C.Text = string.Empty;
+        }
+
+        private void btnLimpar50_Click(object sender, EventArgs e)
+        {
+            txtFP150A.Text = txtFP150B.Text = txtFP150C.Text = string.Empty;
+            txtFPInd50A.Text = txtFPInd50B.Text = txtFPInd50C.Text = string.Empty;
+            txtFPCap50A.Text = txtFPCap50B.Text = txtFPCap50C.Text = string.Empty;
         }
     }
 }
