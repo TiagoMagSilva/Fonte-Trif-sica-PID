@@ -1,0 +1,13 @@
+05/09/2022 11:42:29  -  Arquivo de configuração carregado com sucesso!
+05/09/2022 11:42:36  -  Comando de ajuste de fase não enviado devido porta serial fechada!
+05/09/2022 11:43:04  -  Porta serial aberta com sucesso!
+05/09/2022 11:43:04  -  Salvando informações da porta serial - Porta:  COM5 Velocidade: 115200
+05/09/2022 11:43:11  -  Envio de comando Ajuste de Fase: 28,System.Windows.Forms.TextBox, Text: 0,0,0,0,0,68
+05/09/2022 11:43:52  -  Arquivo de configuração carregado com sucesso!
+05/09/2022 11:43:57  -  Porta serial aberta com sucesso!
+05/09/2022 11:43:57  -  Salvando informações da porta serial - Porta:  COM5 Velocidade: 115200
+05/09/2022 11:44:29  -  Envio de comando Ajuste de Fase: 28,0,1745,-0.1748,0.4595,-0,325,0,0e
+05/09/2022 11:44:56  -  Arquivo de configuração carregado com sucesso!
+05/09/2022 11:46:13  -  Arquivo de configuração carregado com sucesso!
+05/09/2022 11:46:45  -  Arquivo de configuração carregado com sucesso!
+05/09/2022 11:47:04  -  Comando de ajuste de fase não enviado devido porta serial fechada!

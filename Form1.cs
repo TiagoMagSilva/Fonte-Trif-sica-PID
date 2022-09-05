@@ -93,7 +93,9 @@ namespace FonteTrifasicaPID
             ID_Aplicar_FPInd50,
             ID_Aplicar_FPCap50,
             ID_Ler_FP_60,
-            ID_Ler_FP_50
+            ID_Ler_FP_50,
+            ID_Dir_Rev,
+            ID_Correcao_Fase
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -1731,6 +1733,61 @@ namespace FonteTrifasicaPID
             txtFP150A.Text = txtFP150B.Text = txtFP150C.Text = string.Empty;
             txtFPInd50A.Text = txtFPInd50B.Text = txtFPInd50C.Text = string.Empty;
             txtFPCap50A.Text = txtFPCap50B.Text = txtFPCap50C.Text = string.Empty;
+        }
+
+        private void label53_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAplicarCorrecaoFase_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação dos parâmetros de ajuste de fase
+            //Identificador, CorreçãoFaseVB, CorreçãoFaseVC, CorreçãoFaseIA, CorreçãoFaseIB, CorreçãoFaseIC, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Correcao_Fase + "," +
+                                 txtAjusteVB.Text + "," +
+                                 txtAjusteVC.Text + "," +
+                                 txtAjusteIA.Text + "," +
+                                 txtAjusteIB.Text + "," +
+                                 txtAjusteIC.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajuste de Fase: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de ajuste de fase não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void txtAjusteVB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string senderText = (sender as TextBox).Text;
+            string senderName = (sender as TextBox).Name;
+            string[] splitByDecimal = senderText.Split('.');
+            int cursorPosition = (sender as TextBox).SelectionStart;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+
+            if (!char.IsControl(e.KeyChar)
+                && senderText.IndexOf('.') < cursorPosition
+                && splitByDecimal.Length > 1
+                && splitByDecimal[1].Length == 4)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
