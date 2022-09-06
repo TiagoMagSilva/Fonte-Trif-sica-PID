@@ -1,0 +1,2 @@
+06/09/2022 17:33:13  -  Arquivo de configuração carregado com sucesso!
+06/09/2022 17:33:16  -  Comando de ajuste de fase não enviado devido porta serial fechada!

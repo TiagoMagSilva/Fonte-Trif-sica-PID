@@ -850,6 +850,20 @@ namespace FonteTrifasicaPID
                         }));
 
                         break;
+                    case (int)Identificador.ID_Correcao_Fase:
+                        txtLeituraFP1.Invoke(new Action(() =>
+                        {
+                            txtFrequenciaLida.Text = partes[1];
+
+                            txtLeituraFP1.Text = partes[2];
+                            txtLeituraFP2.Text = partes[3];
+                            txtLeituraFP3.Text = partes[4];
+
+                            txtLeituraFaseVAB.Text = partes[5];
+                            txtLeituraFaseVAC.Text = partes[6];
+                        }
+                        ));
+                        break;
                     default:
 
                         break;

@@ -250,11 +250,21 @@ namespace FonteTrifasicaPID
             this.txtFP160B = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.txtLeituraFaseVAB = new System.Windows.Forms.TextBox();
+            this.txtLeituraFaseVAC = new System.Windows.Forms.TextBox();
             this.btnAplicarCorrecaoFase = new System.Windows.Forms.Button();
             this.label53 = new System.Windows.Forms.Label();
-            this.txtLeituraFaseVC = new System.Windows.Forms.TextBox();
-            this.txtLeituraFaseVA = new System.Windows.Forms.TextBox();
-            this.txtLeituraFaseVB = new System.Windows.Forms.TextBox();
+            this.txtLeituraFP3 = new System.Windows.Forms.TextBox();
+            this.txtLeituraFP1 = new System.Windows.Forms.TextBox();
+            this.txtLeituraFP2 = new System.Windows.Forms.TextBox();
             this.txtAjusteIC = new System.Windows.Forms.TextBox();
             this.txtAjusteIA = new System.Windows.Forms.TextBox();
             this.txtAjusteIB = new System.Windows.Forms.TextBox();
@@ -262,18 +272,8 @@ namespace FonteTrifasicaPID
             this.label57 = new System.Windows.Forms.Label();
             this.txtAjusteVC = new System.Windows.Forms.TextBox();
             this.txtAjusteVB = new System.Windows.Forms.TextBox();
-            this.txtLeituraFaseIC = new System.Windows.Forms.TextBox();
-            this.txtLeituraFaseIA = new System.Windows.Forms.TextBox();
-            this.txtLeituraFaseIB = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
+            this.txtFrequenciaLida = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -321,7 +321,7 @@ namespace FonteTrifasicaPID
             legend1.Name = "Legend1";
             this.chartTensao.Legends.Add(legend1);
             this.chartTensao.Location = new System.Drawing.Point(8, 23);
-            this.chartTensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartTensao.Margin = new System.Windows.Forms.Padding(4);
             this.chartTensao.Name = "chartTensao";
             this.chartTensao.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series1.BorderWidth = 2;
@@ -424,7 +424,7 @@ namespace FonteTrifasicaPID
             legend2.Name = "Legend1";
             this.chartCorrente.Legends.Add(legend2);
             this.chartCorrente.Location = new System.Drawing.Point(8, 23);
-            this.chartCorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.chartCorrente.Name = "chartCorrente";
             this.chartCorrente.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             series10.BorderWidth = 2;
@@ -529,7 +529,7 @@ namespace FonteTrifasicaPID
             // txtKpTensao
             // 
             this.txtKpTensao.Location = new System.Drawing.Point(68, 23);
-            this.txtKpTensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKpTensao.Margin = new System.Windows.Forms.Padding(4);
             this.txtKpTensao.Name = "txtKpTensao";
             this.txtKpTensao.Size = new System.Drawing.Size(63, 22);
             this.txtKpTensao.TabIndex = 3;
@@ -539,7 +539,7 @@ namespace FonteTrifasicaPID
             // txtKiTensao
             // 
             this.txtKiTensao.Location = new System.Drawing.Point(68, 57);
-            this.txtKiTensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKiTensao.Margin = new System.Windows.Forms.Padding(4);
             this.txtKiTensao.Name = "txtKiTensao";
             this.txtKiTensao.Size = new System.Drawing.Size(63, 22);
             this.txtKiTensao.TabIndex = 5;
@@ -559,7 +559,7 @@ namespace FonteTrifasicaPID
             // txtKdTensao
             // 
             this.txtKdTensao.Location = new System.Drawing.Point(68, 89);
-            this.txtKdTensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKdTensao.Margin = new System.Windows.Forms.Padding(4);
             this.txtKdTensao.Name = "txtKdTensao";
             this.txtKdTensao.Size = new System.Drawing.Size(63, 22);
             this.txtKdTensao.TabIndex = 7;
@@ -579,7 +579,7 @@ namespace FonteTrifasicaPID
             // btnAplicarPIDTensao
             // 
             this.btnAplicarPIDTensao.Location = new System.Drawing.Point(275, 23);
-            this.btnAplicarPIDTensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicarPIDTensao.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicarPIDTensao.Name = "btnAplicarPIDTensao";
             this.btnAplicarPIDTensao.Size = new System.Drawing.Size(100, 89);
             this.btnAplicarPIDTensao.TabIndex = 8;
@@ -603,9 +603,9 @@ namespace FonteTrifasicaPID
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtKiTensao);
             this.groupBox1.Location = new System.Drawing.Point(769, 23);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(389, 123);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
@@ -614,7 +614,7 @@ namespace FonteTrifasicaPID
             // txtKp10kV
             // 
             this.txtKp10kV.Location = new System.Drawing.Point(205, 23);
-            this.txtKp10kV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKp10kV.Margin = new System.Windows.Forms.Padding(4);
             this.txtKp10kV.Name = "txtKp10kV";
             this.txtKp10kV.Size = new System.Drawing.Size(63, 22);
             this.txtKp10kV.TabIndex = 10;
@@ -634,7 +634,7 @@ namespace FonteTrifasicaPID
             // txtKd10kV
             // 
             this.txtKd10kV.Location = new System.Drawing.Point(205, 87);
-            this.txtKd10kV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKd10kV.Margin = new System.Windows.Forms.Padding(4);
             this.txtKd10kV.Name = "txtKd10kV";
             this.txtKd10kV.Size = new System.Drawing.Size(63, 22);
             this.txtKd10kV.TabIndex = 14;
@@ -664,7 +664,7 @@ namespace FonteTrifasicaPID
             // txtKi10kV
             // 
             this.txtKi10kV.Location = new System.Drawing.Point(205, 57);
-            this.txtKi10kV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKi10kV.Margin = new System.Windows.Forms.Padding(4);
             this.txtKi10kV.Name = "txtKi10kV";
             this.txtKi10kV.Size = new System.Drawing.Size(63, 22);
             this.txtKi10kV.TabIndex = 12;
@@ -687,9 +687,9 @@ namespace FonteTrifasicaPID
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txtKiCorrente);
             this.groupBox2.Location = new System.Drawing.Point(769, 23);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(389, 123);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -698,7 +698,7 @@ namespace FonteTrifasicaPID
             // txtKp10Corrente
             // 
             this.txtKp10Corrente.Location = new System.Drawing.Point(203, 23);
-            this.txtKp10Corrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKp10Corrente.Margin = new System.Windows.Forms.Padding(4);
             this.txtKp10Corrente.Name = "txtKp10Corrente";
             this.txtKp10Corrente.Size = new System.Drawing.Size(63, 22);
             this.txtKp10Corrente.TabIndex = 16;
@@ -719,7 +719,7 @@ namespace FonteTrifasicaPID
             // txtKpCorrente
             // 
             this.txtKpCorrente.Location = new System.Drawing.Point(69, 23);
-            this.txtKpCorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKpCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.txtKpCorrente.Name = "txtKpCorrente";
             this.txtKpCorrente.Size = new System.Drawing.Size(63, 22);
             this.txtKpCorrente.TabIndex = 3;
@@ -729,7 +729,7 @@ namespace FonteTrifasicaPID
             // txtKd10Corrente
             // 
             this.txtKd10Corrente.Location = new System.Drawing.Point(203, 87);
-            this.txtKd10Corrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKd10Corrente.Margin = new System.Windows.Forms.Padding(4);
             this.txtKd10Corrente.Name = "txtKd10Corrente";
             this.txtKd10Corrente.Size = new System.Drawing.Size(63, 22);
             this.txtKd10Corrente.TabIndex = 20;
@@ -739,7 +739,7 @@ namespace FonteTrifasicaPID
             // btnAplicarPIDCorrente
             // 
             this.btnAplicarPIDCorrente.Location = new System.Drawing.Point(275, 22);
-            this.btnAplicarPIDCorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicarPIDCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicarPIDCorrente.Name = "btnAplicarPIDCorrente";
             this.btnAplicarPIDCorrente.Size = new System.Drawing.Size(100, 89);
             this.btnAplicarPIDCorrente.TabIndex = 8;
@@ -780,7 +780,7 @@ namespace FonteTrifasicaPID
             // txtKdCorrente
             // 
             this.txtKdCorrente.Location = new System.Drawing.Point(69, 87);
-            this.txtKdCorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKdCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.txtKdCorrente.Name = "txtKdCorrente";
             this.txtKdCorrente.Size = new System.Drawing.Size(63, 22);
             this.txtKdCorrente.TabIndex = 7;
@@ -790,7 +790,7 @@ namespace FonteTrifasicaPID
             // txtKi10Corrente
             // 
             this.txtKi10Corrente.Location = new System.Drawing.Point(203, 57);
-            this.txtKi10Corrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKi10Corrente.Margin = new System.Windows.Forms.Padding(4);
             this.txtKi10Corrente.Name = "txtKi10Corrente";
             this.txtKi10Corrente.Size = new System.Drawing.Size(63, 22);
             this.txtKi10Corrente.TabIndex = 18;
@@ -820,7 +820,7 @@ namespace FonteTrifasicaPID
             // txtKiCorrente
             // 
             this.txtKiCorrente.Location = new System.Drawing.Point(69, 55);
-            this.txtKiCorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKiCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.txtKiCorrente.Name = "txtKiCorrente";
             this.txtKiCorrente.Size = new System.Drawing.Size(63, 22);
             this.txtKiCorrente.TabIndex = 5;
@@ -834,9 +834,9 @@ namespace FonteTrifasicaPID
             this.groupBox3.Controls.Add(this.chartTensao);
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Location = new System.Drawing.Point(8, 7);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(1173, 409);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
@@ -845,7 +845,7 @@ namespace FonteTrifasicaPID
             // btnLimparGraficoTensao
             // 
             this.btnLimparGraficoTensao.Location = new System.Drawing.Point(627, 359);
-            this.btnLimparGraficoTensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimparGraficoTensao.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimparGraficoTensao.Name = "btnLimparGraficoTensao";
             this.btnLimparGraficoTensao.Size = new System.Drawing.Size(121, 28);
             this.btnLimparGraficoTensao.TabIndex = 11;
@@ -882,9 +882,9 @@ namespace FonteTrifasicaPID
             this.groupBox6.Controls.Add(this.label9);
             this.groupBox6.Controls.Add(this.txtOvershootTensaoA);
             this.groupBox6.Location = new System.Drawing.Point(769, 154);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(389, 241);
             this.groupBox6.TabIndex = 10;
             this.groupBox6.TabStop = false;
@@ -904,7 +904,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtDifVc.Enabled = false;
             this.txtDifVc.Location = new System.Drawing.Point(295, 97);
-            this.txtDifVc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDifVc.Margin = new System.Windows.Forms.Padding(4);
             this.txtDifVc.Name = "txtDifVc";
             this.txtDifVc.Size = new System.Drawing.Size(79, 22);
             this.txtDifVc.TabIndex = 32;
@@ -914,7 +914,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtDifVa.Enabled = false;
             this.txtDifVa.Location = new System.Drawing.Point(119, 97);
-            this.txtDifVa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDifVa.Margin = new System.Windows.Forms.Padding(4);
             this.txtDifVa.Name = "txtDifVa";
             this.txtDifVa.Size = new System.Drawing.Size(79, 22);
             this.txtDifVa.TabIndex = 31;
@@ -924,7 +924,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTensãoRMSC.Enabled = false;
             this.txtTensãoRMSC.Location = new System.Drawing.Point(295, 161);
-            this.txtTensãoRMSC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTensãoRMSC.Margin = new System.Windows.Forms.Padding(4);
             this.txtTensãoRMSC.Name = "txtTensãoRMSC";
             this.txtTensãoRMSC.Size = new System.Drawing.Size(79, 22);
             this.txtTensãoRMSC.TabIndex = 29;
@@ -935,7 +935,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTensãoRMSB.Enabled = false;
             this.txtTensãoRMSB.Location = new System.Drawing.Point(207, 161);
-            this.txtTensãoRMSB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTensãoRMSB.Margin = new System.Windows.Forms.Padding(4);
             this.txtTensãoRMSB.Name = "txtTensãoRMSB";
             this.txtTensãoRMSB.Size = new System.Drawing.Size(79, 22);
             this.txtTensãoRMSB.TabIndex = 28;
@@ -946,7 +946,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtDifVb.Enabled = false;
             this.txtDifVb.Location = new System.Drawing.Point(207, 97);
-            this.txtDifVb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDifVb.Margin = new System.Windows.Forms.Padding(4);
             this.txtDifVb.Name = "txtDifVb";
             this.txtDifVb.Size = new System.Drawing.Size(79, 22);
             this.txtDifVb.TabIndex = 30;
@@ -966,7 +966,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTensãoRMSA.Enabled = false;
             this.txtTensãoRMSA.Location = new System.Drawing.Point(119, 161);
-            this.txtTensãoRMSA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTensãoRMSA.Margin = new System.Windows.Forms.Padding(4);
             this.txtTensãoRMSA.Name = "txtTensãoRMSA";
             this.txtTensãoRMSA.Size = new System.Drawing.Size(79, 22);
             this.txtTensãoRMSA.TabIndex = 26;
@@ -979,7 +979,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoVC.Checked = true;
             this.cbxGraficoVC.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVC.Location = new System.Drawing.Point(216, 213);
-            this.cbxGraficoVC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxGraficoVC.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoVC.Name = "cbxGraficoVC";
             this.cbxGraficoVC.Size = new System.Drawing.Size(91, 21);
             this.cbxGraficoVC.TabIndex = 25;
@@ -992,7 +992,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoVB.Checked = true;
             this.cbxGraficoVB.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVB.Location = new System.Drawing.Point(112, 213);
-            this.cbxGraficoVB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxGraficoVB.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoVB.Name = "cbxGraficoVB";
             this.cbxGraficoVB.Size = new System.Drawing.Size(91, 21);
             this.cbxGraficoVB.TabIndex = 24;
@@ -1005,7 +1005,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoVA.Checked = true;
             this.cbxGraficoVA.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVA.Location = new System.Drawing.Point(8, 213);
-            this.cbxGraficoVA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxGraficoVA.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoVA.Name = "cbxGraficoVA";
             this.cbxGraficoVA.Size = new System.Drawing.Size(91, 21);
             this.cbxGraficoVA.TabIndex = 23;
@@ -1052,7 +1052,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTempAcomodTensaoC.Enabled = false;
             this.txtTempAcomodTensaoC.Location = new System.Drawing.Point(295, 129);
-            this.txtTempAcomodTensaoC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTempAcomodTensaoC.Margin = new System.Windows.Forms.Padding(4);
             this.txtTempAcomodTensaoC.Name = "txtTempAcomodTensaoC";
             this.txtTempAcomodTensaoC.Size = new System.Drawing.Size(79, 22);
             this.txtTempAcomodTensaoC.TabIndex = 19;
@@ -1062,7 +1062,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtUndershootTensaoC.Enabled = false;
             this.txtUndershootTensaoC.Location = new System.Drawing.Point(295, 65);
-            this.txtUndershootTensaoC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUndershootTensaoC.Margin = new System.Windows.Forms.Padding(4);
             this.txtUndershootTensaoC.Name = "txtUndershootTensaoC";
             this.txtUndershootTensaoC.Size = new System.Drawing.Size(79, 22);
             this.txtUndershootTensaoC.TabIndex = 18;
@@ -1073,7 +1073,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtOvershootTensaoC.Enabled = false;
             this.txtOvershootTensaoC.Location = new System.Drawing.Point(295, 33);
-            this.txtOvershootTensaoC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOvershootTensaoC.Margin = new System.Windows.Forms.Padding(4);
             this.txtOvershootTensaoC.Name = "txtOvershootTensaoC";
             this.txtOvershootTensaoC.Size = new System.Drawing.Size(79, 22);
             this.txtOvershootTensaoC.TabIndex = 17;
@@ -1084,7 +1084,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTempAcomodTensaoB.Enabled = false;
             this.txtTempAcomodTensaoB.Location = new System.Drawing.Point(207, 129);
-            this.txtTempAcomodTensaoB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTempAcomodTensaoB.Margin = new System.Windows.Forms.Padding(4);
             this.txtTempAcomodTensaoB.Name = "txtTempAcomodTensaoB";
             this.txtTempAcomodTensaoB.Size = new System.Drawing.Size(79, 22);
             this.txtTempAcomodTensaoB.TabIndex = 16;
@@ -1094,7 +1094,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtUndershootTensaoB.Enabled = false;
             this.txtUndershootTensaoB.Location = new System.Drawing.Point(207, 65);
-            this.txtUndershootTensaoB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUndershootTensaoB.Margin = new System.Windows.Forms.Padding(4);
             this.txtUndershootTensaoB.Name = "txtUndershootTensaoB";
             this.txtUndershootTensaoB.Size = new System.Drawing.Size(79, 22);
             this.txtUndershootTensaoB.TabIndex = 15;
@@ -1105,7 +1105,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtOvershootTensaoB.Enabled = false;
             this.txtOvershootTensaoB.Location = new System.Drawing.Point(207, 33);
-            this.txtOvershootTensaoB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOvershootTensaoB.Margin = new System.Windows.Forms.Padding(4);
             this.txtOvershootTensaoB.Name = "txtOvershootTensaoB";
             this.txtOvershootTensaoB.Size = new System.Drawing.Size(79, 22);
             this.txtOvershootTensaoB.TabIndex = 14;
@@ -1126,7 +1126,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTempAcomodTensaoA.Enabled = false;
             this.txtTempAcomodTensaoA.Location = new System.Drawing.Point(119, 129);
-            this.txtTempAcomodTensaoA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTempAcomodTensaoA.Margin = new System.Windows.Forms.Padding(4);
             this.txtTempAcomodTensaoA.Name = "txtTempAcomodTensaoA";
             this.txtTempAcomodTensaoA.Size = new System.Drawing.Size(79, 22);
             this.txtTempAcomodTensaoA.TabIndex = 12;
@@ -1146,7 +1146,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtUndershootTensaoA.Enabled = false;
             this.txtUndershootTensaoA.Location = new System.Drawing.Point(119, 65);
-            this.txtUndershootTensaoA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUndershootTensaoA.Margin = new System.Windows.Forms.Padding(4);
             this.txtUndershootTensaoA.Name = "txtUndershootTensaoA";
             this.txtUndershootTensaoA.Size = new System.Drawing.Size(79, 22);
             this.txtUndershootTensaoA.TabIndex = 10;
@@ -1167,7 +1167,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtOvershootTensaoA.Enabled = false;
             this.txtOvershootTensaoA.Location = new System.Drawing.Point(119, 33);
-            this.txtOvershootTensaoA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOvershootTensaoA.Margin = new System.Windows.Forms.Padding(4);
             this.txtOvershootTensaoA.Name = "txtOvershootTensaoA";
             this.txtOvershootTensaoA.Size = new System.Drawing.Size(79, 22);
             this.txtOvershootTensaoA.TabIndex = 4;
@@ -1181,9 +1181,9 @@ namespace FonteTrifasicaPID
             this.groupBox4.Controls.Add(this.groupBox2);
             this.groupBox4.Controls.Add(this.chartCorrente);
             this.groupBox4.Location = new System.Drawing.Point(8, 423);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(1173, 405);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
@@ -1192,7 +1192,7 @@ namespace FonteTrifasicaPID
             // btnLimparGraficoCorrente
             // 
             this.btnLimparGraficoCorrente.Location = new System.Drawing.Point(627, 359);
-            this.btnLimparGraficoCorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimparGraficoCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimparGraficoCorrente.Name = "btnLimparGraficoCorrente";
             this.btnLimparGraficoCorrente.Size = new System.Drawing.Size(121, 28);
             this.btnLimparGraficoCorrente.TabIndex = 12;
@@ -1225,9 +1225,9 @@ namespace FonteTrifasicaPID
             this.groupBox7.Controls.Add(this.txtUnderShootCorrenteA);
             this.groupBox7.Controls.Add(this.txtTempAcomodCorrenteA);
             this.groupBox7.Location = new System.Drawing.Point(769, 154);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox7.Size = new System.Drawing.Size(389, 241);
             this.groupBox7.TabIndex = 14;
             this.groupBox7.TabStop = false;
@@ -1237,7 +1237,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtCorrenteRMSC.Enabled = false;
             this.txtCorrenteRMSC.Location = new System.Drawing.Point(295, 134);
-            this.txtCorrenteRMSC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorrenteRMSC.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorrenteRMSC.Name = "txtCorrenteRMSC";
             this.txtCorrenteRMSC.Size = new System.Drawing.Size(79, 22);
             this.txtCorrenteRMSC.TabIndex = 41;
@@ -1257,7 +1257,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtCorrenteRMSB.Enabled = false;
             this.txtCorrenteRMSB.Location = new System.Drawing.Point(207, 134);
-            this.txtCorrenteRMSB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorrenteRMSB.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorrenteRMSB.Name = "txtCorrenteRMSB";
             this.txtCorrenteRMSB.Size = new System.Drawing.Size(79, 22);
             this.txtCorrenteRMSB.TabIndex = 40;
@@ -1267,7 +1267,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtCorrenteRMSA.Enabled = false;
             this.txtCorrenteRMSA.Location = new System.Drawing.Point(119, 134);
-            this.txtCorrenteRMSA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorrenteRMSA.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorrenteRMSA.Name = "txtCorrenteRMSA";
             this.txtCorrenteRMSA.Size = new System.Drawing.Size(79, 22);
             this.txtCorrenteRMSA.TabIndex = 39;
@@ -1291,7 +1291,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIC.Checked = true;
             this.cbxGraficoIC.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoIC.Location = new System.Drawing.Point(216, 213);
-            this.cbxGraficoIC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxGraficoIC.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoIC.Name = "cbxGraficoIC";
             this.cbxGraficoIC.Size = new System.Drawing.Size(98, 21);
             this.cbxGraficoIC.TabIndex = 28;
@@ -1316,7 +1316,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIB.Checked = true;
             this.cbxGraficoIB.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoIB.Location = new System.Drawing.Point(112, 213);
-            this.cbxGraficoIB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxGraficoIB.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoIB.Name = "cbxGraficoIB";
             this.cbxGraficoIB.Size = new System.Drawing.Size(98, 21);
             this.cbxGraficoIB.TabIndex = 27;
@@ -1341,7 +1341,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIA.Checked = true;
             this.cbxGraficoIA.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoIA.Location = new System.Drawing.Point(8, 213);
-            this.cbxGraficoIA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxGraficoIA.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoIA.Name = "cbxGraficoIA";
             this.cbxGraficoIA.Size = new System.Drawing.Size(98, 21);
             this.cbxGraficoIA.TabIndex = 26;
@@ -1352,7 +1352,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTempAcomodCorrenteC.Enabled = false;
             this.txtTempAcomodCorrenteC.Location = new System.Drawing.Point(295, 102);
-            this.txtTempAcomodCorrenteC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTempAcomodCorrenteC.Margin = new System.Windows.Forms.Padding(4);
             this.txtTempAcomodCorrenteC.Name = "txtTempAcomodCorrenteC";
             this.txtTempAcomodCorrenteC.Size = new System.Drawing.Size(79, 22);
             this.txtTempAcomodCorrenteC.TabIndex = 34;
@@ -1372,7 +1372,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtUnderShootCorrenteC.Enabled = false;
             this.txtUnderShootCorrenteC.Location = new System.Drawing.Point(295, 70);
-            this.txtUnderShootCorrenteC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUnderShootCorrenteC.Margin = new System.Windows.Forms.Padding(4);
             this.txtUnderShootCorrenteC.Name = "txtUnderShootCorrenteC";
             this.txtUnderShootCorrenteC.Size = new System.Drawing.Size(79, 22);
             this.txtUnderShootCorrenteC.TabIndex = 33;
@@ -1393,7 +1393,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtOvershootCorrenteC.Enabled = false;
             this.txtOvershootCorrenteC.Location = new System.Drawing.Point(295, 38);
-            this.txtOvershootCorrenteC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOvershootCorrenteC.Margin = new System.Windows.Forms.Padding(4);
             this.txtOvershootCorrenteC.Name = "txtOvershootCorrenteC";
             this.txtOvershootCorrenteC.Size = new System.Drawing.Size(79, 22);
             this.txtOvershootCorrenteC.TabIndex = 32;
@@ -1404,7 +1404,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTempAcomodCorrenteB.Enabled = false;
             this.txtTempAcomodCorrenteB.Location = new System.Drawing.Point(207, 102);
-            this.txtTempAcomodCorrenteB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTempAcomodCorrenteB.Margin = new System.Windows.Forms.Padding(4);
             this.txtTempAcomodCorrenteB.Name = "txtTempAcomodCorrenteB";
             this.txtTempAcomodCorrenteB.Size = new System.Drawing.Size(79, 22);
             this.txtTempAcomodCorrenteB.TabIndex = 31;
@@ -1424,7 +1424,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtUnderShootCorrenteB.Enabled = false;
             this.txtUnderShootCorrenteB.Location = new System.Drawing.Point(207, 70);
-            this.txtUnderShootCorrenteB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUnderShootCorrenteB.Margin = new System.Windows.Forms.Padding(4);
             this.txtUnderShootCorrenteB.Name = "txtUnderShootCorrenteB";
             this.txtUnderShootCorrenteB.Size = new System.Drawing.Size(79, 22);
             this.txtUnderShootCorrenteB.TabIndex = 30;
@@ -1435,7 +1435,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtOvershootCorrenteA.Enabled = false;
             this.txtOvershootCorrenteA.Location = new System.Drawing.Point(119, 38);
-            this.txtOvershootCorrenteA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOvershootCorrenteA.Margin = new System.Windows.Forms.Padding(4);
             this.txtOvershootCorrenteA.Name = "txtOvershootCorrenteA";
             this.txtOvershootCorrenteA.Size = new System.Drawing.Size(79, 22);
             this.txtOvershootCorrenteA.TabIndex = 26;
@@ -1446,7 +1446,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtOvershootCorrenteB.Enabled = false;
             this.txtOvershootCorrenteB.Location = new System.Drawing.Point(207, 38);
-            this.txtOvershootCorrenteB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOvershootCorrenteB.Margin = new System.Windows.Forms.Padding(4);
             this.txtOvershootCorrenteB.Name = "txtOvershootCorrenteB";
             this.txtOvershootCorrenteB.Size = new System.Drawing.Size(79, 22);
             this.txtOvershootCorrenteB.TabIndex = 29;
@@ -1457,7 +1457,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtUnderShootCorrenteA.Enabled = false;
             this.txtUnderShootCorrenteA.Location = new System.Drawing.Point(119, 70);
-            this.txtUnderShootCorrenteA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUnderShootCorrenteA.Margin = new System.Windows.Forms.Padding(4);
             this.txtUnderShootCorrenteA.Name = "txtUnderShootCorrenteA";
             this.txtUnderShootCorrenteA.Size = new System.Drawing.Size(79, 22);
             this.txtUnderShootCorrenteA.TabIndex = 27;
@@ -1468,7 +1468,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtTempAcomodCorrenteA.Enabled = false;
             this.txtTempAcomodCorrenteA.Location = new System.Drawing.Point(119, 102);
-            this.txtTempAcomodCorrenteA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTempAcomodCorrenteA.Margin = new System.Windows.Forms.Padding(4);
             this.txtTempAcomodCorrenteA.Name = "txtTempAcomodCorrenteA";
             this.txtTempAcomodCorrenteA.Size = new System.Drawing.Size(79, 22);
             this.txtTempAcomodCorrenteA.TabIndex = 28;
@@ -1488,7 +1488,7 @@ namespace FonteTrifasicaPID
             "57600",
             "115200"});
             this.cbxBaudRate.Location = new System.Drawing.Point(20, 137);
-            this.cbxBaudRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxBaudRate.Margin = new System.Windows.Forms.Padding(4);
             this.cbxBaudRate.Name = "cbxBaudRate";
             this.cbxBaudRate.Size = new System.Drawing.Size(95, 24);
             this.cbxBaudRate.TabIndex = 15;
@@ -1516,7 +1516,7 @@ namespace FonteTrifasicaPID
             // btnRefreshSerial
             // 
             this.btnRefreshSerial.Location = new System.Drawing.Point(20, 71);
-            this.btnRefreshSerial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefreshSerial.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefreshSerial.Name = "btnRefreshSerial";
             this.btnRefreshSerial.Size = new System.Drawing.Size(100, 28);
             this.btnRefreshSerial.TabIndex = 17;
@@ -1528,7 +1528,7 @@ namespace FonteTrifasicaPID
             // 
             this.cbxPorta.FormattingEnabled = true;
             this.cbxPorta.Location = new System.Drawing.Point(20, 38);
-            this.cbxPorta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxPorta.Margin = new System.Windows.Forms.Padding(4);
             this.cbxPorta.Name = "cbxPorta";
             this.cbxPorta.Size = new System.Drawing.Size(95, 24);
             this.cbxPorta.TabIndex = 13;
@@ -1536,7 +1536,7 @@ namespace FonteTrifasicaPID
             // btnConectarSerial
             // 
             this.btnConectarSerial.Location = new System.Drawing.Point(9, 183);
-            this.btnConectarSerial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConectarSerial.Margin = new System.Windows.Forms.Padding(4);
             this.btnConectarSerial.Name = "btnConectarSerial";
             this.btnConectarSerial.Size = new System.Drawing.Size(112, 28);
             this.btnConectarSerial.TabIndex = 18;
@@ -1553,9 +1553,9 @@ namespace FonteTrifasicaPID
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.cbxBaudRate);
             this.groupBox5.Location = new System.Drawing.Point(1189, 7);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(129, 226);
             this.groupBox5.TabIndex = 19;
             this.groupBox5.TabStop = false;
@@ -1575,9 +1575,9 @@ namespace FonteTrifasicaPID
             this.groupBox8.Controls.Add(this.label24);
             this.groupBox8.Controls.Add(this.cbxFatorDePotencia);
             this.groupBox8.Location = new System.Drawing.Point(1189, 241);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox8.Size = new System.Drawing.Size(139, 346);
             this.groupBox8.TabIndex = 20;
             this.groupBox8.TabStop = false;
@@ -1600,7 +1600,7 @@ namespace FonteTrifasicaPID
             "0º",
             "120°"});
             this.cbxFase.Location = new System.Drawing.Point(20, 206);
-            this.cbxFase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxFase.Margin = new System.Windows.Forms.Padding(4);
             this.cbxFase.Name = "cbxFase";
             this.cbxFase.Size = new System.Drawing.Size(95, 24);
             this.cbxFase.TabIndex = 23;
@@ -1618,7 +1618,7 @@ namespace FonteTrifasicaPID
             // txtCorrenteRMS
             // 
             this.txtCorrenteRMS.Location = new System.Drawing.Point(20, 97);
-            this.txtCorrenteRMS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorrenteRMS.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorrenteRMS.Name = "txtCorrenteRMS";
             this.txtCorrenteRMS.Size = new System.Drawing.Size(95, 22);
             this.txtCorrenteRMS.TabIndex = 19;
@@ -1637,7 +1637,7 @@ namespace FonteTrifasicaPID
             // txtTensãoRMS
             // 
             this.txtTensãoRMS.Location = new System.Drawing.Point(20, 43);
-            this.txtTensãoRMS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTensãoRMS.Margin = new System.Windows.Forms.Padding(4);
             this.txtTensãoRMS.Name = "txtTensãoRMS";
             this.txtTensãoRMS.Size = new System.Drawing.Size(95, 22);
             this.txtTensãoRMS.TabIndex = 9;
@@ -1647,7 +1647,7 @@ namespace FonteTrifasicaPID
             // btnAplicarParametros
             // 
             this.btnAplicarParametros.Location = new System.Drawing.Point(16, 300);
-            this.btnAplicarParametros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicarParametros.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicarParametros.Name = "btnAplicarParametros";
             this.btnAplicarParametros.Size = new System.Drawing.Size(112, 28);
             this.btnAplicarParametros.TabIndex = 18;
@@ -1662,7 +1662,7 @@ namespace FonteTrifasicaPID
             "50",
             "60"});
             this.cbxFrequencia.Location = new System.Drawing.Point(20, 150);
-            this.cbxFrequencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxFrequencia.Margin = new System.Windows.Forms.Padding(4);
             this.cbxFrequencia.Name = "cbxFrequencia";
             this.cbxFrequencia.Size = new System.Drawing.Size(95, 24);
             this.cbxFrequencia.TabIndex = 13;
@@ -1699,7 +1699,7 @@ namespace FonteTrifasicaPID
             "0.5L",
             "0.5C"});
             this.cbxFatorDePotencia.Location = new System.Drawing.Point(20, 265);
-            this.cbxFatorDePotencia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxFatorDePotencia.Margin = new System.Windows.Forms.Padding(4);
             this.cbxFatorDePotencia.Name = "cbxFatorDePotencia";
             this.cbxFatorDePotencia.Size = new System.Drawing.Size(95, 24);
             this.cbxFatorDePotencia.TabIndex = 15;
@@ -1708,7 +1708,7 @@ namespace FonteTrifasicaPID
             // 
             this.btnIniciarSintetização.BackColor = System.Drawing.Color.LightGreen;
             this.btnIniciarSintetização.Location = new System.Drawing.Point(16, 121);
-            this.btnIniciarSintetização.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIniciarSintetização.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciarSintetização.Name = "btnIniciarSintetização";
             this.btnIniciarSintetização.Size = new System.Drawing.Size(112, 28);
             this.btnIniciarSintetização.TabIndex = 25;
@@ -1720,7 +1720,7 @@ namespace FonteTrifasicaPID
             // 
             this.btnPararSintetização.BackColor = System.Drawing.Color.Crimson;
             this.btnPararSintetização.Location = new System.Drawing.Point(17, 27);
-            this.btnPararSintetização.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPararSintetização.Margin = new System.Windows.Forms.Padding(4);
             this.btnPararSintetização.Name = "btnPararSintetização";
             this.btnPararSintetização.Size = new System.Drawing.Size(112, 78);
             this.btnPararSintetização.TabIndex = 26;
@@ -1733,9 +1733,9 @@ namespace FonteTrifasicaPID
             this.groupBox9.Controls.Add(this.btnPararSintetização);
             this.groupBox9.Controls.Add(this.btnIniciarSintetização);
             this.groupBox9.Location = new System.Drawing.Point(1189, 594);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox9.Size = new System.Drawing.Size(139, 165);
             this.groupBox9.TabIndex = 27;
             this.groupBox9.TabStop = false;
@@ -1748,7 +1748,7 @@ namespace FonteTrifasicaPID
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1355, 879);
@@ -1762,9 +1762,9 @@ namespace FonteTrifasicaPID
             this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1347, 850);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Config";
@@ -1776,9 +1776,9 @@ namespace FonteTrifasicaPID
             this.tabPage2.Controls.Add(this.groupBox12);
             this.tabPage2.Controls.Add(this.groupBox10);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1347, 850);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Configurações Manuais";
@@ -1790,9 +1790,9 @@ namespace FonteTrifasicaPID
             this.groupBox11.Controls.Add(this.btnResetaADE);
             this.groupBox11.Controls.Add(this.btnReconfigurarADE);
             this.groupBox11.Location = new System.Drawing.Point(599, 7);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox11.Size = new System.Drawing.Size(400, 215);
             this.groupBox11.TabIndex = 15;
             this.groupBox11.TabStop = false;
@@ -1801,7 +1801,7 @@ namespace FonteTrifasicaPID
             // btnResetarESP32
             // 
             this.btnResetarESP32.Location = new System.Drawing.Point(209, 37);
-            this.btnResetarESP32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnResetarESP32.Margin = new System.Windows.Forms.Padding(4);
             this.btnResetarESP32.Name = "btnResetarESP32";
             this.btnResetarESP32.Size = new System.Drawing.Size(164, 28);
             this.btnResetarESP32.TabIndex = 9;
@@ -1812,7 +1812,7 @@ namespace FonteTrifasicaPID
             // btnResetaADE
             // 
             this.btnResetaADE.Location = new System.Drawing.Point(24, 74);
-            this.btnResetaADE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnResetaADE.Margin = new System.Windows.Forms.Padding(4);
             this.btnResetaADE.Name = "btnResetaADE";
             this.btnResetaADE.Size = new System.Drawing.Size(164, 28);
             this.btnResetaADE.TabIndex = 8;
@@ -1823,7 +1823,7 @@ namespace FonteTrifasicaPID
             // btnReconfigurarADE
             // 
             this.btnReconfigurarADE.Location = new System.Drawing.Point(24, 36);
-            this.btnReconfigurarADE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReconfigurarADE.Margin = new System.Windows.Forms.Padding(4);
             this.btnReconfigurarADE.Name = "btnReconfigurarADE";
             this.btnReconfigurarADE.Size = new System.Drawing.Size(164, 28);
             this.btnReconfigurarADE.TabIndex = 7;
@@ -1852,9 +1852,9 @@ namespace FonteTrifasicaPID
             this.groupBox12.Controls.Add(this.nud10kIC);
             this.groupBox12.Controls.Add(this.btnAplicar50kCorrente);
             this.groupBox12.Location = new System.Drawing.Point(8, 230);
-            this.groupBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox12.Size = new System.Drawing.Size(583, 215);
             this.groupBox12.TabIndex = 14;
             this.groupBox12.TabStop = false;
@@ -1875,7 +1875,7 @@ namespace FonteTrifasicaPID
             this.checkBox1.AutoSize = true;
             this.checkBox1.Enabled = false;
             this.checkBox1.Location = new System.Drawing.Point(13, 187);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(105, 21);
             this.checkBox1.TabIndex = 13;
@@ -1887,7 +1887,7 @@ namespace FonteTrifasicaPID
             this.txtCorrenteRMSIC.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtCorrenteRMSIC.ForeColor = System.Drawing.Color.Blue;
             this.txtCorrenteRMSIC.Location = new System.Drawing.Point(417, 103);
-            this.txtCorrenteRMSIC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorrenteRMSIC.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorrenteRMSIC.Name = "txtCorrenteRMSIC";
             this.txtCorrenteRMSIC.Size = new System.Drawing.Size(132, 22);
             this.txtCorrenteRMSIC.TabIndex = 20;
@@ -1908,7 +1908,7 @@ namespace FonteTrifasicaPID
             this.txtCorrenteRMSIB.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtCorrenteRMSIB.ForeColor = System.Drawing.Color.Yellow;
             this.txtCorrenteRMSIB.Location = new System.Drawing.Point(417, 71);
-            this.txtCorrenteRMSIB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorrenteRMSIB.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorrenteRMSIB.Name = "txtCorrenteRMSIB";
             this.txtCorrenteRMSIB.Size = new System.Drawing.Size(132, 22);
             this.txtCorrenteRMSIB.TabIndex = 19;
@@ -1929,7 +1929,7 @@ namespace FonteTrifasicaPID
             this.txtCorrenteRMSIA.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtCorrenteRMSIA.ForeColor = System.Drawing.Color.Red;
             this.txtCorrenteRMSIA.Location = new System.Drawing.Point(417, 39);
-            this.txtCorrenteRMSIA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorrenteRMSIA.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorrenteRMSIA.Name = "txtCorrenteRMSIA";
             this.txtCorrenteRMSIA.Size = new System.Drawing.Size(132, 22);
             this.txtCorrenteRMSIA.TabIndex = 18;
@@ -1938,7 +1938,7 @@ namespace FonteTrifasicaPID
             // nud50kIA
             // 
             this.nud50kIA.Location = new System.Drawing.Point(44, 39);
-            this.nud50kIA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud50kIA.Margin = new System.Windows.Forms.Padding(4);
             this.nud50kIA.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1962,7 +1962,7 @@ namespace FonteTrifasicaPID
             // nud50kIB
             // 
             this.nud50kIB.Location = new System.Drawing.Point(44, 71);
-            this.nud50kIB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud50kIB.Margin = new System.Windows.Forms.Padding(4);
             this.nud50kIB.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1986,7 +1986,7 @@ namespace FonteTrifasicaPID
             // nud50kIC
             // 
             this.nud50kIC.Location = new System.Drawing.Point(44, 103);
-            this.nud50kIC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud50kIC.Margin = new System.Windows.Forms.Padding(4);
             this.nud50kIC.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2010,7 +2010,7 @@ namespace FonteTrifasicaPID
             // nud10kIA
             // 
             this.nud10kIA.Location = new System.Drawing.Point(233, 39);
-            this.nud10kIA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud10kIA.Margin = new System.Windows.Forms.Padding(4);
             this.nud10kIA.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2024,7 +2024,7 @@ namespace FonteTrifasicaPID
             // nud10kIB
             // 
             this.nud10kIB.Location = new System.Drawing.Point(233, 71);
-            this.nud10kIB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud10kIB.Margin = new System.Windows.Forms.Padding(4);
             this.nud10kIB.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2038,7 +2038,7 @@ namespace FonteTrifasicaPID
             // btnAplicar10kcorrente
             // 
             this.btnAplicar10kcorrente.Location = new System.Drawing.Point(264, 135);
-            this.btnAplicar10kcorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar10kcorrente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar10kcorrente.Name = "btnAplicar10kcorrente";
             this.btnAplicar10kcorrente.Size = new System.Drawing.Size(100, 28);
             this.btnAplicar10kcorrente.TabIndex = 7;
@@ -2049,7 +2049,7 @@ namespace FonteTrifasicaPID
             // nud10kIC
             // 
             this.nud10kIC.Location = new System.Drawing.Point(233, 103);
-            this.nud10kIC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud10kIC.Margin = new System.Windows.Forms.Padding(4);
             this.nud10kIC.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2063,7 +2063,7 @@ namespace FonteTrifasicaPID
             // btnAplicar50kCorrente
             // 
             this.btnAplicar50kCorrente.Location = new System.Drawing.Point(55, 135);
-            this.btnAplicar50kCorrente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar50kCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar50kCorrente.Name = "btnAplicar50kCorrente";
             this.btnAplicar50kCorrente.Size = new System.Drawing.Size(129, 28);
             this.btnAplicar50kCorrente.TabIndex = 6;
@@ -2092,9 +2092,9 @@ namespace FonteTrifasicaPID
             this.groupBox10.Controls.Add(this.nud10kVC);
             this.groupBox10.Controls.Add(this.btnAplicar50ktensao);
             this.groupBox10.Location = new System.Drawing.Point(8, 7);
-            this.groupBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox10.Size = new System.Drawing.Size(583, 215);
             this.groupBox10.TabIndex = 13;
             this.groupBox10.TabStop = false;
@@ -2115,7 +2115,7 @@ namespace FonteTrifasicaPID
             this.txtTensaoRMSVC.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtTensaoRMSVC.ForeColor = System.Drawing.Color.Blue;
             this.txtTensaoRMSVC.Location = new System.Drawing.Point(417, 103);
-            this.txtTensaoRMSVC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTensaoRMSVC.Margin = new System.Windows.Forms.Padding(4);
             this.txtTensaoRMSVC.Name = "txtTensaoRMSVC";
             this.txtTensaoRMSVC.Size = new System.Drawing.Size(132, 22);
             this.txtTensaoRMSVC.TabIndex = 16;
@@ -2126,7 +2126,7 @@ namespace FonteTrifasicaPID
             this.cbkAutoAplicar.AutoSize = true;
             this.cbkAutoAplicar.Enabled = false;
             this.cbkAutoAplicar.Location = new System.Drawing.Point(13, 187);
-            this.cbkAutoAplicar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbkAutoAplicar.Margin = new System.Windows.Forms.Padding(4);
             this.cbkAutoAplicar.Name = "cbkAutoAplicar";
             this.cbkAutoAplicar.Size = new System.Drawing.Size(105, 21);
             this.cbkAutoAplicar.TabIndex = 13;
@@ -2138,7 +2138,7 @@ namespace FonteTrifasicaPID
             this.txtTensaoRMSVB.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtTensaoRMSVB.ForeColor = System.Drawing.Color.Yellow;
             this.txtTensaoRMSVB.Location = new System.Drawing.Point(417, 71);
-            this.txtTensaoRMSVB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTensaoRMSVB.Margin = new System.Windows.Forms.Padding(4);
             this.txtTensaoRMSVB.Name = "txtTensaoRMSVB";
             this.txtTensaoRMSVB.Size = new System.Drawing.Size(132, 22);
             this.txtTensaoRMSVB.TabIndex = 15;
@@ -2159,7 +2159,7 @@ namespace FonteTrifasicaPID
             this.txtTensaoRMSVA.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtTensaoRMSVA.ForeColor = System.Drawing.Color.Red;
             this.txtTensaoRMSVA.Location = new System.Drawing.Point(417, 39);
-            this.txtTensaoRMSVA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTensaoRMSVA.Margin = new System.Windows.Forms.Padding(4);
             this.txtTensaoRMSVA.Name = "txtTensaoRMSVA";
             this.txtTensaoRMSVA.Size = new System.Drawing.Size(132, 22);
             this.txtTensaoRMSVA.TabIndex = 14;
@@ -2178,7 +2178,7 @@ namespace FonteTrifasicaPID
             // nud50kVA
             // 
             this.nud50kVA.Location = new System.Drawing.Point(44, 39);
-            this.nud50kVA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud50kVA.Margin = new System.Windows.Forms.Padding(4);
             this.nud50kVA.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2202,7 +2202,7 @@ namespace FonteTrifasicaPID
             // nud50kVB
             // 
             this.nud50kVB.Location = new System.Drawing.Point(44, 71);
-            this.nud50kVB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud50kVB.Margin = new System.Windows.Forms.Padding(4);
             this.nud50kVB.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2226,7 +2226,7 @@ namespace FonteTrifasicaPID
             // nud50kVC
             // 
             this.nud50kVC.Location = new System.Drawing.Point(44, 103);
-            this.nud50kVC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud50kVC.Margin = new System.Windows.Forms.Padding(4);
             this.nud50kVC.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2250,7 +2250,7 @@ namespace FonteTrifasicaPID
             // nud10kVA
             // 
             this.nud10kVA.Location = new System.Drawing.Point(233, 39);
-            this.nud10kVA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud10kVA.Margin = new System.Windows.Forms.Padding(4);
             this.nud10kVA.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2264,7 +2264,7 @@ namespace FonteTrifasicaPID
             // nud10kVB
             // 
             this.nud10kVB.Location = new System.Drawing.Point(233, 71);
-            this.nud10kVB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud10kVB.Margin = new System.Windows.Forms.Padding(4);
             this.nud10kVB.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2278,7 +2278,7 @@ namespace FonteTrifasicaPID
             // btnAplicar10ktensao
             // 
             this.btnAplicar10ktensao.Location = new System.Drawing.Point(264, 135);
-            this.btnAplicar10ktensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar10ktensao.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar10ktensao.Name = "btnAplicar10ktensao";
             this.btnAplicar10ktensao.Size = new System.Drawing.Size(100, 28);
             this.btnAplicar10ktensao.TabIndex = 7;
@@ -2289,7 +2289,7 @@ namespace FonteTrifasicaPID
             // nud10kVC
             // 
             this.nud10kVC.Location = new System.Drawing.Point(233, 103);
-            this.nud10kVC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nud10kVC.Margin = new System.Windows.Forms.Padding(4);
             this.nud10kVC.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2303,7 +2303,7 @@ namespace FonteTrifasicaPID
             // btnAplicar50ktensao
             // 
             this.btnAplicar50ktensao.Location = new System.Drawing.Point(55, 135);
-            this.btnAplicar50ktensao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar50ktensao.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar50ktensao.Name = "btnAplicar50ktensao";
             this.btnAplicar50ktensao.Size = new System.Drawing.Size(129, 28);
             this.btnAplicar50ktensao.TabIndex = 6;
@@ -2316,9 +2316,9 @@ namespace FonteTrifasicaPID
             this.tabPage3.Controls.Add(this.groupBox14);
             this.tabPage3.Controls.Add(this.groupBox13);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(1347, 850);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Ajuste FP";
@@ -2347,9 +2347,9 @@ namespace FonteTrifasicaPID
             this.groupBox14.Controls.Add(this.txtFP150A);
             this.groupBox14.Controls.Add(this.txtFP150B);
             this.groupBox14.Location = new System.Drawing.Point(671, 54);
-            this.groupBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox14.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox14.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox14.Size = new System.Drawing.Size(616, 238);
             this.groupBox14.TabIndex = 29;
             this.groupBox14.TabStop = false;
@@ -2358,7 +2358,7 @@ namespace FonteTrifasicaPID
             // btnLimpar50
             // 
             this.btnLimpar50.Location = new System.Drawing.Point(239, 169);
-            this.btnLimpar50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpar50.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpar50.Name = "btnLimpar50";
             this.btnLimpar50.Size = new System.Drawing.Size(100, 28);
             this.btnLimpar50.TabIndex = 20;
@@ -2369,7 +2369,7 @@ namespace FonteTrifasicaPID
             // btnLer50
             // 
             this.btnLer50.Location = new System.Drawing.Point(508, 202);
-            this.btnLer50.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLer50.Margin = new System.Windows.Forms.Padding(4);
             this.btnLer50.Name = "btnLer50";
             this.btnLer50.Size = new System.Drawing.Size(100, 28);
             this.btnLer50.TabIndex = 19;
@@ -2380,7 +2380,7 @@ namespace FonteTrifasicaPID
             // button8btnAplicar50FPCap
             // 
             this.button8btnAplicar50FPCap.Location = new System.Drawing.Point(508, 119);
-            this.button8btnAplicar50FPCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8btnAplicar50FPCap.Margin = new System.Windows.Forms.Padding(4);
             this.button8btnAplicar50FPCap.Name = "button8btnAplicar50FPCap";
             this.button8btnAplicar50FPCap.Size = new System.Drawing.Size(100, 28);
             this.button8btnAplicar50FPCap.TabIndex = 20;
@@ -2401,7 +2401,7 @@ namespace FonteTrifasicaPID
             // button8btnAplicar50FPInd
             // 
             this.button8btnAplicar50FPInd.Location = new System.Drawing.Point(508, 87);
-            this.button8btnAplicar50FPInd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8btnAplicar50FPInd.Margin = new System.Windows.Forms.Padding(4);
             this.button8btnAplicar50FPInd.Name = "button8btnAplicar50FPInd";
             this.button8btnAplicar50FPInd.Size = new System.Drawing.Size(100, 28);
             this.button8btnAplicar50FPInd.TabIndex = 19;
@@ -2412,7 +2412,7 @@ namespace FonteTrifasicaPID
             // button8btnAplicar50FP1
             // 
             this.button8btnAplicar50FP1.Location = new System.Drawing.Point(508, 55);
-            this.button8btnAplicar50FP1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8btnAplicar50FP1.Margin = new System.Windows.Forms.Padding(4);
             this.button8btnAplicar50FP1.Name = "button8btnAplicar50FP1";
             this.button8btnAplicar50FP1.Size = new System.Drawing.Size(100, 28);
             this.button8btnAplicar50FP1.TabIndex = 18;
@@ -2423,7 +2423,7 @@ namespace FonteTrifasicaPID
             // txtFPCap50C
             // 
             this.txtFPCap50C.Location = new System.Drawing.Point(360, 122);
-            this.txtFPCap50C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPCap50C.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPCap50C.Name = "txtFPCap50C";
             this.txtFPCap50C.Size = new System.Drawing.Size(132, 22);
             this.txtFPCap50C.TabIndex = 13;
@@ -2433,7 +2433,7 @@ namespace FonteTrifasicaPID
             // txtFPCap50A
             // 
             this.txtFPCap50A.Location = new System.Drawing.Point(77, 122);
-            this.txtFPCap50A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPCap50A.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPCap50A.Name = "txtFPCap50A";
             this.txtFPCap50A.Size = new System.Drawing.Size(132, 22);
             this.txtFPCap50A.TabIndex = 11;
@@ -2443,7 +2443,7 @@ namespace FonteTrifasicaPID
             // txtFPCap50B
             // 
             this.txtFPCap50B.Location = new System.Drawing.Point(219, 122);
-            this.txtFPCap50B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPCap50B.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPCap50B.Name = "txtFPCap50B";
             this.txtFPCap50B.Size = new System.Drawing.Size(132, 22);
             this.txtFPCap50B.TabIndex = 12;
@@ -2463,7 +2463,7 @@ namespace FonteTrifasicaPID
             // txtFPInd50C
             // 
             this.txtFPInd50C.Location = new System.Drawing.Point(360, 90);
-            this.txtFPInd50C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPInd50C.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPInd50C.Name = "txtFPInd50C";
             this.txtFPInd50C.Size = new System.Drawing.Size(132, 22);
             this.txtFPInd50C.TabIndex = 9;
@@ -2473,7 +2473,7 @@ namespace FonteTrifasicaPID
             // txtFPInd50A
             // 
             this.txtFPInd50A.Location = new System.Drawing.Point(77, 90);
-            this.txtFPInd50A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPInd50A.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPInd50A.Name = "txtFPInd50A";
             this.txtFPInd50A.Size = new System.Drawing.Size(132, 22);
             this.txtFPInd50A.TabIndex = 7;
@@ -2483,7 +2483,7 @@ namespace FonteTrifasicaPID
             // txtFPInd50B
             // 
             this.txtFPInd50B.Location = new System.Drawing.Point(219, 90);
-            this.txtFPInd50B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPInd50B.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPInd50B.Name = "txtFPInd50B";
             this.txtFPInd50B.Size = new System.Drawing.Size(132, 22);
             this.txtFPInd50B.TabIndex = 8;
@@ -2533,7 +2533,7 @@ namespace FonteTrifasicaPID
             // txtFP150C
             // 
             this.txtFP150C.Location = new System.Drawing.Point(360, 58);
-            this.txtFP150C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFP150C.Margin = new System.Windows.Forms.Padding(4);
             this.txtFP150C.Name = "txtFP150C";
             this.txtFP150C.Size = new System.Drawing.Size(132, 22);
             this.txtFP150C.TabIndex = 2;
@@ -2543,7 +2543,7 @@ namespace FonteTrifasicaPID
             // txtFP150A
             // 
             this.txtFP150A.Location = new System.Drawing.Point(77, 58);
-            this.txtFP150A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFP150A.Margin = new System.Windows.Forms.Padding(4);
             this.txtFP150A.Name = "txtFP150A";
             this.txtFP150A.Size = new System.Drawing.Size(132, 22);
             this.txtFP150A.TabIndex = 0;
@@ -2553,7 +2553,7 @@ namespace FonteTrifasicaPID
             // txtFP150B
             // 
             this.txtFP150B.Location = new System.Drawing.Point(219, 58);
-            this.txtFP150B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFP150B.Margin = new System.Windows.Forms.Padding(4);
             this.txtFP150B.Name = "txtFP150B";
             this.txtFP150B.Size = new System.Drawing.Size(132, 22);
             this.txtFP150B.TabIndex = 1;
@@ -2583,9 +2583,9 @@ namespace FonteTrifasicaPID
             this.groupBox13.Controls.Add(this.txtFP160A);
             this.groupBox13.Controls.Add(this.txtFP160B);
             this.groupBox13.Location = new System.Drawing.Point(47, 54);
-            this.groupBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox13.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox13.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox13.Size = new System.Drawing.Size(616, 238);
             this.groupBox13.TabIndex = 28;
             this.groupBox13.TabStop = false;
@@ -2594,7 +2594,7 @@ namespace FonteTrifasicaPID
             // btnLimpar60
             // 
             this.btnLimpar60.Location = new System.Drawing.Point(236, 169);
-            this.btnLimpar60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpar60.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpar60.Name = "btnLimpar60";
             this.btnLimpar60.Size = new System.Drawing.Size(100, 28);
             this.btnLimpar60.TabIndex = 19;
@@ -2605,7 +2605,7 @@ namespace FonteTrifasicaPID
             // btnLer60
             // 
             this.btnLer60.Location = new System.Drawing.Point(508, 202);
-            this.btnLer60.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLer60.Margin = new System.Windows.Forms.Padding(4);
             this.btnLer60.Name = "btnLer60";
             this.btnLer60.Size = new System.Drawing.Size(100, 28);
             this.btnLer60.TabIndex = 18;
@@ -2616,7 +2616,7 @@ namespace FonteTrifasicaPID
             // btnAplicar60FPCap
             // 
             this.btnAplicar60FPCap.Location = new System.Drawing.Point(508, 121);
-            this.btnAplicar60FPCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar60FPCap.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar60FPCap.Name = "btnAplicar60FPCap";
             this.btnAplicar60FPCap.Size = new System.Drawing.Size(100, 28);
             this.btnAplicar60FPCap.TabIndex = 17;
@@ -2627,7 +2627,7 @@ namespace FonteTrifasicaPID
             // btnAplicar60FPInd
             // 
             this.btnAplicar60FPInd.Location = new System.Drawing.Point(508, 89);
-            this.btnAplicar60FPInd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar60FPInd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar60FPInd.Name = "btnAplicar60FPInd";
             this.btnAplicar60FPInd.Size = new System.Drawing.Size(100, 28);
             this.btnAplicar60FPInd.TabIndex = 16;
@@ -2638,7 +2638,7 @@ namespace FonteTrifasicaPID
             // btnAplicar60FP1
             // 
             this.btnAplicar60FP1.Location = new System.Drawing.Point(508, 57);
-            this.btnAplicar60FP1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAplicar60FP1.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicar60FP1.Name = "btnAplicar60FP1";
             this.btnAplicar60FP1.Size = new System.Drawing.Size(100, 28);
             this.btnAplicar60FP1.TabIndex = 15;
@@ -2659,7 +2659,7 @@ namespace FonteTrifasicaPID
             // txtFPCap60C
             // 
             this.txtFPCap60C.Location = new System.Drawing.Point(359, 122);
-            this.txtFPCap60C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPCap60C.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPCap60C.Name = "txtFPCap60C";
             this.txtFPCap60C.Size = new System.Drawing.Size(132, 22);
             this.txtFPCap60C.TabIndex = 13;
@@ -2669,7 +2669,7 @@ namespace FonteTrifasicaPID
             // txtFPCap60A
             // 
             this.txtFPCap60A.Location = new System.Drawing.Point(76, 122);
-            this.txtFPCap60A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPCap60A.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPCap60A.Name = "txtFPCap60A";
             this.txtFPCap60A.Size = new System.Drawing.Size(132, 22);
             this.txtFPCap60A.TabIndex = 11;
@@ -2679,7 +2679,7 @@ namespace FonteTrifasicaPID
             // txtFPCap60B
             // 
             this.txtFPCap60B.Location = new System.Drawing.Point(217, 122);
-            this.txtFPCap60B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPCap60B.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPCap60B.Name = "txtFPCap60B";
             this.txtFPCap60B.Size = new System.Drawing.Size(132, 22);
             this.txtFPCap60B.TabIndex = 12;
@@ -2699,7 +2699,7 @@ namespace FonteTrifasicaPID
             // txtFPInd60C
             // 
             this.txtFPInd60C.Location = new System.Drawing.Point(359, 90);
-            this.txtFPInd60C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPInd60C.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPInd60C.Name = "txtFPInd60C";
             this.txtFPInd60C.Size = new System.Drawing.Size(132, 22);
             this.txtFPInd60C.TabIndex = 9;
@@ -2709,7 +2709,7 @@ namespace FonteTrifasicaPID
             // txtFPInd60A
             // 
             this.txtFPInd60A.Location = new System.Drawing.Point(76, 90);
-            this.txtFPInd60A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPInd60A.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPInd60A.Name = "txtFPInd60A";
             this.txtFPInd60A.Size = new System.Drawing.Size(132, 22);
             this.txtFPInd60A.TabIndex = 7;
@@ -2719,7 +2719,7 @@ namespace FonteTrifasicaPID
             // txtFPInd60B
             // 
             this.txtFPInd60B.Location = new System.Drawing.Point(217, 90);
-            this.txtFPInd60B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFPInd60B.Margin = new System.Windows.Forms.Padding(4);
             this.txtFPInd60B.Name = "txtFPInd60B";
             this.txtFPInd60B.Size = new System.Drawing.Size(132, 22);
             this.txtFPInd60B.TabIndex = 8;
@@ -2769,7 +2769,7 @@ namespace FonteTrifasicaPID
             // txtFP160C
             // 
             this.txtFP160C.Location = new System.Drawing.Point(359, 58);
-            this.txtFP160C.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFP160C.Margin = new System.Windows.Forms.Padding(4);
             this.txtFP160C.Name = "txtFP160C";
             this.txtFP160C.Size = new System.Drawing.Size(132, 22);
             this.txtFP160C.TabIndex = 2;
@@ -2779,7 +2779,7 @@ namespace FonteTrifasicaPID
             // txtFP160A
             // 
             this.txtFP160A.Location = new System.Drawing.Point(76, 58);
-            this.txtFP160A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFP160A.Margin = new System.Windows.Forms.Padding(4);
             this.txtFP160A.Name = "txtFP160A";
             this.txtFP160A.Size = new System.Drawing.Size(132, 22);
             this.txtFP160A.TabIndex = 0;
@@ -2789,7 +2789,7 @@ namespace FonteTrifasicaPID
             // txtFP160B
             // 
             this.txtFP160B.Location = new System.Drawing.Point(217, 58);
-            this.txtFP160B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFP160B.Margin = new System.Windows.Forms.Padding(4);
             this.txtFP160B.Name = "txtFP160B";
             this.txtFP160B.Size = new System.Drawing.Size(132, 22);
             this.txtFP160B.TabIndex = 1;
@@ -2809,8 +2809,9 @@ namespace FonteTrifasicaPID
             // 
             // groupBox15
             // 
+            this.groupBox15.Controls.Add(this.label71);
+            this.groupBox15.Controls.Add(this.txtFrequenciaLida);
             this.groupBox15.Controls.Add(this.label70);
-            this.groupBox15.Controls.Add(this.label65);
             this.groupBox15.Controls.Add(this.label66);
             this.groupBox15.Controls.Add(this.label67);
             this.groupBox15.Controls.Add(this.label68);
@@ -2818,14 +2819,13 @@ namespace FonteTrifasicaPID
             this.groupBox15.Controls.Add(this.label58);
             this.groupBox15.Controls.Add(this.label55);
             this.groupBox15.Controls.Add(this.label54);
-            this.groupBox15.Controls.Add(this.txtLeituraFaseIC);
-            this.groupBox15.Controls.Add(this.txtLeituraFaseIA);
-            this.groupBox15.Controls.Add(this.txtLeituraFaseIB);
+            this.groupBox15.Controls.Add(this.txtLeituraFaseVAB);
+            this.groupBox15.Controls.Add(this.txtLeituraFaseVAC);
             this.groupBox15.Controls.Add(this.btnAplicarCorrecaoFase);
             this.groupBox15.Controls.Add(this.label53);
-            this.groupBox15.Controls.Add(this.txtLeituraFaseVC);
-            this.groupBox15.Controls.Add(this.txtLeituraFaseVA);
-            this.groupBox15.Controls.Add(this.txtLeituraFaseVB);
+            this.groupBox15.Controls.Add(this.txtLeituraFP3);
+            this.groupBox15.Controls.Add(this.txtLeituraFP1);
+            this.groupBox15.Controls.Add(this.txtLeituraFP2);
             this.groupBox15.Controls.Add(this.txtAjusteIC);
             this.groupBox15.Controls.Add(this.txtAjusteIA);
             this.groupBox15.Controls.Add(this.txtAjusteIB);
@@ -2837,14 +2837,114 @@ namespace FonteTrifasicaPID
             this.groupBox15.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox15.Size = new System.Drawing.Size(1055, 189);
+            this.groupBox15.Size = new System.Drawing.Size(1055, 328);
             this.groupBox15.TabIndex = 29;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Fase individual";
             // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(104, 236);
+            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(77, 17);
+            this.label70.TabIndex = 36;
+            this.label70.Text = "FP Canal 1";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(717, 236);
+            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(70, 17);
+            this.label66.TabIndex = 34;
+            this.label66.Text = "Fase VAC";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(585, 236);
+            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(70, 17);
+            this.label67.TabIndex = 33;
+            this.label67.Text = "Fase VAB";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(382, 236);
+            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(77, 17);
+            this.label68.TabIndex = 32;
+            this.label68.Text = "FP Canal 3";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(238, 236);
+            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(77, 17);
+            this.label69.TabIndex = 31;
+            this.label69.Text = "FP Canal 2";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(734, 70);
+            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(55, 17);
+            this.label58.TabIndex = 30;
+            this.label58.Text = "Fase IC";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(593, 68);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(55, 17);
+            this.label55.TabIndex = 24;
+            this.label55.Text = "Fase IB";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(446, 68);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(55, 17);
+            this.label54.TabIndex = 23;
+            this.label54.Text = "Fase IA";
+            // 
+            // txtLeituraFaseVAB
+            // 
+            this.txtLeituraFaseVAB.Enabled = false;
+            this.txtLeituraFaseVAB.Location = new System.Drawing.Point(549, 257);
+            this.txtLeituraFaseVAB.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLeituraFaseVAB.Name = "txtLeituraFaseVAB";
+            this.txtLeituraFaseVAB.Size = new System.Drawing.Size(132, 22);
+            this.txtLeituraFaseVAB.TabIndex = 20;
+            this.txtLeituraFaseVAB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtLeituraFaseVAC
+            // 
+            this.txtLeituraFaseVAC.Enabled = false;
+            this.txtLeituraFaseVAC.Location = new System.Drawing.Point(689, 257);
+            this.txtLeituraFaseVAC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLeituraFaseVAC.Name = "txtLeituraFaseVAC";
+            this.txtLeituraFaseVAC.Size = new System.Drawing.Size(132, 22);
+            this.txtLeituraFaseVAC.TabIndex = 21;
+            this.txtLeituraFaseVAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // btnAplicarCorrecaoFase
             // 
-            this.btnAplicarCorrecaoFase.Location = new System.Drawing.Point(916, 54);
+            this.btnAplicarCorrecaoFase.Location = new System.Drawing.Point(830, 86);
             this.btnAplicarCorrecaoFase.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicarCorrecaoFase.Name = "btnAplicarCorrecaoFase";
             this.btnAplicarCorrecaoFase.Size = new System.Drawing.Size(100, 28);
@@ -2856,7 +2956,7 @@ namespace FonteTrifasicaPID
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(33, 125);
+            this.label53.Location = new System.Drawing.Point(24, 260);
             this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(35, 17);
@@ -2864,39 +2964,39 @@ namespace FonteTrifasicaPID
             this.label53.Text = "Lido";
             this.label53.Click += new System.EventHandler(this.label53_Click);
             // 
-            // txtLeituraFaseVC
+            // txtLeituraFP3
             // 
-            this.txtLeituraFaseVC.Enabled = false;
-            this.txtLeituraFaseVC.Location = new System.Drawing.Point(356, 122);
-            this.txtLeituraFaseVC.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLeituraFaseVC.Name = "txtLeituraFaseVC";
-            this.txtLeituraFaseVC.Size = new System.Drawing.Size(132, 22);
-            this.txtLeituraFaseVC.TabIndex = 13;
-            this.txtLeituraFaseVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLeituraFP3.Enabled = false;
+            this.txtLeituraFP3.Location = new System.Drawing.Point(347, 257);
+            this.txtLeituraFP3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLeituraFP3.Name = "txtLeituraFP3";
+            this.txtLeituraFP3.Size = new System.Drawing.Size(132, 22);
+            this.txtLeituraFP3.TabIndex = 13;
+            this.txtLeituraFP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtLeituraFaseVA
+            // txtLeituraFP1
             // 
-            this.txtLeituraFaseVA.Enabled = false;
-            this.txtLeituraFaseVA.Location = new System.Drawing.Point(76, 122);
-            this.txtLeituraFaseVA.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLeituraFaseVA.Name = "txtLeituraFaseVA";
-            this.txtLeituraFaseVA.Size = new System.Drawing.Size(132, 22);
-            this.txtLeituraFaseVA.TabIndex = 11;
-            this.txtLeituraFaseVA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLeituraFP1.Enabled = false;
+            this.txtLeituraFP1.Location = new System.Drawing.Point(67, 257);
+            this.txtLeituraFP1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLeituraFP1.Name = "txtLeituraFP1";
+            this.txtLeituraFP1.Size = new System.Drawing.Size(132, 22);
+            this.txtLeituraFP1.TabIndex = 11;
+            this.txtLeituraFP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtLeituraFaseVB
+            // txtLeituraFP2
             // 
-            this.txtLeituraFaseVB.Enabled = false;
-            this.txtLeituraFaseVB.Location = new System.Drawing.Point(216, 122);
-            this.txtLeituraFaseVB.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLeituraFaseVB.Name = "txtLeituraFaseVB";
-            this.txtLeituraFaseVB.Size = new System.Drawing.Size(132, 22);
-            this.txtLeituraFaseVB.TabIndex = 12;
-            this.txtLeituraFaseVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLeituraFP2.Enabled = false;
+            this.txtLeituraFP2.Location = new System.Drawing.Point(207, 257);
+            this.txtLeituraFP2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLeituraFP2.Name = "txtLeituraFP2";
+            this.txtLeituraFP2.Size = new System.Drawing.Size(132, 22);
+            this.txtLeituraFP2.TabIndex = 12;
+            this.txtLeituraFP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtAjusteIC
             // 
-            this.txtAjusteIC.Location = new System.Drawing.Point(776, 57);
+            this.txtAjusteIC.Location = new System.Drawing.Point(690, 89);
             this.txtAjusteIC.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteIC.Name = "txtAjusteIC";
             this.txtAjusteIC.Size = new System.Drawing.Size(132, 22);
@@ -2906,7 +3006,7 @@ namespace FonteTrifasicaPID
             // 
             // txtAjusteIA
             // 
-            this.txtAjusteIA.Location = new System.Drawing.Point(496, 57);
+            this.txtAjusteIA.Location = new System.Drawing.Point(410, 89);
             this.txtAjusteIA.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteIA.Name = "txtAjusteIA";
             this.txtAjusteIA.Size = new System.Drawing.Size(132, 22);
@@ -2916,7 +3016,7 @@ namespace FonteTrifasicaPID
             // 
             // txtAjusteIB
             // 
-            this.txtAjusteIB.Location = new System.Drawing.Point(636, 57);
+            this.txtAjusteIB.Location = new System.Drawing.Point(550, 89);
             this.txtAjusteIB.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteIB.Name = "txtAjusteIB";
             this.txtAjusteIB.Size = new System.Drawing.Size(132, 22);
@@ -2927,7 +3027,7 @@ namespace FonteTrifasicaPID
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(391, 38);
+            this.label56.Location = new System.Drawing.Point(305, 70);
             this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(61, 17);
@@ -2937,7 +3037,7 @@ namespace FonteTrifasicaPID
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(259, 38);
+            this.label57.Location = new System.Drawing.Point(173, 70);
             this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(61, 17);
@@ -2946,7 +3046,7 @@ namespace FonteTrifasicaPID
             // 
             // txtAjusteVC
             // 
-            this.txtAjusteVC.Location = new System.Drawing.Point(356, 57);
+            this.txtAjusteVC.Location = new System.Drawing.Point(270, 89);
             this.txtAjusteVC.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteVC.Name = "txtAjusteVC";
             this.txtAjusteVC.Size = new System.Drawing.Size(132, 22);
@@ -2956,7 +3056,7 @@ namespace FonteTrifasicaPID
             // 
             // txtAjusteVB
             // 
-            this.txtAjusteVB.Location = new System.Drawing.Point(216, 57);
+            this.txtAjusteVB.Location = new System.Drawing.Point(130, 89);
             this.txtAjusteVB.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteVB.Name = "txtAjusteVB";
             this.txtAjusteVB.Size = new System.Drawing.Size(132, 22);
@@ -2964,125 +3064,25 @@ namespace FonteTrifasicaPID
             this.txtAjusteVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAjusteVB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAjusteVB_KeyPress);
             // 
-            // txtLeituraFaseIC
+            // txtFrequenciaLida
             // 
-            this.txtLeituraFaseIC.Enabled = false;
-            this.txtLeituraFaseIC.Location = new System.Drawing.Point(776, 122);
-            this.txtLeituraFaseIC.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLeituraFaseIC.Name = "txtLeituraFaseIC";
-            this.txtLeituraFaseIC.Size = new System.Drawing.Size(132, 22);
-            this.txtLeituraFaseIC.TabIndex = 22;
-            this.txtLeituraFaseIC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFrequenciaLida.Enabled = false;
+            this.txtFrequenciaLida.Location = new System.Drawing.Point(906, 257);
+            this.txtFrequenciaLida.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFrequenciaLida.Name = "txtFrequenciaLida";
+            this.txtFrequenciaLida.Size = new System.Drawing.Size(132, 22);
+            this.txtFrequenciaLida.TabIndex = 37;
+            this.txtFrequenciaLida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtLeituraFaseIA
+            // label71
             // 
-            this.txtLeituraFaseIA.Enabled = false;
-            this.txtLeituraFaseIA.Location = new System.Drawing.Point(496, 122);
-            this.txtLeituraFaseIA.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLeituraFaseIA.Name = "txtLeituraFaseIA";
-            this.txtLeituraFaseIA.Size = new System.Drawing.Size(132, 22);
-            this.txtLeituraFaseIA.TabIndex = 20;
-            this.txtLeituraFaseIA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtLeituraFaseIB
-            // 
-            this.txtLeituraFaseIB.Enabled = false;
-            this.txtLeituraFaseIB.Location = new System.Drawing.Point(636, 122);
-            this.txtLeituraFaseIB.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLeituraFaseIB.Name = "txtLeituraFaseIB";
-            this.txtLeituraFaseIB.Size = new System.Drawing.Size(132, 22);
-            this.txtLeituraFaseIB.TabIndex = 21;
-            this.txtLeituraFaseIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(532, 36);
-            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(55, 17);
-            this.label54.TabIndex = 23;
-            this.label54.Text = "Fase IA";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(679, 36);
-            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(55, 17);
-            this.label55.TabIndex = 24;
-            this.label55.Text = "Fase IB";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(820, 38);
-            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(55, 17);
-            this.label58.TabIndex = 30;
-            this.label58.Text = "Fase IC";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(820, 101);
-            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(55, 17);
-            this.label65.TabIndex = 35;
-            this.label65.Text = "Fase IC";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(679, 99);
-            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(55, 17);
-            this.label66.TabIndex = 34;
-            this.label66.Text = "Fase IB";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(532, 99);
-            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(55, 17);
-            this.label67.TabIndex = 33;
-            this.label67.Text = "Fase IA";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(391, 101);
-            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(61, 17);
-            this.label68.TabIndex = 32;
-            this.label68.Text = "Fase VC";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(259, 101);
-            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(61, 17);
-            this.label69.TabIndex = 31;
-            this.label69.Text = "Fase VB";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(113, 101);
-            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(61, 17);
-            this.label70.TabIndex = 36;
-            this.label70.Text = "Fase VA";
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(928, 236);
+            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(79, 17);
+            this.label71.TabIndex = 38;
+            this.label71.Text = "Frequência";
             // 
             // Form1
             // 
@@ -3092,7 +3092,7 @@ namespace FonteTrifasicaPID
             this.ClientSize = new System.Drawing.Size(1381, 910);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -3348,9 +3348,9 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.Button btnAplicarCorrecaoFase;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.TextBox txtLeituraFaseVC;
-        private System.Windows.Forms.TextBox txtLeituraFaseVA;
-        private System.Windows.Forms.TextBox txtLeituraFaseVB;
+        private System.Windows.Forms.TextBox txtLeituraFP3;
+        private System.Windows.Forms.TextBox txtLeituraFP1;
+        private System.Windows.Forms.TextBox txtLeituraFP2;
         private System.Windows.Forms.TextBox txtAjusteIC;
         private System.Windows.Forms.TextBox txtAjusteIA;
         private System.Windows.Forms.TextBox txtAjusteIB;
@@ -3361,15 +3361,15 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox txtLeituraFaseIC;
-        private System.Windows.Forms.TextBox txtLeituraFaseIA;
-        private System.Windows.Forms.TextBox txtLeituraFaseIB;
+        private System.Windows.Forms.TextBox txtLeituraFaseVAB;
+        private System.Windows.Forms.TextBox txtLeituraFaseVAC;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.TextBox txtFrequenciaLida;
     }
 }
 
