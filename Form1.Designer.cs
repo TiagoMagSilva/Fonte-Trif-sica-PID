@@ -29,30 +29,40 @@ namespace FonteTrifasicaPID
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series36 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series37 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series38 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chartTensao = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartCorrente = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -249,7 +259,34 @@ namespace FonteTrifasicaPID
             this.txtFP160A = new System.Windows.Forms.TextBox();
             this.txtFP160B = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.DiagramaFasorial = new System.Windows.Forms.Panel();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.btnLimparFasesGrafico = new System.Windows.Forms.Button();
+            this.cbkFaseIC = new System.Windows.Forms.CheckBox();
+            this.cbkFaseIB = new System.Windows.Forms.CheckBox();
+            this.cbkFaseIA = new System.Windows.Forms.CheckBox();
+            this.cbkFaseVC = new System.Windows.Forms.CheckBox();
+            this.cbkFaseVB = new System.Windows.Forms.CheckBox();
+            this.cbkFaseVA = new System.Windows.Forms.CheckBox();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.txtKpFases = new System.Windows.Forms.TextBox();
+            this.btnAplicarKPKIKDFases = new System.Windows.Forms.Button();
+            this.label75 = new System.Windows.Forms.Label();
+            this.txtKdFases = new System.Windows.Forms.TextBox();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.txtKiFases = new System.Windows.Forms.TextBox();
+            this.chartFases = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.txtAnguloFP3 = new System.Windows.Forms.TextBox();
+            this.txtAnguloFP1 = new System.Windows.Forms.TextBox();
+            this.txtAnguloFP2 = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.txtFrequenciaLida = new System.Windows.Forms.TextBox();
             this.label70 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
@@ -272,8 +309,19 @@ namespace FonteTrifasicaPID
             this.label57 = new System.Windows.Forms.Label();
             this.txtAjusteVC = new System.Windows.Forms.TextBox();
             this.txtAjusteVB = new System.Windows.Forms.TextBox();
-            this.txtFrequenciaLida = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
+            this.labelV2 = new System.Windows.Forms.Label();
+            this.labelV3 = new System.Windows.Forms.Label();
+            this.labelV1 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.labelI1 = new System.Windows.Forms.Label();
+            this.labelI3 = new System.Windows.Forms.Label();
+            this.labelI2 = new System.Windows.Forms.Label();
+            this.timerClearPhasor = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -307,6 +355,9 @@ namespace FonteTrifasicaPID
             this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.DiagramaFasorial.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFases)).BeginInit();
             this.groupBox15.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -314,207 +365,207 @@ namespace FonteTrifasicaPID
             // 
             this.chartTensao.BackColor = System.Drawing.Color.DarkGray;
             this.chartTensao.BorderlineColor = System.Drawing.Color.Black;
-            chartArea1.BackColor = System.Drawing.Color.DarkGray;
-            chartArea1.Name = "ChartArea1";
-            this.chartTensao.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.DarkGray;
-            legend1.Name = "Legend1";
-            this.chartTensao.Legends.Add(legend1);
+            chartArea4.BackColor = System.Drawing.Color.DarkGray;
+            chartArea4.Name = "ChartArea1";
+            this.chartTensao.ChartAreas.Add(chartArea4);
+            legend4.BackColor = System.Drawing.Color.DarkGray;
+            legend4.Name = "Legend1";
+            this.chartTensao.Legends.Add(legend4);
             this.chartTensao.Location = new System.Drawing.Point(8, 23);
             this.chartTensao.Margin = new System.Windows.Forms.Padding(4);
             this.chartTensao.Name = "chartTensao";
             this.chartTensao.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.BorderWidth = 2;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Color = System.Drawing.Color.Red;
-            series1.Legend = "Legend1";
-            series1.LegendText = "Tensão A";
-            series1.MarkerColor = System.Drawing.Color.Red;
-            series1.MarkerStep = 2;
-            series1.Name = "TensaoA";
-            series2.BorderWidth = 2;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Color = System.Drawing.Color.Yellow;
-            series2.Legend = "Legend1";
-            series2.LegendText = "Tensão B";
-            series2.MarkerColor = System.Drawing.Color.Yellow;
-            series2.Name = "TensaoB";
-            series3.BorderWidth = 2;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Color = System.Drawing.Color.Blue;
-            series3.Legend = "Legend1";
-            series3.LegendText = "Tensão C";
-            series3.MarkerColor = System.Drawing.Color.Blue;
-            series3.Name = "TensaoC";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series4.Color = System.Drawing.Color.Red;
-            series4.Legend = "Legend1";
-            series4.LegendText = "Adj. fino A";
-            series4.MarkerSize = 10;
-            series4.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
-            series4.Name = "SerieAjusteFinoR";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series5.Color = System.Drawing.Color.Yellow;
-            series5.Legend = "Legend1";
-            series5.LegendText = "Adj. fino B";
-            series5.MarkerSize = 10;
-            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
-            series5.Name = "SerieAjusteFinoS";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series6.Color = System.Drawing.Color.Blue;
-            series6.Legend = "Legend1";
-            series6.LegendText = "Adj. fino C";
-            series6.MarkerSize = 10;
-            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
-            series6.Name = "SerieAjusteFinoT";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series7.Color = System.Drawing.Color.Red;
-            series7.Legend = "Legend1";
-            series7.LegendText = "Adj. Grosso R";
-            series7.MarkerSize = 20;
-            series7.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
-            series7.Name = "SerieAjusteGrossoR";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series8.Color = System.Drawing.Color.Yellow;
-            series8.Legend = "Legend1";
-            series8.LegendText = "Adj. Grosso S";
-            series8.MarkerSize = 20;
-            series8.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
-            series8.Name = "SerieAjusteGrossoS";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series9.Color = System.Drawing.Color.Blue;
-            series9.Legend = "Legend1";
-            series9.LegendText = "Adj. Grosso T";
-            series9.MarkerSize = 20;
-            series9.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
-            series9.Name = "SerieAjusteGrossoT";
-            this.chartTensao.Series.Add(series1);
-            this.chartTensao.Series.Add(series2);
-            this.chartTensao.Series.Add(series3);
-            this.chartTensao.Series.Add(series4);
-            this.chartTensao.Series.Add(series5);
-            this.chartTensao.Series.Add(series6);
-            this.chartTensao.Series.Add(series7);
-            this.chartTensao.Series.Add(series8);
-            this.chartTensao.Series.Add(series9);
+            series25.BorderWidth = 2;
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series25.Color = System.Drawing.Color.Red;
+            series25.Legend = "Legend1";
+            series25.LegendText = "Tensão A";
+            series25.MarkerColor = System.Drawing.Color.Red;
+            series25.MarkerStep = 2;
+            series25.Name = "TensaoA";
+            series26.BorderWidth = 2;
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series26.Color = System.Drawing.Color.Yellow;
+            series26.Legend = "Legend1";
+            series26.LegendText = "Tensão B";
+            series26.MarkerColor = System.Drawing.Color.Yellow;
+            series26.Name = "TensaoB";
+            series27.BorderWidth = 2;
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series27.Color = System.Drawing.Color.Blue;
+            series27.Legend = "Legend1";
+            series27.LegendText = "Tensão C";
+            series27.MarkerColor = System.Drawing.Color.Blue;
+            series27.Name = "TensaoC";
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series28.Color = System.Drawing.Color.Red;
+            series28.Legend = "Legend1";
+            series28.LegendText = "Adj. fino A";
+            series28.MarkerSize = 10;
+            series28.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series28.Name = "SerieAjusteFinoR";
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series29.Color = System.Drawing.Color.Yellow;
+            series29.Legend = "Legend1";
+            series29.LegendText = "Adj. fino B";
+            series29.MarkerSize = 10;
+            series29.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series29.Name = "SerieAjusteFinoS";
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series30.Color = System.Drawing.Color.Blue;
+            series30.Legend = "Legend1";
+            series30.LegendText = "Adj. fino C";
+            series30.MarkerSize = 10;
+            series30.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series30.Name = "SerieAjusteFinoT";
+            series31.ChartArea = "ChartArea1";
+            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series31.Color = System.Drawing.Color.Red;
+            series31.Legend = "Legend1";
+            series31.LegendText = "Adj. Grosso R";
+            series31.MarkerSize = 20;
+            series31.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series31.Name = "SerieAjusteGrossoR";
+            series32.ChartArea = "ChartArea1";
+            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series32.Color = System.Drawing.Color.Yellow;
+            series32.Legend = "Legend1";
+            series32.LegendText = "Adj. Grosso S";
+            series32.MarkerSize = 20;
+            series32.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series32.Name = "SerieAjusteGrossoS";
+            series33.ChartArea = "ChartArea1";
+            series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series33.Color = System.Drawing.Color.Blue;
+            series33.Legend = "Legend1";
+            series33.LegendText = "Adj. Grosso T";
+            series33.MarkerSize = 20;
+            series33.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series33.Name = "SerieAjusteGrossoT";
+            this.chartTensao.Series.Add(series25);
+            this.chartTensao.Series.Add(series26);
+            this.chartTensao.Series.Add(series27);
+            this.chartTensao.Series.Add(series28);
+            this.chartTensao.Series.Add(series29);
+            this.chartTensao.Series.Add(series30);
+            this.chartTensao.Series.Add(series31);
+            this.chartTensao.Series.Add(series32);
+            this.chartTensao.Series.Add(series33);
             this.chartTensao.Size = new System.Drawing.Size(753, 372);
             this.chartTensao.TabIndex = 0;
             this.chartTensao.Text = "Tensão";
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            title1.Name = "Title1";
-            title1.Text = "Tensão";
-            this.chartTensao.Titles.Add(title1);
+            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            title4.Name = "Title1";
+            title4.Text = "Tensão";
+            this.chartTensao.Titles.Add(title4);
             // 
             // chartCorrente
             // 
             this.chartCorrente.BackColor = System.Drawing.Color.DarkGray;
-            chartArea2.BackColor = System.Drawing.Color.DarkGray;
-            chartArea2.Name = "ChartArea1";
-            this.chartCorrente.ChartAreas.Add(chartArea2);
-            legend2.BackColor = System.Drawing.Color.DarkGray;
-            legend2.Name = "Legend1";
-            this.chartCorrente.Legends.Add(legend2);
+            chartArea5.BackColor = System.Drawing.Color.DarkGray;
+            chartArea5.Name = "ChartArea1";
+            this.chartCorrente.ChartAreas.Add(chartArea5);
+            legend5.BackColor = System.Drawing.Color.DarkGray;
+            legend5.Name = "Legend1";
+            this.chartCorrente.Legends.Add(legend5);
             this.chartCorrente.Location = new System.Drawing.Point(8, 23);
             this.chartCorrente.Margin = new System.Windows.Forms.Padding(4);
             this.chartCorrente.Name = "chartCorrente";
             this.chartCorrente.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            series10.BorderWidth = 2;
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series10.Color = System.Drawing.Color.Red;
-            series10.Legend = "Legend1";
-            series10.LegendText = "Corrente A";
-            series10.MarkerColor = System.Drawing.Color.Red;
-            series10.Name = "CorrenteA";
-            series11.BorderWidth = 2;
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series11.Color = System.Drawing.Color.Yellow;
-            series11.Legend = "Legend1";
-            series11.LegendText = "Corrente B";
-            series11.MarkerColor = System.Drawing.Color.Yellow;
-            series11.Name = "CorrenteB";
-            series12.BorderWidth = 2;
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series12.Color = System.Drawing.Color.Blue;
-            series12.Legend = "Legend1";
-            series12.LegendText = "Corrente C";
-            series12.MarkerColor = System.Drawing.Color.Blue;
-            series12.Name = "CorrenteC";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series13.Color = System.Drawing.Color.Red;
-            series13.Legend = "Legend1";
-            series13.LegendText = "Adj. Fino A";
-            series13.MarkerSize = 10;
-            series13.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
-            series13.Name = "SeriaAjusteFinoCorrenteA";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series14.Color = System.Drawing.Color.Yellow;
-            series14.Legend = "Legend1";
-            series14.LegendText = "Adj. Fino B";
-            series14.MarkerSize = 10;
-            series14.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
-            series14.Name = "SeriaAjusteFinoCorrenteB";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series15.Color = System.Drawing.Color.Blue;
-            series15.Legend = "Legend1";
-            series15.LegendText = "Adj. Fino C";
-            series15.MarkerSize = 10;
-            series15.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
-            series15.Name = "SeriaAjusteFinoCorrenteC";
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series16.Color = System.Drawing.Color.Red;
-            series16.Legend = "Legend1";
-            series16.LegendText = "Adj. Grosso A";
-            series16.MarkerSize = 20;
-            series16.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
-            series16.Name = "SeriaAjusteGrosoA";
-            series17.ChartArea = "ChartArea1";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series17.Color = System.Drawing.Color.Yellow;
-            series17.Legend = "Legend1";
-            series17.LegendText = "Adj. Grosso B";
-            series17.MarkerSize = 20;
-            series17.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
-            series17.Name = "SeriaAjusteGrosoB";
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series18.Color = System.Drawing.Color.Blue;
-            series18.Legend = "Legend1";
-            series18.LegendText = "Adj. Grosso C";
-            series18.MarkerSize = 20;
-            series18.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
-            series18.Name = "SeriaAjusteGrosoC";
-            this.chartCorrente.Series.Add(series10);
-            this.chartCorrente.Series.Add(series11);
-            this.chartCorrente.Series.Add(series12);
-            this.chartCorrente.Series.Add(series13);
-            this.chartCorrente.Series.Add(series14);
-            this.chartCorrente.Series.Add(series15);
-            this.chartCorrente.Series.Add(series16);
-            this.chartCorrente.Series.Add(series17);
-            this.chartCorrente.Series.Add(series18);
+            series34.BorderWidth = 2;
+            series34.ChartArea = "ChartArea1";
+            series34.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series34.Color = System.Drawing.Color.Red;
+            series34.Legend = "Legend1";
+            series34.LegendText = "Corrente A";
+            series34.MarkerColor = System.Drawing.Color.Red;
+            series34.Name = "CorrenteA";
+            series35.BorderWidth = 2;
+            series35.ChartArea = "ChartArea1";
+            series35.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series35.Color = System.Drawing.Color.Yellow;
+            series35.Legend = "Legend1";
+            series35.LegendText = "Corrente B";
+            series35.MarkerColor = System.Drawing.Color.Yellow;
+            series35.Name = "CorrenteB";
+            series36.BorderWidth = 2;
+            series36.ChartArea = "ChartArea1";
+            series36.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series36.Color = System.Drawing.Color.Blue;
+            series36.Legend = "Legend1";
+            series36.LegendText = "Corrente C";
+            series36.MarkerColor = System.Drawing.Color.Blue;
+            series36.Name = "CorrenteC";
+            series37.ChartArea = "ChartArea1";
+            series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series37.Color = System.Drawing.Color.Red;
+            series37.Legend = "Legend1";
+            series37.LegendText = "Adj. Fino A";
+            series37.MarkerSize = 10;
+            series37.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series37.Name = "SeriaAjusteFinoCorrenteA";
+            series38.ChartArea = "ChartArea1";
+            series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series38.Color = System.Drawing.Color.Yellow;
+            series38.Legend = "Legend1";
+            series38.LegendText = "Adj. Fino B";
+            series38.MarkerSize = 10;
+            series38.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series38.Name = "SeriaAjusteFinoCorrenteB";
+            series39.ChartArea = "ChartArea1";
+            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series39.Color = System.Drawing.Color.Blue;
+            series39.Legend = "Legend1";
+            series39.LegendText = "Adj. Fino C";
+            series39.MarkerSize = 10;
+            series39.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series39.Name = "SeriaAjusteFinoCorrenteC";
+            series40.ChartArea = "ChartArea1";
+            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series40.Color = System.Drawing.Color.Red;
+            series40.Legend = "Legend1";
+            series40.LegendText = "Adj. Grosso A";
+            series40.MarkerSize = 20;
+            series40.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series40.Name = "SeriaAjusteGrosoA";
+            series41.ChartArea = "ChartArea1";
+            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series41.Color = System.Drawing.Color.Yellow;
+            series41.Legend = "Legend1";
+            series41.LegendText = "Adj. Grosso B";
+            series41.MarkerSize = 20;
+            series41.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series41.Name = "SeriaAjusteGrosoB";
+            series42.ChartArea = "ChartArea1";
+            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series42.Color = System.Drawing.Color.Blue;
+            series42.Legend = "Legend1";
+            series42.LegendText = "Adj. Grosso C";
+            series42.MarkerSize = 20;
+            series42.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series42.Name = "SeriaAjusteGrosoC";
+            this.chartCorrente.Series.Add(series34);
+            this.chartCorrente.Series.Add(series35);
+            this.chartCorrente.Series.Add(series36);
+            this.chartCorrente.Series.Add(series37);
+            this.chartCorrente.Series.Add(series38);
+            this.chartCorrente.Series.Add(series39);
+            this.chartCorrente.Series.Add(series40);
+            this.chartCorrente.Series.Add(series41);
+            this.chartCorrente.Series.Add(series42);
             this.chartCorrente.Size = new System.Drawing.Size(753, 372);
             this.chartCorrente.TabIndex = 1;
             this.chartCorrente.Text = "Tensão";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            title2.Name = "Title1";
-            title2.Text = "Corrente";
-            this.chartCorrente.Titles.Add(title2);
+            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            title5.Name = "Title1";
+            title5.Text = "Corrente";
+            this.chartCorrente.Titles.Add(title5);
             // 
             // label1
             // 
@@ -522,7 +573,7 @@ namespace FonteTrifasicaPID
             this.label1.Location = new System.Drawing.Point(5, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Kp 50k";
             // 
@@ -552,7 +603,7 @@ namespace FonteTrifasicaPID
             this.label2.Location = new System.Drawing.Point(11, 60);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Ki 50k";
             // 
@@ -572,7 +623,7 @@ namespace FonteTrifasicaPID
             this.label3.Location = new System.Drawing.Point(5, 94);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 17);
+            this.label3.Size = new System.Drawing.Size(47, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Kd 50k";
             // 
@@ -627,7 +678,7 @@ namespace FonteTrifasicaPID
             this.label28.Location = new System.Drawing.Point(143, 27);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(52, 17);
+            this.label28.Size = new System.Drawing.Size(47, 16);
             this.label28.TabIndex = 9;
             this.label28.Text = "Kp 10k";
             // 
@@ -647,7 +698,7 @@ namespace FonteTrifasicaPID
             this.label29.Location = new System.Drawing.Point(148, 60);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(47, 17);
+            this.label29.Size = new System.Drawing.Size(42, 16);
             this.label29.TabIndex = 11;
             this.label29.Text = "Ki 10k";
             // 
@@ -657,7 +708,7 @@ namespace FonteTrifasicaPID
             this.label30.Location = new System.Drawing.Point(143, 91);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(52, 17);
+            this.label30.Size = new System.Drawing.Size(47, 16);
             this.label30.TabIndex = 13;
             this.label30.Text = "Kd 10k";
             // 
@@ -712,7 +763,7 @@ namespace FonteTrifasicaPID
             this.label32.Location = new System.Drawing.Point(140, 27);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(52, 17);
+            this.label32.Size = new System.Drawing.Size(47, 16);
             this.label32.TabIndex = 15;
             this.label32.Text = "Kp 10k";
             // 
@@ -753,7 +804,7 @@ namespace FonteTrifasicaPID
             this.label33.Location = new System.Drawing.Point(145, 60);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(47, 17);
+            this.label33.Size = new System.Drawing.Size(42, 16);
             this.label33.TabIndex = 17;
             this.label33.Text = "Ki 10k";
             // 
@@ -763,7 +814,7 @@ namespace FonteTrifasicaPID
             this.label4.Location = new System.Drawing.Point(7, 27);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.Size = new System.Drawing.Size(47, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Kp 50k";
             // 
@@ -773,7 +824,7 @@ namespace FonteTrifasicaPID
             this.label34.Location = new System.Drawing.Point(140, 91);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(52, 17);
+            this.label34.Size = new System.Drawing.Size(47, 16);
             this.label34.TabIndex = 19;
             this.label34.Text = "Kd 10k";
             // 
@@ -803,7 +854,7 @@ namespace FonteTrifasicaPID
             this.label5.Location = new System.Drawing.Point(12, 59);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 17);
+            this.label5.Size = new System.Drawing.Size(42, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Ki 50k";
             // 
@@ -813,7 +864,7 @@ namespace FonteTrifasicaPID
             this.label6.Location = new System.Drawing.Point(7, 91);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 17);
+            this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 6;
             this.label6.Text = "Kd 50k";
             // 
@@ -896,7 +947,7 @@ namespace FonteTrifasicaPID
             this.label31.Location = new System.Drawing.Point(43, 101);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(60, 17);
+            this.label31.Size = new System.Drawing.Size(56, 16);
             this.label31.TabIndex = 33;
             this.label31.Text = "Dif(V/%)";
             // 
@@ -958,7 +1009,7 @@ namespace FonteTrifasicaPID
             this.label21.Location = new System.Drawing.Point(17, 165);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(90, 17);
+            this.label21.Size = new System.Drawing.Size(87, 16);
             this.label21.TabIndex = 27;
             this.label21.Text = "Tensão RMS";
             // 
@@ -981,7 +1032,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoVC.Location = new System.Drawing.Point(216, 213);
             this.cbxGraficoVC.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoVC.Name = "cbxGraficoVC";
-            this.cbxGraficoVC.Size = new System.Drawing.Size(91, 21);
+            this.cbxGraficoVC.Size = new System.Drawing.Size(88, 20);
             this.cbxGraficoVC.TabIndex = 25;
             this.cbxGraficoVC.Text = "Tensão C";
             this.cbxGraficoVC.UseVisualStyleBackColor = true;
@@ -994,7 +1045,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoVB.Location = new System.Drawing.Point(112, 213);
             this.cbxGraficoVB.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoVB.Name = "cbxGraficoVB";
-            this.cbxGraficoVB.Size = new System.Drawing.Size(91, 21);
+            this.cbxGraficoVB.Size = new System.Drawing.Size(88, 20);
             this.cbxGraficoVB.TabIndex = 24;
             this.cbxGraficoVB.Text = "Tensão B";
             this.cbxGraficoVB.UseVisualStyleBackColor = true;
@@ -1007,7 +1058,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoVA.Location = new System.Drawing.Point(8, 213);
             this.cbxGraficoVA.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoVA.Name = "cbxGraficoVA";
-            this.cbxGraficoVA.Size = new System.Drawing.Size(91, 21);
+            this.cbxGraficoVA.Size = new System.Drawing.Size(88, 20);
             this.cbxGraficoVA.TabIndex = 23;
             this.cbxGraficoVA.Text = "Tensão A";
             this.cbxGraficoVA.UseVisualStyleBackColor = true;
@@ -1118,7 +1169,7 @@ namespace FonteTrifasicaPID
             this.label11.Location = new System.Drawing.Point(13, 133);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(96, 17);
+            this.label11.Size = new System.Drawing.Size(92, 16);
             this.label11.TabIndex = 13;
             this.label11.Text = "Temp. Subida";
             // 
@@ -1138,7 +1189,7 @@ namespace FonteTrifasicaPID
             this.label10.Location = new System.Drawing.Point(25, 69);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 17);
+            this.label10.Size = new System.Drawing.Size(79, 16);
             this.label10.TabIndex = 11;
             this.label10.Text = "UnderShoot";
             // 
@@ -1159,7 +1210,7 @@ namespace FonteTrifasicaPID
             this.label9.Location = new System.Drawing.Point(33, 37);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 17);
+            this.label9.Size = new System.Drawing.Size(71, 16);
             this.label9.TabIndex = 9;
             this.label9.Text = "OverShoot";
             // 
@@ -1249,7 +1300,7 @@ namespace FonteTrifasicaPID
             this.label22.Location = new System.Drawing.Point(12, 138);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(97, 17);
+            this.label22.Size = new System.Drawing.Size(91, 16);
             this.label22.TabIndex = 38;
             this.label22.Text = "Corrente RMS";
             // 
@@ -1293,7 +1344,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIC.Location = new System.Drawing.Point(216, 213);
             this.cbxGraficoIC.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoIC.Name = "cbxGraficoIC";
-            this.cbxGraficoIC.Size = new System.Drawing.Size(98, 21);
+            this.cbxGraficoIC.Size = new System.Drawing.Size(92, 20);
             this.cbxGraficoIC.TabIndex = 28;
             this.cbxGraficoIC.Text = "Corrente C";
             this.cbxGraficoIC.UseVisualStyleBackColor = true;
@@ -1318,7 +1369,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIB.Location = new System.Drawing.Point(112, 213);
             this.cbxGraficoIB.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoIB.Name = "cbxGraficoIB";
-            this.cbxGraficoIB.Size = new System.Drawing.Size(98, 21);
+            this.cbxGraficoIB.Size = new System.Drawing.Size(92, 20);
             this.cbxGraficoIB.TabIndex = 27;
             this.cbxGraficoIB.Text = "Corrente B";
             this.cbxGraficoIB.UseVisualStyleBackColor = true;
@@ -1343,7 +1394,7 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIA.Location = new System.Drawing.Point(8, 213);
             this.cbxGraficoIA.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGraficoIA.Name = "cbxGraficoIA";
-            this.cbxGraficoIA.Size = new System.Drawing.Size(98, 21);
+            this.cbxGraficoIA.Size = new System.Drawing.Size(92, 20);
             this.cbxGraficoIA.TabIndex = 26;
             this.cbxGraficoIA.Text = "Corrente A";
             this.cbxGraficoIA.UseVisualStyleBackColor = true;
@@ -1364,7 +1415,7 @@ namespace FonteTrifasicaPID
             this.label12.Location = new System.Drawing.Point(23, 106);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 17);
+            this.label12.Size = new System.Drawing.Size(87, 16);
             this.label12.TabIndex = 13;
             this.label12.Text = "Temp. Acom.";
             // 
@@ -1385,7 +1436,7 @@ namespace FonteTrifasicaPID
             this.label13.Location = new System.Drawing.Point(25, 74);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 17);
+            this.label13.Size = new System.Drawing.Size(79, 16);
             this.label13.TabIndex = 11;
             this.label13.Text = "UnderShoot";
             // 
@@ -1416,7 +1467,7 @@ namespace FonteTrifasicaPID
             this.label14.Location = new System.Drawing.Point(33, 42);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 17);
+            this.label14.Size = new System.Drawing.Size(71, 16);
             this.label14.TabIndex = 9;
             this.label14.Text = "OverShoot";
             // 
@@ -1499,7 +1550,7 @@ namespace FonteTrifasicaPID
             this.label8.Location = new System.Drawing.Point(16, 117);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 17);
+            this.label8.Size = new System.Drawing.Size(71, 16);
             this.label8.TabIndex = 16;
             this.label8.Text = "Baud Rate";
             // 
@@ -1509,7 +1560,7 @@ namespace FonteTrifasicaPID
             this.label7.Location = new System.Drawing.Point(16, 18);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 17);
+            this.label7.Size = new System.Drawing.Size(39, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "Porta";
             // 
@@ -1552,7 +1603,7 @@ namespace FonteTrifasicaPID
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.cbxBaudRate);
-            this.groupBox5.Location = new System.Drawing.Point(1189, 7);
+            this.groupBox5.Location = new System.Drawing.Point(1226, 40);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
@@ -1574,7 +1625,7 @@ namespace FonteTrifasicaPID
             this.groupBox8.Controls.Add(this.label23);
             this.groupBox8.Controls.Add(this.label24);
             this.groupBox8.Controls.Add(this.cbxFatorDePotencia);
-            this.groupBox8.Location = new System.Drawing.Point(1189, 241);
+            this.groupBox8.Location = new System.Drawing.Point(1226, 274);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
@@ -1589,7 +1640,7 @@ namespace FonteTrifasicaPID
             this.label27.Location = new System.Drawing.Point(16, 186);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 17);
+            this.label27.Size = new System.Drawing.Size(54, 16);
             this.label27.TabIndex = 24;
             this.label27.Text = "Fase (º)";
             // 
@@ -1611,7 +1662,7 @@ namespace FonteTrifasicaPID
             this.label26.Location = new System.Drawing.Point(16, 130);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(112, 17);
+            this.label26.Size = new System.Drawing.Size(104, 16);
             this.label26.TabIndex = 22;
             this.label26.Text = "Frequência (HZ)";
             // 
@@ -1630,7 +1681,7 @@ namespace FonteTrifasicaPID
             this.label25.Location = new System.Drawing.Point(16, 78);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(86, 17);
+            this.label25.Size = new System.Drawing.Size(78, 16);
             this.label25.TabIndex = 20;
             this.label25.Text = "Corrente (A)";
             // 
@@ -1673,7 +1724,7 @@ namespace FonteTrifasicaPID
             this.label23.Location = new System.Drawing.Point(16, 23);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(79, 17);
+            this.label23.Size = new System.Drawing.Size(74, 16);
             this.label23.TabIndex = 14;
             this.label23.Text = "Tensão (V)";
             // 
@@ -1683,7 +1734,7 @@ namespace FonteTrifasicaPID
             this.label24.Location = new System.Drawing.Point(16, 240);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(120, 17);
+            this.label24.Size = new System.Drawing.Size(113, 16);
             this.label24.TabIndex = 16;
             this.label24.Text = "Fator de Potência";
             // 
@@ -1732,7 +1783,7 @@ namespace FonteTrifasicaPID
             // 
             this.groupBox9.Controls.Add(this.btnPararSintetização);
             this.groupBox9.Controls.Add(this.btnIniciarSintetização);
-            this.groupBox9.Location = new System.Drawing.Point(1189, 594);
+            this.groupBox9.Location = new System.Drawing.Point(1226, 628);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
@@ -1751,21 +1802,18 @@ namespace FonteTrifasicaPID
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1355, 879);
+            this.tabControl1.Size = new System.Drawing.Size(1202, 879);
             this.tabControl1.TabIndex = 28;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Controls.Add(this.groupBox9);
             this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.groupBox8);
-            this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1347, 850);
+            this.tabPage1.Size = new System.Drawing.Size(1194, 850);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Config";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1779,7 +1827,7 @@ namespace FonteTrifasicaPID
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1347, 850);
+            this.tabPage2.Size = new System.Drawing.Size(1194, 850);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Configurações Manuais";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1866,7 +1914,7 @@ namespace FonteTrifasicaPID
             this.label46.Location = new System.Drawing.Point(435, 20);
             this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(97, 17);
+            this.label46.Size = new System.Drawing.Size(91, 16);
             this.label46.TabIndex = 21;
             this.label46.Text = "Corrente RMS";
             // 
@@ -1877,7 +1925,7 @@ namespace FonteTrifasicaPID
             this.checkBox1.Location = new System.Drawing.Point(13, 187);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 21);
+            this.checkBox1.Size = new System.Drawing.Size(100, 20);
             this.checkBox1.TabIndex = 13;
             this.checkBox1.Text = "Auto aplicar";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -1899,7 +1947,7 @@ namespace FonteTrifasicaPID
             this.label40.Location = new System.Drawing.Point(84, 20);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(100, 17);
+            this.label40.Size = new System.Drawing.Size(95, 16);
             this.label40.TabIndex = 8;
             this.label40.Text = "DigPot Grosso";
             // 
@@ -1920,7 +1968,7 @@ namespace FonteTrifasicaPID
             this.label41.Location = new System.Drawing.Point(9, 106);
             this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(18, 17);
+            this.label41.Size = new System.Drawing.Size(17, 16);
             this.label41.TabIndex = 12;
             this.label41.Text = "Ic";
             // 
@@ -1955,7 +2003,7 @@ namespace FonteTrifasicaPID
             this.label42.Location = new System.Drawing.Point(9, 74);
             this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(19, 17);
+            this.label42.Size = new System.Drawing.Size(18, 16);
             this.label42.TabIndex = 11;
             this.label42.Text = "Ib";
             // 
@@ -1979,7 +2027,7 @@ namespace FonteTrifasicaPID
             this.label43.Location = new System.Drawing.Point(9, 42);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(19, 17);
+            this.label43.Size = new System.Drawing.Size(18, 16);
             this.label43.TabIndex = 10;
             this.label43.Text = "Ia";
             // 
@@ -2003,7 +2051,7 @@ namespace FonteTrifasicaPID
             this.label44.Location = new System.Drawing.Point(273, 20);
             this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(81, 17);
+            this.label44.Size = new System.Drawing.Size(77, 16);
             this.label44.TabIndex = 9;
             this.label44.Text = "DigPot Fino";
             // 
@@ -2106,7 +2154,7 @@ namespace FonteTrifasicaPID
             this.label45.Location = new System.Drawing.Point(437, 20);
             this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(90, 17);
+            this.label45.Size = new System.Drawing.Size(87, 16);
             this.label45.TabIndex = 17;
             this.label45.Text = "Tensão RMS";
             // 
@@ -2128,7 +2176,7 @@ namespace FonteTrifasicaPID
             this.cbkAutoAplicar.Location = new System.Drawing.Point(13, 187);
             this.cbkAutoAplicar.Margin = new System.Windows.Forms.Padding(4);
             this.cbkAutoAplicar.Name = "cbkAutoAplicar";
-            this.cbkAutoAplicar.Size = new System.Drawing.Size(105, 21);
+            this.cbkAutoAplicar.Size = new System.Drawing.Size(100, 20);
             this.cbkAutoAplicar.TabIndex = 13;
             this.cbkAutoAplicar.Text = "Auto aplicar";
             this.cbkAutoAplicar.UseVisualStyleBackColor = true;
@@ -2150,7 +2198,7 @@ namespace FonteTrifasicaPID
             this.label35.Location = new System.Drawing.Point(84, 20);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(100, 17);
+            this.label35.Size = new System.Drawing.Size(95, 16);
             this.label35.TabIndex = 8;
             this.label35.Text = "DigPot Grosso";
             // 
@@ -2171,7 +2219,7 @@ namespace FonteTrifasicaPID
             this.label39.Location = new System.Drawing.Point(9, 106);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(24, 17);
+            this.label39.Size = new System.Drawing.Size(23, 16);
             this.label39.TabIndex = 12;
             this.label39.Text = "Vc";
             // 
@@ -2195,7 +2243,7 @@ namespace FonteTrifasicaPID
             this.label38.Location = new System.Drawing.Point(9, 74);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(25, 17);
+            this.label38.Size = new System.Drawing.Size(24, 16);
             this.label38.TabIndex = 11;
             this.label38.Text = "Vb";
             // 
@@ -2219,7 +2267,7 @@ namespace FonteTrifasicaPID
             this.label37.Location = new System.Drawing.Point(9, 42);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(25, 17);
+            this.label37.Size = new System.Drawing.Size(24, 16);
             this.label37.TabIndex = 10;
             this.label37.Text = "Va";
             // 
@@ -2243,7 +2291,7 @@ namespace FonteTrifasicaPID
             this.label36.Location = new System.Drawing.Point(273, 20);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(81, 17);
+            this.label36.Size = new System.Drawing.Size(77, 16);
             this.label36.TabIndex = 9;
             this.label36.Text = "DigPot Fino";
             // 
@@ -2319,7 +2367,7 @@ namespace FonteTrifasicaPID
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1347, 850);
+            this.tabPage3.Size = new System.Drawing.Size(1194, 850);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Ajuste FP";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2346,7 +2394,7 @@ namespace FonteTrifasicaPID
             this.groupBox14.Controls.Add(this.txtFP150C);
             this.groupBox14.Controls.Add(this.txtFP150A);
             this.groupBox14.Controls.Add(this.txtFP150B);
-            this.groupBox14.Location = new System.Drawing.Point(671, 54);
+            this.groupBox14.Location = new System.Drawing.Point(47, 300);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(4);
@@ -2394,7 +2442,7 @@ namespace FonteTrifasicaPID
             this.label59.Location = new System.Drawing.Point(16, 126);
             this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(54, 17);
+            this.label59.Size = new System.Drawing.Size(52, 16);
             this.label59.TabIndex = 14;
             this.label59.Text = "FP Cap";
             // 
@@ -2456,7 +2504,7 @@ namespace FonteTrifasicaPID
             this.label60.Location = new System.Drawing.Point(16, 94);
             this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(48, 17);
+            this.label60.Size = new System.Drawing.Size(45, 16);
             this.label60.TabIndex = 10;
             this.label60.Text = "FP Ind";
             // 
@@ -2496,7 +2544,7 @@ namespace FonteTrifasicaPID
             this.label61.Location = new System.Drawing.Point(16, 62);
             this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(37, 17);
+            this.label61.Size = new System.Drawing.Size(34, 16);
             this.label61.TabIndex = 6;
             this.label61.Text = "FP 1";
             // 
@@ -2506,7 +2554,7 @@ namespace FonteTrifasicaPID
             this.label62.Location = new System.Drawing.Point(403, 38);
             this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(52, 17);
+            this.label62.Size = new System.Drawing.Size(50, 16);
             this.label62.TabIndex = 5;
             this.label62.Text = "Fase C";
             // 
@@ -2516,7 +2564,7 @@ namespace FonteTrifasicaPID
             this.label63.Location = new System.Drawing.Point(260, 38);
             this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(52, 17);
+            this.label63.Size = new System.Drawing.Size(50, 16);
             this.label63.TabIndex = 4;
             this.label63.Text = "Fase B";
             // 
@@ -2526,7 +2574,7 @@ namespace FonteTrifasicaPID
             this.label64.Location = new System.Drawing.Point(121, 38);
             this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(52, 17);
+            this.label64.Size = new System.Drawing.Size(50, 16);
             this.label64.TabIndex = 3;
             this.label64.Text = "Fase A";
             // 
@@ -2652,7 +2700,7 @@ namespace FonteTrifasicaPID
             this.label52.Location = new System.Drawing.Point(15, 126);
             this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(54, 17);
+            this.label52.Size = new System.Drawing.Size(52, 16);
             this.label52.TabIndex = 14;
             this.label52.Text = "FP Cap";
             // 
@@ -2692,7 +2740,7 @@ namespace FonteTrifasicaPID
             this.label51.Location = new System.Drawing.Point(15, 94);
             this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(48, 17);
+            this.label51.Size = new System.Drawing.Size(45, 16);
             this.label51.TabIndex = 10;
             this.label51.Text = "FP Ind";
             // 
@@ -2732,7 +2780,7 @@ namespace FonteTrifasicaPID
             this.label50.Location = new System.Drawing.Point(15, 62);
             this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(37, 17);
+            this.label50.Size = new System.Drawing.Size(34, 16);
             this.label50.TabIndex = 6;
             this.label50.Text = "FP 1";
             // 
@@ -2742,7 +2790,7 @@ namespace FonteTrifasicaPID
             this.label49.Location = new System.Drawing.Point(401, 38);
             this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(52, 17);
+            this.label49.Size = new System.Drawing.Size(50, 16);
             this.label49.TabIndex = 5;
             this.label49.Text = "Fase C";
             // 
@@ -2752,7 +2800,7 @@ namespace FonteTrifasicaPID
             this.label48.Location = new System.Drawing.Point(259, 38);
             this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(52, 17);
+            this.label48.Size = new System.Drawing.Size(50, 16);
             this.label48.TabIndex = 4;
             this.label48.Text = "Fase B";
             // 
@@ -2762,7 +2810,7 @@ namespace FonteTrifasicaPID
             this.label47.Location = new System.Drawing.Point(120, 38);
             this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(52, 17);
+            this.label47.Size = new System.Drawing.Size(50, 16);
             this.label47.TabIndex = 3;
             this.label47.Text = "Fase A";
             // 
@@ -2798,17 +2846,330 @@ namespace FonteTrifasicaPID
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label82);
+            this.tabPage4.Controls.Add(this.label83);
+            this.tabPage4.Controls.Add(this.label84);
+            this.tabPage4.Controls.Add(this.labelI1);
+            this.tabPage4.Controls.Add(this.labelI3);
+            this.tabPage4.Controls.Add(this.labelI2);
+            this.tabPage4.Controls.Add(this.label81);
+            this.tabPage4.Controls.Add(this.label80);
+            this.tabPage4.Controls.Add(this.label79);
+            this.tabPage4.Controls.Add(this.labelV1);
+            this.tabPage4.Controls.Add(this.labelV3);
+            this.tabPage4.Controls.Add(this.labelV2);
+            this.tabPage4.Controls.Add(this.DiagramaFasorial);
+            this.tabPage4.Controls.Add(this.btnLimparFasesGrafico);
+            this.tabPage4.Controls.Add(this.cbkFaseIC);
+            this.tabPage4.Controls.Add(this.cbkFaseIB);
+            this.tabPage4.Controls.Add(this.cbkFaseIA);
+            this.tabPage4.Controls.Add(this.cbkFaseVC);
+            this.tabPage4.Controls.Add(this.cbkFaseVB);
+            this.tabPage4.Controls.Add(this.cbkFaseVA);
+            this.tabPage4.Controls.Add(this.groupBox16);
+            this.tabPage4.Controls.Add(this.chartFases);
             this.tabPage4.Controls.Add(this.groupBox15);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1347, 850);
+            this.tabPage4.Size = new System.Drawing.Size(1194, 850);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ajuste de Fase";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // DiagramaFasorial
+            // 
+            this.DiagramaFasorial.BackColor = System.Drawing.Color.SlateGray;
+            this.DiagramaFasorial.Controls.Add(this.label78);
+            this.DiagramaFasorial.Controls.Add(this.label74);
+            this.DiagramaFasorial.Controls.Add(this.label73);
+            this.DiagramaFasorial.Controls.Add(this.label72);
+            this.DiagramaFasorial.Location = new System.Drawing.Point(818, 234);
+            this.DiagramaFasorial.Name = "DiagramaFasorial";
+            this.DiagramaFasorial.Size = new System.Drawing.Size(350, 350);
+            this.DiagramaFasorial.TabIndex = 39;
+            this.DiagramaFasorial.Paint += new System.Windows.Forms.PaintEventHandler(this.DiagramaFasorial_Paint);
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(156, 304);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(32, 16);
+            this.label78.TabIndex = 40;
+            this.label78.Text = "270°";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(159, 28);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(25, 16);
+            this.label74.TabIndex = 40;
+            this.label74.Text = "90°";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(0, 169);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(32, 16);
+            this.label73.TabIndex = 1;
+            this.label73.Text = "180°";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(311, 169);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(18, 16);
+            this.label72.TabIndex = 0;
+            this.label72.Text = "0°";
+            // 
+            // btnLimparFasesGrafico
+            // 
+            this.btnLimparFasesGrafico.Location = new System.Drawing.Point(695, 678);
+            this.btnLimparFasesGrafico.Name = "btnLimparFasesGrafico";
+            this.btnLimparFasesGrafico.Size = new System.Drawing.Size(94, 33);
+            this.btnLimparFasesGrafico.TabIndex = 38;
+            this.btnLimparFasesGrafico.Text = "Limpar";
+            this.btnLimparFasesGrafico.UseVisualStyleBackColor = true;
+            this.btnLimparFasesGrafico.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cbkFaseIC
+            // 
+            this.cbkFaseIC.AutoSize = true;
+            this.cbkFaseIC.Checked = true;
+            this.cbkFaseIC.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbkFaseIC.Location = new System.Drawing.Point(555, 748);
+            this.cbkFaseIC.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkFaseIC.Name = "cbkFaseIC";
+            this.cbkFaseIC.Size = new System.Drawing.Size(75, 20);
+            this.cbkFaseIC.TabIndex = 37;
+            this.cbkFaseIC.Text = "Fase IC";
+            this.cbkFaseIC.UseVisualStyleBackColor = true;
+            // 
+            // cbkFaseIB
+            // 
+            this.cbkFaseIB.AutoSize = true;
+            this.cbkFaseIB.Checked = true;
+            this.cbkFaseIB.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbkFaseIB.Location = new System.Drawing.Point(451, 748);
+            this.cbkFaseIB.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkFaseIB.Name = "cbkFaseIB";
+            this.cbkFaseIB.Size = new System.Drawing.Size(75, 20);
+            this.cbkFaseIB.TabIndex = 36;
+            this.cbkFaseIB.Text = "Fase IB";
+            this.cbkFaseIB.UseVisualStyleBackColor = true;
+            // 
+            // cbkFaseIA
+            // 
+            this.cbkFaseIA.AutoSize = true;
+            this.cbkFaseIA.Checked = true;
+            this.cbkFaseIA.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbkFaseIA.Location = new System.Drawing.Point(347, 748);
+            this.cbkFaseIA.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkFaseIA.Name = "cbkFaseIA";
+            this.cbkFaseIA.Size = new System.Drawing.Size(75, 20);
+            this.cbkFaseIA.TabIndex = 35;
+            this.cbkFaseIA.Text = "Fase IA";
+            this.cbkFaseIA.UseVisualStyleBackColor = true;
+            // 
+            // cbkFaseVC
+            // 
+            this.cbkFaseVC.AutoSize = true;
+            this.cbkFaseVC.Checked = true;
+            this.cbkFaseVC.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbkFaseVC.Location = new System.Drawing.Point(555, 719);
+            this.cbkFaseVC.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkFaseVC.Name = "cbkFaseVC";
+            this.cbkFaseVC.Size = new System.Drawing.Size(81, 20);
+            this.cbkFaseVC.TabIndex = 34;
+            this.cbkFaseVC.Text = "Fase VC";
+            this.cbkFaseVC.UseVisualStyleBackColor = true;
+            // 
+            // cbkFaseVB
+            // 
+            this.cbkFaseVB.AutoSize = true;
+            this.cbkFaseVB.Checked = true;
+            this.cbkFaseVB.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbkFaseVB.Location = new System.Drawing.Point(451, 719);
+            this.cbkFaseVB.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkFaseVB.Name = "cbkFaseVB";
+            this.cbkFaseVB.Size = new System.Drawing.Size(81, 20);
+            this.cbkFaseVB.TabIndex = 33;
+            this.cbkFaseVB.Text = "Fase VB";
+            this.cbkFaseVB.UseVisualStyleBackColor = true;
+            // 
+            // cbkFaseVA
+            // 
+            this.cbkFaseVA.AutoSize = true;
+            this.cbkFaseVA.Checked = true;
+            this.cbkFaseVA.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbkFaseVA.Location = new System.Drawing.Point(347, 719);
+            this.cbkFaseVA.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkFaseVA.Name = "cbkFaseVA";
+            this.cbkFaseVA.Size = new System.Drawing.Size(81, 20);
+            this.cbkFaseVA.TabIndex = 32;
+            this.cbkFaseVA.Text = "Fase VA";
+            this.cbkFaseVA.UseVisualStyleBackColor = true;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.txtKpFases);
+            this.groupBox16.Controls.Add(this.btnAplicarKPKIKDFases);
+            this.groupBox16.Controls.Add(this.label75);
+            this.groupBox16.Controls.Add(this.txtKdFases);
+            this.groupBox16.Controls.Add(this.label76);
+            this.groupBox16.Controls.Add(this.label77);
+            this.groupBox16.Controls.Add(this.txtKiFases);
+            this.groupBox16.Location = new System.Drawing.Point(34, 709);
+            this.groupBox16.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox16.Size = new System.Drawing.Size(282, 123);
+            this.groupBox16.TabIndex = 31;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Controlador PID (Fases)";
+            // 
+            // txtKpFases
+            // 
+            this.txtKpFases.Location = new System.Drawing.Point(68, 23);
+            this.txtKpFases.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKpFases.Name = "txtKpFases";
+            this.txtKpFases.Size = new System.Drawing.Size(63, 22);
+            this.txtKpFases.TabIndex = 3;
+            this.txtKpFases.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAplicarKPKIKDFases
+            // 
+            this.btnAplicarKPKIKDFases.Location = new System.Drawing.Point(162, 22);
+            this.btnAplicarKPKIKDFases.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAplicarKPKIKDFases.Name = "btnAplicarKPKIKDFases";
+            this.btnAplicarKPKIKDFases.Size = new System.Drawing.Size(100, 89);
+            this.btnAplicarKPKIKDFases.TabIndex = 8;
+            this.btnAplicarKPKIKDFases.Text = "Aplicar";
+            this.btnAplicarKPKIKDFases.UseVisualStyleBackColor = true;
+            this.btnAplicarKPKIKDFases.Click += new System.EventHandler(this.btnAplicarKPKIKDFases_Click);
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(35, 26);
+            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(23, 16);
+            this.label75.TabIndex = 2;
+            this.label75.Text = "Kp";
+            // 
+            // txtKdFases
+            // 
+            this.txtKdFases.Location = new System.Drawing.Point(68, 89);
+            this.txtKdFases.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKdFases.Name = "txtKdFases";
+            this.txtKdFases.Size = new System.Drawing.Size(63, 22);
+            this.txtKdFases.TabIndex = 7;
+            this.txtKdFases.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(35, 58);
+            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(18, 16);
+            this.label76.TabIndex = 4;
+            this.label76.Text = "Ki";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(35, 92);
+            this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(23, 16);
+            this.label77.TabIndex = 6;
+            this.label77.Text = "Kd";
+            // 
+            // txtKiFases
+            // 
+            this.txtKiFases.Location = new System.Drawing.Point(68, 57);
+            this.txtKiFases.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKiFases.Name = "txtKiFases";
+            this.txtKiFases.Size = new System.Drawing.Size(63, 22);
+            this.txtKiFases.TabIndex = 5;
+            this.txtKiFases.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // chartFases
+            // 
+            this.chartFases.BackColor = System.Drawing.Color.DarkGray;
+            this.chartFases.BorderlineColor = System.Drawing.Color.Black;
+            chartArea6.BackColor = System.Drawing.Color.DarkGray;
+            chartArea6.Name = "ChartArea1";
+            this.chartFases.ChartAreas.Add(chartArea6);
+            legend6.BackColor = System.Drawing.Color.DarkGray;
+            legend6.Name = "Legend1";
+            this.chartFases.Legends.Add(legend6);
+            this.chartFases.Location = new System.Drawing.Point(17, 234);
+            this.chartFases.Margin = new System.Windows.Forms.Padding(4);
+            this.chartFases.Name = "chartFases";
+            this.chartFases.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series43.BorderColor = System.Drawing.Color.Red;
+            series43.ChartArea = "ChartArea1";
+            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series43.Color = System.Drawing.Color.Red;
+            series43.Legend = "Legend1";
+            series43.MarkerColor = System.Drawing.Color.Red;
+            series43.Name = "FaseVA";
+            series44.ChartArea = "ChartArea1";
+            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series44.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series44.Legend = "Legend1";
+            series44.Name = "FaseVB";
+            series45.ChartArea = "ChartArea1";
+            series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series45.Color = System.Drawing.Color.Blue;
+            series45.Legend = "Legend1";
+            series45.Name = "FaseVC";
+            series46.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            series46.ChartArea = "ChartArea1";
+            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series46.Color = System.Drawing.Color.Red;
+            series46.Legend = "Legend1";
+            series46.Name = "FaseIA";
+            series47.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            series47.ChartArea = "ChartArea1";
+            series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series47.Color = System.Drawing.Color.Yellow;
+            series47.Legend = "Legend1";
+            series47.Name = "FaseIB";
+            series48.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            series48.ChartArea = "ChartArea1";
+            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series48.Color = System.Drawing.Color.Blue;
+            series48.Legend = "Legend1";
+            series48.Name = "FaseIC";
+            this.chartFases.Series.Add(series43);
+            this.chartFases.Series.Add(series44);
+            this.chartFases.Series.Add(series45);
+            this.chartFases.Series.Add(series46);
+            this.chartFases.Series.Add(series47);
+            this.chartFases.Series.Add(series48);
+            this.chartFases.Size = new System.Drawing.Size(775, 437);
+            this.chartFases.TabIndex = 30;
+            this.chartFases.Text = "Fases";
+            title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            title6.Name = "Title1";
+            title6.Text = "Fases (°)";
+            this.chartFases.Titles.Add(title6);
+            this.chartFases.Click += new System.EventHandler(this.chart1_Click);
+            // 
             // groupBox15
             // 
+            this.groupBox15.Controls.Add(this.label65);
+            this.groupBox15.Controls.Add(this.txtAnguloFP3);
+            this.groupBox15.Controls.Add(this.txtAnguloFP1);
+            this.groupBox15.Controls.Add(this.txtAnguloFP2);
             this.groupBox15.Controls.Add(this.label71);
             this.groupBox15.Controls.Add(this.txtFrequenciaLida);
             this.groupBox15.Controls.Add(this.label70);
@@ -2837,95 +3198,156 @@ namespace FonteTrifasicaPID
             this.groupBox15.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox15.Size = new System.Drawing.Size(1055, 328);
+            this.groupBox15.Size = new System.Drawing.Size(1055, 186);
             this.groupBox15.TabIndex = 29;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Fase individual";
             // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(7, 153);
+            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(49, 16);
+            this.label65.TabIndex = 42;
+            this.label65.Text = "Ângulo";
+            this.label65.Click += new System.EventHandler(this.label65_Click);
+            // 
+            // txtAnguloFP3
+            // 
+            this.txtAnguloFP3.Enabled = false;
+            this.txtAnguloFP3.Location = new System.Drawing.Point(346, 150);
+            this.txtAnguloFP3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnguloFP3.Name = "txtAnguloFP3";
+            this.txtAnguloFP3.Size = new System.Drawing.Size(132, 22);
+            this.txtAnguloFP3.TabIndex = 41;
+            this.txtAnguloFP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtAnguloFP1
+            // 
+            this.txtAnguloFP1.Enabled = false;
+            this.txtAnguloFP1.Location = new System.Drawing.Point(66, 150);
+            this.txtAnguloFP1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnguloFP1.Name = "txtAnguloFP1";
+            this.txtAnguloFP1.Size = new System.Drawing.Size(132, 22);
+            this.txtAnguloFP1.TabIndex = 39;
+            this.txtAnguloFP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtAnguloFP2
+            // 
+            this.txtAnguloFP2.Enabled = false;
+            this.txtAnguloFP2.Location = new System.Drawing.Point(206, 150);
+            this.txtAnguloFP2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnguloFP2.Name = "txtAnguloFP2";
+            this.txtAnguloFP2.Size = new System.Drawing.Size(132, 22);
+            this.txtAnguloFP2.TabIndex = 40;
+            this.txtAnguloFP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(927, 99);
+            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(75, 16);
+            this.label71.TabIndex = 38;
+            this.label71.Text = "Frequência";
+            // 
+            // txtFrequenciaLida
+            // 
+            this.txtFrequenciaLida.Enabled = false;
+            this.txtFrequenciaLida.Location = new System.Drawing.Point(905, 120);
+            this.txtFrequenciaLida.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFrequenciaLida.Name = "txtFrequenciaLida";
+            this.txtFrequenciaLida.Size = new System.Drawing.Size(132, 22);
+            this.txtFrequenciaLida.TabIndex = 37;
+            this.txtFrequenciaLida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(104, 236);
+            this.label70.Location = new System.Drawing.Point(103, 99);
             this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(77, 17);
+            this.label70.Size = new System.Drawing.Size(72, 16);
             this.label70.TabIndex = 36;
             this.label70.Text = "FP Canal 1";
             // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(717, 236);
+            this.label66.Location = new System.Drawing.Point(716, 99);
             this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(70, 17);
+            this.label66.Size = new System.Drawing.Size(68, 16);
             this.label66.TabIndex = 34;
             this.label66.Text = "Fase VAC";
             // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(585, 236);
+            this.label67.Location = new System.Drawing.Point(584, 99);
             this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(70, 17);
+            this.label67.Size = new System.Drawing.Size(68, 16);
             this.label67.TabIndex = 33;
             this.label67.Text = "Fase VAB";
             // 
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(382, 236);
+            this.label68.Location = new System.Drawing.Point(381, 99);
             this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(77, 17);
+            this.label68.Size = new System.Drawing.Size(72, 16);
             this.label68.TabIndex = 32;
             this.label68.Text = "FP Canal 3";
             // 
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(238, 236);
+            this.label69.Location = new System.Drawing.Point(237, 99);
             this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(77, 17);
+            this.label69.Size = new System.Drawing.Size(72, 16);
             this.label69.TabIndex = 31;
             this.label69.Text = "FP Canal 2";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(734, 70);
+            this.label58.Location = new System.Drawing.Point(732, 25);
             this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(55, 17);
+            this.label58.Size = new System.Drawing.Size(53, 16);
             this.label58.TabIndex = 30;
             this.label58.Text = "Fase IC";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(593, 68);
+            this.label55.Location = new System.Drawing.Point(591, 23);
             this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(55, 17);
+            this.label55.Size = new System.Drawing.Size(53, 16);
             this.label55.TabIndex = 24;
             this.label55.Text = "Fase IB";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(446, 68);
+            this.label54.Location = new System.Drawing.Point(444, 23);
             this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(55, 17);
+            this.label54.Size = new System.Drawing.Size(53, 16);
             this.label54.TabIndex = 23;
             this.label54.Text = "Fase IA";
             // 
             // txtLeituraFaseVAB
             // 
             this.txtLeituraFaseVAB.Enabled = false;
-            this.txtLeituraFaseVAB.Location = new System.Drawing.Point(549, 257);
+            this.txtLeituraFaseVAB.Location = new System.Drawing.Point(548, 120);
             this.txtLeituraFaseVAB.Margin = new System.Windows.Forms.Padding(4);
             this.txtLeituraFaseVAB.Name = "txtLeituraFaseVAB";
             this.txtLeituraFaseVAB.Size = new System.Drawing.Size(132, 22);
@@ -2935,7 +3357,7 @@ namespace FonteTrifasicaPID
             // txtLeituraFaseVAC
             // 
             this.txtLeituraFaseVAC.Enabled = false;
-            this.txtLeituraFaseVAC.Location = new System.Drawing.Point(689, 257);
+            this.txtLeituraFaseVAC.Location = new System.Drawing.Point(688, 120);
             this.txtLeituraFaseVAC.Margin = new System.Windows.Forms.Padding(4);
             this.txtLeituraFaseVAC.Name = "txtLeituraFaseVAC";
             this.txtLeituraFaseVAC.Size = new System.Drawing.Size(132, 22);
@@ -2944,7 +3366,7 @@ namespace FonteTrifasicaPID
             // 
             // btnAplicarCorrecaoFase
             // 
-            this.btnAplicarCorrecaoFase.Location = new System.Drawing.Point(830, 86);
+            this.btnAplicarCorrecaoFase.Location = new System.Drawing.Point(828, 41);
             this.btnAplicarCorrecaoFase.Margin = new System.Windows.Forms.Padding(4);
             this.btnAplicarCorrecaoFase.Name = "btnAplicarCorrecaoFase";
             this.btnAplicarCorrecaoFase.Size = new System.Drawing.Size(100, 28);
@@ -2956,10 +3378,10 @@ namespace FonteTrifasicaPID
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(24, 260);
+            this.label53.Location = new System.Drawing.Point(23, 123);
             this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(35, 17);
+            this.label53.Size = new System.Drawing.Size(33, 16);
             this.label53.TabIndex = 14;
             this.label53.Text = "Lido";
             this.label53.Click += new System.EventHandler(this.label53_Click);
@@ -2967,7 +3389,7 @@ namespace FonteTrifasicaPID
             // txtLeituraFP3
             // 
             this.txtLeituraFP3.Enabled = false;
-            this.txtLeituraFP3.Location = new System.Drawing.Point(347, 257);
+            this.txtLeituraFP3.Location = new System.Drawing.Point(346, 120);
             this.txtLeituraFP3.Margin = new System.Windows.Forms.Padding(4);
             this.txtLeituraFP3.Name = "txtLeituraFP3";
             this.txtLeituraFP3.Size = new System.Drawing.Size(132, 22);
@@ -2977,7 +3399,7 @@ namespace FonteTrifasicaPID
             // txtLeituraFP1
             // 
             this.txtLeituraFP1.Enabled = false;
-            this.txtLeituraFP1.Location = new System.Drawing.Point(67, 257);
+            this.txtLeituraFP1.Location = new System.Drawing.Point(66, 120);
             this.txtLeituraFP1.Margin = new System.Windows.Forms.Padding(4);
             this.txtLeituraFP1.Name = "txtLeituraFP1";
             this.txtLeituraFP1.Size = new System.Drawing.Size(132, 22);
@@ -2987,7 +3409,7 @@ namespace FonteTrifasicaPID
             // txtLeituraFP2
             // 
             this.txtLeituraFP2.Enabled = false;
-            this.txtLeituraFP2.Location = new System.Drawing.Point(207, 257);
+            this.txtLeituraFP2.Location = new System.Drawing.Point(206, 120);
             this.txtLeituraFP2.Margin = new System.Windows.Forms.Padding(4);
             this.txtLeituraFP2.Name = "txtLeituraFP2";
             this.txtLeituraFP2.Size = new System.Drawing.Size(132, 22);
@@ -2996,101 +3418,203 @@ namespace FonteTrifasicaPID
             // 
             // txtAjusteIC
             // 
-            this.txtAjusteIC.Location = new System.Drawing.Point(690, 89);
+            this.txtAjusteIC.Location = new System.Drawing.Point(688, 44);
             this.txtAjusteIC.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteIC.Name = "txtAjusteIC";
             this.txtAjusteIC.Size = new System.Drawing.Size(132, 22);
             this.txtAjusteIC.TabIndex = 9;
+            this.txtAjusteIC.Text = "0";
             this.txtAjusteIC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAjusteIC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAjusteVB_KeyPress);
             // 
             // txtAjusteIA
             // 
-            this.txtAjusteIA.Location = new System.Drawing.Point(410, 89);
+            this.txtAjusteIA.Location = new System.Drawing.Point(408, 44);
             this.txtAjusteIA.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteIA.Name = "txtAjusteIA";
             this.txtAjusteIA.Size = new System.Drawing.Size(132, 22);
             this.txtAjusteIA.TabIndex = 7;
+            this.txtAjusteIA.Text = "0";
             this.txtAjusteIA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAjusteIA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAjusteVB_KeyPress);
             // 
             // txtAjusteIB
             // 
-            this.txtAjusteIB.Location = new System.Drawing.Point(550, 89);
+            this.txtAjusteIB.Location = new System.Drawing.Point(548, 44);
             this.txtAjusteIB.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteIB.Name = "txtAjusteIB";
             this.txtAjusteIB.Size = new System.Drawing.Size(132, 22);
             this.txtAjusteIB.TabIndex = 8;
+            this.txtAjusteIB.Text = "0";
             this.txtAjusteIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAjusteIB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAjusteVB_KeyPress);
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(305, 70);
+            this.label56.Location = new System.Drawing.Point(303, 25);
             this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(61, 17);
+            this.label56.Size = new System.Drawing.Size(59, 16);
             this.label56.TabIndex = 5;
             this.label56.Text = "Fase VC";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(173, 70);
+            this.label57.Location = new System.Drawing.Point(171, 25);
             this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(61, 17);
+            this.label57.Size = new System.Drawing.Size(59, 16);
             this.label57.TabIndex = 4;
             this.label57.Text = "Fase VB";
             // 
             // txtAjusteVC
             // 
-            this.txtAjusteVC.Location = new System.Drawing.Point(270, 89);
+            this.txtAjusteVC.Location = new System.Drawing.Point(268, 44);
             this.txtAjusteVC.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteVC.Name = "txtAjusteVC";
             this.txtAjusteVC.Size = new System.Drawing.Size(132, 22);
             this.txtAjusteVC.TabIndex = 2;
+            this.txtAjusteVC.Text = "0";
             this.txtAjusteVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAjusteVC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAjusteVB_KeyPress);
             // 
             // txtAjusteVB
             // 
-            this.txtAjusteVB.Location = new System.Drawing.Point(130, 89);
+            this.txtAjusteVB.Location = new System.Drawing.Point(128, 44);
             this.txtAjusteVB.Margin = new System.Windows.Forms.Padding(4);
             this.txtAjusteVB.Name = "txtAjusteVB";
             this.txtAjusteVB.Size = new System.Drawing.Size(132, 22);
             this.txtAjusteVB.TabIndex = 1;
+            this.txtAjusteVB.Text = "0";
             this.txtAjusteVB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAjusteVB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAjusteVB_KeyPress);
             // 
-            // txtFrequenciaLida
+            // labelV2
             // 
-            this.txtFrequenciaLida.Enabled = false;
-            this.txtFrequenciaLida.Location = new System.Drawing.Point(906, 257);
-            this.txtFrequenciaLida.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFrequenciaLida.Name = "txtFrequenciaLida";
-            this.txtFrequenciaLida.Size = new System.Drawing.Size(132, 22);
-            this.txtFrequenciaLida.TabIndex = 37;
-            this.txtFrequenciaLida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.labelV2.AutoSize = true;
+            this.labelV2.Location = new System.Drawing.Point(867, 625);
+            this.labelV2.Name = "labelV2";
+            this.labelV2.Size = new System.Drawing.Size(23, 16);
+            this.labelV2.TabIndex = 40;
+            this.labelV2.Text = "V2";
             // 
-            // label71
+            // labelV3
             // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(928, 236);
-            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(79, 17);
-            this.label71.TabIndex = 38;
-            this.label71.Text = "Frequência";
+            this.labelV3.AutoSize = true;
+            this.labelV3.Location = new System.Drawing.Point(867, 646);
+            this.labelV3.Name = "labelV3";
+            this.labelV3.Size = new System.Drawing.Size(23, 16);
+            this.labelV3.TabIndex = 41;
+            this.labelV3.Text = "V3";
+            // 
+            // labelV1
+            // 
+            this.labelV1.AutoSize = true;
+            this.labelV1.Location = new System.Drawing.Point(867, 602);
+            this.labelV1.Name = "labelV1";
+            this.labelV1.Size = new System.Drawing.Size(23, 16);
+            this.labelV1.TabIndex = 42;
+            this.labelV1.Text = "V1";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(826, 602);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(35, 16);
+            this.label79.TabIndex = 43;
+            this.label79.Text = "V1(°)";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(826, 625);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(35, 16);
+            this.label80.TabIndex = 44;
+            this.label80.Text = "V2(°)";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(826, 646);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(35, 16);
+            this.label81.TabIndex = 45;
+            this.label81.Text = "V3(°)";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(934, 646);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(29, 16);
+            this.label82.TabIndex = 51;
+            this.label82.Text = "I3(°)";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(934, 625);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(29, 16);
+            this.label83.TabIndex = 50;
+            this.label83.Text = "I2(°)";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(934, 602);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(29, 16);
+            this.label84.TabIndex = 49;
+            this.label84.Text = "I1(°)";
+            // 
+            // labelI1
+            // 
+            this.labelI1.AutoSize = true;
+            this.labelI1.Location = new System.Drawing.Point(975, 602);
+            this.labelI1.Name = "labelI1";
+            this.labelI1.Size = new System.Drawing.Size(17, 16);
+            this.labelI1.TabIndex = 48;
+            this.labelI1.Text = "I1";
+            // 
+            // labelI3
+            // 
+            this.labelI3.AutoSize = true;
+            this.labelI3.Location = new System.Drawing.Point(975, 646);
+            this.labelI3.Name = "labelI3";
+            this.labelI3.Size = new System.Drawing.Size(17, 16);
+            this.labelI3.TabIndex = 47;
+            this.labelI3.Text = "I3";
+            // 
+            // labelI2
+            // 
+            this.labelI2.AutoSize = true;
+            this.labelI2.Location = new System.Drawing.Point(975, 625);
+            this.labelI2.Name = "labelI2";
+            this.labelI2.Size = new System.Drawing.Size(17, 16);
+            this.labelI2.TabIndex = 46;
+            this.labelI2.Text = "I2";
+            // 
+            // timerClearPhasor
+            // 
+            this.timerClearPhasor.Interval = 2000;
+            this.timerClearPhasor.Tick += new System.EventHandler(this.timerClearPhasor_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1381, 910);
+            this.ClientSize = new System.Drawing.Size(1383, 913);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.groupBox9);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox8);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -3142,6 +3666,12 @@ namespace FonteTrifasicaPID
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.DiagramaFasorial.ResumeLayout(false);
+            this.DiagramaFasorial.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFases)).EndInit();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.ResumeLayout(false);
@@ -3370,6 +3900,44 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.TextBox txtFrequenciaLida;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.TextBox txtAnguloFP3;
+        private System.Windows.Forms.TextBox txtAnguloFP1;
+        private System.Windows.Forms.TextBox txtAnguloFP2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFases;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.TextBox txtKpFases;
+        private System.Windows.Forms.Button btnAplicarKPKIKDFases;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.TextBox txtKdFases;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.TextBox txtKiFases;
+        private System.Windows.Forms.CheckBox cbkFaseIC;
+        private System.Windows.Forms.CheckBox cbkFaseIB;
+        private System.Windows.Forms.CheckBox cbkFaseIA;
+        private System.Windows.Forms.CheckBox cbkFaseVC;
+        private System.Windows.Forms.CheckBox cbkFaseVB;
+        private System.Windows.Forms.CheckBox cbkFaseVA;
+        private System.Windows.Forms.Button btnLimparFasesGrafico;
+        private System.Windows.Forms.Panel DiagramaFasorial;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label labelV3;
+        private System.Windows.Forms.Label labelV2;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label labelI1;
+        private System.Windows.Forms.Label labelI3;
+        private System.Windows.Forms.Label labelI2;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label labelV1;
+        private System.Windows.Forms.Timer timerClearPhasor;
     }
 }
 

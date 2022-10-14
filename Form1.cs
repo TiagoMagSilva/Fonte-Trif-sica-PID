@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 
 namespace FonteTrifasicaPID
 {
@@ -45,12 +46,21 @@ namespace FonteTrifasicaPID
         String path_LOG = System.AppDomain.CurrentDomain.BaseDirectory + "/LOG/";
         String path_Config = System.AppDomain.CurrentDomain.BaseDirectory + "/CONFIG/";
 
+        float AnguloFasorV1 = 0;
+        float AnguloFasorV2 = 0;
+        float AnguloFasorV3 = 0;
+        float AnguloFasorI1 = 0;
+        float AnguloFasorI2 = 0;
+        float AnguloFasorI3 = 0;
+        bool PrintPhasor = false;
+
         UInt16 PassoGraficoVR = 0;
         UInt16 PassoGraficoVS = 0;
         UInt16 PassoGraficoVT = 0;
         UInt16 PassoGraficoIR = 0;
         UInt16 PassoGraficoIS = 0;
         UInt16 PassoGraficoIT = 0;
+        UInt16 PassoGraficoFases = 0;
 
         Boolean TRiseVa = false; //detecção do tempo de subida (t rise)
         Boolean TRiseVb = false; //detecção do tempo de subida (t rise)
@@ -95,7 +105,8 @@ namespace FonteTrifasicaPID
             ID_Ler_FP_60,
             ID_Ler_FP_50,
             ID_Dir_Rev,
-            ID_Correcao_Fase
+            ID_Correcao_Fase,
+            ID_ConstantesPIDFases,
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -246,7 +257,7 @@ namespace FonteTrifasicaPID
                                      txtTensãoRMS.Text + ";" + txtCorrenteRMS.Text + ";" + cbxFrequencia.SelectedIndex + ";" +
                                      cbxFase.SelectedIndex + ";" + cbxFatorDePotencia.SelectedIndex + ";" + txtKp10kV.Text + ";" +
                                      txtKi10kV.Text + ";" + txtKd10kV.Text + ";" + txtKp10Corrente.Text + ";" + txtKi10Corrente.Text
-                                     + ";" + txtKd10Corrente.Text);
+                                     + ";" + txtKd10Corrente.Text + ";" + txtKpFases.Text + ";" + txtKiFases.Text + ";" + txtKdFases.Text);
                     }
                 }
                 else
@@ -306,6 +317,9 @@ namespace FonteTrifasicaPID
                             txtKp10Corrente.Text = partes[14];
                             txtKi10Corrente.Text = partes[15];
                             txtKd10Corrente.Text = partes[16];
+                            txtKpFases.Text = partes[17];
+                            txtKiFases.Text = partes[18];
+                            txtKdFases.Text = partes[19];
 
                             LOG_TXT("Arquivo de configuração carregado com sucesso!");
                         }
@@ -855,12 +869,70 @@ namespace FonteTrifasicaPID
                         {
                             txtFrequenciaLida.Text = partes[1];
 
-                            txtLeituraFP1.Text = partes[2];
-                            txtLeituraFP2.Text = partes[3];
-                            txtLeituraFP3.Text = partes[4];
+                            float FPI1Signed = float.Parse(partes[2])/100;
+                            float FPI2Signed = float.Parse(partes[3])/100;
+                            float FPI3Signed = float.Parse(partes[4])/100;
+
+                            txtLeituraFP1.Text = FPI1Signed.ToString();
+                            txtLeituraFP2.Text = FPI2Signed.ToString();
+                            txtLeituraFP3.Text = FPI3Signed.ToString();
 
                             txtLeituraFaseVAB.Text = partes[5];
                             txtLeituraFaseVAC.Text = partes[6];
+
+                            AnguloFasorV2 = float.Parse(partes[5])/1000;
+                            AnguloFasorV3 = float.Parse(partes[6])/1000;
+
+                            labelV1.Text = AnguloFasorV1.ToString();
+                            labelV2.Text = AnguloFasorV2.ToString();
+                            labelV3.Text = AnguloFasorV3.ToString();                           
+
+                            float AnguloIA = (float)Math.Acos(Math.Abs(FPI1Signed));
+                            float AnguloIB = (float)Math.Acos(Math.Abs(FPI2Signed));
+                            float AnguloIC = (float)Math.Acos(Math.Abs(FPI3Signed));
+
+                            if(FPI1Signed > 0)
+                            {
+                                AnguloIA *= (-1);
+                            }
+
+                            if (FPI2Signed > 0)
+                            {
+                                AnguloIB *= (-1);
+                            }
+
+                            if (FPI3Signed > 0)
+                            {
+                                AnguloIC *= (-1);
+                            }
+
+                            txtAnguloFP1.Text = (Math.Abs(AnguloIA) * 180 / Math.PI).ToString("0.000") + '°';
+                            txtAnguloFP2.Text = (Math.Abs(AnguloIB) * 180 / Math.PI).ToString("0.000") + '°';
+                            txtAnguloFP3.Text = (Math.Abs(AnguloIC) * 180 / Math.PI).ToString("0.000") + '°';
+
+                            AnguloFasorI1 = (float)((AnguloIA * 180 / Math.PI) + AnguloFasorV1);
+                            AnguloFasorI2 = (float)((AnguloIB * 180 / Math.PI) + AnguloFasorV2);
+                            AnguloFasorI3 = (float)((AnguloIC * 180 / Math.PI) + AnguloFasorV3);
+
+                            labelI1.Text = (AnguloFasorI1).ToString();//partes[2];//AnguloIA.ToString();
+                            labelI2.Text = (AnguloFasorI2).ToString();//partes[3];//AnguloIB.ToString();
+                            labelI3.Text = (AnguloFasorI3).ToString();//partes[4];//AnguloIC.ToString();
+
+                            PrintPhasor = true;
+                            timerClearPhasor.Stop();
+                            timerClearPhasor.Start();
+                            timerClearPhasor.Enabled = true;
+                            DiagramaFasorial.Invalidate();
+
+                            if (cbkFaseIA.Checked)
+                                chartFases.Series[3].Points.AddXY(PassoGraficoFases, AnguloFasorI1);
+                            if(cbkFaseIB.Checked)
+                                chartFases.Series[4].Points.AddXY(PassoGraficoFases, AnguloFasorI2);
+                            if(cbkFaseIC.Checked)
+                                chartFases.Series[5].Points.AddXY(PassoGraficoFases, AnguloFasorI3);
+
+                            PassoGraficoFases++;
+
                         }
                         ));
                         break;
@@ -1802,6 +1874,225 @@ namespace FonteTrifasicaPID
             {
                 e.Handled = true;
             }
+        }
+
+        private void label65_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAplicarKPKIKDFases_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação das constatnes KP, KI e KD
+            //Identificador, Kp, Ki, Kd, CS
+            Salvar_Dados_Config();
+
+
+            string TRAMA_ENVIO = (int)Identificador.ID_ConstantesPIDFases + "," +
+                                 txtKpFases.Text + "," +
+                                 txtKiFases.Text + "," +
+                                 txtKdFases.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando PID_F: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de configuração PID para fases não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PassoGraficoFases = 0;
+            chartFases.Series[0].Points.Clear();
+            chartFases.Series[1].Points.Clear();
+            chartFases.Series[2].Points.Clear();
+            chartFases.Series[3].Points.Clear();
+            chartFases.Series[4].Points.Clear();
+            chartFases.Series[5].Points.Clear();            
+        }
+
+        private void DiagramaFasorial_Paint(object sender, PaintEventArgs e)
+        {
+            float[] dashvalues = { 4, 4, 4, 4 };
+
+            e.Graphics.DrawEllipse(new Pen(Color.Black), new Rectangle(30, 40, 200, 200)); //Borda circular do diagrama fasorial
+
+            if(PrintPhasor)
+            {
+                using (Pen PenPhasorV1 = new Pen(Color.Red))
+                using (GraphicsPath capPath = new GraphicsPath())
+                {
+                    //PenPhasorV1.DashPattern = dashvalues;
+
+                    // A triangle
+                    capPath.AddLine(-5, 0, 5, 0);
+                    capPath.AddLine(-5, 0, 0, 5);
+                    capPath.AddLine(0, 5, 5, 0);
+                    capPath.AddString("1", new FontFamily("Arial"), (int)FontStyle.Regular, 10, new Point(-3, 6), StringFormat.GenericDefault);
+
+                    PenPhasorV1.CustomEndCap = new CustomLineCap(null, capPath);
+
+                    e.Graphics.DrawLine(PenPhasorV1, 130, 140, GetPhasorX(AnguloFasorV1), GetPhasorY(AnguloFasorV1));
+                }
+
+                using (Pen PenPhasorV2 = new Pen(Color.Yellow))
+                using (GraphicsPath capPath = new GraphicsPath())
+                {
+                    //PenPhasorV2.DashPattern = dashvalues;
+
+                    // A triangle
+                    capPath.AddLine(-5, 0, 5, 0);
+                    capPath.AddLine(-5, 0, 0, 5);
+                    capPath.AddLine(0, 5, 5, 0);
+                    capPath.AddString("2", new FontFamily("Arial"), (int)FontStyle.Regular, 10, new Point(-3, 6), StringFormat.GenericDefault);
+
+                    PenPhasorV2.CustomEndCap = new CustomLineCap(null, capPath);
+
+                    e.Graphics.DrawLine(PenPhasorV2, 130, 140, GetPhasorX(AnguloFasorV2), GetPhasorY(AnguloFasorV2));
+                }
+
+                using (Pen PenPhasorV3 = new Pen(Color.Blue))
+                using (GraphicsPath capPath = new GraphicsPath())
+                {
+                    //PenPhasorV2.DashPattern = dashvalues;
+
+                    // A triangle
+                    capPath.AddLine(-5, 0, 5, 0);
+                    capPath.AddLine(-5, 0, 0, 5);
+                    capPath.AddLine(0, 5, 5, 0);
+                    capPath.AddString("3", new FontFamily("Arial"), (int)FontStyle.Regular, 10, new Point(-3, 6), StringFormat.GenericDefault);
+
+                    PenPhasorV3.CustomEndCap = new CustomLineCap(null, capPath);
+
+                    e.Graphics.DrawLine(PenPhasorV3, 130, 140, GetPhasorX(AnguloFasorV3), GetPhasorY(AnguloFasorV3));
+                }
+
+                using (Pen PenPhasorI1 = new Pen(Color.Red))
+                using (GraphicsPath capPath = new GraphicsPath())
+                {
+                    PenPhasorI1.DashPattern = dashvalues;
+
+                    // A triangle
+                    capPath.AddLine(-5, 0, 5, 0);
+                    capPath.AddLine(-5, 0, 0, 5);
+                    capPath.AddLine(0, 5, 5, 0);
+                    capPath.AddString("1", new FontFamily("Arial"), (int)FontStyle.Regular, 10, new Point(-3, 6), StringFormat.GenericDefault);
+
+                    PenPhasorI1.CustomEndCap = new CustomLineCap(null, capPath);
+
+                    e.Graphics.DrawLine(PenPhasorI1, 130, 140, GetPhasorX(AnguloFasorI1), GetPhasorY(AnguloFasorI1));
+                }
+
+                using (Pen PenPhasorI2 = new Pen(Color.Yellow))
+                using (GraphicsPath capPath = new GraphicsPath())
+                {
+                    PenPhasorI2.DashPattern = dashvalues;
+
+                    // A triangle
+                    capPath.AddLine(-5, 0, 5, 0);
+                    capPath.AddLine(-5, 0, 0, 5);
+                    capPath.AddLine(0, 5, 5, 0);
+                    capPath.AddString("2", new FontFamily("Arial"), (int)FontStyle.Regular, 10, new Point(-3, 6), StringFormat.GenericDefault);
+
+                    PenPhasorI2.CustomEndCap = new CustomLineCap(null, capPath);
+
+                    e.Graphics.DrawLine(PenPhasorI2, 130, 140, GetPhasorX(AnguloFasorI2), GetPhasorY(AnguloFasorI2));
+                }
+
+                using (Pen PenPhasorI3 = new Pen(Color.Blue))
+                using (GraphicsPath capPath = new GraphicsPath())
+                {
+                    PenPhasorI3.DashPattern = dashvalues;
+
+                    // A triangle
+                    capPath.AddLine(-5, 0, 5, 0);
+                    capPath.AddLine(-5, 0, 0, 5);
+                    capPath.AddLine(0, 5, 5, 0);
+                    capPath.AddString("3", new FontFamily("Arial"), (int)FontStyle.Regular, 10, new Point(-3, 6), StringFormat.GenericDefault);
+
+                    PenPhasorI3.CustomEndCap = new CustomLineCap(null, capPath);
+
+                    e.Graphics.DrawLine(PenPhasorI3, 130, 140, GetPhasorX(AnguloFasorI3), GetPhasorY(AnguloFasorI3));
+                }
+            }    
+        }
+
+        private float GetPhasorX(float Angle)
+        {
+            float X = 0;
+            int Tamanho = 80;
+            int XCentro = 130;
+
+            while (Angle > 360)
+                Angle -= 360;
+
+            if(Angle < 0)
+            {
+                Angle += 360;
+            }
+
+            if (Angle >= 0 && Angle <= 90)
+            {
+                X = (float)(Math.Cos(Angle * Math.PI / 180) * (Tamanho) + (XCentro));
+            }
+
+            else if (Angle > 90 && Angle <= 270)
+            {
+                X = (float)(Math.Cos(Angle * Math.PI / 180) * (Tamanho) + (XCentro));
+            }
+
+            else if (Angle > 270 && Angle <= 360)
+            {
+                
+                X = (float)(Math.Cos(Angle * Math.PI / 180) * (Tamanho) + (XCentro));
+            }
+
+            return X;
+        }
+
+        private float GetPhasorY(float Angle)
+        {
+            float Y = 0;
+            int Tamanho = 80;
+            int YCentro = 140;
+
+            while (Angle > 360)
+                Angle -= 360;
+
+
+            if (Angle < 0)
+            {
+                Angle += 360;
+            }
+
+            if (Angle >= 0 && Angle <= 180)
+            {
+                Y = (float)((YCentro) - Math.Sin(Angle * Math.PI / 180) * (Tamanho));
+            }
+
+            else if (Angle > 180 && Angle <= 360)
+            {
+                Y = (float)(Math.Sin(Angle * Math.PI / 180) * (-Tamanho) + (YCentro));
+            }            
+
+            return Y;
+        }
+
+        private void timerClearPhasor_Tick(object sender, EventArgs e)
+        {
+            PrintPhasor = false;
+            timerClearPhasor.Stop();
+            DiagramaFasorial.Invalidate();
         }
     }
 }
