@@ -52,6 +52,25 @@ namespace FonteTrifasicaPID
         float AnguloFasorI1 = 0;
         float AnguloFasorI2 = 0;
         float AnguloFasorI3 = 0;
+
+        float AnguloIA;
+        float AnguloIB;
+        float AnguloIC;
+
+        float TempoI1;
+        float TempoI2;
+        float TempoI3;
+
+        float Frequencia;
+        float Periodo;
+
+        float FPI1Signed;
+        float FPI2Signed;
+        float FPI3Signed;
+
+        float FaseVAB;
+        float FaseVAC;
+
         bool PrintPhasor = false;
 
         UInt16 PassoGraficoVR = 0;
@@ -107,6 +126,7 @@ namespace FonteTrifasicaPID
             ID_Dir_Rev,
             ID_Correcao_Fase,
             ID_ConstantesPIDFases,
+            ID_FaseManual
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -867,57 +887,112 @@ namespace FonteTrifasicaPID
                     case (int)Identificador.ID_Correcao_Fase:
                         txtLeituraFP1.Invoke(new Action(() =>
                         {
-                            txtFrequenciaLida.Text = partes[1];
+                            ///// Recebendo do pacote e populando as variáveis globais ///////////////
+                            Frequencia = float.Parse(partes[1]) / 1000;                            
+                            Periodo = (1 / Frequencia) * 1000; // período está em ms
 
-                            float FPI1Signed = float.Parse(partes[2])/100;
-                            float FPI2Signed = float.Parse(partes[3])/100;
-                            float FPI3Signed = float.Parse(partes[4])/100;
+                            FPI1Signed = float.Parse(partes[2]) / 1000;
+                            FPI2Signed = float.Parse(partes[3]) / 1000;
+                            FPI3Signed = float.Parse(partes[4]) / 1000;
 
-                            txtLeituraFP1.Text = FPI1Signed.ToString();
-                            txtLeituraFP2.Text = FPI2Signed.ToString();
-                            txtLeituraFP3.Text = FPI3Signed.ToString();
+                            FaseVAB = float.Parse(partes[5]) / 1000;
+                            FaseVAC = float.Parse(partes[6]) / 1000;
 
-                            txtLeituraFaseVAB.Text = partes[5];
-                            txtLeituraFaseVAC.Text = partes[6];
+                            TempoI1 = float.Parse(partes[7]) / 10000;
+                            TempoI2 = float.Parse(partes[8]) / 10000;
+                            TempoI3 = float.Parse(partes[9]) / 10000;
+                            ////////////////////////////////////////////////////////////////////////////
 
-                            AnguloFasorV2 = float.Parse(partes[5])/1000;
-                            AnguloFasorV3 = float.Parse(partes[6])/1000;
 
-                            labelV1.Text = AnguloFasorV1.ToString();
-                            labelV2.Text = AnguloFasorV2.ToString();
-                            labelV3.Text = AnguloFasorV3.ToString();                           
+                            /////// Fazendo alguns cálculos de angulo em função do tempo //////////////
+                            AnguloFasorV1 = 0;
+                            AnguloFasorV2 = (AnguloFasorV1 - FaseVAB) + 360; // O ADE me dá o tempo depois do zero-crossing da tensão. Logo, é como se sempre a corrente estivesse atrasada!! Mesmo não estando
+                            AnguloFasorV3 = (AnguloFasorV1 - FaseVAC) + 360; //
 
-                            float AnguloIA = (float)Math.Acos(Math.Abs(FPI1Signed));
-                            float AnguloIB = (float)Math.Acos(Math.Abs(FPI2Signed));
-                            float AnguloIC = (float)Math.Acos(Math.Abs(FPI3Signed));
+                            //Console.WriteLine("Angulo V1: " + AnguloFasorV1);
+                            //Console.WriteLine("Angulo V2: " + AnguloFasorV2);
+                            //Console.WriteLine("Angulo V3: " + AnguloFasorV3);
 
-                            if(FPI1Signed > 0)
-                            {
-                                AnguloIA *= (-1);
-                            }
+                            AnguloIA = (TempoI1 * 360) / (Periodo);  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
+                            AnguloIB = (TempoI2 * 360) / (Periodo);  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
+                            AnguloIC = (TempoI3 * 360) / (Periodo);  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
 
-                            if (FPI2Signed > 0)
-                            {
-                                AnguloIB *= (-1);
-                            }
+                            //Console.WriteLine("Angulo entre I1 e V1: " + AnguloIA);
+                            //Console.WriteLine("Angulo entre I2 e V2: " + AnguloIB);
+                            //Console.WriteLine("Angulo entre I3 e V3: " + AnguloIC);
 
-                            if (FPI3Signed > 0)
-                            {
-                                AnguloIC *= (-1);
-                            }
+                            AnguloFasorI1 = (float)(AnguloFasorV1 - AnguloIA);
+                            AnguloFasorI2 = (float)(AnguloFasorV2 - AnguloIB);
+                            AnguloFasorI3 = (float)(AnguloFasorV3 - AnguloIC);
+                            
+                            //Console.WriteLine("Angulo Fasor I1: " + AnguloFasorI1);
+                            //Console.WriteLine("Angulo Fasor I2: " + AnguloFasorI2);
+                            //Console.WriteLine("Angulo Fasor I3: " + AnguloFasorI3);
+                            ///////////////////////////////////////////////////////////////////////////
 
-                            txtAnguloFP1.Text = (Math.Abs(AnguloIA) * 180 / Math.PI).ToString("0.000") + '°';
-                            txtAnguloFP2.Text = (Math.Abs(AnguloIB) * 180 / Math.PI).ToString("0.000") + '°';
-                            txtAnguloFP3.Text = (Math.Abs(AnguloIC) * 180 / Math.PI).ToString("0.000") + '°';
 
-                            AnguloFasorI1 = (float)((AnguloIA * 180 / Math.PI) + AnguloFasorV1);
-                            AnguloFasorI2 = (float)((AnguloIB * 180 / Math.PI) + AnguloFasorV2);
-                            AnguloFasorI3 = (float)((AnguloIC * 180 / Math.PI) + AnguloFasorV3);
+                            /////// Escrevendo nos TXTs iniciais //////////
+                            txtFrequenciaLida.Text = Frequencia.ToString("0.000");
+                            txtPeríodo.Text = Periodo.ToString("0.000");
 
-                            labelI1.Text = (AnguloFasorI1).ToString();//partes[2];//AnguloIA.ToString();
-                            labelI2.Text = (AnguloFasorI2).ToString();//partes[3];//AnguloIB.ToString();
-                            labelI3.Text = (AnguloFasorI3).ToString();//partes[4];//AnguloIC.ToString();
+                            txtTempoI1.Text = TempoI1.ToString("0.000");
+                            txtTempoI2.Text = TempoI2.ToString("0.000");
+                            txtTempoI3.Text = TempoI3.ToString("0.000");
 
+                            txtLeituraFP1.Text = FPI1Signed.ToString("0.000");
+                            txtLeituraFP2.Text = FPI2Signed.ToString("0.000");
+                            txtLeituraFP3.Text = FPI3Signed.ToString("0.000");
+
+                            txtAnguloFP1.Text = AnguloIA.ToString("0.000");
+                            txtAnguloFP2.Text = AnguloIB.ToString("0.000");
+                            txtAnguloFP3.Text = AnguloIC.ToString("0.000");
+
+                            txtLeituraFaseVAB.Text = FaseVAB.ToString("0.000");
+                            txtLeituraFaseVAC.Text = FaseVAC.ToString("0.000");
+
+                            float FasorV1Tratado = 0, FasorV2Tratado = FaseVAB, FasorV3Tratado = FaseVAC;
+
+                            FasorV2Tratado = 360 - FasorV2Tratado;
+                            FasorV3Tratado = 360 - FasorV3Tratado;
+
+                            if (FasorV2Tratado > 180)
+                                FasorV2Tratado = (360 - FasorV2Tratado) * (-1);
+                            else if (FasorV2Tratado < (-180))
+                                FasorV2Tratado = 360 + FasorV2Tratado;
+
+                            if (FasorV3Tratado > 180)
+                                FasorV3Tratado = (360 - FasorV3Tratado) * (-1);
+                            else if (FasorV3Tratado < (-180))
+                                FasorV3Tratado = 360 + FasorV3Tratado;
+
+                            labelV1.Text = FasorV1Tratado.ToString("0.000");
+                            labelV2.Text = FasorV2Tratado.ToString("0.000");
+                            labelV3.Text = FasorV3Tratado.ToString("0.000");
+
+                            float FasorI1Tratado = AnguloFasorI1, FasorI2Tratado = AnguloFasorI2, FasorI3Tratado = AnguloFasorI3;
+
+                            if (AnguloFasorI1 > 180)
+                                FasorI1Tratado = (360 - AnguloFasorI1) * (-1);
+                            else if (AnguloFasorI1 < (-180))
+                                FasorI1Tratado = 360 + AnguloFasorI1;
+
+                            if (AnguloFasorI2 > 180)
+                                FasorI2Tratado = (360 - AnguloFasorI2) * (-1);
+                            else if (AnguloFasorI2 < (-180))
+                                FasorI2Tratado = 360 + AnguloFasorI2;
+
+                            if (AnguloFasorI3 > 180)
+                                FasorI3Tratado = (360 - AnguloFasorI3) * (-1);
+                            else if (AnguloFasorI3 < (-180))
+                                FasorI3Tratado = 360 + AnguloFasorI3;
+
+                            labelI1.Text = FasorI1Tratado.ToString("0.000");
+                            labelI2.Text = FasorI2Tratado.ToString("0.000");
+                            labelI3.Text = FasorI3Tratado.ToString("0.000");
+                            /////////////////////////////////////////////////////////////
+
+
+                            //////// Populando o gráfico e o diagrama fasorial ////////////////////////
                             PrintPhasor = true;
                             timerClearPhasor.Stop();
                             timerClearPhasor.Start();
@@ -932,6 +1007,7 @@ namespace FonteTrifasicaPID
                                 chartFases.Series[5].Points.AddXY(PassoGraficoFases, AnguloFasorI3);
 
                             PassoGraficoFases++;
+                            ////////////////////////////////////////////////////////////////////////////
 
                         }
                         ));
@@ -1942,6 +2018,7 @@ namespace FonteTrifasicaPID
 
                     PenPhasorV1.CustomEndCap = new CustomLineCap(null, capPath);
 
+                    //Console.WriteLine("Desenhando V1");
                     e.Graphics.DrawLine(PenPhasorV1, 130, 140, GetPhasorX(AnguloFasorV1), GetPhasorY(AnguloFasorV1));
                 }
 
@@ -1958,6 +2035,7 @@ namespace FonteTrifasicaPID
 
                     PenPhasorV2.CustomEndCap = new CustomLineCap(null, capPath);
 
+                    //Console.WriteLine("Desenhando V2");
                     e.Graphics.DrawLine(PenPhasorV2, 130, 140, GetPhasorX(AnguloFasorV2), GetPhasorY(AnguloFasorV2));
                 }
 
@@ -1974,6 +2052,7 @@ namespace FonteTrifasicaPID
 
                     PenPhasorV3.CustomEndCap = new CustomLineCap(null, capPath);
 
+                    //Console.WriteLine("Desenhando V3");
                     e.Graphics.DrawLine(PenPhasorV3, 130, 140, GetPhasorX(AnguloFasorV3), GetPhasorY(AnguloFasorV3));
                 }
 
@@ -1990,6 +2069,7 @@ namespace FonteTrifasicaPID
 
                     PenPhasorI1.CustomEndCap = new CustomLineCap(null, capPath);
 
+                    //Console.WriteLine("Desenhando I1");
                     e.Graphics.DrawLine(PenPhasorI1, 130, 140, GetPhasorX(AnguloFasorI1), GetPhasorY(AnguloFasorI1));
                 }
 
@@ -2006,6 +2086,7 @@ namespace FonteTrifasicaPID
 
                     PenPhasorI2.CustomEndCap = new CustomLineCap(null, capPath);
 
+                   // Console.WriteLine("Desenhando I2");
                     e.Graphics.DrawLine(PenPhasorI2, 130, 140, GetPhasorX(AnguloFasorI2), GetPhasorY(AnguloFasorI2));
                 }
 
@@ -2021,7 +2102,8 @@ namespace FonteTrifasicaPID
                     capPath.AddString("3", new FontFamily("Arial"), (int)FontStyle.Regular, 10, new Point(-3, 6), StringFormat.GenericDefault);
 
                     PenPhasorI3.CustomEndCap = new CustomLineCap(null, capPath);
-
+                    
+                    //Console.WriteLine("Desenhando I3");
                     e.Graphics.DrawLine(PenPhasorI3, 130, 140, GetPhasorX(AnguloFasorI3), GetPhasorY(AnguloFasorI3));
                 }
             }    
@@ -2033,13 +2115,15 @@ namespace FonteTrifasicaPID
             int Tamanho = 80;
             int XCentro = 130;
 
-            while (Angle > 360)
-                Angle -= 360;
+            // Angle = 360 - Angle;
 
-            if(Angle < 0)
-            {
-                Angle += 360;
-            }
+            //Console.WriteLine("Fasor X: " + Angle);
+
+            while (Angle > 360)
+                Angle -= 360;            
+
+            while(Angle < 0)            
+                Angle += 360;            
 
             if (Angle >= 0 && Angle <= 90)
             {
@@ -2057,6 +2141,8 @@ namespace FonteTrifasicaPID
                 X = (float)(Math.Cos(Angle * Math.PI / 180) * (Tamanho) + (XCentro));
             }
 
+            //Console.WriteLine("X: " + X);
+
             return X;
         }
 
@@ -2066,14 +2152,15 @@ namespace FonteTrifasicaPID
             int Tamanho = 80;
             int YCentro = 140;
 
+            //Angle = 360 - Angle;
+
+            //Console.WriteLine("Fasor Y: " + Angle);
+
             while (Angle > 360)
-                Angle -= 360;
+                Angle -= 360;           
 
-
-            if (Angle < 0)
-            {
-                Angle += 360;
-            }
+            while (Angle < 0)            
+                Angle += 360;            
 
             if (Angle >= 0 && Angle <= 180)
             {
@@ -2083,7 +2170,9 @@ namespace FonteTrifasicaPID
             else if (Angle > 180 && Angle <= 360)
             {
                 Y = (float)(Math.Sin(Angle * Math.PI / 180) * (-Tamanho) + (YCentro));
-            }            
+            }
+
+            //Console.WriteLine("Y: " + Y);
 
             return Y;
         }
@@ -2093,6 +2182,26 @@ namespace FonteTrifasicaPID
             PrintPhasor = false;
             timerClearPhasor.Stop();
             DiagramaFasorial.Invalidate();
+        }
+
+        private void btnAplicarFaseManual_Click(object sender, EventArgs e)
+        {
+            //Trama de aplicação e sintetização com fase Manual
+            //Identificador, Angulo(°), CS
+
+            string TRAMA_ENVIO = (int)Identificador.ID_FaseManual + "," +
+                                 txtFaseManual.Text + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando FaseManual: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de FaseManual não enviado devido porta serial fechada!");
+            }
         }
     }
 }
