@@ -9,8 +9,7 @@ using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms; 
-
+using System.Windows.Forms;
 namespace FonteTrifasicaPID
 {
     /*
@@ -94,6 +93,12 @@ namespace FonteTrifasicaPID
 
         int AtualizaçãoVR_IR = 3;
 
+        static string strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+        static string strWorkPath = Path.GetDirectoryName(strExeFilePath);
+
+        Image ImagemAdianta = Image.FromFile(strWorkPath + @"\IMAGEM\SetaAdianta1.png");
+        Image ImagemAtrasa = Image.FromFile(strWorkPath + @"\IMAGEM\SetaAtrasa1.png");
+
         enum Identificador
         {
             ID_ConstantesPIDTensao,
@@ -126,7 +131,9 @@ namespace FonteTrifasicaPID
             ID_Dir_Rev,
             ID_Correcao_Fase,
             ID_ConstantesPIDFases,
-            ID_FaseManual
+            ID_FaseManual,
+            ID_SentidoCorrecao,
+            ID_AjustarADE
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -584,11 +591,12 @@ namespace FonteTrifasicaPID
 
                             txtTempAcomodCorrenteA.Invoke(new Action(() =>
                             {
+                                /*
                                 if (double.Parse(partes[1]) / 1000 > int.Parse(txtCorrenteRMS.Text) && !TRiseIa)
                                 {
                                     txtTempAcomodCorrenteA.Text = (PassoGraficoIR * 0.2).ToString() + "s";
                                     TRiseIa = true;
-                                }
+                                }*/
                             }));
 
                             txtOvershootCorrenteA.Invoke(new Action(() =>
@@ -626,11 +634,12 @@ namespace FonteTrifasicaPID
 
                             txtTempAcomodCorrenteB.Invoke(new Action(() =>
                             {
+                                /*
                                 if (double.Parse(partes[2]) / 1000 > int.Parse(txtCorrenteRMS.Text) && !TRiseIb)
                                 {
                                     txtTempAcomodCorrenteB.Text = (PassoGraficoIS * 02).ToString() + "s";
                                     TRiseIb = true;
-                                }
+                                }*/
                             }));
 
                             txtOvershootCorrenteB.Invoke(new Action(() =>
@@ -667,12 +676,12 @@ namespace FonteTrifasicaPID
                             }));
 
                             txtTempAcomodCorrenteC.Invoke(new Action(() =>
-                            {
+                            {/*
                                 if (double.Parse(partes[3]) / 1000 > int.Parse(txtCorrenteRMS.Text) && !TRiseIc)
                                 {
                                     txtTempAcomodCorrenteC.Text = (PassoGraficoIT * 0.2).ToString() + "s";
                                     TRiseIc = true;
-                                }
+                                }*/
                             }));
 
                             txtOvershootCorrenteC.Invoke(new Action(() =>
@@ -898,9 +907,9 @@ namespace FonteTrifasicaPID
                             FaseVAB = float.Parse(partes[5]) / 1000;
                             FaseVAC = float.Parse(partes[6]) / 1000;
 
-                            TempoI1 = float.Parse(partes[7]) / 10000;
-                            TempoI2 = float.Parse(partes[8]) / 10000;
-                            TempoI3 = float.Parse(partes[9]) / 10000;
+                            TempoI1 = float.Parse(partes[7]) / 10000; //Aqui teremos o tempo em ms
+                            TempoI2 = float.Parse(partes[8]) / 10000; //Aqui teremos o tempo em ms
+                            TempoI3 = float.Parse(partes[9]) / 10000; //Aqui teremos o tempo em ms
                             ////////////////////////////////////////////////////////////////////////////
 
 
@@ -939,9 +948,9 @@ namespace FonteTrifasicaPID
                             txtTempoI2.Text = TempoI2.ToString("0.000");
                             txtTempoI3.Text = TempoI3.ToString("0.000");
 
-                            txtLeituraFP1.Text = FPI1Signed.ToString("0.000");
-                            txtLeituraFP2.Text = FPI2Signed.ToString("0.000");
-                            txtLeituraFP3.Text = FPI3Signed.ToString("0.000");
+                            txtLeituraFP1.Text = FPI1Signed.ToString("0.00");
+                            txtLeituraFP2.Text = FPI2Signed.ToString("0.00");
+                            txtLeituraFP3.Text = FPI3Signed.ToString("0.00");
 
                             txtAnguloFP1.Text = AnguloIA.ToString("0.000");
                             txtAnguloFP2.Text = AnguloIB.ToString("0.000");
@@ -1000,15 +1009,72 @@ namespace FonteTrifasicaPID
                             DiagramaFasorial.Invalidate();
 
                             if (cbkFaseIA.Checked)
-                                chartFases.Series[3].Points.AddXY(PassoGraficoFases, AnguloFasorI1);
+                                chartFases.Series[3].Points.AddXY(PassoGraficoFases, FasorI1Tratado);
                             if(cbkFaseIB.Checked)
-                                chartFases.Series[4].Points.AddXY(PassoGraficoFases, AnguloFasorI2);
+                                chartFases.Series[4].Points.AddXY(PassoGraficoFases, FasorI2Tratado);
                             if(cbkFaseIC.Checked)
-                                chartFases.Series[5].Points.AddXY(PassoGraficoFases, AnguloFasorI3);
+                                chartFases.Series[5].Points.AddXY(PassoGraficoFases, FasorI3Tratado);
 
                             PassoGraficoFases++;
                             ////////////////////////////////////////////////////////////////////////////
 
+                        }
+                        ));
+                        break;
+                    case (int)Identificador.ID_SentidoCorrecao:
+                        pbxI1.Invoke(new Action(() =>
+                        {
+                            float CorreçãoI1 = float.Parse(partes[3]);
+                            float CorreçãoI2 = float.Parse(partes[4]);
+                            float CorreçãoI3 = float.Parse(partes[5]);
+
+                            if(CorreçãoI1 != 0)
+                            {
+                                if (CorreçãoI1 < 0)
+                                {
+                                    pbxI1.Image = ImagemAtrasa;
+                                }
+                                else
+                                {
+                                    pbxI1.Image = ImagemAdianta;
+                                }
+                            }
+                            else
+                            {
+                                pbxI1.Image = null;
+                            }
+
+                            if(CorreçãoI2 != 0)
+                            {
+                                if (CorreçãoI2 < 0)
+                                {
+                                    pbxI2.Image = ImagemAtrasa;
+                                }
+                                else
+                                {
+                                    pbxI2.Image = ImagemAdianta;
+                                }
+                            }
+                            else
+                            {
+                                pbxI2.Image = null;
+                            }
+
+                            if(CorreçãoI3 != 0)
+                            {
+                                if (CorreçãoI3 < 0)
+                                {
+                                    pbxI3.Image = ImagemAtrasa;
+                                }
+                                else
+                                {
+                                    pbxI3.Image = ImagemAdianta;
+                                }
+                            }
+                            else
+                            {
+                                pbxI3.Image = null;
+                            }
                         }
                         ));
                         break;
@@ -2182,6 +2248,9 @@ namespace FonteTrifasicaPID
             PrintPhasor = false;
             timerClearPhasor.Stop();
             DiagramaFasorial.Invalidate();
+            pbxI1.Image = null;
+            pbxI2.Image = null;
+            pbxI3.Image = null;
         }
 
         private void btnAplicarFaseManual_Click(object sender, EventArgs e)
@@ -2202,6 +2271,36 @@ namespace FonteTrifasicaPID
             {
                 LOG_TXT("Comando de FaseManual não enviado devido porta serial fechada!");
             }
+        }
+
+        private void btnAplicarMaxMinCharttensão_Click(object sender, EventArgs e)
+        {
+            chartTensao.ChartAreas[0].AxisY.Maximum = double.Parse(txtmaxChart.Text);
+            chartTensao.ChartAreas[0].AxisY.Minimum = double.Parse(txtMinChart.Text);
+        }
+
+        private void BtnAjustarADE_Click(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.ID_AjustarADE + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Ajustar ADE: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para Ajsutar ADE não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnAplicarMinMaxCorrente_Click(object sender, EventArgs e)
+        {
+            chartCorrente.ChartAreas[0].AxisY.Maximum = double.Parse(txtMaxChartCorrente.Text);
+            chartCorrente.ChartAreas[0].AxisY.Minimum = double.Parse(txtMinChartCorrente.Text);
         }
     }
 }

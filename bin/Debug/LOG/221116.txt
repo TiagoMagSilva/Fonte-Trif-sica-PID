@@ -1,0 +1,1229 @@
+16/11/2022 08:50:45  -  Arquivo de configuração carregado com sucesso!
+16/11/2022 08:50:53  -  Comando para resetar ESP32 não enviado devido porta serial fechada!
+16/11/2022 08:50:59  -  Porta serial aberta com sucesso!
+16/11/2022 08:50:59  -  Salvando informações da porta serial - Porta:  COM4 Velocidade: 115200
+16/11/2022 08:51:00  -  Envio de comando resetar ESP32: 16,2b
+16/11/2022 08:51:00  -  Dado Recebido: ***********************
+16/11/2022 08:51:00  -  A trama recebida não continha ','
+16/11/2022 08:51:00  -  Dado Recebido: ** Sistema iniciado! **
+16/11/2022 08:51:00  -  A trama recebida não continha ','
+16/11/2022 08:51:00  -  Dado Recebido: ***********************
+16/11/2022 08:51:00  -  A trama recebida não continha ','
+16/11/2022 08:51:02  -  Dado Recebido: Mutex_SPI_ADE criado com sucesso
+16/11/2022 08:51:02  -  A trama recebida não continha ','
+16/11/2022 08:51:02  -  Dado Recebido: Mutex_I2C_1 criado com sucesso
+16/11/2022 08:51:02  -  A trama recebida não continha ','
+16/11/2022 08:51:02  -  Dado Recebido: Mutex_I2C_2 criado com sucesso
+16/11/2022 08:51:02  -  A trama recebida não continha ','
+16/11/2022 08:51:02  -  Dado Recebido: Mutex_Variaveis_VI_Globais criado com sucesso
+16/11/2022 08:51:02  -  A trama recebida não continha ','
+16/11/2022 08:51:02  -  Dado Recebido: Configurando EEPROM!
+16/11/2022 08:51:02  -  A trama recebida não continha ','
+16/11/2022 08:51:02  -  Dado Recebido: ADE Configurado!
+16/11/2022 08:51:02  -  A trama recebida não continha ','
+16/11/2022 17:05:45  -  Arquivo de configuração carregado com sucesso!
+16/11/2022 17:07:24  -  Porta serial aberta com sucesso!
+16/11/2022 17:07:24  -  Salvando informações da porta serial - Porta:  COM4 Velocidade: 115200
+16/11/2022 17:07:25  -  Dado Recebido: VA: 908
+16/11/2022 17:07:25  -  A trama recebida não continha ','
+16/11/2022 17:07:26  -  Dado Recebido: VB: 888
+16/11/2022 17:07:26  -  A trama recebida não continha ','
+16/11/2022 17:07:27  -  Dado Recebido: VC: 1168
+16/11/2022 17:07:27  -  A trama recebida não continha ','
+16/11/2022 17:07:28  -  Dado Recebido: VA: 923
+16/11/2022 17:07:28  -  A trama recebida não continha ','
+16/11/2022 17:07:29  -  Dado Recebido: VB: 890
+16/11/2022 17:07:29  -  A trama recebida não continha ','
+16/11/2022 17:07:30  -  Dado Recebido: VC: 1177
+16/11/2022 17:07:30  -  A trama recebida não continha ','
+16/11/2022 17:07:31  -  Dado Recebido: VA: 910
+16/11/2022 17:07:31  -  A trama recebida não continha ','
+16/11/2022 17:07:32  -  Dado Recebido: VB: 895
+16/11/2022 17:07:32  -  A trama recebida não continha ','
+16/11/2022 17:07:33  -  Dado Recebido: VC: 1165
+16/11/2022 17:07:33  -  A trama recebida não continha ','
+16/11/2022 17:07:33  -  Dado Recebido: VA: 901
+16/11/2022 17:07:33  -  A trama recebida não continha ','
+16/11/2022 17:07:34  -  Dado Recebido: VB: 876
+16/11/2022 17:07:34  -  A trama recebida não continha ','
+16/11/2022 17:07:34  -  Dado Recebido: VC: 1194
+16/11/2022 17:07:34  -  A trama recebida não continha ','
+16/11/2022 17:07:35  -  Dado Recebido: VA: 896
+16/11/2022 17:07:35  -  A trama recebida não continha ','
+16/11/2022 17:07:36  -  Dado Recebido: VB: 894
+16/11/2022 17:07:36  -  A trama recebida não continha ','
+16/11/2022 17:07:37  -  Dado Recebido: VC: 1163
+16/11/2022 17:07:37  -  A trama recebida não continha ','
+16/11/2022 17:07:39  -  Dado Recebido: VA: 901
+16/11/2022 17:07:39  -  A trama recebida não continha ','
+16/11/2022 17:07:40  -  Dado Recebido: VB: 890
+16/11/2022 17:07:40  -  A trama recebida não continha ','
+16/11/2022 17:07:41  -  Dado Recebido: VC: 1177
+16/11/2022 17:07:41  -  A trama recebida não continha ','
+16/11/2022 17:07:42  -  Dado Recebido: VA: 882
+16/11/2022 17:07:42  -  A trama recebida não continha ','
+16/11/2022 17:07:43  -  Dado Recebido: VB: 852
+16/11/2022 17:07:43  -  A trama recebida não continha ','
+16/11/2022 17:07:44  -  Dado Recebido: VC: 1166
+16/11/2022 17:07:44  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VA: 872
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VB: 929
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VC: 1146
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VA: 915
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VB: 908
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VC: 1209
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VA: 917
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:45  -  Dado Recebido: VB: 904
+16/11/2022 17:07:45  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VC: 1206
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VA: 930
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VB: 869
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VC: 1162
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VA: 922
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VB: 865
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VC: 1184
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VA: 922
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:46  -  Dado Recebido: VB: 913
+16/11/2022 17:07:46  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VC: 1185
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VA: 918
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VB: 886
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VC: 1150
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VA: 893
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VB: 929
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VC: 1162
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VA: 929
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VB: 883
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:47  -  Dado Recebido: VC: 1176
+16/11/2022 17:07:47  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VA: 932
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VB: 891
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VC: 1146
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VA: 878
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VB: 935
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VC: 1167
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VA: 905
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VB: 932
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VC: 1158
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:48  -  Dado Recebido: VA: 907
+16/11/2022 17:07:48  -  A trama recebida não continha ','
+16/11/2022 17:07:49  -  Dado Recebido: VB: 897
+16/11/2022 17:07:49  -  A trama recebida não continha ','
+16/11/2022 17:07:49  -  Dado Recebido: VC: 1133
+16/11/2022 17:07:49  -  A trama recebida não continha ','
+16/11/2022 17:07:49  -  Dado Recebido: 28,262.295,-0.883,0.548,-0.979,201.762,13.279,3.5156,5.1172,0.1250,2d
+16/11/2022 17:07:49  -  Trama Recebida sem CS: 28,262.295,-0.883,0.548,-0.979,201.762,13.279,3.5156,5.1172,0.1250,
+16/11/2022 17:07:49  -  CS da Trama recebida: 2d
+16/11/2022 17:07:49  -  Dado Recebido: Task PID_Fases rodando
+16/11/2022 17:07:49  -  A trama recebida não continha ','
+16/11/2022 17:07:49  -  Dado Recebido: Sintetizacao enviada ON
+16/11/2022 17:07:49  -  A trama recebida não continha ','
+16/11/2022 17:07:49  -  Dado Recebido: Comando: 0,5,60,0,1,20,00
+16/11/2022 17:07:49  -  Trama Recebida sem CS: Comando: 0,5,60,0,1,20,
+16/11/2022 17:07:49  -  CS da Trama recebida: 00
+16/11/2022 17:07:49  -  Checsum da trama recebida estava incorreto!
+16/11/2022 17:07:49  -  Calc: |5f| Recebido: |00|
+16/11/2022 17:07:49  -  Dado Recebido: Task PID rodando
+16/11/2022 17:07:49  -  A trama recebida não continha ','
+16/11/2022 17:07:49  -  Dado Recebido: 5,0.06,0.06,0.08,23
+16/11/2022 17:07:49  -  Trama Recebida sem CS: 5,0.06,0.06,0.08,
+16/11/2022 17:07:49  -  CS da Trama recebida: 23
+16/11/2022 17:07:50  -  Dado Recebido: 6,0.010,0.011,0.011,19
+16/11/2022 17:07:50  -  Trama Recebida sem CS: 6,0.010,0.011,0.011,
+16/11/2022 17:07:50  -  CS da Trama recebida: 19
+16/11/2022 17:07:50  -  Dado Recebido: 5,97.73,98.03,104.19,2e
+16/11/2022 17:07:50  -  Trama Recebida sem CS: 5,97.73,98.03,104.19,
+16/11/2022 17:07:50  -  CS da Trama recebida: 2e
+16/11/2022 17:07:50  -  Dado Recebido: 6,1.609,1.528,1.525,1b
+16/11/2022 17:07:50  -  Trama Recebida sem CS: 6,1.609,1.528,1.525,
+16/11/2022 17:07:50  -  CS da Trama recebida: 1b
+16/11/2022 17:07:50  -  Dado Recebido: VA: 2007192
+16/11/2022 17:07:50  -  A trama recebida não continha ','
+16/11/2022 17:07:50  -  Dado Recebido: VB: 1997589
+16/11/2022 17:07:50  -  A trama recebida não continha ','
+16/11/2022 17:07:50  -  Dado Recebido: VC: 1990216
+16/11/2022 17:07:50  -  A trama recebida não continha ','
+16/11/2022 17:07:50  -  Dado Recebido: 5,142.39,141.70,141.11,21
+16/11/2022 17:07:50  -  Trama Recebida sem CS: 5,142.39,141.70,141.11,
+16/11/2022 17:07:50  -  CS da Trama recebida: 21
+16/11/2022 17:07:50  -  Dado Recebido: 28,59.897,-0.944,-0.946,-0.951,120.028,240.140,15.8047,15.8203,15.8633,3e
+16/11/2022 17:07:50  -  Trama Recebida sem CS: 28,59.897,-0.944,-0.946,-0.951,120.028,240.140,15.8047,15.8203,15.8633,
+16/11/2022 17:07:50  -  CS da Trama recebida: 3e
+16/11/2022 17:07:50  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;17.454
+16/11/2022 17:07:50  -  A trama recebida não continha ','
+16/11/2022 17:07:51  -  Dado Recebido: 6,2.329,2.238,2.203,1a
+16/11/2022 17:07:51  -  Trama Recebida sem CS: 6,2.329,2.238,2.203,
+16/11/2022 17:07:51  -  CS da Trama recebida: 1a
+16/11/2022 17:07:51  -  Dado Recebido: 5,171.35,170.09,170.68,2d
+16/11/2022 17:07:51  -  Trama Recebida sem CS: 5,171.35,170.09,170.68,
+16/11/2022 17:07:51  -  CS da Trama recebida: 2d
+16/11/2022 17:07:51  -  Dado Recebido: 6,2.639,2.659,2.612,19
+16/11/2022 17:07:51  -  Trama Recebida sem CS: 6,2.639,2.659,2.612,
+16/11/2022 17:07:51  -  CS da Trama recebida: 19
+16/11/2022 17:07:51  -  Dado Recebido: 5,199.58,198.91,198.47,2c
+16/11/2022 17:07:51  -  Trama Recebida sem CS: 5,199.58,198.91,198.47,
+16/11/2022 17:07:51  -  CS da Trama recebida: 2c
+16/11/2022 17:07:51  -  Dado Recebido: 9,1,2.88,38
+16/11/2022 17:07:51  -  Trama Recebida sem CS: 9,1,2.88,
+16/11/2022 17:07:51  -  CS da Trama recebida: 38
+16/11/2022 17:07:51  -  Dado Recebido: 9,2,2.80,33
+16/11/2022 17:07:51  -  Trama Recebida sem CS: 9,2,2.80,
+16/11/2022 17:07:51  -  CS da Trama recebida: 33
+16/11/2022 17:07:51  -  Dado Recebido: 9,3,2.85,37
+16/11/2022 17:07:51  -  Trama Recebida sem CS: 9,3,2.85,
+16/11/2022 17:07:51  -  CS da Trama recebida: 37
+16/11/2022 17:07:51  -  Dado Recebido: VA: 2907812
+16/11/2022 17:07:51  -  A trama recebida não continha ','
+16/11/2022 17:07:52  -  Dado Recebido: VB: 2906575
+16/11/2022 17:07:52  -  A trama recebida não continha ','
+16/11/2022 17:07:52  -  Dado Recebido: VC: 2898988
+16/11/2022 17:07:52  -  A trama recebida não continha ','
+16/11/2022 17:07:52  -  Dado Recebido: 28,59.869,-0.945,-0.945,-0.947,120.393,240.786,15.8203,15.8164,15.8320,32
+16/11/2022 17:07:52  -  Trama Recebida sem CS: 28,59.869,-0.945,-0.945,-0.947,120.393,240.786,15.8203,15.8164,15.8320,
+16/11/2022 17:07:52  -  CS da Trama recebida: 32
+16/11/2022 17:07:52  -  Dado Recebido: 6,2.930,2.912,2.894,1f
+16/11/2022 17:07:52  -  Trama Recebida sem CS: 6,2.930,2.912,2.894,
+16/11/2022 17:07:52  -  CS da Trama recebida: 1f
+16/11/2022 17:07:52  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;17.454
+16/11/2022 17:07:52  -  A trama recebida não continha ','
+16/11/2022 17:07:52  -  Dado Recebido: 5,210.46,209.88,209.57,28
+16/11/2022 17:07:52  -  Trama Recebida sem CS: 5,210.46,209.88,209.57,
+16/11/2022 17:07:52  -  CS da Trama recebida: 28
+16/11/2022 17:07:52  -  Dado Recebido: 6,2.975,2.982,2.956,18
+16/11/2022 17:07:52  -  Trama Recebida sem CS: 6,2.975,2.982,2.956,
+16/11/2022 17:07:52  -  CS da Trama recebida: 18
+16/11/2022 17:07:52  -  Dado Recebido: 5,218.83,218.39,218.86,2f
+16/11/2022 17:07:52  -  Trama Recebida sem CS: 5,218.83,218.39,218.86,
+16/11/2022 17:07:52  -  CS da Trama recebida: 2f
+16/11/2022 17:07:52  -  Dado Recebido: 6,2.996,3.006,2.984,1e
+16/11/2022 17:07:52  -  Trama Recebida sem CS: 6,2.996,3.006,2.984,
+16/11/2022 17:07:52  -  CS da Trama recebida: 1e
+16/11/2022 17:07:52  -  Dado Recebido: VA: 3198499
+16/11/2022 17:07:52  -  A trama recebida não continha ','
+16/11/2022 17:07:53  -  Dado Recebido: VB: 3208131
+16/11/2022 17:07:53  -  A trama recebida não continha ','
+16/11/2022 17:07:53  -  Dado Recebido: VC: 3206007
+16/11/2022 17:07:53  -  A trama recebida não continha ','
+16/11/2022 17:07:53  -  Dado Recebido: 28,59.855,-0.942,-0.941,-0.946,120.196,240.393,15.7969,15.7891,15.8281,36
+16/11/2022 17:07:53  -  Trama Recebida sem CS: 28,59.855,-0.942,-0.941,-0.946,120.196,240.393,15.7969,15.7891,15.8281,
+16/11/2022 17:07:53  -  CS da Trama recebida: 36
+16/11/2022 17:07:53  -  Dado Recebido: 5,225.14,224.74,224.38,23
+16/11/2022 17:07:53  -  Trama Recebida sem CS: 5,225.14,224.74,224.38,
+16/11/2022 17:07:53  -  CS da Trama recebida: 23
+16/11/2022 17:07:53  -  Dado Recebido: 6,3.002,2.994,3.008,14
+16/11/2022 17:07:53  -  Trama Recebida sem CS: 6,3.002,2.994,3.008,
+16/11/2022 17:07:53  -  CS da Trama recebida: 14
+16/11/2022 17:07:53  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:07:53  -  A trama recebida não continha ','
+16/11/2022 17:07:53  -  Dado Recebido: 5,229.26,229.60,229.33,20
+16/11/2022 17:07:53  -  Trama Recebida sem CS: 5,229.26,229.60,229.33,
+16/11/2022 17:07:53  -  CS da Trama recebida: 20
+16/11/2022 17:07:53  -  Dado Recebido: 6,3.002,3.007,2.990,1f
+16/11/2022 17:07:53  -  Trama Recebida sem CS: 6,3.002,3.007,2.990,
+16/11/2022 17:07:53  -  CS da Trama recebida: 1f
+16/11/2022 17:07:53  -  Dado Recebido: VA: 3341745
+16/11/2022 17:07:53  -  A trama recebida não continha ','
+16/11/2022 17:07:53  -  Dado Recebido: VB: 3341601
+16/11/2022 17:07:53  -  A trama recebida não continha ','
+16/11/2022 17:07:53  -  Dado Recebido: VC: 3348443
+16/11/2022 17:07:53  -  A trama recebida não continha ','
+16/11/2022 17:07:54  -  Dado Recebido: 5,232.69,232.17,232.59,2d
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 5,232.69,232.17,232.59,
+16/11/2022 17:07:54  -  CS da Trama recebida: 2d
+16/11/2022 17:07:54  -  Dado Recebido: 28,59.883,-0.940,-0.942,-0.947,120.084,240.000,15.7773,15.7891,15.8281,33
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 28,59.883,-0.940,-0.942,-0.947,120.084,240.000,15.7773,15.7891,15.8281,
+16/11/2022 17:07:54  -  CS da Trama recebida: 33
+16/11/2022 17:07:54  -  Dado Recebido: 6,3.001,2.992,3.006,1f
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 6,3.001,2.992,3.006,
+16/11/2022 17:07:54  -  CS da Trama recebida: 1f
+16/11/2022 17:07:54  -  Dado Recebido: 5,234.78,234.24,234.77,27
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 5,234.78,234.24,234.77,
+16/11/2022 17:07:54  -  CS da Trama recebida: 27
+16/11/2022 17:07:54  -  Dado Recebido: 6,3.002,3.009,2.989,19
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 6,3.002,3.009,2.989,
+16/11/2022 17:07:54  -  CS da Trama recebida: 19
+16/11/2022 17:07:54  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:07:54  -  A trama recebida não continha ','
+16/11/2022 17:07:54  -  Dado Recebido: 5,235.89,236.17,235.93,21
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 5,235.89,236.17,235.93,
+16/11/2022 17:07:54  -  CS da Trama recebida: 21
+16/11/2022 17:07:54  -  Dado Recebido: VA: 3400578
+16/11/2022 17:07:54  -  A trama recebida não continha ','
+16/11/2022 17:07:54  -  Dado Recebido: VB: 3413753
+16/11/2022 17:07:54  -  A trama recebida não continha ','
+16/11/2022 17:07:54  -  Dado Recebido: VC: 3406704
+16/11/2022 17:07:54  -  A trama recebida não continha ','
+16/11/2022 17:07:54  -  Dado Recebido: 6,3.002,2.991,3.004,1d
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 6,3.002,2.991,3.004,
+16/11/2022 17:07:54  -  CS da Trama recebida: 1d
+16/11/2022 17:07:54  -  Dado Recebido: 28,59.883,-0.939,-0.939,-0.943,120.084,240.000,15.7695,15.7695,15.8008,35
+16/11/2022 17:07:54  -  Trama Recebida sem CS: 28,59.883,-0.939,-0.939,-0.943,120.084,240.000,15.7695,15.7695,15.8008,
+16/11/2022 17:07:54  -  CS da Trama recebida: 35
+16/11/2022 17:07:55  -  Dado Recebido: 5,237.73,237.28,236.95,2e
+16/11/2022 17:07:55  -  Trama Recebida sem CS: 5,237.73,237.28,236.95,
+16/11/2022 17:07:55  -  CS da Trama recebida: 2e
+16/11/2022 17:07:55  -  Dado Recebido: 6,3.003,3.008,3.004,14
+16/11/2022 17:07:55  -  Trama Recebida sem CS: 6,3.003,3.008,3.004,
+16/11/2022 17:07:55  -  CS da Trama recebida: 14
+16/11/2022 17:07:55  -  Dado Recebido: 5,237.92,238.25,237.96,21
+16/11/2022 17:07:55  -  Trama Recebida sem CS: 5,237.92,238.25,237.96,
+16/11/2022 17:07:55  -  CS da Trama recebida: 21
+16/11/2022 17:07:55  -  Dado Recebido: 6,3.001,2.990,2.988,13
+16/11/2022 17:07:55  -  Trama Recebida sem CS: 6,3.001,2.990,2.988,
+16/11/2022 17:07:55  -  CS da Trama recebida: 13
+16/11/2022 17:07:55  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:07:55  -  A trama recebida não continha ','
+16/11/2022 17:07:55  -  Dado Recebido: VA: 3430295
+16/11/2022 17:07:55  -  A trama recebida não continha ','
+16/11/2022 17:07:55  -  Dado Recebido: VB: 3430785
+16/11/2022 17:07:55  -  A trama recebida não continha ','
+16/11/2022 17:07:56  -  Dado Recebido: VC: 3437229
+16/11/2022 17:07:56  -  A trama recebida não continha ','
+16/11/2022 17:07:56  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.941,119.972,239.944,15.7656,15.7656,15.7852,36
+16/11/2022 17:07:56  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.941,119.972,239.944,15.7656,15.7656,15.7852,
+16/11/2022 17:07:56  -  CS da Trama recebida: 36
+16/11/2022 17:07:56  -  Dado Recebido: 5,238.87,238.60,238.79,25
+16/11/2022 17:07:56  -  Trama Recebida sem CS: 5,238.87,238.60,238.79,
+16/11/2022 17:07:56  -  CS da Trama recebida: 25
+16/11/2022 17:07:56  -  Dado Recebido: 6,2.999,3.009,3.007,1d
+16/11/2022 17:07:56  -  Trama Recebida sem CS: 6,2.999,3.009,3.007,
+16/11/2022 17:07:56  -  CS da Trama recebida: 1d
+16/11/2022 17:07:56  -  Dado Recebido: 5,238.90,239.28,238.79,2e
+16/11/2022 17:07:56  -  Trama Recebida sem CS: 5,238.90,239.28,238.79,
+16/11/2022 17:07:56  -  CS da Trama recebida: 2e
+16/11/2022 17:07:56  -  Dado Recebido: 6,3.001,2.996,2.993,1f
+16/11/2022 17:07:56  -  Trama Recebida sem CS: 6,3.001,2.996,2.993,
+16/11/2022 17:07:56  -  CS da Trama recebida: 1f
+16/11/2022 17:07:56  -  Dado Recebido: 5,239.55,239.27,239.40,22
+16/11/2022 17:07:56  -  Trama Recebida sem CS: 5,239.55,239.27,239.40,
+16/11/2022 17:07:56  -  CS da Trama recebida: 22
+16/11/2022 17:07:56  -  Dado Recebido: VA: 3432351
+16/11/2022 17:07:56  -  A trama recebida não continha ','
+16/11/2022 17:07:56  -  Dado Recebido: VB: 3443999
+16/11/2022 17:07:56  -  A trama recebida não continha ','
+16/11/2022 17:07:57  -  Dado Recebido: VC: 3441263
+16/11/2022 17:07:57  -  A trama recebida não continha ','
+16/11/2022 17:07:57  -  Dado Recebido: 28,59.869,-0.939,-0.939,-0.940,120.140,240.028,15.7695,15.7695,15.7773,35
+16/11/2022 17:07:57  -  Trama Recebida sem CS: 28,59.869,-0.939,-0.939,-0.940,120.140,240.028,15.7695,15.7695,15.7773,
+16/11/2022 17:07:57  -  CS da Trama recebida: 35
+16/11/2022 17:07:57  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:07:57  -  A trama recebida não continha ','
+16/11/2022 17:07:57  -  Dado Recebido: 6,3.001,2.996,3.000,1d
+16/11/2022 17:07:57  -  Trama Recebida sem CS: 6,3.001,2.996,3.000,
+16/11/2022 17:07:57  -  CS da Trama recebida: 1d
+16/11/2022 17:07:57  -  Dado Recebido: 5,239.89,239.22,239.76,23
+16/11/2022 17:07:57  -  Trama Recebida sem CS: 5,239.89,239.22,239.76,
+16/11/2022 17:07:57  -  CS da Trama recebida: 23
+16/11/2022 17:07:57  -  Dado Recebido: 6,3.001,3.003,3.005,1c
+16/11/2022 17:07:57  -  Trama Recebida sem CS: 6,3.001,3.003,3.005,
+16/11/2022 17:07:57  -  CS da Trama recebida: 1c
+16/11/2022 17:07:57  -  Dado Recebido: 7,1,239.94,31
+16/11/2022 17:07:57  -  Trama Recebida sem CS: 7,1,239.94,
+16/11/2022 17:07:57  -  CS da Trama recebida: 31
+16/11/2022 17:07:57  -  Dado Recebido: 5,239.94,239.57,239.86,22
+16/11/2022 17:07:57  -  Trama Recebida sem CS: 5,239.94,239.57,239.86,
+16/11/2022 17:07:57  -  CS da Trama recebida: 22
+16/11/2022 17:07:58  -  Dado Recebido: 7,2,240.04,35
+16/11/2022 17:07:58  -  Trama Recebida sem CS: 7,2,240.04,
+16/11/2022 17:07:58  -  CS da Trama recebida: 35
+16/11/2022 17:07:58  -  Dado Recebido: 6,3.002,2.995,2.993,1f
+16/11/2022 17:07:58  -  Trama Recebida sem CS: 6,3.002,2.995,2.993,
+16/11/2022 17:07:58  -  CS da Trama recebida: 1f
+16/11/2022 17:07:58  -  Dado Recebido: VA: 3444805
+16/11/2022 17:07:58  -  A trama recebida não continha ','
+16/11/2022 17:07:58  -  Dado Recebido: VB: 3445626
+16/11/2022 17:07:58  -  A trama recebida não continha ','
+16/11/2022 17:07:58  -  Dado Recebido: VC: 3453198
+16/11/2022 17:07:58  -  A trama recebida não continha ','
+16/11/2022 17:07:58  -  Dado Recebido: 28,59.883,-0.939,-0.939,-0.940,120.084,240.084,15.7695,15.7695,15.7773,3e
+16/11/2022 17:07:58  -  Trama Recebida sem CS: 28,59.883,-0.939,-0.939,-0.940,120.084,240.084,15.7695,15.7695,15.7773,
+16/11/2022 17:07:58  -  CS da Trama recebida: 3e
+16/11/2022 17:07:58  -  Dado Recebido: 5,239.85,239.33,239.86,20
+16/11/2022 17:07:58  -  Trama Recebida sem CS: 5,239.85,239.33,239.86,
+16/11/2022 17:07:58  -  CS da Trama recebida: 20
+16/11/2022 17:07:58  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:07:58  -  A trama recebida não continha ','
+16/11/2022 17:07:59  -  Dado Recebido: 6,2.992,2.997,3.007,19
+16/11/2022 17:07:59  -  Trama Recebida sem CS: 6,2.992,2.997,3.007,
+16/11/2022 17:07:59  -  CS da Trama recebida: 19
+16/11/2022 17:07:59  -  Dado Recebido: 5,239.85,239.28,239.89,25
+16/11/2022 17:07:59  -  Trama Recebida sem CS: 5,239.85,239.28,239.89,
+16/11/2022 17:07:59  -  CS da Trama recebida: 25
+16/11/2022 17:07:59  -  Dado Recebido: 6,3.002,3.009,2.998,19
+16/11/2022 17:07:59  -  Trama Recebida sem CS: 6,3.002,3.009,2.998,
+16/11/2022 17:07:59  -  CS da Trama recebida: 19
+16/11/2022 17:07:59  -  Dado Recebido: 7,3,239.90,37
+16/11/2022 17:07:59  -  Trama Recebida sem CS: 7,3,239.90,
+16/11/2022 17:07:59  -  CS da Trama recebida: 37
+16/11/2022 17:07:59  -  Dado Recebido: 5,239.86,240.09,239.85,27
+16/11/2022 17:07:59  -  Trama Recebida sem CS: 5,239.86,240.09,239.85,
+16/11/2022 17:07:59  -  CS da Trama recebida: 27
+16/11/2022 17:07:59  -  Dado Recebido: 28,59.883,-0.939,-0.938,-0.939,120.168,240.168,15.7656,15.7617,15.7695,3d
+16/11/2022 17:07:59  -  Trama Recebida sem CS: 28,59.883,-0.939,-0.938,-0.939,120.168,240.168,15.7656,15.7617,15.7695,
+16/11/2022 17:07:59  -  CS da Trama recebida: 3d
+16/11/2022 17:07:59  -  Dado Recebido: VA: 3445941
+16/11/2022 17:07:59  -  A trama recebida não continha ','
+16/11/2022 17:07:59  -  Dado Recebido: VB: 3447270
+16/11/2022 17:07:59  -  A trama recebida não continha ','
+16/11/2022 17:08:00  -  Dado Recebido: VC: 3452238
+16/11/2022 17:08:00  -  A trama recebida não continha ','
+16/11/2022 17:08:00  -  Dado Recebido: 6,3.000,2.987,2.998,15
+16/11/2022 17:08:00  -  Trama Recebida sem CS: 6,3.000,2.987,2.998,
+16/11/2022 17:08:00  -  CS da Trama recebida: 15
+16/11/2022 17:08:00  -  Dado Recebido: 5,239.88,240.36,239.83,23
+16/11/2022 17:08:00  -  Trama Recebida sem CS: 5,239.88,240.36,239.83,
+16/11/2022 17:08:00  -  CS da Trama recebida: 23
+16/11/2022 17:08:00  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:00  -  A trama recebida não continha ','
+16/11/2022 17:08:00  -  Dado Recebido: 6,3.000,3.009,3.007,15
+16/11/2022 17:08:00  -  Trama Recebida sem CS: 6,3.000,3.009,3.007,
+16/11/2022 17:08:00  -  CS da Trama recebida: 15
+16/11/2022 17:08:00  -  Dado Recebido: 5,239.91,240.45,239.80,2c
+16/11/2022 17:08:00  -  Trama Recebida sem CS: 5,239.91,240.45,239.80,
+16/11/2022 17:08:00  -  CS da Trama recebida: 2c
+16/11/2022 17:08:00  -  Dado Recebido: 6,3.000,3.001,2.998,13
+16/11/2022 17:08:00  -  Trama Recebida sem CS: 6,3.000,3.001,2.998,
+16/11/2022 17:08:00  -  CS da Trama recebida: 13
+16/11/2022 17:08:00  -  Dado Recebido: 28,59.883,-0.938,-0.939,-0.940,120.168,240.084,15.7617,15.7695,15.7773,36
+16/11/2022 17:08:00  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.939,-0.940,120.168,240.084,15.7617,15.7695,15.7773,
+16/11/2022 17:08:00  -  CS da Trama recebida: 36
+16/11/2022 17:08:00  -  Dado Recebido: VA: 3445841
+16/11/2022 17:08:00  -  A trama recebida não continha ','
+16/11/2022 17:08:01  -  Dado Recebido: VB: 3447887
+16/11/2022 17:08:01  -  A trama recebida não continha ','
+16/11/2022 17:08:01  -  Dado Recebido: VC: 3452160
+16/11/2022 17:08:01  -  A trama recebida não continha ','
+16/11/2022 17:08:01  -  Dado Recebido: 5,239.94,239.24,239.89,29
+16/11/2022 17:08:01  -  Trama Recebida sem CS: 5,239.94,239.24,239.89,
+16/11/2022 17:08:01  -  CS da Trama recebida: 29
+16/11/2022 17:08:01  -  Dado Recebido: 6,3.000,2.994,3.005,1b
+16/11/2022 17:08:01  -  Trama Recebida sem CS: 6,3.000,2.994,3.005,
+16/11/2022 17:08:01  -  CS da Trama recebida: 1b
+16/11/2022 17:08:01  -  Dado Recebido: 5,239.91,239.69,239.91,2c
+16/11/2022 17:08:01  -  Trama Recebida sem CS: 5,239.91,239.69,239.91,
+16/11/2022 17:08:01  -  CS da Trama recebida: 2c
+16/11/2022 17:08:01  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:01  -  A trama recebida não continha ','
+16/11/2022 17:08:01  -  Dado Recebido: 6,3.000,3.004,3.000,1f
+16/11/2022 17:08:01  -  Trama Recebida sem CS: 6,3.000,3.004,3.000,
+16/11/2022 17:08:01  -  CS da Trama recebida: 1f
+16/11/2022 17:08:01  -  Dado Recebido: 5,239.89,240.55,239.90,25
+16/11/2022 17:08:01  -  Trama Recebida sem CS: 5,239.89,240.55,239.90,
+16/11/2022 17:08:01  -  CS da Trama recebida: 25
+16/11/2022 17:08:02  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.939,120.056,240.028,15.7656,15.7656,15.7734,3e
+16/11/2022 17:08:02  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.939,120.056,240.028,15.7656,15.7656,15.7734,
+16/11/2022 17:08:02  -  CS da Trama recebida: 3e
+16/11/2022 17:08:02  -  Dado Recebido: VA: 3444803
+16/11/2022 17:08:02  -  A trama recebida não continha ','
+16/11/2022 17:08:02  -  Dado Recebido: VB: 3466537
+16/11/2022 17:08:02  -  A trama recebida não continha ','
+16/11/2022 17:08:02  -  Dado Recebido: VC: 3452238
+16/11/2022 17:08:02  -  A trama recebida não continha ','
+16/11/2022 17:08:02  -  Dado Recebido: 6,3.000,2.993,3.006,1f
+16/11/2022 17:08:02  -  Trama Recebida sem CS: 6,3.000,2.993,3.006,
+16/11/2022 17:08:02  -  CS da Trama recebida: 1f
+16/11/2022 17:08:02  -  Dado Recebido: 5,239.86,240.64,239.89,20
+16/11/2022 17:08:02  -  Trama Recebida sem CS: 5,239.86,240.64,239.89,
+16/11/2022 17:08:02  -  CS da Trama recebida: 20
+16/11/2022 17:08:02  -  Dado Recebido: 6,3.000,2.992,3.001,19
+16/11/2022 17:08:02  -  Trama Recebida sem CS: 6,3.000,2.992,3.001,
+16/11/2022 17:08:02  -  CS da Trama recebida: 19
+16/11/2022 17:08:02  -  Dado Recebido: 5,239.87,239.30,239.86,21
+16/11/2022 17:08:02  -  Trama Recebida sem CS: 5,239.87,239.30,239.86,
+16/11/2022 17:08:02  -  CS da Trama recebida: 21
+16/11/2022 17:08:02  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:02  -  A trama recebida não continha ','
+16/11/2022 17:08:02  -  Dado Recebido: VA: 3444812
+16/11/2022 17:08:02  -  A trama recebida não continha ','
+16/11/2022 17:08:02  -  Dado Recebido: VB: 3465059
+16/11/2022 17:08:02  -  A trama recebida não continha ','
+16/11/2022 17:08:03  -  Dado Recebido: VC: 3453300
+16/11/2022 17:08:03  -  A trama recebida não continha ','
+16/11/2022 17:08:03  -  Dado Recebido: 6,2.999,3.010,2.989,1b
+16/11/2022 17:08:03  -  Trama Recebida sem CS: 6,2.999,3.010,2.989,
+16/11/2022 17:08:03  -  CS da Trama recebida: 1b
+16/11/2022 17:08:03  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.939,120.056,240.028,15.7617,15.7656,15.7734,3b
+16/11/2022 17:08:03  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.939,120.056,240.028,15.7617,15.7656,15.7734,
+16/11/2022 17:08:03  -  CS da Trama recebida: 3b
+16/11/2022 17:08:03  -  Dado Recebido: 5,239.96,241.04,239.82,2d
+16/11/2022 17:08:03  -  Trama Recebida sem CS: 5,239.96,241.04,239.82,
+16/11/2022 17:08:03  -  CS da Trama recebida: 2d
+16/11/2022 17:08:03  -  Dado Recebido: 6,2.999,3.007,3.006,12
+16/11/2022 17:08:03  -  Trama Recebida sem CS: 6,2.999,3.007,3.006,
+16/11/2022 17:08:03  -  CS da Trama recebida: 12
+16/11/2022 17:08:03  -  Dado Recebido: 5,239.96,239.23,240.11,23
+16/11/2022 17:08:03  -  Trama Recebida sem CS: 5,239.96,239.23,240.11,
+16/11/2022 17:08:03  -  CS da Trama recebida: 23
+16/11/2022 17:08:03  -  Dado Recebido: 6,2.999,3.007,3.003,17
+16/11/2022 17:08:03  -  Trama Recebida sem CS: 6,2.999,3.007,3.003,
+16/11/2022 17:08:03  -  CS da Trama recebida: 17
+16/11/2022 17:08:03  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:03  -  A trama recebida não continha ','
+16/11/2022 17:08:03  -  Dado Recebido: VA: 3468206
+16/11/2022 17:08:03  -  A trama recebida não continha ','
+16/11/2022 17:08:03  -  Dado Recebido: VB: 3446431
+16/11/2022 17:08:03  -  A trama recebida não continha ','
+16/11/2022 17:08:03  -  Dado Recebido: VC: 3453088
+16/11/2022 17:08:03  -  A trama recebida não continha ','
+16/11/2022 17:08:04  -  Dado Recebido: 5,241.51,239.45,239.86,27
+16/11/2022 17:08:04  -  Trama Recebida sem CS: 5,241.51,239.45,239.86,
+16/11/2022 17:08:04  -  CS da Trama recebida: 27
+16/11/2022 17:08:04  -  Dado Recebido: 28,59.855,-0.937,-0.940,-0.938,119.944,239.888,15.7578,15.7812,15.7695,37
+16/11/2022 17:08:04  -  Trama Recebida sem CS: 28,59.855,-0.937,-0.940,-0.938,119.944,239.888,15.7578,15.7812,15.7695,
+16/11/2022 17:08:04  -  CS da Trama recebida: 37
+16/11/2022 17:08:04  -  Dado Recebido: 6,3.000,2.990,3.006,1c
+16/11/2022 17:08:04  -  Trama Recebida sem CS: 6,3.000,2.990,3.006,
+16/11/2022 17:08:04  -  CS da Trama recebida: 1c
+16/11/2022 17:08:04  -  Dado Recebido: 5,239.95,239.43,239.88,28
+16/11/2022 17:08:04  -  Trama Recebida sem CS: 5,239.95,239.43,239.88,
+16/11/2022 17:08:04  -  CS da Trama recebida: 28
+16/11/2022 17:08:04  -  Dado Recebido: 6,3.000,3.006,3.002,1f
+16/11/2022 17:08:04  -  Trama Recebida sem CS: 6,3.000,3.006,3.002,
+16/11/2022 17:08:04  -  CS da Trama recebida: 1f
+16/11/2022 17:08:04  -  Dado Recebido: 5,239.91,240.69,239.90,23
+16/11/2022 17:08:04  -  Trama Recebida sem CS: 5,239.91,240.69,239.90,
+16/11/2022 17:08:04  -  CS da Trama recebida: 23
+16/11/2022 17:08:04  -  Dado Recebido: VA: 3445978
+16/11/2022 17:08:04  -  A trama recebida não continha ','
+16/11/2022 17:08:04  -  Dado Recebido: VB: 3468457
+16/11/2022 17:08:04  -  A trama recebida não continha ','
+16/11/2022 17:08:04  -  Dado Recebido: VC: 3452752
+16/11/2022 17:08:04  -  A trama recebida não continha ','
+16/11/2022 17:08:05  -  Dado Recebido: 28,59.855,-0.937,-0.938,-0.939,119.944,239.888,15.7617,15.7656,15.7734,37
+16/11/2022 17:08:05  -  Trama Recebida sem CS: 28,59.855,-0.937,-0.938,-0.939,119.944,239.888,15.7617,15.7656,15.7734,
+16/11/2022 17:08:05  -  CS da Trama recebida: 37
+16/11/2022 17:08:05  -  Dado Recebido: 6,2.999,3.005,2.991,16
+16/11/2022 17:08:05  -  Trama Recebida sem CS: 6,2.999,3.005,2.991,
+16/11/2022 17:08:05  -  CS da Trama recebida: 16
+16/11/2022 17:08:05  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:05  -  A trama recebida não continha ','
+16/11/2022 17:08:05  -  Dado Recebido: 5,239.86,239.42,239.86,25
+16/11/2022 17:08:05  -  Trama Recebida sem CS: 5,239.86,239.42,239.86,
+16/11/2022 17:08:05  -  CS da Trama recebida: 25
+16/11/2022 17:08:05  -  Dado Recebido: 6,2.999,2.990,2.991,12
+16/11/2022 17:08:05  -  Trama Recebida sem CS: 6,2.999,2.990,2.991,
+16/11/2022 17:08:05  -  CS da Trama recebida: 12
+16/11/2022 17:08:05  -  Dado Recebido: 5,239.89,240.59,239.84,2c
+16/11/2022 17:08:05  -  Trama Recebida sem CS: 5,239.89,240.59,239.84,
+16/11/2022 17:08:05  -  CS da Trama recebida: 2c
+16/11/2022 17:08:05  -  Dado Recebido: 6,2.998,3.005,3.007,10
+16/11/2022 17:08:05  -  Trama Recebida sem CS: 6,2.998,3.005,3.007,
+16/11/2022 17:08:05  -  CS da Trama recebida: 10
+16/11/2022 17:08:05  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.940,120.056,240.028,15.7617,15.7617,15.7773,33
+16/11/2022 17:08:05  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.940,120.056,240.028,15.7617,15.7617,15.7773,
+16/11/2022 17:08:05  -  CS da Trama recebida: 33
+16/11/2022 17:08:06  -  Dado Recebido: VA: 3445053
+16/11/2022 17:08:06  -  A trama recebida não continha ','
+16/11/2022 17:08:06  -  Dado Recebido: VB: 3465747
+16/11/2022 17:08:06  -  A trama recebida não continha ','
+16/11/2022 17:08:06  -  Dado Recebido: VC: 3474184
+16/11/2022 17:08:06  -  A trama recebida não continha ','
+16/11/2022 17:08:06  -  Dado Recebido: 5,239.91,240.57,241.18,21
+16/11/2022 17:08:06  -  Trama Recebida sem CS: 5,239.91,240.57,241.18,
+16/11/2022 17:08:06  -  CS da Trama recebida: 21
+16/11/2022 17:08:06  -  Dado Recebido: 6,2.997,3.004,2.990,18
+16/11/2022 17:08:06  -  Trama Recebida sem CS: 6,2.997,3.004,2.990,
+16/11/2022 17:08:06  -  CS da Trama recebida: 18
+16/11/2022 17:08:06  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:06  -  A trama recebida não continha ','
+16/11/2022 17:08:06  -  Dado Recebido: 5,239.93,240.57,239.83,2e
+16/11/2022 17:08:06  -  Trama Recebida sem CS: 5,239.93,240.57,239.83,
+16/11/2022 17:08:06  -  CS da Trama recebida: 2e
+16/11/2022 17:08:06  -  Dado Recebido: 6,2.998,3.008,3.002,18
+16/11/2022 17:08:06  -  Trama Recebida sem CS: 6,2.998,3.008,3.002,
+16/11/2022 17:08:06  -  CS da Trama recebida: 18
+16/11/2022 17:08:07  -  Dado Recebido: 5,239.96,240.54,239.82,29
+16/11/2022 17:08:07  -  Trama Recebida sem CS: 5,239.96,240.54,239.82,
+16/11/2022 17:08:07  -  CS da Trama recebida: 29
+16/11/2022 17:08:07  -  Dado Recebido: 28,59.883,-0.938,-0.939,-0.939,120.000,240.000,15.7578,15.7695,15.7695,38
+16/11/2022 17:08:07  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.939,-0.939,120.000,240.000,15.7578,15.7695,15.7695,
+16/11/2022 17:08:07  -  CS da Trama recebida: 38
+16/11/2022 17:08:07  -  Dado Recebido: VA: 3444844
+16/11/2022 17:08:07  -  A trama recebida não continha ','
+16/11/2022 17:08:07  -  Dado Recebido: VB: 3448914
+16/11/2022 17:08:07  -  A trama recebida não continha ','
+16/11/2022 17:08:07  -  Dado Recebido: VC: 3452334
+16/11/2022 17:08:07  -  A trama recebida não continha ','
+16/11/2022 17:08:07  -  Dado Recebido: 6,2.999,2.996,3.004,10
+16/11/2022 17:08:07  -  Trama Recebida sem CS: 6,2.999,2.996,3.004,
+16/11/2022 17:08:07  -  CS da Trama recebida: 10
+16/11/2022 17:08:07  -  Dado Recebido: 5,239.88,239.90,239.92,21
+16/11/2022 17:08:07  -  Trama Recebida sem CS: 5,239.88,239.90,239.92,
+16/11/2022 17:08:07  -  CS da Trama recebida: 21
+16/11/2022 17:08:07  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:07  -  A trama recebida não continha ','
+16/11/2022 17:08:07  -  Dado Recebido: 6,2.999,2.996,3.006,12
+16/11/2022 17:08:07  -  Trama Recebida sem CS: 6,2.999,2.996,3.006,
+16/11/2022 17:08:07  -  CS da Trama recebida: 12
+16/11/2022 17:08:07  -  Dado Recebido: 5,239.87,240.08,239.90,23
+16/11/2022 17:08:07  -  Trama Recebida sem CS: 5,239.87,240.08,239.90,
+16/11/2022 17:08:07  -  CS da Trama recebida: 23
+16/11/2022 17:08:08  -  Dado Recebido: 6,2.999,3.000,2.994,16
+16/11/2022 17:08:08  -  Trama Recebida sem CS: 6,2.999,3.000,2.994,
+16/11/2022 17:08:08  -  CS da Trama recebida: 16
+16/11/2022 17:08:08  -  Dado Recebido: 28,59.869,-0.938,-0.939,-0.939,120.056,239.944,15.7656,15.7695,15.7734,3d
+16/11/2022 17:08:08  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.939,-0.939,120.056,239.944,15.7656,15.7695,15.7734,
+16/11/2022 17:08:08  -  CS da Trama recebida: 3d
+16/11/2022 17:08:08  -  Dado Recebido: VA: 3466436
+16/11/2022 17:08:08  -  A trama recebida não continha ','
+16/11/2022 17:08:08  -  Dado Recebido: VB: 3447842
+16/11/2022 17:08:08  -  A trama recebida não continha ','
+16/11/2022 17:08:08  -  Dado Recebido: VC: 3453426
+16/11/2022 17:08:08  -  A trama recebida não continha ','
+16/11/2022 17:08:08  -  Dado Recebido: 5,240.84,239.34,240.66,28
+16/11/2022 17:08:08  -  Trama Recebida sem CS: 5,240.84,239.34,240.66,
+16/11/2022 17:08:08  -  CS da Trama recebida: 28
+16/11/2022 17:08:08  -  Dado Recebido: 6,3.011,2.998,3.006,14
+16/11/2022 17:08:08  -  Trama Recebida sem CS: 6,3.011,2.998,3.006,
+16/11/2022 17:08:08  -  CS da Trama recebida: 14
+16/11/2022 17:08:08  -  Dado Recebido: 5,239.87,240.21,239.97,2f
+16/11/2022 17:08:08  -  Trama Recebida sem CS: 5,239.87,240.21,239.97,
+16/11/2022 17:08:08  -  CS da Trama recebida: 2f
+16/11/2022 17:08:08  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:08  -  A trama recebida não continha ','
+16/11/2022 17:08:09  -  Dado Recebido: 6,2.998,3.008,2.995,1e
+16/11/2022 17:08:09  -  Trama Recebida sem CS: 6,2.998,3.008,2.995,
+16/11/2022 17:08:09  -  CS da Trama recebida: 1e
+16/11/2022 17:08:09  -  Dado Recebido: 5,239.86,240.23,239.86,2c
+16/11/2022 17:08:09  -  Trama Recebida sem CS: 5,239.86,240.23,239.86,
+16/11/2022 17:08:09  -  CS da Trama recebida: 2c
+16/11/2022 17:08:09  -  Dado Recebido: 28,59.883,-0.938,-0.938,-0.940,120.168,240.084,15.7578,15.7617,15.7773,37
+16/11/2022 17:08:09  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.938,-0.940,120.168,240.084,15.7578,15.7617,15.7773,
+16/11/2022 17:08:09  -  CS da Trama recebida: 37
+16/11/2022 17:08:09  -  Dado Recebido: VA: 3445935
+16/11/2022 17:08:09  -  A trama recebida não continha ','
+16/11/2022 17:08:09  -  Dado Recebido: VB: 3448058
+16/11/2022 17:08:09  -  A trama recebida não continha ','
+16/11/2022 17:08:09  -  Dado Recebido: VC: 3452961
+16/11/2022 17:08:09  -  A trama recebida não continha ','
+16/11/2022 17:08:09  -  Dado Recebido: 6,2.998,2.988,2.993,18
+16/11/2022 17:08:09  -  Trama Recebida sem CS: 6,2.998,2.988,2.993,
+16/11/2022 17:08:09  -  CS da Trama recebida: 18
+16/11/2022 17:08:09  -  Dado Recebido: 5,239.96,239.87,239.81,2a
+16/11/2022 17:08:09  -  Trama Recebida sem CS: 5,239.96,239.87,239.81,
+16/11/2022 17:08:09  -  CS da Trama recebida: 2a
+16/11/2022 17:08:09  -  Dado Recebido: 6,2.998,3.009,3.005,1e
+16/11/2022 17:08:09  -  Trama Recebida sem CS: 6,2.998,3.009,3.005,
+16/11/2022 17:08:09  -  CS da Trama recebida: 1e
+16/11/2022 17:08:10  -  Dado Recebido: 5,239.97,240.31,239.84,2d
+16/11/2022 17:08:10  -  Trama Recebida sem CS: 5,239.97,240.31,239.84,
+16/11/2022 17:08:10  -  CS da Trama recebida: 2d
+16/11/2022 17:08:10  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:10  -  A trama recebida não continha ','
+16/11/2022 17:08:10  -  Dado Recebido: 28,59.883,-0.938,-0.937,-0.940,120.084,240.000,15.7617,15.7500,15.7734,3b
+16/11/2022 17:08:10  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.937,-0.940,120.084,240.000,15.7617,15.7500,15.7734,
+16/11/2022 17:08:10  -  CS da Trama recebida: 3b
+16/11/2022 17:08:10  -  Dado Recebido: 6,2.998,3.001,2.991,13
+16/11/2022 17:08:10  -  Trama Recebida sem CS: 6,2.998,3.001,2.991,
+16/11/2022 17:08:10  -  CS da Trama recebida: 13
+16/11/2022 17:08:10  -  Dado Recebido: VA: 3445421
+16/11/2022 17:08:10  -  A trama recebida não continha ','
+16/11/2022 17:08:10  -  Dado Recebido: VB: 3449307
+16/11/2022 17:08:10  -  A trama recebida não continha ','
+16/11/2022 17:08:10  -  Dado Recebido: VC: 3451804
+16/11/2022 17:08:10  -  A trama recebida não continha ','
+16/11/2022 17:08:10  -  Dado Recebido: 5,239.96,240.39,239.83,23
+16/11/2022 17:08:10  -  Trama Recebida sem CS: 5,239.96,240.39,239.83,
+16/11/2022 17:08:10  -  CS da Trama recebida: 23
+16/11/2022 17:08:10  -  Dado Recebido: 6,2.998,2.995,3.005,13
+16/11/2022 17:08:10  -  Trama Recebida sem CS: 6,2.998,2.995,3.005,
+16/11/2022 17:08:10  -  CS da Trama recebida: 13
+16/11/2022 17:08:10  -  Dado Recebido: 5,239.96,240.39,239.86,26
+16/11/2022 17:08:10  -  Trama Recebida sem CS: 5,239.96,240.39,239.86,
+16/11/2022 17:08:10  -  CS da Trama recebida: 26
+16/11/2022 17:08:11  -  Dado Recebido: 6,3.013,3.010,2.992,1b
+16/11/2022 17:08:11  -  Trama Recebida sem CS: 6,3.013,3.010,2.992,
+16/11/2022 17:08:11  -  CS da Trama recebida: 1b
+16/11/2022 17:08:11  -  Dado Recebido: 28,59.883,-0.939,-0.939,-0.938,120.000,240.000,15.7656,15.7695,15.7617,3d
+16/11/2022 17:08:11  -  Trama Recebida sem CS: 28,59.883,-0.939,-0.939,-0.938,120.000,240.000,15.7656,15.7695,15.7617,
+16/11/2022 17:08:11  -  CS da Trama recebida: 3d
+16/11/2022 17:08:11  -  Dado Recebido: VA: 3444673
+16/11/2022 17:08:11  -  A trama recebida não continha ','
+16/11/2022 17:08:11  -  Dado Recebido: VB: 3444103
+16/11/2022 17:08:11  -  A trama recebida não continha ','
+16/11/2022 17:08:11  -  Dado Recebido: VC: 3458736
+16/11/2022 17:08:11  -  A trama recebida não continha ','
+16/11/2022 17:08:11  -  Dado Recebido: 5,239.86,239.26,240.30,24
+16/11/2022 17:08:11  -  Trama Recebida sem CS: 5,239.86,239.26,240.30,
+16/11/2022 17:08:11  -  CS da Trama recebida: 24
+16/11/2022 17:08:11  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:11  -  A trama recebida não continha ','
+16/11/2022 17:08:11  -  Dado Recebido: 6,2.999,2.986,3.006,13
+16/11/2022 17:08:11  -  Trama Recebida sem CS: 6,2.999,2.986,3.006,
+16/11/2022 17:08:11  -  CS da Trama recebida: 13
+16/11/2022 17:08:11  -  Dado Recebido: 5,239.87,239.65,239.85,22
+16/11/2022 17:08:11  -  Trama Recebida sem CS: 5,239.87,239.65,239.85,
+16/11/2022 17:08:11  -  CS da Trama recebida: 22
+16/11/2022 17:08:11  -  Dado Recebido: 6,2.998,3.008,2.990,1b
+16/11/2022 17:08:11  -  Trama Recebida sem CS: 6,2.998,3.008,2.990,
+16/11/2022 17:08:11  -  CS da Trama recebida: 1b
+16/11/2022 17:08:12  -  Dado Recebido: 5,239.90,239.66,239.83,21
+16/11/2022 17:08:12  -  Trama Recebida sem CS: 5,239.90,239.66,239.83,
+16/11/2022 17:08:12  -  CS da Trama recebida: 21
+16/11/2022 17:08:12  -  Dado Recebido: 28,59.869,-0.938,-0.939,-0.939,119.888,240.028,15.7617,15.7695,15.7734,34
+16/11/2022 17:08:12  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.939,-0.939,119.888,240.028,15.7617,15.7695,15.7734,
+16/11/2022 17:08:12  -  CS da Trama recebida: 34
+16/11/2022 17:08:12  -  Dado Recebido: VA: 3445403
+16/11/2022 17:08:12  -  A trama recebida não continha ','
+16/11/2022 17:08:12  -  Dado Recebido: VB: 3463095
+16/11/2022 17:08:12  -  A trama recebida não continha ','
+16/11/2022 17:08:12  -  Dado Recebido: VC: 3453451
+16/11/2022 17:08:12  -  A trama recebida não continha ','
+16/11/2022 17:08:12  -  Dado Recebido: 6,2.997,2.991,3.006,1b
+16/11/2022 17:08:12  -  Trama Recebida sem CS: 6,2.997,2.991,3.006,
+16/11/2022 17:08:12  -  CS da Trama recebida: 1b
+16/11/2022 17:08:12  -  Dado Recebido: 5,239.92,239.64,239.81,23
+16/11/2022 17:08:12  -  Trama Recebida sem CS: 5,239.92,239.64,239.81,
+16/11/2022 17:08:12  -  CS da Trama recebida: 23
+16/11/2022 17:08:12  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:12  -  A trama recebida não continha ','
+16/11/2022 17:08:12  -  Dado Recebido: 6,2.997,2.991,3.002,1f
+16/11/2022 17:08:12  -  Trama Recebida sem CS: 6,2.997,2.991,3.002,
+16/11/2022 17:08:12  -  CS da Trama recebida: 1f
+16/11/2022 17:08:12  -  Dado Recebido: 5,240.34,240.64,239.82,2c
+16/11/2022 17:08:12  -  Trama Recebida sem CS: 5,240.34,240.64,239.82,
+16/11/2022 17:08:12  -  CS da Trama recebida: 2c
+16/11/2022 17:08:13  -  Dado Recebido: 6,2.997,3.009,3.006,12
+16/11/2022 17:08:13  -  Trama Recebida sem CS: 6,2.997,3.009,3.006,
+16/11/2022 17:08:13  -  CS da Trama recebida: 12
+16/11/2022 17:08:13  -  Dado Recebido: 28,59.869,-0.937,-0.938,-0.939,119.888,239.944,15.7578,15.7656,15.7734,32
+16/11/2022 17:08:13  -  Trama Recebida sem CS: 28,59.869,-0.937,-0.938,-0.939,119.888,239.944,15.7578,15.7656,15.7734,
+16/11/2022 17:08:13  -  CS da Trama recebida: 32
+16/11/2022 17:08:13  -  Dado Recebido: VA: 3445499
+16/11/2022 17:08:13  -  A trama recebida não continha ','
+16/11/2022 17:08:13  -  Dado Recebido: VB: 3462605
+16/11/2022 17:08:13  -  A trama recebida não continha ','
+16/11/2022 17:08:13  -  Dado Recebido: VC: 3453436
+16/11/2022 17:08:13  -  A trama recebida não continha ','
+16/11/2022 17:08:13  -  Dado Recebido: 5,239.90,240.71,239.91,2a
+16/11/2022 17:08:13  -  Trama Recebida sem CS: 5,239.90,240.71,239.91,
+16/11/2022 17:08:13  -  CS da Trama recebida: 2a
+16/11/2022 17:08:13  -  Dado Recebido: 6,3.018,3.005,3.002,15
+16/11/2022 17:08:13  -  Trama Recebida sem CS: 6,3.018,3.005,3.002,
+16/11/2022 17:08:13  -  CS da Trama recebida: 15
+16/11/2022 17:08:13  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:13  -  A trama recebida não continha ','
+16/11/2022 17:08:14  -  Dado Recebido: 5,239.89,240.73,239.91,20
+16/11/2022 17:08:14  -  Trama Recebida sem CS: 5,239.89,240.73,239.91,
+16/11/2022 17:08:14  -  CS da Trama recebida: 20
+16/11/2022 17:08:14  -  Dado Recebido: 6,2.999,3.005,3.004,12
+16/11/2022 17:08:14  -  Trama Recebida sem CS: 6,2.999,3.005,3.004,
+16/11/2022 17:08:14  -  CS da Trama recebida: 12
+16/11/2022 17:08:14  -  Dado Recebido: 5,239.88,239.28,241.48,2a
+16/11/2022 17:08:14  -  Trama Recebida sem CS: 5,239.88,239.28,241.48,
+16/11/2022 17:08:14  -  CS da Trama recebida: 2a
+16/11/2022 17:08:14  -  Dado Recebido: 28,59.883,-0.938,-0.940,-0.938,120.084,240.084,15.7578,15.7773,15.7578,3e
+16/11/2022 17:08:14  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.940,-0.938,120.084,240.084,15.7578,15.7773,15.7578,
+16/11/2022 17:08:14  -  CS da Trama recebida: 3e
+16/11/2022 17:08:14  -  Dado Recebido: VA: 3445664
+16/11/2022 17:08:14  -  A trama recebida não continha ','
+16/11/2022 17:08:14  -  Dado Recebido: VB: 3463247
+16/11/2022 17:08:14  -  A trama recebida não continha ','
+16/11/2022 17:08:14  -  Dado Recebido: VC: 3458627
+16/11/2022 17:08:14  -  A trama recebida não continha ','
+16/11/2022 17:08:14  -  Dado Recebido: 6,2.998,2.991,3.002,10
+16/11/2022 17:08:14  -  Trama Recebida sem CS: 6,2.998,2.991,3.002,
+16/11/2022 17:08:14  -  CS da Trama recebida: 10
+16/11/2022 17:08:14  -  Dado Recebido: 5,239.87,239.54,239.93,27
+16/11/2022 17:08:14  -  Trama Recebida sem CS: 5,239.87,239.54,239.93,
+16/11/2022 17:08:14  -  CS da Trama recebida: 27
+16/11/2022 17:08:15  -  Dado Recebido: 6,2.998,2.989,3.004,1f
+16/11/2022 17:08:15  -  Trama Recebida sem CS: 6,2.998,2.989,3.004,
+16/11/2022 17:08:15  -  CS da Trama recebida: 1f
+16/11/2022 17:08:15  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:15  -  A trama recebida não continha ','
+16/11/2022 17:08:15  -  Dado Recebido: 5,239.86,239.56,239.89,2f
+16/11/2022 17:08:15  -  Trama Recebida sem CS: 5,239.86,239.56,239.89,
+16/11/2022 17:08:15  -  CS da Trama recebida: 2f
+16/11/2022 17:08:15  -  Dado Recebido: 28,59.883,-0.938,-0.938,-0.940,120.084,240.000,15.7578,15.7617,15.7734,3b
+16/11/2022 17:08:15  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.938,-0.940,120.084,240.000,15.7578,15.7617,15.7734,
+16/11/2022 17:08:15  -  CS da Trama recebida: 3b
+16/11/2022 17:08:15  -  Dado Recebido: 6,2.998,3.007,3.003,16
+16/11/2022 17:08:15  -  Trama Recebida sem CS: 6,2.998,3.007,3.003,
+16/11/2022 17:08:15  -  CS da Trama recebida: 16
+16/11/2022 17:08:15  -  Dado Recebido: VA: 3444994
+16/11/2022 17:08:15  -  A trama recebida não continha ','
+16/11/2022 17:08:15  -  Dado Recebido: VB: 3450744
+16/11/2022 17:08:15  -  A trama recebida não continha ','
+16/11/2022 17:08:15  -  Dado Recebido: VC: 3452295
+16/11/2022 17:08:15  -  A trama recebida não continha ','
+16/11/2022 17:08:15  -  Dado Recebido: 5,239.93,239.40,239.80,25
+16/11/2022 17:08:15  -  Trama Recebida sem CS: 5,239.93,239.40,239.80,
+16/11/2022 17:08:15  -  CS da Trama recebida: 25
+16/11/2022 17:08:16  -  Dado Recebido: 6,3.003,3.008,3.005,15
+16/11/2022 17:08:16  -  Trama Recebida sem CS: 6,3.003,3.008,3.005,
+16/11/2022 17:08:16  -  CS da Trama recebida: 15
+16/11/2022 17:08:16  -  Dado Recebido: 5,239.95,240.46,239.81,2a
+16/11/2022 17:08:16  -  Trama Recebida sem CS: 5,239.95,240.46,239.81,
+16/11/2022 17:08:16  -  CS da Trama recebida: 2a
+16/11/2022 17:08:16  -  Dado Recebido: 6,2.999,2.994,2.990,17
+16/11/2022 17:08:16  -  Trama Recebida sem CS: 6,2.999,2.994,2.990,
+16/11/2022 17:08:16  -  CS da Trama recebida: 17
+16/11/2022 17:08:16  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:16  -  A trama recebida não continha ','
+16/11/2022 17:08:16  -  Dado Recebido: 28,59.869,-0.937,-0.939,-0.939,120.056,239.944,15.7578,15.7695,15.7695,37
+16/11/2022 17:08:16  -  Trama Recebida sem CS: 28,59.869,-0.937,-0.939,-0.939,120.056,239.944,15.7578,15.7695,15.7695,
+16/11/2022 17:08:16  -  CS da Trama recebida: 37
+16/11/2022 17:08:16  -  Dado Recebido: 5,239.97,240.43,239.82,2e
+16/11/2022 17:08:16  -  Trama Recebida sem CS: 5,239.97,240.43,239.82,
+16/11/2022 17:08:16  -  CS da Trama recebida: 2e
+16/11/2022 17:08:16  -  Dado Recebido: VA: 3445501
+16/11/2022 17:08:16  -  A trama recebida não continha ','
+16/11/2022 17:08:16  -  Dado Recebido: VB: 3449211
+16/11/2022 17:08:16  -  A trama recebida não continha ','
+16/11/2022 17:08:16  -  Dado Recebido: VC: 3453259
+16/11/2022 17:08:16  -  A trama recebida não continha ','
+16/11/2022 17:08:17  -  Dado Recebido: 6,2.997,2.993,3.005,1a
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 6,2.997,2.993,3.005,
+16/11/2022 17:08:17  -  CS da Trama recebida: 1a
+16/11/2022 17:08:17  -  Dado Recebido: 5,239.96,240.40,240.31,2a
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 5,239.96,240.40,240.31,
+16/11/2022 17:08:17  -  CS da Trama recebida: 2a
+16/11/2022 17:08:17  -  Dado Recebido: 6,2.997,3.002,2.990,1e
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 6,2.997,3.002,2.990,
+16/11/2022 17:08:17  -  CS da Trama recebida: 1e
+16/11/2022 17:08:17  -  Dado Recebido: 5,241.14,239.71,239.97,21
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 5,241.14,239.71,239.97,
+16/11/2022 17:08:17  -  CS da Trama recebida: 21
+16/11/2022 17:08:17  -  Dado Recebido: 28,59.883,-0.938,-0.939,-0.940,120.168,240.084,15.7578,15.7656,15.7734,30
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.939,-0.940,120.168,240.084,15.7578,15.7656,15.7734,
+16/11/2022 17:08:17  -  CS da Trama recebida: 30
+16/11/2022 17:08:17  -  Dado Recebido: 6,2.998,3.007,3.005,10
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 6,2.998,3.007,3.005,
+16/11/2022 17:08:17  -  CS da Trama recebida: 10
+16/11/2022 17:08:17  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:17  -  A trama recebida não continha ','
+16/11/2022 17:08:17  -  Dado Recebido: VA: 3446340
+16/11/2022 17:08:17  -  A trama recebida não continha ','
+16/11/2022 17:08:17  -  Dado Recebido: VB: 3449550
+16/11/2022 17:08:17  -  A trama recebida não continha ','
+16/11/2022 17:08:17  -  Dado Recebido: VC: 3453110
+16/11/2022 17:08:17  -  A trama recebida não continha ','
+16/11/2022 17:08:17  -  Dado Recebido: 5,239.88,240.23,239.89,2d
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 5,239.88,240.23,239.89,
+16/11/2022 17:08:17  -  CS da Trama recebida: 2d
+16/11/2022 17:08:17  -  Dado Recebido: 6,3.008,2.997,2.995,11
+16/11/2022 17:08:17  -  Trama Recebida sem CS: 6,3.008,2.997,2.995,
+16/11/2022 17:08:17  -  CS da Trama recebida: 11
+16/11/2022 17:08:18  -  Dado Recebido: 5,239.86,240.22,239.88,23
+16/11/2022 17:08:18  -  Trama Recebida sem CS: 5,239.86,240.22,239.88,
+16/11/2022 17:08:18  -  CS da Trama recebida: 23
+16/11/2022 17:08:18  -  Dado Recebido: 6,2.998,2.996,3.006,13
+16/11/2022 17:08:18  -  Trama Recebida sem CS: 6,2.998,2.996,3.006,
+16/11/2022 17:08:18  -  CS da Trama recebida: 13
+16/11/2022 17:08:18  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.939,119.972,240.028,15.7656,15.7656,15.7734,3b
+16/11/2022 17:08:18  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.939,119.972,240.028,15.7656,15.7656,15.7734,
+16/11/2022 17:08:18  -  CS da Trama recebida: 3b
+16/11/2022 17:08:18  -  Dado Recebido: 5,239.88,239.33,239.85,2e
+16/11/2022 17:08:18  -  Trama Recebida sem CS: 5,239.88,239.33,239.85,
+16/11/2022 17:08:18  -  CS da Trama recebida: 2e
+16/11/2022 17:08:18  -  Dado Recebido: VA: 3446023
+16/11/2022 17:08:18  -  A trama recebida não continha ','
+16/11/2022 17:08:18  -  Dado Recebido: VB: 3443735
+16/11/2022 17:08:18  -  A trama recebida não continha ','
+16/11/2022 17:08:18  -  Dado Recebido: VC: 3452023
+16/11/2022 17:08:18  -  A trama recebida não continha ','
+16/11/2022 17:08:18  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:18  -  A trama recebida não continha ','
+16/11/2022 17:08:18  -  Dado Recebido: 6,2.998,2.996,2.996,12
+16/11/2022 17:08:18  -  Trama Recebida sem CS: 6,2.998,2.996,2.996,
+16/11/2022 17:08:18  -  CS da Trama recebida: 12
+16/11/2022 17:08:18  -  Dado Recebido: 5,239.89,240.07,239.83,20
+16/11/2022 17:08:18  -  Trama Recebida sem CS: 5,239.89,240.07,239.83,
+16/11/2022 17:08:18  -  CS da Trama recebida: 20
+16/11/2022 17:08:18  -  Dado Recebido: 6,2.997,3.007,3.006,1c
+16/11/2022 17:08:18  -  Trama Recebida sem CS: 6,2.997,3.007,3.006,
+16/11/2022 17:08:18  -  CS da Trama recebida: 1c
+16/11/2022 17:08:19  -  Dado Recebido: 5,239.92,240.03,239.81,2c
+16/11/2022 17:08:19  -  Trama Recebida sem CS: 5,239.92,240.03,239.81,
+16/11/2022 17:08:19  -  CS da Trama recebida: 2c
+16/11/2022 17:08:19  -  Dado Recebido: 28,59.869,-0.937,-0.938,-0.939,120.056,239.944,15.7578,15.7656,15.7734,33
+16/11/2022 17:08:19  -  Trama Recebida sem CS: 28,59.869,-0.937,-0.938,-0.939,120.056,239.944,15.7578,15.7656,15.7734,
+16/11/2022 17:08:19  -  CS da Trama recebida: 33
+16/11/2022 17:08:19  -  Dado Recebido: VA: 3445238
+16/11/2022 17:08:19  -  A trama recebida não continha ','
+16/11/2022 17:08:19  -  Dado Recebido: VB: 3462479
+16/11/2022 17:08:19  -  A trama recebida não continha ','
+16/11/2022 17:08:19  -  Dado Recebido: VC: 3470540
+16/11/2022 17:08:19  -  A trama recebida não continha ','
+16/11/2022 17:08:19  -  Dado Recebido: 6,2.998,3.002,2.989,19
+16/11/2022 17:08:19  -  Trama Recebida sem CS: 6,2.998,3.002,2.989,
+16/11/2022 17:08:19  -  CS da Trama recebida: 19
+16/11/2022 17:08:20  -  Dado Recebido: 5,239.94,239.69,240.45,2e
+16/11/2022 17:08:20  -  Trama Recebida sem CS: 5,239.94,239.69,240.45,
+16/11/2022 17:08:20  -  CS da Trama recebida: 2e
+16/11/2022 17:08:20  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:20  -  A trama recebida não continha ','
+16/11/2022 17:08:20  -  Dado Recebido: 6,3.005,2.993,3.004,18
+16/11/2022 17:08:20  -  Trama Recebida sem CS: 6,3.005,2.993,3.004,
+16/11/2022 17:08:20  -  CS da Trama recebida: 18
+16/11/2022 17:08:20  -  Dado Recebido: 5,239.90,240.41,239.93,2b
+16/11/2022 17:08:20  -  Trama Recebida sem CS: 5,239.90,240.41,239.93,
+16/11/2022 17:08:20  -  CS da Trama recebida: 2b
+16/11/2022 17:08:20  -  Dado Recebido: 28,59.883,-0.938,-0.939,-0.940,120.000,240.000,15.7617,15.7656,15.7773,3a
+16/11/2022 17:08:20  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.939,-0.940,120.000,240.000,15.7617,15.7656,15.7773,
+16/11/2022 17:08:20  -  CS da Trama recebida: 3a
+16/11/2022 17:08:20  -  Dado Recebido: 6,2.998,2.992,2.989,18
+16/11/2022 17:08:20  -  Trama Recebida sem CS: 6,2.998,2.992,2.989,
+16/11/2022 17:08:20  -  CS da Trama recebida: 18
+16/11/2022 17:08:20  -  Dado Recebido: VA: 3445181
+16/11/2022 17:08:20  -  A trama recebida não continha ','
+16/11/2022 17:08:20  -  Dado Recebido: VB: 3461254
+16/11/2022 17:08:20  -  A trama recebida não continha ','
+16/11/2022 17:08:20  -  Dado Recebido: VC: 3453529
+16/11/2022 17:08:20  -  A trama recebida não continha ','
+16/11/2022 17:08:20  -  Dado Recebido: 5,239.92,240.45,239.91,2f
+16/11/2022 17:08:20  -  Trama Recebida sem CS: 5,239.92,240.45,239.91,
+16/11/2022 17:08:20  -  CS da Trama recebida: 2f
+16/11/2022 17:08:21  -  Dado Recebido: 6,2.998,3.008,3.004,1e
+16/11/2022 17:08:21  -  Trama Recebida sem CS: 6,2.998,3.008,3.004,
+16/11/2022 17:08:21  -  CS da Trama recebida: 1e
+16/11/2022 17:08:21  -  Dado Recebido: 5,239.88,240.49,239.92,2b
+16/11/2022 17:08:21  -  Trama Recebida sem CS: 5,239.88,240.49,239.92,
+16/11/2022 17:08:21  -  CS da Trama recebida: 2b
+16/11/2022 17:08:21  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:21  -  A trama recebida não continha ','
+16/11/2022 17:08:21  -  Dado Recebido: 6,2.998,3.001,3.005,16
+16/11/2022 17:08:21  -  Trama Recebida sem CS: 6,2.998,3.001,3.005,
+16/11/2022 17:08:21  -  CS da Trama recebida: 16
+16/11/2022 17:08:21  -  Dado Recebido: 28,59.883,-0.938,-0.939,-0.940,120.084,240.000,15.7578,15.7656,15.7734,3f
+16/11/2022 17:08:21  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.939,-0.940,120.084,240.000,15.7578,15.7656,15.7734,
+16/11/2022 17:08:21  -  CS da Trama recebida: 3f
+16/11/2022 17:08:21  -  Dado Recebido: 5,239.87,239.26,239.90,21
+16/11/2022 17:08:21  -  Trama Recebida sem CS: 5,239.87,239.26,239.90,
+16/11/2022 17:08:21  -  CS da Trama recebida: 21
+16/11/2022 17:08:21  -  Dado Recebido: VA: 3462816
+16/11/2022 17:08:21  -  A trama recebida não continha ','
+16/11/2022 17:08:21  -  Dado Recebido: VB: 3458984
+16/11/2022 17:08:21  -  A trama recebida não continha ','
+16/11/2022 17:08:21  -  Dado Recebido: VC: 3453060
+16/11/2022 17:08:21  -  A trama recebida não continha ','
+16/11/2022 17:08:22  -  Dado Recebido: 6,3.001,2.991,3.001,1b
+16/11/2022 17:08:22  -  Trama Recebida sem CS: 6,3.001,2.991,3.001,
+16/11/2022 17:08:22  -  CS da Trama recebida: 1b
+16/11/2022 17:08:22  -  Dado Recebido: 5,240.24,239.62,239.83,24
+16/11/2022 17:08:22  -  Trama Recebida sem CS: 5,240.24,239.62,239.83,
+16/11/2022 17:08:22  -  CS da Trama recebida: 24
+16/11/2022 17:08:22  -  Dado Recebido: 6,2.997,3.008,3.005,10
+16/11/2022 17:08:22  -  Trama Recebida sem CS: 6,2.997,3.008,3.005,
+16/11/2022 17:08:22  -  CS da Trama recebida: 10
+16/11/2022 17:08:22  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:22  -  A trama recebida não continha ','
+16/11/2022 17:08:22  -  Dado Recebido: 5,239.92,239.61,239.80,27
+16/11/2022 17:08:22  -  Trama Recebida sem CS: 5,239.92,239.61,239.80,
+16/11/2022 17:08:22  -  CS da Trama recebida: 27
+16/11/2022 17:08:22  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.940,119.888,239.944,15.7656,15.7617,15.7812,32
+16/11/2022 17:08:22  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.940,119.888,239.944,15.7656,15.7617,15.7812,
+16/11/2022 17:08:22  -  CS da Trama recebida: 32
+16/11/2022 17:08:22  -  Dado Recebido: 6,2.996,3.004,2.987,1f
+16/11/2022 17:08:22  -  Trama Recebida sem CS: 6,2.996,3.004,2.987,
+16/11/2022 17:08:22  -  CS da Trama recebida: 1f
+16/11/2022 17:08:22  -  Dado Recebido: VA: 3445844
+16/11/2022 17:08:22  -  A trama recebida não continha ','
+16/11/2022 17:08:22  -  Dado Recebido: VB: 3452120
+16/11/2022 17:08:22  -  A trama recebida não continha ','
+16/11/2022 17:08:22  -  Dado Recebido: VC: 3461233
+16/11/2022 17:08:22  -  A trama recebida não continha ','
+16/11/2022 17:08:23  -  Dado Recebido: 5,239.96,239.57,240.19,28
+16/11/2022 17:08:23  -  Trama Recebida sem CS: 5,239.96,239.57,240.19,
+16/11/2022 17:08:23  -  CS da Trama recebida: 28
+16/11/2022 17:08:23  -  Dado Recebido: 6,2.997,3.004,3.005,1c
+16/11/2022 17:08:23  -  Trama Recebida sem CS: 6,2.997,3.004,3.005,
+16/11/2022 17:08:23  -  CS da Trama recebida: 1c
+16/11/2022 17:08:23  -  Dado Recebido: 5,239.97,240.68,239.83,26
+16/11/2022 17:08:23  -  Trama Recebida sem CS: 5,239.97,240.68,239.83,
+16/11/2022 17:08:23  -  CS da Trama recebida: 26
+16/11/2022 17:08:23  -  Dado Recebido: 6,3.001,2.990,2.987,1c
+16/11/2022 17:08:23  -  Trama Recebida sem CS: 6,3.001,2.990,2.987,
+16/11/2022 17:08:23  -  CS da Trama recebida: 1c
+16/11/2022 17:08:23  -  Dado Recebido: 28,59.869,-0.938,-0.939,-0.938,119.888,239.944,15.7617,15.7695,15.7656,3d
+16/11/2022 17:08:23  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.939,-0.938,119.888,239.944,15.7617,15.7695,15.7656,
+16/11/2022 17:08:23  -  CS da Trama recebida: 3d
+16/11/2022 17:08:23  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:23  -  A trama recebida não continha ','
+16/11/2022 17:08:23  -  Dado Recebido: 5,239.96,240.68,239.85,21
+16/11/2022 17:08:23  -  Trama Recebida sem CS: 5,239.96,240.68,239.85,
+16/11/2022 17:08:23  -  CS da Trama recebida: 21
+16/11/2022 17:08:23  -  Dado Recebido: VA: 3445558
+16/11/2022 17:08:23  -  A trama recebida não continha ','
+16/11/2022 17:08:23  -  Dado Recebido: VB: 3453463
+16/11/2022 17:08:23  -  A trama recebida não continha ','
+16/11/2022 17:08:24  -  Dado Recebido: VC: 3451807
+16/11/2022 17:08:24  -  A trama recebida não continha ','
+16/11/2022 17:08:24  -  Dado Recebido: 6,2.998,3.006,3.005,11
+16/11/2022 17:08:24  -  Trama Recebida sem CS: 6,2.998,3.006,3.005,
+16/11/2022 17:08:24  -  CS da Trama recebida: 11
+16/11/2022 17:08:24  -  Dado Recebido: 5,239.86,240.70,239.88,24
+16/11/2022 17:08:24  -  Trama Recebida sem CS: 5,239.86,240.70,239.88,
+16/11/2022 17:08:24  -  CS da Trama recebida: 24
+16/11/2022 17:08:24  -  Dado Recebido: 6,2.998,3.005,3.004,13
+16/11/2022 17:08:24  -  Trama Recebida sem CS: 6,2.998,3.005,3.004,
+16/11/2022 17:08:24  -  CS da Trama recebida: 13
+16/11/2022 17:08:24  -  Dado Recebido: 5,239.86,239.42,239.85,26
+16/11/2022 17:08:24  -  Trama Recebida sem CS: 5,239.86,239.42,239.85,
+16/11/2022 17:08:24  -  CS da Trama recebida: 26
+16/11/2022 17:08:24  -  Dado Recebido: 28,59.869,-0.938,-0.941,-0.939,120.056,240.028,15.7656,15.7852,15.7695,30
+16/11/2022 17:08:24  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.941,-0.939,120.056,240.028,15.7656,15.7852,15.7695,
+16/11/2022 17:08:24  -  CS da Trama recebida: 30
+16/11/2022 17:08:24  -  Dado Recebido: 6,2.999,2.989,3.003,19
+16/11/2022 17:08:24  -  Trama Recebida sem CS: 6,2.999,2.989,3.003,
+16/11/2022 17:08:24  -  CS da Trama recebida: 19
+16/11/2022 17:08:24  -  Dado Recebido: VA: 3444658
+16/11/2022 17:08:24  -  A trama recebida não continha ','
+16/11/2022 17:08:25  -  Dado Recebido: VB: 3452535
+16/11/2022 17:08:25  -  A trama recebida não continha ','
+16/11/2022 17:08:25  -  Dado Recebido: VC: 3453042
+16/11/2022 17:08:25  -  A trama recebida não continha ','
+16/11/2022 17:08:25  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:25  -  A trama recebida não continha ','
+16/11/2022 17:08:25  -  Dado Recebido: 5,239.88,239.65,239.84,2c
+16/11/2022 17:08:25  -  Trama Recebida sem CS: 5,239.88,239.65,239.84,
+16/11/2022 17:08:25  -  CS da Trama recebida: 2c
+16/11/2022 17:08:25  -  Dado Recebido: 6,2.999,3.005,3.003,15
+16/11/2022 17:08:25  -  Trama Recebida sem CS: 6,2.999,3.005,3.003,
+16/11/2022 17:08:25  -  CS da Trama recebida: 15
+16/11/2022 17:08:25  -  Dado Recebido: 5,239.90,239.63,241.24,26
+16/11/2022 17:08:25  -  Trama Recebida sem CS: 5,239.90,239.63,241.24,
+16/11/2022 17:08:25  -  CS da Trama recebida: 26
+16/11/2022 17:08:25  -  Dado Recebido: 28,59.883,-0.938,-0.940,-0.941,120.000,240.000,15.7578,15.7734,15.7812,32
+16/11/2022 17:08:25  -  Trama Recebida sem CS: 28,59.883,-0.938,-0.940,-0.941,120.000,240.000,15.7578,15.7734,15.7812,
+16/11/2022 17:08:25  -  CS da Trama recebida: 32
+16/11/2022 17:08:25  -  Dado Recebido: 6,2.996,3.006,3.002,18
+16/11/2022 17:08:25  -  Trama Recebida sem CS: 6,2.996,3.006,3.002,
+16/11/2022 17:08:25  -  CS da Trama recebida: 18
+16/11/2022 17:08:26  -  Dado Recebido: 5,239.94,239.42,239.84,24
+16/11/2022 17:08:26  -  Trama Recebida sem CS: 5,239.94,239.42,239.84,
+16/11/2022 17:08:26  -  CS da Trama recebida: 24
+16/11/2022 17:08:26  -  Dado Recebido: VA: 3444939
+16/11/2022 17:08:26  -  A trama recebida não continha ','
+16/11/2022 17:08:26  -  Dado Recebido: VB: 3443981
+16/11/2022 17:08:26  -  A trama recebida não continha ','
+16/11/2022 17:08:26  -  Dado Recebido: VC: 3453438
+16/11/2022 17:08:26  -  A trama recebida não continha ','
+16/11/2022 17:08:26  -  Dado Recebido: 6,2.998,2.994,3.005,12
+16/11/2022 17:08:26  -  Trama Recebida sem CS: 6,2.998,2.994,3.005,
+16/11/2022 17:08:26  -  CS da Trama recebida: 12
+16/11/2022 17:08:26  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:26  -  A trama recebida não continha ','
+16/11/2022 17:08:26  -  Dado Recebido: 5,241.05,240.26,239.91,2b
+16/11/2022 17:08:26  -  Trama Recebida sem CS: 5,241.05,240.26,239.91,
+16/11/2022 17:08:26  -  CS da Trama recebida: 2b
+16/11/2022 17:08:26  -  Dado Recebido: 6,2.998,3.000,2.990,13
+16/11/2022 17:08:26  -  Trama Recebida sem CS: 6,2.998,3.000,2.990,
+16/11/2022 17:08:26  -  CS da Trama recebida: 13
+16/11/2022 17:08:27  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.940,120.056,240.028,15.7656,15.7617,15.7773,36
+16/11/2022 17:08:27  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.940,120.056,240.028,15.7656,15.7617,15.7773,
+16/11/2022 17:08:27  -  CS da Trama recebida: 36
+16/11/2022 17:08:27  -  Dado Recebido: 5,239.91,240.26,239.91,29
+16/11/2022 17:08:27  -  Trama Recebida sem CS: 5,239.91,240.26,239.91,
+16/11/2022 17:08:27  -  CS da Trama recebida: 29
+16/11/2022 17:08:27  -  Dado Recebido: 6,3.011,2.999,3.004,17
+16/11/2022 17:08:27  -  Trama Recebida sem CS: 6,3.011,2.999,3.004,
+16/11/2022 17:08:27  -  CS da Trama recebida: 17
+16/11/2022 17:08:27  -  Dado Recebido: VA: 3446118
+16/11/2022 17:08:27  -  A trama recebida não continha ','
+16/11/2022 17:08:27  -  Dado Recebido: VB: 3459514
+16/11/2022 17:08:27  -  A trama recebida não continha ','
+16/11/2022 17:08:27  -  Dado Recebido: VC: 3452653
+16/11/2022 17:08:27  -  A trama recebida não continha ','
+16/11/2022 17:08:27  -  Dado Recebido: 5,239.90,240.24,239.92,29
+16/11/2022 17:08:27  -  Trama Recebida sem CS: 5,239.90,240.24,239.92,
+16/11/2022 17:08:27  -  CS da Trama recebida: 29
+16/11/2022 17:08:27  -  Dado Recebido: 6,2.997,3.007,2.996,1d
+16/11/2022 17:08:27  -  Trama Recebida sem CS: 6,2.997,3.007,2.996,
+16/11/2022 17:08:27  -  CS da Trama recebida: 1d
+16/11/2022 17:08:27  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:27  -  A trama recebida não continha ','
+16/11/2022 17:08:27  -  Dado Recebido: 5,239.88,239.84,239.91,27
+16/11/2022 17:08:27  -  Trama Recebida sem CS: 5,239.88,239.84,239.91,
+16/11/2022 17:08:27  -  CS da Trama recebida: 27
+16/11/2022 17:08:27  -  Dado Recebido: 28,59.869,-0.938,-0.939,-0.939,120.056,240.028,15.7656,15.7695,15.7695,3a
+16/11/2022 17:08:27  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.939,-0.939,120.056,240.028,15.7656,15.7695,15.7695,
+16/11/2022 17:08:27  -  CS da Trama recebida: 3a
+16/11/2022 17:08:28  -  Dado Recebido: 6,2.997,2.994,3.003,1b
+16/11/2022 17:08:28  -  Trama Recebida sem CS: 6,2.997,2.994,3.003,
+16/11/2022 17:08:28  -  CS da Trama recebida: 1b
+16/11/2022 17:08:28  -  Dado Recebido: VA: 3445891
+16/11/2022 17:08:28  -  A trama recebida não continha ','
+16/11/2022 17:08:28  -  Dado Recebido: VB: 3459227
+16/11/2022 17:08:28  -  A trama recebida não continha ','
+16/11/2022 17:08:28  -  Dado Recebido: VC: 3452225
+16/11/2022 17:08:28  -  A trama recebida não continha ','
+16/11/2022 17:08:28  -  Dado Recebido: 5,239.92,240.35,239.83,2b
+16/11/2022 17:08:28  -  Trama Recebida sem CS: 5,239.92,240.35,239.83,
+16/11/2022 17:08:28  -  CS da Trama recebida: 2b
+16/11/2022 17:08:28  -  Dado Recebido: 6,3.006,2.995,3.004,1d
+16/11/2022 17:08:28  -  Trama Recebida sem CS: 6,3.006,2.995,3.004,
+16/11/2022 17:08:28  -  CS da Trama recebida: 1d
+16/11/2022 17:08:28  -  Dado Recebido: 5,239.94,240.32,240.55,2f
+16/11/2022 17:08:28  -  Trama Recebida sem CS: 5,239.94,240.32,240.55,
+16/11/2022 17:08:28  -  CS da Trama recebida: 2f
+16/11/2022 17:08:28  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:28  -  A trama recebida não continha ','
+16/11/2022 17:08:28  -  Dado Recebido: 6,2.996,3.008,2.995,10
+16/11/2022 17:08:28  -  Trama Recebida sem CS: 6,2.996,3.008,2.995,
+16/11/2022 17:08:28  -  CS da Trama recebida: 10
+16/11/2022 17:08:28  -  Dado Recebido: 28,59.869,-0.938,-0.939,-0.940,119.972,239.944,15.7617,15.7695,15.7812,38
+16/11/2022 17:08:28  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.939,-0.940,119.972,239.944,15.7617,15.7695,15.7812,
+16/11/2022 17:08:28  -  CS da Trama recebida: 38
+16/11/2022 17:08:29  -  Dado Recebido: 5,239.96,239.27,239.85,24
+16/11/2022 17:08:29  -  Trama Recebida sem CS: 5,239.96,239.27,239.85,
+16/11/2022 17:08:29  -  CS da Trama recebida: 24
+16/11/2022 17:08:29  -  Dado Recebido: VA: 3444789
+16/11/2022 17:08:29  -  A trama recebida não continha ','
+16/11/2022 17:08:29  -  Dado Recebido: VB: 3459349
+16/11/2022 17:08:29  -  A trama recebida não continha ','
+16/11/2022 17:08:29  -  Dado Recebido: VC: 3452811
+16/11/2022 17:08:29  -  A trama recebida não continha ','
+16/11/2022 17:08:29  -  Dado Recebido: 6,2.996,3.000,3.004,18
+16/11/2022 17:08:29  -  Trama Recebida sem CS: 6,2.996,3.000,3.004,
+16/11/2022 17:08:29  -  CS da Trama recebida: 18
+16/11/2022 17:08:29  -  Dado Recebido: 5,239.96,239.89,239.85,20
+16/11/2022 17:08:29  -  Trama Recebida sem CS: 5,239.96,239.89,239.85,
+16/11/2022 17:08:29  -  CS da Trama recebida: 20
+16/11/2022 17:08:29  -  Dado Recebido: 6,3.010,2.996,3.004,19
+16/11/2022 17:08:29  -  Trama Recebida sem CS: 6,3.010,2.996,3.004,
+16/11/2022 17:08:29  -  CS da Trama recebida: 19
+16/11/2022 17:08:30  -  Dado Recebido: 5,239.95,239.86,239.88,21
+16/11/2022 17:08:30  -  Trama Recebida sem CS: 5,239.95,239.86,239.88,
+16/11/2022 17:08:30  -  CS da Trama recebida: 21
+16/11/2022 17:08:30  -  Dado Recebido: 28,59.883,-0.937,-0.939,-0.940,120.084,240.000,15.7539,15.7695,15.7734,3a
+16/11/2022 17:08:30  -  Trama Recebida sem CS: 28,59.883,-0.937,-0.939,-0.940,120.084,240.000,15.7539,15.7695,15.7734,
+16/11/2022 17:08:30  -  CS da Trama recebida: 3a
+16/11/2022 17:08:30  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:30  -  A trama recebida não continha ','
+16/11/2022 17:08:30  -  Dado Recebido: 6,2.997,3.007,2.995,1e
+16/11/2022 17:08:30  -  Trama Recebida sem CS: 6,2.997,3.007,2.995,
+16/11/2022 17:08:30  -  CS da Trama recebida: 1e
+16/11/2022 17:08:30  -  Dado Recebido: VA: 3444597
+16/11/2022 17:08:30  -  A trama recebida não continha ','
+16/11/2022 17:08:30  -  Dado Recebido: VB: 3454645
+16/11/2022 17:08:30  -  A trama recebida não continha ','
+16/11/2022 17:08:30  -  Dado Recebido: VC: 3453064
+16/11/2022 17:08:30  -  A trama recebida não continha ','
+16/11/2022 17:08:30  -  Dado Recebido: 5,239.86,239.71,239.87,24
+16/11/2022 17:08:30  -  Trama Recebida sem CS: 5,239.86,239.71,239.87,
+16/11/2022 17:08:30  -  CS da Trama recebida: 24
+16/11/2022 17:08:30  -  Dado Recebido: 6,2.997,3.001,3.005,19
+16/11/2022 17:08:30  -  Trama Recebida sem CS: 6,2.997,3.001,3.005,
+16/11/2022 17:08:30  -  CS da Trama recebida: 19
+16/11/2022 17:08:30  -  Dado Recebido: 5,239.88,240.59,239.83,2a
+16/11/2022 17:08:30  -  Trama Recebida sem CS: 5,239.88,240.59,239.83,
+16/11/2022 17:08:30  -  CS da Trama recebida: 2a
+16/11/2022 17:08:31  -  Dado Recebido: 28,59.869,-0.938,-0.938,-0.939,119.972,239.860,15.7656,15.7617,15.7695,3e
+16/11/2022 17:08:31  -  Trama Recebida sem CS: 28,59.869,-0.938,-0.938,-0.939,119.972,239.860,15.7656,15.7617,15.7695,
+16/11/2022 17:08:31  -  CS da Trama recebida: 3e
+16/11/2022 17:08:31  -  Dado Recebido: 6,2.996,2.991,2.989,15
+16/11/2022 17:08:31  -  Trama Recebida sem CS: 6,2.996,2.991,2.989,
+16/11/2022 17:08:31  -  CS da Trama recebida: 15
+16/11/2022 17:08:31  -  Dado Recebido: 5,240.32,240.65,241.21,2d
+16/11/2022 17:08:31  -  Trama Recebida sem CS: 5,240.32,240.65,241.21,
+16/11/2022 17:08:31  -  CS da Trama recebida: 2d
+16/11/2022 17:08:31  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:31  -  A trama recebida não continha ','
+16/11/2022 17:08:31  -  Dado Recebido: VA: 3447130
+16/11/2022 17:08:31  -  A trama recebida não continha ','
+16/11/2022 17:08:31  -  Dado Recebido: VB: 3453170
+16/11/2022 17:08:31  -  A trama recebida não continha ','
+16/11/2022 17:08:31  -  Dado Recebido: VC: 3463907
+16/11/2022 17:08:31  -  A trama recebida não continha ','
+16/11/2022 17:08:31  -  Dado Recebido: 6,3.002,3.006,3.005,1a
+16/11/2022 17:08:31  -  Trama Recebida sem CS: 6,3.002,3.006,3.005,
+16/11/2022 17:08:31  -  CS da Trama recebida: 1a
+16/11/2022 17:08:32  -  Dado Recebido: 5,239.90,240.66,239.87,2b
+16/11/2022 17:08:32  -  Trama Recebida sem CS: 5,239.90,240.66,239.87,
+16/11/2022 17:08:32  -  CS da Trama recebida: 2b
+16/11/2022 17:08:32  -  Dado Recebido: 6,2.997,3.002,3.005,1a
+16/11/2022 17:08:32  -  Trama Recebida sem CS: 6,2.997,3.002,3.005,
+16/11/2022 17:08:32  -  CS da Trama recebida: 1a
+16/11/2022 17:08:32  -  Dado Recebido: 28,59.869,-0.937,-0.938,-0.939,119.972,239.944,15.7578,15.7656,15.7695,3c
+16/11/2022 17:08:32  -  Trama Recebida sem CS: 28,59.869,-0.937,-0.938,-0.939,119.972,239.944,15.7578,15.7656,15.7695,
+16/11/2022 17:08:32  -  CS da Trama recebida: 3c
+16/11/2022 17:08:32  -  Dado Recebido: 5,239.93,239.29,239.81,2b
+16/11/2022 17:08:32  -  Trama Recebida sem CS: 5,239.93,239.29,239.81,
+16/11/2022 17:08:32  -  CS da Trama recebida: 2b
+16/11/2022 17:08:32  -  Dado Recebido: 6,2.997,2.990,2.999,14
+16/11/2022 17:08:32  -  Trama Recebida sem CS: 6,2.997,2.990,2.999,
+16/11/2022 17:08:32  -  CS da Trama recebida: 14
+16/11/2022 17:08:32  -  Dado Recebido: VA: 3446052
+16/11/2022 17:08:32  -  A trama recebida não continha ','
+16/11/2022 17:08:32  -  Dado Recebido: VB: 3455190
+16/11/2022 17:08:32  -  A trama recebida não continha ','
+16/11/2022 17:08:32  -  Dado Recebido: VC: 3452076
+16/11/2022 17:08:32  -  A trama recebida não continha ','
+16/11/2022 17:08:32  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:32  -  A trama recebida não continha ','
+16/11/2022 17:08:32  -  Dado Recebido: 5,239.96,239.46,239.86,20
+16/11/2022 17:08:32  -  Trama Recebida sem CS: 5,239.96,239.46,239.86,
+16/11/2022 17:08:32  -  CS da Trama recebida: 20
+16/11/2022 17:08:33  -  Dado Recebido: 6,2.997,3.008,3.005,10
+16/11/2022 17:08:33  -  Trama Recebida sem CS: 6,2.997,3.008,3.005,
+16/11/2022 17:08:33  -  CS da Trama recebida: 10
+16/11/2022 17:08:33  -  Dado Recebido: 5,239.95,239.44,239.89,2e
+16/11/2022 17:08:33  -  Trama Recebida sem CS: 5,239.95,239.44,239.89,
+16/11/2022 17:08:33  -  CS da Trama recebida: 2e
+16/11/2022 17:08:33  -  Dado Recebido: 28,59.855,-0.938,-0.937,-0.939,119.860,239.972,15.7656,15.7578,15.7734,3e
+16/11/2022 17:08:33  -  Trama Recebida sem CS: 28,59.855,-0.938,-0.937,-0.939,119.860,239.972,15.7656,15.7578,15.7734,
+16/11/2022 17:08:33  -  CS da Trama recebida: 3e
+16/11/2022 17:08:33  -  Dado Recebido: 6,3.001,3.005,2.984,1b
+16/11/2022 17:08:33  -  Trama Recebida sem CS: 6,3.001,3.005,2.984,
+16/11/2022 17:08:33  -  CS da Trama recebida: 1b
+16/11/2022 17:08:33  -  Dado Recebido: 5,239.92,239.42,239.91,26
+16/11/2022 17:08:33  -  Trama Recebida sem CS: 5,239.92,239.42,239.91,
+16/11/2022 17:08:33  -  CS da Trama recebida: 26
+16/11/2022 17:08:33  -  Dado Recebido: VA: 3444973
+16/11/2022 17:08:33  -  A trama recebida não continha ','
+16/11/2022 17:08:33  -  Dado Recebido: VB: 3444739
+16/11/2022 17:08:33  -  A trama recebida não continha ','
+16/11/2022 17:08:33  -  Dado Recebido: VC: 3452573
+16/11/2022 17:08:33  -  A trama recebida não continha ','
+16/11/2022 17:08:33  -  Dado Recebido: 6,2.997,2.989,3.004,10
+16/11/2022 17:08:33  -  Trama Recebida sem CS: 6,2.997,2.989,3.004,
+16/11/2022 17:08:33  -  CS da Trama recebida: 10
+16/11/2022 17:08:33  -  Dado Recebido: 1A3;Correcao V2 V3;0.000;0.000
+16/11/2022 17:08:33  -  A trama recebida não continha ','
+16/11/2022 17:08:34  -  Dado Recebido: 5,239.90,240.71,239.91,2a
+16/11/2022 17:08:34  -  Trama Recebida sem CS: 5,239.90,240.71,239.91,
+16/11/2022 17:08:34  -  CS da Trama recebida: 2a
+16/11/2022 17:08:34  -  Dado Recebido: 6,2.997,3.006,3.003,18
+16/11/2022 17:08:34  -  Trama Recebida sem CS: 6,2.997,3.006,3.003,
+16/11/2022 17:08:34  -  CS da Trama recebida: 18
+16/11/2022 17:08:34  -  Dado Recebido: 28,59.855,-0.937,-0.938,-0.939,119.944,239.804,15.7617,15.7656,15.7734,33
+16/11/2022 17:08:34  -  Trama Recebida sem CS: 28,59.855,-0.937,-0.938,-0.939,119.944,239.804,15.7617,15.7656,15.7734,
+16/11/2022 17:08:34  -  CS da Trama recebida: 33
+16/11/2022 17:08:34  -  Dado Recebido: 5,239.87,239.49,241.46,2c
+16/11/2022 17:08:34  -  Trama Recebida sem CS: 5,239.87,239.49,241.46,
+16/11/2022 17:08:34  -  CS da Trama recebida: 2c
