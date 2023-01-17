@@ -345,32 +345,40 @@ namespace FonteTrifasicaPID
             this.txtAjusteVC = new System.Windows.Forms.TextBox();
             this.txtAjusteVB = new System.Windows.Forms.TextBox();
             this.chartFases = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.timerClearPhasor = new System.Windows.Forms.Timer(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label92 = new System.Windows.Forms.Label();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.btnLimparCamposEnviar = new System.Windows.Forms.Button();
+            this.btnEnviarParaEqupamento = new System.Windows.Forms.Button();
+            this.txtDataExpedicaoEnviar = new System.Windows.Forms.TextBox();
+            this.label114 = new System.Windows.Forms.Label();
+            this.txtClienteEnviar = new System.Windows.Forms.TextBox();
+            this.label115 = new System.Windows.Forms.Label();
+            this.txtNumeroDeSeriaEnviar = new System.Windows.Forms.TextBox();
+            this.label116 = new System.Windows.Forms.Label();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.txtDataExpedicao = new System.Windows.Forms.TextBox();
+            this.label112 = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.txtNumeroDeSerie = new System.Windows.Forms.TextBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.txtVersaoFWCont = new System.Windows.Forms.TextBox();
+            this.label109 = new System.Windows.Forms.Label();
             this.txtVersaoFWSint = new System.Windows.Forms.TextBox();
-            this.txtErrosCCAI2 = new System.Windows.Forms.TextBox();
-            this.label93 = new System.Windows.Forms.Label();
-            this.txtErrosCCAI3 = new System.Windows.Forms.TextBox();
-            this.label94 = new System.Windows.Forms.Label();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.txtUVPOLPI3 = new System.Windows.Forms.TextBox();
-            this.label95 = new System.Windows.Forms.Label();
-            this.txtUVPOLPI2 = new System.Windows.Forms.TextBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.txtUVPOLPI1 = new System.Windows.Forms.TextBox();
-            this.label97 = new System.Windows.Forms.Label();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.txtOTWI3 = new System.Windows.Forms.TextBox();
-            this.label98 = new System.Windows.Forms.Label();
-            this.txtOTWI2 = new System.Windows.Forms.TextBox();
-            this.label99 = new System.Windows.Forms.Label();
-            this.txtOTWI1 = new System.Windows.Forms.TextBox();
-            this.label100 = new System.Windows.Forms.Label();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.txtErrosADE = new System.Windows.Forms.TextBox();
-            this.label103 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.btnSalvarLOGEquipamento = new System.Windows.Forms.Button();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.txtTempoUltimaSintetizacao = new System.Windows.Forms.TextBox();
+            this.label108 = new System.Windows.Forms.Label();
+            this.txtTempoTotal = new System.Windows.Forms.TextBox();
+            this.label105 = new System.Windows.Forms.Label();
+            this.txtTempoLigadaSintetizando = new System.Windows.Forms.TextBox();
+            this.label106 = new System.Windows.Forms.Label();
+            this.txtTempoLigadaSemSintetizar = new System.Windows.Forms.TextBox();
+            this.label107 = new System.Windows.Forms.Label();
+            this.btnLerLOGEquipamento = new System.Windows.Forms.Button();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
             this.txtQTFinalizacaoSintetizacao = new System.Windows.Forms.TextBox();
             this.label101 = new System.Windows.Forms.Label();
@@ -378,26 +386,52 @@ namespace FonteTrifasicaPID
             this.label102 = new System.Windows.Forms.Label();
             this.txtQTreligada = new System.Windows.Forms.TextBox();
             this.label104 = new System.Windows.Forms.Label();
-            this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label105 = new System.Windows.Forms.Label();
-            this.txtTempoLigadaSintetizando = new System.Windows.Forms.TextBox();
-            this.label106 = new System.Windows.Forms.Label();
-            this.txtTempoLigadaSemSintetizar = new System.Windows.Forms.TextBox();
-            this.label107 = new System.Windows.Forms.Label();
-            this.txtTempoUltimaSintetizacao = new System.Windows.Forms.TextBox();
-            this.label108 = new System.Windows.Forms.Label();
-            this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.txtVersaoFWCont = new System.Windows.Forms.TextBox();
-            this.label109 = new System.Windows.Forms.Label();
-            this.txtNumeroDeSerie = new System.Windows.Forms.TextBox();
-            this.label110 = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.label111 = new System.Windows.Forms.Label();
-            this.txtDataExpedicao = new System.Windows.Forms.TextBox();
-            this.label112 = new System.Windows.Forms.Label();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.txtErrosADE = new System.Windows.Forms.TextBox();
+            this.label103 = new System.Windows.Forms.Label();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.txtOTWI3 = new System.Windows.Forms.TextBox();
+            this.label98 = new System.Windows.Forms.Label();
+            this.txtOTWI2 = new System.Windows.Forms.TextBox();
+            this.label99 = new System.Windows.Forms.Label();
+            this.txtOTWI1 = new System.Windows.Forms.TextBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.txtUVPOLPI3 = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.txtUVPOLPI2 = new System.Windows.Forms.TextBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.txtUVPOLPI1 = new System.Windows.Forms.TextBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
             this.txtErrosCCAI_1 = new System.Windows.Forms.TextBox();
             this.label113 = new System.Windows.Forms.Label();
+            this.txtErrosCCAI3 = new System.Windows.Forms.TextBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.txtErrosCCAI2 = new System.Windows.Forms.TextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.timerClearPhasor = new System.Windows.Forms.Timer(this.components);
+            this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.txtErrosIO_Expander = new System.Windows.Forms.TextBox();
+            this.label117 = new System.Windows.Forms.Label();
+            this.txtErrosDigPotI1 = new System.Windows.Forms.TextBox();
+            this.label118 = new System.Windows.Forms.Label();
+            this.txtErrosMUX_I2C = new System.Windows.Forms.TextBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.txtErrosDigPotI2 = new System.Windows.Forms.TextBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.txtErrosDigPotI3 = new System.Windows.Forms.TextBox();
+            this.label121 = new System.Windows.Forms.Label();
+            this.txtErrosDigPotV1 = new System.Windows.Forms.TextBox();
+            this.label122 = new System.Windows.Forms.Label();
+            this.txtErrosDigPotV2 = new System.Windows.Forms.TextBox();
+            this.label123 = new System.Windows.Forms.Label();
+            this.txtErrosDigPotV3 = new System.Windows.Forms.TextBox();
+            this.label124 = new System.Windows.Forms.Label();
+            this.txtErrosDisplayLCD = new System.Windows.Forms.TextBox();
+            this.label125 = new System.Windows.Forms.Label();
+            this.timerSolicitaLOGsEquipamento = new System.Windows.Forms.Timer(this.components);
+            this.btnResetEqp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -440,13 +474,16 @@ namespace FonteTrifasicaPID
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFases)).BeginInit();
             this.tabPage5.SuspendLayout();
+            this.groupBox26.SuspendLayout();
             this.groupBox18.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.groupBox20.SuspendLayout();
-            this.groupBox21.SuspendLayout();
-            this.groupBox22.SuspendLayout();
-            this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
+            this.groupBox23.SuspendLayout();
+            this.groupBox22.SuspendLayout();
+            this.groupBox21.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox25.SuspendLayout();
+            this.groupBox27.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartTensao
@@ -3929,19 +3966,9 @@ namespace FonteTrifasicaPID
             this.chartFases.Titles.Add(title3);
             this.chartFases.Click += new System.EventHandler(this.chart1_Click);
             // 
-            // timerClearPhasor
-            // 
-            this.timerClearPhasor.Interval = 2000;
-            this.timerClearPhasor.Tick += new System.EventHandler(this.timerClearPhasor_Tick);
-            // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.groupBox24);
-            this.tabPage5.Controls.Add(this.groupBox23);
-            this.tabPage5.Controls.Add(this.groupBox22);
-            this.tabPage5.Controls.Add(this.groupBox21);
-            this.tabPage5.Controls.Add(this.groupBox20);
-            this.tabPage5.Controls.Add(this.groupBox19);
+            this.tabPage5.Controls.Add(this.groupBox26);
             this.tabPage5.Controls.Add(this.groupBox18);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
@@ -3950,6 +3977,219 @@ namespace FonteTrifasicaPID
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "LOG";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.btnLimparCamposEnviar);
+            this.groupBox26.Controls.Add(this.btnEnviarParaEqupamento);
+            this.groupBox26.Controls.Add(this.txtDataExpedicaoEnviar);
+            this.groupBox26.Controls.Add(this.label114);
+            this.groupBox26.Controls.Add(this.txtClienteEnviar);
+            this.groupBox26.Controls.Add(this.label115);
+            this.groupBox26.Controls.Add(this.txtNumeroDeSeriaEnviar);
+            this.groupBox26.Controls.Add(this.label116);
+            this.groupBox26.Location = new System.Drawing.Point(854, 6);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Size = new System.Drawing.Size(334, 217);
+            this.groupBox26.TabIndex = 16;
+            this.groupBox26.TabStop = false;
+            this.groupBox26.Text = "Informações do Equipamento";
+            // 
+            // btnLimparCamposEnviar
+            // 
+            this.btnLimparCamposEnviar.Location = new System.Drawing.Point(6, 160);
+            this.btnLimparCamposEnviar.Name = "btnLimparCamposEnviar";
+            this.btnLimparCamposEnviar.Size = new System.Drawing.Size(177, 36);
+            this.btnLimparCamposEnviar.TabIndex = 17;
+            this.btnLimparCamposEnviar.Text = "Limpar campos da tela";
+            this.btnLimparCamposEnviar.UseVisualStyleBackColor = true;
+            // 
+            // btnEnviarParaEqupamento
+            // 
+            this.btnEnviarParaEqupamento.Location = new System.Drawing.Point(6, 113);
+            this.btnEnviarParaEqupamento.Name = "btnEnviarParaEqupamento";
+            this.btnEnviarParaEqupamento.Size = new System.Drawing.Size(229, 36);
+            this.btnEnviarParaEqupamento.TabIndex = 11;
+            this.btnEnviarParaEqupamento.Text = "Enviar para o equipamento";
+            this.btnEnviarParaEqupamento.UseVisualStyleBackColor = true;
+            this.btnEnviarParaEqupamento.Click += new System.EventHandler(this.btnEnviarParaEqupamento_Click);
+            // 
+            // txtDataExpedicaoEnviar
+            // 
+            this.txtDataExpedicaoEnviar.Location = new System.Drawing.Point(6, 77);
+            this.txtDataExpedicaoEnviar.MaxLength = 20;
+            this.txtDataExpedicaoEnviar.Name = "txtDataExpedicaoEnviar";
+            this.txtDataExpedicaoEnviar.Size = new System.Drawing.Size(100, 22);
+            this.txtDataExpedicaoEnviar.TabIndex = 10;
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(112, 80);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(176, 16);
+            this.label114.TabIndex = 9;
+            this.label114.Text = "Data da Expedição (Max 20)";
+            // 
+            // txtClienteEnviar
+            // 
+            this.txtClienteEnviar.Location = new System.Drawing.Point(6, 49);
+            this.txtClienteEnviar.MaxLength = 20;
+            this.txtClienteEnviar.Name = "txtClienteEnviar";
+            this.txtClienteEnviar.Size = new System.Drawing.Size(100, 22);
+            this.txtClienteEnviar.TabIndex = 7;
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Location = new System.Drawing.Point(112, 52);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(101, 16);
+            this.label115.TabIndex = 6;
+            this.label115.Text = "Cliente (Max 20)";
+            // 
+            // txtNumeroDeSeriaEnviar
+            // 
+            this.txtNumeroDeSeriaEnviar.Location = new System.Drawing.Point(6, 21);
+            this.txtNumeroDeSeriaEnviar.MaxLength = 14;
+            this.txtNumeroDeSeriaEnviar.Name = "txtNumeroDeSeriaEnviar";
+            this.txtNumeroDeSeriaEnviar.Size = new System.Drawing.Size(143, 22);
+            this.txtNumeroDeSeriaEnviar.TabIndex = 5;
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(155, 21);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(160, 16);
+            this.label116.TabIndex = 4;
+            this.label116.Text = "Número de série (Max 14)";
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.btnResetEqp);
+            this.groupBox18.Controls.Add(this.groupBox27);
+            this.groupBox18.Controls.Add(this.button1);
+            this.groupBox18.Controls.Add(this.groupBox24);
+            this.groupBox18.Controls.Add(this.btnSalvarLOGEquipamento);
+            this.groupBox18.Controls.Add(this.groupBox23);
+            this.groupBox18.Controls.Add(this.btnLerLOGEquipamento);
+            this.groupBox18.Controls.Add(this.groupBox22);
+            this.groupBox18.Controls.Add(this.groupBox21);
+            this.groupBox18.Controls.Add(this.groupBox20);
+            this.groupBox18.Controls.Add(this.groupBox19);
+            this.groupBox18.Controls.Add(this.groupBox25);
+            this.groupBox18.Location = new System.Drawing.Point(6, 6);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(842, 838);
+            this.groupBox18.TabIndex = 11;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Apenas Leitura";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(207, 783);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 36);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Limpar campos da tela";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.txtDataExpedicao);
+            this.groupBox24.Controls.Add(this.label112);
+            this.groupBox24.Controls.Add(this.txtCliente);
+            this.groupBox24.Controls.Add(this.label111);
+            this.groupBox24.Controls.Add(this.txtNumeroDeSerie);
+            this.groupBox24.Controls.Add(this.label110);
+            this.groupBox24.Controls.Add(this.txtVersaoFWCont);
+            this.groupBox24.Controls.Add(this.label109);
+            this.groupBox24.Controls.Add(this.txtVersaoFWSint);
+            this.groupBox24.Controls.Add(this.label92);
+            this.groupBox24.Location = new System.Drawing.Point(396, 293);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(365, 163);
+            this.groupBox24.TabIndex = 15;
+            this.groupBox24.TabStop = false;
+            this.groupBox24.Text = "Informações do Equipamento";
+            // 
+            // txtDataExpedicao
+            // 
+            this.txtDataExpedicao.Location = new System.Drawing.Point(6, 133);
+            this.txtDataExpedicao.Name = "txtDataExpedicao";
+            this.txtDataExpedicao.ReadOnly = true;
+            this.txtDataExpedicao.Size = new System.Drawing.Size(188, 22);
+            this.txtDataExpedicao.TabIndex = 10;
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(200, 136);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(123, 16);
+            this.label112.TabIndex = 9;
+            this.label112.Text = "Data da Expedição";
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.Location = new System.Drawing.Point(6, 105);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.ReadOnly = true;
+            this.txtCliente.Size = new System.Drawing.Size(229, 22);
+            this.txtCliente.TabIndex = 7;
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(241, 108);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(48, 16);
+            this.label111.TabIndex = 6;
+            this.label111.Text = "Cliente";
+            // 
+            // txtNumeroDeSerie
+            // 
+            this.txtNumeroDeSerie.Location = new System.Drawing.Point(6, 77);
+            this.txtNumeroDeSerie.Name = "txtNumeroDeSerie";
+            this.txtNumeroDeSerie.ReadOnly = true;
+            this.txtNumeroDeSerie.Size = new System.Drawing.Size(229, 22);
+            this.txtNumeroDeSerie.TabIndex = 5;
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Location = new System.Drawing.Point(241, 80);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(107, 16);
+            this.label110.TabIndex = 4;
+            this.label110.Text = "Número de série";
+            // 
+            // txtVersaoFWCont
+            // 
+            this.txtVersaoFWCont.Location = new System.Drawing.Point(6, 49);
+            this.txtVersaoFWCont.Name = "txtVersaoFWCont";
+            this.txtVersaoFWCont.ReadOnly = true;
+            this.txtVersaoFWCont.Size = new System.Drawing.Size(100, 22);
+            this.txtVersaoFWCont.TabIndex = 3;
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(112, 52);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(105, 16);
+            this.label109.TabIndex = 2;
+            this.label109.Text = "Versão FW Cont";
+            // 
+            // txtVersaoFWSint
+            // 
+            this.txtVersaoFWSint.Location = new System.Drawing.Point(6, 21);
+            this.txtVersaoFWSint.Name = "txtVersaoFWSint";
+            this.txtVersaoFWSint.ReadOnly = true;
+            this.txtVersaoFWSint.Size = new System.Drawing.Size(100, 22);
+            this.txtVersaoFWSint.TabIndex = 1;
             // 
             // label92
             // 
@@ -3960,212 +4200,109 @@ namespace FonteTrifasicaPID
             this.label92.TabIndex = 0;
             this.label92.Text = "Versão FW Sint";
             // 
-            // groupBox18
+            // btnSalvarLOGEquipamento
             // 
-            this.groupBox18.Controls.Add(this.txtErrosCCAI_1);
-            this.groupBox18.Controls.Add(this.label113);
-            this.groupBox18.Controls.Add(this.txtErrosCCAI3);
-            this.groupBox18.Controls.Add(this.label94);
-            this.groupBox18.Controls.Add(this.txtErrosCCAI2);
-            this.groupBox18.Controls.Add(this.label93);
-            this.groupBox18.Location = new System.Drawing.Point(6, 6);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(301, 115);
-            this.groupBox18.TabIndex = 1;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Circuito de Corrente Aberto";
+            this.btnSalvarLOGEquipamento.Location = new System.Drawing.Point(619, 784);
+            this.btnSalvarLOGEquipamento.Name = "btnSalvarLOGEquipamento";
+            this.btnSalvarLOGEquipamento.Size = new System.Drawing.Size(161, 36);
+            this.btnSalvarLOGEquipamento.TabIndex = 10;
+            this.btnSalvarLOGEquipamento.Text = "Salvar no PC";
+            this.btnSalvarLOGEquipamento.UseVisualStyleBackColor = true;
             // 
-            // txtVersaoFWSint
+            // groupBox23
             // 
-            this.txtVersaoFWSint.Location = new System.Drawing.Point(6, 21);
-            this.txtVersaoFWSint.Name = "txtVersaoFWSint";
-            this.txtVersaoFWSint.Size = new System.Drawing.Size(100, 22);
-            this.txtVersaoFWSint.TabIndex = 1;
+            this.groupBox23.Controls.Add(this.txtTempoUltimaSintetizacao);
+            this.groupBox23.Controls.Add(this.label108);
+            this.groupBox23.Controls.Add(this.txtTempoTotal);
+            this.groupBox23.Controls.Add(this.label105);
+            this.groupBox23.Controls.Add(this.txtTempoLigadaSintetizando);
+            this.groupBox23.Controls.Add(this.label106);
+            this.groupBox23.Controls.Add(this.txtTempoLigadaSemSintetizar);
+            this.groupBox23.Controls.Add(this.label107);
+            this.groupBox23.Location = new System.Drawing.Point(396, 142);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Size = new System.Drawing.Size(365, 141);
+            this.groupBox23.TabIndex = 10;
+            this.groupBox23.TabStop = false;
+            this.groupBox23.Text = "Temporizações";
             // 
-            // txtErrosCCAI2
+            // txtTempoUltimaSintetizacao
             // 
-            this.txtErrosCCAI2.Location = new System.Drawing.Point(6, 53);
-            this.txtErrosCCAI2.Name = "txtErrosCCAI2";
-            this.txtErrosCCAI2.Size = new System.Drawing.Size(100, 22);
-            this.txtErrosCCAI2.TabIndex = 3;
+            this.txtTempoUltimaSintetizacao.Location = new System.Drawing.Point(6, 109);
+            this.txtTempoUltimaSintetizacao.Name = "txtTempoUltimaSintetizacao";
+            this.txtTempoUltimaSintetizacao.ReadOnly = true;
+            this.txtTempoUltimaSintetizacao.Size = new System.Drawing.Size(100, 22);
+            this.txtTempoUltimaSintetizacao.TabIndex = 7;
             // 
-            // label93
+            // label108
             // 
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(112, 56);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(152, 16);
-            this.label93.TabIndex = 2;
-            this.label93.Text = "Erros de CCA no canal 2";
+            this.label108.AutoSize = true;
+            this.label108.Location = new System.Drawing.Point(112, 112);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(222, 16);
+            this.label108.TabIndex = 6;
+            this.label108.Text = "Duração da última sintetização (Min)";
             // 
-            // txtErrosCCAI3
+            // txtTempoTotal
             // 
-            this.txtErrosCCAI3.Location = new System.Drawing.Point(6, 81);
-            this.txtErrosCCAI3.Name = "txtErrosCCAI3";
-            this.txtErrosCCAI3.Size = new System.Drawing.Size(100, 22);
-            this.txtErrosCCAI3.TabIndex = 5;
+            this.txtTempoTotal.Location = new System.Drawing.Point(6, 81);
+            this.txtTempoTotal.Name = "txtTempoTotal";
+            this.txtTempoTotal.ReadOnly = true;
+            this.txtTempoTotal.Size = new System.Drawing.Size(100, 22);
+            this.txtTempoTotal.TabIndex = 5;
             // 
-            // label94
+            // label105
             // 
-            this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(112, 84);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(152, 16);
-            this.label94.TabIndex = 4;
-            this.label94.Text = "Erros de CCA no canal 3";
+            this.label105.AutoSize = true;
+            this.label105.Location = new System.Drawing.Point(112, 84);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(152, 16);
+            this.label105.TabIndex = 4;
+            this.label105.Text = "Tempo total ligada (Min)";
             // 
-            // groupBox19
+            // txtTempoLigadaSintetizando
             // 
-            this.groupBox19.Controls.Add(this.txtUVPOLPI3);
-            this.groupBox19.Controls.Add(this.label95);
-            this.groupBox19.Controls.Add(this.txtUVPOLPI2);
-            this.groupBox19.Controls.Add(this.label96);
-            this.groupBox19.Controls.Add(this.txtUVPOLPI1);
-            this.groupBox19.Controls.Add(this.label97);
-            this.groupBox19.Location = new System.Drawing.Point(6, 127);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(354, 115);
-            this.groupBox19.TabIndex = 6;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Under Voltage Protection / Over Load Protection";
+            this.txtTempoLigadaSintetizando.Location = new System.Drawing.Point(6, 53);
+            this.txtTempoLigadaSintetizando.Name = "txtTempoLigadaSintetizando";
+            this.txtTempoLigadaSintetizando.ReadOnly = true;
+            this.txtTempoLigadaSintetizando.Size = new System.Drawing.Size(100, 22);
+            this.txtTempoLigadaSintetizando.TabIndex = 3;
             // 
-            // txtUVPOLPI3
+            // label106
             // 
-            this.txtUVPOLPI3.Location = new System.Drawing.Point(6, 81);
-            this.txtUVPOLPI3.Name = "txtUVPOLPI3";
-            this.txtUVPOLPI3.Size = new System.Drawing.Size(100, 22);
-            this.txtUVPOLPI3.TabIndex = 5;
+            this.label106.AutoSize = true;
+            this.label106.Location = new System.Drawing.Point(112, 56);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(198, 16);
+            this.label106.TabIndex = 2;
+            this.label106.Text = "Tempo ligada sintetizando (Min)";
             // 
-            // label95
+            // txtTempoLigadaSemSintetizar
             // 
-            this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(112, 84);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(189, 16);
-            this.label95.TabIndex = 4;
-            this.label95.Text = "Erros de UVP / OLP no canal 3";
+            this.txtTempoLigadaSemSintetizar.Location = new System.Drawing.Point(6, 25);
+            this.txtTempoLigadaSemSintetizar.Name = "txtTempoLigadaSemSintetizar";
+            this.txtTempoLigadaSemSintetizar.ReadOnly = true;
+            this.txtTempoLigadaSemSintetizar.Size = new System.Drawing.Size(100, 22);
+            this.txtTempoLigadaSemSintetizar.TabIndex = 1;
             // 
-            // txtUVPOLPI2
+            // label107
             // 
-            this.txtUVPOLPI2.Location = new System.Drawing.Point(6, 53);
-            this.txtUVPOLPI2.Name = "txtUVPOLPI2";
-            this.txtUVPOLPI2.Size = new System.Drawing.Size(100, 22);
-            this.txtUVPOLPI2.TabIndex = 3;
+            this.label107.AutoSize = true;
+            this.label107.Location = new System.Drawing.Point(112, 28);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(227, 16);
+            this.label107.TabIndex = 0;
+            this.label107.Text = "Tempo ligada sem sintetização (Min)";
             // 
-            // label96
+            // btnLerLOGEquipamento
             // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(112, 56);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(189, 16);
-            this.label96.TabIndex = 2;
-            this.label96.Text = "Erros de UVP / OLP no canal 2";
-            // 
-            // txtUVPOLPI1
-            // 
-            this.txtUVPOLPI1.Location = new System.Drawing.Point(6, 25);
-            this.txtUVPOLPI1.Name = "txtUVPOLPI1";
-            this.txtUVPOLPI1.Size = new System.Drawing.Size(100, 22);
-            this.txtUVPOLPI1.TabIndex = 1;
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(112, 28);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(189, 16);
-            this.label97.TabIndex = 0;
-            this.label97.Text = "Erros de UVP / OLP no canal 1";
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.txtOTWI3);
-            this.groupBox20.Controls.Add(this.label98);
-            this.groupBox20.Controls.Add(this.txtOTWI2);
-            this.groupBox20.Controls.Add(this.label99);
-            this.groupBox20.Controls.Add(this.txtOTWI1);
-            this.groupBox20.Controls.Add(this.label100);
-            this.groupBox20.Location = new System.Drawing.Point(6, 253);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(301, 115);
-            this.groupBox20.TabIndex = 7;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Over Temperature Warning";
-            // 
-            // txtOTWI3
-            // 
-            this.txtOTWI3.Location = new System.Drawing.Point(6, 81);
-            this.txtOTWI3.Name = "txtOTWI3";
-            this.txtOTWI3.Size = new System.Drawing.Size(100, 22);
-            this.txtOTWI3.TabIndex = 5;
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(112, 84);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(157, 16);
-            this.label98.TabIndex = 4;
-            this.label98.Text = "Erros de OTW no canal 3";
-            // 
-            // txtOTWI2
-            // 
-            this.txtOTWI2.Location = new System.Drawing.Point(6, 53);
-            this.txtOTWI2.Name = "txtOTWI2";
-            this.txtOTWI2.Size = new System.Drawing.Size(100, 22);
-            this.txtOTWI2.TabIndex = 3;
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(112, 56);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(157, 16);
-            this.label99.TabIndex = 2;
-            this.label99.Text = "Erros de OTW no canal 2";
-            // 
-            // txtOTWI1
-            // 
-            this.txtOTWI1.Location = new System.Drawing.Point(6, 25);
-            this.txtOTWI1.Name = "txtOTWI1";
-            this.txtOTWI1.Size = new System.Drawing.Size(100, 22);
-            this.txtOTWI1.TabIndex = 1;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(112, 28);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(157, 16);
-            this.label100.TabIndex = 0;
-            this.label100.Text = "Erros de OTW no canal 1";
-            // 
-            // groupBox21
-            // 
-            this.groupBox21.Controls.Add(this.txtErrosADE);
-            this.groupBox21.Controls.Add(this.label103);
-            this.groupBox21.Location = new System.Drawing.Point(6, 383);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(301, 57);
-            this.groupBox21.TabIndex = 6;
-            this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Erro de leitura no ADE";
-            // 
-            // txtErrosADE
-            // 
-            this.txtErrosADE.Location = new System.Drawing.Point(6, 25);
-            this.txtErrosADE.Name = "txtErrosADE";
-            this.txtErrosADE.Size = new System.Drawing.Size(100, 22);
-            this.txtErrosADE.TabIndex = 1;
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(112, 28);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(146, 16);
-            this.label103.TabIndex = 0;
-            this.label103.Text = "Erros de leitura no ADE";
+            this.btnLerLOGEquipamento.Location = new System.Drawing.Point(6, 784);
+            this.btnLerLOGEquipamento.Name = "btnLerLOGEquipamento";
+            this.btnLerLOGEquipamento.Size = new System.Drawing.Size(171, 35);
+            this.btnLerLOGEquipamento.TabIndex = 9;
+            this.btnLerLOGEquipamento.Text = "Ler equipamento";
+            this.btnLerLOGEquipamento.UseVisualStyleBackColor = true;
+            this.btnLerLOGEquipamento.Click += new System.EventHandler(this.btnLerLOGEquipamento_Click);
             // 
             // groupBox22
             // 
@@ -4175,10 +4312,10 @@ namespace FonteTrifasicaPID
             this.groupBox22.Controls.Add(this.label102);
             this.groupBox22.Controls.Add(this.txtQTreligada);
             this.groupBox22.Controls.Add(this.label104);
-            this.groupBox22.Location = new System.Drawing.Point(390, 6);
+            this.groupBox22.Location = new System.Drawing.Point(396, 21);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Size = new System.Drawing.Size(426, 115);
-            this.groupBox22.TabIndex = 6;
+            this.groupBox22.TabIndex = 11;
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Contadores de eventos";
             // 
@@ -4186,6 +4323,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtQTFinalizacaoSintetizacao.Location = new System.Drawing.Point(6, 81);
             this.txtQTFinalizacaoSintetizacao.Name = "txtQTFinalizacaoSintetizacao";
+            this.txtQTFinalizacaoSintetizacao.ReadOnly = true;
             this.txtQTFinalizacaoSintetizacao.Size = new System.Drawing.Size(100, 22);
             this.txtQTFinalizacaoSintetizacao.TabIndex = 5;
             // 
@@ -4202,6 +4340,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtQTInicioSintetizacao.Location = new System.Drawing.Point(6, 53);
             this.txtQTInicioSintetizacao.Name = "txtQTInicioSintetizacao";
+            this.txtQTInicioSintetizacao.ReadOnly = true;
             this.txtQTInicioSintetizacao.Size = new System.Drawing.Size(100, 22);
             this.txtQTInicioSintetizacao.TabIndex = 3;
             // 
@@ -4218,6 +4357,7 @@ namespace FonteTrifasicaPID
             // 
             this.txtQTreligada.Location = new System.Drawing.Point(6, 25);
             this.txtQTreligada.Name = "txtQTreligada";
+            this.txtQTreligada.ReadOnly = true;
             this.txtQTreligada.Size = new System.Drawing.Size(100, 22);
             this.txtQTreligada.TabIndex = 1;
             // 
@@ -4230,174 +4370,186 @@ namespace FonteTrifasicaPID
             this.label104.TabIndex = 0;
             this.label104.Text = "Quantidade de vezes em que a fonte foi ligada";
             // 
-            // groupBox23
+            // groupBox21
             // 
-            this.groupBox23.Controls.Add(this.txtTempoUltimaSintetizacao);
-            this.groupBox23.Controls.Add(this.label108);
-            this.groupBox23.Controls.Add(this.textBox14);
-            this.groupBox23.Controls.Add(this.label105);
-            this.groupBox23.Controls.Add(this.txtTempoLigadaSintetizando);
-            this.groupBox23.Controls.Add(this.label106);
-            this.groupBox23.Controls.Add(this.txtTempoLigadaSemSintetizar);
-            this.groupBox23.Controls.Add(this.label107);
-            this.groupBox23.Location = new System.Drawing.Point(390, 127);
-            this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(345, 141);
-            this.groupBox23.TabIndex = 6;
-            this.groupBox23.TabStop = false;
-            this.groupBox23.Text = "Temporizações";
+            this.groupBox21.Controls.Add(this.txtErrosADE);
+            this.groupBox21.Controls.Add(this.label103);
+            this.groupBox21.Location = new System.Drawing.Point(12, 398);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(301, 57);
+            this.groupBox21.TabIndex = 12;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "Erro de leitura no ADE";
             // 
-            // textBox14
+            // txtErrosADE
             // 
-            this.textBox14.Location = new System.Drawing.Point(6, 81);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 22);
-            this.textBox14.TabIndex = 5;
+            this.txtErrosADE.Location = new System.Drawing.Point(6, 25);
+            this.txtErrosADE.Name = "txtErrosADE";
+            this.txtErrosADE.ReadOnly = true;
+            this.txtErrosADE.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosADE.TabIndex = 1;
             // 
-            // label105
+            // label103
             // 
-            this.label105.AutoSize = true;
-            this.label105.Location = new System.Drawing.Point(112, 84);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(120, 16);
-            this.label105.TabIndex = 4;
-            this.label105.Text = "Tempo total ligada";
+            this.label103.AutoSize = true;
+            this.label103.Location = new System.Drawing.Point(112, 28);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(146, 16);
+            this.label103.TabIndex = 0;
+            this.label103.Text = "Erros de leitura no ADE";
             // 
-            // txtTempoLigadaSintetizando
+            // groupBox20
             // 
-            this.txtTempoLigadaSintetizando.Location = new System.Drawing.Point(6, 53);
-            this.txtTempoLigadaSintetizando.Name = "txtTempoLigadaSintetizando";
-            this.txtTempoLigadaSintetizando.Size = new System.Drawing.Size(100, 22);
-            this.txtTempoLigadaSintetizando.TabIndex = 3;
+            this.groupBox20.Controls.Add(this.txtOTWI3);
+            this.groupBox20.Controls.Add(this.label98);
+            this.groupBox20.Controls.Add(this.txtOTWI2);
+            this.groupBox20.Controls.Add(this.label99);
+            this.groupBox20.Controls.Add(this.txtOTWI1);
+            this.groupBox20.Controls.Add(this.label100);
+            this.groupBox20.Location = new System.Drawing.Point(12, 268);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(301, 115);
+            this.groupBox20.TabIndex = 14;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Over Temperature Warning";
             // 
-            // label106
+            // txtOTWI3
             // 
-            this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(112, 56);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(166, 16);
-            this.label106.TabIndex = 2;
-            this.label106.Text = "Tempo ligada sintetizando";
+            this.txtOTWI3.Location = new System.Drawing.Point(6, 81);
+            this.txtOTWI3.Name = "txtOTWI3";
+            this.txtOTWI3.ReadOnly = true;
+            this.txtOTWI3.Size = new System.Drawing.Size(100, 22);
+            this.txtOTWI3.TabIndex = 5;
             // 
-            // txtTempoLigadaSemSintetizar
+            // label98
             // 
-            this.txtTempoLigadaSemSintetizar.Location = new System.Drawing.Point(6, 25);
-            this.txtTempoLigadaSemSintetizar.Name = "txtTempoLigadaSemSintetizar";
-            this.txtTempoLigadaSemSintetizar.Size = new System.Drawing.Size(100, 22);
-            this.txtTempoLigadaSemSintetizar.TabIndex = 1;
+            this.label98.AutoSize = true;
+            this.label98.Location = new System.Drawing.Point(112, 84);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(157, 16);
+            this.label98.TabIndex = 4;
+            this.label98.Text = "Erros de OTW no canal 3";
             // 
-            // label107
+            // txtOTWI2
             // 
-            this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(112, 28);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(195, 16);
-            this.label107.TabIndex = 0;
-            this.label107.Text = "Tempo ligada sem sintetização";
+            this.txtOTWI2.Location = new System.Drawing.Point(6, 53);
+            this.txtOTWI2.Name = "txtOTWI2";
+            this.txtOTWI2.ReadOnly = true;
+            this.txtOTWI2.Size = new System.Drawing.Size(100, 22);
+            this.txtOTWI2.TabIndex = 3;
             // 
-            // txtTempoUltimaSintetizacao
+            // label99
             // 
-            this.txtTempoUltimaSintetizacao.Location = new System.Drawing.Point(6, 109);
-            this.txtTempoUltimaSintetizacao.Name = "txtTempoUltimaSintetizacao";
-            this.txtTempoUltimaSintetizacao.Size = new System.Drawing.Size(100, 22);
-            this.txtTempoUltimaSintetizacao.TabIndex = 7;
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(112, 56);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(157, 16);
+            this.label99.TabIndex = 2;
+            this.label99.Text = "Erros de OTW no canal 2";
             // 
-            // label108
+            // txtOTWI1
             // 
-            this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(112, 112);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(190, 16);
-            this.label108.TabIndex = 6;
-            this.label108.Text = "Duração da última sintetização";
+            this.txtOTWI1.Location = new System.Drawing.Point(6, 25);
+            this.txtOTWI1.Name = "txtOTWI1";
+            this.txtOTWI1.ReadOnly = true;
+            this.txtOTWI1.Size = new System.Drawing.Size(100, 22);
+            this.txtOTWI1.TabIndex = 1;
             // 
-            // groupBox24
+            // label100
             // 
-            this.groupBox24.Controls.Add(this.txtDataExpedicao);
-            this.groupBox24.Controls.Add(this.label112);
-            this.groupBox24.Controls.Add(this.txtCliente);
-            this.groupBox24.Controls.Add(this.label111);
-            this.groupBox24.Controls.Add(this.txtNumeroDeSerie);
-            this.groupBox24.Controls.Add(this.label110);
-            this.groupBox24.Controls.Add(this.txtVersaoFWCont);
-            this.groupBox24.Controls.Add(this.label109);
-            this.groupBox24.Controls.Add(this.txtVersaoFWSint);
-            this.groupBox24.Controls.Add(this.label92);
-            this.groupBox24.Location = new System.Drawing.Point(390, 278);
-            this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(302, 163);
-            this.groupBox24.TabIndex = 8;
-            this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "Informações do Equipamento";
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(112, 28);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(157, 16);
+            this.label100.TabIndex = 0;
+            this.label100.Text = "Erros de OTW no canal 1";
             // 
-            // txtVersaoFWCont
+            // groupBox19
             // 
-            this.txtVersaoFWCont.Location = new System.Drawing.Point(6, 49);
-            this.txtVersaoFWCont.Name = "txtVersaoFWCont";
-            this.txtVersaoFWCont.Size = new System.Drawing.Size(100, 22);
-            this.txtVersaoFWCont.TabIndex = 3;
+            this.groupBox19.Controls.Add(this.txtUVPOLPI3);
+            this.groupBox19.Controls.Add(this.label95);
+            this.groupBox19.Controls.Add(this.txtUVPOLPI2);
+            this.groupBox19.Controls.Add(this.label96);
+            this.groupBox19.Controls.Add(this.txtUVPOLPI1);
+            this.groupBox19.Controls.Add(this.label97);
+            this.groupBox19.Location = new System.Drawing.Point(12, 142);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(354, 115);
+            this.groupBox19.TabIndex = 13;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Under Voltage Protection / Over Load Protection";
             // 
-            // label109
+            // txtUVPOLPI3
             // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(112, 52);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(105, 16);
-            this.label109.TabIndex = 2;
-            this.label109.Text = "Versão FW Cont";
+            this.txtUVPOLPI3.Location = new System.Drawing.Point(6, 81);
+            this.txtUVPOLPI3.Name = "txtUVPOLPI3";
+            this.txtUVPOLPI3.ReadOnly = true;
+            this.txtUVPOLPI3.Size = new System.Drawing.Size(100, 22);
+            this.txtUVPOLPI3.TabIndex = 5;
             // 
-            // txtNumeroDeSerie
+            // label95
             // 
-            this.txtNumeroDeSerie.Location = new System.Drawing.Point(6, 77);
-            this.txtNumeroDeSerie.Name = "txtNumeroDeSerie";
-            this.txtNumeroDeSerie.Size = new System.Drawing.Size(143, 22);
-            this.txtNumeroDeSerie.TabIndex = 5;
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(112, 84);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(189, 16);
+            this.label95.TabIndex = 4;
+            this.label95.Text = "Erros de UVP / OLP no canal 3";
             // 
-            // label110
+            // txtUVPOLPI2
             // 
-            this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(155, 77);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(107, 16);
-            this.label110.TabIndex = 4;
-            this.label110.Text = "Número de série";
+            this.txtUVPOLPI2.Location = new System.Drawing.Point(6, 53);
+            this.txtUVPOLPI2.Name = "txtUVPOLPI2";
+            this.txtUVPOLPI2.ReadOnly = true;
+            this.txtUVPOLPI2.Size = new System.Drawing.Size(100, 22);
+            this.txtUVPOLPI2.TabIndex = 3;
             // 
-            // txtCliente
+            // label96
             // 
-            this.txtCliente.Location = new System.Drawing.Point(6, 105);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 22);
-            this.txtCliente.TabIndex = 7;
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(112, 56);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(189, 16);
+            this.label96.TabIndex = 2;
+            this.label96.Text = "Erros de UVP / OLP no canal 2";
             // 
-            // label111
+            // txtUVPOLPI1
             // 
-            this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(112, 108);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(48, 16);
-            this.label111.TabIndex = 6;
-            this.label111.Text = "Cliente";
+            this.txtUVPOLPI1.Location = new System.Drawing.Point(6, 25);
+            this.txtUVPOLPI1.Name = "txtUVPOLPI1";
+            this.txtUVPOLPI1.ReadOnly = true;
+            this.txtUVPOLPI1.Size = new System.Drawing.Size(100, 22);
+            this.txtUVPOLPI1.TabIndex = 1;
             // 
-            // txtDataExpedicao
+            // label97
             // 
-            this.txtDataExpedicao.Location = new System.Drawing.Point(6, 133);
-            this.txtDataExpedicao.Name = "txtDataExpedicao";
-            this.txtDataExpedicao.Size = new System.Drawing.Size(100, 22);
-            this.txtDataExpedicao.TabIndex = 10;
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(112, 28);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(189, 16);
+            this.label97.TabIndex = 0;
+            this.label97.Text = "Erros de UVP / OLP no canal 1";
             // 
-            // label112
+            // groupBox25
             // 
-            this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(112, 136);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(123, 16);
-            this.label112.TabIndex = 9;
-            this.label112.Text = "Data da Expedição";
+            this.groupBox25.Controls.Add(this.txtErrosCCAI_1);
+            this.groupBox25.Controls.Add(this.label113);
+            this.groupBox25.Controls.Add(this.txtErrosCCAI3);
+            this.groupBox25.Controls.Add(this.label94);
+            this.groupBox25.Controls.Add(this.txtErrosCCAI2);
+            this.groupBox25.Controls.Add(this.label93);
+            this.groupBox25.Location = new System.Drawing.Point(12, 21);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Size = new System.Drawing.Size(301, 115);
+            this.groupBox25.TabIndex = 9;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "Circuito de Corrente Aberto";
             // 
             // txtErrosCCAI_1
             // 
             this.txtErrosCCAI_1.Location = new System.Drawing.Point(6, 25);
             this.txtErrosCCAI_1.Name = "txtErrosCCAI_1";
+            this.txtErrosCCAI_1.ReadOnly = true;
             this.txtErrosCCAI_1.Size = new System.Drawing.Size(100, 22);
             this.txtErrosCCAI_1.TabIndex = 7;
             // 
@@ -4409,6 +4561,240 @@ namespace FonteTrifasicaPID
             this.label113.Size = new System.Drawing.Size(152, 16);
             this.label113.TabIndex = 6;
             this.label113.Text = "Erros de CCA no canal 1";
+            // 
+            // txtErrosCCAI3
+            // 
+            this.txtErrosCCAI3.Location = new System.Drawing.Point(6, 81);
+            this.txtErrosCCAI3.Name = "txtErrosCCAI3";
+            this.txtErrosCCAI3.ReadOnly = true;
+            this.txtErrosCCAI3.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosCCAI3.TabIndex = 5;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(112, 84);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(152, 16);
+            this.label94.TabIndex = 4;
+            this.label94.Text = "Erros de CCA no canal 3";
+            // 
+            // txtErrosCCAI2
+            // 
+            this.txtErrosCCAI2.Location = new System.Drawing.Point(6, 53);
+            this.txtErrosCCAI2.Name = "txtErrosCCAI2";
+            this.txtErrosCCAI2.ReadOnly = true;
+            this.txtErrosCCAI2.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosCCAI2.TabIndex = 3;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(112, 56);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(152, 16);
+            this.label93.TabIndex = 2;
+            this.label93.Text = "Erros de CCA no canal 2";
+            // 
+            // timerClearPhasor
+            // 
+            this.timerClearPhasor.Interval = 2000;
+            this.timerClearPhasor.Tick += new System.EventHandler(this.timerClearPhasor_Tick);
+            // 
+            // groupBox27
+            // 
+            this.groupBox27.Controls.Add(this.txtErrosDisplayLCD);
+            this.groupBox27.Controls.Add(this.label125);
+            this.groupBox27.Controls.Add(this.txtErrosDigPotV3);
+            this.groupBox27.Controls.Add(this.label124);
+            this.groupBox27.Controls.Add(this.txtErrosDigPotV2);
+            this.groupBox27.Controls.Add(this.label123);
+            this.groupBox27.Controls.Add(this.txtErrosDigPotV1);
+            this.groupBox27.Controls.Add(this.label122);
+            this.groupBox27.Controls.Add(this.txtErrosDigPotI3);
+            this.groupBox27.Controls.Add(this.label121);
+            this.groupBox27.Controls.Add(this.txtErrosDigPotI2);
+            this.groupBox27.Controls.Add(this.label120);
+            this.groupBox27.Controls.Add(this.txtErrosIO_Expander);
+            this.groupBox27.Controls.Add(this.label117);
+            this.groupBox27.Controls.Add(this.txtErrosDigPotI1);
+            this.groupBox27.Controls.Add(this.label118);
+            this.groupBox27.Controls.Add(this.txtErrosMUX_I2C);
+            this.groupBox27.Controls.Add(this.label119);
+            this.groupBox27.Location = new System.Drawing.Point(12, 468);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Size = new System.Drawing.Size(410, 300);
+            this.groupBox27.TabIndex = 17;
+            this.groupBox27.TabStop = false;
+            this.groupBox27.Text = "Erros de I2C";
+            // 
+            // txtErrosIO_Expander
+            // 
+            this.txtErrosIO_Expander.Location = new System.Drawing.Point(6, 25);
+            this.txtErrosIO_Expander.Name = "txtErrosIO_Expander";
+            this.txtErrosIO_Expander.ReadOnly = true;
+            this.txtErrosIO_Expander.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosIO_Expander.TabIndex = 7;
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(112, 28);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(263, 16);
+            this.label117.TabIndex = 6;
+            this.label117.Text = "Erros de comunicação com o IO_Expander\r\n";
+            // 
+            // txtErrosDigPotI1
+            // 
+            this.txtErrosDigPotI1.Location = new System.Drawing.Point(6, 81);
+            this.txtErrosDigPotI1.Name = "txtErrosDigPotI1";
+            this.txtErrosDigPotI1.ReadOnly = true;
+            this.txtErrosDigPotI1.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosDigPotI1.TabIndex = 5;
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(112, 84);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(239, 16);
+            this.label118.TabIndex = 4;
+            this.label118.Text = "Erros de comunicação com o DigPot I1";
+            // 
+            // txtErrosMUX_I2C
+            // 
+            this.txtErrosMUX_I2C.Location = new System.Drawing.Point(6, 53);
+            this.txtErrosMUX_I2C.Name = "txtErrosMUX_I2C";
+            this.txtErrosMUX_I2C.ReadOnly = true;
+            this.txtErrosMUX_I2C.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosMUX_I2C.TabIndex = 3;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(112, 56);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(240, 16);
+            this.label119.TabIndex = 2;
+            this.label119.Text = "Erros de comunicação com o MUX_I2C";
+            // 
+            // txtErrosDigPotI2
+            // 
+            this.txtErrosDigPotI2.Location = new System.Drawing.Point(6, 109);
+            this.txtErrosDigPotI2.Name = "txtErrosDigPotI2";
+            this.txtErrosDigPotI2.ReadOnly = true;
+            this.txtErrosDigPotI2.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosDigPotI2.TabIndex = 9;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(112, 112);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(239, 16);
+            this.label120.TabIndex = 8;
+            this.label120.Text = "Erros de comunicação com o DigPot I2";
+            // 
+            // txtErrosDigPotI3
+            // 
+            this.txtErrosDigPotI3.Location = new System.Drawing.Point(6, 137);
+            this.txtErrosDigPotI3.Name = "txtErrosDigPotI3";
+            this.txtErrosDigPotI3.ReadOnly = true;
+            this.txtErrosDigPotI3.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosDigPotI3.TabIndex = 11;
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(112, 140);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(239, 16);
+            this.label121.TabIndex = 10;
+            this.label121.Text = "Erros de comunicação com o DigPot I3";
+            // 
+            // txtErrosDigPotV1
+            // 
+            this.txtErrosDigPotV1.Location = new System.Drawing.Point(6, 165);
+            this.txtErrosDigPotV1.Name = "txtErrosDigPotV1";
+            this.txtErrosDigPotV1.ReadOnly = true;
+            this.txtErrosDigPotV1.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosDigPotV1.TabIndex = 13;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(112, 168);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(245, 16);
+            this.label122.TabIndex = 12;
+            this.label122.Text = "Erros de comunicação com o DigPot V1";
+            // 
+            // txtErrosDigPotV2
+            // 
+            this.txtErrosDigPotV2.Location = new System.Drawing.Point(6, 193);
+            this.txtErrosDigPotV2.Name = "txtErrosDigPotV2";
+            this.txtErrosDigPotV2.ReadOnly = true;
+            this.txtErrosDigPotV2.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosDigPotV2.TabIndex = 15;
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(112, 196);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(245, 16);
+            this.label123.TabIndex = 14;
+            this.label123.Text = "Erros de comunicação com o DigPot V2";
+            // 
+            // txtErrosDigPotV3
+            // 
+            this.txtErrosDigPotV3.Location = new System.Drawing.Point(6, 221);
+            this.txtErrosDigPotV3.Name = "txtErrosDigPotV3";
+            this.txtErrosDigPotV3.ReadOnly = true;
+            this.txtErrosDigPotV3.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosDigPotV3.TabIndex = 17;
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(112, 224);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(245, 16);
+            this.label124.TabIndex = 16;
+            this.label124.Text = "Erros de comunicação com o DigPot V3";
+            // 
+            // txtErrosDisplayLCD
+            // 
+            this.txtErrosDisplayLCD.Location = new System.Drawing.Point(6, 249);
+            this.txtErrosDisplayLCD.Name = "txtErrosDisplayLCD";
+            this.txtErrosDisplayLCD.ReadOnly = true;
+            this.txtErrosDisplayLCD.Size = new System.Drawing.Size(100, 22);
+            this.txtErrosDisplayLCD.TabIndex = 19;
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(112, 252);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(260, 16);
+            this.label125.TabIndex = 18;
+            this.label125.Text = "Erros de comunicação com o Display LCD";
+            // 
+            // timerSolicitaLOGsEquipamento
+            // 
+            this.timerSolicitaLOGsEquipamento.Interval = 500;
+            this.timerSolicitaLOGsEquipamento.Tick += new System.EventHandler(this.timerSolicitaLOGsEquipamento_Tick);
+            // 
+            // btnResetEqp
+            // 
+            this.btnResetEqp.Location = new System.Drawing.Point(413, 783);
+            this.btnResetEqp.Name = "btnResetEqp";
+            this.btnResetEqp.Size = new System.Drawing.Size(177, 36);
+            this.btnResetEqp.TabIndex = 18;
+            this.btnResetEqp.Text = "Resetar Equip.";
+            this.btnResetEqp.UseVisualStyleBackColor = true;
+            this.btnResetEqp.Click += new System.EventHandler(this.btnResetEqp_Click);
             // 
             // Form1
             // 
@@ -4487,20 +4873,25 @@ namespace FonteTrifasicaPID
             this.groupBox15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFases)).EndInit();
             this.tabPage5.ResumeLayout(false);
+            this.groupBox26.ResumeLayout(false);
+            this.groupBox26.PerformLayout();
             this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
-            this.groupBox21.ResumeLayout(false);
-            this.groupBox21.PerformLayout();
-            this.groupBox22.ResumeLayout(false);
-            this.groupBox22.PerformLayout();
-            this.groupBox23.ResumeLayout(false);
-            this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
+            this.groupBox22.ResumeLayout(false);
+            this.groupBox22.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
+            this.groupBox27.ResumeLayout(false);
+            this.groupBox27.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4790,31 +5181,25 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.TextBox txtMinChartCorrente;
         private System.Windows.Forms.TextBox txtMaxChartCorrente;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.GroupBox groupBox20;
-        private System.Windows.Forms.TextBox txtOTWI3;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.TextBox txtOTWI2;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.TextBox txtOTWI1;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.TextBox txtUVPOLPI3;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.TextBox txtUVPOLPI2;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.TextBox txtUVPOLPI1;
-        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Button btnSalvarLOGEquipamento;
+        private System.Windows.Forms.Button btnLerLOGEquipamento;
         private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.TextBox txtErrosCCAI3;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.TextBox txtErrosCCAI2;
-        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.TextBox txtDataExpedicao;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.TextBox txtNumeroDeSerie;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.TextBox txtVersaoFWCont;
+        private System.Windows.Forms.Label label109;
         private System.Windows.Forms.TextBox txtVersaoFWSint;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.GroupBox groupBox23;
         private System.Windows.Forms.TextBox txtTempoUltimaSintetizacao;
         private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtTempoTotal;
         private System.Windows.Forms.Label label105;
         private System.Windows.Forms.TextBox txtTempoLigadaSintetizando;
         private System.Windows.Forms.Label label106;
@@ -4830,17 +5215,57 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.TextBox txtErrosADE;
         private System.Windows.Forms.Label label103;
-        private System.Windows.Forms.GroupBox groupBox24;
-        private System.Windows.Forms.TextBox txtDataExpedicao;
-        private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.TextBox txtNumeroDeSerie;
-        private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.TextBox txtVersaoFWCont;
-        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.TextBox txtOTWI3;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.TextBox txtOTWI2;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.TextBox txtOTWI1;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.TextBox txtUVPOLPI3;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.TextBox txtUVPOLPI2;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.TextBox txtUVPOLPI1;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.GroupBox groupBox25;
         private System.Windows.Forms.TextBox txtErrosCCAI_1;
         private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.TextBox txtErrosCCAI3;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.TextBox txtErrosCCAI2;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.Button btnLimparCamposEnviar;
+        private System.Windows.Forms.Button btnEnviarParaEqupamento;
+        private System.Windows.Forms.TextBox txtDataExpedicaoEnviar;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.TextBox txtClienteEnviar;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.TextBox txtNumeroDeSeriaEnviar;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.GroupBox groupBox27;
+        private System.Windows.Forms.TextBox txtErrosDisplayLCD;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.TextBox txtErrosDigPotV3;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.TextBox txtErrosDigPotV2;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.TextBox txtErrosDigPotV1;
+        private System.Windows.Forms.Label label122;
+        private System.Windows.Forms.TextBox txtErrosDigPotI3;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.TextBox txtErrosDigPotI2;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.TextBox txtErrosIO_Expander;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.TextBox txtErrosDigPotI1;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.TextBox txtErrosMUX_I2C;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.Timer timerSolicitaLOGsEquipamento;
+        private System.Windows.Forms.Button btnResetEqp;
     }
 }
 

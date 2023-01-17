@@ -97,7 +97,32 @@ namespace FonteTrifasicaPID
         static string strWorkPath = Path.GetDirectoryName(strExeFilePath);
 
         Image ImagemAdianta = Image.FromFile(strWorkPath + @"\IMAGEM\SetaAdianta1.png");
-        Image ImagemAtrasa = Image.FromFile(strWorkPath + @"\IMAGEM\SetaAtrasa1.png");
+        Image ImagemAtrasa = Image.FromFile(strWorkPath + @"\IMAGEM\SetaAtrasa1.png");        
+
+        enum SM_LOGRequest_Members 
+        { 
+            SolicitaErrosDeSaida,
+            SolicitaErrosDeComunicacao,
+            SolicitaEventos,
+            SolicitaTemporizacoes,
+            SolicitaDadosUnicos,
+            SemSolicitacoesDeLOG
+        };
+
+        enum SM_LOGStatus_Members
+        {
+            AguardandoLOG_ErrosDeSaida,
+            AguardadndoLOG_ErrosDeComunicacao,
+            AguardandoLOG_Eventos,
+            AguardandoLOG_Temporizacoes,
+            AguardadndoLOG_DadosUnicos,
+            TodosOsLOGsRecebidos
+        };
+
+        int TentativasMAX = 2;
+        int LOG_CounterLimit = 0;
+        SM_LOGStatus_Members SM_LOGStatus = SM_LOGStatus_Members.AguardandoLOG_ErrosDeSaida; //máquina de estados para as respostas recebidas dos LOGs
+        SM_LOGRequest_Members SM_LOGRequest = SM_LOGRequest_Members.SolicitaErrosDeSaida; //Máquina de estados para solicitação dos pacotes de informação de LOGs
 
         enum Identificador
         {
@@ -133,7 +158,14 @@ namespace FonteTrifasicaPID
             ID_ConstantesPIDFases,
             ID_FaseManual,
             ID_SentidoCorrecao,
-            ID_AjustarADE
+            ID_AjustarADE,
+            ID_LOG_ErrosDeSaida,
+            ID_LOG_ErrosDeComunicacao,
+            ID_LOG_Eventos,
+            ID_LOG_Temporizacoes,
+            ID_LOG_DadosUnicos,
+            ID_RESET_LOGs,
+            ID_AtualizarDadosUnicos
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -1078,6 +1110,87 @@ namespace FonteTrifasicaPID
                         }
                         ));
                         break;
+
+                    case (int)Identificador.ID_LOG_ErrosDeSaida:
+                        txtErrosCCAI_1.Invoke(new Action(() =>
+                        {
+                            txtErrosCCAI_1.Text = partes[1];
+                            txtErrosCCAI2.Text = partes[2];
+                            txtErrosCCAI3.Text = partes[3];
+
+                            txtUVPOLPI1.Text = partes[4];
+                            txtUVPOLPI2.Text = partes[5];
+                            txtUVPOLPI3.Text = partes[6];
+
+                            txtOTWI1.Text = partes[7];
+                            txtOTWI2.Text = partes[8];
+                            txtOTWI3.Text = partes[9];
+
+                            SM_LOGStatus = SM_LOGStatus_Members.AguardadndoLOG_ErrosDeComunicacao;
+                        }
+                        ));
+                        break;
+
+                    case (int)Identificador.ID_LOG_ErrosDeComunicacao:
+                        txtErrosCCAI_1.Invoke(new Action(() =>
+                        {
+                            txtErrosADE.Text = partes[1];
+
+                            txtErrosIO_Expander.Text = partes[2];
+                            txtErrosMUX_I2C.Text = partes[3];
+
+                            txtErrosDigPotI1.Text = partes[4];
+                            txtErrosDigPotI2.Text = partes[5];
+                            txtErrosDigPotI3.Text = partes[6];
+
+                            txtErrosDigPotV1.Text = partes[7];
+                            txtErrosDigPotV2.Text = partes[8];
+                            txtErrosDigPotV3.Text = partes[9];
+
+                            txtErrosDisplayLCD.Text = partes[10];
+
+                            SM_LOGStatus = SM_LOGStatus_Members.AguardandoLOG_Eventos;
+                        }
+                        ));
+                        break;
+                    case (int)Identificador.ID_LOG_Eventos:
+                        txtQTreligada.Invoke(new Action(() =>
+                        {
+                            txtQTreligada.Text = partes[1];
+                            txtQTInicioSintetizacao.Text = partes[2];
+                            txtQTFinalizacaoSintetizacao.Text = partes[3];                            
+
+                            SM_LOGStatus = SM_LOGStatus_Members.AguardandoLOG_Temporizacoes;
+                        }
+                        ));
+                        break;
+                    case (int)Identificador.ID_LOG_Temporizacoes:
+                        txtTempoLigadaSemSintetizar.Invoke(new Action(() =>
+                        {
+                            txtTempoLigadaSemSintetizar.Text = partes[1];
+                            txtTempoLigadaSintetizando.Text = partes[2];
+                            txtTempoUltimaSintetizacao.Text = partes[3];
+
+                            txtTempoTotal.Text = (Int32.Parse(partes[1]) + Int32.Parse(partes[2])).ToString();
+
+                            SM_LOGStatus = SM_LOGStatus_Members.AguardadndoLOG_DadosUnicos;
+                        }
+                        ));
+                        break;
+                    case (int)Identificador.ID_LOG_DadosUnicos:
+                        txtVersaoFWSint.Invoke(new Action(() =>
+                        {
+                            txtVersaoFWSint.Text = partes[1];
+                            txtVersaoFWCont.Text = partes[2];
+                            txtNumeroDeSerie.Text = partes[3];
+                            txtCliente.Text = partes[4];
+                            txtDataExpedicao.Text = partes[5];
+
+                            SM_LOGStatus = SM_LOGStatus_Members.TodosOsLOGsRecebidos;
+                        }
+                        ));
+                        break;
+
                     default:
 
                         break;
@@ -2301,6 +2414,213 @@ namespace FonteTrifasicaPID
         {
             chartCorrente.ChartAreas[0].AxisY.Maximum = double.Parse(txtMaxChartCorrente.Text);
             chartCorrente.ChartAreas[0].AxisY.Minimum = double.Parse(txtMinChartCorrente.Text);
+        }
+
+        private void btnLerLOGEquipamento_Click(object sender, EventArgs e)
+        {
+            if (timerSolicitaLOGsEquipamento.Enabled)
+            {
+                MessageBox.Show("Aguarde a finalização da úlçtima solicitação", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                //SolicitaLOG((int)Identificador.ID_LOG_ErrosDeSaida);
+                timerSolicitaLOGsEquipamento.Enabled = true;
+                SM_LOGRequest = SM_LOGRequest_Members.SolicitaErrosDeSaida;
+                SM_LOGStatus = SM_LOGStatus_Members.AguardandoLOG_ErrosDeSaida;
+            }
+        }
+
+        private void SolicitaLOG(int ID)
+        {
+            //Trama de solicitação dos LOGs de funcionamento do equipamento
+            //Identificador, CS        
+
+            string TRAMA_ENVIO = ID + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de solicitação LOG do equipamento.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de solicitação de LOG não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void timerSolicitaLOGsEquipamento_Tick(object sender, EventArgs e)
+        {
+            switch (SM_LOGRequest)
+            {
+                case SM_LOGRequest_Members.SolicitaErrosDeSaida:
+                    if((LOG_CounterLimit <= TentativasMAX) && (SM_LOGStatus == SM_LOGStatus_Members.AguardandoLOG_ErrosDeSaida))
+                    {
+                        LOG_CounterLimit++;
+                        SolicitaLOG((int)Identificador.ID_LOG_ErrosDeSaida);
+                    }
+                    else if(LOG_CounterLimit > TentativasMAX)
+                    {
+                        timerSolicitaLOGsEquipamento.Enabled = false;
+                        MessageBox.Show("Expirado tempo de resposta do equipamento (1)!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        LOG_TXT("Erro de comunicação e solicitação de LOG. Não recebemos nem o primeiro pacote (Erros de Saída)");
+                        LOG_CounterLimit = 0;
+                    }
+                    else
+                    {
+                        SM_LOGRequest = SM_LOGRequest_Members.SolicitaErrosDeComunicacao;
+                        LOG_CounterLimit = 0;
+                        SolicitaLOG((int)Identificador.ID_LOG_ErrosDeComunicacao);
+                    }
+                    break;
+                case SM_LOGRequest_Members.SolicitaErrosDeComunicacao:
+                    if ((LOG_CounterLimit <= TentativasMAX) && (SM_LOGStatus == SM_LOGStatus_Members.AguardadndoLOG_ErrosDeComunicacao))
+                    {
+                        LOG_CounterLimit++;
+                        SolicitaLOG((int)Identificador.ID_LOG_ErrosDeComunicacao);
+                    }
+                    else if (LOG_CounterLimit > TentativasMAX)
+                    {
+                        timerSolicitaLOGsEquipamento.Enabled = false;
+                        MessageBox.Show("Expirado tempo de resposta do equipamento (2)!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        LOG_TXT("Erro de comunicação e solicitação de LOG. Recebemos o primeiro pacote (Erros de Saída) mas não recebemos o segundo pacote (Erros de comunicação)");
+                        LOG_CounterLimit = 0;
+                    }
+                    else
+                    {
+                        SM_LOGRequest = SM_LOGRequest_Members.SolicitaEventos;
+                        LOG_CounterLimit = 0;
+                        SolicitaLOG((int)Identificador.ID_LOG_Eventos);
+                    }
+                    break;
+                case SM_LOGRequest_Members.SolicitaEventos:
+                    if ((LOG_CounterLimit <= TentativasMAX) && (SM_LOGStatus == SM_LOGStatus_Members.AguardandoLOG_Eventos))
+                    {
+                        LOG_CounterLimit++;
+                        SolicitaLOG((int)Identificador.ID_LOG_Eventos);
+                    }
+                    else if (LOG_CounterLimit > TentativasMAX)
+                    {
+                        timerSolicitaLOGsEquipamento.Enabled = false;
+                        MessageBox.Show("Expirado tempo de resposta do equipamento (3)!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        LOG_TXT("Erro de comunicação e solicitação de LOG. Recebemos os dois primeiros pacotes mas não recebemos o terceiro (LOG de Eventos)");
+                        LOG_CounterLimit = 0;
+                    }
+                    else
+                    {
+                        SM_LOGRequest = SM_LOGRequest_Members.SolicitaTemporizacoes;
+                        LOG_CounterLimit = 0;
+                        SolicitaLOG((int)Identificador.ID_LOG_Temporizacoes);
+                    }
+                    break;
+                case SM_LOGRequest_Members.SolicitaTemporizacoes:
+                    if ((LOG_CounterLimit <= TentativasMAX) && (SM_LOGStatus == SM_LOGStatus_Members.AguardandoLOG_Temporizacoes))
+                    {
+                        LOG_CounterLimit++;
+                        SolicitaLOG((int)Identificador.ID_LOG_Temporizacoes);
+                    }
+                    else if (LOG_CounterLimit > TentativasMAX)
+                    {
+                        timerSolicitaLOGsEquipamento.Enabled = false;
+                        MessageBox.Show("Expirado tempo de resposta do equipamento (4)!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        LOG_TXT("Erro de comunicação e solicitação de LOG. Recebemos os dois três primeiros pacotes mas não recebemos o quarto (LOG de Temporizações)");
+                        LOG_CounterLimit = 0;
+                    }
+                    else
+                    {
+                        SM_LOGRequest = SM_LOGRequest_Members.SolicitaDadosUnicos;
+                        LOG_CounterLimit = 0;
+                        SolicitaLOG((int)Identificador.ID_LOG_DadosUnicos);
+                    }
+                    break;
+                case SM_LOGRequest_Members.SolicitaDadosUnicos:
+                    if ((LOG_CounterLimit <= TentativasMAX) && (SM_LOGStatus == SM_LOGStatus_Members.AguardadndoLOG_DadosUnicos))
+                    {
+                        LOG_CounterLimit++;
+                        SolicitaLOG((int)Identificador.ID_LOG_DadosUnicos);
+                    }
+                    else if (LOG_CounterLimit > TentativasMAX)
+                    {
+                        timerSolicitaLOGsEquipamento.Enabled = false;
+                        MessageBox.Show("Expirado tempo de resposta do equipamento (5)!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        LOG_TXT("Erro de comunicação e solicitação de LOG. Recebemos os dois quatro primeiros pacotes mas não recebemos o quinto (LOG de Dados Únicos)");
+                        LOG_CounterLimit = 0;
+                    }
+                    else
+                    {
+                        SM_LOGRequest = SM_LOGRequest_Members.SemSolicitacoesDeLOG;
+                        LOG_CounterLimit = 0;                        
+                    }
+                    break;
+                default:
+                    timerSolicitaLOGsEquipamento.Enabled = false;
+                    MessageBox.Show("Dados lidos com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LOG_TXT("Dados de LOG lidos com sucesso!");
+                    break;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            txtErrosCCAI_1.Text = txtErrosCCAI2.Text = txtErrosCCAI3.Text = txtUVPOLPI1.Text = txtUVPOLPI2.Text =
+                txtUVPOLPI3.Text = txtOTWI1.Text = txtOTWI2.Text = txtOTWI3.Text = String.Empty;
+            txtErrosADE.Text = txtErrosIO_Expander.Text = txtErrosMUX_I2C.Text = txtErrosDigPotI1.Text =
+                txtErrosDigPotI2.Text = txtErrosDigPotI3.Text = txtErrosDigPotV1.Text = txtErrosDigPotV2.Text = 
+                txtErrosDigPotV3.Text = txtErrosDisplayLCD.Text = String.Empty;
+            txtQTreligada.Text = txtQTInicioSintetizacao.Text = txtQTFinalizacaoSintetizacao.Text = String.Empty;
+            txtTempoLigadaSemSintetizar.Text = txtTempoLigadaSintetizando.Text = txtTempoUltimaSintetizacao.Text = txtTempoTotal.Text = String.Empty;
+            txtVersaoFWCont.Text = txtVersaoFWSint.Text = txtNumeroDeSerie.Text = txtCliente.Text = txtDataExpedicao.Text = String.Empty;
+        }
+
+        private void btnResetEqp_Click(object sender, EventArgs e)
+        {
+            //Trama de solicitação de reset dos LOGs do Equipamento
+            //Identificador, CS        
+
+            string TRAMA_ENVIO = (int)Identificador.ID_RESET_LOGs + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de solicitação de RESET dos LOGs do equipamento.: " + TramaComChecksum);
+            }
+            else
+            {
+                LOG_TXT("Comando de solicitação de RESET de LOG não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnEnviarParaEqupamento_Click(object sender, EventArgs e)
+        {
+            if(txtNumeroDeSeriaEnviar.Text != string.Empty && txtClienteEnviar.Text != string.Empty && txtDataExpedicaoEnviar.Text != string.Empty)
+            {
+                DialogResult dialogResult = MessageBox.Show("Tem certeza que deseja substituir as informações únicas do equipamento?\n" +
+                                                        "Esta é uma operação irreversível!", "Cuidado", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    //Trama de Atualização dos dados únicos do equipamento
+                    //Identificador, CS        
+
+                    string TRAMA_ENVIO = (int)Identificador.ID_AtualizarDadosUnicos + "," + txtNumeroDeSeriaEnviar.Text + "," + txtClienteEnviar.Text + "," + txtDataExpedicaoEnviar.Text + ",";
+
+                    if (PortaSerial.IsOpen)
+                    {
+                        String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                        PortaSerial.Write(TramaComChecksum + "\0");
+                        LOG_TXT("Envio de comando de Atualização dos dados únicos do equipamento.: " + TramaComChecksum);
+                    }
+                    else
+                    {
+                        LOG_TXT("Comando de atualização de dados únicos não enviado devido porta serial fechada!");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Considere inserir todas as informações primeiro.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
