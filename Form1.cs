@@ -52,13 +52,13 @@ namespace FonteTrifasicaPID
         float AnguloFasorI2 = 0;
         float AnguloFasorI3 = 0;
 
-        float AnguloIA;
-        float AnguloIB;
-        float AnguloIC;
+        double AnguloIA;
+        double AnguloIB;
+        double AnguloIC;
 
-        float TempoI1;
-        float TempoI2;
-        float TempoI3;
+        double TempoI1;
+        double TempoI2;
+        double TempoI3;
 
         float Frequencia;
         float Periodo;
@@ -408,6 +408,7 @@ namespace FonteTrifasicaPID
             {
                 switch(int.Parse(partes[0]))//Partes 0 contém o identificador!!
                 {
+                    #region Constantes PID Tensão
                     case (int)Identificador.ID_ConstantesPIDTensao:
                         txtKpTensao.Invoke(new Action(() =>
                         {
@@ -422,6 +423,8 @@ namespace FonteTrifasicaPID
                             txtKdTensao.Text = partes[3];
                         }));
                         break;
+                    #endregion
+                    #region Constantes PID Corrente
                     case (int)Identificador.ID_ConstantesPIDCorrente:
                         txtKpCorrente.Invoke(new Action(() => 
                         {
@@ -431,6 +434,8 @@ namespace FonteTrifasicaPID
                         }));                     
                         
                         break;
+                        #endregion
+                    #region Parametros Sintetização
                     case (int)Identificador.ID_ParametrosSintetizacao:
                         txtTensãoRMS.Text = partes[1];
                         txtCorrenteRMS.Text = partes[2];
@@ -438,6 +443,8 @@ namespace FonteTrifasicaPID
                         cbxFase.SelectedIndex = int.Parse(partes[4]);
                         cbxFatorDePotencia.SelectedIndex = int.Parse(partes[5]);
                         break;
+                    #endregion
+                    #region TX PID Tensão
                     case (int)Identificador.ID_TX_PID_Tensao:
                         if(cbxGraficoVA.Checked)
                         {
@@ -607,6 +614,8 @@ namespace FonteTrifasicaPID
                             }));
                         }
                         break;
+                    #endregion
+                    #region TX PID Corrente
                     case (int)Identificador.ID_TX_PID_Corrente:
                         if (cbxGraficoIA.Checked)
                         {
@@ -736,6 +745,8 @@ namespace FonteTrifasicaPID
                             }));
                         }
                         break;
+                    #endregion
+                    #region Ajuste Fino V
                     case (int)Identificador.ID_TX_AjusteFinoV:
                         Fase = int.Parse(partes[1]);
                         switch(Fase)
@@ -773,6 +784,8 @@ namespace FonteTrifasicaPID
                                 break;
                         }
                         break;
+                    #endregion
+                    #region Ajuste Grosso V
                     case (int)Identificador.ID_TX_AjusteGrossoV:
                         Fase = int.Parse(partes[1]);
                         switch (Fase)
@@ -810,6 +823,8 @@ namespace FonteTrifasicaPID
                                 break;
                         }
                         break;
+                    #endregion
+                    #region Ajuste Fino I
                     case (int)Identificador.ID_TX_AjusteFinoI:
                         try
                         {
@@ -854,6 +869,8 @@ namespace FonteTrifasicaPID
 
                         }
                         break;
+                    #endregion
+                    #region Ajuste Grosso I
                     case (int)Identificador.ID_TX_AjsuteGrossoI:
                         Fase = int.Parse(partes[1]);
                         switch (Fase)
@@ -891,6 +908,8 @@ namespace FonteTrifasicaPID
                                 break;
                         }
                         break;
+                    #endregion
+                    #region Ler FP 60
                     case (int)Identificador.ID_Ler_FP_60:
                         txtFP160A.Invoke(new Action(() =>
                         {
@@ -908,6 +927,8 @@ namespace FonteTrifasicaPID
                         }));
                         
                         break;
+                    #endregion
+                    #region Ler FP 50
                     case (int)Identificador.ID_Ler_FP_50:
                         txtFP150A.Invoke(new Action(() =>
                         {
@@ -925,6 +946,8 @@ namespace FonteTrifasicaPID
                         }));
 
                         break;
+                    #endregion
+                    #region Correção Fase
                     case (int)Identificador.ID_Correcao_Fase:
                         txtLeituraFP1.Invoke(new Action(() =>
                         {
@@ -939,9 +962,14 @@ namespace FonteTrifasicaPID
                             FaseVAB = float.Parse(partes[5]) / 1000;
                             FaseVAC = float.Parse(partes[6]) / 1000;
 
-                            TempoI1 = float.Parse(partes[7]) / 10000; //Aqui teremos o tempo em ms
-                            TempoI2 = float.Parse(partes[8]) / 10000; //Aqui teremos o tempo em ms
-                            TempoI3 = float.Parse(partes[9]) / 10000; //Aqui teremos o tempo em ms
+                            TempoI1 = double.Parse(partes[7]) / 1000000000; //Aqui teremos o tempo em ms
+                            TempoI2 = double.Parse(partes[8]) / 1000000000; //Aqui teremos o tempo em ms
+                            TempoI3 = double.Parse(partes[9]) / 1000000000; //Aqui teremos o tempo em ms
+
+                            txtAngI1ESP.Text = partes[10];
+                            txtAngI2ESP.Text = partes[11];
+                            txtAngI3ESP.Text = partes[12];
+
                             ////////////////////////////////////////////////////////////////////////////
 
 
@@ -954,9 +982,9 @@ namespace FonteTrifasicaPID
                             //Console.WriteLine("Angulo V2: " + AnguloFasorV2);
                             //Console.WriteLine("Angulo V3: " + AnguloFasorV3);
 
-                            AnguloIA = (TempoI1 * 360) / (Periodo);  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
-                            AnguloIB = (TempoI2 * 360) / (Periodo);  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
-                            AnguloIC = (TempoI3 * 360) / (Periodo);  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
+                            AnguloIA = double.Parse(partes[10])/1000;  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
+                            AnguloIB = double.Parse(partes[11])/1000;  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
+                            AnguloIC = double.Parse(partes[12])/1000;  //Sempre em sentido anti-horário e em relação ao fasor de tensão do canal
 
                             //Console.WriteLine("Angulo entre I1 e V1: " + AnguloIA);
                             //Console.WriteLine("Angulo entre I2 e V2: " + AnguloIB);
@@ -984,9 +1012,9 @@ namespace FonteTrifasicaPID
                             txtLeituraFP2.Text = FPI2Signed.ToString("0.00");
                             txtLeituraFP3.Text = FPI3Signed.ToString("0.00");
 
-                            txtAnguloFP1.Text = AnguloIA.ToString("0.000");
-                            txtAnguloFP2.Text = AnguloIB.ToString("0.000");
-                            txtAnguloFP3.Text = AnguloIC.ToString("0.000");
+                            //txtAnguloFP1.Text = AnguloIA.ToString("0.000");
+                            //txtAnguloFP2.Text = AnguloIB.ToString("0.000");
+                            //txtAnguloFP3.Text = AnguloIC.ToString("0.000");
 
                             txtLeituraFaseVAB.Text = FaseVAB.ToString("0.000");
                             txtLeituraFaseVAC.Text = FaseVAC.ToString("0.000");
@@ -1049,18 +1077,84 @@ namespace FonteTrifasicaPID
 
                             PassoGraficoFases++;
                             ////////////////////////////////////////////////////////////////////////////
+                            ///
+                            if(cbxFP1.Checked)
+                            {
+                                if(AnguloIA > 270)
+                                {
+                                    txtDifI1.Text = (360 - AnguloIA).ToString("0.000");
+                                }
+                                else
+                                {
+                                    txtDifI1.Text = AnguloIA.ToString("0.000");
+                                }
+
+                                if (AnguloIB > 270)
+                                {
+                                    txtDifI2.Text = (360 - AnguloIB).ToString("0.000");
+                                }
+                                else
+                                {
+                                    txtDifI2.Text = AnguloIB.ToString("0.000");
+                                }
+
+                                if (AnguloIC > 270)
+                                {
+                                    txtDifI3.Text = (360 - AnguloIC).ToString("0.000");
+                                }
+                                else
+                                {
+                                    txtDifI3.Text = AnguloIC.ToString("0.000");
+                                }
+                            }
 
                         }
                         ));
                         break;
+                    #endregion
+                    #region Sentido Correção
                     case (int)Identificador.ID_SentidoCorrecao:
                         pbxI1.Invoke(new Action(() =>
                         {
+                            float CorreçãoV2 = float.Parse(partes[1]);
+                            float CorreçãoV3 = float.Parse(partes[2]);
                             float CorreçãoI1 = float.Parse(partes[3]);
                             float CorreçãoI2 = float.Parse(partes[4]);
                             float CorreçãoI3 = float.Parse(partes[5]);
 
-                            if(CorreçãoI1 != 0)
+                            if (CorreçãoV2 != 0)
+                            {
+                                if (CorreçãoV2 < 0)
+                                {
+                                    pbxV2.Image = ImagemAtrasa;
+                                }
+                                else
+                                {
+                                    pbxV2.Image = ImagemAdianta;
+                                }
+                            }
+                            else
+                            {
+                                pbxV2.Image = null;
+                            }
+
+                            if (CorreçãoV3 != 0)
+                            {
+                                if (CorreçãoV3 < 0)
+                                {
+                                    pbxV3.Image = ImagemAtrasa;
+                                }
+                                else
+                                {
+                                    pbxV3.Image = ImagemAdianta;
+                                }
+                            }
+                            else
+                            {
+                                pbxV3.Image = null;
+                            }
+
+                            if (CorreçãoI1 != 0)
                             {
                                 if (CorreçãoI1 < 0)
                                 {
@@ -1110,7 +1204,8 @@ namespace FonteTrifasicaPID
                         }
                         ));
                         break;
-
+                    #endregion
+                    #region LOG Erros de Saída
                     case (int)Identificador.ID_LOG_ErrosDeSaida:
                         txtErrosCCAI_1.Invoke(new Action(() =>
                         {
@@ -1130,7 +1225,8 @@ namespace FonteTrifasicaPID
                         }
                         ));
                         break;
-
+                    #endregion
+                    #region Erros De Comunicação
                     case (int)Identificador.ID_LOG_ErrosDeComunicacao:
                         txtErrosCCAI_1.Invoke(new Action(() =>
                         {
@@ -1153,6 +1249,8 @@ namespace FonteTrifasicaPID
                         }
                         ));
                         break;
+                    #endregion
+                    #region LOG Eventos
                     case (int)Identificador.ID_LOG_Eventos:
                         txtQTreligada.Invoke(new Action(() =>
                         {
@@ -1164,6 +1262,8 @@ namespace FonteTrifasicaPID
                         }
                         ));
                         break;
+                    #endregion
+                    #region LOG Temporizações
                     case (int)Identificador.ID_LOG_Temporizacoes:
                         txtTempoLigadaSemSintetizar.Invoke(new Action(() =>
                         {
@@ -1177,6 +1277,8 @@ namespace FonteTrifasicaPID
                         }
                         ));
                         break;
+                    #endregion
+                    #region LOG Dados Unicos
                     case (int)Identificador.ID_LOG_DadosUnicos:
                         txtVersaoFWSint.Invoke(new Action(() =>
                         {
@@ -1190,7 +1292,7 @@ namespace FonteTrifasicaPID
                         }
                         ));
                         break;
-
+                    #endregion
                     default:
 
                         break;
@@ -2364,6 +2466,8 @@ namespace FonteTrifasicaPID
             pbxI1.Image = null;
             pbxI2.Image = null;
             pbxI3.Image = null;
+            pbxV2.Image = null;
+            pbxV3.Image = null;
         }
 
         private void btnAplicarFaseManual_Click(object sender, EventArgs e)
@@ -2575,21 +2679,26 @@ namespace FonteTrifasicaPID
 
         private void btnResetEqp_Click(object sender, EventArgs e)
         {
-            //Trama de solicitação de reset dos LOGs do Equipamento
-            //Identificador, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_RESET_LOGs + ",";
-
-            if (PortaSerial.IsOpen)
+            DialogResult dialogResult = MessageBox.Show("Tem certeza que deseja resetar o LOG do equipamento??\n" +
+                                                        "Esta é uma operação irreversível!", "Cuidado", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando de solicitação de RESET dos LOGs do equipamento.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de solicitação de RESET de LOG não enviado devido porta serial fechada!");
-            }
+                //Trama de solicitação de reset dos LOGs do Equipamento
+                //Identificador, CS        
+
+                string TRAMA_ENVIO = (int)Identificador.ID_RESET_LOGs + ",";
+
+                if (PortaSerial.IsOpen)
+                {
+                    String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                    PortaSerial.Write(TramaComChecksum + "\0");
+                    LOG_TXT("Envio de comando de solicitação de RESET dos LOGs do equipamento.: " + TramaComChecksum);
+                }
+                else
+                {
+                    LOG_TXT("Comando de solicitação de RESET de LOG não enviado devido porta serial fechada!");
+                }
+            }            
         }
 
         private void btnEnviarParaEqupamento_Click(object sender, EventArgs e)
@@ -2621,6 +2730,46 @@ namespace FonteTrifasicaPID
             {
                 MessageBox.Show("Considere inserir todas as informações primeiro.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                timerRepeatStop.Enabled = true;
+            }
+            else
+                timerRepeatStop.Enabled = false;
+        }
+
+        private void timerRepeatStop_Tick(object sender, EventArgs e)
+        {
+            string TRAMA_ENVIO = (int)Identificador.ID_Parar + ",";
+
+            TRiseVa = false;
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando Parar Sint.: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para parar sintetização não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void nud10kIA_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
