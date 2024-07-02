@@ -1,0 +1,679 @@
+26/06/2024 15:57:18  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:57:52  -  A trama recebida não continha ','
+26/06/2024 15:57:53  -  A trama recebida não continha ','
+26/06/2024 15:57:56  -  A trama recebida não continha ','
+26/06/2024 15:57:56  -  A trama recebida não continha ','
+26/06/2024 15:57:56  -  A trama recebida não continha ','
+26/06/2024 15:57:56  -  A trama recebida não continha ','
+26/06/2024 15:57:56  -  A trama recebida não continha ','
+26/06/2024 15:58:26  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:28  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:32  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:33  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:35  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:36  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:36  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:37  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:39  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:40  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:42  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:43  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 15:58:49  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,0,0,1,4173
+26/06/2024 15:58:49  -  A trama recebida não continha ','
+26/06/2024 15:58:50  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 15:58:51  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 15:58:51  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 15:58:55  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 15:58:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:00:45  -  Porta serial aberta com sucesso!
+26/06/2024 16:00:45  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 16:00:47  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:00:52  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:00:54  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:00:55  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:00:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:01:02  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:01:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:01:10  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:01:13  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:02:04  -  Porta serial aberta com sucesso!
+26/06/2024 16:02:04  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 16:02:08  -  Envio de comando de reset de registradores ao ADE: 44,63814
+26/06/2024 16:02:08  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:02:09  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:02:10  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:02:10  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:04:54  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:04:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:05:00  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:05:04  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:05:04  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:05:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:05:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:05:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:05:09  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:02  -  Envio de comando de ajuste manual do ADE: 45,1,0,0,0,0,0,44458
+26/06/2024 16:06:02  -  A trama recebida não continha ','
+26/06/2024 16:06:02  -  A trama recebida não continha ','
+26/06/2024 16:06:02  -  A trama recebida não continha ','
+26/06/2024 16:06:05  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:07  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:07  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:09  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:09  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:38  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:38  -  Checsum da trama recebida estava incorreto!
+26/06/2024 16:06:38  -  Calc: |3868| Recebido: |25900|
+26/06/2024 16:06:39  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:06:40  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:06:41  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:09  -  A trama recebida não continha ','
+26/06/2024 16:07:09  -  A trama recebida não continha ','
+26/06/2024 16:07:12  -  A trama recebida não continha ','
+26/06/2024 16:07:12  -  A trama recebida não continha ','
+26/06/2024 16:07:13  -  A trama recebida não continha ','
+26/06/2024 16:07:13  -  A trama recebida não continha ','
+26/06/2024 16:07:14  -  A trama recebida não continha ','
+26/06/2024 16:07:14  -  A trama recebida não continha ','
+26/06/2024 16:07:15  -  A trama recebida não continha ','
+26/06/2024 16:07:15  -  A trama recebida não continha ','
+26/06/2024 16:07:16  -  A trama recebida não continha ','
+26/06/2024 16:07:16  -  A trama recebida não continha ','
+26/06/2024 16:07:16  -  A trama recebida não continha ','
+26/06/2024 16:07:17  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:18  -  A trama recebida não continha ','
+26/06/2024 16:07:18  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:19  -  A trama recebida não continha ','
+26/06/2024 16:07:19  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:20  -  A trama recebida não continha ','
+26/06/2024 16:07:20  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:25  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:07:25  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:07:27  -  Envio de comando de reset de registradores ao ADE: 44,63814
+26/06/2024 16:07:28  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:07:29  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:07:29  -  A trama recebida não continha ','
+26/06/2024 16:07:29  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:07:30  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:50  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:51  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:07:51  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:08:39  -  Envio de comando de ajuste manual do ADE: 45,1,0,0,0,0,0,44458
+26/06/2024 16:08:39  -  A trama recebida não continha ','
+26/06/2024 16:08:39  -  A trama recebida não continha ','
+26/06/2024 16:08:39  -  A trama recebida não continha ','
+26/06/2024 16:09:18  -  A trama recebida não continha ','
+26/06/2024 16:09:18  -  A trama recebida não continha ','
+26/06/2024 16:09:21  -  A trama recebida não continha ','
+26/06/2024 16:09:21  -  A trama recebida não continha ','
+26/06/2024 16:09:21  -  A trama recebida não continha ','
+26/06/2024 16:09:22  -  A trama recebida não continha ','
+26/06/2024 16:09:22  -  A trama recebida não continha ','
+26/06/2024 16:09:24  -  A trama recebida não continha ','
+26/06/2024 16:09:24  -  A trama recebida não continha ','
+26/06/2024 16:09:25  -  A trama recebida não continha ','
+26/06/2024 16:09:25  -  A trama recebida não continha ','
+26/06/2024 16:09:26  -  A trama recebida não continha ','
+26/06/2024 16:09:26  -  A trama recebida não continha ','
+26/06/2024 16:09:27  -  A trama recebida não continha ','
+26/06/2024 16:09:27  -  A trama recebida não continha ','
+26/06/2024 16:09:27  -  A trama recebida não continha ','
+26/06/2024 16:09:28  -  A trama recebida não continha ','
+26/06/2024 16:09:29  -  A trama recebida não continha ','
+26/06/2024 16:09:36  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:09:37  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:09:38  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:09:39  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:09:41  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:09:42  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:04  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:05  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:07  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:07  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:09  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:09  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:10  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:10:19  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:10:28  -  Envio de comando de ajuste manual do ADE: 45,0,1,0,0,0,0,49562
+26/06/2024 16:10:28  -  A trama recebida não continha ','
+26/06/2024 16:10:28  -  A trama recebida não continha ','
+26/06/2024 16:10:28  -  A trama recebida não continha ','
+26/06/2024 16:10:32  -  A trama recebida não continha ','
+26/06/2024 16:10:35  -  A trama recebida não continha ','
+26/06/2024 16:10:36  -  A trama recebida não continha ','
+26/06/2024 16:10:37  -  A trama recebida não continha ','
+26/06/2024 16:10:38  -  A trama recebida não continha ','
+26/06/2024 16:10:39  -  A trama recebida não continha ','
+26/06/2024 16:10:40  -  A trama recebida não continha ','
+26/06/2024 16:10:41  -  A trama recebida não continha ','
+26/06/2024 16:10:41  -  A trama recebida não continha ','
+26/06/2024 16:11:11  -  A trama recebida não continha ','
+26/06/2024 16:11:14  -  A trama recebida não continha ','
+26/06/2024 16:11:15  -  A trama recebida não continha ','
+26/06/2024 16:11:16  -  A trama recebida não continha ','
+26/06/2024 16:11:17  -  A trama recebida não continha ','
+26/06/2024 16:11:18  -  A trama recebida não continha ','
+26/06/2024 16:11:18  -  A trama recebida não continha ','
+26/06/2024 16:11:19  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:20  -  A trama recebida não continha ','
+26/06/2024 16:11:21  -  A trama recebida não continha ','
+26/06/2024 16:11:21  -  A trama recebida não continha ','
+26/06/2024 16:11:34  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:11:45  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:46  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:46  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:47  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:11:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:11  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:12  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:13  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:13  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:14  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:14  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:15  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:15  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:16  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:16  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:17  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:17  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:18  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:18  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:12:38  -  Envio de comando de ajuste manual do ADE: 45,0,0,1,0,0,0,59660
+26/06/2024 16:12:38  -  A trama recebida não continha ','
+26/06/2024 16:12:38  -  A trama recebida não continha ','
+26/06/2024 16:12:38  -  A trama recebida não continha ','
+26/06/2024 16:12:44  -  A trama recebida não continha ','
+26/06/2024 16:12:47  -  A trama recebida não continha ','
+26/06/2024 16:12:47  -  A trama recebida não continha ','
+26/06/2024 16:13:27  -  A trama recebida não continha ','
+26/06/2024 16:14:07  -  A trama recebida não continha ','
+26/06/2024 16:14:08  -  A trama recebida não continha ','
+26/06/2024 16:14:48  -  A trama recebida não continha ','
+26/06/2024 16:15:28  -  A trama recebida não continha ','
+26/06/2024 16:15:28  -  A trama recebida não continha ','
+26/06/2024 16:16:08  -  A trama recebida não continha ','
+26/06/2024 16:16:48  -  A trama recebida não continha ','
+26/06/2024 16:16:48  -  A trama recebida não continha ','
+26/06/2024 16:16:48  -  A trama recebida não continha ','
+26/06/2024 16:16:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:16:56  -  Checsum da trama recebida estava incorreto!
+26/06/2024 16:16:56  -  Calc: |32347| Recebido: |54605|
+26/06/2024 16:16:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:16:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:16:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:16:59  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:01  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:05  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:07  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:09  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:10  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 16:17:51  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:17:53  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 16:18:52  -  Envio de comando de ajuste manual do ADE: 45,0,0,0,1,0,0,60287
+26/06/2024 16:18:52  -  A trama recebida não continha ','
+26/06/2024 16:18:52  -  A trama recebida não continha ','
+26/06/2024 16:18:52  -  A trama recebida não continha ','
+26/06/2024 16:19:18  -  A trama recebida não continha ','
+26/06/2024 16:19:21  -  A trama recebida não continha ','
+26/06/2024 16:19:21  -  A trama recebida não continha ','
+26/06/2024 16:20:01  -  A trama recebida não continha ','
+26/06/2024 16:20:41  -  A trama recebida não continha ','
+26/06/2024 16:20:41  -  A trama recebida não continha ','
+26/06/2024 16:21:21  -  A trama recebida não continha ','
+26/06/2024 16:22:01  -  A trama recebida não continha ','
+26/06/2024 16:22:01  -  A trama recebida não continha ','
+26/06/2024 16:22:01  -  A trama recebida não continha ','
+26/06/2024 16:22:01  -  A trama recebida não continha ','
+26/06/2024 16:22:41  -  A trama recebida não continha ','
+26/06/2024 16:23:21  -  A trama recebida não continha ','
+26/06/2024 16:23:21  -  A trama recebida não continha ','
+26/06/2024 16:23:21  -  A trama recebida não continha ','
+26/06/2024 16:23:21  -  A trama recebida não continha ','
+26/06/2024 17:13:05  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:06  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:07  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:07  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:10  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:11  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:17  -  Envio de comando resetar ESP32: 16,29908
+26/06/2024 17:13:17  -  A trama recebida não continha ','
+26/06/2024 17:13:18  -  A trama recebida não continha ','
+26/06/2024 17:13:19  -  A trama recebida não continha ','
+26/06/2024 17:13:19  -  A trama recebida não continha ','
+26/06/2024 17:13:22  -  A trama recebida não continha ','
+26/06/2024 17:13:22  -  A trama recebida não continha ','
+26/06/2024 17:13:22  -  A trama recebida não continha ','
+26/06/2024 17:13:22  -  A trama recebida não continha ','
+26/06/2024 17:13:22  -  Checsum da trama recebida estava incorreto!
+26/06/2024 17:13:22  -  Calc: |29083| Recebido: |8724|
+26/06/2024 17:13:23  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:24  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:25  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:13:28  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:19:41  -  Porta serial aberta com sucesso!
+26/06/2024 17:19:41  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:19:42  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:19:47  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,1,0,0,26332
+26/06/2024 17:19:47  -  A trama recebida não continha ','
+26/06/2024 17:19:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:19:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:19:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:19:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:02  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:06  -  Envio de comando resetar ESP32: 16,29908
+26/06/2024 17:20:06  -  A trama recebida não continha ','
+26/06/2024 17:20:07  -  A trama recebida não continha ','
+26/06/2024 17:20:08  -  A trama recebida não continha ','
+26/06/2024 17:20:08  -  A trama recebida não continha ','
+26/06/2024 17:20:11  -  A trama recebida não continha ','
+26/06/2024 17:20:11  -  A trama recebida não continha ','
+26/06/2024 17:20:11  -  A trama recebida não continha ','
+26/06/2024 17:20:11  -  A trama recebida não continha ','
+26/06/2024 17:20:12  -  Checsum da trama recebida estava incorreto!
+26/06/2024 17:20:12  -  Calc: |29083| Recebido: |8724|
+26/06/2024 17:20:13  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:14  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:14  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:26  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:40  -  Envio de comando de ajuste manual do ADE: 45,0,0,0,1,0,0,60287
+26/06/2024 17:20:40  -  A trama recebida não continha ','
+26/06/2024 17:20:40  -  A trama recebida não continha ','
+26/06/2024 17:20:40  -  A trama recebida não continha ','
+26/06/2024 17:20:43  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:45  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:45  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:20:54  -  A trama recebida não continha ','
+26/06/2024 17:20:57  -  A trama recebida não continha ','
+26/06/2024 17:25:01  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+26/06/2024 17:25:02  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+26/06/2024 17:25:05  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+26/06/2024 17:25:06  -  Porta serial aberta com sucesso!
+26/06/2024 17:25:06  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:25:08  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:25:09  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:28:39  -  Porta serial aberta com sucesso!
+26/06/2024 17:28:39  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:28:39  -  A trama recebida não continha ','
+26/06/2024 17:28:39  -  A trama recebida não continha ','
+26/06/2024 17:28:39  -  A trama recebida não continha ','
+26/06/2024 17:28:39  -  A trama recebida não continha ','
+26/06/2024 17:28:40  -  Checsum da trama recebida estava incorreto!
+26/06/2024 17:28:40  -  Calc: |29083| Recebido: |8724|
+26/06/2024 17:28:41  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:28:52  -  Envio de comando de ajuste manual do ADE: 45,0,0,1,0,0,0,59660
+26/06/2024 17:28:52  -  A trama recebida não continha ','
+26/06/2024 17:28:52  -  A trama recebida não continha ','
+26/06/2024 17:28:52  -  A trama recebida não continha ','
+26/06/2024 17:28:53  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:28:55  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:29:24  -  A trama recebida não continha ','
+26/06/2024 17:29:27  -  A trama recebida não continha ','
+26/06/2024 17:30:07  -  A trama recebida não continha ','
+26/06/2024 17:30:47  -  A trama recebida não continha ','
+26/06/2024 17:30:47  -  A trama recebida não continha ','
+26/06/2024 17:31:27  -  A trama recebida não continha ','
+26/06/2024 17:31:47  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:32:07  -  A trama recebida não continha ','
+26/06/2024 17:32:07  -  A trama recebida não continha ','
+26/06/2024 17:32:07  -  A trama recebida não continha ','
+26/06/2024 17:32:26  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:32:33  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:32:33  -  Checsum da trama recebida estava incorreto!
+26/06/2024 17:32:33  -  Calc: |42251| Recebido: |34478|
+26/06/2024 17:32:34  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:32:36  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:32:37  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:32:47  -  A trama recebida não continha ','
+26/06/2024 17:33:27  -  A trama recebida não continha ','
+26/06/2024 17:33:27  -  A trama recebida não continha ','
+26/06/2024 17:33:28  -  A trama recebida não continha ','
+26/06/2024 17:33:31  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:33:34  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:35  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:52  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,1,0,0,0,25775
+26/06/2024 17:33:52  -  A trama recebida não continha ','
+26/06/2024 17:33:53  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:33:55  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:33:59  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:34:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:34:01  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:34:02  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:34:03  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:34:03  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:35:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:35:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:35:59  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:36:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:36:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:36:02  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:36:12  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:36:12  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:36:14  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:39:30  -  Porta serial aberta com sucesso!
+26/06/2024 17:39:30  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:39:30  -  A trama recebida não continha ','
+26/06/2024 17:39:30  -  A trama recebida não continha ','
+26/06/2024 17:39:31  -  A trama recebida não continha ','
+26/06/2024 17:39:31  -  A trama recebida não continha ','
+26/06/2024 17:39:31  -  A trama recebida não continha ','
+26/06/2024 17:39:31  -  A trama recebida não continha ','
+26/06/2024 17:39:31  -  A trama recebida não continha ','
+26/06/2024 17:39:31  -  Checsum da trama recebida estava incorreto!
+26/06/2024 17:39:31  -  Calc: |29083| Recebido: |8724|
+26/06/2024 17:39:32  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:39:33  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:39:33  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:39:39  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,0,0,1,4173
+26/06/2024 17:39:39  -  A trama recebida não continha ','
+26/06/2024 17:39:40  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:39:41  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:39:41  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:39:54  -  Envio de comando de ajuste manual do ADE: 45,0,0,0,0,0,1,40430
+26/06/2024 17:39:54  -  A trama recebida não continha ','
+26/06/2024 17:39:54  -  A trama recebida não continha ','
+26/06/2024 17:39:54  -  A trama recebida não continha ','
+26/06/2024 17:41:45  -  Porta serial aberta com sucesso!
+26/06/2024 17:41:45  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:41:47  -  Envio de comando resetar ESP32: 16,29908
+26/06/2024 17:41:47  -  A trama recebida não continha ','
+26/06/2024 17:41:48  -  A trama recebida não continha ','
+26/06/2024 17:41:49  -  A trama recebida não continha ','
+26/06/2024 17:41:49  -  A trama recebida não continha ','
+26/06/2024 17:44:43  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+26/06/2024 17:44:45  -  Porta serial aberta com sucesso!
+26/06/2024 17:44:45  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:44:45  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:47:09  -  Porta serial estava fechada. Comando nao enviado
+26/06/2024 17:47:16  -  Porta serial aberta com sucesso!
+26/06/2024 17:47:16  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:47:16  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:49:17  -  Porta serial aberta com sucesso!
+26/06/2024 17:49:17  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 17:49:18  -  A trama recebida não continha ','
+26/06/2024 17:49:19  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:49:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:49:38  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:49:58  -  A trama recebida não continha ','
+26/06/2024 17:49:58  -  A trama recebida não continha ','
+26/06/2024 17:49:59  -  A trama recebida não continha ','
+26/06/2024 17:51:18  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:51:20  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:51:21  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:55:18  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:55:19  -  Checsum da trama recebida estava incorreto!
+26/06/2024 17:55:19  -  Calc: |51191| Recebido: |44770|
+26/06/2024 17:55:19  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:55:20  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:55:21  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:55:22  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:55:22  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:55:23  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:56:35  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:56:51  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,0,0,1,4173
+26/06/2024 17:56:51  -  A trama recebida não continha ','
+26/06/2024 17:56:52  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:56:53  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:56:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:56:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:29  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:57:29  -  Checsum da trama recebida estava incorreto!
+26/06/2024 17:57:29  -  Calc: |47861| Recebido: |38208|
+26/06/2024 17:57:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:32  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:33  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:33  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:35  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:38  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:39  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:40  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:48  -  Envio de comando de reset de registradores ao ADE: 44,63814
+26/06/2024 17:57:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:57:51  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:52  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:53  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:53  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:54  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:55  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:56  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:57:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:06  -  Envio de comando de ajuste manual do ADE: 45,1,0,0,0,0,0,44458
+26/06/2024 17:58:06  -  A trama recebida não continha ','
+26/06/2024 17:58:06  -  A trama recebida não continha ','
+26/06/2024 17:58:06  -  A trama recebida não continha ','
+26/06/2024 17:58:06  -  A trama recebida não continha ','
+26/06/2024 17:58:12  -  A trama recebida não continha ','
+26/06/2024 17:58:12  -  A trama recebida não continha ','
+26/06/2024 17:58:15  -  A trama recebida não continha ','
+26/06/2024 17:58:15  -  A trama recebida não continha ','
+26/06/2024 17:58:16  -  A trama recebida não continha ','
+26/06/2024 17:58:16  -  A trama recebida não continha ','
+26/06/2024 17:58:17  -  A trama recebida não continha ','
+26/06/2024 17:58:17  -  A trama recebida não continha ','
+26/06/2024 17:58:18  -  A trama recebida não continha ','
+26/06/2024 17:58:18  -  A trama recebida não continha ','
+26/06/2024 17:58:19  -  A trama recebida não continha ','
+26/06/2024 17:58:19  -  A trama recebida não continha ','
+26/06/2024 17:58:20  -  A trama recebida não continha ','
+26/06/2024 17:58:20  -  A trama recebida não continha ','
+26/06/2024 17:58:20  -  A trama recebida não continha ','
+26/06/2024 17:58:22  -  A trama recebida não continha ','
+26/06/2024 17:58:22  -  A trama recebida não continha ','
+26/06/2024 17:58:26  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:58:28  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:30  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:30  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:32  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:32  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:54  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:58:55  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 17:58:57  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:58:58  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:59:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:59:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:59:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:59:01  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 17:59:10  -  Envio de comando de ajuste manual do ADE: 45,0,0,0,1,0,0,60287
+26/06/2024 17:59:10  -  A trama recebida não continha ','
+26/06/2024 17:59:10  -  A trama recebida não continha ','
+26/06/2024 17:59:10  -  A trama recebida não continha ','
+26/06/2024 17:59:18  -  A trama recebida não continha ','
+26/06/2024 17:59:21  -  A trama recebida não continha ','
+26/06/2024 18:00:01  -  A trama recebida não continha ','
+26/06/2024 18:00:41  -  A trama recebida não continha ','
+26/06/2024 18:00:41  -  A trama recebida não continha ','
+26/06/2024 18:00:42  -  A trama recebida não continha ','
+26/06/2024 18:01:01  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:01:22  -  A trama recebida não continha ','
+26/06/2024 18:02:02  -  A trama recebida não continha ','
+26/06/2024 18:02:02  -  A trama recebida não continha ','
+26/06/2024 18:02:02  -  A trama recebida não continha ','
+26/06/2024 18:02:42  -  A trama recebida não continha ','
+26/06/2024 18:03:22  -  A trama recebida não continha ','
+26/06/2024 18:03:22  -  A trama recebida não continha ','
+26/06/2024 18:03:22  -  A trama recebida não continha ','
+26/06/2024 18:03:32  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:03:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:03:49  -  Checsum da trama recebida estava incorreto!
+26/06/2024 18:03:49  -  Calc: |34718| Recebido: |58609|
+26/06/2024 18:03:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:03:50  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:04:00  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:01  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:02  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:04  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:05  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:07  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:08  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:10  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:11  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:12  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:13  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:13  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:15  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:17  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:18  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:18  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:19  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:21  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:22  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:23  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:24  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:25  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:26  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:26  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:27  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:28  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:30  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:31  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:32  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:33  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:34  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:34  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:35  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:36  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:37  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:38  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:39  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:40  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:41  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:42  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:43  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:44  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:45  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:45  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:48  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:48  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:49  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:49  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:50  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:51  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:04:51  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:05:07  -  Envio de comando resetar ESP32: 16,29908
+26/06/2024 18:05:07  -  A trama recebida não continha ','
+26/06/2024 18:05:07  -  A trama recebida não continha ','
+26/06/2024 18:05:08  -  A trama recebida não continha ','
+26/06/2024 18:05:09  -  A trama recebida não continha ','
+26/06/2024 18:05:12  -  A trama recebida não continha ','
+26/06/2024 18:05:12  -  A trama recebida não continha ','
+26/06/2024 18:05:12  -  A trama recebida não continha ','
+26/06/2024 18:05:12  -  A trama recebida não continha ','
+26/06/2024 18:05:12  -  Checsum da trama recebida estava incorreto!
+26/06/2024 18:05:12  -  Calc: |29083| Recebido: |8724|
+26/06/2024 18:05:15  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:05:17  -  Envio de comando Parar Sint.: 3,43047
+26/06/2024 18:05:17  -  Envio de comando Iniciar Sint.: 4,12720
+26/06/2024 18:05:17  -  A trama recebida não continha ','
+26/06/2024 18:05:18  -  A trama recebida não continha ','
+26/06/2024 18:05:19  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:05:20  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:05:20  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:05:21  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:05:22  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:05:23  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:06:00  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,1,0,0,26332
+26/06/2024 18:06:00  -  A trama recebida não continha ','
+26/06/2024 18:06:02  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:06:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:06:05  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:06:05  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:06:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:06:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:06:06  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:06:07  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:10:44  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+26/06/2024 18:11:52  -  Porta serial aberta com sucesso!
+26/06/2024 18:11:52  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 18:11:53  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:11:54  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:12:14  -  Porta serial aberta com sucesso!
+26/06/2024 18:12:14  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 18:12:15  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:12:15  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:12:15  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:15:46  -  Porta serial aberta com sucesso!
+26/06/2024 18:15:46  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+26/06/2024 18:15:47  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:15:50  -  Envio de comando Iniciar Sint.: 4,12720
+26/06/2024 18:15:50  -  A trama recebida não continha ','
+26/06/2024 18:15:51  -  A trama recebida não continha ','
+26/06/2024 18:15:59  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+26/06/2024 18:16:17  -  Envio de comando Parar Sint.: 3,43047
+26/06/2024 18:16:17  -  A trama recebida não continha ','
+26/06/2024 18:16:17  -  A trama recebida não continha ','
+26/06/2024 18:16:17  -  A trama recebida não continha ','
+26/06/2024 18:16:18  -  Envio de comando Iniciar Sint.: 4,12720
+26/06/2024 18:16:18  -  A trama recebida não continha ','
+26/06/2024 18:16:18  -  A trama recebida não continha ','
+26/06/2024 18:21:00  -  A trama recebida não continha ','
+26/06/2024 18:21:00  -  A trama recebida não continha ','
+26/06/2024 18:21:00  -  A trama recebida não continha ','
+26/06/2024 18:21:01  -  A trama recebida não continha ','
+26/06/2024 18:21:01  -  A trama recebida não continha ','
+26/06/2024 18:21:05  -  A trama recebida não continha ','
+26/06/2024 18:21:05  -  A trama recebida não continha ','
+26/06/2024 18:21:05  -  A trama recebida não continha ','
+26/06/2024 18:21:05  -  A trama recebida não continha ','
+26/06/2024 18:21:05  -  A trama recebida não continha ','
+26/06/2024 18:21:05  -  Checsum da trama recebida estava incorreto!
+26/06/2024 18:21:05  -  Calc: |29083| Recebido: |8724|
+26/06/2024 18:21:06  -  A trama recebida não continha ','
+26/06/2024 18:21:07  -  A trama recebida não continha ','
+26/06/2024 18:24:21  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:22  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:22  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:24  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:25  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:27  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:27  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:28  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+26/06/2024 18:24:29  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690

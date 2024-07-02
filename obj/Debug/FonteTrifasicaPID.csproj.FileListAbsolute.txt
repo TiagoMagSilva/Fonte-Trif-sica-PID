@@ -29,3 +29,5 @@ C:\GIT\Supervisorio FT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.exe
 C:\GIT\Supervisorio FT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.pdb
 C:\GIT\Supervisorio FT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.csproj.AssemblyReference.cache
 C:\GIT\Supervisorio FT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.csproj.SuggestedBindingRedirects.cache
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.csproj.SuggestedBindingRedirects.cache
+C:\GIT\Fonte-Trif-sica-PID\obj\Debug\FonteTrifasicaPID.AjusteRMS.resources

@@ -165,7 +165,31 @@ namespace FonteTrifasicaPID
             ID_LOG_Temporizacoes,
             ID_LOG_DadosUnicos,
             ID_RESET_LOGs,
-            ID_AtualizarDadosUnicos
+            ID_AtualizarDadosUnicos,
+            ID_Ler_registros_ADE,
+            ID_RespostaGAINRegAjusteADE,
+            ID_RespostaOFFSETRegAjusteADE,
+            ID_respostaPhaseRegAjusteADE,
+            ID_Resetar_Reg_Ajuste_ADE,
+            ID_RealizarAjusteManualADE,
+            ID_LimparRegistrosSelecionadosADE,
+            ID_AjusteManualdeRegistradoresADE,
+            ID_Resposta_Potencias_convertidas,
+            ID_Resposta_Potencias_digitais,
+            ID_resposta_RMS,
+            ID_Resposta_RMS_Digitais,
+            ID_Controle_Reset_AmpPot,
+            ID_ERRO_CorrenteInvertida,
+            ID_Ajuste_VRMS_IRMS,
+            ID_Progresso_AJuste,
+            ID_ERRO_RMS_Nominal,
+            ID_InicioAjusteWGAIN,
+            ID_Ajuste_WGAIN,
+            ID_Indicar_FaseEmAjuste,
+            ID_Inicio_AjusteDeFase,
+            ID_AjusteFase,
+            ID_Setar_Energia_Ativa,
+            ID_Setar_Energia_Reativa
         };
 
         //DadosRXPID Constantes_PID_Tensão;
@@ -911,7 +935,7 @@ namespace FonteTrifasicaPID
                     #endregion
                     #region Ler FP 60
                     case (int)Identificador.ID_Ler_FP_60:
-                        txtFP160A.Invoke(new Action(() =>
+                        /*txtFP160A.Invoke(new Action(() =>
                         {
                             txtFP160A.Text = partes[1];
                             txtFP160B.Text = partes[2];
@@ -924,13 +948,13 @@ namespace FonteTrifasicaPID
                             txtFPCap60A.Text = partes[7];
                             txtFPCap60B.Text = partes[8];
                             txtFPCap60C.Text = partes[9];
-                        }));
+                        }));*/
                         
                         break;
                     #endregion
                     #region Ler FP 50
                     case (int)Identificador.ID_Ler_FP_50:
-                        txtFP150A.Invoke(new Action(() =>
+                        /*txtFP150A.Invoke(new Action(() =>
                         {
                             txtFP150A.Text = partes[1];
                             txtFP150B.Text = partes[2];
@@ -943,7 +967,7 @@ namespace FonteTrifasicaPID
                             txtFPCap50A.Text = partes[7];
                             txtFPCap50B.Text = partes[8];
                             txtFPCap50C.Text = partes[9];
-                        }));
+                        }));*/
 
                         break;
                     #endregion
@@ -1293,11 +1317,172 @@ namespace FonteTrifasicaPID
                         ));
                         break;
                     #endregion
+                    #region Leitura de registradores de AJuste de ganho do ADE
+                    case (int)Identificador.ID_RespostaGAINRegAjusteADE:
+                        txtAIgain.Invoke(new Action(() =>
+                        {
+                            txtAIgain.Text = partes[1];// + " - " + Int32.Parse(partes[1]).ToString("X");
+                            txtBIgain.Text = partes[2];// + " - " + Int32.Parse(partes[2]).ToString("X");
+                            txtCIgain.Text = partes[3];// + " - " + Int32.Parse(partes[3]).ToString("X");
+                            txtAVgain.Text = partes[4];// + " - " + Int32.Parse(partes[4]).ToString("X");
+                            txtBVgain.Text = partes[5];// + " - " + Int32.Parse(partes[5]).ToString("X");
+                            txtCVgain.Text = partes[6];// + " - " + Int32.Parse(partes[6]).ToString("X");
+
+                            txtAwgain.Text = partes[7];// + " - " + Int32.Parse(partes[7]).ToString("X");
+                            txtBwgain.Text = partes[8];// + " - " + Int32.Parse(partes[8]).ToString("X");
+                            txtCwgain.Text = partes[9];// + " - " + Int32.Parse(partes[9]).ToString("X");
+                            txtAVAGAIN.Text = partes[10];// + " - " + Int32.Parse(partes[10]).ToString("X");
+                            txtBVAGAIN.Text = partes[11];// + " - " + Int32.Parse(partes[11]).ToString("X");
+                            txtCVAGAIN.Text = partes[12];// + " - " + Int32.Parse(partes[12]).ToString("X");
+                            txtAvargain.Text = partes[13];// + " - " + Int32.Parse(partes[13]).ToString("X");
+                            txtBvargain.Text = partes[14];// + " - " + Int32.Parse(partes[14]).ToString("X");
+                            txtCvargain.Text = partes[15];// + " - " + Int32.Parse(partes[15]).ToString("X");
+                        }
+                        ));
+                        break;
+                    #endregion
+                    #region Leitura de registradores de AJuste de offset do ADE
+                    case (int)Identificador.ID_RespostaOFFSETRegAjusteADE:
+                        txtAIgain.Invoke(new Action(() =>
+                        {
+                            txtAIRMSos.Text = partes[1];// + " - " + Int32.Parse(partes[1]).ToString("X");
+                            txtBIRMSos.Text = partes[2];// + " - " + Int32.Parse(partes[2]).ToString("X");
+                            txtCIRMSos.Text = partes[3];//+ " - " + Int32.Parse(partes[3]).ToString("X");
+                            txtAVRMSOS.Text = partes[4];// + " - " + Int32.Parse(partes[4]).ToString("X");
+                            txtBVRMSOS.Text = partes[5];// + " - " + Int32.Parse(partes[5]).ToString("X");
+                            txtCVRMSOS.Text = partes[6];// + " - " + Int32.Parse(partes[6]).ToString("X");
+
+                            txtAwattos.Text = partes[7];// + " - " + Int32.Parse(partes[7]).ToString("X");
+                            txtBwattos.Text = partes[8];// + " - " + Int32.Parse(partes[8]).ToString("X");
+                            txtCwattos.Text = partes[9];// + " - " + Int32.Parse(partes[9]).ToString("X");
+                            txtAvaros.Text = partes[10];// + " - " + Int32.Parse(partes[10]).ToString("X");
+                            txtBvaros.Text = partes[11];// + " - " + Int32.Parse(partes[11]).ToString("X");
+                            txtCvaros.Text = partes[12];// + " - " + Int32.Parse(partes[12]).ToString("X");
+                        }
+                        ));
+                        break;
+                    #endregion
+                    #region Leitura de registradores de AJuste do ADE
+                    case (int)Identificador.ID_respostaPhaseRegAjusteADE:
+                        txtAphcal.Invoke(new Action(() =>
+                        {
+                            txtAphcal.Text = partes[1];// + " - " + Int32.Parse(partes[1]).ToString("X");
+                            txtBphcal.Text = partes[2];// + " - " + Int32.Parse(partes[2]).ToString("X");
+                            txtCphcal.Text = partes[3];// + " - " + Int32.Parse(partes[3]).ToString("X");   
+                        }
+                        ));
+                        break;
+                    #endregion
+                    #region Leitura das potencias watt va var
+                    case (int)Identificador.ID_Resposta_Potencias_convertidas:
+                        txtwatta.Invoke(new Action(() =>
+                        {
+                            txtwatta.Text = partes[1];
+                            txtwattB.Text = partes[2];
+                            txtwattc.Text = partes[3];
+
+                            txtVAA.Text = partes[4];
+                            txtVAB.Text = partes[5];
+                            txtVAC.Text = partes[6];
+
+                            txtVARa.Text = partes[7];
+                            txtVARb.Text = partes[8];
+                            txtVARc.Text = partes[9];
+                        }
+                        ));
+                        break;
+                    #endregion
+
+                    #region Leitura das potencias digitais
+                    case (int)Identificador.ID_Resposta_Potencias_digitais:
+                        watt_DIG_A.Invoke(new Action(() =>
+                        {
+                            watt_DIG_A.Text = partes[1];
+                            watt_DIG_B.Text = partes[2];
+                            watt_DIG_C.Text = partes[3];
+
+                            VA_DIG_A.Text = partes[4];
+                            VA_DIG_B.Text = partes[5];
+                            VA_DIG_C.Text = partes[6];
+
+                            VAr_DIG_A.Text = partes[7];
+                            VAr_DIG_B.Text = partes[8];
+                            VAr_DIG_C.Text = partes[9];
+                        }));
+                        break;
+                    #endregion
+
+                    #region Leitura dos RMS convertidos
+                    case (int)Identificador.ID_resposta_RMS:
+                        V_RMS_A.Invoke(new Action(() =>
+                        {
+                            V_RMS_A.Text = partes[1];
+                            V_RMS_B.Text = partes[2];
+                            V_RMS_C.Text = partes[3];
+
+                            I_RMS_A.Text = partes[4];
+                            I_RMS_B.Text = partes[5];
+                            I_RMS_C.Text = partes[6];                            
+                        }));
+                        break;
+                    #endregion
+
+                    #region Leitura dos valores Digitais e RMS das tensões e correntes
+                    case (int)Identificador.ID_Resposta_RMS_Digitais:
+                        V_DIG_A.Invoke(new Action(() =>
+                        {
+                            V_DIG_A.Text = partes[1];
+                            V_DIG_B.Text = partes[2];
+                            V_DIG_C.Text = partes[3];
+
+                            I_DIG_A.Text = partes[4];
+                            I_DIG_B.Text = partes[5];
+                            I_DIG_C.Text = partes[6];
+
+                            V_RMS_A.Text = partes[7];
+                            V_RMS_B.Text = partes[8];
+                            V_RMS_C.Text = partes[9];
+
+                            I_RMS_A.Text = partes[10];
+                            I_RMS_B.Text = partes[11];
+                            I_RMS_C.Text = partes[12];
+                        }));
+                        break;
+                    #endregion
                     default:
 
                         break;
                 }
             }
+        }
+
+        private ushort Crc16Ccitt(String trama)
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(trama);
+            const ushort poly = 4129;
+            ushort[] table = new ushort[256];
+            ushort initialValue = 0xffff;
+            ushort temp, a;
+            ushort crc = initialValue;
+            for (int i = 0; i < table.Length; ++i)
+            {
+                temp = 0;
+                a = (ushort)(i << 8);
+                for (int j = 0; j < 8; ++j)
+                {
+                    if (((temp ^ a) & 0x8000) != 0)
+                        temp = (ushort)((temp << 1) ^ poly);
+                    else
+                        temp <<= 1;
+                    a <<= 1;
+                }
+                table[i] = temp;
+            }
+            for (int i = 0; i < bytes.Length; ++i)
+            {
+                crc = (ushort)((crc << 8) ^ table[((crc >> 8) ^ (0xff & bytes[i]))]);
+            }
+            return crc;
         }
 
         private void PortaSerial_DadoRecebido(object sender, SerialDataReceivedEventArgs e)
@@ -1306,28 +1491,33 @@ namespace FonteTrifasicaPID
             {
                 string DadoRecebido = PortaSerial.ReadLine();
                 Console.WriteLine("Dado recebido: " + DadoRecebido);
-                LOG_TXT("Dado Recebido: " + DadoRecebido);
+                //LOG_TXT("Dado Recebido: " + DadoRecebido);
+
+                PortaSerial.DiscardInBuffer();
 
                 int IndexVirgulaCS = DadoRecebido.LastIndexOf(',');
+                int IndexfinalCS = DadoRecebido.LastIndexOf('\r');
                 string TramaSemCS = string.Empty;
-                string CS = string.Empty;
+                ushort CS_rec = 0;
 
                 if (IndexVirgulaCS != -1)
                 {
                     TramaSemCS = DadoRecebido.Substring(0, IndexVirgulaCS) + ",";
-                    CS = DadoRecebido.Substring(IndexVirgulaCS + 1, 2);
+                    CS_rec = ushort.Parse(DadoRecebido.Substring(IndexVirgulaCS + 1, (IndexfinalCS - IndexVirgulaCS - 1)));
 
-                    LOG_TXT("Trama Recebida sem CS: " + TramaSemCS);
-                    LOG_TXT("CS da Trama recebida: " + CS);
+                    //LOG_TXT("Trama Recebida sem CS: " + TramaSemCS);
+                    //LOG_TXT("CS da Trama recebida: " + CS_rec);
 
-                    if (Calcula_checksum(TramaSemCS) == CS)
+                    ushort CS_calc = Crc16Ccitt(TramaSemCS);
+
+                    if (CS_calc == CS_rec)
                     {
                         IdentificarPacote(TramaSemCS);
                     }
                     else
                     {
                         LOG_TXT("Checsum da trama recebida estava incorreto!");
-                        LOG_TXT("Calc: |" + Calcula_checksum(TramaSemCS) + "| " + "Recebido: |" + CS + "|");
+                        LOG_TXT("Calc: |" + CS_calc + "| " + "Recebido: |" + CS_rec + "|");
                     }
                 }
                 else
@@ -1444,33 +1634,7 @@ namespace FonteTrifasicaPID
         String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
         PORTASERIAL.Write(TramaComChecksum + "\0");
         */
-        string Calcula_checksum(string vetor)
-        {
-            string resposta = string.Empty;
-            string checksum = string.Empty;
-            //string CKremovido = string.Empty;
-            //string[] pt = vetor.Split(',');        
-
-            int DV = 0;
-
-            for (int i = 0; i < vetor.Length; i++)
-            {
-                DV ^= vetor[i];
-            }
-
-            string hexValue = DV.ToString("x");
-            resposta = hexValue;
-
-            if (hexValue.Length == 1)
-                resposta = "0" + hexValue[0];
-            if (hexValue.Length == 3)
-                resposta = "0" + hexValue[2];
-            if (hexValue.Length == 4)
-                resposta = (hexValue[2] + hexValue[4]).ToString();
-            
-            return resposta;
-        }
-
+      
         private void btnAplicarPIDTensao_Click(object sender, EventArgs e)
         {
             //Trama de aplicação das constatnes KP, KI e KD
@@ -1488,7 +1652,7 @@ namespace FonteTrifasicaPID
 
             if(PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando PID_V: " + TramaComChecksum);
             }
@@ -1592,7 +1756,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando PID_C: " + TramaComChecksum);
             }
@@ -1617,7 +1781,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando Parametros Sint.: " + TramaComChecksum);
             }
@@ -1635,7 +1799,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando Parar Sint.: " + TramaComChecksum);
 
@@ -1653,7 +1817,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando Iniciar Sint.: " + TramaComChecksum);
             }
@@ -1844,7 +2008,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando resetar ESP32: " + TramaComChecksum);
 
@@ -1862,7 +2026,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando reset ADE: " + TramaComChecksum);
 
@@ -1880,7 +2044,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando recnfigurar ADE: " + TramaComChecksum);
 
@@ -1901,7 +2065,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando DigPotGrosso Tensão: " + TramaComChecksum);
             }
@@ -1920,7 +2084,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando DigPotFino Tensão: " + TramaComChecksum);
             }
@@ -1939,7 +2103,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando DigPotGrosso Corrente: " + TramaComChecksum);
             }
@@ -1958,7 +2122,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando DigPotFino Corrente: " + TramaComChecksum);
             }
@@ -1992,196 +2156,7 @@ namespace FonteTrifasicaPID
             {
                 e.Handled = true;
             }
-        }
-
-        private void btnAplicar60FP1_Click(object sender, EventArgs e)
-        {
-            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
-            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FP160 + "," +
-                                 txtFP160A.Text + "," +
-                                 txtFP160B.Text + "," +
-                                 txtFP160C.Text + ",";
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando Ajuste FP 1 60Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de ajuste de FP 1 60Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void btnAplicar60FPInd_Click(object sender, EventArgs e)
-        {
-            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
-            //Identificador, FPInd_FaseA, FPInd_FaseB, FPInd_FaseC, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPInd60 + "," +
-                                 txtFPInd60A.Text + "," +
-                                 txtFPInd60B.Text + "," +
-                                 txtFPInd60C.Text + ",";
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando Ajuste FP Ind 60Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de ajuste de FP Ind 60Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void btnAplicar60FPCap_Click(object sender, EventArgs e)
-        {
-            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
-            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPCap60 + "," +
-                                 txtFPCap60A.Text + "," +
-                                 txtFPCap60B.Text + "," +
-                                 txtFPCap60C.Text + ",";
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando Ajuste FP Cap 60Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de ajuste de FP Cap 60Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void button8btnAplicar50FP1_Click(object sender, EventArgs e)
-        {
-            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
-            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FP150 + "," +
-                                 txtFP150A.Text + "," +
-                                 txtFP150B.Text + "," +
-                                 txtFP150C.Text + ",";
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando Ajuste FP 1 50Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de ajuste de FP 1 50Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void button8btnAplicar50FPInd_Click(object sender, EventArgs e)
-        {
-            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
-            //Identificador, FPInd_FaseA, FPInd_FaseB, FPInd_FaseC, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPInd50 + "," +
-                                 txtFPInd50A.Text + "," +
-                                 txtFPInd50B.Text + "," +
-                                 txtFPInd50C.Text + ",";
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando Ajuste FP Ind 50Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de ajuste de FP Ind 50Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void button8btnAplicar50FPCap_Click(object sender, EventArgs e)
-        {
-            //Trama de aplicação ddos parâmetros de ajuste do fator de potência
-            //Identificador, FP1_FaseA, FP1_FaseB, FP1_FaseC, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Aplicar_FPCap50 + "," +
-                                 txtFPCap50A.Text + "," +
-                                 txtFPCap50B.Text + "," +
-                                 txtFPCap50C.Text + ",";
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando Ajuste FP Cap 50Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de ajuste de FP Cap 50Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void btnLer60_Click(object sender, EventArgs e)
-        {
-            //Trama de solicitação dos parâmetros de ajuste do fator de potência 60Hz
-            //Identificador, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Ler_FP_60 + "," ;
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando de solicitação de Ajuste FP 60Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de solicitação de ajuste de FP 60Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void btnLer50_Click(object sender, EventArgs e)
-        {
-            //Trama de solicitação dos parâmetros de ajuste do fator de potência 50Hz
-            //Identificador, CS        
-
-            string TRAMA_ENVIO = (int)Identificador.ID_Ler_FP_50 + ",";
-
-            if (PortaSerial.IsOpen)
-            {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
-                PortaSerial.Write(TramaComChecksum + "\0");
-                LOG_TXT("Envio de comando de solicitação de Ajuste FP 50Hz.: " + TramaComChecksum);
-            }
-            else
-            {
-                LOG_TXT("Comando de solicitação de ajuste de FP 50Hz não enviado devido porta serial fechada!");
-            }
-        }
-
-        private void btnLimpar60_Click(object sender, EventArgs e)
-        {
-            txtFP160A.Text = txtFP160B.Text = txtFP160C.Text = string.Empty;
-            txtFPInd60A.Text = txtFPInd60B.Text = txtFPInd60C.Text = string.Empty;
-            txtFPCap60A.Text = txtFPCap60B.Text = txtFPCap60C.Text = string.Empty;
-        }
-
-        private void btnLimpar50_Click(object sender, EventArgs e)
-        {
-            txtFP150A.Text = txtFP150B.Text = txtFP150C.Text = string.Empty;
-            txtFPInd50A.Text = txtFPInd50B.Text = txtFPInd50C.Text = string.Empty;
-            txtFPCap50A.Text = txtFPCap50B.Text = txtFPCap50C.Text = string.Empty;
-        }
-
-        private void label53_Click(object sender, EventArgs e)
-        {
-
-        }
+        }  
 
         private void btnAplicarCorrecaoFase_Click(object sender, EventArgs e)
         {
@@ -2197,7 +2172,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando Ajuste de Fase: " + TramaComChecksum);
             }
@@ -2257,7 +2232,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando PID_F: " + TramaComChecksum);
             }
@@ -2480,7 +2455,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando FaseManual: " + TramaComChecksum);
             }
@@ -2502,7 +2477,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando Ajustar ADE: " + TramaComChecksum);
 
@@ -2544,7 +2519,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando de solicitação LOG do equipamento.: " + TramaComChecksum);
             }
@@ -2690,7 +2665,7 @@ namespace FonteTrifasicaPID
 
                 if (PortaSerial.IsOpen)
                 {
-                    String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                    String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                     PortaSerial.Write(TramaComChecksum + "\0");
                     LOG_TXT("Envio de comando de solicitação de RESET dos LOGs do equipamento.: " + TramaComChecksum);
                 }
@@ -2716,7 +2691,7 @@ namespace FonteTrifasicaPID
 
                     if (PortaSerial.IsOpen)
                     {
-                        String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                        String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                         PortaSerial.Write(TramaComChecksum + "\0");
                         LOG_TXT("Envio de comando de Atualização dos dados únicos do equipamento.: " + TramaComChecksum);
                     }
@@ -2750,7 +2725,7 @@ namespace FonteTrifasicaPID
 
             if (PortaSerial.IsOpen)
             {
-                String TramaComChecksum = TRAMA_ENVIO + Calcula_checksum(TRAMA_ENVIO);
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                 PortaSerial.Write(TramaComChecksum + "\0");
                 LOG_TXT("Envio de comando Parar Sint.: " + TramaComChecksum);
 
@@ -2762,14 +2737,339 @@ namespace FonteTrifasicaPID
             }
         }
 
-        private void nud10kIA_ValueChanged(object sender, EventArgs e)
+        private void btnLerRegADE_Click(object sender, EventArgs e)
         {
+            string TRAMA_ENVIO = (int)Identificador.ID_Ler_registros_ADE + ",";
 
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de leitura dos registradores de ajuste do ADE: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!");
+            }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void btnLimparRegistrosADE_Click(object sender, EventArgs e)
         {
+            foreach (Control c in groupBox28.Controls)
+            {
+                if (c is TextBox)
+                {
+                    c.Text = "";
+                }
+            }
+        }
 
+        private void btnResetRegADE_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Deseja mesmo limpar os registradores do ADE?", "Atenção", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string TRAMA_ENVIO = (int)Identificador.ID_Resetar_Reg_Ajuste_ADE + ",";
+
+                if (PortaSerial.IsOpen)
+                {
+                    String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                    PortaSerial.Write(TramaComChecksum + "\0");
+                    LOG_TXT("Envio de comando de reset de registradores ao ADE: " + TramaComChecksum);
+
+                    PortaSerial.DiscardInBuffer();
+                }
+                else
+                {
+                    LOG_TXT("Comando de RESET de registradores não enviado devido porta serial fechada!");
+                }
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+        }
+
+        private void btnAjusteADEManual_Click(object sender, EventArgs e)
+        {
+            string aux = String.Empty;
+            if (cbkAjusteGanhoRMS.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteoffsetRMS.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteWgain.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteFase.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteWATTOS.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteVArGain.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            string TRAMA_ENVIO = (int)Identificador.ID_RealizarAjusteManualADE + "," + aux;
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de ajuste manual do ADE: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para ajuste manual do ADE não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnLimparSelecionados_Click(object sender, EventArgs e)
+        {
+            string aux = String.Empty;
+            if (cbkAjusteGanhoRMS.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteoffsetRMS.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteWgain.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteFase.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            if (cbkAjusteWATTOS.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+            if (cbkAjusteVArGain.Checked)
+                aux += "1,";
+            else
+                aux += "0,";
+
+            string TRAMA_ENVIO = (int)Identificador.ID_LimparRegistrosSelecionadosADE + "," + aux;
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de lipeza de registros selecionados do ADE: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para limpeza individual de registros do ADE não enviado devido porta serial fechada!");
+            }
+        }
+
+        private void btnAjusteGanhoManual_Click(object sender, EventArgs e)
+        {
+            string aux = String.Empty;
+
+            aux = txtAwgain.Text + "," + txtBwgain.Text + "," + txtCwgain.Text + "," + txtAphcal.Text + "," + txtBphcal.Text + "," + txtCphcal.Text + ",";
+
+            string TRAMA_ENVIO = (int)Identificador.ID_AjusteManualdeRegistradoresADE + "," + aux;
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de de ajuste manual de registradores do ADE: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando para comando de de ajuste manual de registradores do ADE não enviado devido porta serial fechada!");
+            }
+        }        
+
+        void ControleResetAmpPot()
+        {
+            string aux = String.Empty;
+
+            if(cbkAtivarReset1.Checked)
+            {
+                aux = "1,";
+            }
+            else
+            {
+                aux = "0,";
+            }
+            if (cbkAtivarReset2.Checked)
+            {
+                aux += "1,";
+            }
+            else
+            {
+                aux += "0,";
+            }
+            if (cbkAtivarReset3.Checked)
+            {
+                aux += "1,";
+            }
+            else
+            {
+                aux += "0,";
+            }
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Controle_Reset_AmpPot + "," + aux;
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Controle de reset enviado: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Comando de reset não enviado devido porta serial fechada.");
+            }
+        }
+
+        private void cbkAtivarReset1_CheckedChanged(object sender, EventArgs e)
+        {
+            ControleResetAmpPot();
+        }
+
+        private void cbkAtivarReset2_CheckedChanged(object sender, EventArgs e)
+        {
+            ControleResetAmpPot();
+        }
+
+        private void cbkAtivarReset3_CheckedChanged(object sender, EventArgs e)
+        {
+            ControleResetAmpPot();
+        }
+
+        private void btnSolicitarValoresRMS_Click(object sender, EventArgs e)
+        {            
+            string aux = String.Empty;       
+
+            string TRAMA_ENVIO = (int)Identificador.ID_resposta_RMS + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Porta serial estava fechada. Comando nao enviado");
+            }
+        }
+
+        private void btnLimparPotenciasTensões_Click(object sender, EventArgs e)
+        {
+            foreach(Control texto in gpxPotenciasTensoes.Controls)
+            {
+                if(texto is TextBox)
+                    texto.Text = String.Empty;
+            }
+        }
+
+        private void txtErroMTU_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != '-'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            // only allow one negative symbol
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnIniciarAjuste_Click(object sender, EventArgs e)
+        {
+            if(PortaSerial.IsOpen)
+            {
+                PortaSerial.Close();
+                btnConectarSerial.Text = "Conectar";
+                cbxBaudRate.Enabled = true;
+                cbxPorta.Enabled = true;
+                btnRefreshSerial.Enabled = true;
+            }
+            var myForm = new AjusteRMS();
+            myForm.Show();
+        }
+
+        private void btnEnergiaAtiva_Click(object sender, EventArgs e)
+        {
+            string aux = String.Empty;
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Setar_Energia_Ativa + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de Set Energia Ativa: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Porta serial estava fechada. Comando nao enviado");
+            }
+        }
+
+        private void btnEnergiaReativa_Click(object sender, EventArgs e)
+        {
+            string aux = String.Empty;
+
+            string TRAMA_ENVIO = (int)Identificador.ID_Setar_Energia_Reativa + ",";
+
+            if (PortaSerial.IsOpen)
+            {
+                String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                PortaSerial.Write(TramaComChecksum + "\0");
+                LOG_TXT("Envio de comando de set Energia reativa: " + TramaComChecksum);
+
+                PortaSerial.DiscardInBuffer();
+            }
+            else
+            {
+                LOG_TXT("Porta serial estava fechada. Comando nao enviado");
+            }
         }
     }
 }

@@ -1,0 +1,817 @@
+01/07/2024 11:29:15  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 11:56:52  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 11:57:18  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 11:58:26  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 11:59:33  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 12:00:54  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 12:00:59  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 12:01:05  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 12:05:29  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 12:05:34  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 12:06:01  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 12:07:37  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 12:07:41  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 12:07:44  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 12:08:11  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 12:08:16  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:08:07  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:08:12  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:08:14  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:08:33  -  Erro ao abrir porta serial!
+01/07/2024 13:08:39  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:08:46  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:08:51  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:08:55  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:08:59  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:12:24  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:12:30  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:12:32  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:12:43  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:12:49  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:14:44  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:14:52  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:14:53  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:14:55  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:14:57  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:14:59  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:15:37  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:39  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:39  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:41  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:42  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:15:52  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:53  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:54  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:54  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:55  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:55  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:56  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:57  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:15:58  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:16:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:08  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:17  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:18  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:18  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:18  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:19  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:16:20  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:19:12  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:19:15  -  Porta serial aberta com sucesso!
+01/07/2024 13:19:15  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 13:19:21  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:19:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:19:33  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:19:33  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:19:34  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:19:34  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:19:35  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:19:44  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:19:45  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:19  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:26:24  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:26:33  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:33  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:34  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:35  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:35  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:36  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:37  -  Envio de comando de ajuste RMS: 55,240.000,240.000,240.000,5.000,5.000,5.000,28165
+01/07/2024 13:26:45  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:46  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:46  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:48  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:48  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:49  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:50  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:50  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:51  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:51  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:52  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:53  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:26:54  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 13:52:00  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:52:53  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:54:53  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:56:16  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:57:46  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 13:59:58  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 14:14:03  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 14:14:09  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:14:31  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:15:01  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 14:15:06  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:15:35  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 14:15:41  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:15:41  -  Checsum da trama recebida estava incorreto!
+01/07/2024 14:15:41  -  Calc: |43269| Recebido: |38071|
+01/07/2024 14:15:41  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:15:42  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:15:42  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:15:44  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:21:05  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 14:21:12  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:21:21  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:21  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:38  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 14:21:43  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:21:54  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:55  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:56  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:56  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:57  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:57  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:21:58  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:00  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:22:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:14  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:22:35  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:35  -  Checsum da trama recebida estava incorreto!
+01/07/2024 14:22:35  -  Calc: |23058| Recebido: |61759|
+01/07/2024 14:22:36  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:47  -  Checsum da trama recebida estava incorreto!
+01/07/2024 14:22:47  -  Calc: |29083| Recebido: |8724|
+01/07/2024 14:22:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:48  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:48  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:49  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:49  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:22:51  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:23:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:11  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:11  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:23:20  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:20  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:21  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:22  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 14:23:30  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:31  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:31  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:23:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 14:52:37  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 15:40:45  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 15:40:54  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:40:55  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:40:56  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:40:57  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 15:41:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:41:06  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:41:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:41:08  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:41:10  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 15:42:32  -  Envio de comando de ajuste WGAIN: 58,0.0082,8140
+01/07/2024 15:42:50  -  Checsum da trama recebida estava incorreto!
+01/07/2024 15:42:50  -  Calc: |29083| Recebido: |8724|
+01/07/2024 15:42:59  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 15:43:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:13  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 15:43:23  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:23  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:43:27  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 15:44:01  -  Envio de comando de ajuste WGAIN: 58,0.0064,44651
+01/07/2024 15:45:35  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 15:45:37  -  Porta serial aberta com sucesso!
+01/07/2024 15:45:37  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 15:45:39  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:45:39  -  Checsum da trama recebida estava incorreto!
+01/07/2024 15:45:39  -  Calc: |58361| Recebido: |58609|
+01/07/2024 15:45:43  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:45:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:46:06  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,1,0,0,0,25775
+01/07/2024 15:46:06  -  A trama recebida não continha ','
+01/07/2024 15:46:07  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:46:27  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:46:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:46:55  -  Porta serial aberta com sucesso!
+01/07/2024 15:46:55  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 15:46:57  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:47:01  -  Envio de comando de lipeza de registros selecionados do ADE: 46,1,0,0,0,0,0,8201
+01/07/2024 15:47:02  -  A trama recebida não continha ','
+01/07/2024 15:47:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:47:16  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:47:16  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:47:16  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:47:31  -  Envio de comando de ajuste RMS: 54,239.98,239.98,239.98,5.000,5.000,5.000,35542
+01/07/2024 15:47:50  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:47:51  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:47:51  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:47:52  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:48:00  -  Envio de comando de ajuste RMS: 54,239.98,239.98,239.98,5.000,5.000,5.000,35542
+01/07/2024 15:48:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:48:11  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:48:11  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:48:11  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:51:27  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 15:51:31  -  Porta serial aberta com sucesso!
+01/07/2024 15:51:31  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 15:51:32  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:51:52  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,0,0,0,9084
+01/07/2024 15:51:52  -  A trama recebida não continha ','
+01/07/2024 15:51:54  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:51:55  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:51:56  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:00  -  Envio de comando de lipeza de registros selecionados do ADE: 46,1,0,0,0,0,0,8201
+01/07/2024 15:52:00  -  A trama recebida não continha ','
+01/07/2024 15:52:01  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:02  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:02  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:02  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:02  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:03  -  Checsum da trama recebida estava incorreto!
+01/07/2024 15:52:03  -  Calc: |50656| Recebido: |58609|
+01/07/2024 15:52:10  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+01/07/2024 15:52:11  -  Envio de comando de solicitação de valores RMS e Digitais para tensão e corrente: 50,690
+01/07/2024 15:52:20  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,1,0,0,26332
+01/07/2024 15:52:20  -  A trama recebida não continha ','
+01/07/2024 15:52:23  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:23  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:23  -  A trama recebida não continha ','
+01/07/2024 15:52:23  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:24  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:25  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 15:52:26  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:26  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:27  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:27  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:27  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:27  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:52:30  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:52:38  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:52:38  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:52:38  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:52:39  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:52:51  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:52:52  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 15:53:01  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:01  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:02  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:02  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:03  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:04  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:04  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:07  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 15:53:08  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 15:53:09  -  Erro ao abrir porta serial!
+01/07/2024 15:53:11  -  Erro ao abrir porta serial!
+01/07/2024 15:53:20  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 15:53:28  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 15:53:29  -  Porta serial aberta com sucesso!
+01/07/2024 15:53:29  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 15:53:30  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:53:31  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:53:41  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:42  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:42  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:44  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:53:46  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 15:53:59  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 15:54:00  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 15:54:01  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 15:54:01  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 15:54:02  -  Porta serial aberta com sucesso!
+01/07/2024 15:54:02  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 15:54:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:54:04  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:54:04  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:54:05  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:54:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:54:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:54:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:54:11  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:54:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:54:16  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 15:54:48  -  Envio de comando de ajuste WGAIN: 58,-0.013,16072
+01/07/2024 15:57:47  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 15:57:54  -  Porta serial aberta com sucesso!
+01/07/2024 15:57:54  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 15:57:55  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:57:56  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:57:57  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:57:59  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:58:01  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:58:10  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,1,0,0,0,25775
+01/07/2024 15:58:10  -  A trama recebida não continha ','
+01/07/2024 15:58:11  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:58:18  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:58:18  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 15:58:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:58:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:58:26  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:58:26  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:58:29  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:58:30  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:58:35  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 15:58:37  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:02:22  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:02:28  -  Porta serial aberta com sucesso!
+01/07/2024 16:02:28  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:02:29  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:02:32  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 16:02:33  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:02:39  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:02:39  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:02:40  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:02:41  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:02:49  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:02:50  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:02:52  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:03:25  -  Envio de comando de ajuste WGAIN: 58,0.0045,62266
+01/07/2024 16:11:28  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:11:32  -  Comando para resetar ESP32 não enviado devido porta serial fechada!
+01/07/2024 16:11:40  -  Porta serial aberta com sucesso!
+01/07/2024 16:11:40  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:11:42  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 16:11:43  -  A trama recebida não continha ','
+01/07/2024 16:11:43  -  A trama recebida não continha ','
+01/07/2024 16:11:44  -  A trama recebida não continha ','
+01/07/2024 16:11:44  -  A trama recebida não continha ','
+01/07/2024 16:11:47  -  A trama recebida não continha ','
+01/07/2024 16:11:47  -  A trama recebida não continha ','
+01/07/2024 16:11:48  -  A trama recebida não continha ','
+01/07/2024 16:11:48  -  A trama recebida não continha ','
+01/07/2024 16:11:48  -  Checsum da trama recebida estava incorreto!
+01/07/2024 16:11:48  -  Calc: |29083| Recebido: |8724|
+01/07/2024 16:11:54  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:12:03  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 16:12:04  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:12:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:08  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:12  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:12:23  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:12:26  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:14:12  -  Envio de comando de ajuste WGAIN: 58,0.0060,25263
+01/07/2024 16:15:01  -  Envio de comando de ajuste WGAIN: 58,0.0082,8140
+01/07/2024 16:15:42  -  Envio de comando de ajuste WGAIN: 58,0.0036,9209
+01/07/2024 16:15:54  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 16:15:55  -  Porta serial aberta com sucesso!
+01/07/2024 16:15:55  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:15:56  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:16:12  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:16:13  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:16:14  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:45:47  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:45:53  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:45:54  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:45:55  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:45:56  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:01  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 16:46:02  -  Porta serial aberta com sucesso!
+01/07/2024 16:46:02  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:46:03  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:04  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:05  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:05  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:05  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:06  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:08  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:11  -  A trama recebida não continha ','
+01/07/2024 16:46:12  -  A trama recebida não continha ','
+01/07/2024 16:46:13  -  A trama recebida não continha ','
+01/07/2024 16:46:13  -  A trama recebida não continha ','
+01/07/2024 16:46:16  -  A trama recebida não continha ','
+01/07/2024 16:46:16  -  A trama recebida não continha ','
+01/07/2024 16:46:17  -  A trama recebida não continha ','
+01/07/2024 16:46:17  -  A trama recebida não continha ','
+01/07/2024 16:46:17  -  A trama recebida não continha ','
+01/07/2024 16:46:17  -  Checsum da trama recebida estava incorreto!
+01/07/2024 16:46:17  -  Calc: |29083| Recebido: |8724|
+01/07/2024 16:46:18  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:19  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:19  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:21  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:21  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:26  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 16:46:26  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:27  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:46:30  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:31  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:33  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:34  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:46:43  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:44  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:44  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:45  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:45  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:46  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:46  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:46:49  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:47:10  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:47:29  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:47:29  -  Checsum da trama recebida estava incorreto!
+01/07/2024 16:47:29  -  Calc: |29486| Recebido: |53499|
+01/07/2024 16:47:29  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:47:36  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 16:47:37  -  Porta serial aberta com sucesso!
+01/07/2024 16:47:37  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:47:38  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:47:39  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:47:48  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:47:49  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:48:23  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:48:27  -  Comando para resetar ESP32 não enviado devido porta serial fechada!
+01/07/2024 16:48:28  -  Comando para resetar ESP32 não enviado devido porta serial fechada!
+01/07/2024 16:48:30  -  Comando para resetar ESP32 não enviado devido porta serial fechada!
+01/07/2024 16:48:32  -  Porta serial aberta com sucesso!
+01/07/2024 16:48:32  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:48:32  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 16:48:32  -  A trama recebida não continha ','
+01/07/2024 16:48:33  -  A trama recebida não continha ','
+01/07/2024 16:48:34  -  A trama recebida não continha ','
+01/07/2024 16:48:34  -  A trama recebida não continha ','
+01/07/2024 16:48:37  -  A trama recebida não continha ','
+01/07/2024 16:48:37  -  A trama recebida não continha ','
+01/07/2024 16:48:38  -  A trama recebida não continha ','
+01/07/2024 16:48:38  -  A trama recebida não continha ','
+01/07/2024 16:48:38  -  Checsum da trama recebida estava incorreto!
+01/07/2024 16:48:38  -  Calc: |29083| Recebido: |8724|
+01/07/2024 16:48:41  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:48:45  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,0,0,0,9084
+01/07/2024 16:48:45  -  A trama recebida não continha ','
+01/07/2024 16:48:47  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 16:48:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:48:48  -  A trama recebida não continha ','
+01/07/2024 16:48:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:48:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:48:52  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 16:48:52  -  A trama recebida não continha ','
+01/07/2024 16:48:53  -  A trama recebida não continha ','
+01/07/2024 16:48:54  -  A trama recebida não continha ','
+01/07/2024 16:48:54  -  A trama recebida não continha ','
+01/07/2024 16:48:57  -  A trama recebida não continha ','
+01/07/2024 16:48:57  -  A trama recebida não continha ','
+01/07/2024 16:48:57  -  A trama recebida não continha ','
+01/07/2024 16:48:57  -  A trama recebida não continha ','
+01/07/2024 16:48:57  -  Checsum da trama recebida estava incorreto!
+01/07/2024 16:48:57  -  Calc: |29083| Recebido: |8724|
+01/07/2024 16:48:58  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:48:59  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:48:59  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:48:59  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:49:04  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:49:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:49:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:49:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:49:06  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:49:07  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:49:16  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:49:17  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:49:18  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:50:33  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:50:43  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:50:44  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:50:45  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:50:46  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:50:46  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:50:49  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:50:50  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:50:51  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:51:14  -  Envio de comando de ajuste WGAIN: 58,-0.010,27547
+01/07/2024 16:51:39  -  Envio de comando de ajuste WGAIN: 58,-0.015,37998
+01/07/2024 16:52:12  -  Envio de comando de ajuste WGAIN: 58,-0.016,49469
+01/07/2024 16:53:38  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:53:43  -  Porta serial aberta com sucesso!
+01/07/2024 16:53:43  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:53:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:53:50  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 16:53:53  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:53:54  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:53:54  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:54:04  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:06  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:08  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:09  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:54:18  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:18  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:19  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:19  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:20  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:26  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:54:29  -  Porta serial aberta com sucesso!
+01/07/2024 16:54:29  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:54:32  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 16:54:32  -  A trama recebida não continha ','
+01/07/2024 16:54:32  -  A trama recebida não continha ','
+01/07/2024 16:54:33  -  A trama recebida não continha ','
+01/07/2024 16:54:33  -  A trama recebida não continha ','
+01/07/2024 16:54:36  -  A trama recebida não continha ','
+01/07/2024 16:54:37  -  A trama recebida não continha ','
+01/07/2024 16:54:37  -  A trama recebida não continha ','
+01/07/2024 16:54:37  -  A trama recebida não continha ','
+01/07/2024 16:54:37  -  Checsum da trama recebida estava incorreto!
+01/07/2024 16:54:37  -  Calc: |29083| Recebido: |8724|
+01/07/2024 16:54:38  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:54:40  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 16:54:41  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:54:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:54:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:48  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:49  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:54:57  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:58  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:58  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:54:59  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:55:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:55:08  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:55:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:55:10  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:56:04  -  Envio de comando de ajuste WGAIN: 58,-0.003,2552
+01/07/2024 16:57:43  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:57:49  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 16:57:50  -  Porta serial aberta com sucesso!
+01/07/2024 16:57:50  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:57:51  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:57:52  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:57:52  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:57:57  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:57:58  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:57:58  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:57:59  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 16:58:13  -  Comando para resetar ESP32 não enviado devido porta serial fechada!
+01/07/2024 16:58:25  -  Erro ao abrir porta serial!
+01/07/2024 16:58:31  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 16:58:36  -  Porta serial aberta com sucesso!
+01/07/2024 16:58:36  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 16:58:37  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 16:58:38  -  A trama recebida não continha ','
+01/07/2024 16:58:38  -  A trama recebida não continha ','
+01/07/2024 16:58:38  -  A trama recebida não continha ','
+01/07/2024 16:58:39  -  A trama recebida não continha ','
+01/07/2024 16:58:39  -  A trama recebida não continha ','
+01/07/2024 16:58:42  -  A trama recebida não continha ','
+01/07/2024 16:58:42  -  A trama recebida não continha ','
+01/07/2024 16:58:43  -  A trama recebida não continha ','
+01/07/2024 16:58:43  -  A trama recebida não continha ','
+01/07/2024 16:58:43  -  Checsum da trama recebida estava incorreto!
+01/07/2024 16:58:43  -  Calc: |29083| Recebido: |8724|
+01/07/2024 16:58:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:58:47  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 16:58:47  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:58:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:58:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:58:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:58:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 16:58:51  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:58:51  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:58:52  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:58:54  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 16:59:02  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:03  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:04  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:06  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:20  -  Envio de comando de ajuste RMS: 54,239.985,239.985,239.985,5.000,5.000,5.000,23749
+01/07/2024 16:59:28  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:29  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:30  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:31  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 16:59:43  -  Erro ao abrir porta serial!
+01/07/2024 16:59:49  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:01:05  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:01:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:01:12  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:01:13  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:01:16  -  Erro ao abrir porta serial!
+01/07/2024 17:02:14  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:02:21  -  Porta serial aberta com sucesso!
+01/07/2024 17:02:21  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:02:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:25  -  Checsum da trama recebida estava incorreto!
+01/07/2024 17:02:25  -  Calc: |53263| Recebido: |55559|
+01/07/2024 17:02:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:29  -  Porta serial aberta com sucesso!
+01/07/2024 17:02:29  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:02:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:32  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:33  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:36  -  Porta serial aberta com sucesso!
+01/07/2024 17:02:36  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:02:37  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:02:38  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:02:38  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:02:40  -  Envio de comando de lipeza de registros selecionados do ADE: 46,0,0,0,0,0,0,9084
+01/07/2024 17:02:40  -  A trama recebida não continha ','
+01/07/2024 17:02:43  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 17:02:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:02:44  -  A trama recebida não continha ','
+01/07/2024 17:02:46  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:02:47  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:03:01  -  Envio de comando de ajuste RMS: 54,239.984,239.984,239.984,5.000,5.000,5.000,25763
+01/07/2024 17:03:09  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:03:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:03:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:03:11  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:03:12  -  Envio de comando de ajuste RMS: 54,239.984,239.984,239.984,5.000,5.000,5.000,25763
+01/07/2024 17:03:20  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:03:21  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:03:25  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:03:30  -  Comando para resetar ESP32 não enviado devido porta serial fechada!
+01/07/2024 17:03:35  -  Porta serial aberta com sucesso!
+01/07/2024 17:03:35  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:03:37  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 17:03:38  -  A trama recebida não continha ','
+01/07/2024 17:03:38  -  A trama recebida não continha ','
+01/07/2024 17:03:39  -  A trama recebida não continha ','
+01/07/2024 17:03:39  -  A trama recebida não continha ','
+01/07/2024 17:03:42  -  A trama recebida não continha ','
+01/07/2024 17:03:42  -  A trama recebida não continha ','
+01/07/2024 17:03:43  -  A trama recebida não continha ','
+01/07/2024 17:03:43  -  A trama recebida não continha ','
+01/07/2024 17:03:43  -  Checsum da trama recebida estava incorreto!
+01/07/2024 17:03:43  -  Calc: |29083| Recebido: |8724|
+01/07/2024 17:03:43  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:44  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:47  -  Envio de comando de reset de registradores ao ADE: 44,63814
+01/07/2024 17:03:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:51  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 17:03:51  -  A trama recebida não continha ','
+01/07/2024 17:03:51  -  A trama recebida não continha ','
+01/07/2024 17:03:52  -  A trama recebida não continha ','
+01/07/2024 17:03:52  -  A trama recebida não continha ','
+01/07/2024 17:03:55  -  A trama recebida não continha ','
+01/07/2024 17:03:56  -  A trama recebida não continha ','
+01/07/2024 17:03:56  -  A trama recebida não continha ','
+01/07/2024 17:03:56  -  A trama recebida não continha ','
+01/07/2024 17:03:56  -  Checsum da trama recebida estava incorreto!
+01/07/2024 17:03:56  -  Calc: |29083| Recebido: |8724|
+01/07/2024 17:03:57  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:57  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:57  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:03:58  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:04:01  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:02  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:02  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:02  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:03  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:03  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:10  -  Envio de comando de ajuste RMS: 54,239.984,239.984,239.984,5.000,5.000,5.000,25763
+01/07/2024 17:04:18  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:19  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:20  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:21  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:22  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:23  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:24  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:26  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:27  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:28  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:28  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:04:30  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:04:39  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 17:04:40  -  Porta serial aberta com sucesso!
+01/07/2024 17:04:40  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:04:41  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:04:46  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:05:00  -  Envio de comando de ajuste WGAIN: 58,0,33859
+01/07/2024 17:05:28  -  Envio de comando de ajuste WGAIN: 58,0,33859
+01/07/2024 17:05:56  -  Envio de comando de ajuste WGAIN: 58,0,33859
+01/07/2024 17:06:13  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:06:18  -  Porta serial aberta com sucesso!
+01/07/2024 17:06:18  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:06:19  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:06:22  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:06:23  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:06:23  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:06:23  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:06:24  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:06:25  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:08:17  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:08:26  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:08:26  -  Checsum da trama recebida estava incorreto!
+01/07/2024 17:08:26  -  Calc: |45848| Recebido: |44189|
+01/07/2024 17:08:27  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:08:32  -  Envio de comando de inicio de ajuste de fase: 60,23522
+01/07/2024 17:08:34  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:08:35  -  Envio de comando de inicio de ajuste de fase: 60,23522
+01/07/2024 17:09:47  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:09:52  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:09:53  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:09:58  -  Envio de comando de inicio de ajuste de fase: 60,23522
+01/07/2024 17:13:39  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:13:47  -  Porta serial aberta com sucesso!
+01/07/2024 17:13:47  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:13:48  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:13:48  -  Checsum da trama recebida estava incorreto!
+01/07/2024 17:13:48  -  Calc: |34718| Recebido: |58609|
+01/07/2024 17:13:49  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:13:50  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:13:50  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:13:50  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:13:51  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:13:55  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:13:55  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:13:56  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:13:58  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:13:59  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:01  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:04  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 17:14:06  -  Porta serial aberta com sucesso!
+01/07/2024 17:14:06  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:14:07  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:08  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:08  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:09  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:09  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:10  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:10  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:12  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:14:15  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:16  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:16  -  Envio de comando de ajuste RMS: 54,240.000,240.000,240.000,5.000,5.000,5.000,10729
+01/07/2024 17:14:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:25  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:26  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:27  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:27  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:28  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:14:29  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:14:43  -  Envio de comando de inicio de ajuste de fase: 60,23522
+01/07/2024 17:16:47  -  Arquivo de configuração carregado com sucesso!
+01/07/2024 17:16:49  -  Porta serial aberta com sucesso!
+01/07/2024 17:16:49  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:16:53  -  Envio de comando resetar ESP32: 16,29908
+01/07/2024 17:16:53  -  A trama recebida não continha ','
+01/07/2024 17:16:54  -  A trama recebida não continha ','
+01/07/2024 17:16:55  -  A trama recebida não continha ','
+01/07/2024 17:16:55  -  A trama recebida não continha ','
+01/07/2024 17:16:58  -  A trama recebida não continha ','
+01/07/2024 17:16:58  -  A trama recebida não continha ','
+01/07/2024 17:16:58  -  A trama recebida não continha ','
+01/07/2024 17:16:58  -  A trama recebida não continha ','
+01/07/2024 17:16:58  -  Checsum da trama recebida estava incorreto!
+01/07/2024 17:16:58  -  Calc: |29083| Recebido: |8724|
+01/07/2024 17:16:59  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:17:01  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:17:05  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:06  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:07  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:10  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:18  -  Envio de comando de ajuste RMS: 54,239.984,239.984,239.984,5.000,5.000,5.000,25763
+01/07/2024 17:17:27  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:28  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:29  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:29  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:30  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:31  -  Envio de comando de ajuste manual de registradores do ADE: 50,690
+01/07/2024 17:17:32  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:17:44  -  Envio de comando de inicio de ajuste de fase: 60,23522
+01/07/2024 17:17:59  -  Envio de comando de ajuste WGAIN: 61,1.5367,35009
+01/07/2024 17:18:11  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 17:18:13  -  Porta serial aberta com sucesso!
+01/07/2024 17:18:13  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:18:13  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:18:15  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:18:18  -  Envio de comando de inicio de ajuste de WGAIN: 57,39717
+01/07/2024 17:18:20  -  Envio de comando de inicio de ajuste de fase: 60,23522
+01/07/2024 17:18:50  -  Envio de comando de ajuste WGAIN: 61,0.8949,13342
+01/07/2024 17:19:27  -  Envio de comando de ajuste WGAIN: 61,0.8640,23144
+01/07/2024 17:21:21  -  Porta serial aberta com sucesso!
+01/07/2024 17:21:21  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:21:22  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
+01/07/2024 17:21:41  -  Comando para leitura de registros de ajuste do ADE não enviado devido porta serial fechada!
+01/07/2024 17:22:07  -  Porta serial aberta com sucesso!
+01/07/2024 17:22:07  -  Salvando informações da porta serial - Porta:  COM3 Velocidade: 115200
+01/07/2024 17:22:08  -  Envio de comando de leitura dos registradores de ajuste do ADE: 40,13698
