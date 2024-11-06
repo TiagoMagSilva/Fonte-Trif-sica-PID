@@ -133,6 +133,14 @@ namespace FonteTrifasicaPID
             this.btnLimparGraficoCorrente = new System.Windows.Forms.Button();
             this.label91 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.lbl = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
+            this.txtDPF_I3 = new System.Windows.Forms.TextBox();
+            this.txtDPF_I2 = new System.Windows.Forms.TextBox();
+            this.txtDPF_I1 = new System.Windows.Forms.TextBox();
+            this.txtDPG_I3 = new System.Windows.Forms.TextBox();
+            this.txtDPG_I2 = new System.Windows.Forms.TextBox();
+            this.txtDPG_I1 = new System.Windows.Forms.TextBox();
             this.txtCorrenteRMSC = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtCorrenteRMSB = new System.Windows.Forms.TextBox();
@@ -143,18 +151,10 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIB = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
             this.cbxGraficoIA = new System.Windows.Forms.CheckBox();
-            this.txtTempAcomodCorrenteC = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtUnderShootCorrenteC = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.txtOvershootCorrenteC = new System.Windows.Forms.TextBox();
-            this.txtTempAcomodCorrenteB = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtUnderShootCorrenteB = new System.Windows.Forms.TextBox();
             this.txtOvershootCorrenteA = new System.Windows.Forms.TextBox();
             this.txtOvershootCorrenteB = new System.Windows.Forms.TextBox();
-            this.txtUnderShootCorrenteA = new System.Windows.Forms.TextBox();
-            this.txtTempAcomodCorrenteA = new System.Windows.Forms.TextBox();
             this.btnAplicarMinMaxCorrente = new System.Windows.Forms.Button();
             this.txtMinChartCorrente = new System.Windows.Forms.TextBox();
             this.txtMaxChartCorrente = new System.Windows.Forms.TextBox();
@@ -166,6 +166,7 @@ namespace FonteTrifasicaPID
             this.btnConectarSerial = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.txtFrequencia = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.cbxFase = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -173,7 +174,6 @@ namespace FonteTrifasicaPID
             this.label25 = new System.Windows.Forms.Label();
             this.txtTensãoRMS = new System.Windows.Forms.TextBox();
             this.btnAplicarParametros = new System.Windows.Forms.Button();
-            this.cbxFrequencia = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.cbxFatorDePotencia = new System.Windows.Forms.ComboBox();
@@ -184,6 +184,8 @@ namespace FonteTrifasicaPID
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.btnEnergiaReativa = new System.Windows.Forms.Button();
+            this.btnEnergiaAtiva = new System.Windows.Forms.Button();
             this.BtnAjustarADE = new System.Windows.Forms.Button();
             this.btnResetarESP32 = new System.Windows.Forms.Button();
             this.btnResetaADE = new System.Windows.Forms.Button();
@@ -510,12 +512,27 @@ namespace FonteTrifasicaPID
             this.cbkAtivarReset3 = new System.Windows.Forms.CheckBox();
             this.cbkAtivarReset2 = new System.Windows.Forms.CheckBox();
             this.cbkAtivarReset1 = new System.Windows.Forms.CheckBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtQtPulsos = new System.Windows.Forms.TextBox();
+            this.btnAplicarNP = new System.Windows.Forms.Button();
+            this.btnIniciarCalibrar = new System.Windows.Forms.Button();
+            this.btnLimparErros = new System.Windows.Forms.Button();
+            this.lvwErros = new System.Windows.Forms.ListView();
+            this.clmElementos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmTensao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmCorrente = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmFP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmErro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmDesvioPadrao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timerClearPhasor = new System.Windows.Forms.Timer(this.components);
             this.timerSolicitaLOGsEquipamento = new System.Windows.Forms.Timer(this.components);
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.timerRepeatStop = new System.Windows.Forms.Timer(this.components);
-            this.btnEnergiaAtiva = new System.Windows.Forms.Button();
-            this.btnEnergiaReativa = new System.Windows.Forms.Button();
+            this.cbkIncluirI1Erro = new System.Windows.Forms.CheckBox();
+            this.cbkIncluirI2Erro = new System.Windows.Forms.CheckBox();
+            this.cbkIncluirI3Erro = new System.Windows.Forms.CheckBox();
+            this.btnAplicarInclusaoErros = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartTensao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCorrente)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -572,6 +589,7 @@ namespace FonteTrifasicaPID
             this.groupBox19.SuspendLayout();
             this.groupBox25.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // chartTensao
@@ -1244,6 +1262,8 @@ namespace FonteTrifasicaPID
             // cbxGraficoVC
             // 
             this.cbxGraficoVC.AutoSize = true;
+            this.cbxGraficoVC.Checked = true;
+            this.cbxGraficoVC.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVC.Location = new System.Drawing.Point(162, 173);
             this.cbxGraficoVC.Name = "cbxGraficoVC";
             this.cbxGraficoVC.Size = new System.Drawing.Size(72, 17);
@@ -1254,6 +1274,8 @@ namespace FonteTrifasicaPID
             // cbxGraficoVB
             // 
             this.cbxGraficoVB.AutoSize = true;
+            this.cbxGraficoVB.Checked = true;
+            this.cbxGraficoVB.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVB.Location = new System.Drawing.Point(84, 173);
             this.cbxGraficoVB.Name = "cbxGraficoVB";
             this.cbxGraficoVB.Size = new System.Drawing.Size(72, 17);
@@ -1264,6 +1286,8 @@ namespace FonteTrifasicaPID
             // cbxGraficoVA
             // 
             this.cbxGraficoVA.AutoSize = true;
+            this.cbxGraficoVA.Checked = true;
+            this.cbxGraficoVA.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxGraficoVA.Location = new System.Drawing.Point(6, 173);
             this.cbxGraficoVA.Name = "cbxGraficoVA";
             this.cbxGraficoVA.Size = new System.Drawing.Size(72, 17);
@@ -1466,6 +1490,14 @@ namespace FonteTrifasicaPID
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.lbl);
+            this.groupBox7.Controls.Add(this.label);
+            this.groupBox7.Controls.Add(this.txtDPF_I3);
+            this.groupBox7.Controls.Add(this.txtDPF_I2);
+            this.groupBox7.Controls.Add(this.txtDPF_I1);
+            this.groupBox7.Controls.Add(this.txtDPG_I3);
+            this.groupBox7.Controls.Add(this.txtDPG_I2);
+            this.groupBox7.Controls.Add(this.txtDPG_I1);
             this.groupBox7.Controls.Add(this.txtCorrenteRMSC);
             this.groupBox7.Controls.Add(this.label22);
             this.groupBox7.Controls.Add(this.txtCorrenteRMSB);
@@ -1476,18 +1508,10 @@ namespace FonteTrifasicaPID
             this.groupBox7.Controls.Add(this.cbxGraficoIB);
             this.groupBox7.Controls.Add(this.label20);
             this.groupBox7.Controls.Add(this.cbxGraficoIA);
-            this.groupBox7.Controls.Add(this.txtTempAcomodCorrenteC);
-            this.groupBox7.Controls.Add(this.label12);
-            this.groupBox7.Controls.Add(this.txtUnderShootCorrenteC);
-            this.groupBox7.Controls.Add(this.label13);
             this.groupBox7.Controls.Add(this.txtOvershootCorrenteC);
-            this.groupBox7.Controls.Add(this.txtTempAcomodCorrenteB);
             this.groupBox7.Controls.Add(this.label14);
-            this.groupBox7.Controls.Add(this.txtUnderShootCorrenteB);
             this.groupBox7.Controls.Add(this.txtOvershootCorrenteA);
             this.groupBox7.Controls.Add(this.txtOvershootCorrenteB);
-            this.groupBox7.Controls.Add(this.txtUnderShootCorrenteA);
-            this.groupBox7.Controls.Add(this.txtTempAcomodCorrenteA);
             this.groupBox7.Location = new System.Drawing.Point(577, 125);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(292, 196);
@@ -1495,10 +1519,82 @@ namespace FonteTrifasicaPID
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Resposta";
             // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(19, 113);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(62, 13);
+            this.lbl.TabIndex = 49;
+            this.lbl.Text = "DigPot Fino";
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(6, 89);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(75, 13);
+            this.label.TabIndex = 48;
+            this.label.Text = "DigPot Grosso";
+            // 
+            // txtDPF_I3
+            // 
+            this.txtDPF_I3.Enabled = false;
+            this.txtDPF_I3.Location = new System.Drawing.Point(221, 110);
+            this.txtDPF_I3.Name = "txtDPF_I3";
+            this.txtDPF_I3.Size = new System.Drawing.Size(60, 20);
+            this.txtDPF_I3.TabIndex = 47;
+            this.txtDPF_I3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPF_I2
+            // 
+            this.txtDPF_I2.Enabled = false;
+            this.txtDPF_I2.Location = new System.Drawing.Point(155, 110);
+            this.txtDPF_I2.Name = "txtDPF_I2";
+            this.txtDPF_I2.Size = new System.Drawing.Size(60, 20);
+            this.txtDPF_I2.TabIndex = 46;
+            this.txtDPF_I2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPF_I1
+            // 
+            this.txtDPF_I1.Enabled = false;
+            this.txtDPF_I1.Location = new System.Drawing.Point(89, 110);
+            this.txtDPF_I1.Name = "txtDPF_I1";
+            this.txtDPF_I1.Size = new System.Drawing.Size(60, 20);
+            this.txtDPF_I1.TabIndex = 45;
+            this.txtDPF_I1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPG_I3
+            // 
+            this.txtDPG_I3.Enabled = false;
+            this.txtDPG_I3.Location = new System.Drawing.Point(221, 83);
+            this.txtDPG_I3.Name = "txtDPG_I3";
+            this.txtDPG_I3.Size = new System.Drawing.Size(60, 20);
+            this.txtDPG_I3.TabIndex = 44;
+            this.txtDPG_I3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPG_I2
+            // 
+            this.txtDPG_I2.Enabled = false;
+            this.txtDPG_I2.Location = new System.Drawing.Point(155, 83);
+            this.txtDPG_I2.Name = "txtDPG_I2";
+            this.txtDPG_I2.Size = new System.Drawing.Size(60, 20);
+            this.txtDPG_I2.TabIndex = 43;
+            this.txtDPG_I2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPG_I1
+            // 
+            this.txtDPG_I1.Enabled = false;
+            this.txtDPG_I1.Location = new System.Drawing.Point(89, 83);
+            this.txtDPG_I1.Name = "txtDPG_I1";
+            this.txtDPG_I1.Size = new System.Drawing.Size(60, 20);
+            this.txtDPG_I1.TabIndex = 42;
+            this.txtDPG_I1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // txtCorrenteRMSC
             // 
             this.txtCorrenteRMSC.Enabled = false;
-            this.txtCorrenteRMSC.Location = new System.Drawing.Point(221, 109);
+            this.txtCorrenteRMSC.Location = new System.Drawing.Point(221, 57);
             this.txtCorrenteRMSC.Name = "txtCorrenteRMSC";
             this.txtCorrenteRMSC.Size = new System.Drawing.Size(60, 20);
             this.txtCorrenteRMSC.TabIndex = 41;
@@ -1507,7 +1603,7 @@ namespace FonteTrifasicaPID
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(9, 112);
+            this.label22.Location = new System.Drawing.Point(7, 63);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(74, 13);
             this.label22.TabIndex = 38;
@@ -1516,7 +1612,7 @@ namespace FonteTrifasicaPID
             // txtCorrenteRMSB
             // 
             this.txtCorrenteRMSB.Enabled = false;
-            this.txtCorrenteRMSB.Location = new System.Drawing.Point(155, 109);
+            this.txtCorrenteRMSB.Location = new System.Drawing.Point(155, 57);
             this.txtCorrenteRMSB.Name = "txtCorrenteRMSB";
             this.txtCorrenteRMSB.Size = new System.Drawing.Size(60, 20);
             this.txtCorrenteRMSB.TabIndex = 40;
@@ -1525,7 +1621,7 @@ namespace FonteTrifasicaPID
             // txtCorrenteRMSA
             // 
             this.txtCorrenteRMSA.Enabled = false;
-            this.txtCorrenteRMSA.Location = new System.Drawing.Point(89, 109);
+            this.txtCorrenteRMSA.Location = new System.Drawing.Point(89, 57);
             this.txtCorrenteRMSA.Name = "txtCorrenteRMSA";
             this.txtCorrenteRMSA.Size = new System.Drawing.Size(60, 20);
             this.txtCorrenteRMSA.TabIndex = 39;
@@ -1600,43 +1696,6 @@ namespace FonteTrifasicaPID
             this.cbxGraficoIA.Text = "Corrente A";
             this.cbxGraficoIA.UseVisualStyleBackColor = true;
             // 
-            // txtTempAcomodCorrenteC
-            // 
-            this.txtTempAcomodCorrenteC.Enabled = false;
-            this.txtTempAcomodCorrenteC.Location = new System.Drawing.Point(221, 83);
-            this.txtTempAcomodCorrenteC.Name = "txtTempAcomodCorrenteC";
-            this.txtTempAcomodCorrenteC.Size = new System.Drawing.Size(60, 20);
-            this.txtTempAcomodCorrenteC.TabIndex = 34;
-            this.txtTempAcomodCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(17, 86);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 13);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Temp. Acom.";
-            // 
-            // txtUnderShootCorrenteC
-            // 
-            this.txtUnderShootCorrenteC.Enabled = false;
-            this.txtUnderShootCorrenteC.Location = new System.Drawing.Point(221, 57);
-            this.txtUnderShootCorrenteC.Name = "txtUnderShootCorrenteC";
-            this.txtUnderShootCorrenteC.Size = new System.Drawing.Size(60, 20);
-            this.txtUnderShootCorrenteC.TabIndex = 33;
-            this.txtUnderShootCorrenteC.Text = "-1";
-            this.txtUnderShootCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(19, 60);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 13);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "UnderShoot";
-            // 
             // txtOvershootCorrenteC
             // 
             this.txtOvershootCorrenteC.Enabled = false;
@@ -1647,33 +1706,14 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteC.Text = "0";
             this.txtOvershootCorrenteC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtTempAcomodCorrenteB
-            // 
-            this.txtTempAcomodCorrenteB.Enabled = false;
-            this.txtTempAcomodCorrenteB.Location = new System.Drawing.Point(155, 83);
-            this.txtTempAcomodCorrenteB.Name = "txtTempAcomodCorrenteB";
-            this.txtTempAcomodCorrenteB.Size = new System.Drawing.Size(60, 20);
-            this.txtTempAcomodCorrenteB.TabIndex = 31;
-            this.txtTempAcomodCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(25, 34);
+            this.label14.Location = new System.Drawing.Point(23, 37);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 13);
             this.label14.TabIndex = 9;
             this.label14.Text = "OverShoot";
-            // 
-            // txtUnderShootCorrenteB
-            // 
-            this.txtUnderShootCorrenteB.Enabled = false;
-            this.txtUnderShootCorrenteB.Location = new System.Drawing.Point(155, 57);
-            this.txtUnderShootCorrenteB.Name = "txtUnderShootCorrenteB";
-            this.txtUnderShootCorrenteB.Size = new System.Drawing.Size(60, 20);
-            this.txtUnderShootCorrenteB.TabIndex = 30;
-            this.txtUnderShootCorrenteB.Text = "-1";
-            this.txtUnderShootCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtOvershootCorrenteA
             // 
@@ -1694,25 +1734,6 @@ namespace FonteTrifasicaPID
             this.txtOvershootCorrenteB.TabIndex = 29;
             this.txtOvershootCorrenteB.Text = "0";
             this.txtOvershootCorrenteB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtUnderShootCorrenteA
-            // 
-            this.txtUnderShootCorrenteA.Enabled = false;
-            this.txtUnderShootCorrenteA.Location = new System.Drawing.Point(89, 57);
-            this.txtUnderShootCorrenteA.Name = "txtUnderShootCorrenteA";
-            this.txtUnderShootCorrenteA.Size = new System.Drawing.Size(60, 20);
-            this.txtUnderShootCorrenteA.TabIndex = 27;
-            this.txtUnderShootCorrenteA.Text = "-1";
-            this.txtUnderShootCorrenteA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtTempAcomodCorrenteA
-            // 
-            this.txtTempAcomodCorrenteA.Enabled = false;
-            this.txtTempAcomodCorrenteA.Location = new System.Drawing.Point(89, 83);
-            this.txtTempAcomodCorrenteA.Name = "txtTempAcomodCorrenteA";
-            this.txtTempAcomodCorrenteA.Size = new System.Drawing.Size(60, 20);
-            this.txtTempAcomodCorrenteA.TabIndex = 28;
-            this.txtTempAcomodCorrenteA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAplicarMinMaxCorrente
             // 
@@ -1821,6 +1842,7 @@ namespace FonteTrifasicaPID
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.txtFrequencia);
             this.groupBox8.Controls.Add(this.label27);
             this.groupBox8.Controls.Add(this.cbxFase);
             this.groupBox8.Controls.Add(this.label26);
@@ -1828,7 +1850,6 @@ namespace FonteTrifasicaPID
             this.groupBox8.Controls.Add(this.label25);
             this.groupBox8.Controls.Add(this.txtTensãoRMS);
             this.groupBox8.Controls.Add(this.btnAplicarParametros);
-            this.groupBox8.Controls.Add(this.cbxFrequencia);
             this.groupBox8.Controls.Add(this.label23);
             this.groupBox8.Controls.Add(this.label24);
             this.groupBox8.Controls.Add(this.cbxFatorDePotencia);
@@ -1838,6 +1859,15 @@ namespace FonteTrifasicaPID
             this.groupBox8.TabIndex = 20;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Parâmetros";
+            // 
+            // txtFrequencia
+            // 
+            this.txtFrequencia.Location = new System.Drawing.Point(15, 122);
+            this.txtFrequencia.Name = "txtFrequencia";
+            this.txtFrequencia.Size = new System.Drawing.Size(72, 20);
+            this.txtFrequencia.TabIndex = 25;
+            this.txtFrequencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFrequencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFrequencia_KeyPress);
             // 
             // label27
             // 
@@ -1903,17 +1933,6 @@ namespace FonteTrifasicaPID
             this.btnAplicarParametros.Text = "Aplicar";
             this.btnAplicarParametros.UseVisualStyleBackColor = true;
             this.btnAplicarParametros.Click += new System.EventHandler(this.btnAplicarParametros_Click);
-            // 
-            // cbxFrequencia
-            // 
-            this.cbxFrequencia.FormattingEnabled = true;
-            this.cbxFrequencia.Items.AddRange(new object[] {
-            "50",
-            "60"});
-            this.cbxFrequencia.Location = new System.Drawing.Point(15, 122);
-            this.cbxFrequencia.Name = "cbxFrequencia";
-            this.cbxFrequencia.Size = new System.Drawing.Size(72, 21);
-            this.cbxFrequencia.TabIndex = 13;
             // 
             // label23
             // 
@@ -1990,6 +2009,7 @@ namespace FonteTrifasicaPID
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -2010,6 +2030,10 @@ namespace FonteTrifasicaPID
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnAplicarInclusaoErros);
+            this.tabPage2.Controls.Add(this.cbkIncluirI3Erro);
+            this.tabPage2.Controls.Add(this.cbkIncluirI2Erro);
+            this.tabPage2.Controls.Add(this.cbkIncluirI1Erro);
             this.tabPage2.Controls.Add(this.groupBox11);
             this.tabPage2.Controls.Add(this.groupBox12);
             this.tabPage2.Controls.Add(this.groupBox10);
@@ -2035,6 +2059,26 @@ namespace FonteTrifasicaPID
             this.groupBox11.TabIndex = 15;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Configurações Gerais";
+            // 
+            // btnEnergiaReativa
+            // 
+            this.btnEnergiaReativa.Location = new System.Drawing.Point(18, 159);
+            this.btnEnergiaReativa.Name = "btnEnergiaReativa";
+            this.btnEnergiaReativa.Size = new System.Drawing.Size(123, 23);
+            this.btnEnergiaReativa.TabIndex = 12;
+            this.btnEnergiaReativa.Text = "Energia Reativa";
+            this.btnEnergiaReativa.UseVisualStyleBackColor = true;
+            this.btnEnergiaReativa.Click += new System.EventHandler(this.btnEnergiaReativa_Click);
+            // 
+            // btnEnergiaAtiva
+            // 
+            this.btnEnergiaAtiva.Location = new System.Drawing.Point(18, 130);
+            this.btnEnergiaAtiva.Name = "btnEnergiaAtiva";
+            this.btnEnergiaAtiva.Size = new System.Drawing.Size(123, 23);
+            this.btnEnergiaAtiva.TabIndex = 11;
+            this.btnEnergiaAtiva.Text = "Energia Ativa";
+            this.btnEnergiaAtiva.UseVisualStyleBackColor = true;
+            this.btnEnergiaAtiva.Click += new System.EventHandler(this.btnEnergiaAtiva_Click);
             // 
             // BtnAjustarADE
             // 
@@ -5446,6 +5490,119 @@ namespace FonteTrifasicaPID
             this.cbkAtivarReset1.UseVisualStyleBackColor = true;
             this.cbkAtivarReset1.CheckedChanged += new System.EventHandler(this.cbkAtivarReset1_CheckedChanged);
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.label12);
+            this.tabPage7.Controls.Add(this.txtQtPulsos);
+            this.tabPage7.Controls.Add(this.btnAplicarNP);
+            this.tabPage7.Controls.Add(this.btnIniciarCalibrar);
+            this.tabPage7.Controls.Add(this.btnLimparErros);
+            this.tabPage7.Controls.Add(this.lvwErros);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(894, 688);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Erros";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(542, 46);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 13);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Quantidade de pulsos";
+            // 
+            // txtQtPulsos
+            // 
+            this.txtQtPulsos.Location = new System.Drawing.Point(571, 62);
+            this.txtQtPulsos.Name = "txtQtPulsos";
+            this.txtQtPulsos.Size = new System.Drawing.Size(46, 20);
+            this.txtQtPulsos.TabIndex = 4;
+            this.txtQtPulsos.Text = "10";
+            this.txtQtPulsos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAplicarNP
+            // 
+            this.btnAplicarNP.Location = new System.Drawing.Point(557, 88);
+            this.btnAplicarNP.Name = "btnAplicarNP";
+            this.btnAplicarNP.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicarNP.TabIndex = 3;
+            this.btnAplicarNP.Text = "Aplicar";
+            this.btnAplicarNP.UseVisualStyleBackColor = true;
+            this.btnAplicarNP.Click += new System.EventHandler(this.btnAplicarNP_Click);
+            // 
+            // btnIniciarCalibrar
+            // 
+            this.btnIniciarCalibrar.Location = new System.Drawing.Point(542, 607);
+            this.btnIniciarCalibrar.Name = "btnIniciarCalibrar";
+            this.btnIniciarCalibrar.Size = new System.Drawing.Size(75, 27);
+            this.btnIniciarCalibrar.TabIndex = 2;
+            this.btnIniciarCalibrar.Text = "Calibrar";
+            this.btnIniciarCalibrar.UseVisualStyleBackColor = true;
+            this.btnIniciarCalibrar.Click += new System.EventHandler(this.btnIniciarCalibrar_Click);
+            // 
+            // btnLimparErros
+            // 
+            this.btnLimparErros.Location = new System.Drawing.Point(542, 647);
+            this.btnLimparErros.Name = "btnLimparErros";
+            this.btnLimparErros.Size = new System.Drawing.Size(75, 23);
+            this.btnLimparErros.TabIndex = 1;
+            this.btnLimparErros.Text = "Limpar";
+            this.btnLimparErros.UseVisualStyleBackColor = true;
+            this.btnLimparErros.Click += new System.EventHandler(this.btnLimparErros_Click);
+            // 
+            // lvwErros
+            // 
+            this.lvwErros.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.clmElementos,
+            this.clmTensao,
+            this.clmCorrente,
+            this.clmFP,
+            this.clmErro,
+            this.clmDesvioPadrao});
+            this.lvwErros.FullRowSelect = true;
+            this.lvwErros.GridLines = true;
+            this.lvwErros.HideSelection = false;
+            this.lvwErros.Location = new System.Drawing.Point(28, 29);
+            this.lvwErros.Name = "lvwErros";
+            this.lvwErros.Size = new System.Drawing.Size(508, 641);
+            this.lvwErros.TabIndex = 0;
+            this.lvwErros.UseCompatibleStateImageBehavior = false;
+            this.lvwErros.View = System.Windows.Forms.View.Details;
+            // 
+            // clmElementos
+            // 
+            this.clmElementos.Text = "Elementos";
+            this.clmElementos.Width = 74;
+            // 
+            // clmTensao
+            // 
+            this.clmTensao.Text = "Tensão";
+            this.clmTensao.Width = 85;
+            // 
+            // clmCorrente
+            // 
+            this.clmCorrente.Text = "Corrente";
+            this.clmCorrente.Width = 88;
+            // 
+            // clmFP
+            // 
+            this.clmFP.Text = "FP";
+            this.clmFP.Width = 79;
+            // 
+            // clmErro
+            // 
+            this.clmErro.Text = "Erro";
+            this.clmErro.Width = 75;
+            // 
+            // clmDesvioPadrao
+            // 
+            this.clmDesvioPadrao.Text = "Desvio Padrão";
+            this.clmDesvioPadrao.Width = 93;
+            // 
             // timerClearPhasor
             // 
             this.timerClearPhasor.Interval = 2000;
@@ -5472,25 +5629,45 @@ namespace FonteTrifasicaPID
             this.timerRepeatStop.Interval = 500;
             this.timerRepeatStop.Tick += new System.EventHandler(this.timerRepeatStop_Tick);
             // 
-            // btnEnergiaAtiva
+            // cbkIncluirI1Erro
             // 
-            this.btnEnergiaAtiva.Location = new System.Drawing.Point(18, 130);
-            this.btnEnergiaAtiva.Name = "btnEnergiaAtiva";
-            this.btnEnergiaAtiva.Size = new System.Drawing.Size(123, 23);
-            this.btnEnergiaAtiva.TabIndex = 11;
-            this.btnEnergiaAtiva.Text = "Energia Ativa";
-            this.btnEnergiaAtiva.UseVisualStyleBackColor = true;
-            this.btnEnergiaAtiva.Click += new System.EventHandler(this.btnEnergiaAtiva_Click);
+            this.cbkIncluirI1Erro.AutoSize = true;
+            this.cbkIncluirI1Erro.Location = new System.Drawing.Point(33, 388);
+            this.cbkIncluirI1Erro.Name = "cbkIncluirI1Erro";
+            this.cbkIncluirI1Erro.Size = new System.Drawing.Size(105, 17);
+            this.cbkIncluirI1Erro.TabIndex = 16;
+            this.cbkIncluirI1Erro.Text = "Incluir I1 em Erro";
+            this.cbkIncluirI1Erro.UseVisualStyleBackColor = true;
             // 
-            // btnEnergiaReativa
+            // cbkIncluirI2Erro
             // 
-            this.btnEnergiaReativa.Location = new System.Drawing.Point(18, 159);
-            this.btnEnergiaReativa.Name = "btnEnergiaReativa";
-            this.btnEnergiaReativa.Size = new System.Drawing.Size(123, 23);
-            this.btnEnergiaReativa.TabIndex = 12;
-            this.btnEnergiaReativa.Text = "Energia Reativa";
-            this.btnEnergiaReativa.UseVisualStyleBackColor = true;
-            this.btnEnergiaReativa.Click += new System.EventHandler(this.btnEnergiaReativa_Click);
+            this.cbkIncluirI2Erro.AutoSize = true;
+            this.cbkIncluirI2Erro.Location = new System.Drawing.Point(33, 411);
+            this.cbkIncluirI2Erro.Name = "cbkIncluirI2Erro";
+            this.cbkIncluirI2Erro.Size = new System.Drawing.Size(105, 17);
+            this.cbkIncluirI2Erro.TabIndex = 17;
+            this.cbkIncluirI2Erro.Text = "Incluir I2 em Erro";
+            this.cbkIncluirI2Erro.UseVisualStyleBackColor = true;
+            // 
+            // cbkIncluirI3Erro
+            // 
+            this.cbkIncluirI3Erro.AutoSize = true;
+            this.cbkIncluirI3Erro.Location = new System.Drawing.Point(33, 434);
+            this.cbkIncluirI3Erro.Name = "cbkIncluirI3Erro";
+            this.cbkIncluirI3Erro.Size = new System.Drawing.Size(105, 17);
+            this.cbkIncluirI3Erro.TabIndex = 18;
+            this.cbkIncluirI3Erro.Text = "Incluir I3 em Erro";
+            this.cbkIncluirI3Erro.UseVisualStyleBackColor = true;
+            // 
+            // btnAplicarInclusaoErros
+            // 
+            this.btnAplicarInclusaoErros.Location = new System.Drawing.Point(47, 457);
+            this.btnAplicarInclusaoErros.Name = "btnAplicarInclusaoErros";
+            this.btnAplicarInclusaoErros.Size = new System.Drawing.Size(75, 23);
+            this.btnAplicarInclusaoErros.TabIndex = 19;
+            this.btnAplicarInclusaoErros.Text = "Aplicar";
+            this.btnAplicarInclusaoErros.UseVisualStyleBackColor = true;
+            this.btnAplicarInclusaoErros.Click += new System.EventHandler(this.btnAplicarInclusaoErros_Click);
             // 
             // Form1
             // 
@@ -5532,6 +5709,7 @@ namespace FonteTrifasicaPID
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
@@ -5594,6 +5772,8 @@ namespace FonteTrifasicaPID
             this.groupBox25.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5638,8 +5818,6 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtOvershootTensaoA;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.CheckBox cbxGraficoVC;
         private System.Windows.Forms.CheckBox cbxGraficoVB;
@@ -5650,15 +5828,9 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtTempAcomodCorrenteC;
-        private System.Windows.Forms.TextBox txtUnderShootCorrenteC;
         private System.Windows.Forms.TextBox txtOvershootCorrenteC;
-        private System.Windows.Forms.TextBox txtTempAcomodCorrenteB;
-        private System.Windows.Forms.TextBox txtUnderShootCorrenteB;
         private System.Windows.Forms.TextBox txtOvershootCorrenteA;
         private System.Windows.Forms.TextBox txtOvershootCorrenteB;
-        private System.Windows.Forms.TextBox txtUnderShootCorrenteA;
-        private System.Windows.Forms.TextBox txtTempAcomodCorrenteA;
         private System.Windows.Forms.TextBox txtTensãoRMSC;
         private System.Windows.Forms.TextBox txtTensãoRMSB;
         private System.Windows.Forms.Label label21;
@@ -5684,7 +5856,6 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtTensãoRMS;
         private System.Windows.Forms.Button btnAplicarParametros;
-        private System.Windows.Forms.ComboBox cbxFrequencia;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.ComboBox cbxFatorDePotencia;
@@ -6053,6 +6224,32 @@ namespace FonteTrifasicaPID
         private System.Windows.Forms.TextBox txtErroMTU;
         private System.Windows.Forms.Button btnEnergiaReativa;
         private System.Windows.Forms.Button btnEnergiaAtiva;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.TextBox txtDPF_I3;
+        private System.Windows.Forms.TextBox txtDPF_I2;
+        private System.Windows.Forms.TextBox txtDPF_I1;
+        private System.Windows.Forms.TextBox txtDPG_I3;
+        private System.Windows.Forms.TextBox txtDPG_I2;
+        private System.Windows.Forms.TextBox txtDPG_I1;
+        private System.Windows.Forms.TextBox txtFrequencia;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.ListView lvwErros;
+        private System.Windows.Forms.ColumnHeader clmElementos;
+        private System.Windows.Forms.ColumnHeader clmTensao;
+        private System.Windows.Forms.ColumnHeader clmCorrente;
+        private System.Windows.Forms.ColumnHeader clmFP;
+        private System.Windows.Forms.ColumnHeader clmErro;
+        private System.Windows.Forms.ColumnHeader clmDesvioPadrao;
+        private System.Windows.Forms.Button btnLimparErros;
+        private System.Windows.Forms.Button btnIniciarCalibrar;
+        private System.Windows.Forms.TextBox txtQtPulsos;
+        private System.Windows.Forms.Button btnAplicarNP;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnAplicarInclusaoErros;
+        private System.Windows.Forms.CheckBox cbkIncluirI3Erro;
+        private System.Windows.Forms.CheckBox cbkIncluirI2Erro;
+        private System.Windows.Forms.CheckBox cbkIncluirI1Erro;
     }
 }
 

@@ -84,14 +84,19 @@ namespace FonteTrifasicaPID
             ID_Ajuste_WGAIN,
             ID_Indicar_FaseEmAjuste,
             ID_Inicio_AjusteDeFase,
-            ID_AjusteFase
+            ID_AjusteFase,
+            ID_Setar_Energia_Ativa,
+            ID_Setar_Energia_Reativa,
+            ID_InicioAjusteVArGAIN,
+            ID_AjusteVarGain
         };
 
         enum Enum_AjusteAtual //Por enquanto só estamos ajustando RMS_Gain, W_Gain e fase
         {
             Ajustando_VRMS_IRMS,            
             Ajustando_WGAIN,
-            Ajustando_Fase
+            Ajustando_Fase,
+            Ajustando_VARGAIN
         };
 
         Int16 AjusteAtual = (Int16)Enum_AjusteAtual.Ajustando_VRMS_IRMS;
@@ -169,6 +174,12 @@ namespace FonteTrifasicaPID
 
                         TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
                         LOG_TXT("Envio de comando de ajuste WGAIN: " + TramaComChecksum);
+                        break;
+                    case (Int16)Enum_AjusteAtual.Ajustando_VARGAIN:
+                        TRAMA_ENVIO = (Int16)Identificador.ID_AjusteVarGain + "," + txtErrowGain.Text + ",";
+
+                        TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                        LOG_TXT("Envio de comando de ajuste VArGain: " + TramaComChecksum);
                         break;
                     default:
 
@@ -672,7 +683,7 @@ namespace FonteTrifasicaPID
         {
             String texto, TRAMA_ENVIO;
             AjusteAtual++;
-            if (AjusteAtual > 2)
+            if (AjusteAtual > 3)
                 AjusteAtual = 0;
 
             switch (AjusteAtual)
@@ -765,6 +776,42 @@ namespace FonteTrifasicaPID
                     {
                         //LOG_TXT("Comando para comando de de ajuste manual de registradores do ADE não enviado devido porta serial fechada!");
                     }
+                    break;
+                case (int)Enum_AjusteAtual.Ajustando_VARGAIN:
+                    gpxEscritaRMS.Enabled = false;
+                    gpxEscritaRMS.Visible = false;
+
+                    gpxLeituraRMS.Enabled = false;
+                    gpxLeituraRMS.Visible = false;
+
+                    gpxEscritaWgain.Enabled = true;
+                    gpxEscritaWgain.Visible = true;
+                    texto = "Utilizando a MTU, aplique 240Vrms e 5Arms nos respectivos canais. Utilize FP = 0.\r\n" +
+                            "FP = 0 pode ser obtido configurando a MTU para energia reativa (Q). neste caso, a corrente estará defasada de 90° em relação a tensão." +
+                            "Por comodidade, podemos conectar todos os canais de tensão em paralelo e todos os canais de corrente em série.\r\n" +
+                            "Utilizando um cabo para leitura de pulsos, conecte a saída de pulsos da FTM na entrada de pulsos da MTU.\r\n" +
+                            "Ajuste a constante de pulso da MTU para 8400 pulsos/kWh.\r\n" +
+                            "O Ajuste será realizado em cada fase individulmente, desta forma, será solicitado que você entre 3 vezes com o erro, sendo uma vez para cada fase.\r\n" +
+                            "Aguarde até que o desvio padrão se aproxime o máximo de 0 e clique em \"Ajustar\".\r\n" +
+                            "É recomendado configurar a MTU para capturar ao menos 10 pulsos por erro.";
+                    txtInfo.Text = texto;
+                    gpxAjuste.Text = "Ajsute do ganho de potencia reativa";
+                    lblFaseEmAjusteWgain.Text = "Aguarde...";
+
+                    TRAMA_ENVIO = (int)Identificador.ID_InicioAjusteVArGAIN + ",";
+
+                    if (PortaSerial.IsOpen)
+                    {
+                        String TramaComChecksum = TRAMA_ENVIO + Crc16Ccitt(TRAMA_ENVIO);
+                        PortaSerial.Write(TramaComChecksum + "\0");
+                        LOG_TXT("Envio de comando de inicio de ajuste de VarGain: " + TramaComChecksum);
+                        PortaSerial.DiscardOutBuffer();
+                    }
+                    else
+                    {
+                        //LOG_TXT("Comando para comando de de ajuste manual de registradores do ADE não enviado devido porta serial fechada!");
+                    }
+
                     break;
                 default:
                     break;

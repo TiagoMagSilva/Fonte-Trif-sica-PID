@@ -1,0 +1,340 @@
+17/10/2024 11:43:49  -  Porta serial aberta com sucesso!
+17/10/2024 11:43:49  -  Salvando informações da porta serial - Porta:  COM19 Velocidade: 115200
+17/10/2024 11:43:55  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 11:43:56  -  Pacote recebido: Rec: 1
+17/10/2024 11:43:56  -  A trama recebida não continha ','
+17/10/2024 11:43:56  -  Pacote recebido: COMPMODE: 41F9
+17/10/2024 11:44:04  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 11:44:04  -  A trama recebida não continha ','
+17/10/2024 11:44:04  -  Pacote recebido: Rec: 2
+17/10/2024 11:44:04  -  A trama recebida não continha ','
+17/10/2024 11:44:04  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:44:13  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 11:44:13  -  A trama recebida não continha ','
+17/10/2024 11:44:13  -  Pacote recebido: Rec: 1
+17/10/2024 11:44:13  -  A trama recebida não continha ','
+17/10/2024 11:44:13  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:44:19  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:44:19  -  A trama recebida não continha ','
+17/10/2024 11:44:19  -  Pacote recebido: Rec: 4
+17/10/2024 11:44:19  -  A trama recebida não continha ','
+17/10/2024 11:44:19  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:47:03  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:03  -  A trama recebida não continha ','
+17/10/2024 11:47:03  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:04  -  A trama recebida não continha ','
+17/10/2024 11:47:04  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:47:04  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:04  -  A trama recebida não continha ','
+17/10/2024 11:47:04  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:04  -  A trama recebida não continha ','
+17/10/2024 11:47:04  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:47:05  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:05  -  A trama recebida não continha ','
+17/10/2024 11:47:05  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:05  -  A trama recebida não continha ','
+17/10/2024 11:47:05  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:47:06  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:06  -  A trama recebida não continha ','
+17/10/2024 11:47:06  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:06  -  A trama recebida não continha ','
+17/10/2024 11:47:06  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:47:07  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:07  -  A trama recebida não continha ','
+17/10/2024 11:47:07  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:07  -  A trama recebida não continha ','
+17/10/2024 11:47:07  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:47:13  -  Envio de comando resetar ESP32: 16,29908
+17/10/2024 11:47:13  -  A trama recebida não continha ','
+17/10/2024 11:47:13  -  Pacote recebido: ???ESP-ROM:esp32s3-20210327
+17/10/2024 11:47:13  -  A trama recebida não continha ','
+17/10/2024 11:47:13  -  Pacote recebido: ***********************
+17/10/2024 11:47:14  -  A trama recebida não continha ','
+17/10/2024 11:47:14  -  Pacote recebido: Display configurado com sucesso!
+17/10/2024 11:47:15  -  A trama recebida não continha ','
+17/10/2024 11:47:15  -  Pacote recebido: Serial Number: x---x---x
+17/10/2024 11:47:17  -  A trama recebida não continha ','
+17/10/2024 11:47:17  -  Pacote recebido: Validando comunicacao com ADE7878A...
+17/10/2024 11:47:18  -  A trama recebida não continha ','
+17/10/2024 11:47:18  -  Pacote recebido: ADE7878A encontrado com sucesso. 
+17/10/2024 11:47:18  -  A trama recebida não continha ','
+17/10/2024 11:47:18  -  Pacote recebido: ADE_GAIN: 0
+17/10/2024 11:47:18  -  A trama recebida não continha ','
+17/10/2024 11:47:18  -  Pacote recebido: Ver. FW Sint.: v2.0
+17/10/2024 11:47:21  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:21  -  A trama recebida não continha ','
+17/10/2024 11:47:21  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:21  -  A trama recebida não continha ','
+17/10/2024 11:47:21  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:24  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:24  -  A trama recebida não continha ','
+17/10/2024 11:47:24  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:24  -  A trama recebida não continha ','
+17/10/2024 11:47:24  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:25  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:25  -  A trama recebida não continha ','
+17/10/2024 11:47:25  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:25  -  A trama recebida não continha ','
+17/10/2024 11:47:25  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:26  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 11:47:26  -  A trama recebida não continha ','
+17/10/2024 11:47:26  -  Pacote recebido: Rec: 4
+17/10/2024 11:47:26  -  A trama recebida não continha ','
+17/10/2024 11:47:26  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:28  -  Envio de comando de inclusão de correntes em Erro: 70,6,61349
+17/10/2024 11:47:28  -  A trama recebida não continha ','
+17/10/2024 11:47:28  -  Pacote recebido: Rec: 6
+17/10/2024 11:47:28  -  A trama recebida não continha ','
+17/10/2024 11:47:28  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:29  -  Envio de comando de inclusão de correntes em Erro: 70,6,61349
+17/10/2024 11:47:30  -  A trama recebida não continha ','
+17/10/2024 11:47:30  -  Pacote recebido: Rec: 6
+17/10/2024 11:47:30  -  A trama recebida não continha ','
+17/10/2024 11:47:30  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:34  -  Envio de comando de inclusão de correntes em Erro: 70,6,61349
+17/10/2024 11:47:34  -  A trama recebida não continha ','
+17/10/2024 11:47:34  -  Pacote recebido: Rec: 6
+17/10/2024 11:47:34  -  A trama recebida não continha ','
+17/10/2024 11:47:34  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:34  -  Envio de comando de inclusão de correntes em Erro: 70,6,61349
+17/10/2024 11:47:34  -  A trama recebida não continha ','
+17/10/2024 11:47:34  -  Pacote recebido: Rec: 6
+17/10/2024 11:47:34  -  A trama recebida não continha ','
+17/10/2024 11:47:34  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:37  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 11:47:37  -  A trama recebida não continha ','
+17/10/2024 11:47:37  -  Pacote recebido: Rec: 7
+17/10/2024 11:47:37  -  A trama recebida não continha ','
+17/10/2024 11:47:37  -  Pacote recebido: COMPMODE: 41FC
+17/10/2024 11:47:39  -  Envio de comando resetar ESP32: 16,29908
+17/10/2024 11:47:39  -  A trama recebida não continha ','
+17/10/2024 11:47:39  -  Pacote recebido: ???ESP-ROM:esp32s3-20210327
+17/10/2024 11:47:39  -  A trama recebida não continha ','
+17/10/2024 11:47:39  -  Pacote recebido: ***********************
+17/10/2024 11:47:40  -  A trama recebida não continha ','
+17/10/2024 11:47:40  -  Pacote recebido: Display configurado com sucesso!
+17/10/2024 11:47:40  -  A trama recebida não continha ','
+17/10/2024 11:47:40  -  Pacote recebido: Serial Number: x---x---x
+17/10/2024 11:47:43  -  A trama recebida não continha ','
+17/10/2024 11:47:43  -  Pacote recebido: Validando comunicacao com ADE7878A...
+17/10/2024 11:47:44  -  A trama recebida não continha ','
+17/10/2024 11:47:44  -  Pacote recebido: ADE7878A encontrado com sucesso. 
+17/10/2024 11:47:44  -  A trama recebida não continha ','
+17/10/2024 11:47:44  -  Pacote recebido: ADE_GAIN: 0
+17/10/2024 11:47:44  -  A trama recebida não continha ','
+17/10/2024 11:47:44  -  Pacote recebido: Ver. FW Sint.: v2.0
+17/10/2024 11:47:47  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 11:47:47  -  A trama recebida não continha ','
+17/10/2024 11:47:47  -  Pacote recebido: Rec: 7
+17/10/2024 11:47:47  -  A trama recebida não continha ','
+17/10/2024 11:47:47  -  Pacote recebido: COMPMODE: 41FF
+17/10/2024 11:47:49  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 11:47:49  -  A trama recebida não continha ','
+17/10/2024 11:47:49  -  Pacote recebido: Rec: 7
+17/10/2024 11:47:49  -  A trama recebida não continha ','
+17/10/2024 11:47:49  -  Pacote recebido: COMPMODE: 41FF
+17/10/2024 11:47:49  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 11:47:50  -  A trama recebida não continha ','
+17/10/2024 11:47:50  -  Pacote recebido: Rec: 7
+17/10/2024 11:47:50  -  A trama recebida não continha ','
+17/10/2024 11:47:50  -  Pacote recebido: COMPMODE: 41FF
+17/10/2024 11:47:50  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 11:47:50  -  A trama recebida não continha ','
+17/10/2024 11:47:50  -  Pacote recebido: Rec: 7
+17/10/2024 11:47:50  -  A trama recebida não continha ','
+17/10/2024 11:47:50  -  Pacote recebido: COMPMODE: 41FF
+17/10/2024 11:47:52  -  Envio de comando de inclusão de correntes em Erro: 70,5,47862
+17/10/2024 11:47:52  -  A trama recebida não continha ','
+17/10/2024 11:47:52  -  Pacote recebido: Rec: 5
+17/10/2024 11:47:52  -  A trama recebida não continha ','
+17/10/2024 11:47:52  -  Pacote recebido: COMPMODE: 41FD
+17/10/2024 11:47:53  -  Envio de comando de inclusão de correntes em Erro: 70,5,47862
+17/10/2024 11:47:53  -  A trama recebida não continha ','
+17/10/2024 11:47:53  -  Pacote recebido: Rec: 5
+17/10/2024 11:47:53  -  A trama recebida não continha ','
+17/10/2024 11:47:53  -  Pacote recebido: COMPMODE: 41FD
+17/10/2024 11:47:54  -  Envio de comando de inclusão de correntes em Erro: 70,5,47862
+17/10/2024 11:47:54  -  A trama recebida não continha ','
+17/10/2024 11:47:54  -  Pacote recebido: Rec: 5
+17/10/2024 11:47:54  -  A trama recebida não continha ','
+17/10/2024 11:47:54  -  Pacote recebido: COMPMODE: 41FD
+17/10/2024 11:47:56  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 11:47:56  -  A trama recebida não continha ','
+17/10/2024 11:47:56  -  Pacote recebido: Rec: 1
+17/10/2024 11:47:56  -  A trama recebida não continha ','
+17/10/2024 11:47:56  -  Pacote recebido: COMPMODE: 41F9
+17/10/2024 11:47:57  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 11:47:57  -  A trama recebida não continha ','
+17/10/2024 11:47:57  -  Pacote recebido: Rec: 1
+17/10/2024 11:47:57  -  A trama recebida não continha ','
+17/10/2024 11:47:57  -  Pacote recebido: COMPMODE: 41F9
+17/10/2024 11:47:59  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 11:47:59  -  A trama recebida não continha ','
+17/10/2024 11:47:59  -  Pacote recebido: Rec: 2
+17/10/2024 11:47:59  -  A trama recebida não continha ','
+17/10/2024 11:47:59  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:48:00  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 11:48:00  -  A trama recebida não continha ','
+17/10/2024 11:48:00  -  Pacote recebido: Rec: 2
+17/10/2024 11:48:00  -  A trama recebida não continha ','
+17/10/2024 11:48:00  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:48:01  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 11:48:01  -  A trama recebida não continha ','
+17/10/2024 11:48:01  -  Pacote recebido: Rec: 2
+17/10/2024 11:48:01  -  A trama recebida não continha ','
+17/10/2024 11:48:01  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:48:01  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 11:48:02  -  A trama recebida não continha ','
+17/10/2024 11:48:02  -  Pacote recebido: Rec: 2
+17/10/2024 11:48:02  -  A trama recebida não continha ','
+17/10/2024 11:48:02  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:48:03  -  Envio de comando de inclusão de correntes em Erro: 70,6,61349
+17/10/2024 11:48:03  -  A trama recebida não continha ','
+17/10/2024 11:48:03  -  Pacote recebido: Rec: 6
+17/10/2024 11:48:03  -  A trama recebida não continha ','
+17/10/2024 11:48:03  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:48:03  -  Envio de comando de inclusão de correntes em Erro: 70,6,61349
+17/10/2024 11:48:03  -  A trama recebida não continha ','
+17/10/2024 11:48:03  -  Pacote recebido: Rec: 6
+17/10/2024 11:48:04  -  A trama recebida não continha ','
+17/10/2024 11:48:04  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:48:05  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 11:48:05  -  A trama recebida não continha ','
+17/10/2024 11:48:05  -  Pacote recebido: Rec: 7
+17/10/2024 11:48:05  -  A trama recebida não continha ','
+17/10/2024 11:48:05  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 11:48:06  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 11:48:06  -  A trama recebida não continha ','
+17/10/2024 11:48:06  -  Pacote recebido: Rec: 7
+17/10/2024 11:48:06  -  A trama recebida não continha ','
+17/10/2024 11:48:06  -  Pacote recebido: COMPMODE: 41F8
+17/10/2024 13:20:18  -  Porta serial aberta com sucesso!
+17/10/2024 13:20:18  -  Salvando informações da porta serial - Porta:  COM19 Velocidade: 115200
+17/10/2024 13:20:20  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 13:20:20  -  A trama recebida não continha ','
+17/10/2024 13:20:20  -  Pacote recebido: REG: 16895
+17/10/2024 13:20:20  -  A trama recebida não continha ','
+17/10/2024 13:20:20  -  Pacote recebido: CPM: 41FF
+17/10/2024 13:21:17  -  Porta serial aberta com sucesso!
+17/10/2024 13:21:17  -  Salvando informações da porta serial - Porta:  COM19 Velocidade: 115200
+17/10/2024 13:21:20  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 13:21:20  -  A trama recebida não continha ','
+17/10/2024 13:21:20  -  Pacote recebido: REG: 41FF
+17/10/2024 13:21:20  -  A trama recebida não continha ','
+17/10/2024 13:21:20  -  Pacote recebido: CPM: 41FF
+17/10/2024 13:21:28  -  Envio de comando de inclusão de correntes em Erro: 70,0,17667
+17/10/2024 13:21:28  -  A trama recebida não continha ','
+17/10/2024 13:21:28  -  Pacote recebido: REG: 41F8
+17/10/2024 13:21:28  -  A trama recebida não continha ','
+17/10/2024 13:21:28  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:21:38  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 13:21:38  -  A trama recebida não continha ','
+17/10/2024 13:21:38  -  Pacote recebido: REG: 41F8
+17/10/2024 13:21:38  -  A trama recebida não continha ','
+17/10/2024 13:21:38  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:21:40  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 13:21:40  -  A trama recebida não continha ','
+17/10/2024 13:21:40  -  Pacote recebido: REG: 41F8
+17/10/2024 13:21:40  -  A trama recebida não continha ','
+17/10/2024 13:21:40  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:21:41  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 13:21:41  -  A trama recebida não continha ','
+17/10/2024 13:21:41  -  Pacote recebido: REG: 41F8
+17/10/2024 13:21:41  -  A trama recebida não continha ','
+17/10/2024 13:21:41  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:21:43  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 13:21:43  -  A trama recebida não continha ','
+17/10/2024 13:21:43  -  Pacote recebido: REG: 41F8
+17/10/2024 13:21:43  -  A trama recebida não continha ','
+17/10/2024 13:21:43  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:21:47  -  Envio de comando de inclusão de correntes em Erro: 70,0,17667
+17/10/2024 13:21:47  -  A trama recebida não continha ','
+17/10/2024 13:21:47  -  Pacote recebido: REG: 41F8
+17/10/2024 13:21:47  -  A trama recebida não continha ','
+17/10/2024 13:21:47  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:21:48  -  Envio de comando de inclusão de correntes em Erro: 70,0,17667
+17/10/2024 13:21:48  -  A trama recebida não continha ','
+17/10/2024 13:21:48  -  Pacote recebido: REG: 41F8
+17/10/2024 13:21:48  -  A trama recebida não continha ','
+17/10/2024 13:21:48  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:25:17  -  Porta serial aberta com sucesso!
+17/10/2024 13:25:17  -  Salvando informações da porta serial - Porta:  COM19 Velocidade: 115200
+17/10/2024 13:25:18  -  A trama recebida não continha ','
+17/10/2024 13:25:18  -  Pacote recebido: Validando comunicacao com ADE7878A...
+17/10/2024 13:25:18  -  A trama recebida não continha ','
+17/10/2024 13:25:18  -  Pacote recebido: ADE7878A encontrado com sucesso. 
+17/10/2024 13:25:19  -  A trama recebida não continha ','
+17/10/2024 13:25:19  -  Pacote recebido: ADE_GAIN: 0
+17/10/2024 13:25:19  -  A trama recebida não continha ','
+17/10/2024 13:25:19  -  Pacote recebido: Ver. FW Sint.: v2.0
+17/10/2024 13:25:22  -  Envio de comando de inclusão de correntes em Erro: 70,0,17667
+17/10/2024 13:25:22  -  A trama recebida não continha ','
+17/10/2024 13:25:22  -  Pacote recebido: REG: 41F8
+17/10/2024 13:25:22  -  A trama recebida não continha ','
+17/10/2024 13:25:22  -  Pacote recebido: CPM: 41F8
+17/10/2024 13:25:24  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 13:25:24  -  A trama recebida não continha ','
+17/10/2024 13:25:24  -  Pacote recebido: REG: 41F9
+17/10/2024 13:25:24  -  A trama recebida não continha ','
+17/10/2024 13:25:24  -  Pacote recebido: CPM: 41F9
+17/10/2024 13:25:28  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 13:25:28  -  A trama recebida não continha ','
+17/10/2024 13:25:28  -  Pacote recebido: REG: 41FA
+17/10/2024 13:25:28  -  A trama recebida não continha ','
+17/10/2024 13:25:28  -  Pacote recebido: CPM: 41FA
+17/10/2024 13:25:30  -  Envio de comando de inclusão de correntes em Erro: 70,3,4176
+17/10/2024 13:25:30  -  A trama recebida não continha ','
+17/10/2024 13:25:30  -  Pacote recebido: REG: 41FB
+17/10/2024 13:25:30  -  A trama recebida não continha ','
+17/10/2024 13:25:30  -  Pacote recebido: CPM: 41FB
+17/10/2024 13:25:33  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 13:25:33  -  A trama recebida não continha ','
+17/10/2024 13:25:33  -  Pacote recebido: REG: 41FC
+17/10/2024 13:25:33  -  A trama recebida não continha ','
+17/10/2024 13:25:33  -  Pacote recebido: CPM: 41FC
+17/10/2024 13:25:36  -  Envio de comando de inclusão de correntes em Erro: 70,5,47862
+17/10/2024 13:25:36  -  A trama recebida não continha ','
+17/10/2024 13:25:36  -  Pacote recebido: REG: 41FD
+17/10/2024 13:25:36  -  A trama recebida não continha ','
+17/10/2024 13:25:36  -  Pacote recebido: CPM: 41FD
+17/10/2024 13:25:39  -  Envio de comando de inclusão de correntes em Erro: 70,6,61349
+17/10/2024 13:25:39  -  A trama recebida não continha ','
+17/10/2024 13:25:39  -  Pacote recebido: REG: 41FE
+17/10/2024 13:25:39  -  A trama recebida não continha ','
+17/10/2024 13:25:39  -  Pacote recebido: CPM: 41FE
+17/10/2024 13:25:42  -  Envio de comando de inclusão de correntes em Erro: 70,7,56468
+17/10/2024 13:25:42  -  A trama recebida não continha ','
+17/10/2024 13:25:42  -  Pacote recebido: REG: 41FF
+17/10/2024 13:25:42  -  A trama recebida não continha ','
+17/10/2024 13:25:42  -  Pacote recebido: CPM: 41FF
+17/10/2024 13:29:38  -  Comando para inclusão de correntes em erro não enviado devido porta serial fechada!
+17/10/2024 13:29:40  -  Porta serial aberta com sucesso!
+17/10/2024 13:29:40  -  Salvando informações da porta serial - Porta:  COM19 Velocidade: 115200
+17/10/2024 13:29:41  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 13:32:25  -  Envio de comando de inclusão de correntes em Erro: 70,1,30258
+17/10/2024 13:32:51  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 13:33:10  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 13:33:12  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 13:33:13  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 13:33:34  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 13:35:25  -  A trama recebida não continha ','
+17/10/2024 13:35:25  -  Pacote recebido: h?`iiakfih?h?`cacjllg?h?cafkeehi?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cachddj?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cadckik?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cadckik?h?`cadckik?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?`cacjllg?h?kijchahh?h?jclafjhk?h?`cadckik?h?`cacjllg?h?`cacjllg?h?ddakiekf?h?`cacjllg?h?cafkeehi?h?`cadckik?h?`cachddj?h?`lalelfk?h?`hdaieil?h?`jjagile?h?`ijaceef?h?`iiahike?ESP-ROM:esp32s3-20210327
+17/10/2024 13:35:26  -  A trama recebida não continha ','
+17/10/2024 13:35:26  -  Pacote recebido: ***********************
+17/10/2024 13:35:27  -  A trama recebida não continha ','
+17/10/2024 13:35:27  -  Pacote recebido: Display configurado com sucesso!
+17/10/2024 13:35:27  -  A trama recebida não continha ','
+17/10/2024 13:35:27  -  Pacote recebido: Serial Number: x---x---x
+17/10/2024 13:35:30  -  A trama recebida não continha ','
+17/10/2024 13:35:30  -  Pacote recebido: Validando comunicacao com ADE7878A...
+17/10/2024 13:35:30  -  A trama recebida não continha ','
+17/10/2024 13:35:30  -  Pacote recebido: ADE7878A encontrado com sucesso. 
+17/10/2024 13:35:30  -  A trama recebida não continha ','
+17/10/2024 13:35:30  -  Pacote recebido: ADE_GAIN: 0
+17/10/2024 13:35:31  -  A trama recebida não continha ','
+17/10/2024 13:35:31  -  Pacote recebido: Ver. FW Sint.: v2.0
+17/10/2024 13:37:06  -  Envio de comando de inclusão de correntes em Erro: 70,2,9057
+17/10/2024 13:39:00  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 13:43:20  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 13:43:21  -  Envio de comando de inclusão de correntes em Erro: 70,4,35271
+17/10/2024 13:46:58  -  Envio de comando Parar Sint.: 3,43047
